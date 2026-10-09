@@ -712,6 +712,14 @@ const NarratorBody: React.FC<BodyProps> = ({
         </>
       )}
 
+      {/* Themed sleeve cuffs over the upper arms (gladiator goes bare-armed) */}
+      {sleeveColor && (
+        <g>
+          {sleeveCuff(102, 190, p.lElbow[0], p.lElbow[1], sleeveColor)}
+          {sleeveCuff(198, 190, p.rElbow[0], p.rElbow[1], sleeveColor)}
+        </g>
+      )}
+
       {/* ================= BODY / OUTFIT ================= */}
       {theme === "egypt" ? (
         <>
@@ -808,13 +816,6 @@ const NarratorBody: React.FC<BodyProps> = ({
       <line x1="198" y1="190" x2={p.rElbow[0]} y2={p.rElbow[1]} stroke={INK} strokeWidth="9" strokeLinecap="round" />
       <line x1={p.rElbow[0]} y1={p.rElbow[1]} x2={p.rHand[0]} y2={p.rHand[1]} stroke={INK} strokeWidth="8" strokeLinecap="round" />
 
-      {/* Themed sleeve cuffs over the upper arms (gladiator goes bare-armed) */}
-      {sleeveColor && (
-        <g>
-          {sleeveCuff(102, 190, p.lElbow[0], p.lElbow[1], sleeveColor)}
-          {sleeveCuff(198, 190, p.rElbow[0], p.rElbow[1], sleeveColor)}
-        </g>
-      )}
       {theme === "gladiator" && (
         <g>
           {[0.3, 0.55, 0.8].map((t, i) => {
