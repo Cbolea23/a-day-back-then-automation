@@ -176,10 +176,22 @@ const LongScene: React.FC<{
       />
       {scene.audio ? <Audio src={staticFile(scene.audio)} /> : null}
 
-      {/* Narrator stands bottom-right, captions sit to his left */}
-      <div style={{position: "absolute", right: 90, bottom: 24}}>
-        <Narrator height={600} theme={theme} tunic={index % 2 === 0 ? "#e8cf9a" : "#d9bd86"} />
-      </div>
+      {/* Narrator stands bottom-right with lifelike presence & shadow */}
+      {(() => {
+        const bounce = Math.sin(useCurrentFrame() / 15) * 4;
+        return (
+          <div
+            style={{
+              position: "absolute",
+              right: 90,
+              bottom: 24 + bounce,
+              filter: "drop-shadow(0 14px 28px rgba(0,0,0,0.65))",
+            }}
+          >
+            <Narrator height={600} theme={theme} tunic={index % 2 === 0 ? "#e8cf9a" : "#d9bd86"} />
+          </div>
+        );
+      })()}
 
       <div
         style={{

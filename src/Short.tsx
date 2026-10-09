@@ -140,19 +140,34 @@ const SceneView: React.FC<{
       <Background scene={scene} durationInFrames={durationInFrames} />
       {scene.audio ? <Audio src={staticFile(scene.audio)} /> : null}
 
-      {/* Narrator stands in the lower part of the frame with historical outfit */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: 40,
-          left: 0,
-          right: 0,
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <Narrator height={700} theme={theme} />
-      </div>
+      {/* Narrator stands in the lower part with lifelike screen presence & motion */}
+      {(() => {
+        // Subtle entrance slide-up on each scene switch
+        const slideUp = interpolate(useCurrentFrame(), [0, 10], [28, 0], {
+          extrapolateRight: "clamp",
+        });
+        // Gentle wandering / pacing across scenes (left, center, right)
+        const scenePositions = [0, -35, 30, -20, 25, 0];
+        const targetX = scenePositions[index % scenePositions.length];
+        const moveX = interpolate(useCurrentFrame(), [0, durationInFrames], [targetX * 0.5, targetX]);
+
+        return (
+          <div
+            style={{
+              position: "absolute",
+              bottom: 40 - slideUp,
+              left: 0,
+              right: 0,
+              display: "flex",
+              justifyContent: "center",
+              transform: `translateX(${moveX}px)`,
+              filter: "drop-shadow(0 12px 28px rgba(0,0,0,0.65))",
+            }}
+          >
+            <Narrator height={700} theme={theme} />
+          </div>
+        );
+      })()}
 
       {/* Captions sit above the narrator, clear of the Shorts UI at the bottom */}
       <div

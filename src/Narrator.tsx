@@ -29,11 +29,14 @@ export function getThemeFromSlug(slug: string = ""): CharacterTheme {
   return "roman";
 }
 
+export type Gesture = "explain" | "point" | "shrug" | "think" | "wave" | "idle";
+
 type Props = {
   theme?: CharacterTheme;
   talking?: boolean;
   height?: number;
   tunic?: string;
+  gesture?: Gesture;
 };
 
 export const Narrator: React.FC<Props> = ({
@@ -41,16 +44,106 @@ export const Narrator: React.FC<Props> = ({
   talking = true,
   height = 760,
   tunic,
+  gesture,
 }) => {
   const frame = useCurrentFrame();
 
-  const bob = Math.sin(frame / 12) * 7;
-  const sway = Math.sin(frame / 30) * 1.5;
-  const blinkCycle = frame % 110;
+  // Natural organic breathing & bobbing
+  const bob = Math.sin(frame / 10) * 8;
+  const sway = Math.sin(frame / 22) * 2;
+  const headTilt = Math.sin(frame / 18) * 3;
+
+  // Eye blinking
+  const blinkCycle = frame % 105;
   const eyeScaleY = interpolate(blinkCycle, [0, 4, 8], [1, 0.1, 1], {
     extrapolateRight: "clamp",
   });
-  const mouthOpen = talking ? (Math.floor(frame / 5) % 3 === 0 ? 1 : 0) : 0;
+
+  // Animated speaking mouth with varied mouth shapes
+  const mouthCycle = Math.floor(frame / 4) % 4;
+  const mouthOpen = talking ? (mouthCycle === 0 ? 0 : mouthCycle === 1 ? 0.7 : 1) : 0;
+
+  // If no explicit gesture passed, alternate naturally across cycles
+  const currentGesture: Gesture =
+    gesture ||
+    (() => {
+      const gCycle = Math.floor(frame / 65) % 4;
+      if (gCycle === 0) return "explain";
+      if (gCycle === 1) return "point";
+      if (gCycle === 2) return "shrug";
+      return "think";
+    })();
+
+  // Hand gesture physics & angles based on active gesture
+  // Left Arm (origin: 102, 190) & Right Arm (origin: 198, 190)
+  const gesturePulse = Math.sin(frame / 8) * 12;
+
+  let leftHandX = 68;
+  let leftHandY = 335 + bob * 0.5;
+  let leftElbowX = 76;
+  let leftElbowY = 260;
+
+  let rightHandX = 232;
+  let rightHandY = 335 + bob * 0.5;
+  let rightElbowX = 224;
+  let rightElbowY = 260;
+
+  if (currentGesture === "explain") {
+    // Both hands open, gesturing outwards rhythmically
+    leftElbowX = 60;
+    leftElbowY = 245;
+    leftHandX = 40 + Math.sin(frame / 10) * 10;
+    leftHandY = 260 + gesturePulse;
+
+    rightElbowX = 240;
+    rightElbowY = 245;
+    rightHandX = 260 - Math.sin(frame / 10) * 10;
+    rightHandY = 260 - gesturePulse;
+  } else if (currentGesture === "point") {
+    // Right arm pointing up/forward at caption or scene, left arm resting
+    rightElbowX = 230;
+    rightElbowY = 220;
+    rightHandX = 270;
+    rightHandY = 170 + Math.sin(frame / 12) * 8; // pointing up
+
+    leftElbowX = 82;
+    leftElbowY = 265;
+    leftHandX = 70;
+    leftHandY = 325;
+  } else if (currentGesture === "shrug") {
+    // Both hands raised up wide in disbelief or surprise
+    leftElbowX = 55;
+    leftElbowY = 235;
+    leftHandX = 35;
+    leftHandY = 220 + Math.sin(frame / 14) * 6;
+
+    rightElbowX = 245;
+    rightElbowY = 235;
+    rightHandX = 265;
+    rightHandY = 220 + Math.sin(frame / 14) * 6;
+  } else if (currentGesture === "think") {
+    // Right hand up near chin/head, left hand across waist
+    rightElbowX = 225;
+    rightElbowY = 245;
+    rightHandX = 180;
+    rightHandY = 160 + Math.sin(frame / 20) * 4;
+
+    leftElbowX = 85;
+    leftElbowY = 255;
+    leftHandX = 135;
+    leftHandY = 280;
+  } else if (currentGesture === "wave") {
+    // Right hand waving high
+    rightElbowX = 240;
+    rightElbowY = 210;
+    rightHandX = 265 + Math.sin(frame / 6) * 18;
+    rightHandY = 140;
+
+    leftElbowX = 78;
+    leftElbowY = 260;
+    leftHandX = 68;
+    leftHandY = 330;
+  }
 
   return (
     <svg
@@ -128,14 +221,24 @@ export const Narrator: React.FC<Props> = ({
         </>
       )}
 
-      {/* ================= ARMS ================= */}
-      <line x1="102" y1="190" x2="68" y2="335" stroke="#111" strokeWidth="9" strokeLinecap="round" />
-      <line x1="198" y1="190" x2="232" y2="335" stroke="#111" strokeWidth="9" strokeLinecap="round" />
+      {/* ================= ARMS & HANDS (ARTICULATED) ================= */}
+      {/* Left Arm: Shoulder (102, 190) -> Elbow -> Hand */}
+      <line x1="102" y1="190" x2={leftElbowX} y2={leftElbowY} stroke="#111" strokeWidth="9" strokeLinecap="round" />
+      <line x1={leftElbowX} y1={leftElbowY} x2={leftHandX} y2={leftHandY} stroke="#111" strokeWidth="8" strokeLinecap="round" />
+      {/* Left Hand palm / gesture dot */}
+      <circle cx={leftHandX} cy={leftHandY} r="7" fill="#f2dcb0" stroke="#111" strokeWidth="3" />
+
+      {/* Right Arm: Shoulder (198, 190) -> Elbow -> Hand */}
+      <line x1="198" y1="190" x2={rightElbowX} y2={rightElbowY} stroke="#111" strokeWidth="9" strokeLinecap="round" />
+      <line x1={rightElbowX} y1={rightElbowY} x2={rightHandX} y2={rightHandY} stroke="#111" strokeWidth="8" strokeLinecap="round" />
+      {/* Right Hand palm / gesture dot */}
+      <circle cx={rightHandX} cy={rightHandY} r="7" fill="#f2dcb0" stroke="#111" strokeWidth="3" />
+
       {theme === "egypt" && (
         <>
-          {/* Gold wrist cuffs */}
-          <rect x="62" y="315" width="16" height="18" rx="3" fill="#e5b32f" stroke="#111" strokeWidth="3" transform="rotate(15 70 324)" />
-          <rect x="222" y="315" width="16" height="18" rx="3" fill="#e5b32f" stroke="#111" strokeWidth="3" transform="rotate(-15 230 324)" />
+          {/* Gold wrist cuffs on animated hands */}
+          <circle cx={leftHandX} cy={leftHandY} r="9" fill="none" stroke="#e5b32f" strokeWidth="4" />
+          <circle cx={rightHandX} cy={rightHandY} r="9" fill="none" stroke="#e5b32f" strokeWidth="4" />
         </>
       )}
       {theme === "gladiator" && (

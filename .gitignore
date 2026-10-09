@@ -16,6 +16,7 @@ backup/
 youtube-tokens.json
 facebook-tokens.json
 instagram-tokens.json
+tiktok-tokens.json
 .tiktok-session/
 .facebook-session/
 published-urls-*.json
