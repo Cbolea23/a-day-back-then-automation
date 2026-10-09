@@ -628,6 +628,24 @@ const NarratorBody: React.FC<BodyProps> = ({
   const skin = theme === "egypt" ? SKIN_EGYPT : SKIN;
   const talking = mouthOpen > 0.06;
 
+  // Viseme: the mouth shape follows the vowel of the word being spoken,
+  // so it forms words instead of just opening and closing.
+  const activeWord = plan
+    ? (plan.words[activeWordIndex(plan.starts, frame)] ?? "")
+    : "";
+  const viseme: "open" | "o" | "wide" = (() => {
+    const w = activeWord.toLowerCase();
+    if (/[ou]/.test(w)) return "o";
+    if (/a/.test(w)) return "open";
+    if (/[ei]/.test(w)) return "wide";
+    return "open";
+  })();
+  const visemeSize = {
+    open: {rx: 13, ry: 4 + 10 * mouthOpen},
+    o: {rx: 7 + 4 * mouthOpen, ry: 5 + 8 * mouthOpen},
+    wide: {rx: 12 + 5 * mouthOpen, ry: 3 + 5 * mouthOpen},
+  }[viseme];
+
   return (
     <svg
       viewBox="0 0 300 600"
@@ -691,71 +709,6 @@ const NarratorBody: React.FC<BodyProps> = ({
           <line x1="114" y1="552" x2="126" y2="552" stroke="#7a4e2a" strokeWidth="5" />
           <line x1="174" y1="540" x2="186" y2="540" stroke="#7a4e2a" strokeWidth="5" />
           <line x1="174" y1="552" x2="186" y2="552" stroke="#7a4e2a" strokeWidth="5" />
-        </>
-      )}
-
-      {/* ================= ARMS & HANDS (pose-driven) ================= */}
-      <line x1="102" y1="190" x2={p.lElbow[0]} y2={p.lElbow[1]} stroke={INK} strokeWidth="9" strokeLinecap="round" />
-      <line x1={p.lElbow[0]} y1={p.lElbow[1]} x2={p.lHand[0]} y2={p.lHand[1]} stroke={INK} strokeWidth="8" strokeLinecap="round" />
-
-      <line x1="198" y1="190" x2={p.rElbow[0]} y2={p.rElbow[1]} stroke={INK} strokeWidth="9" strokeLinecap="round" />
-      <line x1={p.rElbow[0]} y1={p.rElbow[1]} x2={p.rHand[0]} y2={p.rHand[1]} stroke={INK} strokeWidth="8" strokeLinecap="round" />
-
-      {/* Themed sleeve cuffs over the upper arms (gladiator goes bare-armed) */}
-      {sleeveColor && (
-        <g>
-          {sleeveCuff(102, 190, p.lElbow[0], p.lElbow[1], sleeveColor)}
-          {sleeveCuff(198, 190, p.rElbow[0], p.rElbow[1], sleeveColor)}
-        </g>
-      )}
-      {theme === "gladiator" && (
-        <g>
-          {[0.3, 0.55, 0.8].map((t, i) => {
-            const bx = lerp(p.rElbow[0], p.rHand[0], t);
-            const by = lerp(p.rElbow[1], p.rHand[1], t);
-            const ang =
-              (Math.atan2(p.rHand[1] - p.rElbow[1], p.rHand[0] - p.rElbow[0]) * 180) / Math.PI;
-            return (
-              <rect
-                key={i}
-                x={bx - 13}
-                y={by - 8}
-                width={26}
-                height={16}
-                rx={4}
-                fill="#d49b33"
-                stroke={INK}
-                strokeWidth={3}
-                transform={`rotate(${ang} ${bx} ${by})`}
-              />
-            );
-          })}
-        </g>
-      )}
-
-      <Hand
-        x={p.lHand[0]}
-        y={p.lHand[1]}
-        fromX={p.lElbow[0]}
-        fromY={p.lElbow[1]}
-        side="left"
-        variant={handVariant("left")}
-        skin={skin}
-      />
-      <Hand
-        x={p.rHand[0]}
-        y={p.rHand[1]}
-        fromX={p.rElbow[0]}
-        fromY={p.rElbow[1]}
-        side="right"
-        variant={handVariant("right")}
-        skin={skin}
-      />
-
-      {theme === "egypt" && (
-        <>
-          <circle cx={p.lHand[0]} cy={p.lHand[1]} r="10" fill="none" stroke="#e5b32f" strokeWidth="4" />
-          <circle cx={p.rHand[0]} cy={p.rHand[1]} r="10" fill="none" stroke="#e5b32f" strokeWidth="4" />
         </>
       )}
 
@@ -845,6 +798,71 @@ const NarratorBody: React.FC<BodyProps> = ({
           <rect x="140" y="286" width="20" height="26" rx="3" fill="#d4af37" stroke={INK} strokeWidth="3" />
           <rect x="115" y="291" width="10" height="16" fill="#d4af37" />
           <rect x="175" y="291" width="10" height="16" fill="#d4af37" />
+        </>
+      )}
+
+      {/* ================= ARMS & HANDS (pose-driven) ================= */}
+      <line x1="102" y1="190" x2={p.lElbow[0]} y2={p.lElbow[1]} stroke={INK} strokeWidth="9" strokeLinecap="round" />
+      <line x1={p.lElbow[0]} y1={p.lElbow[1]} x2={p.lHand[0]} y2={p.lHand[1]} stroke={INK} strokeWidth="8" strokeLinecap="round" />
+
+      <line x1="198" y1="190" x2={p.rElbow[0]} y2={p.rElbow[1]} stroke={INK} strokeWidth="9" strokeLinecap="round" />
+      <line x1={p.rElbow[0]} y1={p.rElbow[1]} x2={p.rHand[0]} y2={p.rHand[1]} stroke={INK} strokeWidth="8" strokeLinecap="round" />
+
+      {/* Themed sleeve cuffs over the upper arms (gladiator goes bare-armed) */}
+      {sleeveColor && (
+        <g>
+          {sleeveCuff(102, 190, p.lElbow[0], p.lElbow[1], sleeveColor)}
+          {sleeveCuff(198, 190, p.rElbow[0], p.rElbow[1], sleeveColor)}
+        </g>
+      )}
+      {theme === "gladiator" && (
+        <g>
+          {[0.3, 0.55, 0.8].map((t, i) => {
+            const bx = lerp(p.rElbow[0], p.rHand[0], t);
+            const by = lerp(p.rElbow[1], p.rHand[1], t);
+            const ang =
+              (Math.atan2(p.rHand[1] - p.rElbow[1], p.rHand[0] - p.rElbow[0]) * 180) / Math.PI;
+            return (
+              <rect
+                key={i}
+                x={bx - 13}
+                y={by - 8}
+                width={26}
+                height={16}
+                rx={4}
+                fill="#d49b33"
+                stroke={INK}
+                strokeWidth={3}
+                transform={`rotate(${ang} ${bx} ${by})`}
+              />
+            );
+          })}
+        </g>
+      )}
+
+      <Hand
+        x={p.lHand[0]}
+        y={p.lHand[1]}
+        fromX={p.lElbow[0]}
+        fromY={p.lElbow[1]}
+        side="left"
+        variant={handVariant("left")}
+        skin={skin}
+      />
+      <Hand
+        x={p.rHand[0]}
+        y={p.rHand[1]}
+        fromX={p.rElbow[0]}
+        fromY={p.rElbow[1]}
+        side="right"
+        variant={handVariant("right")}
+        skin={skin}
+      />
+
+      {theme === "egypt" && (
+        <>
+          <circle cx={p.lHand[0]} cy={p.lHand[1]} r="10" fill="none" stroke="#e5b32f" strokeWidth="4" />
+          <circle cx={p.rHand[0]} cy={p.rHand[1]} r="10" fill="none" stroke="#e5b32f" strokeWidth="4" />
         </>
       )}
 
@@ -979,7 +997,37 @@ const NarratorBody: React.FC<BodyProps> = ({
             {expression === "surprise" ? (
               <ellipse cx="150" cy="122" rx="10" ry="13" fill="#5a1d1d" stroke={INK} strokeWidth="3" />
             ) : talking ? (
-              <ellipse cx="150" cy="120" rx="13" ry={4 + 9 * mouthOpen} fill="#5a1d1d" stroke={INK} strokeWidth={3} />
+              <g>
+                <ellipse
+                  cx="150"
+                  cy="120"
+                  rx={visemeSize.rx}
+                  ry={visemeSize.ry}
+                  fill="#5a1d1d"
+                  stroke={INK}
+                  strokeWidth={3}
+                />
+                {/* teeth on wide (E) sounds */}
+                {viseme === "wide" && mouthOpen > 0.25 && (
+                  <ellipse
+                    cx="150"
+                    cy={120 - visemeSize.ry * 0.55}
+                    rx={visemeSize.rx * 0.68}
+                    ry={visemeSize.ry * 0.38}
+                    fill="#ffffff"
+                  />
+                )}
+                {/* tongue when the mouth opens up */}
+                {mouthOpen > 0.35 && (
+                  <ellipse
+                    cx="150"
+                    cy={120 + visemeSize.ry * 0.45}
+                    rx={visemeSize.rx * 0.5}
+                    ry={visemeSize.ry * 0.4}
+                    fill="#c96a6a"
+                  />
+                )}
+              </g>
             ) : expression === "sad" ? (
               <path d="M134 126 Q150 116 166 126" stroke={INK} strokeWidth="5" fill="none" strokeLinecap="round" />
             ) : expression === "happy" ? (
