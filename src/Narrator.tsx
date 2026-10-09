@@ -102,7 +102,6 @@ type Pose = {
   headDy: number; // px, + = bow down
   lean: number; // body lean, degrees
   shiftX: number; // body shift, px
-  countFingers: "left" | "right" | null;
 };
 
 const IDLE_POSE: Pose = {
@@ -114,7 +113,6 @@ const IDLE_POSE: Pose = {
   headDy: 0,
   lean: 0,
   shiftX: 0,
-  countFingers: null,
 };
 
 const POSES: Record<GestureKind, Pose> = {
@@ -128,7 +126,6 @@ const POSES: Record<GestureKind, Pose> = {
     headDy: 0,
     lean: 0,
     shiftX: 0,
-    countFingers: null,
   },
   point: {
     lElbow: [82, 265],
@@ -139,7 +136,6 @@ const POSES: Record<GestureKind, Pose> = {
     headDy: 0,
     lean: 4,
     shiftX: 10,
-    countFingers: null,
   },
   count: {
     lElbow: [70, 240],
@@ -150,7 +146,6 @@ const POSES: Record<GestureKind, Pose> = {
     headDy: 0,
     lean: -2,
     shiftX: -6,
-    countFingers: "left",
   },
   question: {
     lElbow: [60, 250],
@@ -161,7 +156,6 @@ const POSES: Record<GestureKind, Pose> = {
     headDy: 2,
     lean: -2,
     shiftX: -6,
-    countFingers: null,
   },
   emphasis: {
     lElbow: [70, 250],
@@ -172,7 +166,6 @@ const POSES: Record<GestureKind, Pose> = {
     headDy: 4,
     lean: 6,
     shiftX: 0,
-    countFingers: null,
   },
   think: {
     lElbow: [85, 255],
@@ -183,7 +176,6 @@ const POSES: Record<GestureKind, Pose> = {
     headDy: 3,
     lean: -2,
     shiftX: 0,
-    countFingers: null,
   },
   shrug: {
     lElbow: [55, 235],
@@ -194,7 +186,6 @@ const POSES: Record<GestureKind, Pose> = {
     headDy: 0,
     lean: 0,
     shiftX: 0,
-    countFingers: null,
   },
   solemn: {
     lElbow: [90, 260],
@@ -205,7 +196,6 @@ const POSES: Record<GestureKind, Pose> = {
     headDy: 13,
     lean: 3,
     shiftX: 0,
-    countFingers: null,
   },
   surprise: {
     lElbow: [52, 230],
@@ -216,7 +206,6 @@ const POSES: Record<GestureKind, Pose> = {
     headDy: -5,
     lean: -3,
     shiftX: 0,
-    countFingers: null,
   },
   compare: {
     lElbow: [58, 246],
@@ -227,7 +216,6 @@ const POSES: Record<GestureKind, Pose> = {
     headDy: 0,
     lean: 0,
     shiftX: 0,
-    countFingers: null,
   },
   wave: {
     lElbow: [78, 260],
@@ -238,7 +226,6 @@ const POSES: Record<GestureKind, Pose> = {
     headDy: 0,
     lean: 0,
     shiftX: 0,
-    countFingers: null,
   },
   big: {
     lElbow: [50, 240],
@@ -249,7 +236,6 @@ const POSES: Record<GestureKind, Pose> = {
     headDy: -2,
     lean: -2,
     shiftX: 0,
-    countFingers: null,
   },
   small: {
     lElbow: [95, 255],
@@ -260,7 +246,6 @@ const POSES: Record<GestureKind, Pose> = {
     headDy: 2,
     lean: 2,
     shiftX: 0,
-    countFingers: null,
   },
 };
 
@@ -275,11 +260,16 @@ const lerpPose = (a: Pose, b: Pose, t: number): Pose => ({
   headDy: lerp(a.headDy, b.headDy, t),
   lean: lerp(a.lean, b.lean, t),
   shiftX: lerp(a.shiftX, b.shiftX, t),
-  countFingers: t < 0.5 ? a.countFingers : b.countFingers,
 });
 
 const easeInOut = (t: number): number =>
   t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+
+/** Slight overshoot so gestures land with energy instead of gliding in. */
+const easeOutBack = (t: number): number => {
+  const c = 1.3;
+  return 1 + (c + 1) * Math.pow(t - 1, 3) + c * Math.pow(t - 1, 2);
+};
 
 const BLEND_FRAMES = 10;
 
@@ -300,7 +290,7 @@ export function poseAtFrame(
   if (active) {
     const prevIdx = cues.indexOf(active) - 1;
     const prevPose = prevIdx >= 0 ? POSES[cues[prevIdx].gesture] : IDLE_POSE;
-    const t = easeInOut(
+    const t = easeOutBack(
       Math.min(1, Math.max(0, (frame - active.fromFrame) / BLEND_FRAMES)),
     );
     return {
@@ -426,30 +416,61 @@ const Brows: React.FC<{expression: Expression}> = ({expression}) => {
 const Hand: React.FC<{
   x: number;
   y: number;
+  /** Elbow position, so fingers aim away from the arm. */
+  fromX: number;
+  fromY: number;
   side: "left" | "right";
-  fingers?: boolean;
+  variant?: "open" | "fist" | "point" | "count";
   skin?: string;
-}> = ({x, y, side, fingers, skin = SKIN}) => (
-  <g>
-    {fingers && (
-      <g stroke={INK} strokeWidth={4} strokeLinecap="round">
-        <line x1={x - 6} y1={y - 6} x2={x - 9} y2={y - 22} />
-        <line x1={x} y1={y - 8} x2={x} y2={y - 26} />
-        <line x1={x + 6} y1={y - 6} x2={x + 9} y2={y - 22} />
-      </g>
-    )}
-    <circle cx={x} cy={y} r={8} fill={skin} stroke={INK} strokeWidth={3.5} />
-    {/* thumb */}
-    <circle
-      cx={x + (side === "left" ? -7 : 7)}
-      cy={y - 1}
-      r={3.6}
-      fill={skin}
-      stroke={INK}
-      strokeWidth={2.5}
-    />
-  </g>
-);
+}> = ({x, y, fromX, fromY, side, variant = "open", skin = SKIN}) => {
+  const ang = Math.atan2(y - fromY, x - fromX);
+  const fingerLine = (a: number, len: number, w = 3.5) => {
+    const bx = x + Math.cos(a) * 6;
+    const by = y + Math.sin(a) * 6;
+    return (
+      <line
+        x1={bx}
+        y1={by}
+        x2={bx + Math.cos(a) * len}
+        y2={by + Math.sin(a) * len}
+        stroke={INK}
+        strokeWidth={w}
+        strokeLinecap="round"
+      />
+    );
+  };
+  return (
+    <g>
+      {variant === "point" ? (
+        // Extended index finger along the pointing direction
+        fingerLine(ang, 15, 4)
+      ) : variant === "open" || variant === "count" ? (
+        <g>
+          {fingerLine(ang - 0.38, variant === "count" ? 12 : 8)}
+          {fingerLine(ang, variant === "count" ? 14 : 9)}
+          {fingerLine(ang + 0.38, variant === "count" ? 12 : 8)}
+        </g>
+      ) : null}
+      <circle
+        cx={x}
+        cy={y}
+        r={variant === "fist" ? 9 : 8}
+        fill={skin}
+        stroke={INK}
+        strokeWidth={3.5}
+      />
+      {/* thumb */}
+      <circle
+        cx={x + (side === "left" ? -7 : 7)}
+        cy={y - 1}
+        r={3.6}
+        fill={skin}
+        stroke={INK}
+        strokeWidth={2.5}
+      />
+    </g>
+  );
+};
 
 // ---------------------------------------------------------------------------
 // Narrator
@@ -490,6 +511,81 @@ const NarratorBody: React.FC<BodyProps> = ({
     return Math.min(1.2, total) * 7;
   }, [plan, frame]);
 
+  // Hand shape follows the gesture: fists for emphasis, index finger for
+  // pointing, raised fingers for counting, open hands otherwise.
+  const handVariant = (side: "left" | "right"): "open" | "fist" | "point" | "count" => {
+    if (activeGesture === "emphasis") return "fist";
+    if (activeGesture === "point" && side === "right") return "point";
+    if (activeGesture === "count" && side === "left") return "count";
+    return "open";
+  };
+
+  // Themed sleeve color; gladiator fights bare-armed (manica instead).
+  const sleeveColor: string | null =
+    theme === "roman"
+      ? tunic || "#e8cf9a"
+      : theme === "egypt"
+        ? "#f7f2e7"
+        : theme === "viking"
+          ? "#3d5639"
+          : theme === "knight"
+            ? "#b82d23"
+            : theme === "medieval"
+              ? "#8a532d"
+              : theme === "plague-doctor"
+                ? "#1e1e24"
+                : theme === "greek"
+                  ? "#fcfaf4"
+                  : null;
+
+  // Outlined sleeve cuff from the shoulder partway down the upper arm.
+  const sleeveCuff = (
+    sx: number,
+    sy: number,
+    ex: number,
+    ey: number,
+    color: string,
+  ) => {
+    const mx = lerp(sx, ex, 0.34);
+    const my = lerp(sy, ey, 0.34);
+    return (
+      <g>
+        <line x1={sx} y1={sy} x2={mx} y2={my} stroke={INK} strokeWidth={27} strokeLinecap="round" />
+        <line x1={sx} y1={sy} x2={mx} y2={my} stroke={color} strokeWidth={19} strokeLinecap="round" />
+      </g>
+    );
+  };
+
+  // Where the pupils look: the eyes follow the gesture's focus.
+  const look: Vec = (() => {
+    switch (activeGesture) {
+      case "point":
+        return [5, -1];
+      case "think":
+        return [1, -4];
+      case "question":
+        return [2, -3];
+      case "solemn":
+        return [0, 4];
+      case "count":
+        return [0, -2];
+      case "wave":
+        return [0, -2];
+      case "big":
+        return [0, -2];
+      case "small":
+        return [0, 2];
+      case "compare":
+        return [3, 0];
+      case "emphasis":
+        return [0, 1];
+      default:
+        return [0, 0];
+    }
+  })();
+  const lookX = look[0] + (activeGesture === "idle" ? Math.sin(frame / 50) * 1.5 : 0);
+  const lookY = look[1];
+
   // Life, not randomness: breathing is always on but subtle; gesture-specific
   // motion only plays while its gesture is active.
   const breath = Math.sin(frame / 26) * 2.5;
@@ -511,13 +607,23 @@ const NarratorBody: React.FC<BodyProps> = ({
   } else if (activeGesture === "point") {
     p.rHand = [p.rHand[0], p.rHand[1] + Math.sin(frame / 14) * 4];
   }
+  // Emphasis beats pump the fists as well as the head.
+  if (activeGesture === "emphasis" && nod > 0.5) {
+    const pump = nod * 0.9;
+    p.lHand = [p.lHand[0], p.lHand[1] + pump];
+    p.rHand = [p.rHand[0], p.rHand[1] + pump];
+  }
+  // Idle isn't frozen: a slow, calm weight shift (one sway every ~5s).
+  if (activeGesture === "idle") {
+    p.shiftX += Math.sin(frame / 160) * 5;
+  }
 
-  // Eye blink on a natural-ish cycle.
+  // Eye blink on a natural-ish cycle; surprise widens the eyes.
   const blinkT = frame % 107;
-  const eyeScaleY = interpolate(blinkT, [0, 4, 8], [1, 0.1, 1], {
-    extrapolateRight: "clamp",
-  });
-  const eyeRy = (expression === "surprise" ? 8.5 : 7) * eyeScaleY;
+  const eyeScaleY =
+    interpolate(blinkT, [0, 4, 8], [1, 0.1, 1], {
+      extrapolateRight: "clamp",
+    }) * (expression === "surprise" ? 1.2 : 1);
 
   const skin = theme === "egypt" ? SKIN_EGYPT : SKIN;
   const talking = mouthOpen > 0.06;
@@ -591,11 +697,60 @@ const NarratorBody: React.FC<BodyProps> = ({
       {/* ================= ARMS & HANDS (pose-driven) ================= */}
       <line x1="102" y1="190" x2={p.lElbow[0]} y2={p.lElbow[1]} stroke={INK} strokeWidth="9" strokeLinecap="round" />
       <line x1={p.lElbow[0]} y1={p.lElbow[1]} x2={p.lHand[0]} y2={p.lHand[1]} stroke={INK} strokeWidth="8" strokeLinecap="round" />
-      <Hand x={p.lHand[0]} y={p.lHand[1]} side="left" fingers={p.countFingers === "left"} skin={skin} />
 
       <line x1="198" y1="190" x2={p.rElbow[0]} y2={p.rElbow[1]} stroke={INK} strokeWidth="9" strokeLinecap="round" />
       <line x1={p.rElbow[0]} y1={p.rElbow[1]} x2={p.rHand[0]} y2={p.rHand[1]} stroke={INK} strokeWidth="8" strokeLinecap="round" />
-      <Hand x={p.rHand[0]} y={p.rHand[1]} side="right" fingers={p.countFingers === "right"} skin={skin} />
+
+      {/* Themed sleeve cuffs over the upper arms (gladiator goes bare-armed) */}
+      {sleeveColor && (
+        <g>
+          {sleeveCuff(102, 190, p.lElbow[0], p.lElbow[1], sleeveColor)}
+          {sleeveCuff(198, 190, p.rElbow[0], p.rElbow[1], sleeveColor)}
+        </g>
+      )}
+      {theme === "gladiator" && (
+        <g>
+          {[0.3, 0.55, 0.8].map((t, i) => {
+            const bx = lerp(p.rElbow[0], p.rHand[0], t);
+            const by = lerp(p.rElbow[1], p.rHand[1], t);
+            const ang =
+              (Math.atan2(p.rHand[1] - p.rElbow[1], p.rHand[0] - p.rElbow[0]) * 180) / Math.PI;
+            return (
+              <rect
+                key={i}
+                x={bx - 13}
+                y={by - 8}
+                width={26}
+                height={16}
+                rx={4}
+                fill="#d49b33"
+                stroke={INK}
+                strokeWidth={3}
+                transform={`rotate(${ang} ${bx} ${by})`}
+              />
+            );
+          })}
+        </g>
+      )}
+
+      <Hand
+        x={p.lHand[0]}
+        y={p.lHand[1]}
+        fromX={p.lElbow[0]}
+        fromY={p.lElbow[1]}
+        side="left"
+        variant={handVariant("left")}
+        skin={skin}
+      />
+      <Hand
+        x={p.rHand[0]}
+        y={p.rHand[1]}
+        fromX={p.rElbow[0]}
+        fromY={p.rElbow[1]}
+        side="right"
+        variant={handVariant("right")}
+        skin={skin}
+      />
 
       {theme === "egypt" && (
         <>
@@ -800,8 +955,26 @@ const NarratorBody: React.FC<BodyProps> = ({
               </>
             )}
             <Brows expression={expression} />
-            <ellipse cx="128" cy="88" rx="6" ry={eyeRy} fill={INK} />
-            <ellipse cx="172" cy="88" rx="6" ry={eyeRy} fill={INK} />
+            {/* Eyes with pupils that look toward the gesture's focus */}
+            {[128, 172].map((cx) => (
+              <g key={cx}>
+                <ellipse
+                  cx={cx}
+                  cy={88}
+                  rx={8.5}
+                  ry={Math.max(1.2, 9.5 * eyeScaleY)}
+                  fill="#ffffff"
+                  stroke={INK}
+                  strokeWidth={2.5}
+                />
+                <circle
+                  cx={cx + lookX * eyeScaleY}
+                  cy={88 + lookY * eyeScaleY}
+                  r={Math.max(0.8, 3.8 * eyeScaleY)}
+                  fill={INK}
+                />
+              </g>
+            ))}
 
             {expression === "surprise" ? (
               <ellipse cx="150" cy="122" rx="10" ry="13" fill="#5a1d1d" stroke={INK} strokeWidth="3" />
