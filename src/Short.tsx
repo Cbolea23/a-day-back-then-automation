@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useMemo} from "react";
 import {
   AbsoluteFill,
   Audio,
@@ -12,6 +12,7 @@ import {
 } from "remotion";
 import {Captions} from "./Captions";
 import {Narrator, getThemeFromSlug} from "./Narrator";
+import {planSpeech} from "./speech";
 import {FPS, Mood, Scene, ScriptProps, sceneFrames} from "./types";
 
 const MOOD_GRADIENTS: Record<Mood, string> = {
@@ -135,21 +136,25 @@ const SceneView: React.FC<{
   slug: string;
 }> = ({scene, index, hook, durationInFrames, slug}) => {
   const theme = getThemeFromSlug(slug);
+  // One speech plan per scene: gestures, expressions and nods all follow
+  // the narration text, in sync with the captions.
+  const plan = useMemo(
+    () =>
+      planSpeech(scene.text, durationInFrames, {isFirstScene: index === 0}),
+    [scene.text, durationInFrames, index],
+  );
   return (
     <AbsoluteFill>
       <Background scene={scene} durationInFrames={durationInFrames} />
       {scene.audio ? <Audio src={staticFile(scene.audio)} /> : null}
 
-      {/* Narrator stands in the lower part with lifelike screen presence & motion */}
+      {/* Narrator performs the narration: entrance, then purposeful gestures.
+          It stays planted — no more random wandering between scenes. */}
       {(() => {
         // Subtle entrance slide-up on each scene switch
         const slideUp = interpolate(useCurrentFrame(), [0, 10], [28, 0], {
           extrapolateRight: "clamp",
         });
-        // Gentle wandering / pacing across scenes (left, center, right)
-        const scenePositions = [0, -35, 30, -20, 25, 0];
-        const targetX = scenePositions[index % scenePositions.length];
-        const moveX = interpolate(useCurrentFrame(), [0, durationInFrames], [targetX * 0.5, targetX]);
 
         return (
           <div
@@ -160,11 +165,15 @@ const SceneView: React.FC<{
               right: 0,
               display: "flex",
               justifyContent: "center",
-              transform: `translateX(${moveX}px)`,
               filter: "drop-shadow(0 12px 28px rgba(0,0,0,0.65))",
             }}
           >
-            <Narrator height={700} theme={theme} />
+            <Narrator
+              height={700}
+              theme={theme}
+              plan={plan}
+              audioSrc={scene.audio}
+            />
           </div>
         );
       })()}

@@ -71,6 +71,13 @@ Output goes to `out/<slug>.mp4`.
 
 - Channel name, topics, formats: `topics.json`
 - Look of the narrator: `src/Narrator.tsx` (plain SVG, replace with your own design)
+- Narrator performance: `src/speech.ts` runs a gesture director over each scene's
+  text — every sentence gets a purposeful gesture (point, count, question,
+  think, shrug, solemn, surprise, compare, wave, big/small, emphasis) plus a
+  matching facial expression, head-nods on emphasis words, and a mouth driven
+  by the real voiceover audio (`@remotion/media-utils`). Captions and gestures
+  share the same word timing, so they never drift apart. Tweak the cue word
+  lists in `classifySentence()` or the poses in `POSES` to direct the acting.
 - Caption style and position: `src/Captions.tsx`, `src/Short.tsx`
 - Hook banner length: `HOOK_FRAMES` in `src/Short.tsx`
 - Image style suffix: `IMAGE_STYLE` in `scripts/make-script.mjs`

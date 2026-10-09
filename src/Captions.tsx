@@ -1,5 +1,6 @@
 import React, {useMemo} from "react";
 import {interpolate, useCurrentFrame} from "remotion";
+import {activeWordIndex, splitWords, wordStartFrames} from "./speech";
 
 type Props = {
   text: string;
@@ -13,9 +14,6 @@ type Props = {
   /** Horizontal padding of the caption block in px. */
   paddingX?: number;
 };
-
-const splitWords = (text: string): string[] =>
-  text.trim().split(/\s+/).filter(Boolean);
 
 /**
  * Word-by-word captions. Timing is spread over the scene in proportion to word
@@ -34,15 +32,7 @@ export const Captions: React.FC<Props> = ({
   const words = useMemo(() => splitWords(text), [text]);
 
   const {starts, chunks} = useMemo(() => {
-    const weights = words.map((w) => w.length + 2);
-    const total = weights.reduce((a, b) => a + b, 0);
-    const usable = durationInFrames * 0.96;
-    let acc = 0;
-    const startFrames = weights.map((w) => {
-      const s = (acc / total) * usable;
-      acc += w;
-      return s;
-    });
+    const startFrames = wordStartFrames(words, durationInFrames);
 
     // Break chunks at sentence ends or every `chunkSize` words.
     const result: number[][] = [];
@@ -61,12 +51,7 @@ export const Captions: React.FC<Props> = ({
     return {starts: startFrames, chunks: result};
   }, [words, durationInFrames, chunkSize]);
 
-  let activeWord = 0;
-  for (let i = 0; i < starts.length; i++) {
-    if (frame >= starts[i]) {
-      activeWord = i;
-    }
-  }
+  const activeWord = activeWordIndex(starts, frame);
   const chunk = chunks.find((c) => c.includes(activeWord)) ?? chunks[0] ?? [];
   const chunkStart = starts[chunk[0]] ?? 0;
   const pop = interpolate(frame - chunkStart, [0, 5], [0.92, 1], {

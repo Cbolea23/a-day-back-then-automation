@@ -12,6 +12,7 @@ import {
 } from "remotion";
 import {Captions} from "./Captions";
 import {Narrator, getThemeFromSlug, CharacterTheme} from "./Narrator";
+import {planSpeech} from "./speech";
 import {Mood, Scene, ScriptProps, sceneFrames, totalFrames} from "./types";
 
 const MOOD_GRADIENTS: Record<Mood, string> = {
@@ -176,19 +177,27 @@ const LongScene: React.FC<{
       />
       {scene.audio ? <Audio src={staticFile(scene.audio)} /> : null}
 
-      {/* Narrator stands bottom-right with lifelike presence & shadow */}
+      {/* Narrator performs the narration bottom-right, gestures synced to speech */}
       {(() => {
-        const bounce = Math.sin(useCurrentFrame() / 15) * 4;
+        const plan = planSpeech(scene.text, durationInFrames, {
+          isFirstScene: index === 0,
+        });
         return (
           <div
             style={{
               position: "absolute",
               right: 90,
-              bottom: 24 + bounce,
+              bottom: 24,
               filter: "drop-shadow(0 14px 28px rgba(0,0,0,0.65))",
             }}
           >
-            <Narrator height={600} theme={theme} tunic={index % 2 === 0 ? "#e8cf9a" : "#d9bd86"} />
+            <Narrator
+              height={600}
+              theme={theme}
+              tunic={index % 2 === 0 ? "#e8cf9a" : "#d9bd86"}
+              plan={plan}
+              audioSrc={scene.audio}
+            />
           </div>
         );
       })()}
