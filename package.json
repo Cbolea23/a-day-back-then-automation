@@ -1,0 +1,40 @@
+{
+  "name": "shorts-factory",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:sample": "remotion render src/index.ts Short out/sample.mp4 --props=./data/sample.json",
+    "script": "node scripts/make-script.mjs",
+    "script:long": "node scripts/make-long-script.mjs",
+    "images": "node scripts/attach-images.mjs",
+    "images:make": "node scripts/make-images.mjs",
+    "voice": "node scripts/make-voice.mjs",
+    "voice:test": "node scripts/voice-test.mjs",
+    "render": "node scripts/render.mjs",
+    "build-video": "node scripts/build-video.mjs",
+    "build-long": "node scripts/build-long.mjs",
+    "upload:auth": "node scripts/upload-youtube.mjs --auth",
+    "upload": "node scripts/upload-youtube.mjs",
+    "upload:long": "node scripts/upload-youtube.mjs --long",
+    "upload:fb": "node scripts/upload-facebook.mjs",
+    "upload:fb:long": "node scripts/upload-facebook.mjs --long",
+    "upload:ig": "node scripts/upload-instagram.mjs",
+    "upload:tiktok": "node scripts/upload-tiktok.mjs",
+    "upload:tiktok:safe": "node scripts/upload-tiktok-queue.mjs",
+    "schedule:all": "node scripts/schedule-all.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "playwright": "^1.64.0",
+    "typescript": "^5.5.0"
+  }
+}

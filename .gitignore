@@ -1,0 +1,23 @@
+node_modules
+out
+public/audio
+public/images
+public/long
+scripts-out
+long-out
+.env*
+*.log
+
+# Sensitive Credentials & Tokens
+client_secret*.json
+backup/
+*.tar.gz
+*.zip
+youtube-tokens.json
+facebook-tokens.json
+instagram-tokens.json
+.tiktok-session/
+.facebook-session/
+published-urls-*.json
+
+
