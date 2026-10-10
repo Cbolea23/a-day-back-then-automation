@@ -35,6 +35,7 @@ export function getThemeFromSlug(slug: string = ""): CharacterTheme {
     s.includes("pyramid") ||
     s.includes("mummy") ||
     s.includes("embalmer") ||
+    s.includes("mesopotamia") ||
     s.includes("scribe")
   ) {
     return "egypt";
@@ -51,13 +52,42 @@ export function getThemeFromSlug(slug: string = ""): CharacterTheme {
   if (s.includes("viking") || s.includes("norse")) {
     return "viking";
   }
-  if (s.includes("knight")) {
+  if (s.includes("knight") || s.includes("samurai") || s.includes("ninja")) {
     return "knight";
   }
   if (s.includes("plague")) {
     return "plague-doctor";
   }
-  if (s.includes("medieval") || s.includes("castle") || s.includes("peasant")) {
+  if (
+    s.includes("medieval") ||
+    s.includes("castle") ||
+    s.includes("peasant") ||
+    s.includes("blacksmith") ||
+    s.includes("monk") ||
+    s.includes("miller") ||
+    s.includes("barber") ||
+    s.includes("dark-ages") ||
+    s.includes("tudor") ||
+    s.includes("renaissance") ||
+    s.includes("wages") ||
+    s.includes("fast-days")
+  ) {
+    return "medieval";
+  }
+  if (
+    s.includes("pirate") ||
+    s.includes("victorian") ||
+    s.includes("gold-rush") ||
+    s.includes("wwii") ||
+    s.includes("ottoman") ||
+    s.includes("edo") ||
+    s.includes("silk-road") ||
+    s.includes("mongol") ||
+    s.includes("aztec") ||
+    s.includes("maya") ||
+    s.includes("inca") ||
+    s.includes("chinampa")
+  ) {
     return "medieval";
   }
   return "roman";

@@ -4,7 +4,10 @@ public/audio
 # Images and Scripts tracked for Muse AI collaboration
 !public/images/*
 !public/images/*/*
+!public/long/*
+!public/long/*/*
 !scripts-out/
+!long-out/
 scripts-out/*.cache/
 long-out/.cache/
 .env*

@@ -105,3 +105,27 @@ The following topic directories and prompt files are ready for you right now:
 3. Generate the 9:16 images and save them as `public/images/<slug>/1.png`, `2.png`, etc.
 4. Commit and push your changes to GitHub.
 5. Antigravity will pull the images, synthesize matching voiceover, and compile the final videos!
+
+---
+
+## 🎬 Longform Episode Asset Guide (16:9 Landscape)
+
+We are now expanding into **Full-Length Longform Episodes (8–12 minutes)**!
+
+### 🎨 Longform Requirements:
+- **Aspect Ratio:** Horizontal **`16:9`** (`1920×1080` or `2048×1152`).
+- **Style:** Consistent with the channel's 2D flat cartoon illustration, thick dark outlines, warm earthy textures.
+- **Narrator Placement:** In longform, the narrator is placed on the side (left/right bottom third). Keep central scenes open and avoid people in the lower thirds.
+- **No Text / No Watermarks.**
+
+### 📁 Where to Find Longform Prompts & Save Images:
+1. **Prompts:** Located in `long-out/<slug>.prompts.txt`
+2. **Save Images:** Save into `public/long/<slug>/1.png`, `2.png`, `3.png`, ...
+
+### 📋 Active Longform Topics Ready for Generation:
+1. `roman-day-hour-by-hour` (42 scenes) — *A Day in Ancient Rome, Hour by Hour*
+2. `roman-survive-a-week` (37 scenes) — *Would You Survive a Week in Ancient Rome?*
+3. `gladiator-real-life` (37 scenes) — *The Real Life of a Gladiator*
+4. `roman-legionary-career` (37 scenes) — *A Career in the Roman Army*
+5. `roman-myths-debunked` (32 scenes) — *Roman Myths, Debunked*
+
