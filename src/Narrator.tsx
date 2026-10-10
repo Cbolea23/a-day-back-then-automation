@@ -5,7 +5,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import {visualizeAudio, useAudioData} from "@remotion/media-utils";
+import {getWaveformPortion, useAudioData} from "@remotion/media-utils";
 import {
   Expression,
   GestureKind,
@@ -331,24 +331,19 @@ const AudioMouth: React.FC<{
     if (!audioData) {
       return null; // not loaded yet -> caller falls back to word timing
     }
-    const maxFrame = Math.max(0, Math.floor(audioData.durationInSeconds * fps) - 1);
-    let sum = 0;
-    let n = 0;
-    for (let f = frame - 1; f <= frame + 1; f++) {
-      const cf = Math.min(Math.max(0, f), maxFrame);
-      const data = visualizeAudio({
-        fps,
-        frame: cf,
-        audioData,
-        numberOfSamples: 32,
-      });
-      sum += data.reduce((a, b) => a + b, 0) / data.length;
-      n++;
-    }
-    const vol = sum / n;
-    // Map the raw amplitude to a clearly visible mouth opening. Speech
-    // typically lands around 0.05-0.25 mean amplitude; anything under 0.02
-    // is treated as silence so the mouth rests closed between words.
+    // Time-domain amplitude for this frame: the true speech envelope.
+    // (visualizeAudio returns FFT frequency bins — averaging those gives
+    // near-zero for speech and can never drive a mouth.)
+    const portion = getWaveformPortion({
+      audioData,
+      startTimeInSeconds: Math.max(0, (frame - 1) / fps),
+      durationInSeconds: 3 / fps,
+      numberOfSamples: 24,
+      outputRange: "zero-to-one",
+      normalize: false,
+    });
+    const vol =
+      portion.reduce((a, b) => a + b.amplitude, 0) / portion.length;
     const open = Math.min(1, Math.max(0, (vol - 0.02) / 0.18));
     // Gentle curve so it reads as speech, not a meter. The flutter is kept
     // tiny on purpose: the open/close rhythm must come from the audio alone,
