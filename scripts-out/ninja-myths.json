@@ -7,32 +7,56 @@
     {
       "text": "Everything Hollywood taught you about ninjas wearing tight black suits and smoke bombs is theatrical fiction.",
       "mood": "night",
-      "imagePrompt": "Misty pine forest on a mountainside at twilight with distant mountain silhouettes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Misty pine forest on a mountainside at twilight with distant mountain silhouettes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/ninja-myths/1.png",
+      "audio": "audio/ninja-myths/1.wav",
+      "voicedText": "Everything Hollywood taught you about ninjas wearing tight black suits and smoke bombs is theatrical fiction.",
+      "seconds": 7.6
     },
     {
       "text": "Historical shinobi were covert intelligence operatives whose primary superpower was blending in.",
       "mood": "day",
-      "imagePrompt": "Rustic Japanese countryside dirt trail passing humble thatch-roof farmhouses. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Rustic Japanese countryside dirt trail passing humble thatch-roof farmhouses. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/ninja-myths/2.png",
+      "audio": "audio/ninja-myths/2.wav",
+      "voicedText": "Historical shinobi were covert intelligence operatives whose primary superpower was blending in.",
+      "seconds": 7.1
     },
     {
       "text": "They disguised themselves as wandering monks, merchant traders, or ordinary peasant farmers.",
       "mood": "warm",
-      "imagePrompt": "Wooden wayside tea stall with bamboo benches and clay teapots by a mountain path. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Wooden wayside tea stall with bamboo benches and clay teapots by a mountain path. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/ninja-myths/3.png",
+      "audio": "audio/ninja-myths/3.wav",
+      "voicedText": "They disguised themselves as wandering monks, merchant traders, or ordinary peasant farmers.",
+      "seconds": 6.5
     },
     {
       "text": "If a ninja pulled a weapon, their cover was blown and their infiltration mission had failed.",
       "mood": "dark",
-      "imagePrompt": "Concealed small iron kunai and short sickle hidden beneath wooden floorboards. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Concealed small iron kunai and short sickle hidden beneath wooden floorboards. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/ninja-myths/4.png",
+      "audio": "audio/ninja-myths/4.wav",
+      "voicedText": "If a ninja pulled a weapon, their cover was blown and their infiltration mission had failed.",
+      "seconds": 6.1
     },
     {
       "text": "Their greatest weapon was not a throwing star, but accurate maps, secret codes, and forged castle permits.",
       "mood": "warm",
-      "imagePrompt": "Hand-drawn topographical scroll map and black ink calligraphy on mulberry paper. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Hand-drawn topographical scroll map and black ink calligraphy on mulberry paper. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/ninja-myths/5.png",
+      "audio": "audio/ninja-myths/5.wav",
+      "voicedText": "Their greatest weapon was not a throwing star, but accurate maps, secret codes, and forged castle permits.",
+      "seconds": 7.4
     },
     {
       "text": "Did you picture ninjas running across rooftops in black? Drop your thoughts below and follow for daily history!",
       "mood": "day",
-      "imagePrompt": "Serene bamboo forest path bathed in soft morning sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Serene bamboo forest path bathed in soft morning sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/ninja-myths/6.png",
+      "audio": "audio/ninja-myths/6.wav",
+      "voicedText": "Did you picture ninjas running across rooftops in black? Drop your thoughts below and follow for daily history!",
+      "seconds": 7
     }
   ]
 }

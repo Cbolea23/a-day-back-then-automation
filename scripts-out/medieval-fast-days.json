@@ -7,32 +7,56 @@
     {
       "text": "In medieval Europe, the church mandated fasting for nearly a third of the entire year.",
       "mood": "cool",
-      "imagePrompt": "Gothic stone monastery courtyard on a foggy autumn morning. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Gothic stone monastery courtyard on a foggy autumn morning. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-fast-days/1.png",
+      "audio": "audio/medieval-fast-days/1.wav",
+      "voicedText": "In medieval Europe, the church mandated fasting for nearly a third of the entire year.",
+      "seconds": 5.5
     },
     {
       "text": "During Lent, Advent, and every Friday, eating meat, dairy, or eggs was strictly forbidden.",
       "mood": "day",
-      "imagePrompt": "Long rustic wooden dining trestle in an empty stone refectory hall. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Long rustic wooden dining trestle in an empty stone refectory hall. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-fast-days/2.png",
+      "audio": "audio/medieval-fast-days/2.wav",
+      "voicedText": "During Lent, Advent, and every Friday, eating meat, dairy, or eggs was strictly forbidden.",
+      "seconds": 7.4
     },
     {
       "text": "So people ate fish. Pickled herring, salted cod, and freshwater eel flooded every town market.",
       "mood": "cool",
-      "imagePrompt": "Medieval open-air river fish market with wooden barrels and hanging dried fish. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Medieval open-air river fish market with wooden barrels and hanging dried fish. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-fast-days/3.png",
+      "audio": "audio/medieval-fast-days/3.wav",
+      "voicedText": "So people ate fish. Pickled herring, salted cod, and freshwater eel flooded every town market.",
+      "seconds": 6.8
     },
     {
       "text": "Wealthy lords got creative, reclassifying beavers and barnacle geese as fish to skirt the rules.",
       "mood": "warm",
-      "imagePrompt": "Cozy medieval stone hearth with brass pots and fresh herbs hanging above. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Cozy medieval stone hearth with brass pots and fresh herbs hanging above. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-fast-days/4.png",
+      "audio": "audio/medieval-fast-days/4.wav",
+      "voicedText": "Wealthy lords got creative, reclassifying beavers and barnacle geese as fish to skirt the rules.",
+      "seconds": 7
     },
     {
       "text": "Even almond milk was invented as a butter and cream substitute during fast days.",
       "mood": "warm",
-      "imagePrompt": "Medieval pantry table with cracked almond shells and an earthenware pitcher. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Medieval pantry table with cracked almond shells and an earthenware pitcher. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-fast-days/5.png",
+      "audio": "audio/medieval-fast-days/5.wav",
+      "voicedText": "Even almond milk was invented as a butter and cream substitute during fast days.",
+      "seconds": 5.3
     },
     {
       "text": "Could you survive 130 days on salted herring and almonds? Drop your thoughts below and follow for daily history!",
       "mood": "day",
-      "imagePrompt": "Lush medieval monastery garden with herb patches under golden morning sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Lush medieval monastery garden with herb patches under golden morning sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-fast-days/6.png",
+      "audio": "audio/medieval-fast-days/6.wav",
+      "voicedText": "Could you survive 130 days on salted herring and almonds? Drop your thoughts below and follow for daily history!",
+      "seconds": 7.8
     }
   ]
 }

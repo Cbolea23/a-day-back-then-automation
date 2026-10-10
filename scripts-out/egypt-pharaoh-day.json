@@ -10,7 +10,8 @@
       "imagePrompt": "Sunlight shining into an ancient Egyptian palace chamber with carved stone pillars and alabaster urns.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-pharaoh-day/1.png",
       "audio": "audio/egypt-pharaoh-day/1.wav",
-      "seconds": 5.9
+      "seconds": 5.9,
+      "voicedText": "You wake up in ancient Egypt as a living god, but your schedule is totally packed."
     },
     {
       "text": "First, priests wash and dress you in fine linen, anointed with fragrant oils.",
@@ -18,7 +19,8 @@
       "imagePrompt": "A luxurious ancient Egyptian bath hall featuring polished limestone tiles and golden vessels.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-pharaoh-day/2.png",
       "audio": "audio/egypt-pharaoh-day/2.wav",
-      "seconds": 5.6
+      "seconds": 5.6,
+      "voicedText": "First, priests wash and dress you in fine linen, anointed with fragrant oils."
     },
     {
       "text": "Then comes prayer. You must perform morning rituals to keep the universe from falling into chaos.",
@@ -26,7 +28,8 @@
       "imagePrompt": "An inner sanctuary of an ancient Egyptian temple illuminated by incense smoke and flickering oil lamps.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-pharaoh-day/3.png",
       "audio": "audio/egypt-pharaoh-day/3.wav",
-      "seconds": 6.8
+      "seconds": 6.8,
+      "voicedText": "Then comes prayer. You must perform morning rituals to keep the universe from falling into chaos."
     },
     {
       "text": "Next, state business. You meet viziers to discuss grain harvests, taxes, and giant pyramid construction.",
@@ -34,7 +37,8 @@
       "imagePrompt": "A high-ceilinged Egyptian hall with papyrus columns, wall paintings, and detailed maps on scrolls.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-pharaoh-day/4.png",
       "audio": "audio/egypt-pharaoh-day/4.wav",
-      "seconds": 7.4
+      "seconds": 7.4,
+      "voicedText": "Next, state business. You meet viziers to discuss grain harvests, taxes, and giant pyramid construction."
     },
     {
       "text": "Midday brings formal feasts, but also hearing legal disputes from high-ranking citizens.",
@@ -42,7 +46,8 @@
       "imagePrompt": "An open-air Egyptian courtyard decorated with woven reed mats, stone tables, and fruit baskets.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-pharaoh-day/5.png",
       "audio": "audio/egypt-pharaoh-day/5.wav",
-      "seconds": 6.3
+      "seconds": 6.3,
+      "voicedText": "Midday brings formal feasts, but also hearing legal disputes from high-ranking citizens."
     },
     {
       "text": "In the evening, you tour royal gardens, review troop movements, and inspect temple blueprints.",
@@ -50,7 +55,8 @@
       "imagePrompt": "A tranquil Egyptian palace garden with a rectangular lotus pond surrounded by palm trees under a twilight sky.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-pharaoh-day/6.png",
       "audio": "audio/egypt-pharaoh-day/6.wav",
-      "seconds": 6.3
+      "seconds": 6.4,
+      "voicedText": "In the evening, you tour royal gardens, review troop movements, and inspect temple blueprints."
     },
     {
       "text": "Being divine sounds great, but what happens when a bad harvest makes people question your godhood?",
@@ -58,7 +64,8 @@
       "imagePrompt": "A dramatic view of Egyptian pyramids silhouetted against a dusty, dark orange sunset.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-pharaoh-day/7.png",
       "audio": "audio/egypt-pharaoh-day/7.wav",
-      "seconds": 5.9
+      "seconds": 5.9,
+      "voicedText": "Being divine sounds great, but what happens when a bad harvest makes people question your godhood?"
     }
   ],
   "claimsToVerify": [

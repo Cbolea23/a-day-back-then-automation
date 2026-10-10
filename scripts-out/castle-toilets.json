@@ -7,32 +7,56 @@
     {
       "text": "You walk down a narrow stone corridor and find a small, private alcove: the garderobe.",
       "mood": "cool",
-      "imagePrompt": "a narrow, dimly lit medieval stone hallway. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "a narrow, dimly lit medieval stone hallway. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/castle-toilets/1.wav",
+      "voicedText": "You walk down a narrow stone corridor and find a small, private alcove: the garderobe.",
+      "seconds": 5.9,
+      "image": "images/castle-toilets/1.png"
     },
     {
       "text": "It’s basically a stone bench with a hole. You sit, and gravity does all the hard work.",
       "mood": "cool",
-      "imagePrompt": "a stone seat built into a castle wall with a small window. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "a stone seat built into a castle wall with a small window. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/castle-toilets/2.wav",
+      "voicedText": "It’s basically a stone bench with a hole. You sit, and gravity does all the hard work.",
+      "seconds": 5.7,
+      "image": "images/castle-toilets/2.png"
     },
     {
       "text": "Your waste drops down a long shaft. It lands in a pit or a moat below.",
       "mood": "dark",
-      "imagePrompt": "a view looking down a dark stone shaft inside a castle wall. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "a view looking down a dark stone shaft inside a castle wall. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/castle-toilets/3.wav",
+      "voicedText": "Your waste drops down a long shaft. It lands in a pit or a moat below.",
+      "seconds": 5,
+      "image": "images/castle-toilets/3.png"
     },
     {
       "text": "It smells quite intense, so they probably hung herbs nearby to mask the scent. It was practical.",
       "mood": "cool",
-      "imagePrompt": "bundles of dried lavender and sage hanging on a stone hook. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "bundles of dried lavender and sage hanging on a stone hook. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/castle-toilets/4.wav",
+      "voicedText": "It smells quite intense, so they probably hung herbs nearby to mask the scent. It was practical.",
+      "seconds": 6.6,
+      "image": "images/castle-toilets/4.png"
     },
     {
       "text": "Maintenance crews were hired to empty the pits periodically. It was a messy, essential job.",
       "mood": "day",
-      "imagePrompt": "an exterior view of a castle base near a stagnant moat. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "an exterior view of a castle base near a stagnant moat. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/castle-toilets/5.wav",
+      "voicedText": "Maintenance crews were hired to empty the pits periodically. It was a messy, essential job.",
+      "seconds": 5.8,
+      "image": "images/castle-toilets/5.png"
     },
     {
       "text": "You’ve done your business, but now you need something to wipe with. Want to know what they used?",
       "mood": "warm",
-      "imagePrompt": "undefined. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "undefined. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/castle-toilets/6.wav",
+      "voicedText": "You’ve done your business, but now you need something to wipe with. Want to know what they used?",
+      "seconds": 4.8,
+      "image": "images/castle-toilets/6.png"
     }
   ],
   "claimsToVerify": [

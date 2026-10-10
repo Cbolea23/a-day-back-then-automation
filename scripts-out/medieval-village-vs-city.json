@@ -7,32 +7,56 @@
     {
       "text": "You wake up in a village. Your day is ruled by the sun and the harvest.",
       "mood": "day",
-      "imagePrompt": "a small wooden cottage in a green, rolling wheat field. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "a small wooden cottage in a green, rolling wheat field. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-village-vs-city/1.wav",
+      "voicedText": "You wake up in a village. Your day is ruled by the sun and the harvest.",
+      "seconds": 4.7,
+      "image": "images/medieval-village-vs-city/1.png"
     },
     {
       "text": "Food is simple, mostly grains and pottage. You know everyone in town by their first name.",
       "mood": "day",
-      "imagePrompt": "a clay bowl filled with vegetable pottage on a rough wooden table. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "a clay bowl filled with vegetable pottage on a rough wooden table. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-village-vs-city/2.wav",
+      "voicedText": "Food is simple, mostly grains and pottage. You know everyone in town by their first name.",
+      "seconds": 6,
+      "image": "images/medieval-village-vs-city/2.png"
     },
     {
       "text": "But maybe you crave opportunity. You head to the city gates, seeking a trade apprenticeship.",
       "mood": "warm",
-      "imagePrompt": "a stone city wall with a busy wooden gatehouse. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "a stone city wall with a busy wooden gatehouse. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-village-vs-city/3.wav",
+      "voicedText": "But maybe you crave opportunity. You head to the city gates, seeking a trade apprenticeship.",
+      "seconds": 5.4,
+      "image": "images/medieval-village-vs-city/3.png"
     },
     {
       "text": "The city is loud, crowded, and smells of smoke. There is a higher risk of disease here.",
       "mood": "dark",
-      "imagePrompt": "narrow, crowded medieval streets with overhanging timber houses. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "narrow, crowded medieval streets with overhanging timber houses. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-village-vs-city/4.wav",
+      "voicedText": "The city is loud, crowded, and smells of smoke. There is a higher risk of disease here.",
+      "seconds": 5.9,
+      "image": "images/medieval-village-vs-city/4.png"
     },
     {
       "text": "Still, you gain access to markets, guilds, and the chance to buy your freedom from lords.",
       "mood": "day",
-      "imagePrompt": "a bustling medieval marketplace with colorful market stalls. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "a bustling medieval marketplace with colorful market stalls. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-village-vs-city/5.wav",
+      "voicedText": "Still, you gain access to markets, guilds, and the chance to buy your freedom from lords.",
+      "seconds": 6,
+      "image": "images/medieval-village-vs-city/5.png"
     },
     {
       "text": "Safe routine or risky success? Which one would you choose for your medieval self?",
       "mood": "warm",
-      "imagePrompt": "undefined. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "undefined. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-village-vs-city/6.wav",
+      "voicedText": "Safe routine or risky success? Which one would you choose for your medieval self?",
+      "seconds": 5.1,
+      "image": "images/medieval-village-vs-city/6.png"
     }
   ],
   "claimsToVerify": [

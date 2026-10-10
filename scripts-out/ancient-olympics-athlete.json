@@ -10,7 +10,8 @@
       "imagePrompt": "Ancient Greek stadium with marble benches and dust.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/ancient-olympics-athlete/1.png",
       "audio": "audio/ancient-olympics-athlete/1.wav",
-      "seconds": 5.2
+      "seconds": 7.7,
+      "voicedText": "You are a naked Olympian. You stand in the scorching Greek sun, covered in olive oil."
     },
     {
       "text": "There are no uniforms here. You compete in the nude, just like every other athlete.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Ancient Greek marble statues in a training gym.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/ancient-olympics-athlete/2.png",
       "audio": "audio/ancient-olympics-athlete/2.wav",
-      "seconds": 5.2
+      "seconds": 6.1,
+      "voicedText": "There are no uniforms here. You compete in the nude, just like every other athlete."
     },
     {
       "text": "The events are brutal. You might wrestle in mud or sprint until your lungs burn.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Empty dirt track in an ancient stadium.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/ancient-olympics-athlete/3.png",
       "audio": "audio/ancient-olympics-athlete/3.wav",
-      "seconds": 5
+      "seconds": 5,
+      "voicedText": "The events are brutal. You might wrestle in mud or sprint until your lungs burn."
     },
     {
       "text": "A sacred truce probably protects travelers, but the competition itself is fierce and strictly monitored.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Distant view of mountain range in Greece.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/ancient-olympics-athlete/4.png",
       "audio": "audio/ancient-olympics-athlete/4.wav",
-      "seconds": 8.1
+      "seconds": 8.1,
+      "voicedText": "A sacred truce probably protects travelers, but the competition itself is fierce and strictly monitored."
     },
     {
       "text": "You do not win gold medals. You win a simple crown of olive leaves and eternal glory.",
@@ -42,7 +46,8 @@
       "imagePrompt": "A single olive branch lying on a stone pedestal.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/ancient-olympics-athlete/5.png",
       "audio": "audio/ancient-olympics-athlete/5.wav",
-      "seconds": 5.9
+      "seconds": 5.9,
+      "voicedText": "You do not win gold medals. You win a simple crown of olive leaves and eternal glory."
     },
     {
       "text": "But wait, there was a dark side to your fame. Want to hear what happened if you cheated?",
@@ -50,7 +55,8 @@
       "imagePrompt": "Close up of an ancient stone column.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/ancient-olympics-athlete/6.png",
       "audio": "audio/ancient-olympics-athlete/6.wav",
-      "seconds": 4.7
+      "seconds": 4.7,
+      "voicedText": "But wait, there was a dark side to your fame. Want to hear what happened if you cheated?"
     }
   ],
   "claimsToVerify": [

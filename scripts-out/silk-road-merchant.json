@@ -7,32 +7,56 @@
     {
       "text": "We imagine one brave merchant riding a camel from Rome all the way to China, but that almost never happened.",
       "mood": "warm",
-      "imagePrompt": "Endless desert sand dunes under a blazing midday sun with distant oasis palms. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Endless desert sand dunes under a blazing midday sun with distant oasis palms. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/silk-road-merchant/1.png",
+      "audio": "audio/silk-road-merchant/1.wav",
+      "voicedText": "We imagine one brave merchant riding a camel from Rome all the way to China, but that almost never happened.",
+      "seconds": 7.5
     },
     {
       "text": "The Silk Road was an enormous relay network of regional traders passing luxury goods from city to city.",
       "mood": "day",
-      "imagePrompt": "Sprawling mud-brick desert caravanserai courtyard with wooden wagon carts. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Sprawling mud-brick desert caravanserai courtyard with wooden wagon carts. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/silk-road-merchant/2.png",
+      "audio": "audio/silk-road-merchant/2.wav",
+      "voicedText": "The Silk Road was an enormous relay network of regional traders passing luxury goods from city to city.",
+      "seconds": 7.4
     },
     {
       "text": "You traveled in massive camel caravans of hundreds of people to deter ruthless desert bandits.",
       "mood": "cool",
-      "imagePrompt": "Stone mountain pass road winding through snow-capped Central Asian peaks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Stone mountain pass road winding through snow-capped Central Asian peaks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/silk-road-merchant/3.png",
+      "audio": "audio/silk-road-merchant/3.wav",
+      "voicedText": "You traveled in massive camel caravans of hundreds of people to deter ruthless desert bandits.",
+      "seconds": 6.6
     },
     {
       "text": "At night, caravans rested at fortified roadside inns called caravanserais with water cisterns and stables.",
       "mood": "night",
-      "imagePrompt": "Arched stone gateway of a desert fortress lit by torchlight under starry sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Arched stone gateway of a desert fortress lit by torchlight under starry sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/silk-road-merchant/4.png",
+      "audio": "audio/silk-road-merchant/4.wav",
+      "voicedText": "At night, caravans rested at fortified roadside inns called caravanserais with water cisterns and stables.",
+      "seconds": 6.9
     },
     {
       "text": "Silks, spices, and glass were exchanged dozens of times, multiplying in value at every single stop.",
       "mood": "warm",
-      "imagePrompt": "Caravanserai bazaar table with bolts of colored silk, ceramic spice bowls, and glass flasks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Caravanserai bazaar table with bolts of colored silk, ceramic spice bowls, and glass flasks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/silk-road-merchant/5.png",
+      "audio": "audio/silk-road-merchant/5.wav",
+      "voicedText": "Silks, spices, and glass were exchanged dozens of times, multiplying in value at every single stop.",
+      "seconds": 7.6
     },
     {
       "text": "What ancient trade route would you travel if you had the chance? Tell us below and follow for more history back then!",
       "mood": "day",
-      "imagePrompt": "Panoramic desert oasis with sparkling turquoise mineral springs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Panoramic desert oasis with sparkling turquoise mineral springs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/silk-road-merchant/6.png",
+      "audio": "audio/silk-road-merchant/6.wav",
+      "voicedText": "What ancient trade route would you travel if you had the chance? Tell us below and follow for more history back then!",
+      "seconds": 7
     }
   ]
 }

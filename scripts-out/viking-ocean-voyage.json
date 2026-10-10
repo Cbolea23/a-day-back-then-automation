@@ -7,32 +7,56 @@
     {
       "text": "Imagine sailing across the freezing North Atlantic in an open wooden longship with thirty crewmates.",
       "mood": "cool",
-      "imagePrompt": "Viking knarr longship floating in deep ocean waves with dramatic clouds. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Viking knarr longship floating in deep ocean waves with dramatic clouds. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-ocean-voyage/1.png",
+      "audio": "audio/viking-ocean-voyage/1.wav",
+      "voicedText": "Imagine sailing across the freezing North Atlantic in an open wooden longship with thirty crewmates.",
+      "seconds": 6.5
     },
     {
       "text": "There was no cabin. When icy rain poured, you slept on the floorboards inside leather sleeping bags.",
       "mood": "night",
-      "imagePrompt": "Detailed view of wooden ship planking, coils of hemp rope, and leather gear sacks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Detailed view of wooden ship planking, coils of hemp rope, and leather gear sacks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-ocean-voyage/2.png",
+      "audio": "audio/viking-ocean-voyage/2.wav",
+      "voicedText": "There was no cabin. When icy rain poured, you slept on the floorboards inside leather sleeping bags.",
+      "seconds": 6.9
     },
     {
       "text": "Food was cold and dry: rock-hard dried cod, sour butter, and stale rye flatbread.",
       "mood": "cool",
-      "imagePrompt": "Wooden sea chest with salted dried fish and round hardtack crackers. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Wooden sea chest with salted dried fish and round hardtack crackers. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-ocean-voyage/3.png",
+      "audio": "audio/viking-ocean-voyage/3.wav",
+      "voicedText": "Food was cold and dry: rock-hard dried cod, sour butter, and stale rye flatbread.",
+      "seconds": 6
     },
     {
       "text": "Norse navigators watched the flight paths of migrating birds and the colors of drifting ocean water.",
       "mood": "day",
-      "imagePrompt": "Flock of seabirds soaring over vast open ocean swell under pale sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Flock of seabirds soaring over vast open ocean swell under pale sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-ocean-voyage/4.png",
+      "audio": "audio/viking-ocean-voyage/4.wav",
+      "voicedText": "Norse navigators watched the flight paths of migrating birds and the colors of drifting ocean water.",
+      "seconds": 6.7
     },
     {
       "text": "If a rogue storm hit, everyone took turns bailing freezing sea water with wooden buckets for days.",
       "mood": "dark",
-      "imagePrompt": "Churning dark ocean waters with white seafoam under heavy storm clouds. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Churning dark ocean waters with white seafoam under heavy storm clouds. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-ocean-voyage/5.png",
+      "audio": "audio/viking-ocean-voyage/5.wav",
+      "voicedText": "If a rogue storm hit, everyone took turns bailing freezing sea water with wooden buckets for days.",
+      "seconds": 6.3
     },
     {
       "text": "Would you dare cross the Atlantic in an open wooden boat? Drop your thoughts below and follow for daily stories!",
       "mood": "day",
-      "imagePrompt": "Green distant coastline emerging through ocean sea mist. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Green distant coastline emerging through ocean sea mist. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-ocean-voyage/6.png",
+      "audio": "audio/viking-ocean-voyage/6.wav",
+      "voicedText": "Would you dare cross the Atlantic in an open wooden boat? Drop your thoughts below and follow for daily stories!",
+      "seconds": 7.3
     }
   ]
 }

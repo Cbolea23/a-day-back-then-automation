@@ -10,7 +10,8 @@
       "imagePrompt": "Long wooden banquet trestle table lined with pewter goblets, candles, and thick slices of dense stale bread.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/castle-food/1.jpg",
       "audio": "audio/castle-food/1.wav",
-      "seconds": 4.7
+      "seconds": 4.7,
+      "voicedText": "Dinner is served in the great hall, but your plate is a slab of stale bread."
     },
     {
       "text": "This is a trencher. It soaks up hot meat grease until it turns into soggy paste.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Close-up of a carved wooden board holding a thick bread trencher soaked in dark spiced gravy.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/castle-food/2.jpg",
       "audio": "audio/castle-food/2.wav",
-      "seconds": 5.1
+      "seconds": 5.1,
+      "voicedText": "This is a trencher. It soaks up hot meat grease until it turns into soggy paste."
     },
     {
       "text": "If you are noble, you give that soggy bread to the poor at the gate.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Outer stone archway of a castle courtyard leading toward a rustic wooden basket and food scraps.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/castle-food/3.jpg",
       "audio": "audio/castle-food/3.wav",
-      "seconds": 4.1
+      "seconds": 4.1,
+      "voicedText": "If you are noble, you give that soggy bread to the poor at the gate."
     },
     {
       "text": "The rich drown their dishes in imported cinnamon and pepper to show off their massive wealth.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Castle kitchen pantry filled with small earthenware jars of rare spices, dried saffron, and cracked pepper.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/castle-food/4.jpg",
       "audio": "audio/castle-food/4.wav",
-      "seconds": 6.1
+      "seconds": 6.1,
+      "voicedText": "The rich drown their dishes in imported cinnamon and pepper to show off their massive wealth."
     },
     {
       "text": "Ordinary servants eat thick pottage, a slow-boiled grain and cabbage stew, almost every single day.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Large iron cauldron simmering over an open hearth fire in a soot-stained castle kitchen.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/castle-food/5.jpg",
       "audio": "audio/castle-food/5.wav",
-      "seconds": 7.1
+      "seconds": 7.1,
+      "voicedText": "Ordinary servants eat thick pottage, a slow-boiled grain and cabbage stew, almost every single day."
     },
     {
       "text": "On church fast days, meat is banned, so cooks get creative with preserved salted fish.",
@@ -50,7 +55,8 @@
       "imagePrompt": "Wooden prep table stacked with barrels of salted herring and dried cod beside earthenware jugs.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/castle-food/6.jpg",
       "audio": "audio/castle-food/6.wav",
-      "seconds": 5.8
+      "seconds": 5.8,
+      "voicedText": "On church fast days, meat is banned, so cooks get creative with preserved salted fish."
     },
     {
       "text": "Sometimes they even classify beavers as fish just to keep eating tail meat.",
@@ -58,7 +64,8 @@
       "imagePrompt": "Medieval culinary station with a copper pot, river fish, and dried herbs hanging from wooden rafters.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/castle-food/7.jpg",
       "audio": "audio/castle-food/7.wav",
-      "seconds": 4.8
+      "seconds": 4.8,
+      "voicedText": "Sometimes they even classify beavers as fish just to keep eating tail meat."
     },
     {
       "text": "Wait until you see what happens in the castle latrine after dinner.",
@@ -66,7 +73,8 @@
       "imagePrompt": "Distant exterior view of a stone castle garderobe chute projecting from high stone curtain walls at dusk.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/castle-food/8.jpg",
       "audio": "audio/castle-food/8.wav",
-      "seconds": 4.2
+      "seconds": 4.2,
+      "voicedText": "Wait until you see what happens in the castle latrine after dinner."
     }
   ],
   "claimsToVerify": [

@@ -7,32 +7,56 @@
     {
       "text": "In sixteenth-century Istanbul, a radical new social institution emerged: the public coffeehouse.",
       "mood": "warm",
-      "imagePrompt": "Ornate Ottoman street with tiled facades and wooden overhanging bay windows in golden light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Ornate Ottoman street with tiled facades and wooden overhanging bay windows in golden light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/ottoman-coffeehouse/1.png",
+      "audio": "audio/ottoman-coffeehouse/1.wav",
+      "voicedText": "In sixteenth-century Istanbul, a radical new social institution emerged: the public coffeehouse.",
+      "seconds": 7.3
     },
     {
       "text": "Men of all social classes gathered to drink bitter black coffee brewed in long-handled copper pots called cezves.",
       "mood": "warm",
-      "imagePrompt": "Carved wooden table with steaming copper cezve pot and miniature painted ceramic cups. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Carved wooden table with steaming copper cezve pot and miniature painted ceramic cups. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/ottoman-coffeehouse/2.png",
+      "audio": "audio/ottoman-coffeehouse/2.wav",
+      "voicedText": "Men of all social classes gathered to drink bitter black coffee brewed in long-handled copper pots called cezves.",
+      "seconds": 7.1
     },
     {
       "text": "Patrons smoked tobacco pipes, played backgammon and chess, and listened to professional epic storytellers.",
       "mood": "warm",
-      "imagePrompt": "Cozy interior with low divan seating, kilim rugs, and a wooden backgammon board. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Cozy interior with low divan seating, kilim rugs, and a wooden backgammon board. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/ottoman-coffeehouse/3.png",
+      "audio": "audio/ottoman-coffeehouse/3.wav",
+      "voicedText": "Patrons smoked tobacco pipes, played backgammon and chess, and listened to professional epic storytellers.",
+      "seconds": 7.2
     },
     {
       "text": "Most importantly, coffeehouses became hubs of political debate and sharp criticism of the Ottoman government.",
       "mood": "cool",
-      "imagePrompt": "Arched stone courtyard with central marble fountain under shady plane trees. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Arched stone courtyard with central marble fountain under shady plane trees. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/ottoman-coffeehouse/4.png",
+      "audio": "audio/ottoman-coffeehouse/4.wav",
+      "voicedText": "Most importantly, coffeehouses became hubs of political debate and sharp criticism of the Ottoman government.",
+      "seconds": 6.9
     },
     {
       "text": "Paranoid Sultans repeatedly tried to ban coffee and execute coffee drinkers, fearing insurrection.",
       "mood": "dark",
-      "imagePrompt": "Grand Ottoman palace arched corridor with blue Iznik tiles and iron oil lanterns. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Grand Ottoman palace arched corridor with blue Iznik tiles and iron oil lanterns. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/ottoman-coffeehouse/5.png",
+      "audio": "audio/ottoman-coffeehouse/5.wav",
+      "voicedText": "Paranoid Sultans repeatedly tried to ban coffee and execute coffee drinkers, fearing insurrection.",
+      "seconds": 7.3
     },
     {
       "text": "Would you risk execution just to drink your morning coffee? Drop your thoughts below and follow for daily history!",
       "mood": "day",
-      "imagePrompt": "Sunlit view over the Bosphorus Strait with historic Ottoman minarets in the distance. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Sunlit view over the Bosphorus Strait with historic Ottoman minarets in the distance. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/ottoman-coffeehouse/6.png",
+      "audio": "audio/ottoman-coffeehouse/6.wav",
+      "voicedText": "Would you risk execution just to drink your morning coffee? Drop your thoughts below and follow for daily history!",
+      "seconds": 7
     }
   ]
 }

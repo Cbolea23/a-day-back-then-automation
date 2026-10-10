@@ -7,32 +7,56 @@
     {
       "text": "In ancient Maya city-states, literacy was an exclusive superpower reserved for elite royal scribes.",
       "mood": "cool",
-      "imagePrompt": "Towering Mesoamerican limestone pyramid temple rising above lush tropical jungle canopy. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Towering Mesoamerican limestone pyramid temple rising above lush tropical jungle canopy. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/maya-scribe-job/1.png",
+      "audio": "audio/maya-scribe-job/1.wav",
+      "voicedText": "In ancient Maya city-states, literacy was an exclusive superpower reserved for elite royal scribes.",
+      "seconds": 7.8
     },
     {
       "text": "You trained for decades to master hundreds of intricate phonetic glyphs painted in vivid mineral pigments.",
       "mood": "warm",
-      "imagePrompt": "Stone palace chamber with carved glyph panels, jaguar pelt cushion, and daylight from high window. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Stone palace chamber with carved glyph panels, jaguar pelt cushion, and daylight from high window. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/maya-scribe-job/2.png",
+      "audio": "audio/maya-scribe-job/2.wav",
+      "voicedText": "You trained for decades to master hundreds of intricate phonetic glyphs painted in vivid mineral pigments.",
+      "seconds": 7.1
     },
     {
       "text": "Scribes ground crushed jade, hematite, and copal tree resin to create waterproof ceremonial inks.",
       "mood": "warm",
-      "imagePrompt": "Carved conch-shell inkpot with fine quill brushes and crushed red hematite powder. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Carved conch-shell inkpot with fine quill brushes and crushed red hematite powder. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/maya-scribe-job/3.png",
+      "audio": "audio/maya-scribe-job/3.wav",
+      "voicedText": "Scribes ground crushed jade, hematite, and copal tree resin to create waterproof ceremonial inks.",
+      "seconds": 7.4
     },
     {
       "text": "Books called codices were made of folded fig-tree bark paper, documenting astronomical eclipses and dynastic wars.",
       "mood": "day",
-      "imagePrompt": "Screenfold bark-paper codex book open to glyph tables and celestial illustrations. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Screenfold bark-paper codex book open to glyph tables and celestial illustrations. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/maya-scribe-job/4.png",
+      "audio": "audio/maya-scribe-job/4.wav",
+      "voicedText": "Books called codices were made of folded fig-tree bark paper, documenting astronomical eclipses and dynastic wars.",
+      "seconds": 8
     },
     {
       "text": "During military conquests, enemy kings targeted rival scribes to erase their historical records.",
       "mood": "dark",
-      "imagePrompt": "Dim stone palace courtyard with monolithic carved stone stela monuments. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Dim stone palace courtyard with monolithic carved stone stela monuments. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/maya-scribe-job/5.png",
+      "audio": "audio/maya-scribe-job/5.wav",
+      "voicedText": "During military conquests, enemy kings targeted rival scribes to erase their historical records.",
+      "seconds": 6.8
     },
     {
       "text": "Would you have dedicated your life to mastering the Maya glyph code? Tell us below and follow for more history back then!",
       "mood": "day",
-      "imagePrompt": "Lush tropical rainforest at sunrise with ancient limestone temple towers. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Lush tropical rainforest at sunrise with ancient limestone temple towers. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/maya-scribe-job/6.png",
+      "audio": "audio/maya-scribe-job/6.wav",
+      "voicedText": "Would you have dedicated your life to mastering the Maya glyph code? Tell us below and follow for more history back then!",
+      "seconds": 7.5
     }
   ]
 }

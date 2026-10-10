@@ -7,32 +7,56 @@
     {
       "text": "In fourteenth-century England, an ordinary agricultural laborer earned roughly two to three silver pence a day.",
       "mood": "cool",
-      "imagePrompt": "Misty green English wheat fields with a thatch-roofed cottage in the distance. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Misty green English wheat fields with a thatch-roofed cottage in the distance. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-wages-and-prices/1.png",
+      "audio": "audio/medieval-wages-and-prices/1.wav",
+      "voicedText": "In fourteenth-century England, an ordinary agricultural laborer earned roughly two to three silver pence a day.",
+      "seconds": 7.2
     },
     {
       "text": "With that wage, a loaf of dark barley bread cost around half a penny.",
       "mood": "warm",
-      "imagePrompt": "Wooden rustic table with a loaf of dark sourdough bread and a wooden cup. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Wooden rustic table with a loaf of dark sourdough bread and a wooden cup. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-wages-and-prices/2.png",
+      "audio": "audio/medieval-wages-and-prices/2.wav",
+      "voicedText": "With that wage, a loaf of dark barley bread cost around half a penny.",
+      "seconds": 4.9
     },
     {
       "text": "A gallon of common ale cost a penny, meaning half your daily earnings went to hydration and calories.",
       "mood": "warm",
-      "imagePrompt": "Earthenware ale jugs and wooden mugs sitting on an oak barrel tavern counter. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Earthenware ale jugs and wooden mugs sitting on an oak barrel tavern counter. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-wages-and-prices/3.png",
+      "audio": "audio/medieval-wages-and-prices/3.wav",
+      "voicedText": "A gallon of common ale cost a penny, meaning half your daily earnings went to hydration and calories.",
+      "seconds": 6.4
     },
     {
       "text": "If you wanted a simple woolen tunic, you had to save for weeks to afford the six pence.",
       "mood": "day",
-      "imagePrompt": "Rustic weaver workshop with hanging unspun wool and a wooden loom. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Rustic weaver workshop with hanging unspun wool and a wooden loom. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-wages-and-prices/4.png",
+      "audio": "audio/medieval-wages-and-prices/4.wav",
+      "voicedText": "If you wanted a simple woolen tunic, you had to save for weeks to afford the six pence.",
+      "seconds": 5.4
     },
     {
       "text": "After the Black Death struck, labor shortages briefly doubled worker wages across the realm.",
       "mood": "dark",
-      "imagePrompt": "Quiet medieval village dirt lane with empty stone cottages under an overcast sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Quiet medieval village dirt lane with empty stone cottages under an overcast sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-wages-and-prices/5.png",
+      "audio": "audio/medieval-wages-and-prices/5.wav",
+      "voicedText": "After the Black Death struck, labor shortages briefly doubled worker wages across the realm.",
+      "seconds": 6
     },
     {
       "text": "Could you manage a medieval family budget on two pence a day? Let us know below and follow for more history back then!",
       "mood": "day",
-      "imagePrompt": "Sunlit medieval village boundary with split-rail fences and rolling fields. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Sunlit medieval village boundary with split-rail fences and rolling fields. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-wages-and-prices/6.png",
+      "audio": "audio/medieval-wages-and-prices/6.wav",
+      "voicedText": "Could you manage a medieval family budget on two pence a day? Let us know below and follow for more history back then!",
+      "seconds": 7.1
     }
   ]
 }

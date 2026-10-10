@@ -10,7 +10,8 @@
       "imagePrompt": "Sunny ancient Athenian courtyard with terracotta floor tiles and olive trees, cinematic lighting.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/athens-citizen-day/1.png",
       "audio": "audio/athens-citizen-day/1.wav",
-      "seconds": 4.3
+      "seconds": 4.3,
+      "voicedText": "You wake up in ancient Athens, but you get paid just to vote today."
     },
     {
       "text": "First, you stroll into the noisy agora market to grab breakfast and gossip about local drama.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Wide open ancient Greek marketplace with marble colonnades, striped canvas stalls, and ceramic urns.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/athens-citizen-day/2.png",
       "audio": "audio/athens-citizen-day/2.wav",
-      "seconds": 6.1
+      "seconds": 6.1,
+      "voicedText": "First, you stroll into the noisy agora market to grab breakfast and gossip about local drama."
     },
     {
       "text": "Then, you climb the rocky Pnyx hill to join thousands of men deciding on war or laws.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Sunlit rocky hillside overlooking an ancient city with a stone speaker platform.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/athens-citizen-day/3.png",
       "audio": "audio/athens-citizen-day/3.wav",
-      "seconds": 6.2
+      "seconds": 6.2,
+      "voicedText": "Then, you climb the rocky Pnyx hill to join thousands of men deciding on war or laws."
     },
     {
       "text": "But you are extremely lucky. Only free adult men born to local parents get this power.",
@@ -34,7 +37,8 @@
       "imagePrompt": "View of the Acropolis in ancient Greece under a bright clear sky, warm Mediterranean light.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/athens-citizen-day/4.png",
       "audio": "audio/athens-citizen-day/4.wav",
-      "seconds": 6
+      "seconds": 6,
+      "voicedText": "But you are extremely lucky. Only free adult men born to local parents get this power."
     },
     {
       "text": "Women, enslaved people, and foreigners do all the hard work while keeping zero political rights.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Quiet ancient Greek domestic courtyard with loom weaves, terracotta jars, and stone pillars.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/athens-citizen-day/5.png",
       "audio": "audio/athens-citizen-day/5.wav",
-      "seconds": 6.3
+      "seconds": 6.3,
+      "voicedText": "Women, enslaved people, and foreigners do all the hard work while keeping zero political rights."
     },
     {
       "text": "At night, you head to a drinking party called a symposium to debate philosophy and drink wine.",
@@ -50,7 +55,8 @@
       "imagePrompt": "Dimly lit ancient Greek room decorated with frescoed walls, low couches, and oil lamps.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/athens-citizen-day/6.png",
       "audio": "audio/athens-citizen-day/6.wav",
-      "seconds": 6.1
+      "seconds": 6.1,
+      "voicedText": "At night, you head to a drinking party called a symposium to debate philosophy and drink wine."
     },
     {
       "text": "It feels like paradise for you, until your fellow citizens decide to kick you out of the city next week. Want to see how easy it was to get exiled?",
@@ -58,7 +64,8 @@
       "imagePrompt": "Ancient Greek broken pottery sherds with scratched Greek letters lying on a dark stone surface.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/athens-citizen-day/7.png",
       "audio": "audio/athens-citizen-day/7.wav",
-      "seconds": 8.3
+      "seconds": 8.3,
+      "voicedText": "It feels like paradise for you, until your fellow citizens decide to kick you out of the city next week. Want to see how easy it was to get exiled?"
     }
   ],
   "claimsToVerify": [

@@ -10,7 +10,8 @@
       "imagePrompt": "Sunlit armor workshop with fitted steel breastplates and helmets arranged neatly on wooden stands.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/knight-myths/1.jpg",
       "audio": "audio/knight-myths/1.wav",
-      "seconds": 5.9
+      "seconds": 5.9,
+      "voicedText": "You picture a knight clanking heavily into battle, barely able to move. That never happened."
     },
     {
       "text": "A full suit of steel plate armor typically weighs around fifty pounds, distributed across your entire body.",
@@ -18,7 +19,8 @@
       "imagePrompt": "An articulated suit of medieval harness resting on a wooden display stand under cool castle window light.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/knight-myths/2.jpg",
       "audio": "audio/knight-myths/2.wav",
-      "seconds": 7.5
+      "seconds": 7.5,
+      "voicedText": "A full suit of steel plate armor typically weighs around fifty pounds, distributed across your entire body."
     },
     {
       "text": "You can sprint, leap onto your horse, and even do cartwheels while wearing it.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Open grassy tournament field with timber fencing, brightly colored pennants, and riding paths.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/knight-myths/3.jpg",
       "audio": "audio/knight-myths/3.wav",
-      "seconds": 5.2
+      "seconds": 5.2,
+      "voicedText": "You can sprint, leap onto your horse, and even do cartwheels while wearing it."
     },
     {
       "text": "That famous Victorian myth about knights needing cranes to hoist them into saddles is total fiction.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Empty stables inside a castle courtyard with leather saddles hanging over wooden rails.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/knight-myths/4.jpg",
       "audio": "audio/knight-myths/4.wav",
-      "seconds": 6.8
+      "seconds": 6.8,
+      "voicedText": "That famous Victorian myth about knights needing cranes to hoist them into saddles is total fiction."
     },
     {
       "text": "You also rarely spend your days fighting glorious duels or slaying enemies in epic battles.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Quiet castle parapet overlooking rolling green farmland and peaceful river valleys.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/knight-myths/5.jpg",
       "audio": "audio/knight-myths/5.wav",
-      "seconds": 6.5
+      "seconds": 6.5,
+      "voicedText": "You also rarely spend your days fighting glorious duels or slaying enemies in epic battles."
     },
     {
       "text": "Most of your year is surprisingly boring: collecting peasant rents, settling land disputes, and managing farm grain.",
@@ -50,7 +55,8 @@
       "imagePrompt": "Stone estate office featuring an oak table covered in rolled parchment maps, wax seals, and tally sticks.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/knight-myths/6.jpg",
       "audio": "audio/knight-myths/6.wav",
-      "seconds": 7.7
+      "seconds": 7.7,
+      "voicedText": "Most of your year is surprisingly boring: collecting peasant rents, settling land disputes, and managing farm grain."
     },
     {
       "text": "You are basically an armed landlord who occasionally attends expensive training tournaments.",
@@ -58,7 +64,8 @@
       "imagePrompt": "Great hall fireplace mantel displaying decorative shields, lances, and heraldic banners.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/knight-myths/7.jpg",
       "audio": "audio/knight-myths/7.wav",
-      "seconds": 5.4
+      "seconds": 5.4,
+      "voicedText": "You are basically an armed landlord who occasionally attends expensive training tournaments."
     },
     {
       "text": "But what happens when an enemy knight actually captures you on the battlefield?",
@@ -66,7 +73,8 @@
       "imagePrompt": "Stone tower dungeon room with narrow iron-barred windows and heavy timber reinforced doors.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/knight-myths/8.jpg",
       "audio": "audio/knight-myths/8.wav",
-      "seconds": 4.4
+      "seconds": 4.4,
+      "voicedText": "But what happens when an enemy knight actually captures you on the battlefield?"
     }
   ],
   "claimsToVerify": [

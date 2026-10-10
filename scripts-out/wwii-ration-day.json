@@ -7,32 +7,56 @@
     {
       "text": "During the Second World War in Britain, every single citizen carried a government-issued ration book.",
       "mood": "cool",
-      "imagePrompt": "1940s British brick high street with sandbags stacked outside shopfronts under grey sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "1940s British brick high street with sandbags stacked outside shopfronts under grey sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/wwii-ration-day/1.png",
+      "audio": "audio/wwii-ration-day/1.wav",
+      "voicedText": "During the Second World War in Britain, every single citizen carried a government-issued ration book.",
+      "seconds": 6.5
     },
     {
       "text": "Your weekly adult allowance was tiny: two ounces of butter, two ounces of tea, and one fresh egg.",
       "mood": "warm",
-      "imagePrompt": "Kitchen wooden table with official ration coupons, a single egg, and tiny butter pat. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Kitchen wooden table with official ration coupons, a single egg, and tiny butter pat. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/wwii-ration-day/2.png",
+      "audio": "audio/wwii-ration-day/2.wav",
+      "voicedText": "Your weekly adult allowance was tiny: two ounces of butter, two ounces of tea, and one fresh egg.",
+      "seconds": 6.5
     },
     {
       "text": "Housewives queued for hours outside grocers, unsure if meat or fruit would even be delivered.",
       "mood": "cool",
-      "imagePrompt": "Wooden counter of a 1940s traditional butcher shop with empty iron display hooks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Wooden counter of a 1940s traditional butcher shop with empty iron display hooks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/wwii-ration-day/3.png",
+      "audio": "audio/wwii-ration-day/3.wav",
+      "voicedText": "Housewives queued for hours outside grocers, unsure if meat or fruit would even be delivered.",
+      "seconds": 6.3
     },
     {
       "text": "People planted vegetables in every flowerbed and public park under the Dig for Victory campaign.",
       "mood": "day",
-      "imagePrompt": "Public city square converted into orderly allotments with rows of cabbages and potatoes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Public city square converted into orderly allotments with rows of cabbages and potatoes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/wwii-ration-day/4.png",
+      "audio": "audio/wwii-ration-day/4.wav",
+      "voicedText": "People planted vegetables in every flowerbed and public park under the Dig for Victory campaign.",
+      "seconds": 6.4
     },
     {
       "text": "Resourcefulness was key: dried egg powder replaced fresh eggs and tea leaves were dried and re-brewed.",
       "mood": "warm",
-      "imagePrompt": "Rustic enamel teapot and ceramic teacup beside a tin of dried egg powder. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Rustic enamel teapot and ceramic teacup beside a tin of dried egg powder. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/wwii-ration-day/5.png",
+      "audio": "audio/wwii-ration-day/5.wav",
+      "voicedText": "Resourcefulness was key: dried egg powder replaced fresh eggs and tea leaves were dried and re-brewed.",
+      "seconds": 7.3
     },
     {
       "text": "Could you stretch a single egg for an entire week? Let us know below and follow for daily history stories!",
       "mood": "day",
-      "imagePrompt": "Peaceful English countryside lane with brick cottages bathed in afternoon sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Peaceful English countryside lane with brick cottages bathed in afternoon sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/wwii-ration-day/6.png",
+      "audio": "audio/wwii-ration-day/6.wav",
+      "voicedText": "Could you stretch a single egg for an entire week? Let us know below and follow for daily history stories!",
+      "seconds": 6.7
     }
   ]
 }

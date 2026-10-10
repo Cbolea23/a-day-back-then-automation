@@ -196,6 +196,7 @@ Return ONLY JSON:
     }
     chapters.push({meta: ch, ...result});
     previousLast = result.scenes[result.scenes.length - 1].text;
+    await sleep(4500);
   }
 
   // ---- 3) Assemble ------------------------------------------------------

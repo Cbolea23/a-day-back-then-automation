@@ -7,32 +7,56 @@
     {
       "text": "Popular movies portray the early Middle Ages as a filthy, illiterate wasteland where knowledge vanished.",
       "mood": "night",
-      "imagePrompt": "Moody ancient stone ruins surrounded by deep evergreen forest under moonlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Moody ancient stone ruins surrounded by deep evergreen forest under moonlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/dark-ages-myths/1.png",
+      "audio": "audio/dark-ages-myths/1.wav",
+      "voicedText": "Popular movies portray the early Middle Ages as a filthy, illiterate wasteland where knowledge vanished.",
+      "seconds": 7.1
     },
     {
       "text": "Historians actually avoid using the phrase Dark Ages because immense innovation was happening.",
       "mood": "day",
-      "imagePrompt": "Sunlit medieval scriptorium desk with goose quill pens and illuminated vellum pages. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Sunlit medieval scriptorium desk with goose quill pens and illuminated vellum pages. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/dark-ages-myths/2.png",
+      "audio": "audio/dark-ages-myths/2.wav",
+      "voicedText": "Historians actually avoid using the phrase Dark Ages because immense innovation was happening.",
+      "seconds": 6.5
     },
     {
       "text": "Monks preserved ancient Roman classics and pioneered advanced agricultural crop rotation systems.",
       "mood": "day",
-      "imagePrompt": "Sprawling medieval agricultural terraced fields under bright morning sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Sprawling medieval agricultural terraced fields under bright morning sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/dark-ages-myths/3.png",
+      "audio": "audio/dark-ages-myths/3.wav",
+      "voicedText": "Monks preserved ancient Roman classics and pioneered advanced agricultural crop rotation systems.",
+      "seconds": 7.6
     },
     {
       "text": "Windmills, heavy wheeled plows, and water-powered blast furnaces transformed European industry.",
       "mood": "warm",
-      "imagePrompt": "Timber-framed workshop with iron gears and a roaring stone furnace. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Timber-framed workshop with iron gears and a roaring stone furnace. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/dark-ages-myths/4.png",
+      "audio": "audio/dark-ages-myths/4.wav",
+      "voicedText": "Windmills, heavy wheeled plows, and water-powered blast furnaces transformed European industry.",
+      "seconds": 7
     },
     {
       "text": "Trade routes stretched thousands of miles from Scandinavian fiords to the Byzantine capital.",
       "mood": "cool",
-      "imagePrompt": "Distant view of a majestic coastal fortress overlooking a tranquil ocean bay. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Distant view of a majestic coastal fortress overlooking a tranquil ocean bay. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/dark-ages-myths/5.png",
+      "audio": "audio/dark-ages-myths/5.wav",
+      "voicedText": "Trade routes stretched thousands of miles from Scandinavian fiords to the Byzantine capital.",
+      "seconds": 6.3
     },
     {
       "text": "Did you think the Middle Ages were pitch dark? Drop your thoughts in the comments and follow for daily stories!",
       "mood": "day",
-      "imagePrompt": "Grand medieval stone cathedral arches glowing with amber morning sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Grand medieval stone cathedral arches glowing with amber morning sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/dark-ages-myths/6.png",
+      "audio": "audio/dark-ages-myths/6.wav",
+      "voicedText": "Did you think the Middle Ages were pitch dark? Drop your thoughts in the comments and follow for daily stories!",
+      "seconds": 6.2
     }
   ]
 }

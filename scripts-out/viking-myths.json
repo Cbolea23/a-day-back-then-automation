@@ -7,32 +7,56 @@
     {
       "text": "Myth number one: horned helmets. Not a single archaeological dig has ever found one used in battle.",
       "mood": "cool",
-      "imagePrompt": "Ancient Scandinavian peat bog landscape with misty heather fields. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Ancient Scandinavian peat bog landscape with misty heather fields. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-myths/1.png",
+      "audio": "audio/viking-myths/1.wav",
+      "voicedText": "Myth number one: horned helmets. Not a single archaeological dig has ever found one used in battle.",
+      "seconds": 6.7
     },
     {
       "text": "Horned helmets were actually invented in the 1800s by costume designers for a German opera.",
       "mood": "warm",
-      "imagePrompt": "Authentic iron Spectacle helmet with mail drape on a wooden display block. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Authentic iron Spectacle helmet with mail drape on a wooden display block. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-myths/2.png",
+      "audio": "audio/viking-myths/2.wav",
+      "voicedText": "Horned helmets were actually invented in the 1800s by costume designers for a German opera.",
+      "seconds": 5.8
     },
     {
       "text": "Myth number two: they were filthy barbarians. Archaeologists find combs, tweezers, and ear-spoons in graves.",
       "mood": "day",
-      "imagePrompt": "Carved bone grooming comb, bronze tweezers, and a small horn vial on leather. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Carved bone grooming comb, bronze tweezers, and a small horn vial on leather. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-myths/3.png",
+      "audio": "audio/viking-myths/3.wav",
+      "voicedText": "Myth number two: they were filthy barbarians. Archaeologists find combs, tweezers, and ear-spoons in graves.",
+      "seconds": 8.3
     },
     {
       "text": "In fact, Norsemen took hot baths every Saturday, which shocked their unwashed English neighbors.",
       "mood": "warm",
-      "imagePrompt": "Steamy Scandinavian wooden bathhouse with hot stones and wooden buckets. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Steamy Scandinavian wooden bathhouse with hot stones and wooden buckets. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-myths/4.png",
+      "audio": "audio/viking-myths/4.wav",
+      "voicedText": "In fact, Norsemen took hot baths every Saturday, which shocked their unwashed English neighbors.",
+      "seconds": 7
     },
     {
       "text": "Myth number three: Viking was a nationality. It was actually a seasonal job title meaning raider or trader.",
       "mood": "cool",
-      "imagePrompt": "Viking trading harbor with wooden docks, furs, and glass bead trade goods. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Viking trading harbor with wooden docks, furs, and glass bead trade goods. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-myths/5.png",
+      "audio": "audio/viking-myths/5.wav",
+      "voicedText": "Myth number three: Viking was a nationality. It was actually a seasonal job title meaning raider or trader.",
+      "seconds": 6.9
     },
     {
       "text": "Which myth fooled you the longest? Let us know in the comments, and follow for more history back then!",
       "mood": "day",
-      "imagePrompt": "Majestic fjord view with calm blue water reflecting towering granite peaks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Majestic fjord view with calm blue water reflecting towering granite peaks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-myths/6.png",
+      "audio": "audio/viking-myths/6.wav",
+      "voicedText": "Which myth fooled you the longest? Let us know in the comments, and follow for more history back then!",
+      "seconds": 5.8
     }
   ]
 }

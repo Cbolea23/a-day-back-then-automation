@@ -7,32 +7,56 @@
     {
       "text": "In every medieval village, by law, peasants had to grind their harvested grain at the lord's mill.",
       "mood": "cool",
-      "imagePrompt": "Wooden watermill beside a rushing river in a lush medieval valley. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Wooden watermill beside a rushing river in a lush medieval valley. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-miller-job/1.png",
+      "audio": "audio/medieval-miller-job/1.wav",
+      "voicedText": "In every medieval village, by law, peasants had to grind their harvested grain at the lord's mill.",
+      "seconds": 6.2
     },
     {
       "text": "The miller operated the massive grindstones and took a portion of your flour as his fee.",
       "mood": "day",
-      "imagePrompt": "Interior of an ancient wooden mill with giant rotating stone wheels and dusted grain. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Interior of an ancient wooden mill with giant rotating stone wheels and dusted grain. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-miller-job/2.png",
+      "audio": "audio/medieval-miller-job/2.wav",
+      "voicedText": "The miller operated the massive grindstones and took a portion of your flour as his fee.",
+      "seconds": 5.2
     },
     {
       "text": "Because he controlled the scales, peasants constantly suspected millers of cheating and stealing flour.",
       "mood": "warm",
-      "imagePrompt": "Vintage wooden balance scale with sacks of milled flour on a dusty plank floor. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Vintage wooden balance scale with sacks of milled flour on a dusty plank floor. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-miller-job/3.png",
+      "audio": "audio/medieval-miller-job/3.wav",
+      "voicedText": "Because he controlled the scales, peasants constantly suspected millers of cheating and stealing flour.",
+      "seconds": 6.5
     },
     {
       "text": "Millers were portrayed in songs and folklore as greedy thieves who grew fat while neighbors starved.",
       "mood": "dark",
-      "imagePrompt": "Dim grain storage loft with stacked burlap sacks and floating golden dust motes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Dim grain storage loft with stacked burlap sacks and floating golden dust motes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-miller-job/4.png",
+      "audio": "audio/medieval-miller-job/4.wav",
+      "voicedText": "Millers were portrayed in songs and folklore as greedy thieves who grew fat while neighbors starved.",
+      "seconds": 6.9
     },
     {
       "text": "Yet without the mill running day and night, the entire village had no bread to survive.",
       "mood": "warm",
-      "imagePrompt": "Brick wood-fired bread oven in a village bakery glowing with warm ember light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Brick wood-fired bread oven in a village bakery glowing with warm ember light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-miller-job/5.png",
+      "audio": "audio/medieval-miller-job/5.wav",
+      "voicedText": "Yet without the mill running day and night, the entire village had no bread to survive.",
+      "seconds": 5.7
     },
     {
       "text": "Was the miller an essential tradesman or a medieval racketeer? Share your thoughts below and follow for daily history!",
       "mood": "day",
-      "imagePrompt": "Picturesque watermill wheel churning white water under clear blue skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Picturesque watermill wheel churning white water under clear blue skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-miller-job/6.png",
+      "audio": "audio/medieval-miller-job/6.wav",
+      "voicedText": "Was the miller an essential tradesman or a medieval racketeer? Share your thoughts below and follow for daily history!",
+      "seconds": 7.4
     }
   ]
 }

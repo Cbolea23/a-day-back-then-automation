@@ -7,32 +7,56 @@
     {
       "text": "In sixth-century Constantinople, sports were not entertainment—they were life and death politics.",
       "mood": "cool",
-      "imagePrompt": "Grand view of the imperial city of Constantinople with ancient domed basilica towers. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Grand view of the imperial city of Constantinople with ancient domed basilica towers. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/byzantine-chariot-fan/1.png",
+      "audio": "audio/byzantine-chariot-fan/1.wav",
+      "voicedText": "In sixth-century Constantinople, sports were not entertainment—they were life and death politics.",
+      "seconds": 6.4
     },
     {
       "text": "Over one hundred thousand citizens packed the immense Hippodrome to watch lethal chariot races.",
       "mood": "day",
-      "imagePrompt": "Massive curved marble stadium tiers of the Hippodrome with central stone obelisk. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Massive curved marble stadium tiers of the Hippodrome with central stone obelisk. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/byzantine-chariot-fan/2.png",
+      "audio": "audio/byzantine-chariot-fan/2.wav",
+      "voicedText": "Over one hundred thousand citizens packed the immense Hippodrome to watch lethal chariot races.",
+      "seconds": 6.1
     },
     {
       "text": "The empire was split between two fierce rival sports factions: the Blues and the Greens.",
       "mood": "warm",
-      "imagePrompt": "Two silk team banners—one vivid imperial blue, one emerald green—hung from bronze poles. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Two silk team banners—one vivid imperial blue, one emerald green—hung from bronze poles. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/byzantine-chariot-fan/3.png",
+      "audio": "audio/byzantine-chariot-fan/3.wav",
+      "voicedText": "The empire was split between two fierce rival sports factions: the Blues and the Greens.",
+      "seconds": 6.4
     },
     {
       "text": "These fan clubs functioned like political parties, mafia syndicates, and street militias all in one.",
       "mood": "dark",
-      "imagePrompt": "Dim vaulted stone corridor beneath the Hippodrome grandstands lit by wall torches. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Dim vaulted stone corridor beneath the Hippodrome grandstands lit by wall torches. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/byzantine-chariot-fan/4.png",
+      "audio": "audio/byzantine-chariot-fan/4.wav",
+      "voicedText": "These fan clubs functioned like political parties, mafia syndicates, and street militias all in one.",
+      "seconds": 6.5
     },
     {
       "text": "In the Nika Riots of 532, furious fans united, burned half the city, and nearly toppled Emperor Justinian.",
       "mood": "night",
-      "imagePrompt": "Grand marble imperial plaza bathed in the glow of distant flickering flames. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Grand marble imperial plaza bathed in the glow of distant flickering flames. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/byzantine-chariot-fan/5.png",
+      "audio": "audio/byzantine-chariot-fan/5.wav",
+      "voicedText": "In the Nika Riots of 532, furious fans united, burned half the city, and nearly toppled Emperor Justinian.",
+      "seconds": 8.9
     },
     {
       "text": "Are modern sports rivalries anything compared to Byzantium? Let us know below and follow for daily history!",
       "mood": "day",
-      "imagePrompt": "Glittering turquoise waters of the Golden Horn harbor with white sails in bright sunshine. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Glittering turquoise waters of the Golden Horn harbor with white sails in bright sunshine. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/byzantine-chariot-fan/6.png",
+      "audio": "audio/byzantine-chariot-fan/6.wav",
+      "voicedText": "Are modern sports rivalries anything compared to Byzantium? Let us know below and follow for daily history!",
+      "seconds": 6.6
     }
   ]
 }

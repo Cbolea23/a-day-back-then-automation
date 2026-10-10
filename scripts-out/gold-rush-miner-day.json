@@ -7,32 +7,56 @@
     {
       "text": "In 1849, three hundred thousand prospectors rushed to California chasing rumors of rivers made of gold.",
       "mood": "cool",
-      "imagePrompt": "Rugged California Sierra Nevada pine mountains with a rushing rocky river. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Rugged California Sierra Nevada pine mountains with a rushing rocky river. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/gold-rush-miner-day/1.png",
+      "audio": "audio/gold-rush-miner-day/1.wav",
+      "voicedText": "In 1849, three hundred thousand prospectors rushed to California chasing rumors of rivers made of gold.",
+      "seconds": 7.5
     },
     {
       "text": "Your daily reality was standing knee-deep in ice-cold mountain snowmelt twelve hours a day panning gravel.",
       "mood": "cool",
-      "imagePrompt": "Metal gold pan resting on river rocks beside a rustic wooden sluice box. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Metal gold pan resting on river rocks beside a rustic wooden sluice box. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/gold-rush-miner-day/2.png",
+      "audio": "audio/gold-rush-miner-day/2.wav",
+      "voicedText": "Your daily reality was standing knee-deep in ice-cold mountain snowmelt twelve hours a day panning gravel.",
+      "seconds": 8.6
     },
     {
       "text": "Prices were insane: an egg cost a dollar, and a pair of boots cost a full hundred dollars in gold dust.",
       "mood": "warm",
-      "imagePrompt": "Makeshift canvas-tent mining camp store with barrels of flour and pickaxes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Makeshift canvas-tent mining camp store with barrels of flour and pickaxes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/gold-rush-miner-day/3.png",
+      "audio": "audio/gold-rush-miner-day/3.wav",
+      "voicedText": "Prices were insane: an egg cost a dollar, and a pair of boots cost a full hundred dollars in gold dust.",
+      "seconds": 6.9
     },
     {
       "text": "You slept on dirt floors in drafty canvas tents, plagued by dysentery, cholera, and scurvy.",
       "mood": "dark",
-      "imagePrompt": "Interior of a canvas prospector tent with wool bedroll and iron camp stove. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Interior of a canvas prospector tent with wool bedroll and iron camp stove. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/gold-rush-miner-day/4.png",
+      "audio": "audio/gold-rush-miner-day/4.wav",
+      "voicedText": "You slept on dirt floors in drafty canvas tents, plagued by dysentery, cholera, and scurvy.",
+      "seconds": 7.1
     },
     {
       "text": "The people who truly struck it rich were not the miners, but the merchants selling shovels and jeans.",
       "mood": "warm",
-      "imagePrompt": "Assayer office counter with balance scale, leather pouch, and brass weights. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Assayer office counter with balance scale, leather pouch, and brass weights. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/gold-rush-miner-day/5.png",
+      "audio": "audio/gold-rush-miner-day/5.wav",
+      "voicedText": "The people who truly struck it rich were not the miners, but the merchants selling shovels and jeans.",
+      "seconds": 6.5
     },
     {
       "text": "Would you have joined the 1849 Gold Rush? Share your thoughts below and follow for more history back then!",
       "mood": "day",
-      "imagePrompt": "Golden sun setting over California Sierra foothills with rolling pine forests. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Golden sun setting over California Sierra foothills with rolling pine forests. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/gold-rush-miner-day/6.png",
+      "audio": "audio/gold-rush-miner-day/6.wav",
+      "voicedText": "Would you have joined the 1849 Gold Rush? Share your thoughts below and follow for more history back then!",
+      "seconds": 6.6
     }
   ]
 }

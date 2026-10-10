@@ -38,9 +38,9 @@ console.log(`Found ${files.length} unpublished Shorts in vault.`);
 // Slot 3: 09:00 PM UTC+8 -> 13:00 UTC
 const SLOTS_UTC_HOURS = [3, 9, 13];
 
-// Start scheduling starting tomorrow (Oct 10, 2026)
-const startDate = new Date();
-startDate.setDate(startDate.getDate() + 1);
+// Start scheduling starting Oct 16, 2026 (right after existing scheduled videos through Oct 15)
+const startDate = new Date(Date.UTC(2026, 9, 16, 0, 0, 0)); // Note: month 9 = October in JS 0-indexed months
+
 
 const schedulePlan = [];
 let dayOffset = 0;

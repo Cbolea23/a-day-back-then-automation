@@ -7,32 +7,56 @@
     {
       "text": "In the Aztec island capital of Tenochtitlan, the great market of Tlatelolco amazed Spanish conquistadors.",
       "mood": "day",
-      "imagePrompt": "Grand open-air plaza market in a Mesoamerican stone city under clear sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Grand open-air plaza market in a Mesoamerican stone city under clear sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/aztec-market-day/1.png",
+      "audio": "audio/aztec-market-day/1.wav",
+      "voicedText": "In the Aztec island capital of Tenochtitlan, the great market of Tlatelolco amazed Spanish conquistadors.",
+      "seconds": 7.4
     },
     {
       "text": "Over fifty thousand traders gathered daily under strict government inspectors who ensured fair weights.",
       "mood": "warm",
-      "imagePrompt": "Organized rows of woven reed market stalls loaded with colorful pottery and textiles. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Organized rows of woven reed market stalls loaded with colorful pottery and textiles. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/aztec-market-day/2.png",
+      "audio": "audio/aztec-market-day/2.wav",
+      "voicedText": "Over fifty thousand traders gathered daily under strict government inspectors who ensured fair weights.",
+      "seconds": 6.6
     },
     {
       "text": "There was no metal coinage. High-value transactions were paid using precious cacao beans and cotton cloaks.",
       "mood": "warm",
-      "imagePrompt": "Earthenware bowl filled with glossy dark cacao beans beside folded woven cotton cloth. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Earthenware bowl filled with glossy dark cacao beans beside folded woven cotton cloth. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/aztec-market-day/3.png",
+      "audio": "audio/aztec-market-day/3.wav",
+      "voicedText": "There was no metal coinage. High-value transactions were paid using precious cacao beans and cotton cloaks.",
+      "seconds": 7.1
     },
     {
       "text": "You could buy everything from jade ornaments and jaguar skins to maize, tomatoes, and vanilla pods.",
       "mood": "day",
-      "imagePrompt": "Stone market slab displaying fresh ears of corn, bright tomatoes, and volcanic obsidian knives. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Stone market slab displaying fresh ears of corn, bright tomatoes, and volcanic obsidian knives. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/aztec-market-day/4.png",
+      "audio": "audio/aztec-market-day/4.wav",
+      "voicedText": "You could buy everything from jade ornaments and jaguar skins to maize, tomatoes, and vanilla pods.",
+      "seconds": 6.4
     },
     {
       "text": "If a merchant was caught cheating customers with counterfeit cacao beans, judges punished them instantly.",
       "mood": "dark",
-      "imagePrompt": "Carved stone Mesoamerican courthouse pavilion with stepped stone stairs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Carved stone Mesoamerican courthouse pavilion with stepped stone stairs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/aztec-market-day/5.png",
+      "audio": "audio/aztec-market-day/5.wav",
+      "voicedText": "If a merchant was caught cheating customers with counterfeit cacao beans, judges punished them instantly.",
+      "seconds": 6.2
     },
     {
       "text": "Would you spend your cacao beans on chocolate drinks or save them as cash? Let us know below and follow for daily history!",
       "mood": "day",
-      "imagePrompt": "Sunlit view across the glistening blue lake surrounding the island city of Tenochtitlan. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Sunlit view across the glistening blue lake surrounding the island city of Tenochtitlan. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/aztec-market-day/6.png",
+      "audio": "audio/aztec-market-day/6.wav",
+      "voicedText": "Would you spend your cacao beans on chocolate drinks or save them as cash? Let us know below and follow for daily history!",
+      "seconds": 7.3
     }
   ]
 }

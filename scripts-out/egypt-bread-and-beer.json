@@ -10,7 +10,8 @@
       "imagePrompt": "A sunlit ancient Egyptian mudbrick dining room with a rustic wooden table under warm sunlight.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-bread-and-beer/1.png",
       "audio": "audio/egypt-bread-and-beer/1.wav",
-      "seconds": 5.2
+      "seconds": 5.2,
+      "voicedText": "You sit down for breakfast in ancient Egypt, but your beer looks like thick porridge."
     },
     {
       "text": "It is warm, sweet, and full of floating bread chunks. You have to drink it through a straw.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Close-up of a rustic clay vessel filled with textured liquid sitting on a stone bench in an ancient kitchen.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-bread-and-beer/2.png",
       "audio": "audio/egypt-bread-and-beer/2.wav",
-      "seconds": 5.9
+      "seconds": 5.9,
+      "voicedText": "It is warm, sweet, and full of floating bread chunks. You have to drink it through a straw."
     },
     {
       "text": "This chunky brew is actually a main source of daily nutrition for most workers.",
@@ -26,7 +28,8 @@
       "imagePrompt": "An ancient Egyptian outdoor grain storage courtyard with clay silos under a bright blue sky.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-bread-and-beer/3.png",
       "audio": "audio/egypt-bread-and-beer/3.wav",
-      "seconds": 5.2
+      "seconds": 5.2,
+      "voicedText": "This chunky brew is actually a main source of daily nutrition for most workers."
     },
     {
       "text": "Your side dish is fresh bread, but desert sand gets into the flour, slowly grinding your teeth away.",
@@ -34,7 +37,8 @@
       "imagePrompt": "An ancient stone quern and grinding stones sitting on a dusty desert courtyard floor, lit by harsh midday sun.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-bread-and-beer/4.png",
       "audio": "audio/egypt-bread-and-beer/4.wav",
-      "seconds": 7.3
+      "seconds": 7.3,
+      "voicedText": "Your side dish is fresh bread, but desert sand gets into the flour, slowly grinding your teeth away."
     },
     {
       "text": "To mask the gritty taste, you munch on raw onions, dried dates, and smelly salted Nile fish.",
@@ -42,7 +46,8 @@
       "imagePrompt": "A wicker basket filled with raw onions, dried dates, and preserved fish on a woven palm mat in an ancient market stall.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-bread-and-beer/5.png",
       "audio": "audio/egypt-bread-and-beer/5.wav",
-      "seconds": 6.9
+      "seconds": 6.9,
+      "voicedText": "To mask the gritty taste, you munch on raw onions, dried dates, and smelly salted Nile fish."
     },
     {
       "text": "In fact, many laborers get paid directly in gallons of beer every single day.",
@@ -50,7 +55,8 @@
       "imagePrompt": "Rows of large ceramic storage jars lined up inside a dimly lit ancient storehouse.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-bread-and-beer/6.png",
       "audio": "audio/egypt-bread-and-beer/6.wav",
-      "seconds": 5.8
+      "seconds": 5.8,
+      "voicedText": "In fact, many laborers get paid directly in gallons of beer every single day."
     },
     {
       "text": "But what secret ingredient did royal brewers add to make elite beer taste better? Find out next time.",
@@ -58,7 +64,8 @@
       "imagePrompt": "A shadowy ancient Egyptian brewery interior with large fermentation vats illuminated by soft light.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-bread-and-beer/7.png",
       "audio": "audio/egypt-bread-and-beer/7.wav",
-      "seconds": 6.4
+      "seconds": 6.4,
+      "voicedText": "But what secret ingredient did royal brewers add to make elite beer taste better? Find out next time."
     }
   ],
   "claimsToVerify": [

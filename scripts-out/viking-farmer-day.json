@@ -7,32 +7,56 @@
     {
       "text": "Pop culture shows Vikings as bloodthirsty berserkers, but the vast majority were ordinary dirt farmers.",
       "mood": "cool",
-      "imagePrompt": "Norse longhouse nestled in a foggy green Scandinavian valley. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Norse longhouse nestled in a foggy green Scandinavian valley. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-farmer-day/1.png",
+      "audio": "audio/viking-farmer-day/1.wav",
+      "voicedText": "Pop culture shows Vikings as bloodthirsty berserkers, but the vast majority were ordinary dirt farmers.",
+      "seconds": 7.9
     },
     {
       "text": "Your morning starts by milking cows and feeding shaggy sheep kept inside the longhouse for heat.",
       "mood": "warm",
-      "imagePrompt": "Timber longhouse interior with a peat fire pit glowing in the center. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Timber longhouse interior with a peat fire pit glowing in the center. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-farmer-day/2.png",
+      "audio": "audio/viking-farmer-day/2.wav",
+      "voicedText": "Your morning starts by milking cows and feeding shaggy sheep kept inside the longhouse for heat.",
+      "seconds": 6.3
     },
     {
       "text": "You spend long summer hours plowing rocky soil to grow hardy barley, rye, and cabbage.",
       "mood": "day",
-      "imagePrompt": "Rocky northern farmland with split-rail wood fences overlooking a blue fjord. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Rocky northern farmland with split-rail wood fences overlooking a blue fjord. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-farmer-day/3.png",
+      "audio": "audio/viking-farmer-day/3.wav",
+      "voicedText": "You spend long summer hours plowing rocky soil to grow hardy barley, rye, and cabbage.",
+      "seconds": 6.9
     },
     {
       "text": "Women ran the entire estate, managed finances, and brewed the family's vital supply of ale.",
       "mood": "warm",
-      "imagePrompt": "Wooden brewing vats and clay fermentation jugs in a Norse storehouse. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Wooden brewing vats and clay fermentation jugs in a Norse storehouse. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-farmer-day/4.png",
+      "audio": "audio/viking-farmer-day/4.wav",
+      "voicedText": "Women ran the entire estate, managed finances, and brewed the family's vital supply of ale.",
+      "seconds": 6.4
     },
     {
       "text": "In the evening, you gather around the turf hearth carving wooden spoons and sharing ancient sagas.",
       "mood": "night",
-      "imagePrompt": "Dim Norse hearthside with wooden drinking horns and wool blankets. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Dim Norse hearthside with wooden drinking horns and wool blankets. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-farmer-day/5.png",
+      "audio": "audio/viking-farmer-day/5.wav",
+      "voicedText": "In the evening, you gather around the turf hearth carving wooden spoons and sharing ancient sagas.",
+      "seconds": 6.4
     },
     {
       "text": "Would you rather farm a cold fjord or sail a raid? Tell us in the comments, and follow for more history back then!",
       "mood": "day",
-      "imagePrompt": "Dramatic northern coastal cliff with wildflowers blowing in the ocean breeze. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Dramatic northern coastal cliff with wildflowers blowing in the ocean breeze. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-farmer-day/6.png",
+      "audio": "audio/viking-farmer-day/6.wav",
+      "voicedText": "Would you rather farm a cold fjord or sail a raid? Tell us in the comments, and follow for more history back then!",
+      "seconds": 6.6
     }
   ]
 }

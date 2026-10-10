@@ -10,7 +10,8 @@
       "imagePrompt": "Stone counter of a Roman street stall with a small pile of stamped silver denarii and bronze sestertii.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-money/1.jpg",
       "audio": "audio/roman-money/1.wav",
-      "seconds": 5.7
+      "seconds": 5.7,
+      "voicedText": "You finish a brutal day of manual labor in Rome and receive one silver denarius."
     },
     {
       "text": "For many ordinary laborers, this is roughly a full day of pay.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Sunlit Roman construction site showing scaffolding around tufa brick walls and limestone blocks.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-money/2.jpg",
       "audio": "audio/roman-money/2.wav",
-      "seconds": 5.8
+      "seconds": 4.6,
+      "voicedText": "For many ordinary laborers, this is roughly a full day of pay."
     },
     {
       "text": "A basic loaf of bread costs you a couple of brass coins, a fraction of your wage.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Ancient Roman bakery interior featuring stacked round loaves of wheat bread and a stone grain mill.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-money/3.jpg",
       "audio": "audio/roman-money/3.wav",
-      "seconds": 5
+      "seconds": 5,
+      "voicedText": "A basic loaf of bread costs you a couple of brass coins, a fraction of your wage."
     },
     {
       "text": "Cheap, watered-down street wine is remarkably affordable, costing just a coin or two per jug.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Thermopolium street shop with clay amphorae embedded into a decorative stone counter.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-money/4.jpg",
       "audio": "audio/roman-money/4.wav",
-      "seconds": 6.8
+      "seconds": 6.8,
+      "voicedText": "Cheap, watered-down street wine is remarkably affordable, costing just a coin or two per jug."
     },
     {
       "text": "But city rent eats up most of your earnings, trapping you in a cramped, fire-prone apartment.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Cramped upper-floor room of a Roman insula apartment with bare plaster walls and a narrow wooden shutter.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-money/5.jpg",
       "audio": "audio/roman-money/5.wav",
-      "seconds": 6.2
+      "seconds": 6.2,
+      "voicedText": "But city rent eats up most of your earnings, trapping you in a cramped, fire-prone apartment."
     },
     {
       "text": "Meanwhile, a wealthy senator owns multiple sprawling country estates funded by hundreds of tenant farms.",
@@ -50,7 +55,8 @@
       "imagePrompt": "Expansive view of a luxury Roman villa rustica with colonnaded courtyards, olive groves, and vineyards.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-money/6.jpg",
       "audio": "audio/roman-money/6.wav",
-      "seconds": 7.6
+      "seconds": 7.6,
+      "voicedText": "Meanwhile, a wealthy senator owns multiple sprawling country estates funded by hundreds of tenant farms."
     },
     {
       "text": "The rich spend fortunes on rare fish and silk while you count small change for beans.",
@@ -58,7 +64,8 @@
       "imagePrompt": "Marble banquet table set with bronze platters, glass wine bowls, and delicate linen napkins.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-money/7.jpg",
       "audio": "audio/roman-money/7.wav",
-      "seconds": 5.4
+      "seconds": 5.4,
+      "voicedText": "The rich spend fortunes on rare fish and silk while you count small change for beans."
     },
     {
       "text": "So how did poor Romans actually survive when grain shortages hit the empire?",
@@ -66,7 +73,8 @@
       "imagePrompt": "Vast empty Roman granary with tall brick pillars, high arched windows, and wooden storage bins.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-money/8.jpg",
       "audio": "audio/roman-money/8.wav",
-      "seconds": 5.3
+      "seconds": 5.3,
+      "voicedText": "So how did poor Romans actually survive when grain shortages hit the empire?"
     }
   ],
   "claimsToVerify": [

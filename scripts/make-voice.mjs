@@ -83,6 +83,11 @@ for (const slug of slugs) {
     console.log(`  ${slug} scene ${i + 1}/${script.scenes.length}: ${seconds.toFixed(1)}s`);
     // Save after every scene so a crash never loses finished work.
     fs.writeFileSync(file, JSON.stringify(script, null, 2));
+
+    // When using Gemini on free tier, add a gentle delay to stay safely under 15 RPM
+    if (PROVIDER === "gemini") {
+      await new Promise((r) => setTimeout(r, 4200));
+    }
   }
 
   fs.writeFileSync(file, JSON.stringify(script, null, 2));

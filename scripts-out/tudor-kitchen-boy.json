@@ -7,32 +7,56 @@
     {
       "text": "Inside King Henry the Eighth's royal palace at Hampton Court, hundreds of cooks worked in blistering infernos.",
       "mood": "dark",
-      "imagePrompt": "Massive Tudor brick kitchen with towering stone fireplaces and high rafter ceilings. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Massive Tudor brick kitchen with towering stone fireplaces and high rafter ceilings. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/tudor-kitchen-boy/1.png",
+      "audio": "audio/tudor-kitchen-boy/1.wav",
+      "voicedText": "Inside King Henry the Eighth's royal palace at Hampton Court, hundreds of cooks worked in blistering infernos.",
+      "seconds": 7.1
     },
     {
       "text": "At the very bottom of the kitchen hierarchy were spit-boys, often young orphans working fourteen-hour shifts.",
       "mood": "warm",
-      "imagePrompt": "Iron turning spit mounted in front of a roaring wood fire pit. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Iron turning spit mounted in front of a roaring wood fire pit. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/tudor-kitchen-boy/2.png",
+      "audio": "audio/tudor-kitchen-boy/2.wav",
+      "voicedText": "At the very bottom of the kitchen hierarchy were spit-boys, often young orphans working fourteen-hour shifts.",
+      "seconds": 7
     },
     {
       "text": "Your entire job was sitting inches from roasting meat, manually turning the iron spit without burning it.",
       "mood": "dark",
-      "imagePrompt": "Glowing red coal hearth with iron tongs and wooden grease-catching pans. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Glowing red coal hearth with iron tongs and wooden grease-catching pans. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/tudor-kitchen-boy/3.png",
+      "audio": "audio/tudor-kitchen-boy/3.wav",
+      "voicedText": "Your entire job was sitting inches from roasting meat, manually turning the iron spit without burning it.",
+      "seconds": 7.4
     },
     {
       "text": "The heat was so unbearable that spit boys worked in their undergarments behind makeshift wooden heat shields.",
       "mood": "night",
-      "imagePrompt": "Rough wooden planks propped up beside an immense stone hearth with glowing embers. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Rough wooden planks propped up beside an immense stone hearth with glowing embers. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/tudor-kitchen-boy/4.png",
+      "audio": "audio/tudor-kitchen-boy/4.wav",
+      "voicedText": "The heat was so unbearable that spit boys worked in their undergarments behind makeshift wooden heat shields.",
+      "seconds": 6.9
     },
     {
       "text": "You slept on damp grease-soaked straw mats directly on the cold flagstone kitchen floor.",
       "mood": "cool",
-      "imagePrompt": "Stone flagstone floor corner with stacked wooden firewood logs and a straw broom. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Stone flagstone floor corner with stacked wooden firewood logs and a straw broom. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/tudor-kitchen-boy/5.png",
+      "audio": "audio/tudor-kitchen-boy/5.wav",
+      "voicedText": "You slept on damp grease-soaked straw mats directly on the cold flagstone kitchen floor.",
+      "seconds": 5.9
     },
     {
       "text": "Would you have survived a week as a royal spit-boy? Share your thoughts below and follow for more history back then!",
       "mood": "day",
-      "imagePrompt": "Grand Tudor brick palace facade with ornamental chimneys against a sunny sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Grand Tudor brick palace facade with ornamental chimneys against a sunny sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/tudor-kitchen-boy/6.png",
+      "audio": "audio/tudor-kitchen-boy/6.wav",
+      "voicedText": "Would you have survived a week as a royal spit-boy? Share your thoughts below and follow for more history back then!",
+      "seconds": 6.8
     }
   ]
 }

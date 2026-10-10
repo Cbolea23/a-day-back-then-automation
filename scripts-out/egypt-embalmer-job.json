@@ -10,7 +10,8 @@
       "imagePrompt": "Sunlit ancient Egyptian tent workshop near the Nile River, tables with linen strips, jars, and spices in clay pots.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-embalmer-job/1.png",
       "audio": "audio/egypt-embalmer-job/1.wav",
-      "seconds": 5.2
+      "seconds": 5.2,
+      "voicedText": "You just got hired as an embalmer in ancient Egypt, and your workshop smells terrible."
     },
     {
       "text": "Your main job is preserving bodies so people can reach the afterlife safely.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Interior of a dusty wooden workshop with shelves of stone jars, oils, and rolled linen, soft sunlight streaming in.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-embalmer-job/2.png",
       "audio": "audio/egypt-embalmer-job/2.wav",
-      "seconds": 5.4
+      "seconds": 5.4,
+      "voicedText": "Your main job is preserving bodies so people can reach the afterlife safely."
     },
     {
       "text": "First, you wash the body and remove organs, placing them inside special canopic jars.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Dimly lit stone room with four carved limestone canopic jars arranged on a table, surrounded by incense burners.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-embalmer-job/3.png",
       "audio": "audio/egypt-embalmer-job/3.wav",
-      "seconds": 7.1
+      "seconds": 7.1,
+      "voicedText": "First, you wash the body and remove organs, placing them inside special canopic jars."
     },
     {
       "text": "Next comes the longest step. You pack the body in natron salt for forty days.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Desert workshop floor with large clay bins filled with white salt crystals, surrounded by woven baskets.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-embalmer-job/4.png",
       "audio": "audio/egypt-embalmer-job/4.wav",
-      "seconds": 5.4
+      "seconds": 5.4,
+      "voicedText": "Next comes the longest step. You pack the body in natron salt for forty days."
     },
     {
       "text": "After drying, you wrap hundreds of yards of linen while priests recite protective spells.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Shelves stacked with rolls of white linen cloth, small golden amulets, and bowls of aromatic resin.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-embalmer-job/5.png",
       "audio": "audio/egypt-embalmer-job/5.wav",
-      "seconds": 6.4
+      "seconds": 6.1,
+      "voicedText": "After drying, you wrap hundreds of yards of linen while priests recite protective spells."
     },
     {
       "text": "The whole process takes seventy days, but you work under strict sacred laws.",
@@ -50,7 +55,8 @@
       "imagePrompt": "Ancient Egyptian temple courtyard overlooking the desert horizon at sunset, tall stone pillars casting long shadows.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-embalmer-job/6.png",
       "audio": "audio/egypt-embalmer-job/6.wav",
-      "seconds": 5
+      "seconds": 5,
+      "voicedText": "The whole process takes seventy days, but you work under strict sacred laws."
     },
     {
       "text": "One mistake could anger the gods—or worse, ruin a wealthy Pharaoh's eternal soul. Want to know what happened when embalmers accidentally dropped the organs?",
@@ -58,7 +64,8 @@
       "imagePrompt": "Dark Egyptian tomb entryway lit by flickering oil lamps, leading down into a painted chamber.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-embalmer-job/7.png",
       "audio": "audio/egypt-embalmer-job/7.wav",
-      "seconds": 10.6
+      "seconds": 10.6,
+      "voicedText": "One mistake could anger the gods—or worse, ruin a wealthy Pharaoh's eternal soul. Want to know what happened when embalmers accidentally dropped the organs?"
     }
   ],
   "claimsToVerify": [

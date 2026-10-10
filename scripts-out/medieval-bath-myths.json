@@ -7,32 +7,56 @@
     {
       "text": "You probably think medieval people lived in total filth. You imagine layers of grime and zero soap.",
       "mood": "cool",
-      "imagePrompt": "a dimly lit medieval stone room with an empty wooden tub in the center. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "a dimly lit medieval stone room with an empty wooden tub in the center. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-bath-myths/1.wav",
+      "voicedText": "You probably think medieval people lived in total filth. You imagine layers of grime and zero soap.",
+      "seconds": 6.8,
+      "image": "images/medieval-bath-myths/1.png"
     },
     {
       "text": "The truth is, cleanliness was a priority for most. Public bathhouses were actually common in cities.",
       "mood": "warm",
-      "imagePrompt": "an illustration of a busy medieval public bathhouse with wooden tubs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "an illustration of a busy medieval public bathhouse with wooden tubs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-bath-myths/2.wav",
+      "voicedText": "The truth is, cleanliness was a priority for most. Public bathhouses were actually common in cities.",
+      "seconds": 6.9,
+      "image": "images/medieval-bath-myths/2.png"
     },
     {
       "text": "You visit the local steam house to scrub away the day's labor. It’s a social event.",
       "mood": "warm",
-      "imagePrompt": "a cozy stone interior with rising steam and soft candlelight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "a cozy stone interior with rising steam and soft candlelight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-bath-myths/3.wav",
+      "voicedText": "You visit the local steam house to scrub away the day's labor. It’s a social event.",
+      "seconds": 5.3,
+      "image": "images/medieval-bath-myths/3.png"
     },
     {
       "text": "Wealthy folks often had private tubs draped in cloth. They valued fresh water and clean linens.",
       "mood": "day",
-      "imagePrompt": "a medieval bedchamber with a wooden basin and a clean linen towel. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "a medieval bedchamber with a wooden basin and a clean linen towel. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-bath-myths/4.wav",
+      "voicedText": "Wealthy folks often had private tubs draped in cloth. They valued fresh water and clean linens.",
+      "seconds": 6.8,
+      "image": "images/medieval-bath-myths/4.png"
     },
     {
       "text": "So why the myth? Some later religious movements discouraged communal bathing to avoid perceived moral decay.",
       "mood": "dark",
-      "imagePrompt": "a dark, quiet medieval corridor with stone arches. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "a dark, quiet medieval corridor with stone arches. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-bath-myths/5.wav",
+      "voicedText": "So why the myth? Some later religious movements discouraged communal bathing to avoid perceived moral decay.",
+      "seconds": 7.3,
+      "image": "images/medieval-bath-myths/5.png"
     },
     {
       "text": "But you? You’re definitely getting a wash today. Curious about what they used instead of shampoo?",
       "mood": "day",
-      "imagePrompt": "a close up of natural sponges and soap made from lye and fats. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "a close up of natural sponges and soap made from lye and fats. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-bath-myths/6.wav",
+      "voicedText": "But you? You’re definitely getting a wash today. Curious about what they used instead of shampoo?",
+      "seconds": 5.7,
+      "image": "images/medieval-bath-myths/6.png"
     }
   ],
   "claimsToVerify": [

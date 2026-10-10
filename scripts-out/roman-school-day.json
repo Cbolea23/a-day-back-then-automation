@@ -10,7 +10,8 @@
       "imagePrompt": "Simple Roman bedroom interior lit dimly by moonlight through a small window shutter, folded wool blankets on a wooden bed frame, textured plaster wall.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-school-day/1.png",
       "audio": "audio/roman-school-day/1.wav",
-      "seconds": 5.6
+      "seconds": 5.6,
+      "voicedText": "You wake up before dawn because Roman school starts before the sun even rises."
     },
     {
       "text": "An enslaved tutor guides you through dark streets with a smoking oil lamp.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Narrow cobblestone street in ancient Rome at pre-dawn twilight, lit by a single hanging terracotta oil lamp against a weathered brick insula wall.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-school-day/2.png",
       "audio": "audio/roman-school-day/2.wav",
-      "seconds": 5
+      "seconds": 5,
+      "voicedText": "An enslaved tutor guides you through dark streets with a smoking oil lamp."
     },
     {
       "text": "There is no fancy classroom, just a rented bench behind a noisy street shop.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Semi-enclosed portico behind a public colonnade, simple wooden benches set on flagstone flooring with a draped linen curtain.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-school-day/3.png",
       "audio": "audio/roman-school-day/3.wav",
-      "seconds": 5.1
+      "seconds": 5.1,
+      "voicedText": "There is no fancy classroom, just a rented bench behind a noisy street shop."
     },
     {
       "text": "You scratch Latin letters into beeswax using a sharp iron stylus.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Close-up of a wooden diptych tablet filled with dark beeswax resting on a rough wooden table alongside an iron stylus with a flat eraser end.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-school-day/4.png",
       "audio": "audio/roman-school-day/4.wav",
-      "seconds": 4.7
+      "seconds": 4.7,
+      "voicedText": "You scratch Latin letters into beeswax using a sharp iron stylus."
     },
     {
       "text": "Next comes basic math, sliding tiny pebbles across a wooden counting board.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Roman counting board with grooved tracks and small polished river pebbles laid on a sunlit wooden bench.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-school-day/5.png",
       "audio": "audio/roman-school-day/5.wav",
-      "seconds": 4.9
+      "seconds": 4.9,
+      "voicedText": "Next comes basic math, sliding tiny pebbles across a wooden counting board."
     },
     {
       "text": "Make one careless slip, and your teacher might whack you with a cane.",
@@ -50,7 +55,8 @@
       "imagePrompt": "Empty classroom corner with stone masonry, a bundle of thin wooden birch rods leaning against an unadorned stone pillar.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-school-day/6.png",
       "audio": "audio/roman-school-day/6.wav",
-      "seconds": 4.3
+      "seconds": 4.3,
+      "voicedText": "Make one careless slip, and your teacher might whack you with a cane."
     },
     {
       "text": "Most kids drop out by age eleven to work in trades.",
@@ -58,7 +64,8 @@
       "imagePrompt": "Ancient Roman workshop corner with ceramic amphorae, leathercraft tools on a sturdy timber workbench, and bright outdoor light.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-school-day/7.png",
       "audio": "audio/roman-school-day/7.wav",
-      "seconds": 3.7
+      "seconds": 3.7,
+      "voicedText": "Most kids drop out by age eleven to work in trades."
     },
     {
       "text": "If your family has serious coin, high school means learning to conquer the Senate.",
@@ -66,7 +73,8 @@
       "imagePrompt": "Imposing Roman marble rostrum with towering fluted columns and a cylindrical leather scroll case resting on polished stone steps.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-school-day/8.png",
       "audio": "audio/roman-school-day/8.wav",
-      "seconds": 5.1
+      "seconds": 5.1,
+      "voicedText": "If your family has serious coin, high school means learning to conquer the Senate."
     }
   ],
   "claimsToVerify": [

@@ -10,7 +10,8 @@
       "imagePrompt": "Empty cobblestone town square in a late medieval European town with closed wooden shutters and deserted market stalls.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/plague-doctor-job/1.jpg",
       "audio": "audio/plague-doctor-job/1.wav",
-      "seconds": 5
+      "seconds": 5,
+      "voicedText": "The city council just hired you as the official municipal plague doctor."
     },
     {
       "text": "Forget the famous bird mask with glass eyes. That look only appears centuries later, around the 1600s.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Dusty 17th-century doctor's study with leather gloves, parchment contracts, and apothecary glass jars on an oak table.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/plague-doctor-job/2.jpg",
       "audio": "audio/plague-doctor-job/2.wav",
-      "seconds": 7.5
+      "seconds": 7.5,
+      "voicedText": "Forget the famous bird mask with glass eyes. That look only appears centuries later, around the 1600s."
     },
     {
       "text": "In the late Middle Ages, you just wear normal clothes, maybe waxed robes to repel fleas.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Dim wooden entryway of an old stone townhouse with thick waxed linen coats hanging on iron wall pegs.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/plague-doctor-job/3.jpg",
       "audio": "audio/plague-doctor-job/3.wav",
-      "seconds": 6.1
+      "seconds": 6.1,
+      "voicedText": "In the late Middle Ages, you just wear normal clothes, maybe waxed robes to repel fleas."
     },
     {
       "text": "Your real job is not curing patients. You count the dead, certify wills, and track quarantine houses.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Wooden parish ledger open on a rough wooden desk next to inkwells and wax seals beside a sunlit window.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/plague-doctor-job/4.jpg",
       "audio": "audio/plague-doctor-job/4.wav",
-      "seconds": 7.8
+      "seconds": 7.8,
+      "voicedText": "Your real job is not curing patients. You count the dead, certify wills, and track quarantine houses."
     },
     {
       "text": "To check a sick patient, you poke them with a wooden cane from a safe distance.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Low-lit stone doorway of a medieval home marked with a faded chalk cross on the rough timber door.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/plague-doctor-job/5.jpg",
       "audio": "audio/plague-doctor-job/5.wav",
-      "seconds": 4.6
+      "seconds": 4.6,
+      "voicedText": "To check a sick patient, you poke them with a wooden cane from a safe distance."
     },
     {
       "text": "The city pays you well because qualified doctors fled weeks ago.",
@@ -50,7 +55,8 @@
       "imagePrompt": "Abandoned medical quarters with overturned wooden benches, empty herb shelves, and spilled dried botanicals.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/plague-doctor-job/6.jpg",
       "audio": "audio/plague-doctor-job/6.wav",
-      "seconds": 4.4
+      "seconds": 4.4,
+      "voicedText": "The city pays you well because qualified doctors fled weeks ago."
     },
     {
       "text": "But you can never leave town, and your neighbors treat you like a walking curse.",
@@ -58,7 +64,8 @@
       "imagePrompt": "Barricaded town gate with heavy iron chains, timber logs, and tall stone battlements under an overcast sky.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/plague-doctor-job/7.jpg",
       "audio": "audio/plague-doctor-job/7.wav",
-      "seconds": 4.4
+      "seconds": 4.4,
+      "voicedText": "But you can never leave town, and your neighbors treat you like a walking curse."
     },
     {
       "text": "So what actually happens when you catch the fever yourself?",
@@ -66,7 +73,8 @@
       "imagePrompt": "A single lit candle burning low in an empty, quiet stone room with shadowy corners.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/plague-doctor-job/8.jpg",
       "audio": "audio/plague-doctor-job/8.wav",
-      "seconds": 3.5
+      "seconds": 3.5,
+      "voicedText": "So what actually happens when you catch the fever yourself?"
     }
   ],
   "claimsToVerify": [

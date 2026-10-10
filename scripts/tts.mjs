@@ -106,26 +106,30 @@ async function geminiSynth(text, outPath, overrides = {}) {
   throw new Error("Gemini TTS failed after retries: " + lastError.slice(0, 500));
 }
 
-function edgeSynth(text, outPath, overrides = {}) {
-  const voice = overrides.voice || process.env.VOICE || "en-US-AndrewMultilingualNeural";
+async function edgeSynth(text, outPath, overrides = {}) {
+  const primaryVoice = overrides.voice || process.env.VOICE || "en-US-AndrewMultilingualNeural";
+  const fallbackVoices = [primaryVoice, "en-US-BrianMultilingualNeural", "en-US-ChristopherNeural", "en-US-GuyNeural"];
   const rate = process.env.RATE || "+5%";
   let lastErr = null;
-  for (let attempt = 1; attempt <= 3; attempt++) {
-    try {
-      execFileSync(
-        "python",
-        ["-m", "edge_tts", "--voice", voice, `--rate=${rate}`, "--text", text, "--write-media", outPath],
-        {stdio: "pipe"},
-      );
-      return;
-    } catch (err) {
-      lastErr = err;
-      if (attempt < 3) {
-        Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 1000 * attempt);
+
+  for (const voice of fallbackVoices) {
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        execFileSync(
+          "python",
+          ["-m", "edge_tts", "--voice", voice, `--rate=${rate}`, "--text", text, "--write-media", outPath],
+          {stdio: "pipe"},
+        );
+        if (fs.existsSync(outPath) && fs.statSync(outPath).size > 500) {
+          return;
+        }
+      } catch (err) {
+        lastErr = err;
+        await new Promise((r) => setTimeout(r, 2000 * attempt));
       }
     }
   }
-  throw lastErr || new Error("edge-tts failed after retries");
+  throw lastErr || new Error("edge-tts failed after retries across voices");
 }
 let geminiQuotaExhausted = false;
 
@@ -142,13 +146,13 @@ export async function synth(text, outPath, overrides = {}) {
       ) {
         geminiQuotaExhausted = true;
         console.warn("\n[Notice] Gemini TTS daily limit reached. Seamlessly using edge-tts voiceover...\n");
-        edgeSynth(text, outPath, overrides);
+        await edgeSynth(text, outPath, overrides);
       } else {
         throw err;
       }
     }
   } else {
-    edgeSynth(text, outPath, overrides);
+    await edgeSynth(text, outPath, overrides);
   }
 }
 

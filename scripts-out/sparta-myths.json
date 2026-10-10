@@ -10,7 +10,8 @@
       "imagePrompt": "Simple stone ruins in a valley.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/sparta-myths/1.png",
       "audio": "audio/sparta-myths/1.wav",
-      "seconds": 7
+      "seconds": 7,
+      "voicedText": "Sparta wasn't like the movies. You walk through a city of modest houses, not towering fortresses."
     },
     {
       "text": "Forget the leather armor. Your daily life is actually quite simple and surprisingly disciplined.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Sparse landscape with olive trees.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/sparta-myths/2.png",
       "audio": "audio/sparta-myths/2.wav",
-      "seconds": 6.7
+      "seconds": 6.7,
+      "voicedText": "Forget the leather armor. Your daily life is actually quite simple and surprisingly disciplined."
     },
     {
       "text": "Historians often debate the stories about infant exposure. Some evidence suggests it happened, but maybe not as often.",
@@ -26,7 +28,8 @@
       "imagePrompt": "A rugged mountain pass in Greece.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/sparta-myths/3.png",
       "audio": "audio/sparta-myths/3.wav",
-      "seconds": 7.4
+      "seconds": 7.4,
+      "voicedText": "Historians often debate the stories about infant exposure. Some evidence suggests it happened, but maybe not as often."
     },
     {
       "text": "Women in Sparta held more freedom than in most Greek cities, owning land and managing estates.",
@@ -34,7 +37,8 @@
       "imagePrompt": "An ancient open courtyard.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/sparta-myths/4.png",
       "audio": "audio/sparta-myths/4.wav",
-      "seconds": 7
+      "seconds": 7,
+      "voicedText": "Women in Sparta held more freedom than in most Greek cities, owning land and managing estates."
     },
     {
       "text": "You are taught to speak in short, sharp sentences. This is literally where the word laconic comes from.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Close up of ancient Greek inscription on stone.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/sparta-myths/5.png",
       "audio": "audio/sparta-myths/5.wav",
-      "seconds": 6.2
+      "seconds": 6.2,
+      "voicedText": "You are taught to speak in short, sharp sentences. This is literally where the word laconic comes from."
     },
     {
       "text": "If Sparta was so powerful, why did it fall? Follow for the truth behind their decline.",
@@ -50,7 +55,8 @@
       "imagePrompt": "Sunset over ancient ruins.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/sparta-myths/6.png",
       "audio": "audio/sparta-myths/6.wav",
-      "seconds": 6.1
+      "seconds": 6.1,
+      "voicedText": "If Sparta was so powerful, why did it fall? Follow for the truth behind their decline."
     }
   ],
   "claimsToVerify": [

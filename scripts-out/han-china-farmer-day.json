@@ -7,32 +7,56 @@
     {
       "text": "Two thousand years ago, ordinary life in Han Dynasty China revolved around the rhythm of the imperial calendar.",
       "mood": "cool",
-      "imagePrompt": "Terraced green millet and wheat fields along the Yellow River basin at dawn. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Terraced green millet and wheat fields along the Yellow River basin at dawn. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/han-china-farmer-day/1.png",
+      "audio": "audio/han-china-farmer-day/1.wav",
+      "voicedText": "Two thousand years ago, ordinary life in Han Dynasty China revolved around the rhythm of the imperial calendar.",
+      "seconds": 7.4
     },
     {
       "text": "You woke before sunrise in a rammed-earth cottage to weed vast fields of wheat, barley, and millet.",
       "mood": "day",
-      "imagePrompt": "Courtyard of a Han Dynasty rammed-earth farmhouse with terracotta storage vessels. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Courtyard of a Han Dynasty rammed-earth farmhouse with terracotta storage vessels. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/han-china-farmer-day/2.png",
+      "audio": "audio/han-china-farmer-day/2.wav",
+      "voicedText": "You woke before sunrise in a rammed-earth cottage to weed vast fields of wheat, barley, and millet.",
+      "seconds": 6.9
     },
     {
       "text": "China had perfected cast-iron plows and multi-tube seed drills centuries before Europe invented them.",
       "mood": "warm",
-      "imagePrompt": "Heavy iron-tipped curved wooden plow resting beside woven willow seed baskets. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Heavy iron-tipped curved wooden plow resting beside woven willow seed baskets. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/han-china-farmer-day/3.png",
+      "audio": "audio/han-china-farmer-day/3.wav",
+      "voicedText": "China had perfected cast-iron plows and multi-tube seed drills centuries before Europe invented them.",
+      "seconds": 6.9
     },
     {
       "text": "Besides paying grain taxes, every adult male owed one month of mandatory unpaid labor to the Emperor each year.",
       "mood": "dark",
-      "imagePrompt": "Distant mountain pass with massive stone watchtower and early fortification wall. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Distant mountain pass with massive stone watchtower and early fortification wall. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/han-china-farmer-day/4.png",
+      "audio": "audio/han-china-farmer-day/4.wav",
+      "voicedText": "Besides paying grain taxes, every adult male owed one month of mandatory unpaid labor to the Emperor each year.",
+      "seconds": 8.3
     },
     {
       "text": "You might be drafted to build frontier watchtowers, repair irrigation canals, or guard remote borders.",
       "mood": "cool",
-      "imagePrompt": "Stone irrigation sluice gate diverting fresh river water into farm channels. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Stone irrigation sluice gate diverting fresh river water into farm channels. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/han-china-farmer-day/5.png",
+      "audio": "audio/han-china-farmer-day/5.wav",
+      "voicedText": "You might be drafted to build frontier watchtowers, repair irrigation canals, or guard remote borders.",
+      "seconds": 7
     },
     {
       "text": "Could you endure mandatory imperial labor every single year? Let us know in the comments and follow for daily history!",
       "mood": "day",
-      "imagePrompt": "Expansive river valley dotted with peaceful rural hamlets under soft sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Expansive river valley dotted with peaceful rural hamlets under soft sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/han-china-farmer-day/6.png",
+      "audio": "audio/han-china-farmer-day/6.wav",
+      "voicedText": "Could you endure mandatory imperial labor every single year? Let us know in the comments and follow for daily history!",
+      "seconds": 7.3
     }
   ]
 }

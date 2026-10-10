@@ -10,7 +10,8 @@
       "imagePrompt": "an ancient Greek banquet hall with stone pillars and empty wooden couches. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/greek-symposium/1.png",
       "audio": "audio/greek-symposium/1.wav",
-      "seconds": 5.8
+      "seconds": 5.8,
+      "voicedText": "You recline on a couch at a Greek symposium, the ultimate high-society drinking club."
     },
     {
       "text": "Don't expect a wild rager. It is a strictly controlled environment for conversation and music.",
@@ -18,7 +19,8 @@
       "imagePrompt": "a dimly lit room with ceramic wine vessels on a low table. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/greek-symposium/2.png",
       "audio": "audio/greek-symposium/2.wav",
-      "seconds": 6.1
+      "seconds": 6.1,
+      "voicedText": "Don't expect a wild rager. It is a strictly controlled environment for conversation and music."
     },
     {
       "text": "The host appoints a master of ceremonies who decides how much to water down the wine.",
@@ -26,7 +28,8 @@
       "imagePrompt": "a large clay mixing bowl sitting on a marble floor. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/greek-symposium/3.png",
       "audio": "audio/greek-symposium/3.wav",
-      "seconds": 5.4
+      "seconds": 5.4,
+      "voicedText": "The host appoints a master of ceremonies who decides how much to water down the wine."
     },
     {
       "text": "Drinking wine straight is considered uncivilized. You probably dilute it heavily to keep the vibe sophisticated.",
@@ -34,7 +37,8 @@
       "imagePrompt": "pouring water from a decorative pitcher into a painted clay jar. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/greek-symposium/4.png",
       "audio": "audio/greek-symposium/4.wav",
-      "seconds": 7.8
+      "seconds": 7.8,
+      "voicedText": "Drinking wine straight is considered uncivilized. You probably dilute it heavily to keep the vibe sophisticated."
     },
     {
       "text": "Between rounds, you play kottabos, flicking wine dregs at a target to predict your love life.",
@@ -42,7 +46,8 @@
       "imagePrompt": "an empty bronze stand used for games in a quiet courtyard. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/greek-symposium/5.png",
       "audio": "audio/greek-symposium/5.wav",
-      "seconds": 6.1
+      "seconds": 6.1,
+      "voicedText": "Between rounds, you play kottabos, flicking wine dregs at a target to predict your love life."
     },
     {
       "text": "The night ends with a boisterous street parade, but the most scandalous secrets were whispered inside.",
@@ -50,7 +55,8 @@
       "imagePrompt": "a dark city street at night with stone paved paths. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/greek-symposium/6.png",
       "audio": "audio/greek-symposium/6.wav",
-      "seconds": 6.3
+      "seconds": 6.3,
+      "voicedText": "The night ends with a boisterous street parade, but the most scandalous secrets were whispered inside."
     }
   ],
   "claimsToVerify": [

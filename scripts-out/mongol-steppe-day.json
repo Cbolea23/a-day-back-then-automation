@@ -7,32 +7,56 @@
     {
       "text": "On the vast Eurasian steppe, survival meant moving constantly across hundreds of miles of open grassland.",
       "mood": "cool",
-      "imagePrompt": "Endless grassy Mongol steppe under a massive dramatic blue sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Endless grassy Mongol steppe under a massive dramatic blue sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/mongol-steppe-day/1.png",
+      "audio": "audio/mongol-steppe-day/1.wav",
+      "voicedText": "On the vast Eurasian steppe, survival meant moving constantly across hundreds of miles of open grassland.",
+      "seconds": 7.6
     },
     {
       "text": "You lived in a felt-covered round tent called a ger, engineered to resist sub-zero blizzard winds.",
       "mood": "warm",
-      "imagePrompt": "Traditional round white felt ger tent standing on open rolling plains. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Traditional round white felt ger tent standing on open rolling plains. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/mongol-steppe-day/2.png",
+      "audio": "audio/mongol-steppe-day/2.wav",
+      "voicedText": "You lived in a felt-covered round tent called a ger, engineered to resist sub-zero blizzard winds.",
+      "seconds": 6.3
     },
     {
       "text": "Children learned to ride tough steppe ponies almost as soon as they learned to walk.",
       "mood": "day",
-      "imagePrompt": "Wooden horse corral with leather saddles and horsehair ropes on a grassy slope. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Wooden horse corral with leather saddles and horsehair ropes on a grassy slope. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/mongol-steppe-day/3.png",
+      "audio": "audio/mongol-steppe-day/3.wav",
+      "voicedText": "Children learned to ride tough steppe ponies almost as soon as they learned to walk.",
+      "seconds": 5.6
     },
     {
       "text": "Your diet was almost entirely animal-based: mutton broth, dried curd called aaruul, and fermented mare's milk.",
       "mood": "warm",
-      "imagePrompt": "Interior hearth of a felt tent with an iron cauldron and carved wooden bowls. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Interior hearth of a felt tent with an iron cauldron and carved wooden bowls. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/mongol-steppe-day/4.png",
+      "audio": "audio/mongol-steppe-day/4.wav",
+      "voicedText": "Your diet was almost entirely animal-based: mutton broth, dried curd called aaruul, and fermented mare's milk.",
+      "seconds": 7.9
     },
     {
       "text": "When seasonal pasture ran dry, the whole camp collapsed their homes, loaded wooden carts, and rode onward.",
       "mood": "cool",
-      "imagePrompt": "Heavy wooden steppe wagon train track cutting across expansive green hills. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Heavy wooden steppe wagon train track cutting across expansive green hills. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/mongol-steppe-day/5.png",
+      "audio": "audio/mongol-steppe-day/5.wav",
+      "voicedText": "When seasonal pasture ran dry, the whole camp collapsed their homes, loaded wooden carts, and rode onward.",
+      "seconds": 7.4
     },
     {
       "text": "Could you live a nomadic life without running water or permanent walls? Drop your thoughts below and follow for daily history!",
       "mood": "day",
-      "imagePrompt": "Golden sunset over rolling Mongolian grasslands with distant winding river. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+      "imagePrompt": "Golden sunset over rolling Mongolian grasslands with distant winding river. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/mongol-steppe-day/6.png",
+      "audio": "audio/mongol-steppe-day/6.wav",
+      "voicedText": "Could you live a nomadic life without running water or permanent walls? Drop your thoughts below and follow for daily history!",
+      "seconds": 7.7
     }
   ]
 }
