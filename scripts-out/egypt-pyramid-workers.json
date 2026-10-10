@@ -1,0 +1,72 @@
+{
+  "slug": "egypt-pyramid-workers",
+  "title": "Who Really Built the Pyramids",
+  "hook": "Slaves didn't build the pyramids",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You wake up in a dusty barrack right beside the rising Giza Pyramids.",
+      "mood": "cool",
+      "imagePrompt": "Dusty ancient Egyptian barracks made of mudbrick, Giza plateau, dawn light, Pyramids of Giza in the distance.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-pyramid-workers/1.png",
+      "audio": "audio/egypt-pyramid-workers/1.wav",
+      "seconds": 6.6
+    },
+    {
+      "text": "But you are not a movie-style slave. You are actually a respected, well-fed builder.",
+      "mood": "warm",
+      "imagePrompt": "Wide shot of a clean ancient Egyptian construction site, limestone blocks, scaffolding, warm sunlight.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-pyramid-workers/2.png",
+      "audio": "audio/egypt-pyramid-workers/2.wav",
+      "seconds": 6.7
+    },
+    {
+      "text": "Your team has a competitive crew name, like the proud \"Friends of Khufu\" gang.",
+      "mood": "warm",
+      "imagePrompt": "Close-up of an ancient Egyptian limestone block with red ochre hieroglyphic graffiti, warm afternoon.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-pyramid-workers/3.png",
+      "audio": "audio/egypt-pyramid-workers/3.wav",
+      "seconds": 5.8
+    },
+    {
+      "text": "For lunch, you receive massive rations of fresh bread, garlic, and hydrating, thick beer.",
+      "mood": "day",
+      "imagePrompt": "A rustic wooden table in ancient Egypt, loaded with loaves of crusty bread, garlic bulbs, and clay beer jugs.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-pyramid-workers/4.png",
+      "audio": "audio/egypt-pyramid-workers/4.wav",
+      "seconds": 8.5
+    },
+    {
+      "text": "If you get hurt, the pharaoh’s skilled doctors will treat you with advanced ancient medicine.",
+      "mood": "day",
+      "imagePrompt": "An ancient Egyptian medical tent, clay jars of ointments, linen bandages, papyrus scrolls on a wooden table.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-pyramid-workers/5.png",
+      "audio": "audio/egypt-pyramid-workers/5.wav",
+      "seconds": 6.1
+    },
+    {
+      "text": "At night, you rest in a bustling, purpose-built town with thousands of your coworkers.",
+      "mood": "dark",
+      "imagePrompt": "Overlooking a sprawling ancient Egyptian workers' village, mudbrick houses, smoky cooking fires, evening light.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-pyramid-workers/6.png",
+      "audio": "audio/egypt-pyramid-workers/6.wav",
+      "seconds": 6.6
+    },
+    {
+      "text": "But how did these workers react when their rations were late? Find out next time.",
+      "mood": "warm",
+      "imagePrompt": "A dusty ancient Egyptian administrative courtyard, stone tablets, papyrus rolls on a desk, dramatic shadows.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-pyramid-workers/7.png",
+      "audio": "audio/egypt-pyramid-workers/7.wav",
+      "seconds": 6
+    }
+  ],
+  "claimsToVerify": [
+    "Pyramid builders in Giza lived in purpose-built barracks or worker villages.",
+    "The mainstream archaeological consensus is that pyramid builders were recruited laborers, not slaves.",
+    "Worker graffiti shows crew names like 'Friends of Khufu' or 'Drunkards of Menkaure'.",
+    "Rations for pyramid workers included bread, beer, and garlic.",
+    "Archaeological evidence (skeletons with set bones) shows workers received medical treatment.",
+    "Ancient Egyptian workers went on strike (such as the famous strike under Ramesses III)."
+  ]
+}

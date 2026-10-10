@@ -1,0 +1,43 @@
+{
+  "slug": "medieval-village-vs-city",
+  "title": "Village vs Town in the Middle Ages",
+  "hook": "Village life or city bustle?",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You wake up in a village. Your day is ruled by the sun and the harvest.",
+      "mood": "day",
+      "imagePrompt": "a small wooden cottage in a green, rolling wheat field. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Food is simple, mostly grains and pottage. You know everyone in town by their first name.",
+      "mood": "day",
+      "imagePrompt": "a clay bowl filled with vegetable pottage on a rough wooden table. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "But maybe you crave opportunity. You head to the city gates, seeking a trade apprenticeship.",
+      "mood": "warm",
+      "imagePrompt": "a stone city wall with a busy wooden gatehouse. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "The city is loud, crowded, and smells of smoke. There is a higher risk of disease here.",
+      "mood": "dark",
+      "imagePrompt": "narrow, crowded medieval streets with overhanging timber houses. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Still, you gain access to markets, guilds, and the chance to buy your freedom from lords.",
+      "mood": "day",
+      "imagePrompt": "a bustling medieval marketplace with colorful market stalls. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Safe routine or risky success? Which one would you choose for your medieval self?",
+      "mood": "warm",
+      "imagePrompt": "undefined. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    }
+  ],
+  "claimsToVerify": [
+    "Village life was agrarian and dictated by the harvest",
+    "Cities offered trade apprenticeships and guild memberships",
+    "Medieval cities were more crowded and had higher disease risks than villages"
+  ]
+}

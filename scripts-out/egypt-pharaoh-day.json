@@ -1,0 +1,69 @@
+{
+  "slug": "egypt-pharaoh-day",
+  "title": "A Day as Pharaoh",
+  "hook": "Was being Pharaoh actually terrible?",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You wake up in ancient Egypt as a living god, but your schedule is totally packed.",
+      "mood": "warm",
+      "imagePrompt": "Sunlight shining into an ancient Egyptian palace chamber with carved stone pillars and alabaster urns.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-pharaoh-day/1.png",
+      "audio": "audio/egypt-pharaoh-day/1.wav",
+      "seconds": 5.9
+    },
+    {
+      "text": "First, priests wash and dress you in fine linen, anointed with fragrant oils.",
+      "mood": "day",
+      "imagePrompt": "A luxurious ancient Egyptian bath hall featuring polished limestone tiles and golden vessels.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-pharaoh-day/2.png",
+      "audio": "audio/egypt-pharaoh-day/2.wav",
+      "seconds": 5.6
+    },
+    {
+      "text": "Then comes prayer. You must perform morning rituals to keep the universe from falling into chaos.",
+      "mood": "warm",
+      "imagePrompt": "An inner sanctuary of an ancient Egyptian temple illuminated by incense smoke and flickering oil lamps.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-pharaoh-day/3.png",
+      "audio": "audio/egypt-pharaoh-day/3.wav",
+      "seconds": 6.8
+    },
+    {
+      "text": "Next, state business. You meet viziers to discuss grain harvests, taxes, and giant pyramid construction.",
+      "mood": "day",
+      "imagePrompt": "A high-ceilinged Egyptian hall with papyrus columns, wall paintings, and detailed maps on scrolls.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-pharaoh-day/4.png",
+      "audio": "audio/egypt-pharaoh-day/4.wav",
+      "seconds": 7.4
+    },
+    {
+      "text": "Midday brings formal feasts, but also hearing legal disputes from high-ranking citizens.",
+      "mood": "warm",
+      "imagePrompt": "An open-air Egyptian courtyard decorated with woven reed mats, stone tables, and fruit baskets.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-pharaoh-day/5.png",
+      "audio": "audio/egypt-pharaoh-day/5.wav",
+      "seconds": 6.3
+    },
+    {
+      "text": "In the evening, you tour royal gardens, review troop movements, and inspect temple blueprints.",
+      "mood": "cool",
+      "imagePrompt": "A tranquil Egyptian palace garden with a rectangular lotus pond surrounded by palm trees under a twilight sky.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-pharaoh-day/6.png",
+      "audio": "audio/egypt-pharaoh-day/6.wav",
+      "seconds": 6.3
+    },
+    {
+      "text": "Being divine sounds great, but what happens when a bad harvest makes people question your godhood?",
+      "mood": "dark",
+      "imagePrompt": "A dramatic view of Egyptian pyramids silhouetted against a dusty, dark orange sunset.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-pharaoh-day/7.png",
+      "audio": "audio/egypt-pharaoh-day/7.wav",
+      "seconds": 5.9
+    }
+  ],
+  "claimsToVerify": [
+    "Pharaohs performed daily morning temple rituals to maintain Ma'at (cosmic balance).",
+    "Pharaohs spent significant daily time on state administration, grain storage, and building oversight.",
+    "Morning ritual purifications with water and oils were standard for Egyptian royalty and high priests."
+  ]
+}

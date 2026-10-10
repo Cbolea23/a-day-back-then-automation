@@ -1,0 +1,70 @@
+{
+  "slug": "roman-doctor-job",
+  "title": "Being a Doctor in Rome",
+  "hook": "Ancient Rome's Terrifying Doctors",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You hold a bronze lever, about to fix a soldier's broken skull.",
+      "mood": "warm",
+      "imagePrompt": "Interior of a sunlit Roman military tent with wooden tables, brass medical bowls, and folded linen.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-doctor-job/1.png",
+      "audio": "audio/roman-doctor-job/1.wav",
+      "seconds": 4.7
+    },
+    {
+      "text": "Welcome to Roman medicine. You do not know what germs are, but you have incredible tools.",
+      "mood": "day",
+      "imagePrompt": "A wooden desk covered with ancient Roman bronze scalpels, bone drills, and tweezers in a sunlit room.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-doctor-job/2.png",
+      "audio": "audio/roman-doctor-job/2.wav",
+      "seconds": 5.6
+    },
+    {
+      "text": "Your medical kit contains beautifully crafted bone levers, specialized arrow extractors, and sharp scalpels.",
+      "mood": "cool",
+      "imagePrompt": "A velvet roll-up case holding antique surgical instruments on a rough stone ledge.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-doctor-job/3.png",
+      "audio": "audio/roman-doctor-job/3.wav",
+      "seconds": 7.5
+    },
+    {
+      "text": "For pain, you might prescribe willow bark or wild poppy seeds. They actually work.",
+      "mood": "day",
+      "imagePrompt": "Dried herbs, poppy pods, and small wooden bowls filled with crushed leaves on a rustic wooden table.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-doctor-job/4.png",
+      "audio": "audio/roman-doctor-job/4.wav",
+      "seconds": 5.4
+    },
+    {
+      "text": "If a Roman soldier gets wounded, you wash the cut with vinegar to help prevent infection.",
+      "mood": "warm",
+      "imagePrompt": "A terracotta jar pouring clear liquid into a shallow ceramic dish next to clean linen bandages.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-doctor-job/5.png",
+      "audio": "audio/roman-doctor-job/5.wav",
+      "seconds": 5.7
+    },
+    {
+      "text": "Many ancient Romans actually survive complex brain surgeries, as modern archaeology has proved.",
+      "mood": "cool",
+      "imagePrompt": "An ancient Roman medical workshop with anatomy sketches carved into a rough plaster wall.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-doctor-job/6.png",
+      "audio": "audio/roman-doctor-job/6.wav",
+      "seconds": 7.1
+    },
+    {
+      "text": "But when the emperor gets sick, herbs fail. What happens when your next patient is a living god?",
+      "mood": "dark",
+      "imagePrompt": "A dimly lit Roman palace bedchamber with purple drapes and an empty golden stool.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-doctor-job/7.png",
+      "audio": "audio/roman-doctor-job/7.wav",
+      "seconds": 5.7
+    }
+  ],
+  "claimsToVerify": [
+    "Roman doctors used bronze tools like levers and arrow extractors.",
+    "Roman doctors used vinegar (acetum) to wash wounds to prevent infection.",
+    "Willow bark (containing salicin) and poppy seeds (containing opiates) were used by Romans for pain relief.",
+    "Archaeological evidence (healed skulls) shows Romans survived trepanation/brain surgeries."
+  ]
+}

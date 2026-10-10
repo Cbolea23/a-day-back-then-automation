@@ -1,0 +1,72 @@
+{
+  "slug": "sample-roman-morning",
+  "title": "Your Morning in Ancient Rome",
+  "hook": "Your Roman morning starts before sunrise",
+  "channelName": "A Day Back Then",
+  "claimsToVerify": [
+    "Many Romans lived in multi-storey apartment blocks (insulae) with fire risk",
+    "Many apartments lacked kitchens",
+    "Typical breakfast (ientaculum) was simple: bread, cheese, olives",
+    "Most residents fetched water from public fountains",
+    "Clients greeted their patrons at dawn (salutatio) wearing a toga",
+    "Many Romans finished business by early afternoon and went to the baths"
+  ],
+  "scenes": [
+    {
+      "text": "It's still dark. You wake on a straw mattress in a tiny room, high up in a crowded apartment block.",
+      "mood": "night",
+      "imagePrompt": "Dim ancient Roman apartment room at dawn, straw mattress, small oil lamp glowing",
+      "audio": "audio/sample-roman-morning/1.wav",
+      "seconds": 7.9,
+      "image": "images/sample-roman-morning/1.jpg"
+    },
+    {
+      "text": "There's no kitchen up here, and fire is a real danger in these buildings. So you skip cooking.",
+      "mood": "night",
+      "imagePrompt": "Narrow multi-storey Roman apartment building at night with a single lit window",
+      "audio": "audio/sample-roman-morning/2.wav",
+      "seconds": 6.8,
+      "image": "images/sample-roman-morning/2.jpg"
+    },
+    {
+      "text": "Breakfast is simple. Bread, maybe some cheese or olives, grabbed on your way out.",
+      "mood": "warm",
+      "imagePrompt": "Roman street food stall with bread, cheese and olives in morning light",
+      "audio": "audio/sample-roman-morning/3.wav",
+      "seconds": 6.4,
+      "image": "images/sample-roman-morning/3.jpg"
+    },
+    {
+      "text": "Water comes from a public fountain down the street. Almost nobody has a tap upstairs.",
+      "mood": "day",
+      "imagePrompt": "Roman street fountain with people filling jugs at sunrise",
+      "audio": "audio/sample-roman-morning/4.wav",
+      "seconds": 5.9,
+      "image": "images/sample-roman-morning/4.jpg"
+    },
+    {
+      "text": "If you work for a rich patron, you put on your toga and go greet him at his house, at dawn.",
+      "mood": "day",
+      "imagePrompt": "Crowd of men in togas waiting at the entrance hall of a wealthy Roman villa",
+      "audio": "audio/sample-roman-morning/5.wav",
+      "seconds": 6.9,
+      "image": "images/sample-roman-morning/5.jpg"
+    },
+    {
+      "text": "He might hand you food or a little money. Or he might just make you wait.",
+      "mood": "warm",
+      "imagePrompt": "Roman atrium with a wealthy patron seated and clients standing in line",
+      "audio": "audio/sample-roman-morning/6.wav",
+      "seconds": 7,
+      "image": "images/sample-roman-morning/6.jpg"
+    },
+    {
+      "text": "Many people wrapped up business by early afternoon, then headed to the baths. Want to see that part?",
+      "mood": "warm",
+      "imagePrompt": "Roman public baths with steam and bathers relaxing, warm light",
+      "audio": "audio/sample-roman-morning/7.wav",
+      "seconds": 6.8,
+      "image": "images/sample-roman-morning/7.jpg"
+    }
+  ]
+}

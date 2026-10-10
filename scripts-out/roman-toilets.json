@@ -1,0 +1,72 @@
+{
+  "slug": "roman-toilets",
+  "title": "How Romans Used the Toilet",
+  "hook": "Did Romans Really Share Sponges?",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You sit shoulder-to-shoulder with strangers on cold stone benches, doing your business in broad daylight.",
+      "mood": "day",
+      "imagePrompt": "Interior view of an ancient Roman public latrine with a long row of stone bench seats with keyhole openings, sunbeams through high clerestory windows.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-toilets/1.jpg",
+      "audio": "audio/roman-toilets/1.wav",
+      "seconds": 9.9
+    },
+    {
+      "text": "Welcome to an ancient Roman public latrine. There are no stalls, no doors, and zero privacy.",
+      "mood": "warm",
+      "imagePrompt": "Wide angle of a preserved Roman communal latrine ruin, showing the open floor plan, terracotta walls, and no partitions.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-toilets/2.jpg",
+      "audio": "audio/roman-toilets/2.wav",
+      "seconds": 8.2
+    },
+    {
+      "text": "Water flows in a shallow gutter right beneath your feet to carry the waste away.",
+      "mood": "cool",
+      "imagePrompt": "Close-up of a stone drainage channel along the floor of an ancient Roman stone bathroom with running water.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-toilets/3.jpg",
+      "audio": "audio/roman-toilets/3.wav",
+      "seconds": 5
+    },
+    {
+      "text": "When you finish, you spot the famous sponge on a stick sitting in a communal bucket.",
+      "mood": "warm",
+      "imagePrompt": "A ceramic bucket holding a sea sponge tied to a wooden stick, resting on a stone-paved floor next to a Roman drainage gutter.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-toilets/4.jpg",
+      "audio": "audio/roman-toilets/4.wav",
+      "seconds": 5.1
+    },
+    {
+      "text": "Popular myth says everyone shared it to wipe. Modern archaeologists, though, are not so sure.",
+      "mood": "cool",
+      "imagePrompt": "Detailed view of ancient Roman masonry and stone seating with weathered carved toilet openings in soft lighting.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-toilets/5.jpg",
+      "audio": "audio/roman-toilets/5.wav",
+      "seconds": 7.5
+    },
+    {
+      "text": "It was probably used to clean the stone toilet benches, while people wiped with scraps of cloth.",
+      "mood": "day",
+      "imagePrompt": "A rustic wooden table in a Roman ruin displaying folded ancient linen fabric scraps and pottery shards.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-toilets/6.jpg",
+      "audio": "audio/roman-toilets/6.wav",
+      "seconds": 5.4
+    },
+    {
+      "text": "But that was not the worst part. Latrines were dark, cramped, and occasionally exploded from trapped methane.",
+      "mood": "dark",
+      "imagePrompt": "Shadowy underground sewer entrance beneath ancient Roman stone arches, illuminated by flickering torchlight.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-toilets/7.jpg",
+      "audio": "audio/roman-toilets/7.wav",
+      "seconds": 7.2
+    }
+  ],
+  "claimsToVerify": [
+    "Roman public latrines had communal multi-seat stone benches with no partition walls",
+    "Running water channels beneath or in front of seating were used for rinsing or waste removal",
+    "The sponge-on-a-stick (tersorium) existed and was kept in buckets of water or vinegar",
+    "Modern scholarly debate questions whether the tersorium was for personal wiping or cleaning the latrine benches/facility",
+    "Evidence exists for the use of cloth scraps and ceramic sherds (pessoi) for personal wiping",
+    "Trapped methane gas in Roman sewer systems posed fire and explosion hazards"
+  ]
+}

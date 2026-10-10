@@ -1,0 +1,38 @@
+{
+  "slug": "pirate-myths",
+  "title": "Pirate Myths",
+  "hook": "Pirates almost never made anyone walk the plank.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "The classic image of pirates with buried treasure maps and plank-walking was invented by Victorian novelists.",
+      "mood": "cool",
+      "imagePrompt": "Rocky ocean coast with breaking white waves under brooding twilight clouds. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Walking the plank was virtually unheard of. If pirates wanted you dead, they shot you or marooned you on a sandbar.",
+      "mood": "dark",
+      "imagePrompt": "Lonely narrow sandbar reef surrounded by open sea under stormy grey sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "They almost never buried treasure. Pirates spent their plunder immediately in pirate havens like Nassau and Port Royal.",
+      "mood": "warm",
+      "imagePrompt": "Cobblestone seaside tavern alley with hanging iron lanterns and wooden kegs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Eye patches were not always for missing eyes—some sailors wore them to keep one eye adjusted to dim decks below.",
+      "mood": "day",
+      "imagePrompt": "Hatchway stairs leading down into the dark wooden cargo hold of a sailing ship. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Blackbeard actually tied slow-burning fuses into his beard to create a terrifying cloud of smoke in battle.",
+      "mood": "night",
+      "imagePrompt": "Dark ship cabin desk with smoking gunpowder horns and flintlock pistols. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Which pirate myth surprised you most? Drop your thoughts below and follow for more history back then!",
+      "mood": "day",
+      "imagePrompt": "Sunny ocean horizon with white clouds and gentle Caribbean breeze. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    }
+  ]
+}

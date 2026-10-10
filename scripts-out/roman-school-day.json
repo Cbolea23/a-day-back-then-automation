@@ -1,0 +1,82 @@
+{
+  "slug": "roman-school-day",
+  "title": "School Day for a Roman Kid",
+  "hook": "Surviving School in Ancient Rome",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You wake up before dawn because Roman school starts before the sun even rises.",
+      "mood": "dark",
+      "imagePrompt": "Simple Roman bedroom interior lit dimly by moonlight through a small window shutter, folded wool blankets on a wooden bed frame, textured plaster wall.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-school-day/1.png",
+      "audio": "audio/roman-school-day/1.wav",
+      "seconds": 5.6
+    },
+    {
+      "text": "An enslaved tutor guides you through dark streets with a smoking oil lamp.",
+      "mood": "night",
+      "imagePrompt": "Narrow cobblestone street in ancient Rome at pre-dawn twilight, lit by a single hanging terracotta oil lamp against a weathered brick insula wall.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-school-day/2.png",
+      "audio": "audio/roman-school-day/2.wav",
+      "seconds": 5
+    },
+    {
+      "text": "There is no fancy classroom, just a rented bench behind a noisy street shop.",
+      "mood": "cool",
+      "imagePrompt": "Semi-enclosed portico behind a public colonnade, simple wooden benches set on flagstone flooring with a draped linen curtain.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-school-day/3.png",
+      "audio": "audio/roman-school-day/3.wav",
+      "seconds": 5.1
+    },
+    {
+      "text": "You scratch Latin letters into beeswax using a sharp iron stylus.",
+      "mood": "warm",
+      "imagePrompt": "Close-up of a wooden diptych tablet filled with dark beeswax resting on a rough wooden table alongside an iron stylus with a flat eraser end.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-school-day/4.png",
+      "audio": "audio/roman-school-day/4.wav",
+      "seconds": 4.7
+    },
+    {
+      "text": "Next comes basic math, sliding tiny pebbles across a wooden counting board.",
+      "mood": "day",
+      "imagePrompt": "Roman counting board with grooved tracks and small polished river pebbles laid on a sunlit wooden bench.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-school-day/5.png",
+      "audio": "audio/roman-school-day/5.wav",
+      "seconds": 4.9
+    },
+    {
+      "text": "Make one careless slip, and your teacher might whack you with a cane.",
+      "mood": "day",
+      "imagePrompt": "Empty classroom corner with stone masonry, a bundle of thin wooden birch rods leaning against an unadorned stone pillar.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-school-day/6.png",
+      "audio": "audio/roman-school-day/6.wav",
+      "seconds": 4.3
+    },
+    {
+      "text": "Most kids drop out by age eleven to work in trades.",
+      "mood": "warm",
+      "imagePrompt": "Ancient Roman workshop corner with ceramic amphorae, leathercraft tools on a sturdy timber workbench, and bright outdoor light.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-school-day/7.png",
+      "audio": "audio/roman-school-day/7.wav",
+      "seconds": 3.7
+    },
+    {
+      "text": "If your family has serious coin, high school means learning to conquer the Senate.",
+      "mood": "day",
+      "imagePrompt": "Imposing Roman marble rostrum with towering fluted columns and a cylindrical leather scroll case resting on polished stone steps.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-school-day/8.png",
+      "audio": "audio/roman-school-day/8.wav",
+      "seconds": 5.1
+    }
+  ],
+  "claimsToVerify": [
+    "Roman school days typically began before dawn.",
+    "Wealthy children were accompanied to school by an enslaved paedagogus carrying lanterns or books.",
+    "Elementary schooling often took place in rented shop spaces, pergolas, or public colonnades rather than dedicated school buildings.",
+    "Wax tablets (tabulae) and styluses were standard tools for writing practice.",
+    "Calculi (pebbles) and counting boards were standard for elementary arithmetic.",
+    "Corporal punishment with canes (ferulae) or rods was standard and documented by Roman authors like Horace and Martial.",
+    "Most Roman children who received formal schooling concluded around age eleven or twelve before entering apprenticeships or work.",
+    "Advanced rhetoric education was largely reserved for the wealthy elite pursuing political and legal careers."
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "slug": "athens-citizen-day",
+  "title": "A Day as an Athenian Citizen",
+  "hook": "Get Paid To Vote In Ancient Athens?",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You wake up in ancient Athens, but you get paid just to vote today.",
+      "mood": "day",
+      "imagePrompt": "Sunny ancient Athenian courtyard with terracotta floor tiles and olive trees, cinematic lighting.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/athens-citizen-day/1.png",
+      "audio": "audio/athens-citizen-day/1.wav",
+      "seconds": 4.3
+    },
+    {
+      "text": "First, you stroll into the noisy agora market to grab breakfast and gossip about local drama.",
+      "mood": "warm",
+      "imagePrompt": "Wide open ancient Greek marketplace with marble colonnades, striped canvas stalls, and ceramic urns.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/athens-citizen-day/2.png",
+      "audio": "audio/athens-citizen-day/2.wav",
+      "seconds": 6.1
+    },
+    {
+      "text": "Then, you climb the rocky Pnyx hill to join thousands of men deciding on war or laws.",
+      "mood": "day",
+      "imagePrompt": "Sunlit rocky hillside overlooking an ancient city with a stone speaker platform.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/athens-citizen-day/3.png",
+      "audio": "audio/athens-citizen-day/3.wav",
+      "seconds": 6.2
+    },
+    {
+      "text": "But you are extremely lucky. Only free adult men born to local parents get this power.",
+      "mood": "warm",
+      "imagePrompt": "View of the Acropolis in ancient Greece under a bright clear sky, warm Mediterranean light.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/athens-citizen-day/4.png",
+      "audio": "audio/athens-citizen-day/4.wav",
+      "seconds": 6
+    },
+    {
+      "text": "Women, enslaved people, and foreigners do all the hard work while keeping zero political rights.",
+      "mood": "warm",
+      "imagePrompt": "Quiet ancient Greek domestic courtyard with loom weaves, terracotta jars, and stone pillars.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/athens-citizen-day/5.png",
+      "audio": "audio/athens-citizen-day/5.wav",
+      "seconds": 6.3
+    },
+    {
+      "text": "At night, you head to a drinking party called a symposium to debate philosophy and drink wine.",
+      "mood": "dark",
+      "imagePrompt": "Dimly lit ancient Greek room decorated with frescoed walls, low couches, and oil lamps.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/athens-citizen-day/6.png",
+      "audio": "audio/athens-citizen-day/6.wav",
+      "seconds": 6.1
+    },
+    {
+      "text": "It feels like paradise for you, until your fellow citizens decide to kick you out of the city next week. Want to see how easy it was to get exiled?",
+      "mood": "dark",
+      "imagePrompt": "Ancient Greek broken pottery sherds with scratched Greek letters lying on a dark stone surface.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/athens-citizen-day/7.png",
+      "audio": "audio/athens-citizen-day/7.wav",
+      "seconds": 8.3
+    }
+  ],
+  "claimsToVerify": [
+    "Athenian citizens were paid a stipend (misthophoria) for attending the Assembly in classical times.",
+    "Athenian citizenship was restricted to free adult males with citizen lineage.",
+    "Women, slaves, and metics (resident foreigners) were excluded from political participation.",
+    "Symposia were evening social/drinking gatherings for Athenian men.",
+    "Athenians used pottery sherds (ostraka) to vote citizens into exile through ostracism."
+  ]
+}

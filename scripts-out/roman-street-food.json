@@ -1,0 +1,71 @@
+{
+  "slug": "roman-street-food",
+  "title": "Roman Fast Food",
+  "hook": "Ancient Rome's Gross Fast Food?",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You step up to a Roman street counter looking for a quick, cheap lunch.",
+      "mood": "warm",
+      "imagePrompt": "An ancient Roman street-side thermopolium counter made of multicolored marble slabs, set along stone paving in bright sunlight.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-street-food/1.png",
+      "audio": "audio/roman-street-food/1.wav",
+      "seconds": 3.9
+    },
+    {
+      "text": "Your cramped apartment has no hearth, so like many working-class Romans, you eat out daily.",
+      "mood": "dark",
+      "imagePrompt": "A dark, cramped Roman insula apartment room with bare plaster walls, wooden ceiling beams, and no kitchen.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-street-food/2.png",
+      "audio": "audio/roman-street-food/2.wav",
+      "seconds": 5.9
+    },
+    {
+      "text": "The stone counter features deep terracotta jars keeping hot food and spiced wine ready to serve.",
+      "mood": "warm",
+      "imagePrompt": "Close-up of an ancient Roman masonry counter with wide terracotta jars embedded flush into the flat surface.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-street-food/3.png",
+      "audio": "audio/roman-street-food/3.wav",
+      "seconds": 6.4
+    },
+    {
+      "text": "Today’s menu offers salted fish, goat cheese, or garden snails probably fattened on milk.",
+      "mood": "warm",
+      "imagePrompt": "A stone serving counter inside an ancient tavern lined with rustic earthenware bowls and wooden ladles.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-street-food/4.png",
+      "audio": "audio/roman-street-food/4.wav",
+      "seconds": 6.3
+    },
+    {
+      "text": "You pour on extra garum, Rome's favorite pungent sauce brewed from fermented, sun-rotted fish entrails.",
+      "mood": "day",
+      "imagePrompt": "A sunlit ancient Roman courtyard with sealed clay amphorae and stone basins used for fermenting condiments.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-street-food/5.png",
+      "audio": "audio/roman-street-food/5.wav",
+      "seconds": 7.1
+    },
+    {
+      "text": "Wealthy elites mock these diners as greasy hangouts for gamblers, runaway slaves, and petty thieves.",
+      "mood": "dark",
+      "imagePrompt": "A dimly lit ancient Roman tavern backroom with stone benches, smoking oil lamps, and faded wall frescoes.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-street-food/6.png",
+      "audio": "audio/roman-street-food/6.wav",
+      "seconds": 7.6
+    },
+    {
+      "text": "It smells intense, but it keeps you alive—until you discover what they really do with the leftovers.",
+      "mood": "warm",
+      "imagePrompt": "An outdoor Roman street corner at dusk, showing a quiet food stall counter illuminated by hanging clay lamps.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-street-food/7.png",
+      "audio": "audio/roman-street-food/7.wav",
+      "seconds": 6.6
+    }
+  ],
+  "claimsToVerify": [
+    "Many Roman working-class apartment residents lacked kitchens and relied on street stalls/thermopolia.",
+    "Thermopolia had embedded terracotta jars (dolia) in masonry counters.",
+    "Romans consumed snails fattened on milk as described in ancient culinary accounts.",
+    "Garum was made from salted fish viscera fermented in the sun.",
+    "Upper-class Roman literature depicted popinae and thermopolia as disreputable hubs for low-status individuals."
+  ]
+}

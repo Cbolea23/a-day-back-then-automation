@@ -1,0 +1,38 @@
+{
+  "slug": "viking-food-and-drink",
+  "title": "What Vikings Ate and Drank",
+  "hook": "Rotten shark and sour dairy kept them alive.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Surviving a harsh Scandinavian winter required eating preserved foods that smelled intense.",
+      "mood": "cool",
+      "imagePrompt": "Snow-dusted timber storehouse on a hillside above a frozen lake. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Fish was wind-dried until it was rock hard, then pounded with wooden mallets before eating.",
+      "mood": "day",
+      "imagePrompt": "Wooden racks of hanging dried cod against a crisp northern sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "They fermented shark and seal meat in gravel pits to prevent scurvy and vitamin deficiencies.",
+      "mood": "dark",
+      "imagePrompt": "Earthen storage cellar with large ceramic crocks and stone weights. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Dairy was preserved as skyr, a thick sour fermented milk product packed with protein.",
+      "mood": "warm",
+      "imagePrompt": "Wooden bowl filled with thick white skyr curd beside a horn spoon. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Every meal was washed down with ale or mead, because fermented drinks were safer than bad water.",
+      "mood": "warm",
+      "imagePrompt": "Polished bull horn drinking vessel filled with golden foaming mead on oak planks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Could you stomach a winter on dried cod and skyr? Share your thoughts below and follow for daily history!",
+      "mood": "day",
+      "imagePrompt": "Sunlit Viking orchard with wild berry bushes and rustic stone borders. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    }
+  ]
+}

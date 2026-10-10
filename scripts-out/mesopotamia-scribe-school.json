@@ -1,0 +1,38 @@
+{
+  "slug": "mesopotamia-scribe-school",
+  "title": "School in Ancient Mesopotamia",
+  "hook": "School four thousand years ago came with daily beatings.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Four thousand years ago in ancient Sumer, young students attended tablet houses called the Edubba.",
+      "mood": "cool",
+      "imagePrompt": "Mud-brick Sumerian city courtyard with grand arched colonnade in morning light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Classes began at dawn. You patted wet clay into flat tablets and shaped reed stalks into stylus wedges.",
+      "mood": "warm",
+      "imagePrompt": "Clay tablet showing cuneiform wedge incisions resting beside a trimmed reed stylus. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "You memorized thousands of cuneiform signs, mathematical tables, and complex property legal codes.",
+      "mood": "day",
+      "imagePrompt": "Sunlit classroom interior with clay benches and woven reed mats on packed dirt floor. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Surviving tablets record strict school rules: arriving late or sloppy tablet handwriting brought cane lashes.",
+      "mood": "dark",
+      "imagePrompt": "Stone classroom doorway with clay jars holding dried clay tablets. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Yet graduating as a certified scribe granted you high status, tax exemptions, and state prestige.",
+      "mood": "warm",
+      "imagePrompt": "Carved stone Sumerian library chamber with organized clay tablet pigeonholes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Would you survive school if mistakes meant physical canes? Drop your thoughts below and follow for daily history!",
+      "mood": "day",
+      "imagePrompt": "Majestic view of an ancient Mesopotamian mud-brick ziggurat temple against blue skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    }
+  ]
+}

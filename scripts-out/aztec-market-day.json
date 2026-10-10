@@ -1,0 +1,38 @@
+{
+  "slug": "aztec-market-day",
+  "title": "Market Day in Tenochtitlan",
+  "hook": "Sixty thousand people traded here using chocolate as cash.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "In the Aztec island capital of Tenochtitlan, the great market of Tlatelolco amazed Spanish conquistadors.",
+      "mood": "day",
+      "imagePrompt": "Grand open-air plaza market in a Mesoamerican stone city under clear sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Over fifty thousand traders gathered daily under strict government inspectors who ensured fair weights.",
+      "mood": "warm",
+      "imagePrompt": "Organized rows of woven reed market stalls loaded with colorful pottery and textiles. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "There was no metal coinage. High-value transactions were paid using precious cacao beans and cotton cloaks.",
+      "mood": "warm",
+      "imagePrompt": "Earthenware bowl filled with glossy dark cacao beans beside folded woven cotton cloth. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "You could buy everything from jade ornaments and jaguar skins to maize, tomatoes, and vanilla pods.",
+      "mood": "day",
+      "imagePrompt": "Stone market slab displaying fresh ears of corn, bright tomatoes, and volcanic obsidian knives. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "If a merchant was caught cheating customers with counterfeit cacao beans, judges punished them instantly.",
+      "mood": "dark",
+      "imagePrompt": "Carved stone Mesoamerican courthouse pavilion with stepped stone stairs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Would you spend your cacao beans on chocolate drinks or save them as cash? Let us know below and follow for daily history!",
+      "mood": "day",
+      "imagePrompt": "Sunlit view across the glistening blue lake surrounding the island city of Tenochtitlan. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    }
+  ]
+}

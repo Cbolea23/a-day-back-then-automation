@@ -1,0 +1,62 @@
+{
+  "slug": "sparta-myths",
+  "title": "Sparta: Myth vs Reality",
+  "hook": "Sparta wasn't like the movies.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Sparta wasn't like the movies. You walk through a city of modest houses, not towering fortresses.",
+      "mood": "cool",
+      "imagePrompt": "Simple stone ruins in a valley.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/sparta-myths/1.png",
+      "audio": "audio/sparta-myths/1.wav",
+      "seconds": 7
+    },
+    {
+      "text": "Forget the leather armor. Your daily life is actually quite simple and surprisingly disciplined.",
+      "mood": "cool",
+      "imagePrompt": "Sparse landscape with olive trees.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/sparta-myths/2.png",
+      "audio": "audio/sparta-myths/2.wav",
+      "seconds": 6.7
+    },
+    {
+      "text": "Historians often debate the stories about infant exposure. Some evidence suggests it happened, but maybe not as often.",
+      "mood": "cool",
+      "imagePrompt": "A rugged mountain pass in Greece.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/sparta-myths/3.png",
+      "audio": "audio/sparta-myths/3.wav",
+      "seconds": 7.4
+    },
+    {
+      "text": "Women in Sparta held more freedom than in most Greek cities, owning land and managing estates.",
+      "mood": "cool",
+      "imagePrompt": "An ancient open courtyard.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/sparta-myths/4.png",
+      "audio": "audio/sparta-myths/4.wav",
+      "seconds": 7
+    },
+    {
+      "text": "You are taught to speak in short, sharp sentences. This is literally where the word laconic comes from.",
+      "mood": "cool",
+      "imagePrompt": "Close up of ancient Greek inscription on stone.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/sparta-myths/5.png",
+      "audio": "audio/sparta-myths/5.wav",
+      "seconds": 6.2
+    },
+    {
+      "text": "If Sparta was so powerful, why did it fall? Follow for the truth behind their decline.",
+      "mood": "cool",
+      "imagePrompt": "Sunset over ancient ruins.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/sparta-myths/6.png",
+      "audio": "audio/sparta-myths/6.wav",
+      "seconds": 6.1
+    }
+  ],
+  "claimsToVerify": [
+    "Sparta lacked grand architecture compared to other city-states.",
+    "Historical debate exists regarding the practice of infant exposure.",
+    "Spartan women held more property rights than other Greek women.",
+    "The term 'laconic' originates from the Spartan region of Laconia."
+  ]
+}

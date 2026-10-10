@@ -1,0 +1,38 @@
+{
+  "slug": "victorian-factory-day",
+  "title": "A Day in a Victorian Factory",
+  "hook": "Fourteen hours of roaring machines and zero safety guards.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "During the Industrial Revolution, the deafening scream of steam engines replaced the rhythm of countryside farms.",
+      "mood": "cool",
+      "imagePrompt": "Exterior of a massive red-brick Victorian textile mill with tall smoking chimney stacks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "You clocked in at six in the morning to the tolling of the factory bell or risk losing half your day's pay.",
+      "mood": "day",
+      "imagePrompt": "Cast-iron factory gates and cobblestone worker entrance in early morning smog. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Inside, hundreds of unshielded leather belts and spinning iron gears whirled at bone-crushing speeds.",
+      "mood": "warm",
+      "imagePrompt": "Endless rows of iron textile spinning looms with hanging overhead drive belts. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "The air was thick with flying cotton lint, making breathing difficult and causing chronic mill fever.",
+      "mood": "dark",
+      "imagePrompt": "Dusty factory floor beams illuminated by high arched industrial windows. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Workers who collapsed from exhaustion were fined, while children crawled under running machines to sweep fluff.",
+      "mood": "night",
+      "imagePrompt": "Heavy iron steam engine piston gears resting idle after night shift. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Would you have lasted a single shift in a Victorian cotton mill? Let us know below and follow for daily history!",
+      "mood": "day",
+      "imagePrompt": "Canal basin alongside historic brick industrial warehouses under soft daylight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    }
+  ]
+}

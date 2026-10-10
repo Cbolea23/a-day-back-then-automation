@@ -1,0 +1,38 @@
+{
+  "slug": "inca-runner-job",
+  "title": "Inca Relay Runners",
+  "hook": "Delivering fresh ocean fish to the high Andes on foot.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "The Inca Empire stretched across three thousand miles of sheer Andean mountains without horses or the wheel.",
+      "mood": "cool",
+      "imagePrompt": "Paved Inca stone mountain highway winding along sheer Andean cliffs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "To communicate across peaks, the emperor relied on elite relay runners known as the chasquis.",
+      "mood": "day",
+      "imagePrompt": "Small stone tambo messenger shelter perched on a high mountain ridge. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Runners were stationed in pairs at roadside post huts spaced every two miles along the royal road.",
+      "mood": "warm",
+      "imagePrompt": "Interior of rustic mountain stone hut with straw sleeping mats and a small fireplace. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Messages were not written in letters, but recorded on quipus—complex knotted colored cords.",
+      "mood": "warm",
+      "imagePrompt": "Intricate colored cotton quipu cords with varied knot clusters laid on woven fabric. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Messages could travel over 150 miles a day, delivering fresh Pacific fish to the Emperor in Cusco.",
+      "mood": "cool",
+      "imagePrompt": "Snow-capped Andean mountain peaks rising above deep alpine valleys. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Could you sprint two miles at twelve thousand feet altitude? Drop your thoughts below and follow for daily history!",
+      "mood": "day",
+      "imagePrompt": "Terraced agricultural stone hillsides of an ancient Inca mountain citadel in morning light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    }
+  ]
+}

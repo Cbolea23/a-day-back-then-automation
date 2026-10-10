@@ -1,0 +1,67 @@
+{
+  "slug": "medieval-monk-day",
+  "title": "A Monk's Day",
+  "hook": "You live your life in silence.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You live your life in silence.",
+      "mood": "dark",
+      "imagePrompt": "A long, shadowed stone cloister corridor with arches at night.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-monk-day/1.wav",
+      "voicedText": "You live your life in silence.",
+      "seconds": 2.6,
+      "image": "images/medieval-monk-day/1.png"
+    },
+    {
+      "text": "You wake before dawn for the first prayer. The stone floor is freezing under your bare feet.",
+      "mood": "dark",
+      "imagePrompt": "A simple, empty monastic cell with a wooden bench and a small window.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-monk-day/2.wav",
+      "voicedText": "You wake before dawn for the first prayer. The stone floor is freezing under your bare feet.",
+      "seconds": 5.8,
+      "image": "images/medieval-monk-day/2.png"
+    },
+    {
+      "text": "Your day is strictly measured by the bells. You rotate between chanting, manual labor, and long hours of copying manuscripts.",
+      "mood": "day",
+      "imagePrompt": "A wooden desk with a quill, ink pot, and a blank piece of parchment.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-monk-day/3.wav",
+      "voicedText": "Your day is strictly measured by the bells. You rotate between chanting, manual labor, and long hours of copying manuscripts.",
+      "seconds": 8.6,
+      "image": "images/medieval-monk-day/3.png"
+    },
+    {
+      "text": "Communication is rare. You probably use a complex system of hand signals to talk to the other monks.",
+      "mood": "day",
+      "imagePrompt": "An arched doorway leading into a sunny, quiet monastery garden.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-monk-day/4.wav",
+      "voicedText": "Communication is rare. You probably use a complex system of hand signals to talk to the other monks.",
+      "seconds": 7,
+      "image": "images/medieval-monk-day/4.png"
+    },
+    {
+      "text": "While the world outside changes, your routine stays exactly the same. You are preserving history one page at a time.",
+      "mood": "day",
+      "imagePrompt": "A library shelf filled with ancient, leather-bound books.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-monk-day/5.wav",
+      "voicedText": "While the world outside changes, your routine stays exactly the same. You are preserving history one page at a time.",
+      "seconds": 7.9,
+      "image": "images/medieval-monk-day/5.png"
+    },
+    {
+      "text": "Then, you notice a mistake in a sacred text that could change everything you believe. What do you do?",
+      "mood": "dark",
+      "imagePrompt": "A single candle flickering on a desk, illuminating a handwritten page.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/medieval-monk-day/6.wav",
+      "voicedText": "Then, you notice a mistake in a sacred text that could change everything you believe. What do you do?",
+      "seconds": 6.2,
+      "image": "images/medieval-monk-day/6.png"
+    }
+  ],
+  "claimsToVerify": [
+    "Medieval monks followed a strict schedule defined by prayer bells (Divine Office).",
+    "Monks often practiced silence or used sign language.",
+    "Copying manuscripts was a primary task for monks in many orders."
+  ]
+}

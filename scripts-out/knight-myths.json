@@ -1,0 +1,77 @@
+{
+  "slug": "knight-myths",
+  "title": "3 Myths About Knights",
+  "hook": "Everything you know about knights is wrong.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You picture a knight clanking heavily into battle, barely able to move. That never happened.",
+      "mood": "day",
+      "imagePrompt": "Sunlit armor workshop with fitted steel breastplates and helmets arranged neatly on wooden stands.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/knight-myths/1.jpg",
+      "audio": "audio/knight-myths/1.wav",
+      "seconds": 5.9
+    },
+    {
+      "text": "A full suit of steel plate armor typically weighs around fifty pounds, distributed across your entire body.",
+      "mood": "cool",
+      "imagePrompt": "An articulated suit of medieval harness resting on a wooden display stand under cool castle window light.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/knight-myths/2.jpg",
+      "audio": "audio/knight-myths/2.wav",
+      "seconds": 7.5
+    },
+    {
+      "text": "You can sprint, leap onto your horse, and even do cartwheels while wearing it.",
+      "mood": "day",
+      "imagePrompt": "Open grassy tournament field with timber fencing, brightly colored pennants, and riding paths.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/knight-myths/3.jpg",
+      "audio": "audio/knight-myths/3.wav",
+      "seconds": 5.2
+    },
+    {
+      "text": "That famous Victorian myth about knights needing cranes to hoist them into saddles is total fiction.",
+      "mood": "warm",
+      "imagePrompt": "Empty stables inside a castle courtyard with leather saddles hanging over wooden rails.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/knight-myths/4.jpg",
+      "audio": "audio/knight-myths/4.wav",
+      "seconds": 6.8
+    },
+    {
+      "text": "You also rarely spend your days fighting glorious duels or slaying enemies in epic battles.",
+      "mood": "day",
+      "imagePrompt": "Quiet castle parapet overlooking rolling green farmland and peaceful river valleys.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/knight-myths/5.jpg",
+      "audio": "audio/knight-myths/5.wav",
+      "seconds": 6.5
+    },
+    {
+      "text": "Most of your year is surprisingly boring: collecting peasant rents, settling land disputes, and managing farm grain.",
+      "mood": "day",
+      "imagePrompt": "Stone estate office featuring an oak table covered in rolled parchment maps, wax seals, and tally sticks.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/knight-myths/6.jpg",
+      "audio": "audio/knight-myths/6.wav",
+      "seconds": 7.7
+    },
+    {
+      "text": "You are basically an armed landlord who occasionally attends expensive training tournaments.",
+      "mood": "warm",
+      "imagePrompt": "Great hall fireplace mantel displaying decorative shields, lances, and heraldic banners.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/knight-myths/7.jpg",
+      "audio": "audio/knight-myths/7.wav",
+      "seconds": 5.4
+    },
+    {
+      "text": "But what happens when an enemy knight actually captures you on the battlefield?",
+      "mood": "dark",
+      "imagePrompt": "Stone tower dungeon room with narrow iron-barred windows and heavy timber reinforced doors.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/knight-myths/8.jpg",
+      "audio": "audio/knight-myths/8.wav",
+      "seconds": 4.4
+    }
+  ],
+  "claimsToVerify": [
+    "Field plate armor typically weighed roughly 45 to 55 pounds (20-25 kg), allowing full mobility including running, jumping, and mounting a horse without assistance.",
+    "The crane hoisting myth originated largely from Victorian theater staging and Mark Twain's fiction, not medieval reality.",
+    "Knights functioned primarily as landowners and estate managers when not engaged in seasonal military campaigns or tournaments."
+  ]
+}

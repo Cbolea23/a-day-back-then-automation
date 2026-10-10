@@ -1,0 +1,63 @@
+{
+  "slug": "egypt-eye-makeup",
+  "title": "Why Egyptians Wore Eye Makeup",
+  "hook": "Why Egyptians coated their eyes",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Why Egyptians coated their eyes.",
+      "mood": "warm",
+      "imagePrompt": "Ancient Egyptian desert landscape with golden sand and bright sunlight.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-eye-makeup/1.png",
+      "audio": "audio/egypt-eye-makeup/1.wav",
+      "seconds": 2.4
+    },
+    {
+      "text": "You are an ancient Egyptian living under the baking sun. You reach for your kohl pot.",
+      "mood": "warm",
+      "imagePrompt": "Stone mortar and pestle sitting on an ornate wooden table.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-eye-makeup/2.png",
+      "audio": "audio/egypt-eye-makeup/2.wav",
+      "seconds": 5.3
+    },
+    {
+      "text": "It is not just for style. You grind lead-based minerals into a dark, gritty powder.",
+      "mood": "warm",
+      "imagePrompt": "Close up of raw minerals and dark powder on a stone surface.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-eye-makeup/3.png",
+      "audio": "audio/egypt-eye-makeup/3.wav",
+      "seconds": 5.7
+    },
+    {
+      "text": "You smear the mixture thick around your eyes. Everyone does this, from pharaohs to workers.",
+      "mood": "warm",
+      "imagePrompt": "Vibrant wall painting showing Egyptian figures with dark, almond-shaped eyeliner.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-eye-makeup/4.png",
+      "audio": "audio/egypt-eye-makeup/4.wav",
+      "seconds": 6.7
+    },
+    {
+      "text": "The dark paste probably helps reduce the sun's harsh glare. It might even ward off insects.",
+      "mood": "warm",
+      "imagePrompt": "View of the Nile river reflecting bright sunlight.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-eye-makeup/5.png",
+      "audio": "audio/egypt-eye-makeup/5.wav",
+      "seconds": 6
+    },
+    {
+      "text": "But there is a dark side to this daily ritual that likely impacted their long-term health.",
+      "mood": "dark",
+      "imagePrompt": "Dimly lit interior of an ancient stone tomb.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-eye-makeup/6.png",
+      "audio": "audio/egypt-eye-makeup/6.wav",
+      "seconds": 5.6
+    }
+  ],
+  "claimsToVerify": [
+    "Ancient Egyptians used lead-based minerals in kohl.",
+    "Kohl was used by all social classes.",
+    "Kohl was used to reduce sun glare.",
+    "Kohl may have been used to ward off insects or infections.",
+    "The use of lead-based makeup could have negative health impacts."
+  ]
+}

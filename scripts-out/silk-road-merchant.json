@@ -1,0 +1,38 @@
+{
+  "slug": "silk-road-merchant",
+  "title": "A Silk Road Trader's Journey",
+  "hook": "No single trader ever traveled the whole Silk Road.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "We imagine one brave merchant riding a camel from Rome all the way to China, but that almost never happened.",
+      "mood": "warm",
+      "imagePrompt": "Endless desert sand dunes under a blazing midday sun with distant oasis palms. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "The Silk Road was an enormous relay network of regional traders passing luxury goods from city to city.",
+      "mood": "day",
+      "imagePrompt": "Sprawling mud-brick desert caravanserai courtyard with wooden wagon carts. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "You traveled in massive camel caravans of hundreds of people to deter ruthless desert bandits.",
+      "mood": "cool",
+      "imagePrompt": "Stone mountain pass road winding through snow-capped Central Asian peaks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "At night, caravans rested at fortified roadside inns called caravanserais with water cisterns and stables.",
+      "mood": "night",
+      "imagePrompt": "Arched stone gateway of a desert fortress lit by torchlight under starry sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Silks, spices, and glass were exchanged dozens of times, multiplying in value at every single stop.",
+      "mood": "warm",
+      "imagePrompt": "Caravanserai bazaar table with bolts of colored silk, ceramic spice bowls, and glass flasks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "What ancient trade route would you travel if you had the chance? Tell us below and follow for more history back then!",
+      "mood": "day",
+      "imagePrompt": "Panoramic desert oasis with sparkling turquoise mineral springs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    }
+  ]
+}

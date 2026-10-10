@@ -1,0 +1,38 @@
+{
+  "slug": "gold-rush-miner-day",
+  "title": "A California Gold Rush Miner",
+  "hook": "Standing in freezing mountain rivers until your boots rot.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "In 1849, three hundred thousand prospectors rushed to California chasing rumors of rivers made of gold.",
+      "mood": "cool",
+      "imagePrompt": "Rugged California Sierra Nevada pine mountains with a rushing rocky river. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Your daily reality was standing knee-deep in ice-cold mountain snowmelt twelve hours a day panning gravel.",
+      "mood": "cool",
+      "imagePrompt": "Metal gold pan resting on river rocks beside a rustic wooden sluice box. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Prices were insane: an egg cost a dollar, and a pair of boots cost a full hundred dollars in gold dust.",
+      "mood": "warm",
+      "imagePrompt": "Makeshift canvas-tent mining camp store with barrels of flour and pickaxes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "You slept on dirt floors in drafty canvas tents, plagued by dysentery, cholera, and scurvy.",
+      "mood": "dark",
+      "imagePrompt": "Interior of a canvas prospector tent with wool bedroll and iron camp stove. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "The people who truly struck it rich were not the miners, but the merchants selling shovels and jeans.",
+      "mood": "warm",
+      "imagePrompt": "Assayer office counter with balance scale, leather pouch, and brass weights. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Would you have joined the 1849 Gold Rush? Share your thoughts below and follow for more history back then!",
+      "mood": "day",
+      "imagePrompt": "Golden sun setting over California Sierra foothills with rolling pine forests. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    }
+  ]
+}

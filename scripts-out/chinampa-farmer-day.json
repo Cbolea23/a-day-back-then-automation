@@ -1,0 +1,38 @@
+{
+  "slug": "chinampa-farmer-day",
+  "title": "Farming on Floating Gardens",
+  "hook": "How Aztecs grew four crops a year on top of water.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Surrounded by Lake Texcoco, Aztec engineers created the most productive agricultural system in the ancient world.",
+      "mood": "cool",
+      "imagePrompt": "Tranquil blue freshwater lake with willows growing in straight lines along canals. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "These were chinampas—artificial garden islands woven from reeds, anchored with willow trees, and filled with lake mud.",
+      "mood": "day",
+      "imagePrompt": "Narrow rectangular farm plot surrounded by water canals with lush green crops. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "The lake water constantly irrigated the crop roots from underneath, making droughts completely impossible.",
+      "mood": "warm",
+      "imagePrompt": "Still canal water reflecting willow trees with wooden digging sticks resting on rich black soil. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Farmers harvested corn, beans, squash, and chili peppers up to seven times per year.",
+      "mood": "warm",
+      "imagePrompt": "Overflowing woven reed baskets filled with harvested squash, green maize, and red chili peppers. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "You navigated your farm by dugout canoe, paddling crops straight to the bustling urban island markets.",
+      "mood": "cool",
+      "imagePrompt": "Wooden dugout canoe tied to a wooden stake in a misty morning canal. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Could modern cities use floating farms like the Aztecs did? Let us know in the comments and follow for daily history!",
+      "mood": "day",
+      "imagePrompt": "Peaceful network of green chinampa canals glowing under late afternoon sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    }
+  ]
+}

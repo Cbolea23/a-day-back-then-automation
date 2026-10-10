@@ -576,43 +576,10 @@ const NarratorBody: React.FC<BodyProps> = ({
     return "open";
   };
 
-  // Where the pupils look: the eyes follow the gesture's focus — or the
-  // scene focus point when one is set and the narrator is presenting it.
-  const look: Vec = (() => {
-    if (aimActive && aim) {
-      const k = activeGesture === "point" ? 6.5 : 4;
-      return [
-        Math.max(-6.5, Math.min(6.5, aim.nx * k)),
-        Math.max(-6.5, Math.min(6.5, aim.ny * k)),
-      ];
-    }
-    switch (activeGesture) {
-      case "point":
-        return [5, -1];
-      case "think":
-        return [1, -4];
-      case "question":
-        return [2, -3];
-      case "solemn":
-        return [0, 4];
-      case "count":
-        return [0, -2];
-      case "wave":
-        return [0, -2];
-      case "big":
-        return [0, -2];
-      case "small":
-        return [0, 2];
-      case "compare":
-        return [3, 0];
-      case "emphasis":
-        return [0, 1];
-      default:
-        return [0, 0];
-    }
-  })();
-  const lookX = look[0] + (activeGesture === "idle" ? Math.sin(frame / 50) * 1.5 : 0);
-  const lookY = look[1];
+  // Eyes face the viewer / audience directly so the host engages with the user.
+  // Subtle natural eye saccade/breathing keeps them feeling alive, not frozen.
+  const lookX = activeGesture === "idle" ? Math.sin(frame / 60) * 0.8 : 0;
+  const lookY = 0;
 
   // Life, not randomness: breathing is always on but subtle; gesture-specific
   // motion only plays while its gesture is active.

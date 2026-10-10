@@ -1,0 +1,43 @@
+{
+  "slug": "castle-toilets",
+  "title": "Toilets in a Castle",
+  "hook": "Where did castle toilets go?",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You walk down a narrow stone corridor and find a small, private alcove: the garderobe.",
+      "mood": "cool",
+      "imagePrompt": "a narrow, dimly lit medieval stone hallway. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "It’s basically a stone bench with a hole. You sit, and gravity does all the hard work.",
+      "mood": "cool",
+      "imagePrompt": "a stone seat built into a castle wall with a small window. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Your waste drops down a long shaft. It lands in a pit or a moat below.",
+      "mood": "dark",
+      "imagePrompt": "a view looking down a dark stone shaft inside a castle wall. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "It smells quite intense, so they probably hung herbs nearby to mask the scent. It was practical.",
+      "mood": "cool",
+      "imagePrompt": "bundles of dried lavender and sage hanging on a stone hook. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Maintenance crews were hired to empty the pits periodically. It was a messy, essential job.",
+      "mood": "day",
+      "imagePrompt": "an exterior view of a castle base near a stagnant moat. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "You’ve done your business, but now you need something to wipe with. Want to know what they used?",
+      "mood": "warm",
+      "imagePrompt": "undefined. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    }
+  ],
+  "claimsToVerify": [
+    "Garderobes consisted of a stone bench with a shaft leading to a pit or moat",
+    "Herbs were used to mask odors in medieval castle toilets",
+    "Maintenance crews were used to clean out waste pits"
+  ]
+}

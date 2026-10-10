@@ -1,0 +1,38 @@
+{
+  "slug": "ottoman-coffeehouse",
+  "title": "The Ottoman Coffeehouse",
+  "hook": "The place where sultans feared revolutions were brewed.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "In sixteenth-century Istanbul, a radical new social institution emerged: the public coffeehouse.",
+      "mood": "warm",
+      "imagePrompt": "Ornate Ottoman street with tiled facades and wooden overhanging bay windows in golden light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Men of all social classes gathered to drink bitter black coffee brewed in long-handled copper pots called cezves.",
+      "mood": "warm",
+      "imagePrompt": "Carved wooden table with steaming copper cezve pot and miniature painted ceramic cups. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Patrons smoked tobacco pipes, played backgammon and chess, and listened to professional epic storytellers.",
+      "mood": "warm",
+      "imagePrompt": "Cozy interior with low divan seating, kilim rugs, and a wooden backgammon board. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Most importantly, coffeehouses became hubs of political debate and sharp criticism of the Ottoman government.",
+      "mood": "cool",
+      "imagePrompt": "Arched stone courtyard with central marble fountain under shady plane trees. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Paranoid Sultans repeatedly tried to ban coffee and execute coffee drinkers, fearing insurrection.",
+      "mood": "dark",
+      "imagePrompt": "Grand Ottoman palace arched corridor with blue Iznik tiles and iron oil lanterns. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Would you risk execution just to drink your morning coffee? Drop your thoughts below and follow for daily history!",
+      "mood": "day",
+      "imagePrompt": "Sunlit view over the Bosphorus Strait with historic Ottoman minarets in the distance. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "egypt-bread-and-beer",
+  "title": "What Egyptians Ate Every Day",
+  "hook": "Did Ancient Egyptians Drink Bread?",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You sit down for breakfast in ancient Egypt, but your beer looks like thick porridge.",
+      "mood": "warm",
+      "imagePrompt": "A sunlit ancient Egyptian mudbrick dining room with a rustic wooden table under warm sunlight.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-bread-and-beer/1.png",
+      "audio": "audio/egypt-bread-and-beer/1.wav",
+      "seconds": 5.2
+    },
+    {
+      "text": "It is warm, sweet, and full of floating bread chunks. You have to drink it through a straw.",
+      "mood": "warm",
+      "imagePrompt": "Close-up of a rustic clay vessel filled with textured liquid sitting on a stone bench in an ancient kitchen.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-bread-and-beer/2.png",
+      "audio": "audio/egypt-bread-and-beer/2.wav",
+      "seconds": 5.9
+    },
+    {
+      "text": "This chunky brew is actually a main source of daily nutrition for most workers.",
+      "mood": "day",
+      "imagePrompt": "An ancient Egyptian outdoor grain storage courtyard with clay silos under a bright blue sky.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-bread-and-beer/3.png",
+      "audio": "audio/egypt-bread-and-beer/3.wav",
+      "seconds": 5.2
+    },
+    {
+      "text": "Your side dish is fresh bread, but desert sand gets into the flour, slowly grinding your teeth away.",
+      "mood": "warm",
+      "imagePrompt": "An ancient stone quern and grinding stones sitting on a dusty desert courtyard floor, lit by harsh midday sun.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-bread-and-beer/4.png",
+      "audio": "audio/egypt-bread-and-beer/4.wav",
+      "seconds": 7.3
+    },
+    {
+      "text": "To mask the gritty taste, you munch on raw onions, dried dates, and smelly salted Nile fish.",
+      "mood": "day",
+      "imagePrompt": "A wicker basket filled with raw onions, dried dates, and preserved fish on a woven palm mat in an ancient market stall.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-bread-and-beer/5.png",
+      "audio": "audio/egypt-bread-and-beer/5.wav",
+      "seconds": 6.9
+    },
+    {
+      "text": "In fact, many laborers get paid directly in gallons of beer every single day.",
+      "mood": "warm",
+      "imagePrompt": "Rows of large ceramic storage jars lined up inside a dimly lit ancient storehouse.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-bread-and-beer/6.png",
+      "audio": "audio/egypt-bread-and-beer/6.wav",
+      "seconds": 5.8
+    },
+    {
+      "text": "But what secret ingredient did royal brewers add to make elite beer taste better? Find out next time.",
+      "mood": "cool",
+      "imagePrompt": "A shadowy ancient Egyptian brewery interior with large fermentation vats illuminated by soft light.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-bread-and-beer/7.png",
+      "audio": "audio/egypt-bread-and-beer/7.wav",
+      "seconds": 6.4
+    }
+  ],
+  "claimsToVerify": [
+    "Ancient Egyptian beer was thick, porridge-like, and often consumed through straws or strainers.",
+    "Sand and grit from grinding stones in Egyptian flour caused severe dental erosion across social classes.",
+    "Onions, dates, and salted Nile fish were common components of the ancient Egyptian diet.",
+    "Laborers in ancient Egypt were paid in bread and beer rations."
+  ]
+}

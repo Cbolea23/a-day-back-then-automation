@@ -1,0 +1,53 @@
+{
+  "slug": "roman-morning",
+  "title": "Your Morning in Ancient Rome",
+  "hook": "Rome Wakes Up Before Dawn",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Rumbling iron carts wake you up well before sunrise in ancient Rome.",
+      "mood": "dark",
+      "imagePrompt": "Dimly lit, cramped top floor room of a wooden Roman insula apartment, small window showing faint dawn twilight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Heavy wagons are banned during the day, so traffic thunders all night.",
+      "mood": "dark",
+      "imagePrompt": "Narrow cobbled Roman street at dawn flanked by tall multi-story brick apartment blocks, empty carts on the road. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Your top-floor wooden apartment has no running water and no toilet.",
+      "mood": "cool",
+      "imagePrompt": "Bare Roman attic chamber with rough plaster walls, a simple wooden stool, and a terracotta chamber pot. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Breakfast is quick: just dry bread, maybe dipped in watered wine.",
+      "mood": "warm",
+      "imagePrompt": "Rough wooden table with a round loaf of Roman spelt bread, small bowl of olives, and a simple clay cup. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "You hurry down rickety stairs into the noisy, crowded morning streets.",
+      "mood": "day",
+      "imagePrompt": "Steep wooden staircase inside a bustling tenement building leading down toward a sunlit archway. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "You line up at your wealthy patron’s mansion to say good morning.",
+      "mood": "day",
+      "imagePrompt": "Grand marble atrium of an opulent Roman domus, impluvium pool in the center reflecting morning light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "If he likes you today, you leave with small coins or food.",
+      "mood": "warm",
+      "imagePrompt": "Close up of an ornate Roman marble entrance hall with mosaic floors and baskets of grain. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    },
+    {
+      "text": "Tomorrow, you do it all again, unless your building burns down tonight.",
+      "mood": "night",
+      "imagePrompt": "Rooftops of ancient Rome under an evening sky with smoke rising from small fires in the distance. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos"
+    }
+  ],
+  "claimsToVerify": [
+    "Heavy wheeled transport was restricted during daylight hours in imperial Rome (Lex Julia Municipalis).",
+    "Most upper-story insulae lacked running water and latrines.",
+    "The salutatio involved clients queuing at dawn for a sportula (money or food basket)."
+  ]
+}

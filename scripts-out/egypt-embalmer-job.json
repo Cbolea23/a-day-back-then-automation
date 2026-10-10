@@ -1,0 +1,70 @@
+{
+  "slug": "egypt-embalmer-job",
+  "title": "Being an Embalmer in Egypt",
+  "hook": "Worst Job in Ancient Egypt?",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You just got hired as an embalmer in ancient Egypt, and your workshop smells terrible.",
+      "mood": "warm",
+      "imagePrompt": "Sunlit ancient Egyptian tent workshop near the Nile River, tables with linen strips, jars, and spices in clay pots.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-embalmer-job/1.png",
+      "audio": "audio/egypt-embalmer-job/1.wav",
+      "seconds": 5.2
+    },
+    {
+      "text": "Your main job is preserving bodies so people can reach the afterlife safely.",
+      "mood": "day",
+      "imagePrompt": "Interior of a dusty wooden workshop with shelves of stone jars, oils, and rolled linen, soft sunlight streaming in.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-embalmer-job/2.png",
+      "audio": "audio/egypt-embalmer-job/2.wav",
+      "seconds": 5.4
+    },
+    {
+      "text": "First, you wash the body and remove organs, placing them inside special canopic jars.",
+      "mood": "dark",
+      "imagePrompt": "Dimly lit stone room with four carved limestone canopic jars arranged on a table, surrounded by incense burners.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-embalmer-job/3.png",
+      "audio": "audio/egypt-embalmer-job/3.wav",
+      "seconds": 7.1
+    },
+    {
+      "text": "Next comes the longest step. You pack the body in natron salt for forty days.",
+      "mood": "warm",
+      "imagePrompt": "Desert workshop floor with large clay bins filled with white salt crystals, surrounded by woven baskets.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-embalmer-job/4.png",
+      "audio": "audio/egypt-embalmer-job/4.wav",
+      "seconds": 5.4
+    },
+    {
+      "text": "After drying, you wrap hundreds of yards of linen while priests recite protective spells.",
+      "mood": "warm",
+      "imagePrompt": "Shelves stacked with rolls of white linen cloth, small golden amulets, and bowls of aromatic resin.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-embalmer-job/5.png",
+      "audio": "audio/egypt-embalmer-job/5.wav",
+      "seconds": 6.4
+    },
+    {
+      "text": "The whole process takes seventy days, but you work under strict sacred laws.",
+      "mood": "day",
+      "imagePrompt": "Ancient Egyptian temple courtyard overlooking the desert horizon at sunset, tall stone pillars casting long shadows.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-embalmer-job/6.png",
+      "audio": "audio/egypt-embalmer-job/6.wav",
+      "seconds": 5
+    },
+    {
+      "text": "One mistake could anger the gods—or worse, ruin a wealthy Pharaoh's eternal soul. Want to know what happened when embalmers accidentally dropped the organs?",
+      "mood": "cool",
+      "imagePrompt": "Dark Egyptian tomb entryway lit by flickering oil lamps, leading down into a painted chamber.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-embalmer-job/7.png",
+      "audio": "audio/egypt-embalmer-job/7.wav",
+      "seconds": 10.6
+    }
+  ],
+  "claimsToVerify": [
+    "The full mummification process took approximately 70 days.",
+    "Dehydration using natron salt took approximately 40 days.",
+    "Organs were removed and preserved in canopic jars.",
+    "Embalmers worked alongside priests reciting prayers/spells during wrapping."
+  ]
+}

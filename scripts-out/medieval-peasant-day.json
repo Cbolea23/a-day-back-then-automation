@@ -1,0 +1,77 @@
+{
+  "slug": "medieval-peasant-day",
+  "title": "A Medieval Peasant's Day",
+  "hook": "Peasants Worked Less Than You",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You wake at sunrise on a straw mattress shared with your family.",
+      "mood": "dark",
+      "imagePrompt": "Interior of a small medieval wattle-and-daub cottage with a central hearth and straw bedding. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-peasant-day/1.jpg",
+      "audio": "audio/medieval-peasant-day/1.wav",
+      "seconds": 4.1
+    },
+    {
+      "text": "There are no clocks, so the village church bell tells you everything.",
+      "mood": "cool",
+      "imagePrompt": "Stone parish church steeple rising above a misty medieval English village at sunrise. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-peasant-day/2.jpg",
+      "audio": "audio/medieval-peasant-day/2.wav",
+      "seconds": 4
+    },
+    {
+      "text": "Breakfast is pottage: an ongoing stew of oats, peas, and root greens.",
+      "mood": "warm",
+      "imagePrompt": "Cast iron pot suspended over glowing embers in an open hearth, coarse wooden spoons nearby. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-peasant-day/3.jpg",
+      "audio": "audio/medieval-peasant-day/3.wav",
+      "seconds": 6
+    },
+    {
+      "text": "By dawn, you are out in the open fields strip-farming rye.",
+      "mood": "day",
+      "imagePrompt": "Vast medieval open-field system showing long narrow cultivation strips bordered by green turf ridges. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-peasant-day/4.jpg",
+      "audio": "audio/medieval-peasant-day/4.wav",
+      "seconds": 3.6
+    },
+    {
+      "text": "You must work your lord’s land first, then tend your own.",
+      "mood": "day",
+      "imagePrompt": "Muddy farm field with a wooden ox-drawn plow resting beside furrows under an overcast sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-peasant-day/5.jpg",
+      "audio": "audio/medieval-peasant-day/5.wav",
+      "seconds": 3.6
+    },
+    {
+      "text": "The physical labor is brutal, but church holy days bring constant breaks.",
+      "mood": "day",
+      "imagePrompt": "Village green outside a thatched parish church decorated with simple festival greenery. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-peasant-day/6.jpg",
+      "audio": "audio/medieval-peasant-day/6.wav",
+      "seconds": 5.2
+    },
+    {
+      "text": "Historians estimate medieval peasants enjoyed dozens of official holidays every year.",
+      "mood": "warm",
+      "imagePrompt": "Trestle tables and wooden ale jugs set up outdoors on a grassy medieval village commons. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-peasant-day/7.jpg",
+      "audio": "audio/medieval-peasant-day/7.wav",
+      "seconds": 6.1
+    },
+    {
+      "text": "Sundays mean ale and wrestling, provided the harvest survives the coming winter.",
+      "mood": "cool",
+      "imagePrompt": "Quiet medieval village clearing at dusk with thatch-roofed cottages under an autumn twilight sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-peasant-day/8.jpg",
+      "audio": "audio/medieval-peasant-day/8.wav",
+      "seconds": 5.5
+    }
+  ],
+  "claimsToVerify": [
+    "The liturgical calendar provided dozens of official feast days and holy days off work per year in medieval Europe.",
+    "Pottage was the standard daily meal for medieval European peasants.",
+    "The manorial system typically required peasants to perform labor duties (corvée) on the lord's demesne."
+  ]
+}

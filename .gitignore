@@ -1,10 +1,12 @@
 node_modules
 out
 public/audio
-public/images
-public/long
-scripts-out
-long-out
+# Images and Scripts tracked for Muse AI collaboration
+!public/images/*
+!public/images/*/*
+!scripts-out/
+scripts-out/*.cache/
+long-out/.cache/
 .env*
 *.log
 

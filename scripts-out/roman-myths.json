@@ -1,0 +1,78 @@
+{
+  "slug": "roman-myths",
+  "title": "4 Roman Myths You Believed",
+  "hook": "4 Roman Myths You Believed",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You stand inside a roaring Roman Colosseum, ready to watch history's biggest lies unfold.",
+      "mood": "warm",
+      "imagePrompt": "A wide angle shot of the massive stone arches of the Roman Colosseum under a bright, sunny sky.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-myths/1.png",
+      "audio": "audio/roman-myths/1.wav",
+      "seconds": 7.4
+    },
+    {
+      "text": "You feel stuffed after a massive feast and look for the famous vomitorium.",
+      "mood": "warm",
+      "imagePrompt": "A lavish Roman dining room with low tables, empty bronze platters, and spilled wine on a mosaic floor.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-myths/2.png",
+      "audio": "audio/roman-myths/2.wav",
+      "seconds": 7.6
+    },
+    {
+      "text": "But you only find a wide exit passage. That's all a vomitorium actually is.",
+      "mood": "cool",
+      "imagePrompt": "A vaulted stone corridor inside a Roman amphitheater, empty and leading to bright sunlight at the end.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-myths/3.png",
+      "audio": "audio/roman-myths/3.wav",
+      "seconds": 6.2
+    },
+    {
+      "text": "Next, a defeated gladiator awaits his fate. You expect a dramatic thumbs-down.",
+      "mood": "warm",
+      "imagePrompt": "The dusty floor of a Roman arena, littered with discarded shields and wooden swords under a hot sun.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-myths/4.png",
+      "audio": "audio/roman-myths/4.wav",
+      "seconds": 6.6
+    },
+    {
+      "text": "Actually, historians aren't sure. A pressed thumb might have meant death, or maybe life.",
+      "mood": "cool",
+      "imagePrompt": "A close-up of a weather-worn ancient Roman stone relief showing vague hand gestures.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-myths/5.png",
+      "audio": "audio/roman-myths/5.wav",
+      "seconds": 7.4
+    },
+    {
+      "text": "You notice everyone wearing massive, heavy white togas.",
+      "mood": "day",
+      "imagePrompt": "A bustling Roman forum with grand marble pillars and stone steps under a clear blue sky.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-myths/6.png",
+      "audio": "audio/roman-myths/6.wav",
+      "seconds": 4.8
+    },
+    {
+      "text": "In reality, many Romans hated them. They probably wore simple tunics instead.",
+      "mood": "day",
+      "imagePrompt": "A simple Roman street with modest brick buildings and clotheslines hanging between windows.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-myths/7.png",
+      "audio": "audio/roman-myths/7.wav",
+      "seconds": 6
+    },
+    {
+      "text": "And those marble statues? They weren't white either. Next time, we look at their wild colors.",
+      "mood": "day",
+      "imagePrompt": "A row of clean white marble statues in a grand museum hall, casting soft shadows.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/roman-myths/8.png",
+      "audio": "audio/roman-myths/8.wav",
+      "seconds": 6.3
+    }
+  ],
+  "claimsToVerify": [
+    "Vomitoriums in ancient Rome were architectural exit passageways, not rooms for vomiting.",
+    "The exact meaning of the gladiator thumb gesture (pollice verso) is historically uncertain and debated among scholars.",
+    "Togas were heavy, uncomfortable, and generally avoided by everyday Romans in favor of simple tunics.",
+    "Ancient Roman marble statues were originally painted in bright, vivid colors rather than left plain white."
+  ]
+}

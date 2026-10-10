@@ -1,0 +1,78 @@
+{
+  "slug": "egypt-myths",
+  "title": "3 Egypt Myths Debunked",
+  "hook": "Everything You Know About Egypt Is Wrong",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "You think you know ancient Egypt, but Hollywood lied to you.",
+      "mood": "warm",
+      "imagePrompt": "Cinematic wide shot of the Giza Plateau at sunset, towering pyramids against an amber sky and sweeping sand dunes.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-myths/1.png",
+      "audio": "audio/egypt-myths/1.wav",
+      "seconds": 3.6
+    },
+    {
+      "text": "You picture millions of enslaved workers building pyramids under a brutal desert whip.",
+      "mood": "day",
+      "imagePrompt": "An ancient limestone quarry site near the Nile riverbank, bright sunny glare over rugged desert rocks.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-myths/2.png",
+      "audio": "audio/egypt-myths/2.wav",
+      "seconds": 5.7
+    },
+    {
+      "text": "In reality, archaeologists found worker towns showing they ate prime beef and received care.",
+      "mood": "day",
+      "imagePrompt": "Excavated mudbrick ruins of an ancient Egyptian worker village, dusty archaeological grid under clear sunlight.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-myths/3.png",
+      "audio": "audio/egypt-myths/3.wav",
+      "seconds": 6.5
+    },
+    {
+      "text": "Next, forget about giant rolling boulders or secret mechanical poison traps inside tombs.",
+      "mood": "dark",
+      "imagePrompt": "A narrow, dimly lit sandstone corridor inside a pyramid, flickering torchlight casting long shadows on plain stone walls.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-myths/4.png",
+      "audio": "audio/egypt-myths/4.wav",
+      "seconds": 6.4
+    },
+    {
+      "text": "Architects mostly relied on heavy stone slabs and simple dead-ends to block thieves.",
+      "mood": "cool",
+      "imagePrompt": "A massive granite portcullis blocking stone tightly fitted into a dark subterranean vault passageway.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-myths/5.png",
+      "audio": "audio/egypt-myths/5.wav",
+      "seconds": 6.4
+    },
+    {
+      "text": "And that deadly pharaoh's curse that struck down King Tut's tomb discoverers?",
+      "mood": "dark",
+      "imagePrompt": "Entrance to a carved underground pharaoh tomb, covered in painted golden hieroglyphs on aged stone.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-myths/6.png",
+      "audio": "audio/egypt-myths/6.wav",
+      "seconds": 5.3
+    },
+    {
+      "text": "1920s newspapers probably invented most of it just to sell sensational stories.",
+      "mood": "warm",
+      "imagePrompt": "Vintage 1920s style newspaper printing shop setting, warm desk lamp illuminating stacks of freshly printed papers.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-myths/7.png",
+      "audio": "audio/egypt-myths/7.wav",
+      "seconds": 6.5
+    },
+    {
+      "text": "Yet, scientists did discover real toxic mold hiding in sealed tombs. Want part two?",
+      "mood": "dark",
+      "imagePrompt": "Deep inside a pitch-black stone tomb chamber, a faint cool blue light revealing ancient organic dust clinging to dark rock surfaces.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/egypt-myths/8.png",
+      "audio": "audio/egypt-myths/8.wav",
+      "seconds": 6.7
+    }
+  ],
+  "claimsToVerify": [
+    "Pyramid builders were hired/paid laborers living in nearby towns and eating high-protein diets rather than enslaved workers.",
+    "Pyramids did not feature complex mechanical death traps like rolling boulders or spring traps; they used portcullis blocks and shaft dead-ends.",
+    "The 'Curse of the Pharaohs' myth was largely amplified and created by 1920s news media covering Howard Carter's King Tut discovery.",
+    "Potentially hazardous molds or fungi (like Aspergillus flavus) have been isolated inside unopened ancient tombs."
+  ]
+}

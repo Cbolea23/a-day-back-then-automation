@@ -1,0 +1,77 @@
+{
+  "slug": "viking-winter",
+  "title": "Surviving a Viking Winter",
+  "hook": "Survival Inside a Viking Longhouse",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Outside, Scandinavian winter brings twenty hours of pitch-black subzero cold.",
+      "mood": "dark",
+      "imagePrompt": "Snow-covered Scandinavian longhouse exterior at night under faint green northern lights. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-winter/1.jpg",
+      "audio": "audio/viking-winter/1.wav",
+      "seconds": 7.3
+    },
+    {
+      "text": "Inside your longhouse, you share warmth with pigs, sheep, and cattle.",
+      "mood": "warm",
+      "imagePrompt": "Interior of a turf longhouse with timber stalls for cattle at one end and a long central hearth fire. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-winter/2.jpg",
+      "audio": "audio/viking-winter/2.wav",
+      "seconds": 5.9
+    },
+    {
+      "text": "Archaeology shows animals stayed in partitioned stalls right next to family benches.",
+      "mood": "dark",
+      "imagePrompt": "Timber animal stalls separated by wattle screens inside a long smoky Viking hall. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-winter/3.jpg",
+      "audio": "audio/viking-winter/3.wav",
+      "seconds": 5.8
+    },
+    {
+      "text": "The air stinks of wet wool, manure, and blinding peat smoke.",
+      "mood": "cool",
+      "imagePrompt": "Smoky rafters of a Norse turf house with cured meats hanging from timber beams. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-winter/4.jpg",
+      "audio": "audio/viking-winter/4.wav",
+      "seconds": 5.8
+    },
+    {
+      "text": "Dinner is dried fish, soured dairy, and hard flatbread made months ago.",
+      "mood": "warm",
+      "imagePrompt": "Wooden trencher with dried cod (stockfish), hard grain flatbread, and a clay bowl of curdled milk. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-winter/5.jpg",
+      "audio": "audio/viking-winter/5.wav",
+      "seconds": 5.1
+    },
+    {
+      "text": "By dim tallow lamps, women spend weeks spinning wool on upright looms.",
+      "mood": "dark",
+      "imagePrompt": "Upright warp-weighted wooden loom leaning against a longhouse timber wall in faint oil lamp light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-winter/6.jpg",
+      "audio": "audio/viking-winter/6.wav",
+      "seconds": 5.2
+    },
+    {
+      "text": "Sagas tell heroic tales, but survival here was quiet, tedious maintenance.",
+      "mood": "warm",
+      "imagePrompt": "Carved wooden Norse bench beside glowing peat embers with bone needles and thread. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-winter/7.jpg",
+      "audio": "audio/viking-winter/7.wav",
+      "seconds": 7.4
+    },
+    {
+      "text": "If the dried food spoils early, the cattle get eaten next.",
+      "mood": "night",
+      "imagePrompt": "Snow-drifts piled high against the thick turf wall and timber door of a Norse settlement. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/viking-winter/8.jpg",
+      "audio": "audio/viking-winter/8.wav",
+      "seconds": 4.5
+    }
+  ],
+  "claimsToVerify": [
+    "Viking-age Scandinavian longhouses routinely housed livestock and people under the same roof for winter heat.",
+    "Stockfish, cured dairy (like skyr), and flatbreads were dietary staples during winter.",
+    "Warp-weighted looms and textile production were major indoor winter activities in Norse households."
+  ]
+}
