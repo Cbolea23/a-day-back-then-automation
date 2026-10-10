@@ -2,7 +2,7 @@ import {NextResponse} from "next/server";
 import {execFile} from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
-import {pipelineRoot} from "@/lib/pipeline";
+import {getGeminiKey, pipelineRoot} from "@/lib/pipeline";
 
 function exists(cmd: string): Promise<boolean> {
   return new Promise((resolve) => {
@@ -34,7 +34,7 @@ export async function GET() {
     ffmpeg,
     remotionInstalled: remotion,
     scriptsOut,
-    geminiKey: Boolean(process.env.GEMINI_API_KEY),
+    geminiKey: Boolean(getGeminiKey()),
     // Upload auth presence (best-effort file checks; scripts verify for real)
     youtubeAuth: fs.existsSync(path.join(root, "youtube-tokens.json")),
     facebookAuth: fs.existsSync(path.join(root, "facebook-tokens.json")),

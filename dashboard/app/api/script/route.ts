@@ -1,23 +1,26 @@
 import {NextResponse} from "next/server";
-import {runScript} from "@/lib/pipeline";
+import {getGeminiKey, runScript} from "@/lib/pipeline";
 
 /**
  * Generate a script via the real pipeline:
  * `node scripts/make-script.mjs --only <slug>`.
- * Needs GEMINI_API_KEY in the dashboard server's environment.
+ * Uses GEMINI_API_KEY from the server env, or the key saved via settings.
  */
 export async function POST(req: Request) {
   const {slug, force} = (await req.json()) as {slug?: string; force?: boolean};
   if (!slug) return NextResponse.json({error: "slug is required"}, {status: 400});
-  if (!process.env.GEMINI_API_KEY) {
+  const geminiKey = getGeminiKey();
+  if (!geminiKey) {
     return NextResponse.json(
-      {error: "GEMINI_API_KEY is not set in the dashboard server environment"},
+      {error: "No Gemini API key. Add one in Settings → API Keys, or set GEMINI_API_KEY on the server."},
       {status: 428},
     );
   }
   const args = ["--only", slug];
   if (force) args.push("--force");
-  const {code, stdout, stderr} = await runScript("make-script.mjs", args);
+  const {code, stdout, stderr} = await runScript("make-script.mjs", args, {
+    env: {GEMINI_API_KEY: geminiKey},
+  });
   if (code !== 0) {
     return NextResponse.json(
       {error: "make-script.mjs failed", stdout: stdout.slice(-2000), stderr: stderr.slice(-2000)},

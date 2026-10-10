@@ -17,7 +17,7 @@ export function scriptPath(name: string): string {
 export function runScript(
   script: string,
   args: string[],
-  opts?: {env?: NodeJS.ProcessEnv},
+  opts?: {env?: Record<string, string>},
 ): Promise<{code: number; stdout: string; stderr: string}> {
   return new Promise((resolve) => {
     const child = spawn("node", [scriptPath(script), ...args], {
@@ -254,4 +254,25 @@ export function readPipelineJson<T>(rel: string): T | undefined {
   } catch {
     return undefined;
   }
+}
+
+/**
+ * Server-side secrets entered via the dashboard settings UI.
+ * Stored in data/keys.json (mode 600, gitignored) — never sent to the browser.
+ */
+export function getStoredKeys(): Record<string, string> {
+  const dir = process.env.DASH_DATA_DIR ?? path.join(process.cwd(), "data");
+  try {
+    return JSON.parse(fs.readFileSync(path.join(dir, "keys.json"), "utf8")) as Record<
+      string,
+      string
+    >;
+  } catch {
+    return {};
+  }
+}
+
+/** Gemini key: server env wins, otherwise the key saved via settings. */
+export function getGeminiKey(): string | undefined {
+  return process.env.GEMINI_API_KEY || getStoredKeys().GEMINI_API_KEY || undefined;
 }

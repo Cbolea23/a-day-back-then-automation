@@ -18,6 +18,32 @@ Open http://localhost:3100.
 By default the dashboard controls the pipeline in the repo root (`..`).
 Override with `PIPELINE_ROOT=/path/to/repo`.
 
+## Mobile app (PWA)
+
+The dashboard is installable as a mobile app:
+
+1. Start the server so your phone can reach it. On the same Wi-Fi, bind to
+   the network: `npm run dev -- -H 0.0.0.0` (port 3100), then open
+   `http://<your-computer-lan-ip>:3100` in your phone's browser.
+   (From outside your network, use a tunnel such as Cloudflare Tunnel or
+   Tailscale — the phone just needs HTTP access to the server.)
+2. **iPhone:** Share → Add to Home Screen.
+   **Android:** menu → Add to Home screen (or Install app).
+3. It launches fullscreen with its own icon — no browser chrome.
+
+The phone is a remote control: the server still does all the rendering,
+voiceover synthesis and uploads. The UI is responsive (bottom… top tab bar
+on small screens, stacked cards, swipeable tables).
+
+## API keys
+
+Settings → API Keys has a key input box. The key is sent to the server and
+stored in `dashboard/data/keys.json` (file mode 600, gitignored, never
+committed, never sent back to the browser). `GEMINI_API_KEY` in the server
+environment takes precedence if both are set. Clearing the box's saved key
+is done with the Clear button; OAuth tokens and Playwright sessions remain
+file-based on the server and can't be pasted into the app.
+
 ## What each tab does (for real)
 
 | Tab | API | Real behavior |
@@ -33,8 +59,9 @@ Override with `PIPELINE_ROOT=/path/to/repo`.
 
 ## Notes
 
-- Secrets (Gemini key, OAuth tokens) live in the server environment and token
-  files — the browser never sees them.
+- Secrets: the Gemini key can be entered in Settings → API Keys (stored
+  server-side in `data/keys.json`, mode 600, gitignored) or via the
+  `GEMINI_API_KEY` env var (takes precedence). OAuth tokens stay file-based.
 - The dashboard is a local operations tool: run it on the machine that has the
   pipeline (your computer or a server). It is not deployable to GitHub Pages
   (static hosting can't run the backend).

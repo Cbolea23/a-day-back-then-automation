@@ -82,6 +82,19 @@ export default function App() {
   // Vault preview
   const [previewSlug, setPreviewSlug] = useState<string | null>(null);
 
+  // API keys (stored server-side via settings)
+  const [keyInput, setKeyInput] = useState('');
+  const [keyStatus, setKeyStatus] = useState<{geminiKeySet: boolean; geminiKeySource: string | null} | null>(null);
+  const [keyMsg, setKeyMsg] = useState('');
+  const [keyBusy, setKeyBusy] = useState(false);
+
+  const refreshKeyStatus = useCallback(async () => {
+    try {
+      const d = await api<{geminiKeySet: boolean; geminiKeySource: string | null}>('/api/settings/keys');
+      setKeyStatus(d);
+    } catch {}
+  }, []);
+
   const addLog = useCallback((script: string, msg: string, type = 'info') => {
     const time = new Date().toLocaleTimeString();
     setLogs(prev => [...prev.slice(-199), {id: Date.now() + Math.random(), time, script, msg, type}]);
@@ -112,7 +125,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    refreshVault(); refreshTopics(); refreshRenders();
+    refreshVault(); refreshTopics(); refreshRenders(); refreshKeyStatus();
     api<PipelineStatus>('/api/status').then(setStatus).catch(() => {});
     addLog('dashboard', 'Connected to pipeline. Vault, topics and render queue loaded from disk.', 'success');
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -224,6 +237,37 @@ export default function App() {
     } catch (e) { addLog('topics', `Failed: ${e}`, 'warning'); }
   };
 
+  const handleSaveKey = async () => {
+    if (!keyInput.trim()) return;
+    setKeyBusy(true); setKeyMsg('');
+    try {
+      await api('/api/settings/keys', {
+        method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({geminiKey: keyInput.trim()}),
+      });
+      setKeyInput('');
+      setKeyMsg('Key saved on the server. Script generation is now enabled.');
+      addLog('settings', 'Gemini API key saved server-side.', 'success');
+      await refreshKeyStatus();
+      const s = await api<PipelineStatus>('/api/status').catch(() => null);
+      if (s) setStatus(s);
+    } catch (e) { setKeyMsg(`Failed: ${e}`); }
+    setKeyBusy(false);
+  };
+
+  const handleClearKey = async () => {
+    setKeyBusy(true); setKeyMsg('');
+    try {
+      await api('/api/settings/keys', {method: 'DELETE'});
+      setKeyMsg('Stored key cleared.');
+      addLog('settings', 'Stored Gemini API key cleared.', 'info');
+      await refreshKeyStatus();
+      const s = await api<PipelineStatus>('/api/status').catch(() => null);
+      if (s) setStatus(s);
+    } catch (e) { setKeyMsg(`Failed: ${e}`); }
+    setKeyBusy(false);
+  };
+
   const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
   const nav = [
@@ -238,8 +282,27 @@ export default function App() {
   ];
 
   return (
-    <div className="flex h-screen bg-slate-950 text-slate-100 font-sans overflow-hidden">
-      <aside className="w-64 border-r border-slate-800 bg-slate-900/60 p-4 flex flex-col justify-between shrink-0">
+    <div className="flex flex-col md:flex-row md:h-screen min-h-screen bg-slate-950 text-slate-100 font-sans overflow-x-hidden">
+      {/* Mobile top bar + tab nav */}
+      <div className="md:hidden sticky top-0 z-40">
+        <header className="bg-slate-900/95 backdrop-blur border-b border-slate-800 px-4 py-3 flex items-center justify-between">
+          <div>
+            <h1 className="text-sm font-bold text-amber-500 tracking-wide flex items-center gap-2"><span>🏛️</span> A Day Back Then</h1>
+            <p className="text-[10px] text-slate-400">Content Operations Hub</p>
+          </div>
+          <span className={`w-2.5 h-2.5 rounded-full ${status?.node ? 'bg-emerald-500 animate-pulse' : 'bg-slate-600'}`} title="Pipeline link" />
+        </header>
+        <nav className="bg-slate-950/95 backdrop-blur border-b border-slate-800/80 px-2 py-2 flex gap-1.5 overflow-x-auto">
+          {nav.map(item => (
+            <button key={item.id} onClick={() => setActiveTab(item.id)}
+              className={`shrink-0 px-3 py-1.5 text-[11px] font-semibold rounded-full border transition-all ${activeTab === item.id ? 'bg-amber-500/15 text-amber-400 border-amber-500/30' : 'text-slate-400 border-slate-800'}`}>
+              {item.label}
+            </button>
+          ))}
+        </nav>
+      </div>
+
+      <aside className="hidden md:flex w-64 border-r border-slate-800 bg-slate-900/60 p-4 flex-col justify-between shrink-0">
         <div>
           <div className="mb-6 px-2 flex items-center justify-between">
             <div>
@@ -265,7 +328,7 @@ export default function App() {
         </div>
       </aside>
 
-      <main className="flex-1 overflow-y-auto p-6 bg-slate-950 flex flex-col justify-between">
+      <main className="flex-1 md:overflow-y-auto p-4 md:p-6 bg-slate-950 flex flex-col justify-between">
         <div className="space-y-6">
           {activeTab === 'overview' && (
             <div className="space-y-6">
@@ -321,8 +384,8 @@ export default function App() {
                 <div><h2 className="text-xl font-bold">Vault Manager</h2><p className="text-xs text-slate-400">Live contents of <code className="text-amber-400">out/</code></p></div>
                 <button onClick={refreshVault} className="px-3 py-1.5 text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg flex items-center gap-1"><IconRefresh /> Rescan</button>
               </div>
-              <div className="border border-slate-800 rounded-xl overflow-hidden bg-slate-900/80">
-                <table className="w-full text-left text-xs text-slate-300">
+              <div className="border border-slate-800 rounded-xl overflow-hidden bg-slate-900/80 overflow-x-auto">
+                <table className="w-full text-left text-xs text-slate-300 min-w-[640px]">
                   <thead className="bg-slate-800/80 text-slate-400 uppercase text-[10px] tracking-wider">
                     <tr><th className="p-3.5">Video</th><th className="p-3.5">Format</th><th className="p-3.5">Duration</th><th className="p-3.5">Size</th><th className="p-3.5">Rendered</th><th className="p-3.5 text-right">Actions</th></tr>
                   </thead>
@@ -350,7 +413,7 @@ export default function App() {
           {activeTab === 'generator' && (
             <div className="space-y-6 max-w-4xl">
               <div><h2 className="text-xl font-bold">AI Script & Voiceover Generator</h2><p className="text-xs text-slate-400">Runs the real <code className="text-amber-400">make-script.mjs</code> and <code className="text-amber-400">make-voice.mjs</code></p></div>
-              {!status?.geminiKey && <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-lg text-xs text-amber-300">GEMINI_API_KEY is not set on the dashboard server — script generation will fail until it is. Voiceover (edge-tts) works without it.</div>}
+              {!status?.geminiKey && <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-lg text-xs text-amber-300">No Gemini API key yet — add one in <button onClick={() => setActiveTab('settings')} className="underline font-semibold">Settings → API Keys</button> to enable script generation. Voiceover (edge-tts) works without it.</div>}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-slate-900/80 border border-slate-800 p-4 rounded-xl space-y-4">
                   <h3 className="text-xs font-bold text-slate-300 uppercase tracking-wider">1. Topics ({topics.length})</h3>
@@ -374,7 +437,7 @@ export default function App() {
                 <div className="md:col-span-2 bg-slate-900/80 border border-slate-800 p-5 rounded-xl space-y-4">
                   <h3 className="text-sm font-bold text-slate-200">Pipeline for: <span className="text-amber-400 font-mono">{selectedTopic || '—'}</span></h3>
                   {busyMsg && <div className="p-2.5 bg-red-500/10 border border-red-500/30 rounded-lg text-xs text-red-300 font-mono">{busyMsg}</div>}
-                  <div className="flex gap-3">
+                  <div className="flex flex-col sm:flex-row gap-3">
                     <button onClick={handleGenerateScript} disabled={isGeneratingScript || !selectedTopic} className="flex-1 py-2 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs rounded-lg flex items-center justify-center gap-1.5 disabled:opacity-50"><IconSparkles />{isGeneratingScript ? 'Running make-script.mjs…' : '1. Generate Script'}</button>
                     <button onClick={handleGenerateVoice} disabled={isGeneratingVoice || !selectedTopic} className="flex-1 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs rounded-lg flex items-center justify-center gap-1.5 disabled:opacity-50"><IconVolume />{isGeneratingVoice ? 'Synthesizing…' : '2. Generate Voiceover'}</button>
                   </div>
@@ -462,8 +525,8 @@ export default function App() {
             <div className="space-y-4">
               <div><h2 className="text-xl font-bold">Content Calendar</h2><p className="text-xs text-slate-400">Plan posts; publishing runs through the publisher tab.</p></div>
               <div className="bg-slate-900/80 border border-slate-800 p-4 rounded-xl">
-                <div className="grid grid-cols-7 gap-2 text-center text-xs font-bold text-slate-400 border-b border-slate-800 pb-2"><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div><div>Sun</div></div>
-                <div className="grid grid-cols-7 gap-2 mt-2">
+                <div className="hidden md:grid grid-cols-7 gap-2 text-center text-xs font-bold text-slate-400 border-b border-slate-800 pb-2"><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div><div>Sun</div></div>
+                <div className="grid grid-cols-2 md:grid-cols-7 gap-2 mt-2">
                   {Array.from({length: 14}).map((_, i) => {
                     const d = new Date(); d.setDate(d.getDate() + (i - d.getDay() + 1));
                     const dateStr = d.toISOString().slice(0, 10);
@@ -509,13 +572,39 @@ export default function App() {
           {activeTab === 'settings' && (
             <div className="space-y-6 max-w-2xl">
               <div><h2 className="text-xl font-bold">Settings</h2><p className="text-xs text-slate-400">Live pipeline status on this machine.</p></div>
+
+              <div className="bg-slate-900/80 border border-slate-800 p-5 rounded-xl space-y-4">
+                <div>
+                  <h3 className="text-sm font-bold text-slate-200">🔑 API Keys</h3>
+                  <p className="text-[11px] text-slate-500 mt-1">Keys are stored on the dashboard server (file mode 600, never committed) and used for script generation. The browser never sees the saved value.</p>
+                </div>
+                <div className="p-3.5 bg-slate-950 rounded-lg border border-slate-800 space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs font-semibold text-slate-200">Gemini API key</span>
+                    <span className={`text-[11px] font-mono ${keyStatus?.geminiKeySet ? 'text-emerald-400' : 'text-amber-400'}`}>
+                      {keyStatus ? (keyStatus.geminiKeySet ? `Set (${keyStatus.geminiKeySource === 'env' ? 'server env' : 'saved here'})` : 'Not set') : '…'}
+                    </span>
+                  </div>
+                  <div className="flex gap-2">
+                    <input type="password" value={keyInput} onChange={e => setKeyInput(e.target.value)} onKeyDown={e => e.key === 'Enter' && handleSaveKey()}
+                      placeholder="Paste Gemini API key…" autoComplete="off"
+                      className="flex-1 bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs text-slate-100 font-mono focus:outline-none focus:border-amber-500" />
+                    <button onClick={handleSaveKey} disabled={keyBusy || !keyInput.trim()} className="px-4 py-2 bg-amber-500 hover:bg-amber-600 disabled:opacity-50 text-slate-950 text-xs font-bold rounded-lg">Save</button>
+                    {keyStatus?.geminiKeySet && keyStatus.geminiKeySource === 'stored' && (
+                      <button onClick={handleClearKey} disabled={keyBusy} className="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold rounded-lg">Clear</button>
+                    )}
+                  </div>
+                  {keyMsg && <p className="text-[11px] text-slate-400">{keyMsg}</p>}
+                </div>
+              </div>
+
               <div className="bg-slate-900/80 border border-slate-800 p-5 rounded-xl space-y-3 text-xs">
+                <h3 className="text-sm font-bold text-slate-200">🖥️ Pipeline Status</h3>
                 {[
                   ['Pipeline root', status?.pipelineRoot ?? '…', true],
                   ['Node.js', status?.node ? 'Available' : 'Missing', status?.node],
                   ['ffmpeg', status?.ffmpeg ? 'Available' : 'Missing', status?.ffmpeg],
                   ['Remotion installed', status?.remotionInstalled ? 'Yes' : 'No — run npm install in repo root', status?.remotionInstalled],
-                  ['GEMINI_API_KEY', status?.geminiKey ? 'Set (server env)' : 'Not set — script generation disabled', status?.geminiKey],
                   ['YouTube auth', status?.youtubeAuth ? 'youtube-tokens.json present' : 'Missing — run npm run upload:auth', status?.youtubeAuth],
                   ['Facebook auth', status?.facebookAuth ? 'facebook-tokens.json present' : 'Missing', status?.facebookAuth],
                   ['TikTok session', status?.tiktokSession ? '.tiktok-session/ present' : 'Missing', status?.tiktokSession],
@@ -525,7 +614,7 @@ export default function App() {
                     <span className={`font-mono ${ok ? 'text-emerald-400' : 'text-amber-400'}`}>{value}</span>
                   </div>
                 ))}
-                <p className="text-[11px] text-slate-500 pt-2">Secrets (Gemini key, OAuth tokens) live in the dashboard server's environment and token files — never in the browser. Set GEMINI_API_KEY before starting the server: <code className="text-amber-400">GEMINI_API_KEY=… npm run dev</code> inside dashboard/.</p>
+                <p className="text-[11px] text-slate-500 pt-2">OAuth tokens and Playwright sessions live as files on the server (see README) — they can't be pasted here. The Gemini key above is the one secret you can set from the app.</p>
               </div>
             </div>
           )}
