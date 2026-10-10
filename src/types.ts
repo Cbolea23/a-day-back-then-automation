@@ -21,6 +21,13 @@ export type Scene = {
   chapterNumber?: number;
   /** Set by the voice script so edited text gets re-voiced. */
   voicedText?: string;
+  /**
+   * Real word timings measured from the voiceover audio (forced alignment),
+   * in seconds. When present and matching the word count, planSpeech uses
+   * these instead of the heuristic spread so captions, mouth and gestures
+   * line up with the actual spoken words.
+   */
+  wordTimings?: Array<{start: number; end: number}>;
 };
 
 export type ScriptProps = {

@@ -350,8 +350,10 @@ const AudioMouth: React.FC<{
     // typically lands around 0.05-0.25 mean amplitude; anything under 0.02
     // is treated as silence so the mouth rests closed between words.
     const open = Math.min(1, Math.max(0, (vol - 0.02) / 0.18));
-    // Gentle curve + a whisper of flutter so it reads as speech, not a meter.
-    return Math.pow(open, 0.7) * (0.85 + 0.15 * Math.sin(frame * 1.35));
+    // Gentle curve so it reads as speech, not a meter. The flutter is kept
+    // tiny on purpose: the open/close rhythm must come from the audio alone,
+    // otherwise the mouth visibly drifts out of sync with the voice.
+    return Math.pow(open, 0.7) * (0.97 + 0.03 * Math.sin(frame * 1.35));
   }, [audioData, frame, fps]);
   return <>{children(mouthOpen)}</>;
 };

@@ -170,10 +170,24 @@ function classifySentence(words: string[]): {
 export function planSpeech(
   text: string,
   durationInFrames: number,
-  opts?: {isFirstScene?: boolean},
+  opts?: {
+    isFirstScene?: boolean;
+    /** Frames per second, used to convert real word timings. Default 30. */
+    fps?: number;
+    /**
+     * Measured word timings (seconds, from forced alignment of the real
+     * voiceover). When present with one entry per word, these replace the
+     * heuristic spread so everything downstream stays glued to the audio.
+     */
+    timings?: Array<{start: number; end: number}>;
+  },
 ): SpeechPlan {
   const words = splitWords(text);
-  const starts = wordStartFrames(words, durationInFrames);
+  const fps = opts?.fps ?? 30;
+  const starts =
+    opts?.timings && opts.timings.length === words.length
+      ? opts.timings.map((t) => Math.max(0, Math.round(t.start * fps)))
+      : wordStartFrames(words, durationInFrames);
   const endOf = (i: number): number =>
     i + 1 < words.length ? starts[i + 1] : durationInFrames * 0.96;
 

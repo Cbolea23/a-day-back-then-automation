@@ -136,12 +136,19 @@ const SceneView: React.FC<{
   slug: string;
 }> = ({scene, index, hook, durationInFrames, slug}) => {
   const theme = getThemeFromSlug(slug);
+  const {fps} = useVideoConfig();
   // One speech plan per scene: gestures, expressions and nods all follow
-  // the narration text, in sync with the captions.
+  // the narration text, in sync with the captions. When the script carries
+  // measured word timings (scene.wordTimings), the plan is anchored to the
+  // real voiceover instead of the heuristic spread.
   const plan = useMemo(
     () =>
-      planSpeech(scene.text, durationInFrames, {isFirstScene: index === 0}),
-    [scene.text, durationInFrames, index],
+      planSpeech(scene.text, durationInFrames, {
+        isFirstScene: index === 0,
+        fps,
+        timings: scene.wordTimings,
+      }),
+    [scene.text, scene.wordTimings, durationInFrames, index, fps],
   );
   return (
     <AbsoluteFill>
