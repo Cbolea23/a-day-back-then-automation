@@ -346,9 +346,12 @@ const AudioMouth: React.FC<{
       n++;
     }
     const vol = sum / n;
-    const open = Math.min(1, Math.max(0, (vol - 0.03) / 0.3));
-    // Soft curve + a whisper of flutter so it reads as speech, not a meter.
-    return open * open * (0.8 + 0.2 * Math.sin(frame * 1.35));
+    // Map the raw amplitude to a clearly visible mouth opening. Speech
+    // typically lands around 0.05-0.25 mean amplitude; anything under 0.02
+    // is treated as silence so the mouth rests closed between words.
+    const open = Math.min(1, Math.max(0, (vol - 0.02) / 0.18));
+    // Gentle curve + a whisper of flutter so it reads as speech, not a meter.
+    return Math.pow(open, 0.7) * (0.85 + 0.15 * Math.sin(frame * 1.35));
   }, [audioData, frame, fps]);
   return <>{children(mouthOpen)}</>;
 };
