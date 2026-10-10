@@ -4,6 +4,12 @@ export type Mood = "day" | "night" | "warm" | "dark" | "cool";
 
 export type DriftKind = "push-in" | "pull-back" | "pan-left" | "pan-right" | "still";
 
+/** How the narrator's body reacts to the scene (on top of gestures). */
+export type ReactionKind = "look-up" | "lean-in" | "recoil" | "none";
+
+/** Ambient life over the background image. */
+export type AtmosphereKind = "dust" | "ember" | "none";
+
 /**
  * Per-scene stage direction: how the narrator shares the frame with the
  * background image. All fields are optional — anything missing falls back
@@ -23,6 +29,15 @@ export type SceneDirection = {
   narratorScale?: number;
   /** Camera drift style for the background. Default "push-in". */
   drift?: DriftKind;
+  /**
+   * Body reaction to the scene, layered over gestures. Default: "look-up"
+   * when the focus point is high in the frame (focus.y < 0.3), else "none".
+   */
+  reaction?: ReactionKind;
+  /** Ambient particles over the background. Default "dust". */
+  atmosphere?: AtmosphereKind;
+  /** Warm candle/fire light pulse over the scene. Default false. */
+  warmFlicker?: boolean;
 };
 
 export type Scene = {

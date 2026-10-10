@@ -13,7 +13,7 @@ import {
 import {Captions} from "./Captions";
 import {Narrator, getThemeFromSlug} from "./Narrator";
 import {planSpeech} from "./speech";
-import {FPS, Mood, Scene, ScriptProps, sceneFrames} from "./types";
+import {FPS, Mood, Scene, ScriptProps, AtmosphereKind, sceneFrames} from "./types";
 
 const MOOD_GRADIENTS: Record<Mood, string> = {
   day: "linear-gradient(180deg, #f6d28b 0%, #e59a5b 55%, #8a4b2a 100%)",
@@ -23,12 +23,87 @@ const MOOD_GRADIENTS: Record<Mood, string> = {
   cool: "linear-gradient(180deg, #9fc3d6 0%, #6a93a8 55%, #2f4a5a 100%)",
 };
 
+/** Deterministic PRNG so particles are stable across renders. */
+const mulberry = (seed: number) => {
+  let t = seed + 0x6d2b79f5;
+  return () => {
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+};
+
+/**
+ * Living background: drifting dust motes, or rising embers for fire scenes.
+ * Positions are pure functions of the frame, so renders are deterministic.
+ */
+const Atmosphere: React.FC<{kind: AtmosphereKind; seed: number}> = ({
+  kind,
+  seed,
+}) => {
+  const frame = useCurrentFrame();
+  const parts = useMemo(() => {
+    const rnd = mulberry(seed * 1013 + 77);
+    const n = kind === "ember" ? 14 : 22;
+    return Array.from({length: n}, () => ({
+      x: kind === "ember" ? 0.3 + rnd() * 0.4 : rnd(),
+      y: kind === "ember" ? 0.7 + rnd() * 0.3 : rnd(),
+      s: 2 + rnd() * (kind === "ember" ? 5 : 4),
+      speed: 0.0006 + rnd() * 0.0012,
+      phase: rnd() * Math.PI * 2,
+    }));
+  }, [kind, seed]);
+  if (kind === "none") return null;
+  return (
+    <AbsoluteFill style={{overflow: "hidden"}}>
+      {parts.map((pt, i) => {
+        const y = ((((pt.y - frame * pt.speed) % 1) + 1) % 1) * 100;
+        const x = ((((pt.x + Math.sin(frame / 40 + pt.phase) * 0.02) % 1) + 1) % 1) * 100;
+        const tw = 0.25 + 0.75 * (0.5 + 0.5 * Math.sin(frame / 18 + pt.phase));
+        return (
+          <div
+            key={i}
+            style={{
+              position: "absolute",
+              left: `${x}%`,
+              top: `${y}%`,
+              width: pt.s,
+              height: pt.s,
+              borderRadius: 999,
+              background: kind === "ember" ? "#ffb35c" : "#ffe9c4",
+              opacity: (kind === "ember" ? 0.55 : 0.3) * tw,
+              filter: kind === "ember" ? "blur(1px)" : "blur(0.5px)",
+            }}
+          />
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
+
+/** Warm candle/fire light breathing over the scene. */
+const WarmFlicker: React.FC = () => {
+  const frame = useCurrentFrame();
+  const glow =
+    0.05 + 0.04 * (0.5 + 0.5 * Math.sin(frame / 7) * Math.sin(frame / 13 + 1.7));
+  return (
+    <AbsoluteFill
+      style={{
+        background:
+          "radial-gradient(ellipse at 50% 62%, rgba(255,150,50,0.6) 0%, rgba(255,150,50,0) 70%)",
+        opacity: glow,
+      }}
+    />
+  );
+};
+
 const HOOK_FRAMES = 3 * FPS;
 
-const Background: React.FC<{scene: Scene; durationInFrames: number}> = ({
-  scene,
-  durationInFrames,
-}) => {
+const Background: React.FC<{
+  scene: Scene;
+  durationInFrames: number;
+  seed: number;
+}> = ({scene, durationInFrames, seed}) => {
   const frame = useCurrentFrame();
   const dir = scene.direction ?? {};
   const drift = dir.drift ?? "push-in";
@@ -116,6 +191,9 @@ const Background: React.FC<{scene: Scene; durationInFrames: number}> = ({
             "radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 45%, rgba(0,0,0,0.55) 100%)",
         }}
       />
+      {/* Living background: particles + warm light, under the narrator */}
+      <Atmosphere kind={dir.atmosphere ?? "dust"} seed={seed} />
+      {dir.warmFlicker ? <WarmFlicker /> : null}
     </AbsoluteFill>
   );
 };
@@ -203,7 +281,7 @@ const SceneView: React.FC<{
   );
   return (
     <AbsoluteFill>
-      <Background scene={scene} durationInFrames={durationInFrames} />
+      <Background scene={scene} durationInFrames={durationInFrames} seed={index} />
       {scene.audio ? <Audio src={staticFile(scene.audio)} /> : null}
 
       {/* Narrator performs the narration: entrance, then purposeful gestures.
@@ -249,6 +327,7 @@ const SceneView: React.FC<{
               audioSrc={scene.audio}
               anchorX={narratorX}
               focus={dir.focus ? {x: dir.focus[0], y: dir.focus[1]} : undefined}
+              reaction={dir.reaction}
             />
           </div>
         );

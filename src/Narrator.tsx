@@ -12,6 +12,7 @@ import {
   SpeechPlan,
   activeWordIndex,
 } from "./speech";
+import {ReactionKind} from "./types";
 
 export type CharacterTheme =
   | "roman"
@@ -92,6 +93,12 @@ type Props = {
   focus?: {x: number; y: number};
   /** Narrator's horizontal anchor as a fraction of frame width. Default 0.5. */
   anchorX?: number;
+  /**
+   * Body reaction to the scene ("look-up" | "lean-in" | "recoil" | "none"),
+   * layered over the gesture poses. When omitted and the focus point sits
+   * high in the frame, the narrator looks up at it automatically.
+   */
+  reaction?: ReactionKind;
 };
 
 // ---------------------------------------------------------------------------
@@ -515,6 +522,7 @@ const NarratorBody: React.FC<BodyProps> = ({
   mouthOpen,
   focus,
   anchorX = 0.5,
+  reaction,
 }) => {
   // Resolve pose + expression: speech plan wins, explicit gesture next, idle last.
   const {pose, expression, gesture: activeGesture} = useMemo(() => {
@@ -638,6 +646,21 @@ const NarratorBody: React.FC<BodyProps> = ({
   // Head turns toward the scene focus while presenting it.
   if (aimActive && aim) {
     p.headTilt += Math.max(-8, Math.min(8, aim.nx * 10));
+  }
+  // Body reaction to the scene, layered over whatever the gesture is doing.
+  // Defaults to looking up when the focus sits high in the frame.
+  const effectiveReaction: ReactionKind =
+    reaction ?? (focus && focus.y < 0.3 ? "look-up" : "none");
+  if (effectiveReaction === "look-up") {
+    p.headDy -= 7;
+    p.lean -= 3;
+  } else if (effectiveReaction === "lean-in") {
+    p.headDy += 5;
+    p.shiftX += (aim ? Math.sign(aim.nx) : 0) * 10;
+  } else if (effectiveReaction === "recoil") {
+    p.lean -= 4;
+    p.headDy -= 4;
+    p.shiftX -= 8;
   }
   // Emphasis beats pump the fists as well as the head.
   if (activeGesture === "emphasis" && nod > 0.5) {

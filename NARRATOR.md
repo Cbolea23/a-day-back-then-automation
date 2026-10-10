@@ -111,9 +111,14 @@ to centered narrator / push-in drift / no focus aiming.
                            // background image — gaze + pointing arm aim here
   "narratorX": 0.5,        // horizontal anchor, fraction of frame width
   "narratorScale": 0.85,   // shrink to keep busy artwork visible
-  "drift": "push-in"       // "push-in" | "pull-back" | "pan-left" |
+  "drift": "push-in",      // "push-in" | "pull-back" | "pan-left" |
                            // "pan-right" | "still" — camera move, eased
                            // toward the focus point
+  "reaction": "lean-in",   // "look-up" | "lean-in" | "recoil" | "none" —
+                           // body language toward the scene, layered over
+                           // gestures. Default: "look-up" when focus.y < 0.3
+  "atmosphere": "dust",    // "dust" | "ember" | "none" — ambient particles
+  "warmFlicker": true      // candle/fire light breathing over the scene
 }
 ```
 
