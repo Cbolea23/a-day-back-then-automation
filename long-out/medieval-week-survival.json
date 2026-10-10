@@ -1,0 +1,225 @@
+{
+  "slug": "medieval-week-survival",
+  "title": "Could You Actually Survive a Week in the Middle Ages?",
+  "titleOptions": [
+    "Could You Actually Survive a Week in the Middle Ages?",
+    "The Brutal Truth About Daily Life in the Middle Ages",
+    "Surviving the Middle Ages: Fact vs. Fiction"
+  ],
+  "thumbnailIdea": "A split screen showing a cozy wooden hearth on one side and a muddy, bustling market street on the other.",
+  "hook": "Would You Survive a Week in the Middle Ages?",
+  "channelName": "A Day Back Then",
+  "format": "long",
+  "targetMinutes": 10,
+  "scenes": [
+    {
+      "text": "You wake up on a thin straw mattress, the air thick with the smell of woodsmoke and damp earth. There’s no running water, your stomach is already grumbling for breakfast, and you have to survive the next seven days with only the skills you have right now.",
+      "mood": "cool",
+      "imagePrompt": "A dim, rustic timber-framed room with a straw mattress on the floor and a small window letting in grey morning light.",
+      "chapterTitle": "Intro",
+      "chapterNumber": 0
+    },
+    {
+      "text": "Your stomach gives a sharp, impatient growl. You look around for a kitchen, but don't expect a fridge. You’re heading to the hearth for a bowl of pottage, the thick, steaming grain stew that anchors every single peasant meal.",
+      "mood": "warm",
+      "imagePrompt": "A rustic, soot-stained stone hearth inside a small medieval hut with a wooden table and a heavy iron cauldron.",
+      "chapterTitle": "The Diet of the Commoner",
+      "chapterNumber": 1
+    },
+    {
+      "text": "It isn't exactly gourmet, but it's calorie-dense. You’ll find bits of cabbage, onions, or whatever garden vegetables were pulled from the dirt that morning. It’s repetitive, but it keeps you standing and ready for the long day ahead.",
+      "mood": "warm"
+    },
+    {
+      "text": "You reach for a drink. Forget your morning coffee or clean bottled water. You're pouring yourself a cup of weak ale. It’s the standard drink for everyone here because the fermentation process keeps it safer than untreated local water.",
+      "mood": "warm"
+    },
+    {
+      "text": "Meat is a rare luxury you likely won't see today. To keep your strength up, you rely on peas, beans, and lentils. You might forage nearby for wild greens or nuts if you’re lucky enough to find some.",
+      "mood": "day",
+      "imagePrompt": "A wide, rolling medieval field with patches of cultivated greens and a distant village edge under a bright morning sky."
+    },
+    {
+      "text": "You finish the last of your bowl. You aren't starving, but you certainly aren't dining in luxury. Your belly is full of grain and broth, but you realize that this simple, predictable menu is your life from now on.",
+      "mood": "day"
+    },
+    {
+      "text": "Now that you’ve eaten, you feel a bit grimy. Forget the myth that medieval people never bathed; that is just a modern misunderstanding. While they didn't have high-pressure showers, they definitely valued basic cleanliness to stay comfortable.",
+      "mood": "warm",
+      "imagePrompt": "A dim, humble stone cottage interior with a simple wooden table and a flickering candle.",
+      "chapterTitle": "Hygiene and the Bathing Myth",
+      "chapterNumber": 2
+    },
+    {
+      "text": "If you live in a town, you might head to a public bathhouse. These were surprisingly common fixtures in urban life. You could soak in a warm tub for a few copper coins, often chatting with neighbors while you scrubbed off the day.",
+      "mood": "warm",
+      "imagePrompt": "The interior of a medieval public bathhouse featuring large wooden tubs and stone floors."
+    },
+    {
+      "text": "At home, you rely on simple soap. It is usually a strong, pungent mixture of animal fats and wood ash. It might not smell like a meadow, but it gets the job done when you need to wash your hands or face.",
+      "mood": "day"
+    },
+    {
+      "text": "Your most important hygiene tool is your linen undergarment. It sits directly against your skin, wicking away sweat and grime throughout the day. It is essentially your first line of defense against the dirt of the world.",
+      "mood": "day"
+    },
+    {
+      "text": "Cleanliness is a personal habit, not a complex science. You keep your clothes clean and wash when you can. By your standards, you are perfectly presentable. You aren't living in filth; you are just living a practical, measured life.",
+      "mood": "day"
+    },
+    {
+      "text": "The sun rises, and you rise with it. There is no alarm clock here, just the light hitting your window. You work when the sun is up, and you stop when it dips low. Life follows the seasons, not a clock.",
+      "mood": "day",
+      "imagePrompt": "A simple timber-framed cottage interior at dawn, with wooden furniture and a dirt floor, soft sunlight streaming through a small window.",
+      "chapterTitle": "The Daily Grind",
+      "chapterNumber": 3
+    },
+    {
+      "text": "Your labor is hard. Whether it is plowing, sowing, or harvesting, your muscles ache by midday. It is grueling work, but you are not a machine. You rely on the rhythm of the year to dictate your heavy lifting.",
+      "mood": "warm"
+    },
+    {
+      "text": "You aren't working every single day, though. Church calendars are dotted with feast days. These offer a much-needed break from the fields. You stop, you rest, and you observe these holy days with your neighbors in the village square.",
+      "mood": "day"
+    },
+    {
+      "text": "At home, the work is shared. Your partner manages the household economy and the garden patch. It is a cooperative effort. Without this division of labor, the household would simply fall apart before the next winter arrives.",
+      "mood": "warm",
+      "imagePrompt": "A small, flourishing vegetable garden next to a medieval hut, with rows of cabbages and herbs, surrounded by a rustic wooden fence."
+    },
+    {
+      "text": "As the sun sets, your day concludes. You don't burn candles for long because they are expensive luxuries. You finish your chores by dusk, gather your family close, and prepare to sleep until the light calls you back again.",
+      "mood": "dark"
+    },
+    {
+      "text": "The next morning, a dispute breaks out over a stray cow. You aren't going to a grand stone courthouse. Instead, you head to the local manorial court. Here, justice is a community affair run by your neighbors.",
+      "mood": "day",
+      "imagePrompt": "A dirt clearing near a wooden hall in a medieval village, surrounded by thatched cottages under a morning sky.",
+      "chapterTitle": "Navigating the Law",
+      "chapterNumber": 4
+    },
+    {
+      "text": "The judge isn't a king, but a manorial steward. He doesn't consult dusty scrolls. Instead, he listens to the testimony of local elders who remember the long-standing customs of the land. Laws are mostly oral traditions here.",
+      "mood": "day"
+    },
+    {
+      "text": "You watch as witnesses swear their accounts. It’s not just 'might makes right.' People rely on their reputation. If the community trusts you, your word carries significant weight in settling this messy agricultural boundary disagreement.",
+      "mood": "day"
+    },
+    {
+      "text": "If you were a traveler passing through, things would be much harder. Without a clear purpose or status as a known merchant, you would be viewed with deep suspicion by the locals and the local officials.",
+      "mood": "day",
+      "imagePrompt": "A narrow dirt path leading through an open field toward a distant, walled settlement under a bright, clear sky."
+    },
+    {
+      "text": "For commoners, the law is a web of local habits. It is rarely written down for you to read. You survive by knowing these unwritten rules, staying on good terms with your neighbors, and keeping your reputation clean.",
+      "mood": "day"
+    },
+    {
+      "text": "If you fall ill, you discover that doctors are rare and expensive. Your health depends on balancing the four bodily humors: blood, yellow bile, black bile, and phlegm. If you feel feverish, the village healer suggests your humors are simply out of alignment.",
+      "mood": "warm",
+      "imagePrompt": "A rustic wooden interior of a cottage with dried herbs hanging from the rafters and a small stone fireplace.",
+      "chapterTitle": "Medicine and Magic",
+      "chapterNumber": 5
+    },
+    {
+      "text": "You probably rely on local wisdom and prayer. Most of what you know about healing comes from your grandmother or the village herbalist. They mix willow bark or mint into teas, hoping the plants will restore your internal balance.",
+      "mood": "warm"
+    },
+    {
+      "text": "When home remedies fail, you might look toward the monastery. Monks often preserve the most advanced medical knowledge of the era. Their gardens are beautiful, dense patches of medicinal plants that serve as a quiet sanctuary for the sick.",
+      "mood": "day",
+      "imagePrompt": "A peaceful, enclosed monastery courtyard garden with stone pathways, blooming medicinal herbs, and ivy-covered walls."
+    },
+    {
+      "text": "Surgery is a terrifying last resort. Surgeons usually handle only severe battlefield wounds or broken bones. Without modern anesthesia, it is a brutal ordeal you hope to avoid entirely. You would much rather trust a poultice.",
+      "mood": "dark"
+    },
+    {
+      "text": "Ultimately, your survival often feels like a mix of luck and faith. Science, as we define it today, is absent. You offer a prayer for health, keep your diet simple, and hope that your body finds its own way back to balance.",
+      "mood": "cool"
+    },
+    {
+      "text": "But what if you decide to leave? Most people spend their entire lives within a few miles of their birthplace. The world beyond your parish is a vague, intimidating map of rumors, and you rarely have a reason to wander far.",
+      "mood": "day",
+      "imagePrompt": "A dirt path winding through a patchwork of medieval agricultural fields under a cloudy sky.",
+      "chapterTitle": "Travel and Safety",
+      "chapterNumber": 6
+    },
+    {
+      "text": "If you do pack your bags, it is usually for a pilgrimage. You might walk for weeks to reach a holy site, hoping for a miracle or a bit of penance. Travel is an act of genuine devotion, not leisure.",
+      "mood": "warm"
+    },
+    {
+      "text": "You quickly learn that the road is rarely a road. It is often a rutted, dirt track that turns into a treacherous mud pit with the slightest rain. Your boots will be heavy, and your progress agonizingly slow.",
+      "mood": "cool",
+      "imagePrompt": "A narrow, muddy track through a dense forest with deep wheel ruts and thick undergrowth."
+    },
+    {
+      "text": "The danger is real. Without a formal police force, the open road invites trouble. Bandits lurk in the shadows of the woods, and there is nobody to call for help if you run into the wrong sort of company.",
+      "mood": "dark"
+    },
+    {
+      "text": "You must trust the hospitality of strangers or the charity of monasteries along the way. Every step away from your village is a gamble. For most, the comfort of home is the only safety you will ever truly know.",
+      "mood": "day"
+    },
+    {
+      "text": "So, how would you actually fare back then? If you were dropped into the fourteenth century today, you would probably struggle. Your modern immune system is simply not built for the bacteria lurking in medieval wells or open-air markets.",
+      "mood": "day",
+      "imagePrompt": "A wide, empty meadow on the edge of a small, quiet medieval village under a bright morning sky.",
+      "chapterTitle": "The Verdict",
+      "chapterNumber": 7
+    },
+    {
+      "text": "Then there is the physical toll. You are used to climate control and convenience. Without modern labor-saving tools, you would be utterly exhausted by noon. Every task requires raw, back-breaking, manual labor that leaves your muscles aching.",
+      "mood": "day"
+    },
+    {
+      "text": "Surviving here requires a complete shift in your mindset. Forget your individualistic focus; you would have to rely entirely on your community. Survival is a group project, and your worth is measured by how much you contribute.",
+      "mood": "warm"
+    },
+    {
+      "text": "It is a life defined by grit, persistence, and endless endurance. You would miss your mattress, your medicine, and your anonymity. Life is smaller, slower, and significantly harder than the world you left behind in your own time.",
+      "mood": "cool",
+      "imagePrompt": "The interior of a humble stone cottage at dusk, with a dim fire glowing in the hearth."
+    },
+    {
+      "text": "If you somehow managed to last a week, you would likely spend the rest of your days dreaming of a simple hot shower. You are a visitor from a different reality, and here, you are clearly out of place.",
+      "mood": "night"
+    },
+    {
+      "text": "You’d likely miss your shower and your smartphone, but you might find a strange comfort in the rhythmic, simple pace of medieval life. If you enjoyed this journey back in time, hit subscribe. Up next, we explore why knights weren't actually as noble as you think.",
+      "mood": "warm",
+      "imagePrompt": "A tranquil medieval village at sunset with smoke rising from stone chimneys.",
+      "chapterTitle": "Wrap-up",
+      "chapterNumber": 0
+    }
+  ],
+  "claimsToVerify": [
+    "[The Diet of the Commoner] Pottage was the standard daily meal for medieval peasants.",
+    "[The Diet of the Commoner] Ale was consumed widely due to water safety concerns.",
+    "[The Diet of the Commoner] Meat was considered a luxury for commoners.",
+    "[The Diet of the Commoner] Legumes like peas and beans were essential protein sources in the medieval diet.",
+    "[Hygiene and the Bathing Myth] Public bathhouses were common in urban centers throughout the medieval period.",
+    "[Hygiene and the Bathing Myth] Linen undergarments were used to wick sweat and dirt from the skin.",
+    "[Hygiene and the Bathing Myth] Soap made from animal fats and wood ash was widely available.",
+    "[The Daily Grind] Medieval peasants did not work by a strict 9-to-5 clock but by sunrise and sunset.",
+    "[The Daily Grind] Agricultural labor was the primary source of employment for commoners.",
+    "[The Daily Grind] Church feast days served as mandatory rest days for medieval workers.",
+    "[The Daily Grind] Candles were considered expensive items for common peasants.",
+    "[The Daily Grind] Women's roles typically focused on household management and garden labor.",
+    "[Navigating the Law] Manorial courts were the primary legal venue for commoner disputes.",
+    "[Navigating the Law] Commoners relied on oral tradition rather than written laws.",
+    "[Navigating the Law] Travelers without merchant status or clear purpose were often viewed with suspicion in medieval communities.",
+    "[Medicine and Magic] Medieval medicine was primarily based on the theory of the four bodily humors.",
+    "[Medicine and Magic] Monasteries were centers of medical knowledge and herbal gardens in the Middle Ages.",
+    "[Medicine and Magic] Medieval surgery was generally reserved for severe trauma or battlefield injuries rather than routine ailments.",
+    "[Travel and Safety] Most people in the Middle Ages lived and died within a few miles of their birthplace.",
+    "[Travel and Safety] Pilgrimages were the most common reason for long-distance travel during the Middle Ages.",
+    "[Travel and Safety] Medieval roads were frequently dirt paths that became difficult to traverse in rainy weather.",
+    "[Travel and Safety] Lack of centralized law enforcement made travel outside of one's immediate community dangerous.",
+    "[The Verdict] Modern immune systems are less adapted to medieval water and food pathogens.",
+    "[The Verdict] Medieval life required significantly more manual labor than modern life.",
+    "[The Verdict] Medieval society was more community-oriented than modern individualistic society."
+  ]
+}

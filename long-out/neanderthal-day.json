@@ -1,0 +1,226 @@
+{
+  "slug": "neanderthal-day",
+  "title": "A Day in the Life of a Neanderthal",
+  "titleOptions": [
+    "A Day in the Life of a Neanderthal",
+    "What Was Life Really Like for Neanderthals?",
+    "Living Like a Neanderthal: 50,000 Years Ago"
+  ],
+  "thumbnailIdea": "A hyper-realistic landscape of a snowy valley with a small, warm fire glowing at the entrance of a limestone cave at dusk.",
+  "hook": "A Day in the Life of a Neanderthal",
+  "channelName": "A Day Back Then",
+  "format": "long",
+  "targetMinutes": 10,
+  "scenes": [
+    {
+      "text": "You wake to the smell of woodsmoke and damp earth. Outside the limestone cave entrance, the air is biting. You aren't alone; your small group stirs in the shadows. You aren't just surviving here—you are thriving in a world that is far more sophisticated than we once believed.",
+      "mood": "cool",
+      "imagePrompt": "The interior of a rugged limestone cave looking out toward a misty, forested valley at dawn.",
+      "chapterTitle": "Intro",
+      "chapterNumber": 0
+    },
+    {
+      "text": "You stretch, feeling the chill against your skin. This cave is your home, a protected hollow shared with your family. Look around; the space is organized. You sleep on a bed of gathered reeds and pine boughs, neatly tucked away from the cold stone walls.",
+      "mood": "cool",
+      "imagePrompt": "Interior of a limestone cave with soft, filtered morning light hitting a bed of dried reeds and twigs on the ground.",
+      "chapterTitle": "The Morning Routine",
+      "chapterNumber": 1
+    },
+    {
+      "text": "Nearby, you spot the refuse pile. Even here, there is order. Discarded bone fragments and flint flakes are kept away from the sleeping quarters, suggesting your group understands the value of keeping a clean, shared space.",
+      "mood": "cool"
+    },
+    {
+      "text": "The heart of the cave is the hearth. Someone has kept the embers glowing through the night. You move closer, feeling the vital heat. Fire is your best defense against the encroaching frost of the outside world.",
+      "mood": "warm"
+    },
+    {
+      "text": "If the fire ever dies, you are ready. You carry a kit of iron pyrite and sharp flint, a clever way to spark a new flame when the old one fades. It is a skill passed down through generations.",
+      "mood": "warm",
+      "imagePrompt": "Close-up of a small, rustic collection of flint nodules and iron pyrite sitting on a flat stone near a smoldering fire pit."
+    },
+    {
+      "text": "Your companions start to move, their voices low and rhythmic. You are a small, tight-knit group, perfectly adapted to this life. Everyone has a role to play before the sun fully clears the jagged horizon outside.",
+      "mood": "day"
+    },
+    {
+      "text": "You reach for your kit. It is not just a pile of rocks; it is a masterclass in engineering. You belong to the Mousterian tradition, a sophisticated way of shaping stone that turns simple nodules into sharp, precise cutting edges.",
+      "mood": "warm",
+      "imagePrompt": "A close-up of a prehistoric cave floor covered in scattered flint flakes and rough stone tools.",
+      "chapterTitle": "Mastering the Craft",
+      "chapterNumber": 2
+    },
+    {
+      "text": "Your fingers are thick and strong, yet they possess a surprising, delicate dexterity. You turn a piece of flint, striking it with just the right force to coax a thin, razor-sharp flake from the core.",
+      "mood": "warm"
+    },
+    {
+      "text": "Many of these stones were gathered from the nearby riverbed. Yet, you also carry a piece of high-quality flint sourced from miles away. It is a prized material, kept for when you need a truly reliable edge.",
+      "mood": "warm"
+    },
+    {
+      "text": "You set a stone point into a sturdy wooden shaft. To fix it, you use a dark, sticky resin made from birch bark tar. It is a clever, complex adhesive that turns two separate pieces into one effective weapon.",
+      "mood": "warm",
+      "imagePrompt": "A forest clearing at sunrise with birch trees and rocky outcrops in the distance."
+    },
+    {
+      "text": "The tool feels balanced in your hand. You have spent years refining this skill, learning exactly how to pressure-flake the edges. It is clear that survival here is not just about strength, but about deep, technical knowledge.",
+      "mood": "warm"
+    },
+    {
+      "text": "Now, it is time for the hunt. You step out into the crisp air, joined by others. You aren't solitary wanderers; you move as a team. Bringing down a bison or deer requires precise, synchronized movement.",
+      "mood": "cool",
+      "imagePrompt": "A lush, prehistoric river valley with dense forests and distant limestone cliffs during a clear morning.",
+      "chapterTitle": "The Hunt",
+      "chapterNumber": 3
+    },
+    {
+      "text": "You approach the herd with quiet intensity. Evidence left on your own bones—healed fractures and blunt trauma—tells the story of these close encounters. You don't use long-range weapons; you face your prey eye-to-eye.",
+      "mood": "cool"
+    },
+    {
+      "text": "Cooperation is your greatest tool. By forcing the animal toward a narrow ravine or soft mud, you turn the tide in your favor. It is dangerous, high-stakes work, but necessary for the calorie-dense meat your group demands.",
+      "mood": "day"
+    },
+    {
+      "text": "Once successful, the processing begins. Isotope analysis of your remains confirms your diet is heavily reliant on this high-protein intake, keeping your sturdy frames fueled through the harshest winter months.",
+      "mood": "day",
+      "imagePrompt": "A rocky, sun-dappled woodland clearing with scattered boulders and thick, ancient trees."
+    },
+    {
+      "text": "Yet, you aren't just carnivores. You know the landscape well. When the meat is stored, you forage for hardy plants and nutrient-rich fungi. You are apex predators, certainly, but you are also masters of the entire ecosystem.",
+      "mood": "day"
+    },
+    {
+      "text": "The sun is high now, and your group moves toward the riverbank. While the hunt provides the protein, these wild plants provide the balance. You scan the ground for roots, nuts, and those dark, nutrient-dense tubers hiding in the soil.",
+      "mood": "day",
+      "imagePrompt": "A lush, prehistoric riverbank filled with seasonal wild grasses and edible flora, ancient river flowing in the background.",
+      "chapterTitle": "Gathering and Nutrition",
+      "chapterNumber": 4
+    },
+    {
+      "text": "It is not just luck. You know exactly when the seasons turn and where the best grains sprout. Your ancestors have passed down this knowledge, ensuring that your group stays nourished even when the herds are scarce.",
+      "mood": "day"
+    },
+    {
+      "text": "Life in this cold climate burns through calories fast. You need high energy to survive, so you gather as much as you can carry. It is a constant, daily effort that keeps the whole community strong and healthy.",
+      "mood": "day"
+    },
+    {
+      "text": "Back at the fire, you don't just eat these raw. You place roots and grains near the heat. Evidence suggests you cook them, which makes them easier to digest and unlocks the vital nutrients your tired body craves.",
+      "mood": "warm",
+      "imagePrompt": "A cozy, smoky interior of a rock shelter with a small, crackling fire surrounded by flat stones and hearth-like stone arrangements."
+    },
+    {
+      "text": "Scientists have even found traces of these meals trapped in your dental plaque. It is a microscopic record of your kitchen, proving that your diet is far more complex than just a simple piece of roasted meat.",
+      "mood": "warm"
+    },
+    {
+      "text": "Your life isn't just about survival; it is about connection. You look at an elder sitting by the fire, their leg long ago broken and healed. They could not hunt for years, yet they are still here, fed by your circle.",
+      "mood": "warm",
+      "imagePrompt": "The interior of a cave at dusk with a small, glowing campfire in the center, casting soft light on rugged stone walls.",
+      "chapterTitle": "Family and Community",
+      "chapterNumber": 5
+    },
+    {
+      "text": "This care is proof of a deep bond. Your people do not abandon those who struggle. You share what you have, ensuring that no one is left behind even when the winters turn harsh and food grows scarce.",
+      "mood": "warm"
+    },
+    {
+      "text": "Genetic studies suggest your groups are small, usually just a handful of families. But you are not alone in the world. You move through a network, meeting other groups to trade tools, information, and new members.",
+      "mood": "day",
+      "imagePrompt": "A lush, open valley during the late afternoon with distant mountains and rolling hills covered in sparse trees."
+    },
+    {
+      "text": "As the sun dips, you sit near your companions. You communicate in ways that are hard to prove, yet you possess the anatomy for speech. You likely share stories or warnings, binding your small community together through sound.",
+      "mood": "warm"
+    },
+    {
+      "text": "These relationships define your world. You are a social creature, thriving because you belong to a team. In this landscape, the strength of your group is far more important than any individual physical prowess you might possess.",
+      "mood": "warm"
+    },
+    {
+      "text": "As the firelight flickers, you pick up a smooth, reddish stone. You grind it against a slab, creating a fine, earthy powder. You often apply this ochre to your skin or tools, perhaps to mark status or simply to feel a connection to something deeper.",
+      "mood": "warm",
+      "imagePrompt": "A cozy, shadowed cave interior with a small hearth fire burning against a limestone wall.",
+      "chapterTitle": "Symbols and Beliefs",
+      "chapterNumber": 6
+    },
+    {
+      "text": "Your group values these marks. You have seen others wear dark, iridescent feathers from birds of prey, stripped neatly from the bones. It is a striking sight, suggesting you find meaning in beauty and identity that goes beyond mere survival.",
+      "mood": "warm"
+    },
+    {
+      "text": "At times, when a member of your circle passes, you might place them carefully in a quiet corner of the cave. Whether this is a ritual burial or a practical necessity remains a subject of intense debate among those who study your life.",
+      "mood": "dark"
+    },
+    {
+      "text": "It is tempting to look at these behaviors and label them 'modern.' Yet, researchers suggest we should be careful. Complex actions do not always equal the abstract symbolism we use today; they might mean something entirely different to your mind.",
+      "mood": "cool",
+      "imagePrompt": "A wide, ancient cave entrance overlooking a vast, misty valley at twilight."
+    },
+    {
+      "text": "Your world is filled with intent. You observe the landscape, understand the seasons, and honor those who walk beside you. You are thinking, feeling, and navigating a reality that is far more nuanced than the shadows cast upon these cold stone walls.",
+      "mood": "cool"
+    },
+    {
+      "text": "As the sun dips below the horizon, the temperature plummets. You huddle closer to the embers. Life here is dictated by the relentless cycle of the Ice Age, where survival is a constant negotiation with the biting frost.",
+      "mood": "night",
+      "imagePrompt": "A dim, flickering campfire inside a rocky cave entrance at twilight, showing a stark, snowy valley landscape outside.",
+      "chapterTitle": "The End of the Day",
+      "chapterNumber": 7
+    },
+    {
+      "text": "Your body bears the history of these cycles. Many of your kin carry scars from old wounds or signs of painful infections. It is a harsh existence, yet you move through the dark with quiet, resilient strength.",
+      "mood": "night"
+    },
+    {
+      "text": "Despite the persistent cold and the dangers lurking in the brush, your people have thrived across Eurasia for hundreds of thousands of years. You are not a relic of failure, but a master of a difficult land.",
+      "mood": "night"
+    },
+    {
+      "text": "You look toward the cavern entrance. Somewhere in the vast distance, other groups exist. Sometimes, paths cross and lives blend. Genetic evidence suggests your legacy continues, woven deep into the bloodlines of those who roam these lands.",
+      "mood": "night",
+      "imagePrompt": "A wide, expansive view of a frozen Pleistocene steppe under a clear, starry night sky."
+    },
+    {
+      "text": "You settle in for the night. Tomorrow will bring the same cold winds and the same need for endurance. You close your eyes, knowing your people have earned their place in this changing, frozen world.",
+      "mood": "night"
+    },
+    {
+      "text": "As the sun sets, the group settles in, their legacy quietly woven into the DNA of people living today. They were not primitive brutes, but masters of their environment. If you enjoyed this glimpse into the past, subscribe for more. Next, we look at the mystery of the Denisovans.",
+      "mood": "warm",
+      "imagePrompt": "A wide, cinematic shot of a prehistoric forest canopy during a golden sunset.",
+      "chapterTitle": "Wrap-up",
+      "chapterNumber": 0
+    }
+  ],
+  "claimsToVerify": [
+    "[The Morning Routine] Neanderthals lived in small, mobile family groups.",
+    "[The Morning Routine] Archaeological evidence exists for organized sleeping and waste disposal in Neanderthal caves.",
+    "[The Morning Routine] Neanderthals used fire for warmth, protection, and cooking.",
+    "[The Morning Routine] Evidence suggests Neanderthals used iron pyrite and flint to create fire.",
+    "[Mastering the Craft] Neanderthals utilized the Mousterian stone tool industry.",
+    "[Mastering the Craft] Neanderthals sourced raw materials from distances of several miles.",
+    "[Mastering the Craft] Archaeological evidence supports the use of birch bark tar as an adhesive.",
+    "[Mastering the Craft] Neanderthals possessed the manual dexterity for fine, delicate stone tool work.",
+    "[The Hunt] Neanderthal diet was meat-heavy but included plants and fungi based on isotope analysis.",
+    "[The Hunt] Neanderthals engaged in close-quarters hunting of large game, evidenced by skeletal trauma patterns.",
+    "[The Hunt] Neanderthals used cooperative hunting strategies to take down large prey.",
+    "[Gathering and Nutrition] Dental plaque analysis shows Neanderthals consumed wild grains, tubers, and nuts.",
+    "[Gathering and Nutrition] Evidence exists that Neanderthals processed and cooked plant foods to improve digestibility.",
+    "[Gathering and Nutrition] Gathering was a critical, daily activity for Neanderthal groups.",
+    "[Gathering and Nutrition] Neanderthals had high nutritional needs due to the cold climate.",
+    "[Family and Community] Skeletal evidence shows Neanderthals survived severe, healed injuries for years.",
+    "[Family and Community] Healed injuries imply social care and support for those unable to hunt.",
+    "[Family and Community] Genetic evidence suggests Neanderthal groups were small and connected to other, distant groups.",
+    "[Family and Community] Neanderthals possessed the anatomical structures necessary for speech, though direct evidence of language remains elusive.",
+    "[Symbols and Beliefs] Evidence of pigment use like ochre at Neanderthal sites.",
+    "[Symbols and Beliefs] Evidence of bird bones with cut marks suggesting feather use.",
+    "[Symbols and Beliefs] The debate surrounding intentional burial practices among Neanderthals.",
+    "[Symbols and Beliefs] The academic consensus on equating Neanderthal complex behavior with modern human symbolism.",
+    "[The End of the Day] Neanderthals lived across Eurasia for hundreds of thousands of years.",
+    "[The End of the Day] Neanderthal skeletons show frequent evidence of healed trauma and infection.",
+    "[The End of the Day] Genetic studies confirm interbreeding between Neanderthals and early Homo sapiens."
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "slug": "ice-age-survival",
+  "title": "How Humans Survived the Last Ice Age",
+  "titleOptions": [
+    "How Humans Survived the Last Ice Age",
+    "Life in the Deep Freeze: An Ice Age Survival Guide",
+    "Surviving the Frozen World: How Our Ancestors Did It"
+  ],
+  "thumbnailIdea": "A detailed close-up of a hand-stitched leather boot and a flint tool set against a snowy, desolate tundra landscape.",
+  "hook": "Surviving the Ice Age",
+  "channelName": "A Day Back Then",
+  "format": "long",
+  "targetMinutes": 10,
+  "scenes": [
+    {
+      "text": "The wind howls, stripping heat from your body in seconds. You are standing on a vast, frozen steppe, and the sun is setting fast. There is no store to run to, no heater to turn on. Survival here is a masterpiece of human ingenuity.",
+      "mood": "cool",
+      "imagePrompt": "A vast, empty ice-covered steppe during a blue-hour twilight.",
+      "chapterTitle": "Intro",
+      "chapterNumber": 0
+    },
+    {
+      "text": "To stay alive, you need a personal microclimate. You start with the skin-side layer, a soft, scraped hide that wicks moisture away. Keeping dry is your biggest challenge here. If you sweat and that moisture freezes, you’re in serious trouble.",
+      "mood": "cool",
+      "imagePrompt": "A vast, frozen tundra landscape during twilight with deep blue snowdrifts and distant jagged ice-capped mountains.",
+      "chapterTitle": "Layering Like a Pro",
+      "chapterNumber": 1
+    },
+    {
+      "text": "Over that base, you add thicker furs. These act like a thermal trap, holding your body heat close to your skin. It’s not just about bulk, though; the secret is in the fit. Tight cuffs and snug collars keep the gale out.",
+      "mood": "cool"
+    },
+    {
+      "text": "Archaeologists have found bone needles dating back thousands of years. These weren't just for show. With thread made from animal sinew, early humans could sew hides together with incredible precision. This meant clothing that moved with you, rather than just draping over you.",
+      "mood": "warm"
+    },
+    {
+      "text": "You are wearing a complex, tailored system. By layering furs—perhaps rabbit for warmth and tougher leather for the outer shell—you create a wearable fortress. It’s an ancient version of modern outdoor gear, perfected through trial and bitter, icy error.",
+      "mood": "warm",
+      "imagePrompt": "A close-up view of ancient sewing materials resting on a flat, weathered stone, including carved bone needles and thin strands of dried sinew."
+    },
+    {
+      "text": "Every seam is a victory against the frost. You aren't just wearing dead animal hides; you are wearing a carefully engineered life-support suit. In this landscape, your ability to stitch is just as important as your ability to hunt.",
+      "mood": "warm"
+    },
+    {
+      "text": "But a suit only goes so far. As the sun dips, you need a roof. You head toward the limestone cliffs, scanning for a jagged overhang. A rock shelter is nature’s gift, shielding you from the biting wind instantly.",
+      "mood": "cool",
+      "imagePrompt": "A wide, jagged limestone cliff face with a deep, shadowed rock overhang under a grey, overcast sky.",
+      "chapterTitle": "Shelter in the Shadows",
+      "chapterNumber": 2
+    },
+    {
+      "text": "When you are out on the open plains, you have to build your own. It is not just piling up branches. You carefully construct a frame, draping heavy mammoth hides over the top to trap the warmth inside.",
+      "mood": "cool"
+    },
+    {
+      "text": "These portable tents are marvels of engineering. You weigh down the edges with heavy stones to keep the walls from flapping in the gale. It is sturdy, simple, and exactly what you need to survive the night.",
+      "mood": "dark"
+    },
+    {
+      "text": "Location is everything, too. You always look for a spot that catches the early morning light. By facing your entrance toward the sun, you gain a few precious degrees of heat before you even wake up.",
+      "mood": "warm",
+      "imagePrompt": "A vast, frozen tundra landscape during a golden sunrise, with long shadows stretching across the snow."
+    },
+    {
+      "text": "Living here requires constant adaptation. Whether you are tucking yourself into a deep cave or setting up a hide-covered frame, you are always working with the landscape, not against it. You stay dry, and you stay alive.",
+      "mood": "warm"
+    },
+    {
+      "text": "Once your shelter is secure, you shift your focus to the most vital tool in your inventory: the hearth. Archaeological sites show these fire pits are the most common remnants left behind, acting as the beating heart of any camp.",
+      "mood": "warm",
+      "imagePrompt": "A simple stone-lined fire pit inside a dimly lit cave, flickering orange light dancing on limestone walls.",
+      "chapterTitle": "Mastering the Hearth",
+      "chapterNumber": 3
+    },
+    {
+      "text": "The wind howls outside, but inside, the fire creates a sanctuary. It is your primary defense against predators, who naturally shy away from the light and the scent of smoke. You feel safer the moment the flames catch.",
+      "mood": "warm"
+    },
+    {
+      "text": "Finding fuel here is a constant puzzle. In the vast, treeless tundra, wood is often impossible to find. You adapt by gathering dried dung and bone, which burn surprisingly well, keeping your small, flickering sun alive through the night.",
+      "mood": "cool",
+      "imagePrompt": "A vast, frozen tundra landscape under a pale gray sky, with sparse patches of yellowed grass poking through the snow."
+    },
+    {
+      "text": "Fire does more than just keep your fingers from freezing. It changes what you eat. By cooking your meat and plants, you unlock nutrients that are otherwise hard to digest, giving your body the fuel it needs to keep moving.",
+      "mood": "warm"
+    },
+    {
+      "text": "You sit back as the flames crackle. Every calorie saved, every predator deterred, and every meal softened starts right here. You have learned to harness this volatile force, turning the biting cold into a manageable, temporary neighbor.",
+      "mood": "warm"
+    },
+    {
+      "text": "But a fire alone won't keep your belly full until spring. The long winter demands a strategy for the lean months. You look at the landscape differently now. Nature itself is your largest, most reliable cold storage unit.",
+      "mood": "cool",
+      "imagePrompt": "A vast, snowy tundra under a pale, overcast sky with distant jagged mountains.",
+      "chapterTitle": "The Ice Age Pantry",
+      "chapterNumber": 4
+    },
+    {
+      "text": "When the wind bites and the ground hardens, you don't just hunt; you plan. You slice the meat into thin strips, drying or freezing it. This processing makes the heavy harvest easier to haul and keeps it from spoiling too quickly.",
+      "mood": "cool"
+    },
+    {
+      "text": "You aren't the only hungry creature in this frozen expanse. Foxes and wolves are always watching, waiting for a misplaced scrap. To keep your hard-won supplies safe, you dig deep into the earth, creating hidden cache pits.",
+      "mood": "day",
+      "imagePrompt": "A remote, rocky cliffside featuring a small, partially covered depression in the frozen ground."
+    },
+    {
+      "text": "These pits act as natural refrigerators, shielding your food from opportunistic scavengers and the fluctuations of the sun. It is a simple, effective engineering trick that keeps your community from the brink of starvation.",
+      "mood": "day"
+    },
+    {
+      "text": "Every preserved piece of meat is a victory over the elements. By managing your pantry with foresight, you ensure that even when the landscape is barren, your group can endure the relentless, freezing grip of the season.",
+      "mood": "cool"
+    },
+    {
+      "text": "Survival is not just about hoarding food; it is about the tools you carry. You are not a helpless victim of the cold. You are a craftsman. With a heavy hammerstone, you strike flint, transforming raw rock into razor-sharp blades.",
+      "mood": "day",
+      "imagePrompt": "A close-up of a workshop area inside a rock shelter with scattered flint flakes and raw stone nodules on the ground.",
+      "chapterTitle": "Sharper Tools, Smarter Life",
+      "chapterNumber": 5
+    },
+    {
+      "text": "These blades are incredibly precise. You do not just hold a sharp stone in your hand anymore. You invent the composite tool. By binding a stone point to a wooden shaft, you transform a simple stick into a formidable, reach-extending hunting weapon.",
+      "mood": "day"
+    },
+    {
+      "text": "Efficiency is your greatest advantage. This new technology means you can strike from a safer distance. You are no longer just reacting to the landscape; you are actively shaping your ability to secure resources with speed and lethal accuracy.",
+      "mood": "day"
+    },
+    {
+      "text": "Your toolkit expands even further when you look beyond stone. Animal bones and discarded antlers are not trash. They are versatile, durable materials that you carve into specialized scrapers for hides or delicate needles for stitching your thick, layered winter garments.",
+      "mood": "warm",
+      "imagePrompt": "An interior view of a cave wall with tools made of bone and antler resting on a patch of animal hide."
+    },
+    {
+      "text": "Each needle and scraper you craft is a masterpiece of adaptation. As you meticulously carve these tools, you feel a quiet confidence. Your mind is now as sharp as your spear, allowing you to thrive where others might struggle to survive.",
+      "mood": "warm"
+    },
+    {
+      "text": "But a sharp spear isn't enough when the horizon stretches endlessly. You know that survival is rarely a solo act. You look around, finding safety in the faces of your kin, each one a pillar of your shared world.",
+      "mood": "warm",
+      "imagePrompt": "A vast, frozen tundra landscape under a pale, wide sky with distant jagged mountains.",
+      "chapterTitle": "Strength in Numbers",
+      "chapterNumber": 6
+    },
+    {
+      "text": "Your small group is a living library of knowledge. You share stories of migrating herds and the shifting ice, ensuring that hard-won lessons are passed down. Together, you navigate landscapes that would baffle a lone traveler.",
+      "mood": "warm"
+    },
+    {
+      "text": "When the great beasts appear, coordination becomes your greatest weapon. You signal silently, moving in perfect rhythm to corner the prey. It is a dance of complex communication, where your success hinges on trusting the person beside you.",
+      "mood": "cool"
+    },
+    {
+      "text": "Beyond your immediate circle, your reach grows even further. You encounter others carrying rare, high-quality stone from lands you have never visited. These distant trade networks turn the vast, icy wilderness into a surprisingly connected web.",
+      "mood": "day",
+      "imagePrompt": "A stone-strewn valley floor with scattered prehistoric artifacts resting on the gravel."
+    },
+    {
+      "text": "These connections provide more than just flint. They offer security and the exchange of life-saving ideas. By standing together, you weave a resilient net that catches you whenever the harsh winters threaten to pull you under.",
+      "mood": "day"
+    },
+    {
+      "text": "This life is a test of sheer willpower. You learn that your ability to adapt isn't just a trait, it is your greatest tool. By mastering fire and clothing, you don't just survive the deep cold; you actively push your boundaries.",
+      "mood": "warm",
+      "imagePrompt": "A vast, sweeping tundra landscape under a soft, golden sunrise with distant snow-capped mountains.",
+      "chapterTitle": "A Legacy of Resilience",
+      "chapterNumber": 7
+    },
+    {
+      "text": "Your ancestors keep moving. As the climate shifts, they follow the animals and the changing seasons. This constant migration isn't aimless wandering, but a calculated response to the environment. You are becoming a master of every terrain you touch.",
+      "mood": "day"
+    },
+    {
+      "text": "Technological leaps—like finer tools and better shelter—unlock the northern latitudes. These innovations are the keys to the map. They allow your kind to settle in places that would have seemed impossible only a few generations before your own time.",
+      "mood": "cool"
+    },
+    {
+      "text": "The Ice Age tests the limits of the human species, and you pass that test with flying colors. You show an incredible capacity to change your habits, your diet, and your homes to match the world’s unpredictable, frozen pulse.",
+      "mood": "warm",
+      "imagePrompt": "A wide, tranquil river valley during early spring, showing signs of melting ice and the first hints of green moss on rocks."
+    },
+    {
+      "text": "You look back at the long, shivering nights and realize how far you have traveled. This resilience is your ultimate legacy. It remains etched into your DNA, a silent reminder that you were built to thrive in the face of uncertainty.",
+      "mood": "warm"
+    },
+    {
+      "text": "These ancestors didn't just endure the ice; they found ways to thrive within it. Their survival was the foundation for everything we have built since. If you enjoyed this journey back in time, hit subscribe for more, and check out our next video on prehistoric cave art.",
+      "mood": "warm",
+      "imagePrompt": "A wide, calm view of a valley at dawn with early light hitting the horizon.",
+      "chapterTitle": "Wrap-up",
+      "chapterNumber": 0
+    }
+  ],
+  "claimsToVerify": [
+    "[Layering Like a Pro] Archaeological evidence of bone needles dates back to the Upper Paleolithic/Ice Age period.",
+    "[Layering Like a Pro] Layered clothing systems were essential for moisture management to prevent freezing.",
+    "[Layering Like a Pro] Clothing in the Ice Age was constructed from animal hides and furs.",
+    "[Shelter in the Shadows] Rock shelters were commonly used for protection by Paleolithic humans.",
+    "[Shelter in the Shadows] Portable tents made of wood frames and mammoth hides have been identified at archaeological sites.",
+    "[Shelter in the Shadows] Paleolithic dwellings were often oriented to maximize solar exposure.",
+    "[Mastering the Hearth] Hearth sites are the most common archaeological find from the Ice Age.",
+    "[Mastering the Hearth] Early humans used bone and dried dung as fuel in treeless environments.",
+    "[Mastering the Hearth] Cooking food increases the bioavailability of nutrients for human consumption.",
+    "[The Ice Age Pantry] Freezing temperatures were used by Ice Age humans as a form of food preservation.",
+    "[The Ice Age Pantry] Archaeological evidence supports the use of cache pits by Upper Paleolithic groups to protect food.",
+    "[The Ice Age Pantry] Processing meat into strips was a common method to facilitate storage and transport.",
+    "[Sharper Tools, Smarter Life] Advanced flint-knapping was used to create razor-sharp cutting edges during the Ice Age.",
+    "[Sharper Tools, Smarter Life] Composite tools like stone points attached to wooden shafts were utilized to increase hunting efficiency.",
+    "[Sharper Tools, Smarter Life] Bone and antler were commonly used for specialized scrapers and needles during this period.",
+    "[Strength in Numbers] Small groups relied on shared knowledge for navigation.",
+    "[Strength in Numbers] Group hunting required complex communication and coordination.",
+    "[Strength in Numbers] Archaeological evidence indicates long-distance trade networks for high-quality stone.",
+    "[A Legacy of Resilience] Human migration was driven by environmental adaptation.",
+    "[A Legacy of Resilience] Technological innovation enabled expansion into northern latitudes.",
+    "[A Legacy of Resilience] The Ice Age demonstrated the high degree of human adaptability."
+  ]
+}

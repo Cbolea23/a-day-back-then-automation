@@ -1,0 +1,196 @@
+{
+  "slug": "viking-sea-voyage",
+  "title": "Surviving the North Atlantic in a Viking Longship",
+  "titleOptions": [
+    "Surviving the North Atlantic in a Viking Longship",
+    "How Vikings Actually Crossed the Ocean",
+    "Viking Sea Survival: A Guide to the Atlantic"
+  ],
+  "thumbnailIdea": "A sleek, wooden longship cresting a massive, dark blue Atlantic wave under a stormy, overcast sky.",
+  "hook": "Crossing the North Atlantic in a Viking Ship",
+  "channelName": "A Day Back Then",
+  "format": "long",
+  "targetMinutes": 9,
+  "scenes": [
+    {
+      "text": "You stand on a salt-slicked deck as the horizon vanishes behind a wall of grey water. There are no maps, no compasses, and the nearest land is hundreds of miles away. To survive this crossing, you have to think like a North Atlantic explorer.",
+      "mood": "cool",
+      "imagePrompt": "Close-up of wooden ship planks weathered by salt and sea spray, with turbulent dark ocean waves in the background.",
+      "chapterTitle": "Intro",
+      "chapterNumber": 0
+    },
+    {
+      "text": "Your feet grip the uneven oak planks. Look down and you see the secret to your survival: the clinker-built hull. These wooden boards overlap like feathers on a bird, fastened with iron rivets that allow the vessel to flex under pressure.",
+      "mood": "cool",
+      "imagePrompt": "Close-up of overlapping wooden ship hull planks showing iron rivets, weathered and sea-worn.",
+      "chapterTitle": "Built for the Sea",
+      "chapterNumber": 1
+    },
+    {
+      "text": "Instead of snapping in the crushing weight of a North Atlantic swell, your ship bends with the waves. It is a masterpiece of engineering that makes your boat faster and more agile than any rigid vessel in southern Europe.",
+      "mood": "cool"
+    },
+    {
+      "text": "The design is remarkably shallow. This draft is perfect for the open ocean, but it also gives you a surprising advantage. You can pull this same ship right up onto a sandy beach or sail it deep into winding river systems.",
+      "mood": "day"
+    },
+    {
+      "text": "Above you, the massive square sail catches the wind. It is made of coarse, heavy wool. To keep it from turning into a soggy, useless weight when the storms hit, it is soaked in animal fat to repel the water.",
+      "mood": "day",
+      "imagePrompt": "A large, weathered square wool sail billowing against a vast, cloudy North Atlantic sky."
+    },
+    {
+      "text": "You adjust the rigging as the wind shifts. It’s hard work, but this simple rig is surprisingly efficient. With the hull flexing beneath you and the greased wool catching the breeze, you are ready to master the unforgiving sea.",
+      "mood": "day"
+    },
+    {
+      "text": "Life on this deck is an exercise in extreme intimacy. There is nowhere to hide. You share every waking moment with thirty other people, all huddled together as the wooden hull groans rhythmically against the relentless, cold North Atlantic swell.",
+      "mood": "cool",
+      "imagePrompt": "Close-up of a weathered wooden ship deck planks, rain-slicked and swaying, open ocean horizon in the distance.",
+      "chapterTitle": "Living on the Waves",
+      "chapterNumber": 2
+    },
+    {
+      "text": "When night falls, the true challenge begins. Without a cabin, you crawl into a thick leather sleeping bag directly on the deck. It offers little comfort, but it keeps the biting spray from soaking you to the bone.",
+      "mood": "night"
+    },
+    {
+      "text": "Hunger is constant, but your cook manages to prepare hot meals despite the motion. He uses a portable hearth box, filled carefully with sand and stones to keep the wood from catching fire while he stirs his iron pot.",
+      "mood": "warm"
+    },
+    {
+      "text": "The smell of salted meat and stew wafts over the gunwales. You gather around, clutching a wooden bowl with frozen fingers, grateful for the heat radiating from the hearth box as the salt spray hits the ship's side.",
+      "mood": "warm",
+      "imagePrompt": "A sturdy wooden box filled with sand and glowing embers sitting on the deck of a Viking longship, clouds of steam rising."
+    },
+    {
+      "text": "Thirst is a persistent companion. You reach for the wooden barrels stowed near the mast. The fresh water is often stagnant after weeks at sea, so you mix it with ale, which stays drinkable much longer than plain water.",
+      "mood": "cool"
+    },
+    {
+      "text": "But keeping your thirst at bay is only half the battle. You look up at the vast, featureless horizon. With no GPS, your life depends on dead reckoning. You track your speed and direction, calculating your position by sheer intuition.",
+      "mood": "day",
+      "imagePrompt": "The open North Atlantic ocean with gentle waves under a bright, cloudy sky, seen from the low deck of a wooden Viking ship.",
+      "chapterTitle": "The Navigator's Toolkit",
+      "chapterNumber": 3
+    },
+    {
+      "text": "When the sky clears, the sun becomes your primary guide. You observe its height at noon to gauge your latitude. At night, you watch the stars, learning to recognize familiar constellations that shift slowly as you travel further north.",
+      "mood": "day"
+    },
+    {
+      "text": "What happens when thick fog rolls in? Some historians argue that Norse sailors used mysterious 'sunstones', crystals capable of polarizing light to locate the sun's hidden position behind clouds. It is a debated theory, but one that sounds plausible here.",
+      "mood": "cool"
+    },
+    {
+      "text": "Nature offers even more reliable signs. You keep a sharp eye on the horizon for migrating whales or flocks of seabirds. These creatures are often the most accurate navigators, pointing the way toward distant, unseen coastlines.",
+      "mood": "day",
+      "imagePrompt": "A vast, misty seascape with a few seabirds flying low over the dark, rolling water, distant horizon obscured by light fog."
+    },
+    {
+      "text": "You scan the water, searching for debris like floating seaweed or driftwood. These small, drifting hints often suggest that solid ground is not as far away as your aching muscles might fear. You are never truly lost.",
+      "mood": "warm"
+    },
+    {
+      "text": "The wind is your only engine out here. When it dies, the ocean turns into a mirror of glass. You sit for days in the oppressive silence, drifting aimlessly while the ship groans under the rhythmic, lazy slap of the swell.",
+      "mood": "warm",
+      "imagePrompt": "A vast, calm North Atlantic ocean under a clear, hazy sky during the day.",
+      "chapterTitle": "Fighting the Elements",
+      "chapterNumber": 4
+    },
+    {
+      "text": "Then the weather shifts. Clouds gather like bruised fruit on the horizon. The North Atlantic is fickle, and you learn quickly that the sea has a temper. The air grows sharp, biting through your wool tunic with ease.",
+      "mood": "cool"
+    },
+    {
+      "text": "Even in midsummer, the cold is a persistent enemy. It seeps into your bones while you haul on wet ropes. You stay active to keep the blood flowing, knowing that hypothermia is a constant, quiet threat on these waters.",
+      "mood": "cool"
+    },
+    {
+      "text": "A storm finally breaks, tossing the vessel like a toy. You watch the hull flex with the waves. These ships are not built to cut through the water; they are flexible, designed to ride over the crests like a cork.",
+      "mood": "dark",
+      "imagePrompt": "High, dark blue ocean swells with white caps in a stormy, overcast environment."
+    },
+    {
+      "text": "The design is brilliant. The ship bends with the sea's power rather than fighting it head-on. As the hull twists beneath your feet, you hold fast, trusting the clinker-built planks to keep the freezing ocean on the outside.",
+      "mood": "dark"
+    },
+    {
+      "text": "But a ship isn't just a miracle of wood and rope. It’s also a floating pantry. With no galley or stove, you have to pack everything before leaving the dock. Every inch of space is precious.",
+      "mood": "cool",
+      "imagePrompt": "Interior view inside a cramped wooden ship hull showing stacked storage barrels and rope coils",
+      "chapterTitle": "Provisions and Cargo",
+      "chapterNumber": 5
+    },
+    {
+      "text": "Your survival depends on staples that won't spoil. You carry plenty of dried fish, packed hard to last for weeks. You also have large supplies of skyr, a thick, fermented milk product that provides vital protein.",
+      "mood": "cool"
+    },
+    {
+      "text": "It’s not all preserved rations, though. You might bring a few goats or sheep on board. They’re cramped in the middle of the deck, but they provide fresh milk and a little company during the long, silent nights.",
+      "mood": "day"
+    },
+    {
+      "text": "Balancing this is a puzzle. You need enough food to survive, but you also need room for trade goods. Iron, furs, and amber fill the spaces between the floorboards, leaving barely enough room for your own feet.",
+      "mood": "cool",
+      "imagePrompt": "A wooden ship deck cluttered with barrels, crates, and animal pens viewed from a low angle"
+    },
+    {
+      "text": "If the wind dies or the currents push you off course, these supplies are all you have. You watch the goats nervously, hoping the weather holds. Hunger is a constant shadow, trailing your wake across the grey horizon.",
+      "mood": "dark"
+    },
+    {
+      "text": "Days turn into weeks. Then, a shift in the air signals change. You smell damp earth instead of brine. A sharp, craggy silhouette pierces the mist. After so much emptiness, the sight of a rugged coastline feels like a miracle.",
+      "mood": "warm",
+      "imagePrompt": "A low-angle view of a distant, fog-shrouded rocky coastline rising from a choppy North Atlantic sea.",
+      "chapterTitle": "The Final Stretch",
+      "chapterNumber": 6
+    },
+    {
+      "text": "Your crew recognizes the jagged cliffs. They are landmarks memorized through years of oral tradition, passed down by sailors who came before. You aren't just guessing; you are following a map etched into the collective memory of your people.",
+      "mood": "day"
+    },
+    {
+      "text": "The longship is too precious to risk on unknown shoals. You lower a smaller scouting boat, rowing cautiously toward the surf. The men scan the shoreline for safe landing spots, watching for hidden reefs that could tear the hull apart.",
+      "mood": "day",
+      "imagePrompt": "A small wooden rowboat moving through calm, shallow turquoise water near a beach of dark volcanic sand."
+    },
+    {
+      "text": "Success tastes like sweet, cold water. Bringing the ship to rest on the beach is the final, grueling labor. It is a moment of pure relief, proving that both the sturdy vessel and your own exhausted body held up.",
+      "mood": "warm"
+    },
+    {
+      "text": "You step onto solid ground, legs trembling as they adjust to the lack of motion. The ordeal is over. You have crossed the abyss, arriving exactly where the stories promised you would find a new life among the stones.",
+      "mood": "warm"
+    },
+    {
+      "text": "You’ve crossed the freezing Atlantic, proving that these ships were far more than just raid-craft; they were masterpieces of medieval engineering. If you enjoyed this journey, hit subscribe to stay tuned. Next, we’ll explore how these same explorers navigated the icy fjords of home.",
+      "mood": "day",
+      "imagePrompt": "A calm, rocky coastline with a faint mist rolling over the hills during sunrise.",
+      "chapterTitle": "Wrap-up",
+      "chapterNumber": 0
+    }
+  ],
+  "claimsToVerify": [
+    "[Built for the Sea] Viking ships were clinker-built with overlapping planks and iron rivets.",
+    "[Built for the Sea] Clinker-built hulls were more flexible than rigid hulls of the era.",
+    "[Built for the Sea] Viking ships had shallow drafts suitable for both oceans and rivers.",
+    "[Built for the Sea] Viking sails were made of wool treated with fat/tallow for water resistance.",
+    "[Living on the Waves] Viking crews slept in leather sleeping bags on the open deck.",
+    "[Living on the Waves] Cooking was done on a portable hearth box filled with sand and stones.",
+    "[Living on the Waves] Fresh water was carried in wooden barrels, often supplemented by ale.",
+    "[The Navigator's Toolkit] Norse sailors used dead reckoning by tracking speed and direction",
+    "[The Navigator's Toolkit] Norse sailors used solar and stellar navigation to estimate latitude",
+    "[The Navigator's Toolkit] The 'sunstone' theory is a subject of historical debate",
+    "[The Navigator's Toolkit] Migrating whales and birds were used by Vikings to locate land",
+    "[The Navigator's Toolkit] Floating debris like seaweed and driftwood were used as indicators of proximity to land",
+    "[Fighting the Elements] Viking ships were flexible and designed to ride over waves rather than cut through them.",
+    "[Fighting the Elements] The North Atlantic wind was the primary engine for Viking ships.",
+    "[Fighting the Elements] Cold stress/hypothermia was a major risk for Norse sailors even in summer months.",
+    "[Provisions and Cargo] Vikings used dried fish and skyr as primary protein sources on long voyages.",
+    "[Provisions and Cargo] Live animals like goats or sheep were sometimes kept on Viking ships during voyages.",
+    "[Provisions and Cargo] Viking ships carried trade goods like iron, furs, and amber alongside survival supplies.",
+    "[The Final Stretch] Viking navigators relied on oral tradition and memorized landmarks for coastal identification.",
+    "[The Final Stretch] Longship crews typically used smaller boats to scout landing sites before beaching the main vessel."
+  ]
+}

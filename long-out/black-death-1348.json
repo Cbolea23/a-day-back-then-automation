@@ -1,0 +1,254 @@
+{
+  "slug": "black-death-1348",
+  "title": "Surviving the Black Death: A 14th-Century Survival Guide",
+  "titleOptions": [
+    "Surviving the Black Death: A 14th-Century Survival Guide",
+    "How to Survive the Plague: A 1348 Guide",
+    "Life and Death During the Great Plague"
+  ],
+  "thumbnailIdea": "A dimly lit medieval bedroom with a single candle flickering on a wooden table, highlighting a plague doctor mask resting nearby.",
+  "hook": "Surviving the Black Death",
+  "channelName": "A Day Back Then",
+  "format": "long",
+  "targetMinutes": 11,
+  "scenes": [
+    {
+      "text": "You wake up in 1348. The city outside your window is quiet, but there is a strange panic in the air. People are whispering about a sickness traveling along the trade routes. You don’t have a cure, but you do have a few choices. Which ones keep you alive?",
+      "mood": "dark",
+      "imagePrompt": "A narrow, cobblestone street in a medieval European town at dawn, shadows long and heavy.",
+      "chapterTitle": "Intro",
+      "chapterNumber": 0
+    },
+    {
+      "text": "The whispers are true. It began in late 1347 when a fleet of Genoese ships docked in Messina. They carried more than silk and spices; they brought a silent, swift death that slipped off the gangplanks and into the streets.",
+      "mood": "cool",
+      "imagePrompt": "A medieval Mediterranean harbor at dawn with wooden merchant ships docked at a stone pier.",
+      "chapterTitle": "The Arrival",
+      "chapterNumber": 1
+    },
+    {
+      "text": "The sickness travels on fleas hitching rides on black rats. As these rodents scurry through the cramped, grain-filled warehouses of your city, they spread the infection to anyone unlucky enough to be nearby. It is efficient, brutal, and entirely invisible.",
+      "mood": "cool"
+    },
+    {
+      "text": "You live in a Europe already pushed to its breaking point. Recent years of famine and severe overpopulation have left people exhausted and malnourished. Your immune system is struggling before the invisible enemy even reaches your front door.",
+      "mood": "dark"
+    },
+    {
+      "text": "Trade routes are usually the lifeblood of civilization, bringing wealth and connection. Now, these same paths act as superhighways for the plague. Every merchant carriage and sailing vessel acts as a carrier, moving the infection deep into the continent.",
+      "mood": "dark",
+      "imagePrompt": "A busy, narrow medieval market street with wooden stalls and crowded stone buildings."
+    },
+    {
+      "text": "Cities are death traps. With people packed closely together in dark, narrow lanes, there is nowhere to hide. You look at your neighbors, wondering who might be next. The arrival is complete, and the clock has officially started ticking.",
+      "mood": "dark"
+    },
+    {
+      "text": "Panic ripples through the streets. You look to the local physicians for answers, but their knowledge is limited. They don't know about bacteria or germs. To them, the invisible killer isn't a microbe; it is 'miasma,' or corrupted, foul-smelling air.",
+      "mood": "cool",
+      "imagePrompt": "A narrow, dimly lit medieval street with timber-framed houses and foggy, stagnant air.",
+      "chapterTitle": "Medical Misconceptions",
+      "chapterNumber": 2
+    },
+    {
+      "text": "Since they believe bad air carries the disease, doctors advise you to keep your windows shut tight. They suggest carrying sweet-smelling herbs or burning aromatic wood to purify the atmosphere. You find yourself clutching a bundle of dried lavender, hoping for safety.",
+      "mood": "cool"
+    },
+    {
+      "text": "When the sickness actually hits, the treatments are brutal. Medieval medicine is rooted in Galenic humoral theory, which claims the body is governed by four fluids. If you fall ill, your humors are clearly unbalanced, and the doctor must intervene.",
+      "mood": "dark"
+    },
+    {
+      "text": "They often turn to bloodletting, opening a vein to let out what they call 'excess' blood. It is a desperate, messy practice that provides no real protection. You watch as they apply leeches or a lancet, weakening patients already fighting for their lives.",
+      "mood": "dark",
+      "imagePrompt": "A sparse, wooden interior of a medieval room with a single candle flickering on a table."
+    },
+    {
+      "text": "None of these measures stop the spread. As the death toll climbs, the futility of these medical practices becomes painfully obvious. You realize that the people meant to heal you are just as helpless as you are against this invisible, swift predator.",
+      "mood": "dark"
+    },
+    {
+      "text": "Desperation takes hold. As cities crumble, officials grasp at anything that might work. They try cleaning the filth from the streets, believing the very air is tainted. It is a frantic, messy attempt to scrub away an invisible, relentless killer.",
+      "mood": "dark",
+      "imagePrompt": "A narrow, medieval European cobblestone street littered with debris and refuse, dimly lit by flickering lanterns, abandoned and gloomy.",
+      "chapterTitle": "The First Responses",
+      "chapterNumber": 3
+    },
+    {
+      "text": "Wealthier citizens act fast. If you have the means, you abandon the crowded city walls entirely. You flee to distant country estates, hoping to outrun the plague in the fresh air. But for most, there is nowhere left to hide.",
+      "mood": "cool"
+    },
+    {
+      "text": "Down in the busy port of Venice, authorities try a different approach. They implement a 'quarantino'. Incoming ships must anchor offshore for forty days, waiting to see if anyone falls ill. It is a lonely, cold wait on the water.",
+      "mood": "cool",
+      "imagePrompt": "A wide view of a calm, grey harbor with several wooden merchant ships anchored far from the stone docks at dusk."
+    },
+    {
+      "text": "This isolation is a brand new tactic. It is a desperate gamble, born from the realization that common medicine has failed. Venice hopes this wall of time will stop the sickness from reaching their bustling, crowded markets.",
+      "mood": "dark"
+    },
+    {
+      "text": "Yet, these containment efforts are wildly inconsistent. One town might bolt its gates shut, while another stays wide open. There is no unified strategy, just local panic. You watch as neighbors decide their own fate, guessing at the best way to survive.",
+      "mood": "dark"
+    },
+    {
+      "text": "As chaos grips your town, your gaze shifts upward. You wonder if the heavens have turned against you. For many, this sickness is not a biological accident but divine wrath unleashed upon a sinful humanity. You feel the weight of looming judgment.",
+      "mood": "dark",
+      "imagePrompt": "A desolate medieval town square at dusk, with dark, stormy clouds gathering above gothic stone cathedrals.",
+      "chapterTitle": "Spiritual Despair",
+      "chapterNumber": 4
+    },
+    {
+      "text": "Desperate for mercy, people gather in the streets. You watch long processions of believers chanting prayers and carrying icons. They hope to appease an angry God, yet by huddling closely together, they inadvertently turn these pious gatherings into perfect breeding grounds for the disease.",
+      "mood": "dark"
+    },
+    {
+      "text": "Then come the flagellants. You see them marching through the mud, lashing their own backs in public displays of penance. They believe their physical suffering might balance the scales of heaven, but their movement only adds to the frantic, apocalyptic atmosphere of the streets.",
+      "mood": "dark",
+      "imagePrompt": "A narrow, muddy medieval alleyway lined with timber-framed houses, lit by the flickering glow of torches at night."
+    },
+    {
+      "text": "Inside the churches, the situation is grim. Clergy are dying as fast as their parishioners, leaving the sacraments unattended. You realize there are simply not enough priests left to hear final confessions or offer the last rites for the terrified, departing souls.",
+      "mood": "dark"
+    },
+    {
+      "text": "The spiritual safety net is unraveling. You stare at the empty altar and feel a cold, hollow silence where comfort used to be. Faith remains, but it is now a fragile, desperate thing, strained to its very limit by the sheer scale of the dying.",
+      "mood": "dark"
+    },
+    {
+      "text": "As the death toll climbs, the search for a villain begins. When logic fails, desperation turns into a dangerous hunt for targets. Whispers circulate in the marketplaces, claiming that someone must be behind this invisible, unstoppable killer.",
+      "mood": "dark",
+      "imagePrompt": "A bustling medieval town square with cobblestone paths, now abandoned and desolate under a grey, overcast sky.",
+      "chapterTitle": "Scapegoating and Fear",
+      "chapterNumber": 5
+    },
+    {
+      "text": "The rumors point toward the Jewish population. People spread wild, baseless conspiracy theories, falsely accusing them of poisoning the public wells to spread the pestilence. It is a terrifying, lethal fabrication born entirely from fear.",
+      "mood": "dark"
+    },
+    {
+      "text": "These accusations ignite sudden, horrific waves of violence. Mobs form in the streets, fueled by panic and prejudice. They disregard the truth, choosing instead to lash out at their neighbors based on these cruel and invented lies.",
+      "mood": "dark"
+    },
+    {
+      "text": "Authorities across Europe often stand by, paralyzed or indifferent. Many local leaders fail to intervene, allowing these outbursts of mob violence to spiral out of control. The rule of law essentially collapses under the weight of mass hysteria.",
+      "mood": "dark",
+      "imagePrompt": "A view of a distant stone castle on a hill, seen through the dark, narrow window of a cramped timber house."
+    },
+    {
+      "text": "You watch as the social fabric frays further. It becomes clear that when a society faces an existential threat it cannot understand, it often seeks a scapegoat. The tragedy of the plague is compounded by this dark, human impulse.",
+      "mood": "dark"
+    },
+    {
+      "text": "Imagine living in a town where the bells never stop tolling. Public services crumble first. The city watch, the cleaners, and the grave diggers disappear. Heaps of waste pile up in the narrow, winding alleys, making the air heavy and foul.",
+      "mood": "dark",
+      "imagePrompt": "A narrow, deserted medieval European street cluttered with refuse and debris, overcast sky.",
+      "chapterTitle": "Daily Life Under Siege",
+      "chapterNumber": 6
+    },
+    {
+      "text": "If you have the means, you follow the standard advice: flee quickly, go far, and return slowly. Those who stay lock their doors. You keep to your hearth, hoping that silence and isolation act as your final shield against the invisible pestilence.",
+      "mood": "cool"
+    },
+    {
+      "text": "The economy fractures almost instantly. With so many farmers and laborers gone, food becomes scarce. Prices for bread and grain skyrocket, fluctuating wildly from day to day. A single loaf can suddenly cost a week's wages, if you can even find a seller.",
+      "mood": "day"
+    },
+    {
+      "text": "Trust vanishes alongside the food. Even neighbors grow wary of one another. People stop greeting friends in the street, fearing that a casual touch or a shared breath might be a death sentence. Social norms are traded for raw, desperate survival.",
+      "mood": "dark",
+      "imagePrompt": "A dimly lit interior of a medieval stone house with a barred wooden door and flickering candlelight."
+    },
+    {
+      "text": "Every morning, you check your doorstep, dreading what might be left behind. Life is no longer about commerce or community; it is a claustrophobic vigil. You wait, listening for footsteps, hoping that today is not the day the sickness finally finds you.",
+      "mood": "night"
+    },
+    {
+      "text": "Eventually, the tolling bells go quiet. You emerge, shell-shocked, into a world that feels emptier but strangely vibrant. The fields are overgrown, and the manor houses sit silent. The old rhythm of your life has snapped completely, leaving behind a restless, fragile new reality.",
+      "mood": "day",
+      "imagePrompt": "An overgrown, abandoned medieval wheat field with a crumbling stone wall in the distance under a pale sun.",
+      "chapterTitle": "The Long Shadow",
+      "chapterNumber": 7
+    },
+    {
+      "text": "With so few hands left to plow or harvest, the balance of power shifts. You realize the lords now need you more than you need them. You begin to demand higher wages, bargaining for your labor for the first time in generations.",
+      "mood": "warm"
+    },
+    {
+      "text": "The rigid feudal system starts to fray at the edges. As you push for better terms, the chains of serfdom loosen. It is not an overnight revolution, but the old certainty that you are bound to the land is quietly fading away.",
+      "mood": "day"
+    },
+    {
+      "text": "Even the Church loses some of its iron grip. Many priests perished alongside their flocks, and the surviving clergy could not stop the dying. This failure leaves a mark, as people start seeking more personal, direct connections to their own faith.",
+      "mood": "cool",
+      "imagePrompt": "A dim, empty medieval stone cathedral interior with light filtering through dust motes."
+    },
+    {
+      "text": "A dark, macabre obsession with mortality seeps into everything you see. Art and literature turn toward the 'Dance of Death.' You look at the world differently now, knowing how quickly everything can vanish. Life is short, and you intend to live it.",
+      "mood": "cool"
+    },
+    {
+      "text": "The plague doesn't just disappear. For centuries, it returns in relentless waves, haunting your descendants. But through this crushing weight, society slowly pivots. You begin to see the earliest, tentative roots of modern public health and sanitation policies taking hold.",
+      "mood": "cool",
+      "imagePrompt": "A wide, empty meadow in early morning mist with a distant, half-constructed stone village.",
+      "chapterTitle": "Lessons from the Past",
+      "chapterNumber": 8
+    },
+    {
+      "text": "The catastrophe fundamentally reshaped the European trajectory. As the population dwindled, the remaining laborers found their work suddenly far more valuable. The rigid old structures of feudalism started to crack under the pressure of these new, harsh economic realities.",
+      "mood": "day"
+    },
+    {
+      "text": "History proves our resilience in the face of absolute uncertainty. You learn that humanity possesses a stubborn, quiet ability to adapt when the world feels like it is ending. We rebuild, we reorganize, and we eventually find a way forward.",
+      "mood": "warm"
+    },
+    {
+      "text": "Understanding this era matters because it reminds us how fragile our systems truly are. When the unexpected strikes, our responses—both our mistakes and our innovations—define the future. You are not just observing history; you are witnessing the birth of change.",
+      "mood": "day",
+      "imagePrompt": "A lush, green path winding through a quiet forest leading toward a bright horizon."
+    },
+    {
+      "text": "So, you carry these lessons forward. The shadow of the Black Death is long, but it is not infinite. We emerge from the darkness, carrying a deeper respect for our shared survival and the unpredictable, evolving story of human progress.",
+      "mood": "day"
+    },
+    {
+      "text": "The world changed forever in the years following the plague, creating a new economic reality for those who remained. History is often shaped by the challenges we face in our darkest hours. If you enjoyed this journey, subscribe for more—next time, we explore the Viking Age.",
+      "mood": "warm",
+      "imagePrompt": "A quiet, lush green field in the countryside at sunset, with a small farmhouse in the distance.",
+      "chapterTitle": "Wrap-up",
+      "chapterNumber": 0
+    }
+  ],
+  "claimsToVerify": [
+    "[The Arrival] The plague arrived in Messina, Sicily, via Genoese ships in 1347.",
+    "[The Arrival] The plague was primarily transmitted by fleas on black rats.",
+    "[The Arrival] Europe faced famine and overpopulation prior to the 1347 outbreak.",
+    "[The Arrival] Trade networks were the primary vectors for the rapid spread of the disease across Europe.",
+    "[Medical Misconceptions] Medieval physicians attributed the Black Death to miasma or bad air.",
+    "[Medical Misconceptions] Medieval medicine was heavily influenced by Galenic humoral theory.",
+    "[Medical Misconceptions] Bloodletting and the use of aromatic herbs were common medical responses during the plague.",
+    "[Medical Misconceptions] Medieval doctors lacked knowledge of germ theory or bacteria.",
+    "[The First Responses] City officials attempted to clean streets to clear away miasma or smell during the Black Death.",
+    "[The First Responses] Wealthy citizens often fled urban centers for country estates.",
+    "[The First Responses] Venice introduced the formal forty-day quarantine period for incoming ships.",
+    "[The First Responses] Containment efforts were largely inconsistent and decentralized across Europe.",
+    "[Spiritual Despair] Plague viewed by many as divine punishment",
+    "[Spiritual Despair] Religious processions helped spread the infection",
+    "[Spiritual Despair] Flagellant movements existed and practiced public penance",
+    "[Spiritual Despair] Shortage of clergy to perform last rites during the Black Death",
+    "[Scapegoating and Fear] Jewish populations were falsely accused of poisoning wells during the Black Death.",
+    "[Scapegoating and Fear] These accusations led to waves of violence against Jewish communities.",
+    "[Scapegoating and Fear] Authorities often failed to stop these mob outbreaks.",
+    "[Daily Life Under Siege] Medieval plague advice to 'flee quickly, go far, and return slowly'",
+    "[Daily Life Under Siege] Breakdown of public services and waste removal during the Black Death",
+    "[Daily Life Under Siege] Volatility of food prices due to loss of agricultural labor",
+    "[Daily Life Under Siege] Societal fraying and avoidance of physical contact between neighbors",
+    "[The Long Shadow] Labor shortages after the Black Death led to increased bargaining power for peasants and higher wages.",
+    "[The Long Shadow] The Black Death contributed to the decline of the feudal system and serfdom in Europe.",
+    "[The Long Shadow] The high mortality rate among the clergy weakened the prestige and authority of the Church.",
+    "[The Long Shadow] The Black Death influenced European art and literature, famously seen in the 'Danse Macabre' motif.",
+    "[Lessons from the Past] The plague recurred in waves for centuries after 1348.",
+    "[Lessons from the Past] The Black Death led to labor shortages that weakened feudalism.",
+    "[Lessons from the Past] The pandemic sparked early developments in public health and sanitation."
+  ]
+}

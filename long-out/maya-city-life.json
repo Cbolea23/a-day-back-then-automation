@@ -1,0 +1,224 @@
+{
+  "slug": "maya-city-life",
+  "title": "A Day in the Life of a Maya City",
+  "titleOptions": [
+    "A Day in the Life of a Maya City",
+    "What Was Life Actually Like in a Maya City?",
+    "Beyond the Ruins: Inside a Maya Metropolis"
+  ],
+  "thumbnailIdea": "A vibrant, reconstructed Maya plaza scene at dawn with a bustling market in the background.",
+  "hook": "Life in a Maya City",
+  "channelName": "A Day Back Then",
+  "format": "long",
+  "targetMinutes": 10,
+  "scenes": [
+    {
+      "text": "You wake to the sound of a conch shell echoing across a limestone plaza. The jungle air is thick, but the city is already humming. You aren't just walking through ruins; you are walking through one of the most sophisticated urban centers in the ancient world.",
+      "mood": "warm",
+      "imagePrompt": "Limestone pyramid temples rising above a dense tropical canopy in the soft morning light.",
+      "chapterTitle": "Intro",
+      "chapterNumber": 0
+    },
+    {
+      "text": "The humid morning mist clings to your skin as you step beyond the city walls. While the elite dwell near the great temples, you are heading toward the suburban clusters where the real heartbeat of this civilization thrives.",
+      "mood": "warm",
+      "imagePrompt": "A lush tropical valley at dawn with small, thatched-roof huts nestled among dense greenery.",
+      "chapterTitle": "The Morning Harvest",
+      "chapterNumber": 1
+    },
+    {
+      "text": "The ground beneath your feet is carefully managed. Farmers here have carved terraces into the slopes to catch rainwater, ensuring that even in this challenging landscape, the soil stays fertile and the crops remain well-fed.",
+      "mood": "warm"
+    },
+    {
+      "text": "You watch as families work their plots. They use the milpa method, a clever cycle of slash-and-burn that clears small patches for planting, keeping the ecosystem in balance before moving on to let the forest recover.",
+      "mood": "day"
+    },
+    {
+      "text": "In these fields, you see the 'three sisters' growing together. Corn, beans, and squash share the earth, creating a perfect nutritional harmony. The beans climb the corn stalks, while the broad squash leaves protect the moist soil.",
+      "mood": "day",
+      "imagePrompt": "A close-up of a vibrant milpa garden featuring rows of tall corn stalks intertwined with bean vines and wide squash leaves."
+    },
+    {
+      "text": "It is a life defined by seasonal rhythms and deep botanical knowledge. Most people here aren't just city dwellers; they are expert engineers of the earth, turning the wild jungle into a sustainable food machine for millions.",
+      "mood": "day"
+    },
+    {
+      "text": "By mid-morning, you head toward the city center. The air thickens with the hum of thousands of voices. You are entering the market, the beating heart of Maya life where the jungle’s quiet gives way to frantic, joyful commerce.",
+      "mood": "warm",
+      "imagePrompt": "A wide, open plaza in a Maya city with stone platforms and shaded walkways, bustling atmosphere, sunlight filtering through trees.",
+      "chapterTitle": "The Market Hub",
+      "chapterNumber": 2
+    },
+    {
+      "text": "This is a hub connecting the humid coast to the rugged highlands. Traders haul goods across hundreds of miles, bringing the distinct flavors and materials of distant territories right to your doorstep. Everything here feels like a bridge between worlds.",
+      "mood": "warm"
+    },
+    {
+      "text": "Your eyes catch the sharp, glassy glint of obsidian blades and the deep, rich green of polished jade. Nearby, the iridescent shimmer of quetzal feathers catches the sun. These are the luxury goods that define status and beauty here.",
+      "mood": "warm"
+    },
+    {
+      "text": "You notice there is no rattling of coins. Instead, the trade is a dance of barter. You might see someone trading a woven cotton mantle for a bundle of dried goods, or a pouch of precious cacao beans.",
+      "mood": "warm",
+      "imagePrompt": "A close-up of a stone market table featuring woven textiles, ceramic pots, and small piles of cacao beans, no people visible."
+    },
+    {
+      "text": "Cacao is particularly clever as a medium of exchange. It is portable, universally valued, and, of course, delicious. The market isn't just for survival; it is where the entire Maya world weaves itself into a single, vibrant, social tapestry.",
+      "mood": "warm"
+    },
+    {
+      "text": "Moving away from the busy stalls, you climb the stone steps toward the center of power. Here, the world feels quieter, but far more intense. You aren't in a single empire; you are entering one of many independent city-states.",
+      "mood": "warm",
+      "imagePrompt": "A wide stone staircase leading up to a grand limestone plaza surrounded by stepped pyramids under a bright sky.",
+      "chapterTitle": "Scribes and Rulers",
+      "chapterNumber": 3
+    },
+    {
+      "text": "The rulers here hold immense authority. They don’t just claim to lead; they claim to be divine. By tracing their ancestry back to the gods, they anchor their rule in the very foundations of the universe itself.",
+      "mood": "warm"
+    },
+    {
+      "text": "Their influence relies on more than just ritual. It relies on information. You see men in fine robes hunched over painted books. These are the scribes, the intellectual backbone of the Maya court, held in incredibly high regard.",
+      "mood": "cool",
+      "imagePrompt": "Interior of a stone palace room with sunlight filtering through a doorway, showing a stone bench and intricate wall carvings."
+    },
+    {
+      "text": "These scribes are royalty themselves. They record every victory, every celestial alignment, and every royal lineage. They turn the messy reality of life into permanent history, ensuring the king's story remains etched in stone and paper.",
+      "mood": "cool"
+    },
+    {
+      "text": "It is a rigid, complex world. Every document created by these elite scholars serves to reinforce the king’s divine mandate. For the people below, these scribes are the keepers of the only truth that truly matters.",
+      "mood": "cool"
+    },
+    {
+      "text": "Look closely at these towering stone stelae. They aren't just art; they are dense blocks of information. You see intricate, squared glyphs carved into the rock. Each one is a puzzle piece, waiting for someone to decode the message.",
+      "mood": "warm",
+      "imagePrompt": "An ancient limestone monument with weathered, intricate hieroglyphic carvings, situated in a sunlit jungle clearing.",
+      "chapterTitle": "The Writing System",
+      "chapterNumber": 4
+    },
+    {
+      "text": "The system is remarkably clever. It is logosyllabic, meaning a single glyph might represent a whole word, or sometimes just a single syllable. This flexibility allowed the Maya to record virtually anything that could be spoken in their language.",
+      "mood": "warm"
+    },
+    {
+      "text": "Scribes didn't just work in stone. They also crafted delicate books from beaten bark paper. They painted these pages with vibrant inks, folding them like screens. Sadly, very few of these fragile treasures survived the turning of the centuries.",
+      "mood": "day",
+      "imagePrompt": "A close-up view of a hand-painted screenfold book made of bark paper, lying on a wooden table with ceramic pigment bowls nearby."
+    },
+    {
+      "text": "For a long time, these symbols were a complete mystery to the outside world. Scholars could only guess at their meanings. It felt like staring at a locked door with no key, unable to hear the voices of the past.",
+      "mood": "cool"
+    },
+    {
+      "text": "Eventually, the breakthrough came. Deciphering these glyphs fundamentally changed everything we know about Maya history. Suddenly, the silent monuments began to speak, revealing the names, dates, and complex stories of the people who shaped this civilization so long ago.",
+      "mood": "day"
+    },
+    {
+      "text": "As those stones begin to tell their stories, your attention shifts to the heart of the city. You hear the rhythmic thud of a solid rubber ball against limestone. Here, sport isn't just a game; it is powerful theater.",
+      "mood": "warm",
+      "imagePrompt": "A wide-angle view of a long, narrow Mayan stone ball court with sloping side walls, surrounded by lush jungle trees.",
+      "chapterTitle": "The Ball Game",
+      "chapterNumber": 5
+    },
+    {
+      "text": "You watch as players move with intense focus. Rules are strict—no hands or feet allowed. You must keep the heavy ball in motion using only your hips, elbows, and knees. It is an exhausting, acrobatic feat of coordination.",
+      "mood": "warm"
+    },
+    {
+      "text": "These courts are a fixture in almost every major city you visit. They are architectural marvels, built for a public display that blends athletic skill with deep religious meaning. The walls seem to vibrate with the crowd’s energy.",
+      "mood": "warm"
+    },
+    {
+      "text": "Sometimes, these matches do more than entertain. They serve as a stage for high-stakes political disputes, or a way to reenact legendary mythological battles. The outcome carries heavy weight for the city’s status and its divine favor.",
+      "mood": "day",
+      "imagePrompt": "Close up of ancient carved stone rings embedded in the slanted walls of a ball court, weathered by time."
+    },
+    {
+      "text": "It is a spectacle of sweat and strategy that bridges the gap between the earthly realm and the gods. In the echo of the court, you catch a glimpse of the fierce, ceremonial spirit that drives this civilization.",
+      "mood": "day"
+    },
+    {
+      "text": "But the city you walk through today will not always remain. As you gaze at these towering pyramids, it is strange to think that many of them will soon be swallowed by the encroaching, silent jungle growth.",
+      "mood": "cool",
+      "imagePrompt": "An overgrown, abandoned Mayan limestone temple being slowly reclaimed by dense jungle vines and moss.",
+      "chapterTitle": "The Unknowns",
+      "chapterNumber": 6
+    },
+    {
+      "text": "Historians often debate why this shift happens. There is no single, agreed-upon reason for the decline of these great Classic period cities. It remains one of the most persistent mysteries of the ancient world.",
+      "mood": "cool"
+    },
+    {
+      "text": "Some point to prolonged drought or extensive deforestation, which likely strained the food supply. Others suggest that endemic warfare or even peasant revolts fractured the social order, making it impossible to sustain such massive urban centers.",
+      "mood": "dark"
+    },
+    {
+      "text": "It is important to remember that this was not an extinction. The Maya people did not simply vanish into thin air. Many families survived this upheaval and migrated toward the northern lowlands to build new lives.",
+      "mood": "warm",
+      "imagePrompt": "A wide, sun-drenched view of a northern Yucatan landscape with limestone scrubland and distant horizon."
+    },
+    {
+      "text": "The cities changed, but the culture endured. While the stone monuments might stand quiet and empty, the spirit of the people shifted, adapted, and continued to thrive in different ways across the changing landscape.",
+      "mood": "warm"
+    },
+    {
+      "text": "It is easy to look at overgrown ruins and assume a story has reached its end. But this is not a history of ghosts. Millions of Maya people live across Central America today, keeping their vibrant heritage alive in the modern world.",
+      "mood": "warm",
+      "imagePrompt": "Sunlight filtering through the canopy onto a modern-day village path surrounded by lush green vegetation.",
+      "chapterTitle": "Reflecting on the Legacy",
+      "chapterNumber": 7
+    },
+    {
+      "text": "You see this legacy in the way families speak. Many Mayan languages are still spoken daily, carrying the linguistic rhythms of their ancestors. These aren't just remnants of the past; they are living, evolving tools of communication used by millions right now.",
+      "mood": "day"
+    },
+    {
+      "text": "The traditions have deep roots, too. From the textiles woven on backstrap looms to the agricultural practices that honor the cycle of the seasons, the Maya have maintained a profound, unbroken connection to their land for centuries.",
+      "mood": "warm"
+    },
+    {
+      "text": "Yet, the earth still holds secrets. Deep in the dense jungle, LIDAR technology and constant excavations continue to reveal hidden structures. Each new discovery reminds us that our understanding of this civilization is still growing, expanding with every stone uncovered.",
+      "mood": "day",
+      "imagePrompt": "Dense, misty tropical jungle landscape with thick vines draped over ancient, moss-covered stone mounds emerging from the earth."
+    },
+    {
+      "text": "The story of the Maya isn't found just in the crumbling temples of old cities. It is woven into the very fabric of their communities, thriving today as it has for generations, proving that history is never truly static.",
+      "mood": "warm"
+    },
+    {
+      "text": "The jungle slowly reclaims the stone, but the legacy of these people is etched into history. As we uncover more, we realize they were never a lost civilization, but a changing one. If you enjoyed this journey, subscribe for more. Next, we explore the mystery of the Olmec.",
+      "mood": "cool",
+      "imagePrompt": "Sunlight filtering through thick jungle leaves onto a weathered, vine-covered stone carving.",
+      "chapterTitle": "Wrap-up",
+      "chapterNumber": 0
+    }
+  ],
+  "claimsToVerify": [
+    "[The Morning Harvest] The Maya used milpa (slash-and-burn) agriculture.",
+    "[The Morning Harvest] Corn, beans, and squash are collectively known as the 'three sisters' in Mesoamerican agriculture.",
+    "[The Morning Harvest] The Maya utilized terracing and raised fields to manage water and soil in difficult landscapes.",
+    "[The Morning Harvest] Most Maya people lived in suburban clusters or rural areas rather than the urban center.",
+    "[The Market Hub] Maya trade networks connected coastal and highland regions.",
+    "[The Market Hub] Obsidian, jade, and quetzal feathers were highly valued goods in Maya society.",
+    "[The Market Hub] The Maya used cacao beans and cotton mantles as forms of currency or barter.",
+    "[The Market Hub] The Maya did not have a universal metal-based currency system.",
+    "[Scribes and Rulers] Maya rulers claimed divine ancestry to justify their authority.",
+    "[Scribes and Rulers] Scribes were highly respected members of the courtly elite.",
+    "[Scribes and Rulers] The Maya political system was composed of independent city-states rather than a single empire.",
+    "[The Writing System] The Maya writing system is classified as logosyllabic.",
+    "[The Writing System] Maya glyphs represent both whole words and individual syllables.",
+    "[The Writing System] Maya writing was recorded on bark-paper books known as codices.",
+    "[The Writing System] The decipherment of Maya hieroglyphs has significantly altered historical understanding of their civilization.",
+    "[The Ball Game] The Maya ball game involved keeping a solid rubber ball in motion using only hips, elbows, and knees.",
+    "[The Ball Game] Ball courts were common features in almost every major city.",
+    "[The Ball Game] Games were used to settle political disputes or represent mythological battles.",
+    "[The Unknowns] There is no single agreed-upon cause for the decline of Classic Maya cities.",
+    "[The Unknowns] Theories for the decline include drought, deforestation, warfare, and peasant revolts.",
+    "[The Unknowns] The Maya people survived the collapse and migrated to areas like the northern lowlands.",
+    "[Reflecting on the Legacy] Millions of Maya people continue to speak Mayan languages today.",
+    "[Reflecting on the Legacy] Cultural traditions and agricultural practices have persisted for centuries.",
+    "[Reflecting on the Legacy] Excavations continue to reveal new structures hidden deep under the jungle floor."
+  ]
+}

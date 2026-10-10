@@ -1,0 +1,376 @@
+{
+  "slug": "roman-survive-a-week",
+  "title": "Could You Actually Survive A Week In Ancient Rome?",
+  "titleOptions": [
+    "Could You Actually Survive A Week In Ancient Rome?",
+    "How To Stay Alive In Ancient Rome",
+    "Ancient Rome: A Survival Guide For The Modern Traveler"
+  ],
+  "thumbnailIdea": "A modern person in business casual attire looking panicked in a crowded, dusty Roman street market, with a looming Colosseum in the background.",
+  "hook": "Would You Survive a Week in Ancient Rome?",
+  "channelName": "A Day Back Then",
+  "format": "long",
+  "targetMinutes": 10,
+  "scenes": [
+    {
+      "text": "You step out of a portal and into a sweltering, noisy alleyway. The air reeks of fish sauce and open sewers. A merchant screams at you in Latin, and a cart nearly crushes your toes. Welcome to Rome. You have seven days to survive.",
+      "mood": "warm",
+      "imagePrompt": "Narrow, sun-drenched Roman street with stone walls and clay tile rooftops.",
+      "chapterTitle": "Intro",
+      "chapterNumber": 0,
+      "image": "long/roman-survive-a-week/1.png",
+      "audio": "audio/long/roman-survive-a-week/1.wav",
+      "voicedText": "You step out of a portal and into a sweltering, noisy alleyway. The air reeks of fish sauce and open sewers. A merchant screams at you in Latin, and a cart nearly crushes your toes. Welcome to Rome. You have seven days to survive.",
+      "seconds": 15.5
+    },
+    {
+      "text": "You scramble onto the sidewalk, dodging a wooden wheel. The merchant is still shouting, his words a rhythmic, rapid-fire Latin. If you don't speak it, you are essentially deaf. Even if you do, your school-taught Latin might sound hilariously formal to these locals.",
+      "mood": "day",
+      "imagePrompt": "A narrow, crowded Roman alleyway with tall apartment blocks made of brick, laundry hanging from windows, and sunbeams hitting dusty cobblestones.",
+      "chapterTitle": "Language and Currency",
+      "chapterNumber": 1,
+      "image": "long/roman-survive-a-week/2.png",
+      "audio": "audio/long/roman-survive-a-week/2.wav",
+      "voicedText": "You scramble onto the sidewalk, dodging a wooden wheel. The merchant is still shouting, his words a rhythmic, rapid-fire Latin. If you don't speak it, you are essentially deaf. Even if you do, your school-taught Latin might sound hilariously formal to these locals.",
+      "seconds": 17
+    },
+    {
+      "text": "Among the wealthy elite, you might hear Greek, which is the trendy language of education and philosophy. But here in the gutters, it is Latin or nothing. You try to ask for directions, but your accent marks you immediately as an outsider.",
+      "mood": "day",
+      "image": "long/roman-survive-a-week/2.png",
+      "audio": "audio/long/roman-survive-a-week/3.wav",
+      "voicedText": "Among the wealthy elite, you might hear Greek, which is the trendy language of education and philosophy. But here in the gutters, it is Latin or nothing. You try to ask for directions, but your accent marks you immediately as an outsider.",
+      "seconds": 14.3
+    },
+    {
+      "text": "Thirst hits you. You reach for your pocket, expecting plastic or metal, but find nothing. Your digital cards are useless relics. In Rome, you need cold, hard metal. The economy runs on copper, silver, and gold coins, clinking heavily in leather pouches.",
+      "mood": "day",
+      "imagePrompt": "A busy Roman marketplace with open-front shops, ceramic jars stacked against walls, and small tables displaying various brass and silver coins.",
+      "image": "long/roman-survive-a-week/3.png",
+      "audio": "audio/long/roman-survive-a-week/4.wav",
+      "voicedText": "Thirst hits you. You reach for your pocket, expecting plastic or metal, but find nothing. Your digital cards are useless relics. In Rome, you need cold, hard metal. The economy runs on copper, silver, and gold coins, clinking heavily in leather pouches.",
+      "seconds": 17.6
+    },
+    {
+      "text": "There are no banks to visit and no ATMs to save you. If you are broke, you are invisible. You watch a woman swap a basket of eggs for a bundle of leeks; bartering is the heartbeat of these crowded streets.",
+      "mood": "day",
+      "image": "long/roman-survive-a-week/3.png",
+      "audio": "audio/long/roman-survive-a-week/5.wav",
+      "voicedText": "There are no banks to visit and no ATMs to save you. If you are broke, you are invisible. You watch a woman swap a basket of eggs for a bundle of leeks; bartering is the heartbeat of these crowded streets.",
+      "seconds": 12.9
+    },
+    {
+      "text": "Without coins, you are not buying lunch. You realize quickly that survival here isn't just about language; it is about having the right metal in your palm. For now, you are just a tourist with no currency and no way to pay.",
+      "mood": "day",
+      "image": "long/roman-survive-a-week/3.png",
+      "audio": "audio/long/roman-survive-a-week/6.wav",
+      "voicedText": "Without coins, you are not buying lunch. You realize quickly that survival here isn't just about language; it is about having the right metal in your palm. For now, you are just a tourist with no currency and no way to pay.",
+      "seconds": 13.4
+    },
+    {
+      "text": "Night falls and the city transforms. You need a bed, but don't look for a hotel. You are heading for an insula, a crumbling, multi-story apartment block that towers over the narrow, twisting streets.",
+      "mood": "dark",
+      "imagePrompt": "A narrow, crowded Roman alleyway at night with towering, dilapidated multi-story apartment buildings on either side, flickering oil lamps.",
+      "chapterTitle": "Finding a Bed",
+      "chapterNumber": 2,
+      "image": "long/roman-survive-a-week/4.png",
+      "audio": "audio/long/roman-survive-a-week/7.wav",
+      "voicedText": "Night falls and the city transforms. You need a bed, but don't look for a hotel. You are heading for an insula, a crumbling, multi-story apartment block that towers over the narrow, twisting streets.",
+      "seconds": 13.1
+    },
+    {
+      "text": "The higher you climb, the cheaper the rent. But be warned: the top floors are mostly wood, structurally shaky, and prone to sudden collapse. You are safer closer to the ground, but definitely not comfortable.",
+      "mood": "dark",
+      "image": "long/roman-survive-a-week/4.png",
+      "audio": "audio/long/roman-survive-a-week/8.wav",
+      "voicedText": "The higher you climb, the cheaper the rent. But be warned: the top floors are mostly wood, structurally shaky, and prone to sudden collapse. You are safer closer to the ground, but definitely not comfortable.",
+      "seconds": 12.9
+    },
+    {
+      "text": "Inside, your room is barren. There is no private plumbing here, and certainly no kitchen. You are living in a cramped, dark box where the only amenity is a roof that might keep the rain out.",
+      "mood": "dark",
+      "image": "long/roman-survive-a-week/4.png",
+      "audio": "audio/long/roman-survive-a-week/9.wav",
+      "voicedText": "Inside, your room is barren. There is no private plumbing here, and certainly no kitchen. You are living in a cramped, dark box where the only amenity is a roof that might keep the rain out.",
+      "seconds": 11.8
+    },
+    {
+      "text": "Outside, the city never sleeps. Rome is notoriously noisy at night. Iron-rimmed cart wheels clatter against stone pavers, while merchants and revelers shout through the thin walls. Sleep will be a distant, impossible dream.",
+      "mood": "dark",
+      "imagePrompt": "A cramped, dimly lit interior of a Roman apartment room with peeling plaster and a simple wooden sleeping mat.",
+      "image": "long/roman-survive-a-week/5.png",
+      "audio": "audio/long/roman-survive-a-week/10.wav",
+      "voicedText": "Outside, the city never sleeps. Rome is notoriously noisy at night. Iron-rimmed cart wheels clatter against stone pavers, while merchants and revelers shout through the thin walls. Sleep will be a distant, impossible dream.",
+      "seconds": 14.8
+    },
+    {
+      "text": "You lie on your thin mattress, listening to the cacophony of the city. Survival tonight isn't about luxury; it is simply about not falling through the floor or losing your mind to the endless urban roar.",
+      "mood": "dark",
+      "image": "long/roman-survive-a-week/5.png",
+      "audio": "audio/long/roman-survive-a-week/11.wav",
+      "voicedText": "You lie on your thin mattress, listening to the cacophony of the city. Survival tonight isn't about luxury; it is simply about not falling through the floor or losing your mind to the endless urban roar.",
+      "seconds": 13.4
+    },
+    {
+      "text": "Morning light creeps through wooden shutters, and your stomach lets out a loud growl. Looking around your cramped room, you realize there is no stove or hearth. Most poor Romans lack kitchens entirely, so cooked food means stepping outside.",
+      "mood": "warm",
+      "imagePrompt": "An ancient Roman insula apartment interior at dawn, featuring wooden shutters open to a street view, with simple brick walls and bare clay floors.",
+      "chapterTitle": "The Culinary Gamble",
+      "chapterNumber": 3,
+      "image": "long/roman-survive-a-week/6.png",
+      "audio": "audio/long/roman-survive-a-week/12.wav",
+      "voicedText": "Morning light creeps through wooden shutters, and your stomach lets out a loud growl. Looking around your cramped room, you realize there is no stove or hearth. Most poor Romans lack kitchens entirely, so cooked food means stepping outside.",
+      "seconds": 15.6
+    },
+    {
+      "text": "You head down to the nearest street counter, a snack bar called a thermopolium. Bread is your absolute primary caloric staple here, coarse and heavy, but reliable. You grab a warm loaf and a small bowl of lentils.",
+      "mood": "day",
+      "image": "long/roman-survive-a-week/6.png",
+      "audio": "audio/long/roman-survive-a-week/13.wav",
+      "voicedText": "You head down to the nearest street counter, a snack bar called a thermopolium. Bread is your absolute primary caloric staple here, coarse and heavy, but reliable. You grab a warm loaf and a small bowl of lentils.",
+      "seconds": 12.7
+    },
+    {
+      "text": "Almost every hot dish you smell is seasoned with garum, a pungent, fermented fish sauce loved across the empire. It adds a salty, savory kick to stews and grains, though the strong aroma might take some getting used to.",
+      "mood": "day",
+      "image": "long/roman-survive-a-week/6.png",
+      "audio": "audio/long/roman-survive-a-week/14.wav",
+      "voicedText": "Almost every hot dish you smell is seasoned with garum, a pungent, fermented fish sauce loved across the empire. It adds a salty, savory kick to stews and grains, though the strong aroma might take some getting used to.",
+      "seconds": 14.5
+    },
+    {
+      "text": "To wash it down, you head toward a public fountain. Massive stone aqueducts supply fresh water across the city. The water runs constantly, though many of the city's plumbing pipes are made of lead, creating a silent hazard.",
+      "mood": "cool",
+      "imagePrompt": "A public stone fountain in an ancient Roman street with water flowing from a carved spout into a basin, backed by brick walls and cobblestones.",
+      "image": "long/roman-survive-a-week/7.png",
+      "audio": "audio/long/roman-survive-a-week/15.wav",
+      "voicedText": "To wash it down, you head toward a public fountain. Massive stone aqueducts supply fresh water across the city. The water runs constantly, though many of the city's plumbing pipes are made of lead, creating a silent hazard.",
+      "seconds": 13.9
+    },
+    {
+      "text": "Eating on the Roman streets is a daily gamble for your gut, but with a belly full of coarse bread and warm stew, you are ready to tackle the city. Survival today starts with a full stomach.",
+      "mood": "day",
+      "image": "long/roman-survive-a-week/7.png",
+      "audio": "audio/long/roman-survive-a-week/16.wav",
+      "voicedText": "Eating on the Roman streets is a daily gamble for your gut, but with a belly full of coarse bread and warm stew, you are ready to tackle the city. Survival today starts with a full stomach.",
+      "seconds": 11.7
+    },
+    {
+      "text": "Stepping out from the tavern, you immediately realize Rome doesn't do sidewalks. The streets are impossibly narrow, clogged with people, and slick with mud or refuse. You have to weave through the chaos just to move a few paces.",
+      "mood": "warm",
+      "imagePrompt": "Narrow, crowded, sun-drenched cobblestone Roman street with tall multi-story apartment buildings flanking both sides.",
+      "chapterTitle": "Walking the Gauntlet",
+      "chapterNumber": 4,
+      "image": "long/roman-survive-a-week/8.png",
+      "audio": "audio/long/roman-survive-a-week/17.wav",
+      "voicedText": "Stepping out from the tavern, you immediately realize Rome doesn't do sidewalks. The streets are impossibly narrow, clogged with people, and slick with mud or refuse. You have to weave through the chaos just to move a few paces.",
+      "seconds": 14.3
+    },
+    {
+      "text": "The city is surprisingly quiet regarding heavy cargo. To keep traffic moving, the authorities ban massive delivery wagons from the streets during the day. It is the only reason you aren't being flattened by heavy carts right now.",
+      "mood": "warm",
+      "image": "long/roman-survive-a-week/8.png",
+      "audio": "audio/long/roman-survive-a-week/18.wav",
+      "voicedText": "The city is surprisingly quiet regarding heavy cargo. To keep traffic moving, the authorities ban massive delivery wagons from the streets during the day. It is the only reason you aren't being flattened by heavy carts right now.",
+      "seconds": 13
+    },
+    {
+      "text": "Your real danger comes from above. Many apartment blocks are rickety, multi-story affairs. People often toss trash or waste straight out of their high windows. Keep your eyes peeled, or you might end up covered in something truly unpleasant.",
+      "mood": "warm",
+      "image": "long/roman-survive-a-week/8.png",
+      "audio": "audio/long/roman-survive-a-week/19.wav",
+      "voicedText": "Your real danger comes from above. Many apartment blocks are rickety, multi-story affairs. People often toss trash or waste straight out of their high windows. Keep your eyes peeled, or you might end up covered in something truly unpleasant.",
+      "seconds": 15.3
+    },
+    {
+      "text": "As the sun dips, the city shifts. You hurry past dark, gaping alleyways. These narrow shortcuts become prime territory for thieves once the light fades. You definitely don't want to linger here alone after the shadows grow long.",
+      "mood": "dark",
+      "imagePrompt": "A narrow, shadowed Roman alleyway at dusk, lit by a single flickering oil lamp, with tall stone walls.",
+      "image": "long/roman-survive-a-week/9.png",
+      "audio": "audio/long/roman-survive-a-week/20.wav",
+      "voicedText": "As the sun dips, the city shifts. You hurry past dark, gaping alleyways. These narrow shortcuts become prime territory for thieves once the light fades. You definitely don't want to linger here alone after the shadows grow long.",
+      "seconds": 15.9
+    },
+    {
+      "text": "Navigating this gauntlet requires constant vigilance. You keep your belongings tucked close and your pace steady. In a city this packed, staying invisible is the secret to staying safe. You pick your path carefully, avoiding the darkest corners.",
+      "mood": "dark",
+      "image": "long/roman-survive-a-week/9.png",
+      "audio": "audio/long/roman-survive-a-week/21.wav",
+      "voicedText": "Navigating this gauntlet requires constant vigilance. You keep your belongings tucked close and your pace steady. In a city this packed, staying invisible is the secret to staying safe. You pick your path carefully, avoiding the darkest corners.",
+      "seconds": 15.6
+    },
+    {
+      "text": "As you turn a corner, the scent of charcoal hits you. In these crowded insulae, fire is a constant neighbor. Timber frames are everywhere, and people cook on open braziers inside their tiny, cramped wooden rooms.",
+      "mood": "warm",
+      "imagePrompt": "A cramped, dimly lit street in ancient Rome with timber-framed apartment buildings towering on both sides.",
+      "chapterTitle": "The Fire Risk",
+      "chapterNumber": 5,
+      "image": "long/roman-survive-a-week/10.png",
+      "audio": "audio/long/roman-survive-a-week/22.wav",
+      "voicedText": "As you turn a corner, the scent of charcoal hits you. In these crowded insulae, fire is a constant neighbor. Timber frames are everywhere, and people cook on open braziers inside their tiny, cramped wooden rooms.",
+      "seconds": 14.2
+    },
+    {
+      "text": "You notice the flickering orange glow through every window. It is terrifyingly easy for a single spark to jump. When one apartment catches, the flames often tear through the entire block before anyone can react.",
+      "mood": "warm",
+      "image": "long/roman-survive-a-week/10.png",
+      "audio": "audio/long/roman-survive-a-week/23.wav",
+      "voicedText": "You notice the flickering orange glow through every window. It is terrifyingly easy for a single spark to jump. When one apartment catches, the flames often tear through the entire block before anyone can react.",
+      "seconds": 13.6
+    },
+    {
+      "text": "The city lives in fear of the next great blaze. Most of the urban planning you see, with wider streets and strict codes, is just a reactive patch after a previous disaster wiped out a neighborhood.",
+      "mood": "cool",
+      "image": "long/roman-survive-a-week/10.png",
+      "audio": "audio/long/roman-survive-a-week/24.wav",
+      "voicedText": "The city lives in fear of the next great blaze. Most of the urban planning you see, with wider streets and strict codes, is just a reactive patch after a previous disaster wiped out a neighborhood.",
+      "seconds": 12.1
+    },
+    {
+      "text": "Suddenly, a group of men in uniform jogs past, carrying buckets and axes. These are the Vigiles. They are Rome’s organized night watch and fire brigade, rushing toward a plume of smoke rising in the distance.",
+      "mood": "night",
+      "imagePrompt": "Narrow, cobblestone alleyway at night with shadows cast by nearby flickering torches.",
+      "image": "long/roman-survive-a-week/11.png",
+      "audio": "audio/long/roman-survive-a-week/25.wav",
+      "voicedText": "Suddenly, a group of men in uniform jogs past, carrying buckets and axes. These are the Vigiles. They are Rome’s organized night watch and fire brigade, rushing toward a plume of smoke rising in the distance.",
+      "seconds": 14.3
+    },
+    {
+      "text": "They are your only hope if things go wrong. Watching them vanish into the dark, you realize that here, the line between a cozy hearth and total catastrophe is dangerously thin. You keep moving, faster now.",
+      "mood": "night",
+      "image": "long/roman-survive-a-week/11.png",
+      "audio": "audio/long/roman-survive-a-week/26.wav",
+      "voicedText": "They are your only hope if things go wrong. Watching them vanish into the dark, you realize that here, the line between a cozy hearth and total catastrophe is dangerously thin. You keep moving, faster now.",
+      "seconds": 13.7
+    },
+    {
+      "text": "By now, your clothes are thick with city grime. You seek relief at the local bathhouse. It is the beating heart of Roman life, where citizens scrub away the day’s filth in steam-filled rooms before lounging in tepid pools.",
+      "mood": "warm",
+      "imagePrompt": "A large, opulent stone bathhouse interior with high vaulted ceilings, marble columns, and shafts of sunlight illuminating rising steam",
+      "chapterTitle": "Health and Sanitation",
+      "chapterNumber": 6,
+      "image": "long/roman-survive-a-week/12.png",
+      "audio": "audio/long/roman-survive-a-week/27.wav",
+      "voicedText": "By now, your clothes are thick with city grime. You seek relief at the local bathhouse. It is the beating heart of Roman life, where citizens scrub away the day’s filth in steam-filled rooms before lounging in tepid pools.",
+      "seconds": 14.9
+    },
+    {
+      "text": "Hygiene here is a strange paradox. You are surrounded by masterful engineering and flowing water, yet disease ripples through the cramped, airless apartment blocks nearby. You drink carefully, knowing that one bad batch of water could be your undoing.",
+      "mood": "warm",
+      "image": "long/roman-survive-a-week/12.png",
+      "audio": "audio/long/roman-survive-a-week/28.wav",
+      "voicedText": "Hygiene here is a strange paradox. You are surrounded by masterful engineering and flowing water, yet disease ripples through the cramped, airless apartment blocks nearby. You drink carefully, knowing that one bad batch of water could be your undoing.",
+      "seconds": 15.9
+    },
+    {
+      "text": "When nature calls, you face the public latrine. It is a communal affair, just a long stone bench with holes carved over a running sewer. There is no privacy, and certainly no toilet paper to be found anywhere.",
+      "mood": "cool",
+      "imagePrompt": "A stone-lined public latrine with rows of open bench seating over a dark drainage channel",
+      "image": "long/roman-survive-a-week/13.png",
+      "audio": "audio/long/roman-survive-a-week/29.wav",
+      "voicedText": "When nature calls, you face the public latrine. It is a communal affair, just a long stone bench with holes carved over a running sewer. There is no privacy, and certainly no toilet paper to be found anywhere.",
+      "seconds": 13.5
+    },
+    {
+      "text": "Instead, you reach for the xylospongium—a sea sponge on a stick. It is shared by everyone, a chilling realization that makes you hope your immune system is stronger than the rumors of sickness suggest.",
+      "mood": "cool",
+      "image": "long/roman-survive-a-week/13.png",
+      "audio": "audio/long/roman-survive-a-week/30.wav",
+      "voicedText": "Instead, you reach for the xylospongium—a sea sponge on a stick. It is shared by everyone, a chilling realization that makes you hope your immune system is stronger than the rumors of sickness suggest.",
+      "seconds": 12.4
+    },
+    {
+      "text": "If you fall ill, medicine is a gamble. You might find a doctor using sensible herbal remedies, but just as likely, you will encounter a healer relying entirely on superstition or prayers to gods who seem very busy elsewhere.",
+      "mood": "dark",
+      "image": "long/roman-survive-a-week/13.png",
+      "audio": "audio/long/roman-survive-a-week/31.wav",
+      "voicedText": "If you fall ill, medicine is a gamble. You might find a doctor using sensible herbal remedies, but just as likely, you will encounter a healer relying entirely on superstition or prayers to gods who seem very busy elsewhere.",
+      "seconds": 14.7
+    },
+    {
+      "text": "So, you have survived your week. You are dusty, likely hungry, and perhaps a bit shaken. Looking out over the rooftops, you realize that survival here was never about skill alone. It was almost entirely about who you knew.",
+      "mood": "warm",
+      "imagePrompt": "A panoramic view of the Roman Forum at golden hour, with marble temples glowing in the fading light and smoke rising from distant hearths.",
+      "chapterTitle": "The Final Verdict",
+      "chapterNumber": 7,
+      "image": "long/roman-survive-a-week/14.png",
+      "audio": "audio/long/roman-survive-a-week/32.wav",
+      "voicedText": "So, you have survived your week. You are dusty, likely hungry, and perhaps a bit shaken. Looking out over the rooftops, you realize that survival here was never about skill alone. It was almost entirely about who you knew.",
+      "seconds": 14.4
+    },
+    {
+      "text": "Without a powerful patron to protect your interests, you were just another face in a crowd of a million people. The city was an engineering marvel, yet for the vulnerable, it remained a brutal, unforgiving grind.",
+      "mood": "warm",
+      "image": "long/roman-survive-a-week/14.png",
+      "audio": "audio/long/roman-survive-a-week/33.wav",
+      "voicedText": "Without a powerful patron to protect your interests, you were just another face in a crowd of a million people. The city was an engineering marvel, yet for the vulnerable, it remained a brutal, unforgiving grind.",
+      "seconds": 13.6
+    },
+    {
+      "text": "Life expectancy was shockingly low, and infant mortality rates were high enough to break your heart. You see that life here was fragile, dictated by the whim of nature, politics, and the city’s constant, ticking clock.",
+      "mood": "cool",
+      "image": "long/roman-survive-a-week/14.png",
+      "audio": "audio/long/roman-survive-a-week/34.wav",
+      "voicedText": "Life expectancy was shockingly low, and infant mortality rates were high enough to break your heart. You see that life here was fragile, dictated by the whim of nature, politics, and the city’s constant, ticking clock.",
+      "seconds": 14.2
+    },
+    {
+      "text": "As a modern visitor, you would struggle to adapt. We are used to comfort, safety, and silence. Here, those are luxuries that simply do not exist for the average person, no matter how much you wish they did.",
+      "mood": "cool",
+      "imagePrompt": "A quiet, narrow side street in Rome at night, illuminated by the faint glow of an oil lamp, shadows stretching against weathered brick walls.",
+      "image": "long/roman-survive-a-week/15.png",
+      "audio": "audio/long/roman-survive-a-week/35.wav",
+      "voicedText": "As a modern visitor, you would struggle to adapt. We are used to comfort, safety, and silence. Here, those are luxuries that simply do not exist for the average person, no matter how much you wish they did.",
+      "seconds": 13
+    },
+    {
+      "text": "You leave the city with a new appreciation for a hot shower and a locked door. Rome gave the world so much, but living through its daily chaos is a prize best left to the history books.",
+      "mood": "day",
+      "image": "long/roman-survive-a-week/15.png",
+      "audio": "audio/long/roman-survive-a-week/36.wav",
+      "voicedText": "You leave the city with a new appreciation for a hot shower and a locked door. Rome gave the world so much, but living through its daily chaos is a prize best left to the history books.",
+      "seconds": 11.8
+    },
+    {
+      "text": "So, you’ve survived a week, or at least you’ve avoided the plague and the fires. It’s a city of wonders, but maybe not the best place to retire. If you enjoyed this journey, hit subscribe and check out our next video on how to survive a medieval banquet.",
+      "mood": "day",
+      "imagePrompt": "Empty Roman Forum at dusk with long shadows stretching across stone ruins.",
+      "chapterTitle": "Wrap-up",
+      "chapterNumber": 0,
+      "image": "long/roman-survive-a-week/16.png",
+      "audio": "audio/long/roman-survive-a-week/37.wav",
+      "voicedText": "So, you’ve survived a week, or at least you’ve avoided the plague and the fires. It’s a city of wonders, but maybe not the best place to retire. If you enjoyed this journey, hit subscribe and check out our next video on how to survive a medieval banquet.",
+      "seconds": 15.1
+    }
+  ],
+  "claimsToVerify": [
+    "[Language and Currency] Latin was the lingua franca of Rome, while Greek was commonly used among the educated elite.",
+    "[Language and Currency] The Roman economy relied on copper, silver, and gold coinage.",
+    "[Language and Currency] Bartering was a common practice for daily trade in Rome.",
+    "[Language and Currency] Ancient Rome lacked modern banking systems and electronic payment methods.",
+    "[Finding a Bed] Most Roman residents lived in multi-story apartment buildings called insulae.",
+    "[Finding a Bed] Upper floors of insulae were cheaper, often built of wood, and prone to fire or collapse.",
+    "[Finding a Bed] Most Roman apartments lacked private plumbing and dedicated kitchens.",
+    "[Finding a Bed] Ancient Rome was known for being exceptionally noisy at night due to traffic restrictions during the day.",
+    "[The Culinary Gamble] Most poor Romans lacked home kitchens and relied on street food from thermopolia.",
+    "[The Culinary Gamble] Bread was the primary caloric staple of the ancient Roman diet.",
+    "[The Culinary Gamble] Garum was a fermented fish sauce added to almost every Roman dish.",
+    "[The Culinary Gamble] Roman public fountains were supplied by aqueducts, and lead was used for plumbing pipes.",
+    "[Walking the Gauntlet] Streets in Ancient Rome lacked sidewalks.",
+    "[Walking the Gauntlet] Heavy cargo wagons were banned from Roman streets during daylight hours.",
+    "[Walking the Gauntlet] Falling debris from high-rise buildings was a common hazard for Roman pedestrians.",
+    "[Walking the Gauntlet] Crime in Roman alleys was considered a significant risk after sunset.",
+    "[The Fire Risk] Open braziers were used for heating and cooking inside timber-framed insulae.",
+    "[The Fire Risk] Fires were a common and dangerous occurrence in Roman insulae.",
+    "[The Fire Risk] The Vigiles functioned as a combined night watch and fire brigade.",
+    "[The Fire Risk] Roman urban planning reforms were often reactive to major fire disasters.",
+    "[Health and Sanitation] Roman public bathhouses were centers of social life and hygiene.",
+    "[Health and Sanitation] Roman public latrines were communal, bench-style facilities.",
+    "[Health and Sanitation] The xylospongium was a sea sponge on a stick used for personal hygiene in Roman latrines.",
+    "[Health and Sanitation] Roman medicine was a mixture of herbalism and superstition.",
+    "[The Final Verdict] Survival in Ancient Rome depended on social status and patronage networks.",
+    "[The Final Verdict] Life expectancy in Ancient Rome was significantly lower than modern standards.",
+    "[The Final Verdict] Infant mortality rates in Ancient Rome were historically high.",
+    "[The Final Verdict] The city of Rome had a population of approximately one million people at its height."
+  ]
+}

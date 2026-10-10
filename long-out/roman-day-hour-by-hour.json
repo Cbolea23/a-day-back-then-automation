@@ -1,0 +1,418 @@
+{
+  "slug": "roman-day-hour-by-hour",
+  "title": "A Day in Ancient Rome: What Was Life Really Like?",
+  "titleOptions": [
+    "A Day in Ancient Rome: What Was Life Really Like?",
+    "24 Hours in Ancient Rome: An Ordinary Life",
+    "How Did Romans Actually Live? A Daily Routine"
+  ],
+  "thumbnailIdea": "A split composition showing a crowded, crumbling Roman apartment building next to a sunlit, bustling market stall.",
+  "hook": "A Day in Ancient Rome, Hour by Hour",
+  "channelName": "A Day Back Then",
+  "format": "long",
+  "targetMinutes": 11,
+  "scenes": [
+    {
+      "text": "You wake up to the sound of carts rattling over cobblestones long before the sun hits the horizon. The air smells like woodsmoke and stale oil. You’re in a cramped, dark apartment, and the city of Rome is already screaming to life around you. Ready to survive?",
+      "mood": "night",
+      "imagePrompt": "A narrow, dark Roman side street at pre-dawn with shadows cast by dim oil lamps.",
+      "chapterTitle": "Intro",
+      "chapterNumber": 0,
+      "image": "long/roman-day-hour-by-hour/1.png",
+      "audio": "audio/long/roman-day-hour-by-hour/1.wav",
+      "voicedText": "You wake up to the sound of carts rattling over cobblestones long before the sun hits the horizon. The air smells like woodsmoke and stale oil. You’re in a cramped, dark apartment, and the city of Rome is already screaming to life around you. Ready to survive?",
+      "seconds": 16.8
+    },
+    {
+      "text": "You stretch in the dim glow of dawn. Most Romans aren't living in marble villas; you are tucked away in a multi-story apartment block called an insula. It is cramped, and you only have one room to your name.",
+      "mood": "dark",
+      "imagePrompt": "A cramped, dimly lit Roman apartment interior made of brick and wood, showing a simple pallet bed and small windows with wooden shutters.",
+      "chapterTitle": "Sunrise in the Insulae",
+      "chapterNumber": 1,
+      "image": "long/roman-day-hour-by-hour/2.png",
+      "audio": "audio/long/roman-day-hour-by-hour/2.wav",
+      "voicedText": "You stretch in the dim glow of dawn. Most Romans aren't living in marble villas; you are tucked away in a multi-story apartment block called an insula. It is cramped, and you only have one room to your name.",
+      "seconds": 12.6
+    },
+    {
+      "text": "Look around. There is no kitchen here and certainly no running water. If you want a drink or to wash, you have to head down to the public fountain. Cooking inside is a massive risk to the building.",
+      "mood": "cool",
+      "image": "long/roman-day-hour-by-hour/2.png",
+      "audio": "audio/long/roman-day-hour-by-hour/3.wav",
+      "voicedText": "Look around. There is no kitchen here and certainly no running water. If you want a drink or to wash, you have to head down to the public fountain. Cooking inside is a massive risk to the building.",
+      "seconds": 11.9
+    },
+    {
+      "text": "You are on the fourth floor, which is significantly cheaper than the ground level. Living this high up is nerve-wracking because these wooden structures are notorious fire traps. If a blaze starts below, you have few options.",
+      "mood": "cool",
+      "image": "long/roman-day-hour-by-hour/2.png",
+      "audio": "audio/long/roman-day-hour-by-hour/4.wav",
+      "voicedText": "You are on the fourth floor, which is significantly cheaper than the ground level. Living this high up is nerve-wracking because these wooden structures are notorious fire traps. If a blaze starts below, you have few options.",
+      "seconds": 13
+    },
+    {
+      "text": "The walls are thin, and the ceiling creaks under the weight of the floor above. You can hear your neighbors shouting and the constant scrape of furniture. Privacy is a luxury you simply cannot afford in the city.",
+      "mood": "cool",
+      "image": "long/roman-day-hour-by-hour/2.png",
+      "audio": "audio/long/roman-day-hour-by-hour/5.wav",
+      "voicedText": "The walls are thin, and the ceiling creaks under the weight of the floor above. You can hear your neighbors shouting and the constant scrape of furniture. Privacy is a luxury you simply cannot afford in the city.",
+      "seconds": 13
+    },
+    {
+      "text": "You peer out the window toward the street below. The narrow alley is already choking with wooden carts and the shouting of vendors. Rome doesn't sleep, and now that you are awake, you have to brave the chaos outside.",
+      "mood": "day",
+      "imagePrompt": "A narrow, shadowed Roman city street seen from a high window, with tall, stacked brick apartment buildings and a view of a busy cobblestone alley below.",
+      "image": "long/roman-day-hour-by-hour/3.png",
+      "audio": "audio/long/roman-day-hour-by-hour/6.wav",
+      "voicedText": "You peer out the window toward the street below. The narrow alley is already choking with wooden carts and the shouting of vendors. Rome doesn't sleep, and now that you are awake, you have to brave the chaos outside.",
+      "seconds": 13.2
+    },
+    {
+      "text": "You head down the rickety stairs, dodging a neighbor hauling water. Your stomach growls, reminding you that breakfast, or ientaculum, is the first order of business. You won’t be cooking at home; the fire risk in these wooden apartments is simply too high.",
+      "mood": "warm",
+      "imagePrompt": "A narrow, crowded Roman apartment stairwell with crumbling plaster walls and wooden steps.",
+      "chapterTitle": "Breakfast on the Move",
+      "chapterNumber": 2,
+      "image": "long/roman-day-hour-by-hour/4.png",
+      "audio": "audio/long/roman-day-hour-by-hour/7.wav",
+      "voicedText": "You head down the rickety stairs, dodging a neighbor hauling water. Your stomach growls, reminding you that breakfast, or ientaculum, is the first order of business. You won’t be cooking at home; the fire risk in these wooden apartments is simply too high.",
+      "seconds": 16.4
+    },
+    {
+      "text": "You emerge into the street, where the air smells of dust and baking grain. A nearby vendor shoves a rough piece of bread into your hand. It is simple, humble fare, but it is exactly what you need to start the long day.",
+      "mood": "warm",
+      "image": "long/roman-day-hour-by-hour/4.png",
+      "audio": "audio/long/roman-day-hour-by-hour/8.wav",
+      "voicedText": "You emerge into the street, where the air smells of dust and baking grain. A nearby vendor shoves a rough piece of bread into your hand. It is simple, humble fare, but it is exactly what you need to start the long day.",
+      "seconds": 13.8
+    },
+    {
+      "text": "The bread is dry, so you watch as a fellow traveler dips his hunk into a cup of sour wine to soften it. You follow suit, enjoying the sharp, fermented bite. It is not exactly a feast, but it is filling enough.",
+      "mood": "warm",
+      "image": "long/roman-day-hour-by-hour/4.png",
+      "audio": "audio/long/roman-day-hour-by-hour/9.wav",
+      "voicedText": "The bread is dry, so you watch as a fellow traveler dips his hunk into a cup of sour wine to soften it. You follow suit, enjoying the sharp, fermented bite. It is not exactly a feast, but it is filling enough.",
+      "seconds": 13.4
+    },
+    {
+      "text": "The vendor also offers a handful of salty olives and a small wedge of firm cheese. You grab them quickly, tossing a coin toward his wooden stall. You keep moving, eating as you weave through the growing throng of city dwellers.",
+      "mood": "day",
+      "imagePrompt": "A bustling Roman street scene with stone paving and a small wooden food stall selling bread and jars.",
+      "image": "long/roman-day-hour-by-hour/5.png",
+      "audio": "audio/long/roman-day-hour-by-hour/10.wav",
+      "voicedText": "The vendor also offers a handful of salty olives and a small wedge of firm cheese. You grab them quickly, tossing a coin toward his wooden stall. You keep moving, eating as you weave through the growing throng of city dwellers.",
+      "seconds": 13.6
+    },
+    {
+      "text": "Eating on the move is the Roman way. There is no time to sit when the city is already humming with activity. You chew your cheese while navigating the ruts in the road, fully prepared for whatever this morning brings.",
+      "mood": "day",
+      "image": "long/roman-day-hour-by-hour/5.png",
+      "audio": "audio/long/roman-day-hour-by-hour/11.wav",
+      "voicedText": "Eating on the move is the Roman way. There is no time to sit when the city is already humming with activity. You chew your cheese while navigating the ruts in the road, fully prepared for whatever this morning brings.",
+      "seconds": 12.7
+    },
+    {
+      "text": "The streets are a gauntlet. You dodge a mule cart hauling laundry, but notice the silence of the heavy wagons. By law, they only move supplies at night. Now, the roads belong to the pedestrians, and it is absolute chaos.",
+      "mood": "day",
+      "imagePrompt": "Narrow, crowded Roman street with multi-story apartment buildings on both sides, morning sunlight filtering down.",
+      "chapterTitle": "The Morning Rush",
+      "chapterNumber": 3,
+      "image": "long/roman-day-hour-by-hour/6.png",
+      "audio": "audio/long/roman-day-hour-by-hour/12.wav",
+      "voicedText": "The streets are a gauntlet. You dodge a mule cart hauling laundry, but notice the silence of the heavy wagons. By law, they only move supplies at night. Now, the roads belong to the pedestrians, and it is absolute chaos.",
+      "seconds": 14.8
+    },
+    {
+      "text": "You press yourself against a damp brick wall to let a wealthy Roman pass. He is flanked by a dozen clients, all scurrying along to perform their morning salutatio. They are hurrying to his house to offer their dutiful respect.",
+      "mood": "day",
+      "image": "long/roman-day-hour-by-hour/6.png",
+      "audio": "audio/long/roman-day-hour-by-hour/13.wav",
+      "voicedText": "You press yourself against a damp brick wall to let a wealthy Roman pass. He is flanked by a dozen clients, all scurrying along to perform their morning salutatio. They are hurrying to his house to offer their dutiful respect.",
+      "seconds": 14.1
+    },
+    {
+      "text": "It is a rigid dance of power. These clients rely on their patron for food or legal favors. In exchange, they must show up at his doorstep at dawn. If they are late, they lose their spot in his inner circle.",
+      "mood": "day",
+      "image": "long/roman-day-hour-by-hour/6.png",
+      "audio": "audio/long/roman-day-hour-by-hour/14.wav",
+      "voicedText": "It is a rigid dance of power. These clients rely on their patron for food or legal favors. In exchange, they must show up at his doorstep at dawn. If they are late, they lose their spot in his inner circle.",
+      "seconds": 12.9
+    },
+    {
+      "text": "The ground beneath your sandals is uneven and slick. These streets were never designed for this many people. You weave through the crushing crowd, dodging elbows and shouting merchants as the city reaches its frantic, boiling peak before the heat sets in.",
+      "mood": "day",
+      "imagePrompt": "A busy Roman intersection with stone paving, crowded with people in tunics, marketplace atmosphere, morning light.",
+      "image": "long/roman-day-hour-by-hour/7.png",
+      "audio": "audio/long/roman-day-hour-by-hour/15.wav",
+      "voicedText": "The ground beneath your sandals is uneven and slick. These streets were never designed for this many people. You weave through the crushing crowd, dodging elbows and shouting merchants as the city reaches its frantic, boiling peak before the heat sets in.",
+      "seconds": 16.2
+    },
+    {
+      "text": "There is no room to stand still. If you stop moving, you are swept away by the tide of bodies. Everyone has somewhere to be, someone to please, or something to sell. The morning rush in Rome waits for no one.",
+      "mood": "day",
+      "image": "long/roman-day-hour-by-hour/7.png",
+      "audio": "audio/long/roman-day-hour-by-hour/16.wav",
+      "voicedText": "There is no room to stand still. If you stop moving, you are swept away by the tide of bodies. Everyone has somewhere to be, someone to please, or something to sell. The morning rush in Rome waits for no one.",
+      "seconds": 13.7
+    },
+    {
+      "text": "By mid-morning, the chaos shifts. You find yourself facing the open fronts of small workshops. Merchants are already busy at their counters, displaying jars of oil or hand-woven fabrics. The city is a vast, interconnected hive of commerce.",
+      "mood": "day",
+      "imagePrompt": "A narrow Roman street lined with small stone shop fronts, wooden counters open to the sidewalk, terracotta pottery on display.",
+      "chapterTitle": "Earning a Denarius",
+      "chapterNumber": 4,
+      "image": "long/roman-day-hour-by-hour/8.png",
+      "audio": "audio/long/roman-day-hour-by-hour/17.wav",
+      "voicedText": "By mid-morning, the chaos shifts. You find yourself facing the open fronts of small workshops. Merchants are already busy at their counters, displaying jars of oil or hand-woven fabrics. The city is a vast, interconnected hive of commerce.",
+      "seconds": 15.9
+    },
+    {
+      "text": "You notice that the line between master and servant is blurry here. Free laborers and enslaved people often work side-by-side, sanding wood or mixing mortar. They share the same cramped quarters, sweating under the Mediterranean sun to keep Rome fed.",
+      "mood": "day",
+      "image": "long/roman-day-hour-by-hour/8.png",
+      "audio": "audio/long/roman-day-hour-by-hour/18.wav",
+      "voicedText": "You notice that the line between master and servant is blurry here. Free laborers and enslaved people often work side-by-side, sanding wood or mixing mortar. They share the same cramped quarters, sweating under the Mediterranean sun to keep Rome fed.",
+      "seconds": 16.2
+    },
+    {
+      "text": "Look closely at the shop signs. You might see carvings of hammers or looms. These aren't just decorations; they represent the guilds. These organizations group together tradespeople to set standards and provide a sense of community in a sprawling city.",
+      "mood": "day",
+      "image": "long/roman-day-hour-by-hour/8.png",
+      "audio": "audio/long/roman-day-hour-by-hour/19.wav",
+      "voicedText": "Look closely at the shop signs. You might see carvings of hammers or looms. These aren't just decorations; they represent the guilds. These organizations group together tradespeople to set standards and provide a sense of community in a sprawling city.",
+      "seconds": 15.8
+    },
+    {
+      "text": "A blacksmith hammers glowing iron near a busy intersection. The rhythmic ringing echoes off the stone walls. Whether you are selling wine, repairing sandals, or hauling heavy stones, everyone seems to be chasing a few coins to pay for their evening meal.",
+      "mood": "warm",
+      "imagePrompt": "A small, bustling blacksmith workshop with an open forge, iron tools hanging on stone walls, sunlight streaming through an entryway.",
+      "image": "long/roman-day-hour-by-hour/9.png",
+      "audio": "audio/long/roman-day-hour-by-hour/20.wav",
+      "voicedText": "A blacksmith hammers glowing iron near a busy intersection. The rhythmic ringing echoes off the stone walls. Whether you are selling wine, repairing sandals, or hauling heavy stones, everyone seems to be chasing a few coins to pay for their evening meal.",
+      "seconds": 16
+    },
+    {
+      "text": "It is honest, gritty work. You feel the pulse of the economy in every handshake and coin exchange. Without these countless small hands, the massive heart of the Empire would simply grind to a halt before the sun even reaches its peak.",
+      "mood": "warm",
+      "image": "long/roman-day-hour-by-hour/9.png",
+      "audio": "audio/long/roman-day-hour-by-hour/21.wav",
+      "voicedText": "It is honest, gritty work. You feel the pulse of the economy in every handshake and coin exchange. Without these countless small hands, the massive heart of the Empire would simply grind to a halt before the sun even reaches its peak.",
+      "seconds": 15.1
+    },
+    {
+      "text": "By now, your throat feels parched from the dust of the streets. You head toward the nearest street corner. Here, a stone fountain bubbles with fresh, cool water, fed by the massive aqueducts that snake across the horizon. It is a constant, generous gift to the city.",
+      "mood": "warm",
+      "imagePrompt": "A stone fountain with water flowing from a carved lion head into a basin on a bustling Roman street corner.",
+      "chapterTitle": "Water and Waste",
+      "chapterNumber": 5,
+      "image": "long/roman-day-hour-by-hour/10.png",
+      "audio": "audio/long/roman-day-hour-by-hour/22.wav",
+      "voicedText": "By now, your throat feels parched from the dust of the streets. You head toward the nearest street corner. Here, a stone fountain bubbles with fresh, cool water, fed by the massive aqueducts that snake across the horizon. It is a constant, generous gift to the city.",
+      "seconds": 17.3
+    },
+    {
+      "text": "You cup your hands and drink deeply. This infrastructure is the true marvel of Rome. Because the water never stops flowing, it washes away the filth of the city, keeping the major drains moving even as the population swells toward a million.",
+      "mood": "warm",
+      "image": "long/roman-day-hour-by-hour/10.png",
+      "audio": "audio/long/roman-day-hour-by-hour/23.wav",
+      "voicedText": "You cup your hands and drink deeply. This infrastructure is the true marvel of Rome. Because the water never stops flowing, it washes away the filth of the city, keeping the major drains moving even as the population swells toward a million.",
+      "seconds": 15.5
+    },
+    {
+      "text": "Nature calls, and you face the Roman reality. Privacy is a luxury you cannot afford. You duck into a public latrine, where rows of stone benches sit side by side. It is loud, communal, and frankly, a bit uncomfortable for those of us used to solitary habits.",
+      "mood": "warm",
+      "imagePrompt": "A dimly lit, stone-walled public latrine with a long bench featuring keyhole-shaped openings over a sewer channel.",
+      "image": "long/roman-day-hour-by-hour/11.png",
+      "audio": "audio/long/roman-day-hour-by-hour/24.wav",
+      "voicedText": "Nature calls, and you face the Roman reality. Privacy is a luxury you cannot afford. You duck into a public latrine, where rows of stone benches sit side by side. It is loud, communal, and frankly, a bit uncomfortable for those of us used to solitary habits.",
+      "seconds": 17.5
+    },
+    {
+      "text": "There are no doors here. You sit among strangers, chatting about the day’s grain prices as you go about your business. It is a social affair, though hygiene standards are certainly different from what you might expect in your own time.",
+      "mood": "warm",
+      "image": "long/roman-day-hour-by-hour/11.png",
+      "audio": "audio/long/roman-day-hour-by-hour/25.wav",
+      "voicedText": "There are no doors here. You sit among strangers, chatting about the day’s grain prices as you go about your business. It is a social affair, though hygiene standards are certainly different from what you might expect in your own time.",
+      "seconds": 12.7
+    },
+    {
+      "text": "Managing waste in such a cramped city is a constant, grueling challenge. While the grand sewers carry much away, the side streets still feel the weight of a million lives. You step back outside, relieved to be back in the open air.",
+      "mood": "warm",
+      "image": "long/roman-day-hour-by-hour/11.png",
+      "audio": "audio/long/roman-day-hour-by-hour/26.wav",
+      "voicedText": "Managing waste in such a cramped city is a constant, grueling challenge. While the grand sewers carry much away, the side streets still feel the weight of a million lives. You step back outside, relieved to be back in the open air.",
+      "seconds": 14.9
+    },
+    {
+      "text": "The sun begins its slow descent, signaling the best part of your day. You head toward the local bathhouse, a massive brick structure that dominates the neighborhood. For a tiny copper fee, the doors swing open to everyone, rich or poor.",
+      "mood": "warm",
+      "imagePrompt": "The exterior of a sprawling Roman bathhouse complex built from red brick and travertine stone, bathed in the golden light of the late afternoon sun.",
+      "chapterTitle": "The Afternoon Bath",
+      "chapterNumber": 6,
+      "image": "long/roman-day-hour-by-hour/12.png",
+      "audio": "audio/long/roman-day-hour-by-hour/27.wav",
+      "voicedText": "The sun begins its slow descent, signaling the best part of your day. You head toward the local bathhouse, a massive brick structure that dominates the neighborhood. For a tiny copper fee, the doors swing open to everyone, rich or poor.",
+      "seconds": 15.2
+    },
+    {
+      "text": "Inside, the noise is incredible. You hear the echoes of shouting, laughter, and the splashing of water. It is not just a place to get clean; it is the city’s favorite social club, library, and gymnasium all rolled into one.",
+      "mood": "warm",
+      "image": "long/roman-day-hour-by-hour/12.png",
+      "audio": "audio/long/roman-day-hour-by-hour/28.wav",
+      "voicedText": "Inside, the noise is incredible. You hear the echoes of shouting, laughter, and the splashing of water. It is not just a place to get clean; it is the city’s favorite social club, library, and gymnasium all rolled into one.",
+      "seconds": 14.8
+    },
+    {
+      "text": "You start your routine by moving through the rooms. First, the tepidarium provides a gentle, warm transition. It eases your muscles before you head toward the caldarium, where the air is thick with steam and the heat is intense.",
+      "mood": "warm",
+      "imagePrompt": "Interior of a Roman bathhouse showing high vaulted ceilings, marble floors, and decorative mosaic tiles with steam rising from heated water pools.",
+      "image": "long/roman-day-hour-by-hour/13.png",
+      "audio": "audio/long/roman-day-hour-by-hour/29.wav",
+      "voicedText": "You start your routine by moving through the rooms. First, the tepidarium provides a gentle, warm transition. It eases your muscles before you head toward the caldarium, where the air is thick with steam and the heat is intense.",
+      "seconds": 15
+    },
+    {
+      "text": "The heat draws out the grime of the day. You scrub your skin clean, enjoying the luxury of the steam. It is a rare moment of comfort in a city that rarely offers you a chance to truly sit and relax.",
+      "mood": "warm",
+      "image": "long/roman-day-hour-by-hour/13.png",
+      "audio": "audio/long/roman-day-hour-by-hour/30.wav",
+      "voicedText": "The heat draws out the grime of the day. You scrub your skin clean, enjoying the luxury of the steam. It is a rare moment of comfort in a city that rarely offers you a chance to truly sit and relax.",
+      "seconds": 12.9
+    },
+    {
+      "text": "Finally, you head to the frigidarium to plunge into the cold water. It is a sharp, bracing shock that leaves you feeling refreshed and awake. You emerge feeling like a new person, ready to tackle whatever the evening brings next.",
+      "mood": "cool",
+      "image": "long/roman-day-hour-by-hour/13.png",
+      "audio": "audio/long/roman-day-hour-by-hour/31.wav",
+      "voicedText": "Finally, you head to the frigidarium to plunge into the cold water. It is a sharp, bracing shock that leaves you feeling refreshed and awake. You emerge feeling like a new person, ready to tackle whatever the evening brings next.",
+      "seconds": 14.2
+    },
+    {
+      "text": "The sun dips low, painting the city in warm, amber light. After your refreshing bath, your stomach begins to growl. It is time for the cena, the main meal of the day, and the most anticipated moment for every Roman citizen.",
+      "mood": "warm",
+      "imagePrompt": "A narrow Roman street at dusk with terracotta rooftops and the silhouette of distant arches against a golden sky.",
+      "chapterTitle": "Dinner: Cena",
+      "chapterNumber": 7,
+      "image": "long/roman-day-hour-by-hour/14.png",
+      "audio": "audio/long/roman-day-hour-by-hour/32.wav",
+      "voicedText": "The sun dips low, painting the city in warm, amber light. After your refreshing bath, your stomach begins to growl. It is time for the cena, the main meal of the day, and the most anticipated moment for every Roman citizen.",
+      "seconds": 14.7
+    },
+    {
+      "text": "If you are poor, your dinner is simple. You likely rely on the annona, the state-provided grain dole. You sit on a stool or eat standing up, perhaps enjoying a bowl of pottage or some bread dipped in cheap wine.",
+      "mood": "warm",
+      "image": "long/roman-day-hour-by-hour/14.png",
+      "audio": "audio/long/roman-day-hour-by-hour/33.wav",
+      "voicedText": "If you are poor, your dinner is simple. You likely rely on the annona, the state-provided grain dole. You sit on a stool or eat standing up, perhaps enjoying a bowl of pottage or some bread dipped in cheap wine.",
+      "seconds": 13.2
+    },
+    {
+      "text": "The mood shifts as you move into the wealthier districts. Here, the experience is entirely different. For the elite, dinner is a grand social theater, meticulously planned to impress guests and display the host's refined status and vast wealth.",
+      "mood": "warm",
+      "imagePrompt": "An ornate Roman dining room with mosaic floors and a stone-carved basin, lit by the flickering glow of oil lamps.",
+      "image": "long/roman-day-hour-by-hour/15.png",
+      "audio": "audio/long/roman-day-hour-by-hour/34.wav",
+      "voicedText": "The mood shifts as you move into the wealthier districts. Here, the experience is entirely different. For the elite, dinner is a grand social theater, meticulously planned to impress guests and display the host's refined status and vast wealth.",
+      "seconds": 15.9
+    },
+    {
+      "text": "Wealthy Romans do not sit at a table. Instead, they recline on plush couches arranged in a U-shape. They eat with their fingers, often while servants move quietly around them to refill cups and offer various exotic delicacies.",
+      "mood": "warm",
+      "image": "long/roman-day-hour-by-hour/15.png",
+      "audio": "audio/long/roman-day-hour-by-hour/35.wav",
+      "voicedText": "Wealthy Romans do not sit at a table. Instead, they recline on plush couches arranged in a U-shape. They eat with their fingers, often while servants move quietly around them to refill cups and offer various exotic delicacies.",
+      "seconds": 15.4
+    },
+    {
+      "text": "Whether you are eating a meager bowl of porridge in a cramped apartment or reclining on a velvet couch, the cena brings the city to a collective pause. Rome finally slows down as the stars emerge over the skyline.",
+      "mood": "dark",
+      "image": "long/roman-day-hour-by-hour/15.png",
+      "audio": "audio/long/roman-day-hour-by-hour/36.wav",
+      "voicedText": "Whether you are eating a meager bowl of porridge in a cramped apartment or reclining on a velvet couch, the cena brings the city to a collective pause. Rome finally slows down as the stars emerge over the skyline.",
+      "seconds": 13.6
+    },
+    {
+      "text": "The sun dips below the horizon, and Rome plunges into a heavy, absolute darkness. Without streetlights, the city becomes a labyrinth of shadows. You quickly realize that venturing out tonight is a game of chance you probably shouldn't play.",
+      "mood": "dark",
+      "imagePrompt": "Narrow, cobblestone Roman alleyway at twilight, shadows stretching across terracotta walls, no people.",
+      "chapterTitle": "Night in the Eternal City",
+      "chapterNumber": 8,
+      "image": "long/roman-day-hour-by-hour/16.png",
+      "audio": "audio/long/roman-day-hour-by-hour/37.wav",
+      "voicedText": "The sun dips below the horizon, and Rome plunges into a heavy, absolute darkness. Without streetlights, the city becomes a labyrinth of shadows. You quickly realize that venturing out tonight is a game of chance you probably shouldn't play.",
+      "seconds": 15.2
+    },
+    {
+      "text": "Most citizens retreat to their cramped rooms early. They bolt their doors, hoping to shut out the chaos outside. The streets belong to the bold, the desperate, and the unlucky. It is a time for staying put behind locked wood.",
+      "mood": "dark",
+      "image": "long/roman-day-hour-by-hour/16.png",
+      "audio": "audio/long/roman-day-hour-by-hour/38.wav",
+      "voicedText": "Most citizens retreat to their cramped rooms early. They bolt their doors, hoping to shut out the chaos outside. The streets belong to the bold, the desperate, and the unlucky. It is a time for staying put behind locked wood.",
+      "seconds": 14.3
+    },
+    {
+      "text": "As the hours crawl forward, the city doesn't sleep. Instead, it grows rowdier. The silence is broken by the clatter of heavy carts, which were banned from moving during the bright, crowded day. The air vibrates with their relentless, thundering wheels.",
+      "mood": "dark",
+      "imagePrompt": "Empty Roman street at night, silhouettes of stone buildings under a starlit sky, no people.",
+      "image": "long/roman-day-hour-by-hour/17.png",
+      "audio": "audio/long/roman-day-hour-by-hour/39.wav",
+      "voicedText": "As the hours crawl forward, the city doesn't sleep. Instead, it grows rowdier. The silence is broken by the clatter of heavy carts, which were banned from moving during the bright, crowded day. The air vibrates with their relentless, thundering wheels.",
+      "seconds": 16.1
+    },
+    {
+      "text": "Distant shouts drift through the thin walls of your apartment. Arguments flare in the darkness, and the occasional scuffle echoes off the stone facades. It is an unpredictable, dangerous time, far removed from the orderly bustle of the morning markets.",
+      "mood": "dark",
+      "image": "long/roman-day-hour-by-hour/17.png",
+      "audio": "audio/long/roman-day-hour-by-hour/40.wav",
+      "voicedText": "Distant shouts drift through the thin walls of your apartment. Arguments flare in the darkness, and the occasional scuffle echoes off the stone facades. It is an unpredictable, dangerous time, far removed from the orderly bustle of the morning markets.",
+      "seconds": 16.3
+    },
+    {
+      "text": "You pull your thin blanket tight. Rome is a beast that never fully rests, but for now, the walls are your only shield. You listen to the city’s restless pulse, waiting for the sun to eventually break the long, uncertain gloom.",
+      "mood": "dark",
+      "image": "long/roman-day-hour-by-hour/17.png",
+      "audio": "audio/long/roman-day-hour-by-hour/41.wav",
+      "voicedText": "You pull your thin blanket tight. Rome is a beast that never fully rests, but for now, the walls are your only shield. You listen to the city’s restless pulse, waiting for the sun to eventually break the long, uncertain gloom.",
+      "seconds": 15.3
+    },
+    {
+      "text": "From the noise of the insula to the steam of the baths, Rome was a city of stark contrasts and endless energy. If you enjoyed this journey back in time, hit subscribe for more history. Next, find out what happened when Roman plumbing actually broke.",
+      "mood": "dark",
+      "imagePrompt": "An empty Roman forum illuminated only by moonlight and a few flickering torches.",
+      "chapterTitle": "Wrap-up",
+      "chapterNumber": 0,
+      "image": "long/roman-day-hour-by-hour/18.png",
+      "audio": "audio/long/roman-day-hour-by-hour/42.wav",
+      "voicedText": "From the noise of the insula to the steam of the baths, Rome was a city of stark contrasts and endless energy. If you enjoyed this journey back in time, hit subscribe for more history. Next, find out what happened when Roman plumbing actually broke.",
+      "seconds": 15.6
+    }
+  ],
+  "claimsToVerify": [
+    "[Sunrise in the Insulae] Most Romans lived in multi-story apartment blocks called insulae.",
+    "[Sunrise in the Insulae] Apartments were mostly one or two rooms without running water or kitchens.",
+    "[Sunrise in the Insulae] Top floors were cheaper and more dangerous due to fire risks.",
+    "[Breakfast on the Move] Breakfast was known as ientaculum.",
+    "[Breakfast on the Move] Most commoners in Rome avoided cooking at home due to fire risks.",
+    "[Breakfast on the Move] Common Roman breakfast foods included bread, olives, cheese, and sometimes wine.",
+    "[The Morning Rush] Heavy cart traffic was banned during the day in Rome.",
+    "[The Morning Rush] The 'salutatio' was a morning ritual where clients visited wealthy patrons.",
+    "[The Morning Rush] Roman streets were narrow and unpaved.",
+    "[Earning a Denarius] Romans worked in small workshops open to the street.",
+    "[Earning a Denarius] Guilds (collegia) organized various trades and crafts in Rome.",
+    "[Earning a Denarius] Slaves and free laborers often worked side-by-side in Roman industries.",
+    "[Water and Waste] Rome had a constant supply of running water from aqueducts via public fountains.",
+    "[Water and Waste] Public latrines in Rome were communal, lacked privacy, and were used for social interaction.",
+    "[Water and Waste] Waste disposal in ancient Rome was a persistent challenge due to the city's high density.",
+    "[The Afternoon Bath] Roman baths were open to almost everyone for a very small fee.",
+    "[The Afternoon Bath] The routine involved a frigidarium, tepidarium, and caldarium.",
+    "[The Afternoon Bath] Baths functioned as gyms, libraries, and social clubs.",
+    "[Dinner: Cena] The evening meal was called the cena.",
+    "[Dinner: Cena] Poor citizens relied on the annona, a grain dole provided by the state.",
+    "[Dinner: Cena] Wealthy Romans reclined on couches during meals.",
+    "[Dinner: Cena] The poor generally ate sitting or standing.",
+    "[Night in the Eternal City] Rome had no public street lighting.",
+    "[Night in the Eternal City] Night travel in Rome was considered dangerous.",
+    "[Night in the Eternal City] Heavy carts were restricted from moving during the day in Rome.",
+    "[Night in the Eternal City] The city grew louder and rowdier at night as a result of the cart restrictions."
+  ]
+}

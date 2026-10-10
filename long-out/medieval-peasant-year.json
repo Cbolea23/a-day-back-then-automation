@@ -1,0 +1,248 @@
+{
+  "slug": "medieval-peasant-year",
+  "title": "A Year in the Life of a Medieval Peasant",
+  "titleOptions": [
+    "A Year in the Life of a Medieval Peasant",
+    "What Was Life Really Like for a Medieval Peasant?",
+    "Surviving the Seasons: The Medieval Peasant's Year"
+  ],
+  "thumbnailIdea": "A split composition showing a peasant working a field in spring and warming by a hearth in winter, with a rustic thatched cottage in the background.",
+  "hook": "A Year in the Life of a Medieval Peasant",
+  "channelName": "A Day Back Then",
+  "format": "long",
+  "targetMinutes": 11,
+  "scenes": [
+    {
+      "text": "You wake up before dawn to the sound of livestock breathing in the corner of your one-room cottage. The air is thick with woodsmoke and damp earth. You don’t own the land you farm, and tomorrow is tax day. Your survival depends entirely on the rhythm of the sun.",
+      "mood": "dark",
+      "imagePrompt": "The interior of a dim, thatched-roof cottage with stone walls and a small fire burning in the center of the dirt floor.",
+      "chapterTitle": "Intro",
+      "chapterNumber": 0
+    },
+    {
+      "text": "Outside, the winter mud finally loosens, but relief is still months away. Spring brings the backbreaking task of turning the earth. You step onto the vast open fields of your lord’s manor, where long strips of soil wait.",
+      "mood": "cool",
+      "imagePrompt": "Wide shot of medieval European open fields in early spring, damp muddy soil with long narrow plowed strips, rolling misty hills under overcast skies, small village in distant background, no people.",
+      "chapterTitle": "Spring: The Season of Hunger",
+      "chapterNumber": 1
+    },
+    {
+      "text": "To cut through the heavy cold dirt, you rely on a sturdy plow tipped with iron. It takes a team of slow, steady oxen to pull it. Every step forward demands all your strength just to keep it straight.",
+      "mood": "day"
+    },
+    {
+      "text": "You do not farm a tidy private plot. Under the manor system, your family works scattered strips spread across common land. What you grow here must feed your household and satisfy the lord’s required share.",
+      "mood": "day"
+    },
+    {
+      "text": "As your muscles ache, your stomach rumbles. This is late spring, the start of the dreaded hungry gap. The grain saved from last autumn is almost gone, while the new crops are still tiny green sprouts.",
+      "mood": "dark",
+      "imagePrompt": "Interior of a dimly lit medieval timber storeroom, empty burlap sacks and sparse wooden barrels, faint sunlight streaming through cracks in wall, dust motes in air, no people."
+    },
+    {
+      "text": "You stretch every meal with wild plants, roots, or thin pottage. Watching the sky, you pray a late frost does not ruin the tender seeds. Hunger is quiet, persistent, and entirely normal this time of year.",
+      "mood": "cool"
+    },
+    {
+      "text": "The sun climbs higher, and the work shifts. Now, you head into the fields with a small hoe. Weeding is back-breaking, tedious work, but you must ensure the wheat and barley are not choked out before the heat turns intense.",
+      "mood": "day",
+      "imagePrompt": "A wide, rolling medieval landscape of green agricultural fields under a bright, high sun with distant forest treelines.",
+      "chapterTitle": "Summer: Labor and The Church",
+      "chapterNumber": 2
+    },
+    {
+      "text": "You also spend days shearing sheep. The wool is thick and matted, a task requiring steady hands to avoid nipping the animals. This fleece is essential for your village to trade or to weave into your own simple garments.",
+      "mood": "day"
+    },
+    {
+      "text": "Your muscles ache, but relief arrives through the Church. The calendar is a series of holy days, or holidays. These mandatory breaks are the only times you set down your tools, gathering in the village square to rest.",
+      "mood": "warm"
+    },
+    {
+      "text": "The local parish church is the heart of your world. It is the only stone building you know, a grand space where everyone gathers. You meet neighbors, hear news, and feel the pulse of the community here.",
+      "mood": "day",
+      "imagePrompt": "A modest, weathered stone parish church with a thatched roof, surrounded by open dirt ground and a wooden fence."
+    },
+    {
+      "text": "After the service, the village lingers. You share gossip and watch children play. For a few brief hours, the crushing weight of the harvest countdown is forgotten, replaced by the simple comfort of belonging to your small, tight-knit village.",
+      "mood": "warm"
+    },
+    {
+      "text": "The idyll ends as the sky turns a bruise-colored gray. You know the rains are coming, and the grain must be under cover before the storm hits. Every soul in the village is needed for the final sprint.",
+      "mood": "cool",
+      "imagePrompt": "A wide, golden wheat field under a threatening, stormy sky with dark, heavy clouds rolling in over the horizon.",
+      "chapterTitle": "Harvest: The Final Race",
+      "chapterNumber": 3
+    },
+    {
+      "text": "You grab your iron sickle. There is no time to waste. Men, women, and children scatter across the strips of land. The rhythm is relentless—bend, grasp, slice, and bind. Your back aches, but you cannot afford to pause.",
+      "mood": "day"
+    },
+    {
+      "text": "The sound of metal against stalk fills the air, a rhythmic scraping that vibrates in your chest. You move in unison with your neighbors, moving down the field until the golden stalks are shorn close to the earth.",
+      "mood": "day"
+    },
+    {
+      "text": "Behind you, the carts sit waiting. You pile the bundles high, knowing the lord’s portion must be set aside first. It is a heavy tax, but the rest will stay here to keep you fed through the long winter.",
+      "mood": "day",
+      "imagePrompt": "A wooden cart standing on a dirt path next to a harvested field, loaded with bundles of wheat stalks."
+    },
+    {
+      "text": "As the first cold drop of rain hits your nose, you heave the final sheaf onto the wagon. You are exhausted, dirty, and hungry, but as the grain vanishes into the barn, you feel a profound sense of relief.",
+      "mood": "cool"
+    },
+    {
+      "text": "But there is no time to rest. The sky turns a bruised gray, and the forest beckons. You drive your pigs into the woods, letting them gorge on fallen acorns to fatten up before the frost kills the grass.",
+      "mood": "cool",
+      "imagePrompt": "An ancient oak forest with sun filtering through changing autumn leaves and a muddy woodland path.",
+      "chapterTitle": "Autumn: Preparing for Darkness",
+      "chapterNumber": 4
+    },
+    {
+      "text": "You watch the hogs closely. They are your wealth and your winter security. By fattening them now, you ensure the meat will be substantial enough to last you through the lean, biting months ahead.",
+      "mood": "cool"
+    },
+    {
+      "text": "The bite in the air grows sharper. You know your barn cannot feed every animal through the snow. With a heavy heart, you prepare for the slaughter. It is a grim, necessary rhythm of survival.",
+      "mood": "dark"
+    },
+    {
+      "text": "You spend your days salting the meat, packing it into barrels to preserve it. Nothing is wasted. The village fills with the smell of smoke and brine as every household follows this same grim task.",
+      "mood": "dark",
+      "imagePrompt": "A simple stone and timber cottage exterior at dusk with a thin plume of smoke rising from a chimney."
+    },
+    {
+      "text": "Between the butchering, you scavenge. You haul heavy bundles of fallen wood and cut chunks of peat from the soggy ground. Your hands are raw, but your woodpile grows, a barricade against the coming freeze.",
+      "mood": "cool"
+    },
+    {
+      "text": "Snow finally falls, locking the landscape in a deep silence. Outside, the fields sit dormant under a bitter frost. You retreat indoors, stepping into a dimly lit space where heat is now your most precious luxury.",
+      "mood": "cool",
+      "imagePrompt": "A quiet medieval village landscape covered in deep winter snow under a dark twilight sky, with simple wattle-and-daub cottages and wooden fences.",
+      "chapterTitle": "Winter: Life Inside the Cottage",
+      "chapterNumber": 5
+    },
+    {
+      "text": "Underfoot, a thick layer of dried rushes and straw covers the dirt floor. It acts as simple insulation, trapping a little heat and keeping the damp mud at bay, though it quickly gathers dust over the months.",
+      "mood": "dark",
+      "imagePrompt": "The rustic interior of a dimly lit medieval peasant cottage with a central stone fire pit, earthen walls, hanging dried herbs, and rushes spread across the floor."
+    },
+    {
+      "text": "You do not sit idle just because the fields are frozen. Women spend long hours spinning raw wool into yarn, while men mend broken tools and weave coarse baskets beside the glowing hearth fire.",
+      "mood": "warm"
+    },
+    {
+      "text": "As dark afternoon turns into cold night, the central hearth becomes everything. Neighbors might drop by to share what little heat you have, huddled together against the drafty walls as the fire pops softly.",
+      "mood": "dark"
+    },
+    {
+      "text": "Socializing keeps the winter gloom away. Someone might play a simple wooden flute, while elders pass along familiar local stories. In this small circle of warmth, the brutal cold outside feels a bit further away.",
+      "mood": "warm"
+    },
+    {
+      "text": "As you sit by that winter fire, your grumbling stomach brings up the most crucial question of daily life. What is actually filling your bowl? For a typical peasant family, the answer almost never changes.",
+      "mood": "warm",
+      "imagePrompt": "A rustic hearth inside a medieval timber-framed cottage with an iron cauldron suspended over flickering embers, simple clay bowls on a wooden trestle table, warm interior lighting.",
+      "chapterTitle": "Diet and Sustenance",
+      "chapterNumber": 6
+    },
+    {
+      "text": "Almost every single day, your main meal is pottage. This thick, hearty stew relies on grains like oats or barley, cooked down with whatever vegetables you gather, such as peas, beans, onions, or leeks.",
+      "mood": "warm"
+    },
+    {
+      "text": "To wash down this dense meal, you reach for a mug of homebrewed ale. Streams and shallow wells are often contaminated, making plain water risky. Ale offers safe drinking water alongside vital daily calories.",
+      "mood": "warm"
+    },
+    {
+      "text": "What you almost never see in your bowl is fresh meat. Raising livestock takes immense land and feed, turning meat into an expensive luxury that appears mostly during grand religious festival days.",
+      "mood": "day",
+      "imagePrompt": "A medieval village green decorated for a festival, empty rustic trestle tables with earthenware pitchers and wooden bread trenchers, surrounded by thatched cottages under warm golden sunlight."
+    },
+    {
+      "text": "Instead, you rely heavily on dense brown bread and that trusty pot simmering over the hearth. It may lack variety, but this simple, steady diet provides the energy needed to survive months of grueling physical work.",
+      "mood": "warm"
+    },
+    {
+      "text": "But keeping your hearth fire burning comes at a steep price. Beyond just feeding your own family, the medieval world demands a share of everything you produce. It is a rigid system of obligations that governs your entire existence.",
+      "mood": "warm",
+      "imagePrompt": "The interior of a humble, smoke-filled medieval cottage with a small hearth and simple wooden tools.",
+      "chapterTitle": "Taxes, Tithes, and Obligations",
+      "chapterNumber": 7
+    },
+    {
+      "text": "First, there is the church. You owe a tithe, which is exactly ten percent of everything your land yields. Whether it is grain, eggs, or wool, the church claims its portion before you can even begin to store your own supplies.",
+      "mood": "day"
+    },
+    {
+      "text": "Then, there is the lord of the manor. You do not just pay rent in coins; you pay with your sweat. You are expected to perform labor services, meaning you must leave your own fields to work the lord's private land.",
+      "mood": "day"
+    },
+    {
+      "text": "For many, this isn't a choice. You are a serf, legally bound to this manor. You cannot simply leave to find a better life elsewhere. You belong to the soil, and your labor belongs to the lord who owns it.",
+      "mood": "cool",
+      "imagePrompt": "A wide, golden wheat field stretching toward a distant, fortified stone manor house under a cloudy sky."
+    },
+    {
+      "text": "These layers of taxes and duties leave you with very little margin for error. Every sack of grain handed over is a reminder of your place in a hierarchy that measures your worth by what you contribute to those above.",
+      "mood": "dark"
+    },
+    {
+      "text": "But you aren't just a cog in a machine. When the sun dips low and the heavy labor stops, the village breathes. You find your neighbors, sharing stories and laughter that make the crushing weight of taxes feel a little lighter for a few hours.",
+      "mood": "warm",
+      "imagePrompt": "A dirt path winding through a cluster of thatched-roof cottages during a golden sunset, with rolling fields in the background.",
+      "chapterTitle": "The Reality of Medieval Leisure",
+      "chapterNumber": 8
+    },
+    {
+      "text": "Church festivals provide the most excitement. These aren't just solemn duties; they are rare chances to trade goods and dance until your feet ache. Music and the vibrant chaos of a crowded market offer a fleeting escape from your daily, monotonous routines.",
+      "mood": "warm"
+    },
+    {
+      "text": "When you have a moment of freedom, you might join a game of folk football. It is a wild, unorganized scramble across the fields. Authorities often discourage the game for being too rough, but for you, it is just a bit of fun.",
+      "mood": "day"
+    },
+    {
+      "text": "Life is deeply communal here. You rarely do anything alone. Whether you are thrashing grain or playing games, you are always surrounded by your neighbors. Your existence is tied entirely to the people who share your home, your work, and your village.",
+      "mood": "day",
+      "imagePrompt": "A wide, open village green surrounded by timber-framed structures, showing long shadows and a sense of shared space."
+    },
+    {
+      "text": "This bond is your survival. Through every festival and every game, you are reinforcing the connections that hold the village together. In a world that demands so much from you, your community is the only safety net you will ever truly have.",
+      "mood": "warm"
+    },
+    {
+      "text": "Your life is tethered to the soil, yet there is a profound sense of belonging in the village rhythm. You have survived another year of the turning seasons. If you enjoyed this journey back in time, subscribe for more. Next, we explore how medieval towns were built.",
+      "mood": "warm",
+      "imagePrompt": "A golden hour view of a rural medieval village surrounded by rolling green hills and patchwork fields.",
+      "chapterTitle": "Wrap-up",
+      "chapterNumber": 0
+    }
+  ],
+  "claimsToVerify": [
+    "[Spring: The Season of Hunger] The 'hungry gap' occurred in late spring when stored winter food ran low before summer crops matured.",
+    "[Spring: The Season of Hunger] Medieval European peasants used heavy iron-tipped plows pulled by teams of oxen.",
+    "[Spring: The Season of Hunger] Most medieval arable land was organized under an open-field system controlled by a manorial lord.",
+    "[Summer: Labor and The Church] Medieval peasants spent summer months weeding fields and shearing sheep.",
+    "[Summer: Labor and The Church] The term 'holiday' originated from 'holy day' in the medieval period.",
+    "[Summer: Labor and The Church] The parish church served as the primary social hub for a medieval village.",
+    "[Harvest: The Final Race] Harvest was a communal effort involving men, women, and children.",
+    "[Harvest: The Final Race] Grain was cut by hand using sickles and scythes.",
+    "[Harvest: The Final Race] A portion of the harvest was owed to the lord as rent or tithe.",
+    "[Autumn: Preparing for Darkness] Pigs were fattened on acorns in autumn forest clearings.",
+    "[Autumn: Preparing for Darkness] Livestock that could not be fed through winter were slaughtered and salted.",
+    "[Autumn: Preparing for Darkness] Peasants gathered wood and peat for winter fuel.",
+    "[Winter: Life Inside the Cottage] Medieval peasants lined cottage floors with straw or rushes for insulation.",
+    "[Winter: Life Inside the Cottage] Winter indoor tasks for peasants included spinning wool, repairing tools, and basket weaving.",
+    "[Winter: Life Inside the Cottage] Peasants socialized through music, piping, and oral storytelling around the hearth in winter.",
+    "[Diet and Sustenance] Pottage made of grains and vegetables was the daily staple of medieval peasants.",
+    "[Diet and Sustenance] Ale was safer to drink than local water sources and provided significant calories.",
+    "[Diet and Sustenance] Meat consumption among medieval peasants was largely reserved for special religious festival feasts.",
+    "[Taxes, Tithes, and Obligations] The tithe was generally one-tenth of produce.",
+    "[Taxes, Tithes, and Obligations] Peasants were required to perform labor services (corvée) on the lord's demesne.",
+    "[Taxes, Tithes, and Obligations] Serfs were legally bound to the land and were not free to leave without permission.",
+    "[The Reality of Medieval Leisure] Medieval village fairs and festivals were used for trade and dancing.",
+    "[The Reality of Medieval Leisure] Folk football was a popular medieval pastime often discouraged by authorities.",
+    "[The Reality of Medieval Leisure] Medieval peasant life was highly communal with work and play performed in groups."
+  ]
+}

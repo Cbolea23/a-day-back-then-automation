@@ -1,0 +1,255 @@
+{
+  "slug": "viking-village-year",
+  "title": "A Year in a Viking Village: Beyond the Raids",
+  "titleOptions": [
+    "A Year in a Viking Village: Beyond the Raids",
+    "How Vikings Actually Lived: A Seasonal Guide",
+    "Life in a Longhouse: What a Viking Year Was Really Like"
+  ],
+  "thumbnailIdea": "A detailed cross-section of a Viking longhouse showing daily life, hearth fires, and surrounding fields.",
+  "hook": "A Year in a Viking Village",
+  "channelName": "A Day Back Then",
+  "format": "long",
+  "targetMinutes": 11,
+  "scenes": [
+    {
+      "text": "The snow is finally melting, and the smell of woodsmoke and damp earth fills the longhouse. You aren't a warrior sailing to distant shores today. You’re a farmer, a crafter, and a neighbor. It’s time to find out how a typical Viking community survived the turning of the seasons.",
+      "mood": "warm",
+      "imagePrompt": "A wide, rustic Viking longhouse interior with a central stone hearth and low wooden benches.",
+      "chapterTitle": "Intro",
+      "chapterNumber": 0
+    },
+    {
+      "text": "The snow is finally melting, and the smell of woodsmoke and damp earth fills the longhouse. You aren't a warrior sailing to distant shores today. You’re a farmer, a crafter, and a neighbor. It’s time to find out how a typical Viking community survived the turning of the seasons.",
+      "mood": "warm",
+      "imagePrompt": "Interior of a rustic timber longhouse with a central fire pit, smoke drifting toward a hole in the thatched roof, soft morning light streaming in.",
+      "chapterTitle": "Spring: The Thaw and the Plow",
+      "chapterNumber": 1
+    },
+    {
+      "text": "Spring arrives not with a bang, but with a drip. The iron-hard ground finally softens under your boots. Your cattle, which have spent the long, dark winter cramped inside the family longhouse, are eager to feel the sun on their backs again.",
+      "mood": "day"
+    },
+    {
+      "text": "You lead the herd toward the emerging patches of green. It is a relief to see them grazing after months of feeding them precious, limited fodder. Every animal that survives the winter is a victory for the entire household’s survival.",
+      "mood": "warm",
+      "imagePrompt": "Rolling green hills at the edge of a fjord with patches of melting snow, distant mountains, and a simple wooden fence line."
+    },
+    {
+      "text": "Once the soil is workable, the real labor begins. You grab a wooden plow reinforced with iron. You and your neighbors head to the fields, working in tandem. Cooperation is not just polite here; it is the only way to ensure the harvest succeeds.",
+      "mood": "day"
+    },
+    {
+      "text": "Barley and oats are your lifelines. You sow the seeds carefully into the furrowed earth, praying for a steady season. The community moves as one, turning the soil and breaking the clods, knowing that a hungry winter waits if the crop fails now.",
+      "mood": "day"
+    },
+    {
+      "text": "As the days stretch out, the village transforms. You watch the livestock head to high mountain pastures, leaving the valley quiet. It is time to hunt for bounty. You spend long, sun-drenched hours gathering wild berries and nuts before the birds claim them all.",
+      "mood": "warm",
+      "imagePrompt": "A lush, green Scandinavian valley in late spring with distant mountains under a bright, clear sky.",
+      "chapterTitle": "Summer: Fishing and Feasting",
+      "chapterNumber": 2
+    },
+    {
+      "text": "The sea is your greatest pantry. Fishing boats bob offshore, hauling in silver-scaled catch. You spend your afternoons cleaning and hanging the fish on wooden racks. They must be salted or dried thoroughly, turning into hard, durable strips that will survive the coming snows.",
+      "mood": "day"
+    },
+    {
+      "text": "Summer is also the season for the great voyages. The harbor bustles as ships are fitted for long journeys. Neighbors prepare to sail toward distant lands, trading furs and amber for goods they cannot produce at home. The village feels both busy and suddenly empty.",
+      "mood": "warm",
+      "imagePrompt": "A wooden dockside scene with a longship moored in the calm water, surrounded by storage barrels and fishing nets."
+    },
+    {
+      "text": "Yet, when the work pauses, you feast. With the larders finally growing full, the village gathers in the longhouse. There is music, laughter, and the relief that comes with a successful mid-year harvest. You share a meal, savoring the fresh flavors of the short, golden season.",
+      "mood": "warm"
+    },
+    {
+      "text": "Every handful of berries and every dried fish represents a shield against the frost. You know the warmth of these long days is a fleeting gift. You work with a quiet urgency, grateful for the sun, knowing that winter is always waiting in the wings.",
+      "mood": "day"
+    },
+    {
+      "text": "But before the harvest begins, the village sets aside their tools. It is time for the Thing. You walk toward a designated, open field where the community gathers. This assembly is the heartbeat of your society, a place where the air hums with anticipation.",
+      "mood": "day",
+      "imagePrompt": "A wide, grassy clearing surrounded by ancient standing stones and rolling hills under a bright spring sky.",
+      "chapterTitle": "The Thing: Law and Community",
+      "chapterNumber": 3
+    },
+    {
+      "text": "The Thing is not just a meeting; it is where law meets life. Every free person has a voice here. You watch as neighbors settle long-standing property disputes and propose new rules for the coming season. It is rowdy, intense, and deeply vital.",
+      "mood": "day"
+    },
+    {
+      "text": "At the center stands the Lawspeaker. He is a person of immense memory, tasked with reciting the traditional laws of your region. Since these rules aren't written down, his mind is the final authority. You listen closely to every word he speaks.",
+      "mood": "day"
+    },
+    {
+      "text": "Social status certainly ripples through the crowd. A wealthy farmer might command more attention, but he cannot ignore the collective will of the assembly. Everyone knows that if the law fails, the stability of the entire village is at risk.",
+      "mood": "day",
+      "imagePrompt": "A wooden platform built into a hillside, overlooking a gathering of people in colorful, woven woolen tunics."
+    },
+    {
+      "text": "Justice here is a public performance. You witness arguments unfold and see agreements forged through negotiation rather than violence. By the time the assembly concludes, the social fabric of your village feels tighter, reinforced by the shared commitment to the law.",
+      "mood": "day"
+    },
+    {
+      "text": "The air grows crisp, and the mood in the village shifts from politics to pure survival. The golden light of autumn signals a frantic, silent race against the creeping frost. Every pair of hands is needed to bring in the harvest.",
+      "mood": "warm",
+      "imagePrompt": "A wide, golden wheat field under a pale blue autumn sky with distant hills in the background.",
+      "chapterTitle": "Harvest: The Final Race",
+      "chapterNumber": 4
+    },
+    {
+      "text": "You spend your days bent over, grasping stalks of grain. With a rhythmic swipe, you use an iron sickle to cut the crop close to the ground. It is back-breaking work, but essential for the long, dark months ahead.",
+      "mood": "warm"
+    },
+    {
+      "text": "Once gathered, the grain is bundled and carried to the storehouses. These are special granaries built on raised wooden stilts to keep the precious harvest dry and safe from damp ground, pests, and hungry rodents until spring arrives.",
+      "mood": "cool",
+      "imagePrompt": "A sturdy, small wooden granary building elevated on wooden posts in a farm clearing."
+    },
+    {
+      "text": "The focus soon turns to the livestock. The late autumn chill means it is time to begin preparing for the slaughter. You preserve as much meat as possible, ensuring there is enough to sustain everyone through the frozen season.",
+      "mood": "cool"
+    },
+    {
+      "text": "Finally, you turn your attention to your gear. You patch thick woolen cloaks and mend worn equipment. Everything must be ready; once the first hard frost settles over the valley, the world outside will become very quiet indeed.",
+      "mood": "cool"
+    },
+    {
+      "text": "The wind howls outside, but here, the longhouse holds firm. You retreat from the biting cold, pulling the heavy door shut behind you. Inside, the massive central hearth is the heartbeat of your home, casting long, dancing shadows against the timber walls.",
+      "mood": "warm",
+      "imagePrompt": "Interior of a Viking longhouse at night, with a central fire pit glowing brightly in the middle of a dirt floor, wooden pillars supporting a high vaulted roof.",
+      "chapterTitle": "Winter: Life Inside the Longhouse",
+      "chapterNumber": 5
+    },
+    {
+      "text": "This fire is your constant companion. It provides the only light through the darkest months, and its heat keeps the frost at bay. You gather close to the flames, sharing the warmth with your family and neighbors as the long nights stretch on.",
+      "mood": "warm"
+    },
+    {
+      "text": "You aren't alone in here. Near the walls, the livestock are safely sheltered from the freezing elements. Their rhythmic breathing and low shuffling sounds remind you that your survival is tied directly to these animals, even while the snow piles high outside.",
+      "mood": "warm"
+    },
+    {
+      "text": "Life shifts to the interior now. Days are spent in a cycle of essential labor. You focus on textile production, weaving sturdy wool into fabric or sewing garments by the hearth. Everything requires patience, skill, and steady hands to keep the community clothed.",
+      "mood": "warm",
+      "imagePrompt": "A wooden loom and various balls of raw wool sitting near a stone wall inside a dim, rustic building, illuminated by firelight."
+    },
+    {
+      "text": "Your meals change, too. Fresh food is a memory; now you rely on the stores you built. You feast on salted fish, dried meats, and preserved goods. It isn't extravagant, but it is enough to sustain you until the first green signs of spring return.",
+      "mood": "warm"
+    },
+    {
+      "text": "Winter brings you inside, but your hands stay busy. The hearth fire glows, casting long shadows against the timber walls. While the world sleeps under snow, the village hums with the steady, rhythmic labor of skilled artisans crafting the tools of your survival.",
+      "mood": "warm",
+      "imagePrompt": "Interior of a Viking longhouse with a central hearth fire illuminating wooden walls and clay floors.",
+      "chapterTitle": "Crafts: Iron, Wood, and Wool",
+      "chapterNumber": 6
+    },
+    {
+      "text": "Near the heat, the women gather. Wool is everywhere. You watch the drop spindles turn, twisting raw fleece into sturdy yarn. It is quiet, focused work, yet vital. Without these textiles for sails, blankets, and clothing, your community would simply cease to function.",
+      "mood": "warm"
+    },
+    {
+      "text": "The blacksmith holds a position of immense respect. His forge is a place of transformation, turning bog iron into axe heads and nails. You listen to the sharp clang of hammer on anvil, an essential music that echoes throughout the frozen village.",
+      "mood": "dark",
+      "imagePrompt": "A stone forge exterior in a snowy landscape with tools scattered around a heavy iron anvil."
+    },
+    {
+      "text": "Every wooden object you touch, from a simple milk bowl to the intricate decorative carvings on a doorframe, shows mastery of the grain. Woodworkers shape your environment, creating the ships that carry your people and the household items that define your daily life.",
+      "mood": "cool"
+    },
+    {
+      "text": "These crafts are not just for your own home. You trade these specialized wares at the market, exchanging ironwork or cloth for goods you cannot make yourself. It is a web of local industry, ensuring everyone has what they need to endure the long cold.",
+      "mood": "cool"
+    },
+    {
+      "text": "Your world is bound by the cycles of the sun and soil. You believe your daily labor is deeply connected to the divine. Rituals aren't just for grand occasions; they are quiet, everyday acts that weave your spiritual life into your chores.",
+      "mood": "warm",
+      "imagePrompt": "A wooden longhouse interior with sunlight streaming through a small smoke hole in the roof.",
+      "chapterTitle": "Beliefs and Rituals",
+      "chapterNumber": 7
+    },
+    {
+      "text": "You don't often visit grand, distant temples. For you, the sacred is much closer. You honor your ancestors right here on your own land, often keeping them near the hearth where the family gathers to eat and rest.",
+      "mood": "warm"
+    },
+    {
+      "text": "These household spirits and ancestors provide a sense of belonging. They are silent witnesses to your struggles and joys. You feel their presence in the walls of the longhouse, grounding you to the generations that came before you.",
+      "mood": "warm"
+    },
+    {
+      "text": "When you face the unpredictable sea or the harsh winter, you reach for small reassurances. You might wear a personal amulet, a carved charm meant to offer protection or luck. These small items are your constant, portable companions.",
+      "mood": "cool",
+      "imagePrompt": "A close-up shot of a small, weathered iron pendant resting on a rough wooden table surface."
+    },
+    {
+      "text": "These beliefs aren't written in a rigid manual. Instead, they flow through your songs, your traditions, and your respect for the earth. You live in a world where the boundary between the mundane and the mysterious feels remarkably thin.",
+      "mood": "cool"
+    },
+    {
+      "text": "But forget the leather-clad warriors of modern stories for a moment. If you look at your neighbors, you see farmers, not pillagers. Most people here spend their lives tethered to the soil, raising cattle and struggling to coax barley from the stubborn earth.",
+      "mood": "day",
+      "imagePrompt": "A wide, golden wheat field under a vast, open Scandinavian sky during late summer.",
+      "chapterTitle": "The Viking Reality",
+      "chapterNumber": 8
+    },
+    {
+      "text": "Your world is surprisingly interconnected. While you tend your garden, your cousin travels thousands of miles away. Trade routes link this remote village to markets in Constantinople and beyond, bringing exotic silver and silks into your simple wooden home.",
+      "mood": "warm"
+    },
+    {
+      "text": "Society is layered. You might be a free farmer, but others are skilled blacksmiths or woodworkers whose tools sustain the community. At the base, there are thralls, though their lives are often poorly documented and vary significantly across different regions.",
+      "mood": "day"
+    },
+    {
+      "text": "Archaeology tells a story of stability, not constant chaos. Life is dictated by the seasons and the regional customs of your ancestors. Most days are remarkably ordinary, defined by the quiet rhythm of chores rather than the drama of a raiding longship.",
+      "mood": "cool",
+      "imagePrompt": "A view of a quiet, mist-covered fjord with a few small, modest wooden longhouses nestled on the grassy shoreline."
+    },
+    {
+      "text": "History often favors the loudest tales, but the reality is in the mundane. You are part of a complex, sophisticated culture that values its land, its law, and its intricate global connections far more than a life of perpetual conflict.",
+      "mood": "day"
+    },
+    {
+      "text": "Your year ends just as it began, huddled near the fire, preparing for another spring. It was a life of grueling work, but one defined by strong community bonds and deep resilience. If you enjoyed this journey, hit subscribe for more history, and check out our video on Viking sailing tech.",
+      "mood": "cool",
+      "imagePrompt": "A snowy, twilight view of a village shoreline with a wooden jetty and distant forests.",
+      "chapterTitle": "Wrap-up",
+      "chapterNumber": 0
+    }
+  ],
+  "claimsToVerify": [
+    "[Spring: The Thaw and the Plow] Cattle were kept inside longhouses during winter months in Viking Age Scandinavia.",
+    "[Spring: The Thaw and the Plow] Barley and oats were the primary grain crops grown by Viking Age farmers.",
+    "[Spring: The Thaw and the Plow] Community labor was a standard practice for Viking Age agricultural activities like plowing and sowing.",
+    "[Summer: Fishing and Feasting] Livestock were commonly moved to summer pastures (transhumance) in Viking Age Scandinavia.",
+    "[Summer: Fishing and Feasting] Fish were preserved for winter primarily through drying and salting.",
+    "[Summer: Fishing and Feasting] Summer was the primary season for Viking maritime trade and raiding expeditions.",
+    "[Summer: Fishing and Feasting] Wild berries and nuts were a recognized part of the Viking summer diet.",
+    "[The Thing: Law and Community] The Thing was an assembly open to free people.",
+    "[The Thing: Law and Community] The Thing functioned as both a judicial and legislative body.",
+    "[The Thing: Law and Community] Lawspeakers memorized and recited the laws of the region.",
+    "[The Thing: Law and Community] Social hierarchy influenced but did not strictly dictate participation in the Thing.",
+    "[Harvest: The Final Race] Viking age grains were harvested by hand using iron sickles.",
+    "[Harvest: The Final Race] Surplus grain was stored in raised wooden granaries to protect from moisture and pests.",
+    "[Harvest: The Final Race] Preparation for the slaughtering of livestock occurred in late autumn.",
+    "[Harvest: The Final Race] Maintenance of winter clothing and equipment was a standard seasonal task.",
+    "[Winter: Life Inside the Longhouse] Viking longhouses often kept livestock inside during winter months.",
+    "[Winter: Life Inside the Longhouse] Central hearths served as the primary heat and light source for longhouses.",
+    "[Winter: Life Inside the Longhouse] Textile production like weaving was a primary winter activity in Viking households.",
+    "[Winter: Life Inside the Longhouse] Winter diets relied heavily on salted, dried, and preserved proteins.",
+    "[Crafts: Iron, Wood, and Wool] Blacksmiths held a high social status in Viking society",
+    "[Crafts: Iron, Wood, and Wool] Textile production was primarily performed by women",
+    "[Crafts: Iron, Wood, and Wool] Bog iron was used for iron production in the Viking Age",
+    "[Crafts: Iron, Wood, and Wool] Viking era woodworking extended from small household items to ship building",
+    "[Beliefs and Rituals] Rituals were tied closely to agricultural cycles",
+    "[Beliefs and Rituals] Ancestors were often honored within or near the home",
+    "[Beliefs and Rituals] Evidence for organized temple structures is rare and localized",
+    "[Beliefs and Rituals] Personal amulets and charms were common household items",
+    "[The Viking Reality] The majority of the Viking population were farmers rather than raiders.",
+    "[The Viking Reality] Viking trade networks extended to the Byzantine Empire and beyond.",
+    "[The Viking Reality] Viking society was comprised of free farmers, craftsmen, and enslaved thralls.",
+    "[The Viking Reality] Archaeological evidence points to regional diversity and domestic stability in Viking Age settlements."
+  ]
+}

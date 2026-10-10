@@ -1,0 +1,223 @@
+{
+  "slug": "joseon-korea-day",
+  "title": "A Day in the Life of Joseon Korea",
+  "titleOptions": [
+    "A Day in the Life of Joseon Korea",
+    "How Did People Actually Live in Joseon Korea?",
+    "Class, Food, and Home: A Day in 15th Century Korea"
+  ],
+  "thumbnailIdea": "A split-screen showing a scholar in a hanbok reading by a window versus a farmer working in a rice paddy, with a traditional tiled-roof house in the center.",
+  "hook": "A Day in Joseon Korea",
+  "channelName": "A Day Back Then",
+  "format": "long",
+  "targetMinutes": 10,
+  "scenes": [
+    {
+      "text": "You wake up to the sound of a rooster, the air biting cold outside, but your floor is warm to the touch. You are in a wooden room in 16th-century Korea, and your entire social standing is written in the very clothes you wear today.",
+      "mood": "warm",
+      "imagePrompt": "A close-up of a traditional Korean ondol floor with straw mats and a small wooden low table in a sunlit room.",
+      "chapterTitle": "Intro",
+      "chapterNumber": 0
+    },
+    {
+      "text": "Your silk robe marks you as a Yangban, the elite of Joseon. Neo-Confucianism dictates this world. It teaches that society is like a family, where everyone has a fixed, sacred place. You are at the top of that order.",
+      "mood": "warm",
+      "imagePrompt": "The interior of a traditional Joseon-era hanok room, showing wooden pillars and sliding paper doors with morning light filtering through.",
+      "chapterTitle": "The Rigid Hierarchy",
+      "chapterNumber": 1
+    },
+    {
+      "text": "Below you sit the Jungin, the technical experts and scribes who keep the government running. They occupy a middle ground, essential but never quite equal. Life is defined by these rigid boundaries, etched into law and custom alike.",
+      "mood": "day"
+    },
+    {
+      "text": "Further down are the commoners. They are the farmers and artisans who sustain the realm. Their status is hereditary, meaning the son of a peasant will almost certainly remain a peasant. Mobility is essentially a dream for most.",
+      "mood": "day"
+    },
+    {
+      "text": "At the very bottom lies the enslaved class. They are the invisible engine of the kingdom, performing the heavy labor that keeps the estates functioning. Your standing is not something you earn; it is simply your inheritance at birth.",
+      "mood": "day",
+      "imagePrompt": "A wide view of a Joseon-era village landscape with thatched-roof houses nestled among hills, showing the clear distinction between larger tiled estates and small huts."
+    },
+    {
+      "text": "This hierarchy is not just about power; it is about moral duty. You believe that if everyone honors their specific rank, the kingdom remains in harmony. One misstep, and the fragile balance of the entire society might just crumble.",
+      "mood": "day"
+    },
+    {
+      "text": "As you step inside your home, the world shifts. You are now surrounded by sturdy timber frames and walls made of plastered mud and delicate paper. It is a space designed for quiet contemplation and rigid social order.",
+      "mood": "warm",
+      "imagePrompt": "Interior of a traditional Joseon-era house with wooden floorboards and paper-covered sliding doors, looking toward an open courtyard.",
+      "chapterTitle": "Architecture and Ondol",
+      "chapterNumber": 2
+    },
+    {
+      "text": "You notice the house is split into two distinct zones. The sarangchae, or outer quarters, is where men host guests and study. Tucked away from public view is the anchae, the inner quarters reserved for the women of the house.",
+      "mood": "warm"
+    },
+    {
+      "text": "The air feels crisp, but your feet stay toasty. That is the genius of the ondol. Beneath the floorboards, a system of stone flues captures the heat rising from your kitchen’s cooking fire.",
+      "mood": "day"
+    },
+    {
+      "text": "The hot air travels horizontally beneath the entire room before exiting through a chimney outside. It turns the cold floor into a giant, radiating heater. It is quite literally an engineering marvel hidden right under your toes.",
+      "mood": "day",
+      "imagePrompt": "A cross-section view of a traditional Korean stone floor system showing smoke channels and underground stone flues."
+    },
+    {
+      "text": "This clever design turns the brutal, freezing winter into a manageable season. You sit comfortably on the floor, shielded from the biting wind, grateful for the simple, effective warmth flowing steadily beneath you as you work.",
+      "mood": "warm"
+    },
+    {
+      "text": "With the morning chill banished, you turn your attention to your true occupation. As a yangban, life is a steady stream of intellectual discipline. You straighten your robes and reach for your brush; the day ahead belongs to the classics.",
+      "mood": "warm",
+      "imagePrompt": "A minimalist wooden room in a Joseon scholar's house, featuring a low writing desk, a brush stand, and sliding paper doors.",
+      "chapterTitle": "The Life of the Scholar",
+      "chapterNumber": 3
+    },
+    {
+      "text": "Your existence centers on the Confucian texts. Mastery is not merely encouraged; it is a prerequisite for any meaningful career. You memorize passages until they become second nature, preparing your mind for the rigorous state civil service examinations that define your future.",
+      "mood": "warm"
+    },
+    {
+      "text": "Between your studies, you practice the delicate art of calligraphy. The black ink swirls onto the white paper, demanding perfect posture and steady focus. Each stroke is a reflection of your inner moral character and your dedication to the scholarly path.",
+      "mood": "warm"
+    },
+    {
+      "text": "You also handle local administrative duties, drafting reports or settling disputes with a calm, measured hand. Every interaction requires strict social decorum. You move with practiced poise, honoring your family name and maintaining the dignity expected of your elite status.",
+      "mood": "day"
+    },
+    {
+      "text": "Even your private moments are guided by filial piety. You remain mindful of your elders and ancestors, ensuring that every public or private action aligns with traditional virtues. In this quiet, controlled world, your duty to your family remains your greatest constant.",
+      "mood": "day",
+      "imagePrompt": "A serene garden courtyard with a stone path, looking toward a traditional tiled-roof building under a clear blue sky."
+    },
+    {
+      "text": "Beyond the scholar’s brush and the city gates, the rhythm of your life shifts toward the earth. Most people here are farmers, their days governed not by clocks, but by the relentless, seasonal demands of the rice paddy.",
+      "mood": "warm",
+      "imagePrompt": "A wide, lush green valley in rural Joseon Korea featuring terraced rice paddies under a bright, clear sky.",
+      "chapterTitle": "The Rhythms of the Farm",
+      "chapterNumber": 4
+    },
+    {
+      "text": "When the monsoon rains finally arrive, the village transforms into a hive of activity. You join your neighbors in the mud, planting young shoots with back-breaking focus. Everyone works together; rice cultivation is simply too demanding for any one family alone.",
+      "mood": "warm"
+    },
+    {
+      "text": "Irrigation is your lifeblood. You and your village kin must constantly maintain the complex network of dikes and channels. If the water fails, the harvest fails, and the year turns bleak for everyone in the valley.",
+      "mood": "day"
+    },
+    {
+      "text": "But the fruits of your labor are not entirely your own. The state requires its due, collected as grain, bolts of fine textile, or even mandatory labor service. You set aside the best shares, hoping to meet the official quota.",
+      "mood": "cool",
+      "imagePrompt": "A traditional thatched-roof village home with stacks of drying grain bundles and simple wooden farming tools leaning against a wall."
+    },
+    {
+      "text": "Tax season is a time of quiet anxiety. You balance your family’s survival against the demands of the magistrate, knowing that your survival depends on this tight-knit community. You rise with the sun, ready to do it all again.",
+      "mood": "warm"
+    },
+    {
+      "text": "But your life isn't just tilling soil. You head toward the town market, where the air hums with a different energy. Here, artisans shape the world around you, though society places them in a tricky spot, ranking them below farmers.",
+      "mood": "day",
+      "imagePrompt": "A bustling traditional Korean marketplace with wooden stalls and straw-roofed merchant booths under a clear sky.",
+      "chapterTitle": "Artisans and Trade",
+      "chapterNumber": 5
+    },
+    {
+      "text": "These skilled hands sit above the enslaved class, yet they remain tethered to government oversight. For the finest luxury goods, state-run workshops dictate every movement, ensuring the court receives only the most exquisite craftsmanship.",
+      "mood": "day"
+    },
+    {
+      "text": "You walk past shelves lined with stark, elegant white porcelain. It is the hallmark of the era, prized for its clean lines. These pieces aren't just for show; they represent a deep pride in refined, minimalist utility.",
+      "mood": "day",
+      "imagePrompt": "Rows of white porcelain bowls and jars displayed on a simple wooden shelf in a sunlit workshop."
+    },
+    {
+      "text": "Nearby, the rhythmic clack of looms fills the air. Workers weave durable hemp cloth, the backbone of daily garments for most families. It is coarse and breathable, perfect for the long, hot summers you know so well.",
+      "mood": "day"
+    },
+    {
+      "text": "Trade flows through these narrow streets, connecting the mountains to the sea. While the government keeps a firm grip on high-end production, the market remains the beating heart of your community, moving goods from hand to hand.",
+      "mood": "day"
+    },
+    {
+      "text": "Beyond the bustling markets, a different reality unfolds. You walk past the stone walls protecting the elite, realizing that the comfort of the Joseon aristocracy rests on a foundation of labor that is often invisible to history’s grand narrative.",
+      "mood": "day",
+      "imagePrompt": "A quiet, narrow alleyway in a Joseon-era village with stone walls and traditional tiled-roof houses in the background.",
+      "chapterTitle": "The Unseen Laborers",
+      "chapterNumber": 6
+    },
+    {
+      "text": "A significant portion of the population lives in bondage. In this society, slavery is typically hereditary. Because the legal status often follows the mother, children born to an enslaved woman automatically inherit her position, binding generations to their masters.",
+      "mood": "day"
+    },
+    {
+      "text": "You see these laborers working across expansive fields. Many toil on large private estates or state-owned lands, performing the heavy, repetitive tasks that keep the economy moving. Their tireless efforts allow the scholar-officials to dedicate their time to study.",
+      "mood": "warm",
+      "imagePrompt": "A sprawling, golden rice paddy at the edge of a mountain forest under a clear, bright sky."
+    },
+    {
+      "text": "It is a life defined by systemic constraints. While the government relies on this labor for tax revenue and construction projects, the enslaved have little autonomy. Their daily existence is dictated entirely by the needs of the landed gentry.",
+      "mood": "day"
+    },
+    {
+      "text": "The contrast is sharp. While you admire the elegant architecture of a master’s villa, remember that the smoothness of the stone and the timber of the roof were likely shaped by hands that could never call those spaces their own.",
+      "mood": "day"
+    },
+    {
+      "text": "As the sun dips lower, hunger draws you to the kitchen. Here, the hum of daily life revolves around a simple, essential trio: steamed rice, a warm bowl of soup, and a spread of fermented side dishes called banchan.",
+      "mood": "warm",
+      "imagePrompt": "A traditional Joseon kitchen interior with earthenware jars, a wooden stove, and stone pots.",
+      "chapterTitle": "Dining and Daily Diet",
+      "chapterNumber": 7
+    },
+    {
+      "text": "You notice small clay pots lining the courtyard. These hold the ferments that define the meal. Kimchi is already a staple here, though it looks quite different from today’s version—the iconic spicy red pepper only arrived much later.",
+      "mood": "warm"
+    },
+    {
+      "text": "The menu depends entirely on who is eating. If you sit at a scholar’s table, you might find a generous variety of seasoned greens, fish, and perhaps a portion of meat to round out the nutrient-dense feast.",
+      "mood": "warm",
+      "imagePrompt": "A low wooden table set with brass bowls, small ceramic plates of vegetables, and steamed white rice."
+    },
+    {
+      "text": "For the commoners, the reality is more modest. Their bowls are often filled with heartier grains like barley or millet, paired with whatever vegetables the season provides. Meat is a rare luxury, saved for special occasions.",
+      "mood": "warm"
+    },
+    {
+      "text": "Everything is consumed with grace. You lift your spoon and chopsticks, realizing that despite the gaps in social status, the fundamental rhythm of life—from the fields to the kitchen—is anchored in these shared, humble rituals of sustenance.",
+      "mood": "day"
+    },
+    {
+      "text": "From the quiet study of a scholar to the demanding fields of the countryside, the Joseon dynasty was a world of sharp contrasts held together by tradition. If you enjoyed this journey into the past, hit subscribe and join us next time as we explore the Samurai era.",
+      "mood": "day",
+      "imagePrompt": "A wide landscape shot of a quiet mountain valley with a small rural village nestled among trees at sunset.",
+      "chapterTitle": "Wrap-up",
+      "chapterNumber": 0
+    }
+  ],
+  "claimsToVerify": [
+    "[The Rigid Hierarchy] Joseon social hierarchy consisted of Yangban, Jungin, commoners, and the enslaved.",
+    "[The Rigid Hierarchy] Neo-Confucianism provided the moral and political framework for the Joseon class system.",
+    "[The Rigid Hierarchy] Social status in Joseon Korea was primarily hereditary.",
+    "[Architecture and Ondol] Ondol systems circulate hot air from the kitchen through stone flues under the floor.",
+    "[Architecture and Ondol] Joseon homes were built with timber frames and mud or paper walls.",
+    "[Architecture and Ondol] The sarangchae and anchae represent the gendered division of space in a Joseon household.",
+    "[The Life of the Scholar] Yangban status required mastery of Confucian classics for civil service exams.",
+    "[The Life of the Scholar] The daily routine of the yangban class focused on poetry, calligraphy, and local administration.",
+    "[The Life of the Scholar] Social decorum and filial piety were strictly observed in public and private conduct in Joseon society.",
+    "[The Rhythms of the Farm] Most of the population in Joseon Korea were farmers.",
+    "[The Rhythms of the Farm] Rice was the primary crop requiring intensive communal labor.",
+    "[The Rhythms of the Farm] Commoners paid taxes to the state in grain, textiles, or labor.",
+    "[The Rhythms of the Farm] Villages functioned as communal units for irrigation and fieldwork.",
+    "[Artisans and Trade] Artisans in Joseon Korea were socially ranked below farmers but above the enslaved class.",
+    "[Artisans and Trade] White porcelain and hemp cloth were staples of trade and daily utility in the Joseon period.",
+    "[Artisans and Trade] Government workshops managed the production of high-quality luxury goods for the royal court.",
+    "[The Unseen Laborers] Slavery in Joseon Korea was hereditary and followed the status of the mother.",
+    "[The Unseen Laborers] The enslaved population was frequently employed on large state-owned or private farms.",
+    "[The Unseen Laborers] Labor from enslaved individuals supported the administrative and leisure activities of the Joseon upper classes.",
+    "[Dining and Daily Diet] Steamed rice, soup, and banchan were the basis of Joseon-era meals.",
+    "[Dining and Daily Diet] Early kimchi did not contain red pepper, as the chili pepper was introduced to Korea after the 16th century.",
+    "[Dining and Daily Diet] Upper-class diets included more meat and variety compared to commoner diets.",
+    "[Dining and Daily Diet] Commoners relied on mixed grains like barley and millet, as white rice was often a luxury."
+  ]
+}

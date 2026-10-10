@@ -1,0 +1,222 @@
+{
+  "slug": "angkor-khmer-life",
+  "title": "A Day in Angkor: Inside the Khmer Empire",
+  "titleOptions": [
+    "A Day in Angkor: Inside the Khmer Empire",
+    "How Angkor Ran: Life in the City of Temples",
+    "Beyond the Stone: Daily Life in Ancient Angkor"
+  ],
+  "thumbnailIdea": "A cinematic wide shot of the Angkor Wat towers reflecting perfectly in a calm, vast moat at sunrise.",
+  "hook": "Life in Angkor, the Khmer Capital",
+  "channelName": "A Day Back Then",
+  "format": "long",
+  "targetMinutes": 10,
+  "scenes": [
+    {
+      "text": "You wake to the hum of insects and the distant chime of temple bells. Beneath your feet, the floor is cool stone, but outside, the heat is already rising. You are in Angkor, a sprawling, watery metropolis that defies everything you thought you knew about the medieval world.",
+      "mood": "warm",
+      "imagePrompt": "A panoramic view of an ancient Khmer temple spire silhouetted against a sunrise over a calm, expansive moat.",
+      "chapterTitle": "Intro",
+      "chapterNumber": 0
+    },
+    {
+      "text": "Step outside and you feel the humidity clinging to your skin. You aren't just in a city; you are in a giant, breathing machine designed to capture the sky. Water is everywhere, flowing through clever arteries of stone and earth.",
+      "mood": "warm",
+      "imagePrompt": "A lush, green landscape with intricate stone water channels and reflecting pools under a bright morning sky.",
+      "chapterTitle": "The Hydraulic City",
+      "chapterNumber": 1
+    },
+    {
+      "text": "The Khmer engineers were masters of the monsoon. They built massive reservoirs, or barays, that look like lakes but are actually human-made. These catch the heavy rains, holding millions of gallons to sustain the city through the dry months.",
+      "mood": "warm"
+    },
+    {
+      "text": "It is a brilliant system of gravity and canals. By carefully directing the flow, the city transforms the landscape into a reliable engine for survival. Without this constant water control, a metropolis of this scale could never exist here.",
+      "mood": "warm"
+    },
+    {
+      "text": "Look out over the emerald horizon. Because the water is always available, the fields don't need to lie fallow. The farmers harvest rice multiple times a year, turning this land into an incredibly productive breadbasket for thousands of people.",
+      "mood": "warm",
+      "imagePrompt": "A sprawling, vibrant green rice paddy landscape with distant, mist-covered forest horizons."
+    },
+    {
+      "text": "The population density remains a mystery, and experts still debate the exact numbers. We know it was massive, though, because everything here—from the canals to the temple walls—was built to support a staggering number of human lives.",
+      "mood": "warm"
+    },
+    {
+      "text": "To feed this vast population, you look toward the horizon. Here, the landscape is defined by the rhythm of water. Beneath your feet, the earth is soft, transformed into endless stretches of bright green rice paddies.",
+      "mood": "warm",
+      "imagePrompt": "Expansive, vibrant green terraced rice paddies under a bright, hazy tropical sky.",
+      "chapterTitle": "Fields of Plenty",
+      "chapterNumber": 2
+    },
+    {
+      "text": "Rice is the heartbeat of the empire. It is the primary food source and the foundation of the economy. Without this reliable harvest, the monumental stone temples you just left would never have risen from the jungle.",
+      "mood": "warm"
+    },
+    {
+      "text": "You notice the sophisticated network of irrigation channels carving through the fields. Farmers carefully control water levels here, directing the monsoon rains to ensure the crops flourish despite the intense, changing heat of the seasons.",
+      "mood": "day",
+      "imagePrompt": "Ancient, hand-dug irrigation canal flowing through a rural Cambodian landscape with lush vegetation."
+    },
+    {
+      "text": "This water management is a masterpiece of engineering. It allows for multiple harvests each year, turning the unpredictable jungle into a predictable, high-yield breadbasket that sustains everyone from the common laborer to the king himself.",
+      "mood": "day"
+    },
+    {
+      "text": "Life here is adapted to the water, not against it. You see wooden houses standing tall on wooden stilts. They are built high above the ground, a practical defense against the inevitable, seasonal flooding that sweeps across these plains.",
+      "mood": "warm"
+    },
+    {
+      "text": "But look toward the horizon. Above the rooftops rises a mountain of stone. This is the heart of everything. Here, the King isn't just a ruler; he is the Devaraja, a living bridge between the heavens and the earth.",
+      "mood": "warm",
+      "imagePrompt": "A wide shot of a massive, tiered stone temple rising above the dense green forest canopy at sunrise.",
+      "chapterTitle": "The King’s Shadow",
+      "chapterNumber": 3
+    },
+    {
+      "text": "Whether he channels the strength of Shiva or the preservation of Vishnu, his presence is the city’s lifeblood. You sense his weight in every prayer. If the King is strong, the rains follow. If he falters, the crops might fail.",
+      "mood": "warm"
+    },
+    {
+      "text": "Around him, a world of saffron and incense thrives. Highly respected Brahmins and monks act as the architects of this sacred order. They aren't just chanting; they are the administrators, carefully balancing the vast temple ledgers and massive grain stores.",
+      "mood": "day",
+      "imagePrompt": "The interior courtyard of a stone temple, featuring ornate carvings and shadowed stone corridors."
+    },
+    {
+      "text": "They manage the immense wealth flowing into the temples. It is a rigid, complex hierarchy, yet it holds the civilization together. Every ritual serves a practical purpose: keeping the divine powers satisfied so that the waters continue to flow for everyone.",
+      "mood": "day"
+    },
+    {
+      "text": "You realize that the city isn't just a place of commerce. It is a giant machine of faith, meticulously calibrated to keep the universe running in balance. In the King’s shadow, nothing happens by accident. Everything is ritual, everything is divine.",
+      "mood": "day"
+    },
+    {
+      "text": "You trace your fingers over the cool sandstone of a temple gallery. These walls are more than decorations; they are the city’s archives. Every etched line is a formal record of temple donations and complex administrative rules carved to last forever.",
+      "mood": "warm",
+      "imagePrompt": "Close-up of intricate bas-relief carvings on an ancient sandstone wall inside a Khmer temple, dappled sunlight hitting the stone.",
+      "chapterTitle": "Voices from the Walls",
+      "chapterNumber": 4
+    },
+    {
+      "text": "Look closely at the script. It lists the labor requirements for maintaining these massive complexes. Thousands of workers were needed to scrub the stone, clear the moats, and keep the ritual fires burning. It was a city run on careful paperwork.",
+      "mood": "warm"
+    },
+    {
+      "text": "Beside the legal text, the stone comes to life with pictures. These carvings capture the mundane reality of the capital. You see bustling market scenes and people playing traditional games, frozen in a moment of calm relief from their daily duties.",
+      "mood": "warm"
+    },
+    {
+      "text": "Some sections show women selling produce or men wrestling in the dirt. It is a rare, honest glimpse into a life that was often dominated by the divine. The carvings prove that even amidst the ritual, humanity thrived.",
+      "mood": "day",
+      "imagePrompt": "A wide, empty courtyard of an Angkorian temple complex with overgrown stone pillars and lush tropical greenery in the background."
+    },
+    {
+      "text": "The stone speaks of a society that balanced rigid bureaucracy with the simple joy of a marketplace. You stand between the two, reading the history of a people who ensured their legacy was written directly into the heart of their home.",
+      "mood": "day"
+    },
+    {
+      "text": "Imagine a traveler stepping into this world. In 1296, a Chinese diplomat named Zhou Daguan arrived here. He wasn't one of the locals; he was an outsider looking in, recording everything he saw with a sharp, curious eye.",
+      "mood": "day",
+      "imagePrompt": "A bustling 13th-century Khmer market square with wooden stalls and tropical greenery under a bright sky.",
+      "chapterTitle": "The Envoy's Journal",
+      "chapterNumber": 5
+    },
+    {
+      "text": "He tells us what life felt like. He describes how the city thrived with vibrant markets, often managed entirely by women. You can almost smell the exotic spices and hear the chatter of trade flowing through the busy stalls.",
+      "mood": "day"
+    },
+    {
+      "text": "Zhou didn't just watch the trade. He noted the details of royal processions, festivals, and even how the local justice system operated. His journal remains one of our most important windows into a culture that left few written records.",
+      "mood": "warm"
+    },
+    {
+      "text": "He writes about what people wore and how they carried themselves. It is a rare, external perspective. He captures the daily rhythm, from the king’s golden attire to the common customs that defined the Khmer people’s unique way of life.",
+      "mood": "warm",
+      "imagePrompt": "A quiet, secluded courtyard inside a sandstone temple complex with intricate carvings and patches of sunlight."
+    },
+    {
+      "text": "Through his words, the rigid bureaucracy of the state softens into human stories. He helps us see that behind the massive stone walls, people were living, working, and celebrating much like any civilization throughout the vast sweep of history.",
+      "mood": "cool"
+    },
+    {
+      "text": "Step into the morning market. You smell salt, dried fish, and rich spices drifting through the air. Merchants display vibrant silks and delicate ceramics from distant lands, signaling that Angkor sits at the beating heart of a vast Southeast Asian trade network.",
+      "mood": "day",
+      "imagePrompt": "A wide, bustling open-air marketplace in a tropical setting with wooden stalls under thatched roofs.",
+      "chapterTitle": "The Rhythm of the City",
+      "chapterNumber": 6
+    },
+    {
+      "text": "The atmosphere is electric. People barter with rice or precious metals, their voices rising over the clatter of wares. It is here that news travels as quickly as the goods, connecting the capital to the furthest reaches of the empire.",
+      "mood": "day"
+    },
+    {
+      "text": "When the sun reaches its peak, the noise fades into the rhythmic chanting of temple festivals. These shrines aren't just for quiet prayer; they are the anchors of your community, drawing everyone together to celebrate the turning of the seasons.",
+      "mood": "warm",
+      "imagePrompt": "A serene stone temple courtyard with decorative carvings, surrounded by lush green foliage under a bright sky."
+    },
+    {
+      "text": "Work here is often communal. You join neighbors to maintain the vital irrigation channels or build new structures. Everyone plays a part, bound by a shared sense of duty to keep the city’s lifeblood flowing smoothly through the heat.",
+      "mood": "warm"
+    },
+    {
+      "text": "As the day ends, the frantic energy of the market softens. You find a quiet space in the shadows of a sanctuary. Even amidst the grand scale of the stone city, you realize that life here is defined by these small, human connections.",
+      "mood": "cool"
+    },
+    {
+      "text": "The stones feel cool against your palm. You wonder how long they will stand. History is rarely a sudden crash; it is a slow fading. Over generations, the vibrant city shifted, quietly returning to the embrace of the deep, encroaching jungle.",
+      "mood": "cool",
+      "imagePrompt": "The intricately carved stone walls of a Khmer temple overgrown with thick tropical vines and moss in the golden light of dusk.",
+      "chapterTitle": "The Legacy of Stone",
+      "chapterNumber": 7
+    },
+    {
+      "text": "Scholars suggest that environmental stress and changing trade routes gradually pulled the city's heart away. The bustling streets did not empty overnight. Instead, the capital simply drifted, slowly transforming back into a quieter, rural landscape as people moved elsewhere.",
+      "mood": "warm"
+    },
+    {
+      "text": "The transition was a long, silent migration. While the grand administration faded, the local people remained, tending their fields just as their ancestors did. Life continued, even if the royal processions and golden umbrellas eventually vanished from these wide avenues.",
+      "mood": "day"
+    },
+    {
+      "text": "Today, these massive temples remain as a testament to Khmer engineering. They stand as rugged anchors of history, surviving monsoons and centuries of silence. Every carving still speaks of a society that mastered water, stone, and the challenging earth.",
+      "mood": "warm",
+      "imagePrompt": "A wide view of the ancient stone temple towers reflected in a calm, dark lotus pond at sunset."
+    },
+    {
+      "text": "You look up at the soaring spires, recognizing the immense effort held within every joint and block. It is a legacy of stone, proof that while empires shift like the seasons, the human drive to create something enduring never truly sleeps.",
+      "mood": "cool"
+    },
+    {
+      "text": "As the sun sets, the temples cast long, deep shadows over the jungle, a quiet end to a bustling day. Angkor was more than just stone—it was a feat of human ingenuity. If you enjoyed this journey, subscribe for more history, and check out our video on the Silk Road.",
+      "mood": "dark",
+      "imagePrompt": "The stone face of a Bayon temple tower illuminated by the soft, fading light of dusk.",
+      "chapterTitle": "Wrap-up",
+      "chapterNumber": 0
+    }
+  ],
+  "claimsToVerify": [
+    "[The Hydraulic City] Angkor relied on a vast network of canals and reservoirs called barays.",
+    "[The Hydraulic City] Water management allowed for multiple rice harvests per year.",
+    "[The Hydraulic City] The Khmer population size is debated by archaeologists.",
+    "[Fields of Plenty] Rice was the primary food source and economic foundation of the Khmer Empire.",
+    "[Fields of Plenty] Khmer farmers used sophisticated irrigation channels to control water levels.",
+    "[Fields of Plenty] Commoners lived in wooden houses on stilts to protect against seasonal flooding.",
+    "[The King’s Shadow] The Khmer King was viewed as a divine representative of Shiva or Vishnu (Devaraja).",
+    "[The King’s Shadow] Religious rituals were considered essential to ensuring city prosperity and rain.",
+    "[The King’s Shadow] Brahmins and monks held high social status and managed temple finances in Angkor.",
+    "[Voices from the Walls] Khmer inscriptions contain records of temple donations and administrative rules.",
+    "[Voices from the Walls] Khmer temple inscriptions document labor requirements for maintenance.",
+    "[Voices from the Walls] Khmer bas-reliefs depict daily life scenes like markets and traditional games.",
+    "[The Envoy's Journal] Zhou Daguan visited Angkor in 1296.",
+    "[The Envoy's Journal] Zhou Daguan's account mentions markets run by women.",
+    "[The Envoy's Journal] Zhou Daguan documented judicial systems, festivals, and royal processions.",
+    "[The Envoy's Journal] Zhou Daguan's writings are a primary historical source for Khmer daily life and clothing.",
+    "[The Rhythm of the City] Angkorian markets traded in salt, silks, and ceramics.",
+    "[The Rhythm of the City] Angkor was connected to wider Southeast Asian trade networks.",
+    "[The Rhythm of the City] Community life in Angkor revolved around temple festivals and communal labor.",
+    "[The Legacy of Stone] Environmental stress and shifting trade patterns were contributing factors to Angkor's decline.",
+    "[The Legacy of Stone] The transition from a capital city to a rural site was a gradual process.",
+    "[The Legacy of Stone] Angkor's temples serve as evidence of Khmer architectural and engineering prowess."
+  ]
+}

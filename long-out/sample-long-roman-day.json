@@ -1,0 +1,60 @@
+{
+  "slug": "sample-long-roman-day",
+  "title": "A Day in Ancient Rome (sample)",
+  "hook": "A Day in Ancient Rome",
+  "channelName": "A Day Back Then",
+  "claimsToVerify": [
+    "Many Romans lived in crowded apartment blocks; kitchens were rare in them",
+    "Wealthy patrons received clients at dawn",
+    "Public baths were social as well as hygienic spaces"
+  ],
+  "scenes": [
+    {
+      "text": "Imagine waking up in Rome two thousand years ago. No alarm, no electricity, no running water. Just the sounds of a city already coming awake.",
+      "mood": "night",
+      "chapterTitle": "Intro",
+      "chapterNumber": 0,
+      "imagePrompt": "Ancient Roman rooftops at dawn, oil lamps glowing in windows"
+    },
+    {
+      "text": "Most people lived in crowded apartment blocks. Rooms were small, often shared, and kitchens were rare, so cooking at home was a luxury for many.",
+      "mood": "night",
+      "chapterTitle": "Before Sunrise",
+      "chapterNumber": 1,
+      "imagePrompt": "Narrow multi-storey Roman apartment building at night with a single lit window"
+    },
+    {
+      "text": "Breakfast, if you had it, was simple. Bread, maybe some cheese or olives, grabbed quickly before heading out into the street.",
+      "mood": "warm"
+    },
+    {
+      "text": "Wealthy Romans received visitors at dawn. Clients in togas waited to greet their patron, hoping for a favor, a meal, or a little money.",
+      "mood": "day",
+      "chapterTitle": "Morning Business",
+      "chapterNumber": 2,
+      "imagePrompt": "Crowd of men in togas waiting at the entrance hall of a wealthy Roman villa"
+    },
+    {
+      "text": "Meanwhile, shopkeepers opened their stalls, craftsmen started work, and the street filled with noise.",
+      "mood": "day"
+    },
+    {
+      "text": "By early afternoon, many people headed to the public baths. They were part gym, part spa, and part social club.",
+      "mood": "warm",
+      "chapterTitle": "Afternoon at the Baths",
+      "chapterNumber": 3,
+      "imagePrompt": "Roman public baths with steam and bathers relaxing, warm light"
+    },
+    {
+      "text": "You moved between warm and hot rooms, exercised, chatted, and caught up on the news of the day.",
+      "mood": "warm"
+    },
+    {
+      "text": "That is one ordinary day in the Roman world. Different from ours in many ways, yet strangely familiar. Next time, we step into an Egyptian village.",
+      "mood": "night",
+      "chapterTitle": "Wrap-up",
+      "chapterNumber": 0,
+      "imagePrompt": "Roman street at dusk with lamps being lit"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "slug": "china-exam-system",
+  "title": "How to Survive the Imperial Chinese Exam System",
+  "titleOptions": [
+    "How to Survive the Imperial Chinese Exam System",
+    "The Brutal Road to Becoming a Mandarins Official",
+    "The 1,300-Year Test: China's Imperial Civil Service"
+  ],
+  "thumbnailIdea": "A solitary scholar sitting in a cramped, dark examination cell, surrounded by stacks of ancient scrolls and a single flickering candle.",
+  "hook": "How to Become an Official in Imperial China",
+  "channelName": "A Day Back Then",
+  "format": "long",
+  "targetMinutes": 9,
+  "scenes": [
+    {
+      "text": "You are locked in a stone cell, three feet wide. You have nothing but a brush, ink, and a stack of paper. Outside, the fate of your entire family rests on whether you can memorize thousands of lines of philosophy. This is the hardest test in history.",
+      "mood": "dark",
+      "imagePrompt": "A narrow, stone-walled exam cell in an ancient Chinese testing compound with a wooden desk and a small barred opening for light.",
+      "chapterTitle": "Intro",
+      "chapterNumber": 0
+    },
+    {
+      "text": "Before these cells existed, getting a government job relied on who your father was. If you were born into a noble family, the seat was yours. If not, you stayed a peasant. It was a closed loop of power.",
+      "mood": "cool",
+      "imagePrompt": "A wide view of a misty, ancient Chinese mountain landscape with a distant, sprawling stone palace complex under a pale morning sky.",
+      "chapterTitle": "The Rise of Meritocracy",
+      "chapterNumber": 1
+    },
+    {
+      "text": "Everything changed with the Sui Dynasty. They formalized an early exam system, looking for talent instead of just bloodlines. It was a bold gamble to strip power from the aristocrats and put it directly into the Emperor’s hands.",
+      "mood": "day"
+    },
+    {
+      "text": "The Tang Dynasty took that idea and ran with it, expanding these tests to find bright minds across the empire. They wanted administrators who were loyal to the throne, not to their own powerful, landed clans.",
+      "mood": "warm"
+    },
+    {
+      "text": "By the time the Song Dynasty arrived, the system was fully cemented as the primary road to power. It became the undisputed path for anyone hoping to climb the ladder of the imperial bureaucracy.",
+      "mood": "day",
+      "imagePrompt": "The interior of a grand, quiet library in the Song era, filled with tall wooden bookshelves, scrolls, and sunlight filtering through paper screens."
+    },
+    {
+      "text": "Suddenly, a farm boy with a good memory could become a high official. It created a class of scholar-bureaucrats who owed their status to the books they studied, rather than the family name they carried.",
+      "mood": "warm"
+    },
+    {
+      "text": "But this mobility came at a staggering price. To earn your seat in the government, you had to master a rigid curriculum. Your personal interests didn't matter. You were expected to become a living encyclopedia of ancient Confucian thought.",
+      "mood": "warm",
+      "imagePrompt": "An interior of a traditional Chinese study with bamboo scrolls and ink brushes resting on a wooden desk near a window.",
+      "chapterTitle": "What the Scholars Studied",
+      "chapterNumber": 2
+    },
+    {
+      "text": "The core of your world was the 'Four Books' and 'Five Classics.' These texts were dense, philosophical foundations of Chinese society. You didn't just read them; you committed thousands of pages to memory, word for perfect word.",
+      "mood": "warm"
+    },
+    {
+      "text": "This obsession began in early childhood. While other children played, you sat for decades, reciting verses until they were burned into your mind. It was a lifetime of study focused entirely on passing one single, high-stakes test.",
+      "mood": "day"
+    },
+    {
+      "text": "It wasn't enough to know the content, though. You had to express it with elegance. Officials scrutinized your Classical Chinese literary style and your calligraphy. Every stroke of the brush had to convey poise, discipline, and absolute mastery.",
+      "mood": "day",
+      "imagePrompt": "A close-up of a parchment paper showing elaborate traditional calligraphy with a dark ink stone and brush resting nearby."
+    },
+    {
+      "text": "Your hand had to be steady. Even a brilliant essay could be discarded if the characters looked messy or unrefined. You were being trained to represent the state, and your handwriting was considered a mirror of your soul.",
+      "mood": "cool"
+    },
+    {
+      "text": "Now, you stand before the massive gates of the 'kaoshe,' the examination compound. It is a labyrinth of stone and silence, designed to isolate you from the outside world. Your journey into the bureaucracy has truly begun.",
+      "mood": "cool",
+      "imagePrompt": "A wide shot of a vast, walled architectural complex in Imperial China, featuring rows of grey brick structures under a overcast sky.",
+      "chapterTitle": "Inside the Examination Compound",
+      "chapterNumber": 3
+    },
+    {
+      "text": "Guards pat you down with intense suspicion. They are searching for hidden cheat sheets sewn into your clothes or scribbled on tiny scrolls. Even a single scrap of paper could lead to an immediate, permanent disqualification.",
+      "mood": "cool"
+    },
+    {
+      "text": "Once cleared, you are assigned a tiny, cramped cubicle. This is your home for the next few days. It holds only a plank for your seat and a board that slides out to serve as your desk.",
+      "mood": "dark",
+      "imagePrompt": "A cramped, dimly lit stone cell with a small wooden plank desk and a straw mat on the floor, looking out into a narrow, dark corridor."
+    },
+    {
+      "text": "You must cook your own meals and sleep on these hard, unforgiving floors. The air is stagnant, and the environment is punishing. You quickly realize this test is a grueling trial of physical endurance, not just intellect.",
+      "mood": "dark"
+    },
+    {
+      "text": "The heat, the lack of sanitation, and the sheer mental exhaustion take a toll. Many candidates fall ill before the final bell rings. You focus on your brush, praying your body holds out until the very end.",
+      "mood": "dark"
+    },
+    {
+      "text": "The final bell rings, but the real test is just beginning. You leave your small cell, heart pounding with uncertainty. Of the thousands who entered this compound, only a tiny fraction will ever attain the coveted rank of Jinshi.",
+      "mood": "day",
+      "imagePrompt": "An aerial view of a crowded, walled examination compound with rows of tiny, individual stone cells in the hazy sunlight of a bustling Chinese city.",
+      "chapterTitle": "The Brutal Odds of Success",
+      "chapterNumber": 4
+    },
+    {
+      "text": "Most dreams evaporate here. Even brilliant scholars often walk away with nothing but exhaustion. The path to the scholar-official class is so narrow that many candidates return to these gates again and again, well into their sixties.",
+      "mood": "day"
+    },
+    {
+      "text": "Imagine spending decades chasing a single title. Your youth fades, and your hair turns grey, yet you are still just a student. For many, this cycle of study and failure becomes a lifelong, quiet obsession that consumes everything.",
+      "mood": "cool"
+    },
+    {
+      "text": "When the results are posted, the reality hits hard. If you fail, there is no grand government position waiting. You might find work as a local village teacher, living a life of modest means far from the capital’s glory.",
+      "mood": "dark",
+      "imagePrompt": "A dimly lit, narrow stone alleyway in a traditional village, with a lonely wooden desk visible through an open doorway."
+    },
+    {
+      "text": "Success is a different story entirely. If your name appears on that list, you join the elite. You transition from a mere student to a scholar-official, holding the keys to power and influence in the vast Imperial bureaucracy.",
+      "mood": "warm"
+    },
+    {
+      "text": "For the lucky few, life changes overnight. You walk through the streets, and people bow. It is a rare path to status for a talented commoner, yet the system isn't perfectly fair. Money still whispers loudly in the background.",
+      "mood": "warm",
+      "imagePrompt": "A bustling market street in a Chinese city during the Ming dynasty, stone paved roads, traditional wooden architecture, lanterns hanging from eaves.",
+      "chapterTitle": "Social Impact and Corruption",
+      "chapterNumber": 5
+    },
+    {
+      "text": "Wealthy families hold a massive head start. They hire the best private tutors and buy thousands of books. A poor student might be brilliant, but he lacks the resources to study for a decade without working for food.",
+      "mood": "day"
+    },
+    {
+      "text": "To keep things honest, officials try everything. They force candidates to copy their essays in a standardized script so graders cannot recognize a student’s handwriting. They even seal the test papers to hide the writer's identity.",
+      "mood": "cool",
+      "imagePrompt": "An interior view of a quiet, dimly lit archive room with rows of wooden document boxes and calligraphy brushes on a desk."
+    },
+    {
+      "text": "Still, critics argue this obsession with the classics misses the point. They say memorizing ancient poetry does not teach you how to manage a flood, collect taxes, or solve a dispute between two angry farmers.",
+      "mood": "day"
+    },
+    {
+      "text": "The curriculum prioritizes rote learning over practical skills. You might be a genius at reciting Confucius, but that doesn't guarantee you will be a capable administrator. The empire constantly balances the dream of merit against the reality of bias.",
+      "mood": "day"
+    },
+    {
+      "text": "By the late nineteenth century, the world is changing fast. Imperial China faces pressure from industrialized nations, and the ancient civil service exams start to look outdated. Critics argue that memorizing classical texts simply cannot solve the complex modern problems facing the empire.",
+      "mood": "cool",
+      "imagePrompt": "An imperial palace courtyard in Beijing showing signs of age and autumn leaves.",
+      "chapterTitle": "The End of the Old Guard",
+      "chapterNumber": 6
+    },
+    {
+      "text": "The gap between the traditional curriculum and the requirements of a modern government grows too wide to ignore. Reformers demand a shift toward science, geography, and foreign languages. The old guard struggles to hold onto centuries of tradition while the nation slowly shifts under them.",
+      "mood": "cool"
+    },
+    {
+      "text": "In 1905, the inevitable happens. The Qing Dynasty finally abolishes the examination system entirely. It is a massive turning point, effectively ending a tradition that shaped Chinese governance for over a thousand years. The focus shifts toward a new educational system modeled after Western schools.",
+      "mood": "dark",
+      "imagePrompt": "A quiet, empty study room with wooden desks abandoned after the final exams."
+    },
+    {
+      "text": "Yet, the ghost of the old system lingers. The deep-rooted cultural belief that success is tied to rigorous testing and bureaucratic rank remains a powerful force in East Asian society. The intense pressure to excel in academics carries on, echoing those grueling days inside the compounds.",
+      "mood": "warm"
+    },
+    {
+      "text": "You can still see the legacy of this exam culture today in the way nations prioritize standardized testing. The specific texts have changed, but the dream of climbing the social ladder through sheer intellectual endurance remains a permanent fixture of the historical landscape.",
+      "mood": "warm"
+    },
+    {
+      "text": "Whether you were a genius or just persistent, the path to power was a test of iron will. While the ink has long dried, the weight of those exams helped build the China we know today. If you enjoyed this, please subscribe for more history and watch our next video.",
+      "mood": "warm",
+      "imagePrompt": "An ancient Chinese garden with a stone pavilion, traditional curved roof architecture, and willow trees overlooking a quiet pond.",
+      "chapterTitle": "Wrap-up",
+      "chapterNumber": 0
+    }
+  ],
+  "claimsToVerify": [
+    "[The Rise of Meritocracy] Sui Dynasty formalized early examination systems.",
+    "[The Rise of Meritocracy] Tang Dynasty expanded the role of the examination system.",
+    "[The Rise of Meritocracy] Song Dynasty cemented the examination system as the primary path to government power.",
+    "[The Rise of Meritocracy] The exam system aimed to shift power from landed aristocrats to the Emperor.",
+    "[What the Scholars Studied] The Four Books and Five Classics were the core curriculum for the imperial examinations.",
+    "[What the Scholars Studied] Candidates were required to memorize vast portions of these texts.",
+    "[What the Scholars Studied] Education for the exams typically began in early childhood.",
+    "[What the Scholars Studied] Candidates were judged on both the content of their essays and the quality of their calligraphy.",
+    "[Inside the Examination Compound] Exams took place in walled compounds called 'kaoshe'.",
+    "[Inside the Examination Compound] Candidates were searched for hidden cheat sheets.",
+    "[Inside the Examination Compound] Candidates lived, ate, and slept in individual cubicles for the duration of the test.",
+    "[Inside the Examination Compound] The physical conditions were harsh and often led to illness.",
+    "[The Brutal Odds of Success] Only a tiny percentage of applicants passed the Jinshi examination.",
+    "[The Brutal Odds of Success] Candidates often took the exams repeatedly into their old age.",
+    "[The Brutal Odds of Success] Unsuccessful candidates often became local teachers or faced poverty.",
+    "[The Brutal Odds of Success] Passing the exam granted entry into the 'scholar-official' class.",
+    "[Social Impact and Corruption] The imperial examination system provided a pathway for social mobility for talented commoners.",
+    "[Social Impact and Corruption] Wealthy families had advantages through access to tutors and study materials.",
+    "[Social Impact and Corruption] Measures such as copying essays in a standardized hand were used to ensure anonymity.",
+    "[Social Impact and Corruption] Critics argued that the system prioritized memorization over practical governance skills.",
+    "[The End of the Old Guard] The civil service examination system was abolished in 1905 during the Qing Dynasty.",
+    "[The End of the Old Guard] The examination system was replaced by a modern educational system modeled on Western patterns.",
+    "[The End of the Old Guard] The examination culture continues to influence contemporary East Asian education.",
+    "[The End of the Old Guard] The value placed on bureaucratic rank is considered a historical legacy of the imperial examination system."
+  ]
+}
