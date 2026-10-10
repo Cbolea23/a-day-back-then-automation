@@ -520,76 +520,6 @@ const NarratorBody: React.FC<BodyProps> = ({
     return "open";
   };
 
-  // Themed sleeve color; gladiator fights bare-armed (manica instead).
-  const sleeveColor: string | null =
-    theme === "roman"
-      ? tunic || "#e8cf9a"
-      : theme === "egypt"
-        ? "#f7f2e7"
-        : theme === "viking"
-          ? "#3d5639"
-          : theme === "knight"
-            ? "#b82d23"
-            : theme === "medieval"
-              ? "#8a532d"
-              : theme === "plague-doctor"
-                ? "#1e1e24"
-                : theme === "greek"
-                  ? "#fcfaf4"
-                  : null;
-
-  // Short sleeve: a tapered, outlined quad that the shoulder hides inside.
-  // It starts inside the torso and runs partway down the upper arm. The arm
-  // is drawn first, so the sleeve swallows the arm's top segment and the
-  // visible arm emerges from the cuff like a real sleeve.
-  const sleeve = (
-    sx: number,
-    sy: number,
-    ex: number,
-    ey: number,
-    color: string,
-  ) => {
-    const dx = ex - sx;
-    const dy = ey - sy;
-    const len = Math.hypot(dx, dy) || 1;
-    const ux = dx / len;
-    const uy = dy / len;
-    const px = -uy;
-    const py = ux;
-    const back = 20; // tuck into the torso so the shoulder hides inside
-    const L = len * 0.48; // sleeve length along the arm
-    const t1x = sx - ux * back + px * 17;
-    const t1y = sy - uy * back + py * 17;
-    const t2x = sx - ux * back - px * 17;
-    const t2y = sy - uy * back - py * 17;
-    const b1x = sx + ux * L + px * 12.5;
-    const b1y = sy + uy * L + py * 12.5;
-    const b2x = sx + ux * L - px * 12.5;
-    const b2y = sy + uy * L - py * 12.5;
-    return (
-      <g>
-        <path
-          d={`M ${t1x} ${t1y} L ${t2x} ${t2y} L ${b2x} ${b2y} L ${b1x} ${b1y} Z`}
-          fill={color}
-          stroke={INK}
-          strokeWidth={4}
-          strokeLinejoin="round"
-        />
-        {/* cuff hem */}
-        <line
-          x1={b1x}
-          y1={b1y}
-          x2={b2x}
-          y2={b2y}
-          stroke={INK}
-          strokeWidth={2.5}
-          opacity={0.3}
-          strokeLinecap="round"
-        />
-      </g>
-    );
-  };
-
   // Where the pupils look: the eyes follow the gesture's focus.
   const look: Vec = (() => {
     switch (activeGesture) {
@@ -843,13 +773,6 @@ const NarratorBody: React.FC<BodyProps> = ({
       <line x1="198" y1="190" x2={p.rElbow[0]} y2={p.rElbow[1]} stroke={INK} strokeWidth="9" strokeLinecap="round" />
       <line x1={p.rElbow[0]} y1={p.rElbow[1]} x2={p.rHand[0]} y2={p.rHand[1]} stroke={INK} strokeWidth="8" strokeLinecap="round" />
 
-      {/* Short sleeves the shoulders hide inside (gladiator goes bare-armed) */}
-      {sleeveColor && (
-        <g>
-          {sleeve(102, 190, p.lElbow[0], p.lElbow[1], sleeveColor)}
-          {sleeve(198, 190, p.rElbow[0], p.rElbow[1], sleeveColor)}
-        </g>
-      )}
 
       {theme === "gladiator" && (
         <g>
