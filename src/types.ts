@@ -2,6 +2,29 @@ export const FPS = 30;
 
 export type Mood = "day" | "night" | "warm" | "dark" | "cool";
 
+export type DriftKind = "push-in" | "pull-back" | "pan-left" | "pan-right" | "still";
+
+/**
+ * Per-scene stage direction: how the narrator shares the frame with the
+ * background image. All fields are optional — anything missing falls back
+ * to the defaults (centered narrator, push-in drift, no focus aiming).
+ */
+export type SceneDirection = {
+  /**
+   * Focus point in the background image, normalized 0..1 (x → right,
+   * y → down). During "point" and "explain" gestures the narrator's pupils,
+   * head tilt and pointing arm aim at this spot, and the camera drifts
+   * toward it.
+   */
+  focus?: [number, number];
+  /** Horizontal anchor of the narrator, as a fraction of frame width. Default 0.5. */
+  narratorX?: number;
+  /** Narrator scale multiplier. Default 1. Use < 1 to keep busy artwork visible. */
+  narratorScale?: number;
+  /** Camera drift style for the background. Default "push-in". */
+  drift?: DriftKind;
+};
+
 export type Scene = {
   /** Narration text. Also used for the captions. */
   text: string;
@@ -19,6 +42,8 @@ export type Scene = {
   chapterTitle?: string;
   /** Long-form only: 1, 2, 3... for real chapters; 0 or missing for intro/wrap-up (no title card shown). */
   chapterNumber?: number;
+  /** Stage direction for the narrator/scene interaction (optional, defaults apply). */
+  direction?: SceneDirection;
   /** Set by the voice script so edited text gets re-voiced. */
   voicedText?: string;
   /**

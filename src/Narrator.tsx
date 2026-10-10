@@ -84,6 +84,14 @@ type Props = {
   audioSrc?: string;
   /** Frame offset inside the scene (0 when the narrator owns the sequence). */
   frameOffset?: number;
+  /**
+   * Scene focus point in frame-normalized coords (0..1, x → right, y → down).
+   * During "point"/"explain" gestures the pupils, head tilt and pointing arm
+   * aim at it, so the narrator interacts with the background image.
+   */
+  focus?: {x: number; y: number};
+  /** Narrator's horizontal anchor as a fraction of frame width. Default 0.5. */
+  anchorX?: number;
 };
 
 // ---------------------------------------------------------------------------
@@ -264,6 +272,22 @@ const lerpPose = (a: Pose, b: Pose, t: number): Pose => ({
 
 const easeInOut = (t: number): number =>
   t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+
+/** Mirror a pose horizontally (viewBox is 300 wide) so the narrator can
+    point with the left arm when the scene focus is to their left. */
+const mirrorPose = (p: Pose): Pose => {
+  const mx = (v: Vec): Vec => [300 - v[0], v[1]];
+  return {
+    lElbow: mx(p.rElbow),
+    lHand: mx(p.rHand),
+    rElbow: mx(p.lElbow),
+    rHand: mx(p.lHand),
+    headTilt: -p.headTilt,
+    headDy: p.headDy,
+    lean: -p.lean,
+    shiftX: -p.shiftX,
+  };
+};
 
 /** Slight overshoot so gestures land with energy instead of gliding in. */
 const easeOutBack = (t: number): number => {
@@ -489,6 +513,8 @@ const NarratorBody: React.FC<BodyProps> = ({
   plan,
   frame,
   mouthOpen,
+  focus,
+  anchorX = 0.5,
 }) => {
   // Resolve pose + expression: speech plan wins, explicit gesture next, idle last.
   const {pose, expression, gesture: activeGesture} = useMemo(() => {
@@ -499,6 +525,28 @@ const NarratorBody: React.FC<BodyProps> = ({
     }
     return {pose: IDLE_POSE, expression: "neutral" as Expression, gesture: "idle" as GestureKind};
   }, [plan, frame, gesture]);
+
+  // Scene interaction: normalized direction from the narrator's head to the
+  // scene focus point (frame coords, 1080x1920). The SVG viewBox is 300x600
+  // and the wrapper plants the feet at bottom:40.
+  const aim = useMemo(() => {
+    if (!focus) return null;
+    const s = height / 600;
+    const headX = anchorX * 1080;
+    const headY = 1920 - 40 - height + 100 * s;
+    const dx = focus.x * 1080 - headX;
+    const dy = focus.y * 1920 - headY;
+    const len = Math.hypot(dx, dy) || 1;
+    return {nx: dx / len, ny: dy / len};
+  }, [focus, anchorX, height]);
+
+  const aimActive = !!aim && (activeGesture === "point" || activeGesture === "explain");
+  // Point with the left arm when the focus is clearly to the narrator's left.
+  const pointLeft = activeGesture === "point" && !!aim && aim.nx < -0.15;
+  const resolvedPose = useMemo(
+    () => (pointLeft ? mirrorPose(pose) : pose),
+    [pointLeft, pose],
+  );
 
   // Head-nod beats on emphasis words.
   const nod = useMemo(() => {
@@ -515,13 +563,21 @@ const NarratorBody: React.FC<BodyProps> = ({
   // pointing, raised fingers for counting, open hands otherwise.
   const handVariant = (side: "left" | "right"): "open" | "fist" | "point" | "count" => {
     if (activeGesture === "emphasis") return "fist";
-    if (activeGesture === "point" && side === "right") return "point";
+    if (activeGesture === "point") return side === (pointLeft ? "left" : "right") ? "point" : "open";
     if (activeGesture === "count" && side === "left") return "count";
     return "open";
   };
 
-  // Where the pupils look: the eyes follow the gesture's focus.
+  // Where the pupils look: the eyes follow the gesture's focus — or the
+  // scene focus point when one is set and the narrator is presenting it.
   const look: Vec = (() => {
+    if (aimActive && aim) {
+      const k = activeGesture === "point" ? 6.5 : 4;
+      return [
+        Math.max(-6.5, Math.min(6.5, aim.nx * k)),
+        Math.max(-6.5, Math.min(6.5, aim.ny * k)),
+      ];
+    }
     switch (activeGesture) {
       case "point":
         return [5, -1];
@@ -553,7 +609,7 @@ const NarratorBody: React.FC<BodyProps> = ({
   // Life, not randomness: breathing is always on but subtle; gesture-specific
   // motion only plays while its gesture is active.
   const breath = Math.sin(frame / 26) * 2.5;
-  const p = {...pose};
+  const p = {...resolvedPose};
   if (activeGesture === "explain") {
     const m = Math.sin(frame / 9) * 7;
     p.lHand = [p.lHand[0], p.lHand[1] + m];
@@ -569,7 +625,19 @@ const NarratorBody: React.FC<BodyProps> = ({
     p.lHand = [p.lHand[0], p.lHand[1] + m];
     p.rHand = [p.rHand[0], p.rHand[1] + m];
   } else if (activeGesture === "point") {
-    p.rHand = [p.rHand[0], p.rHand[1] + Math.sin(frame / 14) * 4];
+    const wobbleHand = (pointLeft ? "lHand" : "rHand") as "lHand" | "rHand";
+    p[wobbleHand] = [p[wobbleHand][0], p[wobbleHand][1] + Math.sin(frame / 14) * 4];
+    // Aim the pointing arm at the scene focus point.
+    if (aim) {
+      const hx = (pointLeft ? "lHand" : "rHand") as "lHand" | "rHand";
+      const ex = (pointLeft ? "lElbow" : "rElbow") as "lElbow" | "rElbow";
+      p[hx] = [p[hx][0] + aim.nx * 30, p[hx][1] + aim.ny * 30];
+      p[ex] = [p[ex][0] + aim.nx * 12, p[ex][1] + aim.ny * 12];
+    }
+  }
+  // Head turns toward the scene focus while presenting it.
+  if (aimActive && aim) {
+    p.headTilt += Math.max(-8, Math.min(8, aim.nx * 10));
   }
   // Emphasis beats pump the fists as well as the head.
   if (activeGesture === "emphasis" && nod > 0.5) {

@@ -90,10 +90,38 @@ To change the acting, edit the cue word lists / priority in
   theme={theme}          // CharacterTheme
   plan={plan}            // from planSpeech(); without it, falls back to gentle idle
   audioSrc={scene.audio} // "audio/<slug>/1.mp3" — enables true lipsync
+  anchorX={0.5}          // narrator's horizontal anchor, fraction of frame width
+  focus={{x: 0.6, y: 0.3}} // scene focus point (frame-normalized); pupils,
+                           // head tilt and pointing arm aim at it during
+                           // "point"/"explain" gestures
 />
 ```
 
 Legacy props (`talking`, `gesture`, `tunic`) still work but the plan wins.
+
+### Scene direction (`Scene["direction"]`, optional — `src/types.ts`)
+
+Per-scene stage direction lives on the scene object in
+`scripts-out/<slug>.json`. Everything is optional; missing fields fall back
+to centered narrator / push-in drift / no focus aiming.
+
+```json
+"direction": {
+  "focus": [0.55, 0.28],   // normalized x/y of the interesting thing in the
+                           // background image — gaze + pointing arm aim here
+  "narratorX": 0.5,        // horizontal anchor, fraction of frame width
+  "narratorScale": 0.85,   // shrink to keep busy artwork visible
+  "drift": "push-in"       // "push-in" | "pull-back" | "pan-left" |
+                           // "pan-right" | "still" — camera move, eased
+                           // toward the focus point
+}
+```
+
+`Short.tsx` reads it: `Background` drifts the camera toward the focus,
+`SceneView` plants the narrator at `narratorX` (with a contact shadow), and
+`Narrator` aims pupils/head/pointing arm at `focus`. When the focus is left
+of the narrator the point pose is mirrored so they point with the left arm.
+No direction → old behavior exactly.
 
 ## Test / render
 

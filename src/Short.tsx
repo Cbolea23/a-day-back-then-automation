@@ -30,8 +30,59 @@ const Background: React.FC<{scene: Scene; durationInFrames: number}> = ({
   durationInFrames,
 }) => {
   const frame = useCurrentFrame();
-  // Slow push-in keeps still images feeling alive.
-  const zoom = interpolate(frame, [0, durationInFrames], [1.0, 1.12], {
+  const dir = scene.direction ?? {};
+  const drift = dir.drift ?? "push-in";
+  const focus = dir.focus ?? [0.5, 0.4];
+  // Focus-aware drift: the camera eases toward the scene's focus point so the
+  // narrator and the background feel like they share one space.
+  const fx = 0.5 - focus[0];
+  const fy = 0.42 - focus[1];
+  let zoomFrom = 1.02;
+  let zoomTo = 1.14;
+  let txFrom = 0;
+  let txTo = fx * 9;
+  let tyFrom = 0;
+  let tyTo = fy * 9;
+  switch (drift) {
+    case "pull-back":
+      zoomFrom = 1.16;
+      zoomTo = 1.03;
+      txFrom = fx * 9;
+      txTo = 0;
+      tyFrom = fy * 9;
+      tyTo = 0;
+      break;
+    case "pan-left":
+      zoomFrom = 1.18;
+      zoomTo = 1.18;
+      txFrom = 4;
+      txTo = -4;
+      tyTo = 0;
+      break;
+    case "pan-right":
+      zoomFrom = 1.18;
+      zoomTo = 1.18;
+      txFrom = -4;
+      txTo = 4;
+      tyTo = 0;
+      break;
+    case "still":
+      zoomFrom = 1.04;
+      zoomTo = 1.04;
+      txTo = 0;
+      tyTo = 0;
+      break;
+    case "push-in":
+    default:
+      break;
+  }
+  const zoom = interpolate(frame, [0, durationInFrames], [zoomFrom, zoomTo], {
+    extrapolateRight: "clamp",
+  });
+  const tx = interpolate(frame, [0, durationInFrames], [txFrom, txTo], {
+    extrapolateRight: "clamp",
+  });
+  const ty = interpolate(frame, [0, durationInFrames], [tyFrom, tyTo], {
     extrapolateRight: "clamp",
   });
   const fadeIn = interpolate(frame, [0, 6], [0, 1], {
@@ -47,14 +98,14 @@ const Background: React.FC<{scene: Scene; durationInFrames: number}> = ({
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            transform: `scale(${zoom})`,
+            transform: `scale(${zoom}) translate(${tx}%, ${ty}%)`,
           }}
         />
       ) : (
         <AbsoluteFill
           style={{
             background: MOOD_GRADIENTS[scene.mood ?? "warm"],
-            transform: `scale(${zoom})`,
+            transform: `scale(${zoom}) translate(${tx}%, ${ty}%)`,
           }}
         />
       )}
@@ -156,30 +207,48 @@ const SceneView: React.FC<{
       {scene.audio ? <Audio src={staticFile(scene.audio)} /> : null}
 
       {/* Narrator performs the narration: entrance, then purposeful gestures.
-          It stays planted — no more random wandering between scenes. */}
+          Stage direction places them in the frame so they never cover the
+          scene's focus point, and they aim their gaze/pointing arm at it. */}
       {(() => {
         // Subtle entrance slide-up on each scene switch
         const slideUp = interpolate(useCurrentFrame(), [0, 10], [28, 0], {
           extrapolateRight: "clamp",
         });
+        const dir = scene.direction ?? {};
+        const narratorX = dir.narratorX ?? 0.5;
+        const narratorScale = dir.narratorScale ?? 1;
+        const nHeight = 700 * narratorScale;
 
         return (
           <div
             style={{
               position: "absolute",
               bottom: 40 - slideUp,
-              left: 0,
-              right: 0,
-              display: "flex",
-              justifyContent: "center",
+              left: `${narratorX * 100}%`,
+              transform: "translateX(-50%)",
               filter: "drop-shadow(0 12px 28px rgba(0,0,0,0.65))",
             }}
           >
+            {/* Contact shadow grounds the narrator in the scene */}
+            <div
+              style={{
+                position: "absolute",
+                bottom: -4,
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: 320 * narratorScale,
+                height: 46 * narratorScale,
+                background:
+                  "radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 70%)",
+              }}
+            />
             <Narrator
-              height={700}
+              height={nHeight}
               theme={theme}
               plan={plan}
               audioSrc={scene.audio}
+              anchorX={narratorX}
+              focus={dir.focus ? {x: dir.focus[0], y: dir.focus[1]} : undefined}
             />
           </div>
         );
