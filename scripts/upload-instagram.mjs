@@ -36,6 +36,27 @@ function getCredentials() {
   return config;
 }
 
+const IG_QUESTIONS = [
+  "Would you have survived this? Tell us why 👇",
+  "Which fact shocked you the most? 👇",
+  "Could you live like this for one day? Be honest 👇",
+  "What era should we time-travel to next? 👇",
+  "Did you know this before watching? 👇",
+  "True or false: you could handle this life 👇",
+];
+
+const IG_CTAS = [
+  "Follow @adaybackthenofficial for daily history deep-dives!",
+  "🔔 Follow @adaybackthenofficial — a new time trip every day!",
+  "👉 Follow @adaybackthenofficial for your daily trip back in time!",
+];
+
+function pickBySlug(arr, slug) {
+  let h = 0;
+  for (const ch of String(slug)) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  return arr[h % arr.length];
+}
+
 export function buildInstagramCaption(script, slug) {
   const hook = script.hook || script.title || "Did you know?";
   const hashtags = [
@@ -57,8 +78,10 @@ export function buildInstagramCaption(script, slug) {
   if (slug.includes("greek") || slug.includes("athens") || slug.includes("sparta")) hashtags.push("#ancientgreece");
 
   const body = script.description || (script.scenes ? script.scenes.map((s) => s.text).slice(0, 2).join(" ") : "");
+  const question = pickBySlug(IG_QUESTIONS, slug);
+  const cta = pickBySlug(IG_CTAS, slug);
 
-  return `${hook}\n\n${body}\n\nFollow @adaybackthenofficial for daily history deep-dives!\n\n${Array.from(new Set(hashtags)).join(" ")}`;
+  return `${hook}\n\n${body}\n\n💬 ${question}\n\n${cta}\n\n${Array.from(new Set(hashtags)).join(" ")}`;
 }
 
 /**
