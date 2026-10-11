@@ -460,9 +460,8 @@ function wordTimingMouth(
   frame: number,
   talking: boolean,
 ): number {
+  if (!talking) return 0;
   if (!plan) {
-    // Legacy fallback: gentle talking flutter.
-    if (!talking) return 0;
     const c = Math.floor(frame / 4) % 4;
     return c === 0 ? 0 : c === 1 ? 0.55 : 0.9;
   }
@@ -1417,6 +1416,18 @@ export const Narrator: React.FC<Props> = (props) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const localFrame = frame - (props.frameOffset ?? 0);
+  const isTalking = props.talking ?? true;
+
+  if (!isTalking) {
+    return (
+      <NarratorBody
+        {...props}
+        talking={false}
+        frame={localFrame}
+        mouthOpen={0}
+      />
+    );
+  }
 
   if (props.audioSrc) {
     const {audioSrc, ...rest} = props;
@@ -1427,7 +1438,7 @@ export const Narrator: React.FC<Props> = (props) => {
             {...rest}
             frame={localFrame}
             mouthOpen={
-              audioMouth ?? wordTimingMouth(props.plan, localFrame, props.talking ?? true)
+              audioMouth ?? wordTimingMouth(props.plan, localFrame, true)
             }
           />
         )}
@@ -1439,7 +1450,7 @@ export const Narrator: React.FC<Props> = (props) => {
     <NarratorBody
       {...props}
       frame={localFrame}
-      mouthOpen={wordTimingMouth(props.plan, localFrame, props.talking ?? true)}
+      mouthOpen={wordTimingMouth(props.plan, localFrame, true)}
     />
   );
 };

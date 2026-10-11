@@ -1,21 +1,43 @@
 import {NextResponse} from "next/server";
-import {getJob, listJobs, startRenderJob} from "@/lib/pipeline";
+import {listJobs, startRenderJob, startLongRenderJob, startProcessImagesJob} from "@/lib/pipeline";
 
-/** List render jobs (newest first). */
+/** List all render/pipeline jobs (newest first). */
 export async function GET() {
-  return NextResponse.json({jobs: listJobs().filter((j) => j.kind === "render")});
+  const jobs = listJobs().filter((j) =>
+    ["render", "render-long", "process-images", "npc-test"].includes(j.kind),
+  );
+  return NextResponse.json({jobs});
 }
 
-/** Start a real render: `node scripts/render.mjs <slug>`. Returns a job id to poll. */
+/** Start a render or processing job. */
 export async function POST(req: Request) {
-  const {slug} = (await req.json()) as {slug?: string};
-  if (!slug) return NextResponse.json({error: "slug is required"}, {status: 400});
+  const {slug, kind} = (await req.json().catch(() => ({}))) as {
+    slug?: string;
+    kind?: "short" | "long" | "images" | "npc-test";
+  };
+
+  if (!slug && kind !== "images") {
+    return NextResponse.json({error: "slug is required"}, {status: 400});
+  }
+
+  const targetSlug = slug || "all-ready";
   const running = listJobs().find(
-    (j) => j.kind === "render" && j.slug === slug && (j.status === "running" || j.status === "queued"),
+    (j) =>
+      j.slug === targetSlug &&
+      (j.status === "running" || j.status === "queued"),
   );
   if (running) {
     return NextResponse.json({job: running, deduped: true});
   }
-  const job = startRenderJob(slug);
+
+  let job;
+  if (kind === "long") {
+    job = startLongRenderJob(targetSlug);
+  } else if (kind === "images") {
+    job = startProcessImagesJob(slug);
+  } else {
+    job = startRenderJob(targetSlug);
+  }
+
   return NextResponse.json({job});
 }

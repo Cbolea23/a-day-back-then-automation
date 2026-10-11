@@ -12,6 +12,7 @@ import {
 } from "remotion";
 import {Captions} from "./Captions";
 import {Narrator, getThemeFromSlug, CharacterTheme} from "./Narrator";
+import {NPC} from "./NPC";
 import {planSpeech} from "./speech";
 import {Mood, Scene, ScriptProps, sceneFrames, totalFrames} from "./types";
 
@@ -167,6 +168,34 @@ const LongScene: React.FC<{
   theme?: CharacterTheme;
 }> = ({scene, index, durationInFrames, sameAsPrev, theme}) => {
   const showCard = !!scene.chapterTitle && (scene.chapterNumber ?? 0) > 0;
+
+  const isNpcSpeaking = scene.speaker === "npc";
+
+  // Auto-detect or use explicit scene.npc
+  let npcConfig =
+    scene.npc ??
+    (scene.text.toLowerCase().includes("guy in the corner")
+      ? {
+          theme: "roman",
+          tunic: "#e2d2b4",
+          position: "left-corner" as const,
+          facing: "right" as const,
+          height: 410,
+          gesture: "think" as const,
+          expression: "nervous" as const,
+          speechBubble: "I just needed money...",
+        }
+      : undefined);
+
+  if (npcConfig && isNpcSpeaking) {
+    npcConfig = {
+      ...npcConfig,
+      talking: true,
+      audio: scene.audio,
+      gesture: "explain",
+    };
+  }
+
   return (
     <AbsoluteFill>
       <Background
@@ -175,9 +204,18 @@ const LongScene: React.FC<{
         durationInFrames={durationInFrames}
         sameAsPrev={sameAsPrev}
       />
-      {scene.audio ? <Audio src={staticFile(scene.audio)} /> : null}
+      {scene.ambientAudio ? (
+        <Audio src={staticFile(scene.ambientAudio)} volume={0.22} />
+      ) : null}
+      {/* If NPC is speaking, NPC component handles its own audio lipsync */}
+      {!isNpcSpeaking && scene.audio ? <Audio src={staticFile(scene.audio)} /> : null}
 
-      {/* Narrator performs the narration bottom-right, gestures synced to speech */}
+      {/* Render interactive secondary character if present in the scene */}
+      {npcConfig ? (
+        <NPC npc={npcConfig} durationInFrames={durationInFrames} />
+      ) : null}
+
+      {/* Narrator performs bottom-right, listening or speaking */}
       {(() => {
         const plan = planSpeech(scene.text, durationInFrames, {
           isFirstScene: index === 0,
@@ -196,7 +234,10 @@ const LongScene: React.FC<{
               theme={theme}
               tunic={index % 2 === 0 ? "#e8cf9a" : "#d9bd86"}
               plan={plan}
-              audioSrc={scene.audio}
+              talking={!isNpcSpeaking}
+              audioSrc={!isNpcSpeaking ? scene.audio : undefined}
+              focus={npcConfig ? {x: 0.25, y: 0.55} : undefined}
+              anchorX={0.88}
             />
           </div>
         );
@@ -208,8 +249,28 @@ const LongScene: React.FC<{
           left: 60,
           right: 520,
           bottom: 90,
+          textAlign: "center",
         }}
       >
+        {scene.speakerName ? (
+          <div
+            style={{
+              display: "inline-block",
+              background: isNpcSpeaking ? "#38bdf8" : "#ffd93b",
+              color: "#111",
+              fontWeight: 900,
+              fontSize: 26,
+              padding: "4px 16px",
+              borderRadius: 8,
+              marginBottom: 10,
+              letterSpacing: 2,
+              fontFamily: "Arial, sans-serif",
+              boxShadow: "0 4px 12px rgba(0,0,0,0.5)",
+            }}
+          >
+            {scene.speakerName}
+          </div>
+        ) : null}
         <Captions
           text={scene.text}
           durationInFrames={durationInFrames}
@@ -217,6 +278,7 @@ const LongScene: React.FC<{
           fontSize={64}
           uppercase={false}
           paddingX={20}
+          highlightColor={isNpcSpeaking ? "#38bdf8" : "#ffd93b"}
         />
       </div>
 

@@ -18,7 +18,14 @@ function probe(file: string): Promise<{duration: number; size: number}> {
         file,
       ],
       (err, stdout) => {
-        if (err) return resolve({duration: 0, size: 0});
+        if (err) {
+          try {
+            const stat = fs.statSync(file);
+            return resolve({duration: 60, size: stat.size});
+          } catch {
+            return resolve({duration: 0, size: 0});
+          }
+        }
         try {
           const f = JSON.parse(stdout).format;
           resolve({
@@ -33,38 +40,83 @@ function probe(file: string): Promise<{duration: number; size: number}> {
   });
 }
 
-/** Real vault: every rendered mp4 in out/, with duration/size/mtime. */
-export async function GET() {
-  const outDir = path.join(pipelineRoot(), "out");
-  let files: string[] = [];
-  try {
-    files = fs
-      .readdirSync(outDir)
-      .filter((f) => f.endsWith(".mp4"))
-      .sort();
-  } catch {
-    return NextResponse.json({videos: [], error: "out/ not found"});
+function findMp4Files(dir: string): string[] {
+  if (!fs.existsSync(dir)) return [];
+  const results: string[] = [];
+  const entries = fs.readdirSync(dir, {withFileTypes: true});
+  for (const entry of entries) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      results.push(...findMp4Files(full));
+    } else if (entry.isFile() && entry.name.toLowerCase().endsWith(".mp4")) {
+      results.push(full);
+    }
   }
+  return results;
+}
+
+export async function GET() {
+  const root = pipelineRoot();
+  const outDir = path.join(root, "out");
+
+  // Collect mp4s from out/ recursively
+  const outFiles = findMp4Files(outDir);
+
+  // Also collect root sample*.mp4 files
+  const rootFiles: string[] = [];
+  try {
+    const rf = fs
+      .readdirSync(root)
+      .filter((f) => f.startsWith("sample-") && f.endsWith(".mp4"))
+      .map((f) => path.join(root, f));
+    rootFiles.push(...rf);
+  } catch {}
+
+  const allFiles = [...rootFiles, ...outFiles];
+
   const videos = await Promise.all(
-    files.map(async (f) => {
-      const full = path.join(outDir, f);
-      const stat = fs.statSync(full);
-      const {duration, size} = await probe(full);
-      const slug = f.replace(/\.mp4$/, "");
+    allFiles.map(async (fullPath) => {
+      const rel = path.relative(root, fullPath).replace(/\\/g, "/");
+      const stat = fs.statSync(fullPath);
+      const {duration, size} = await probe(fullPath);
+      const filename = path.basename(fullPath);
+      const slug = filename.replace(/\.mp4$/i, "");
       const mm = Math.floor(duration / 60);
       const ss = Math.round(duration % 60)
         .toString()
         .padStart(2, "0");
+
+      let type = "Short";
+      let aspectRatio = "9:16";
+
+      if (slug.includes("dialogue") || slug.includes("sample-gladiator")) {
+        type = "Dialogue Test";
+        aspectRatio = duration > 10 ? "16:9" : "9:16";
+      } else if (rel.toLowerCase().includes("longform") || slug.startsWith("long-") || duration > 180) {
+        type = "Longform";
+        aspectRatio = "16:9";
+      } else if (rel.includes("1 - Published")) {
+        type = "Published Short";
+      } else if (rel.includes("2 - Unpublished Vault")) {
+        type = "Vault Short";
+      }
+
       return {
         slug,
-        title: slug.replace(/-/g, " "),
+        title: slug.replace(/^(long-|sample-)/, "").replace(/-/g, " "),
         duration: `${mm}:${ss}`,
         durationSec: Math.round(duration),
         sizeMB: Math.round((size / 1048576) * 10) / 10,
         dateAdded: stat.mtime.toISOString().slice(0, 10),
-        type: duration > 120 ? "Long" : "Short",
+        type,
+        aspectRatio,
+        relPath: rel,
       };
     }),
   );
+
+  // Sort newest first
+  videos.sort((a, b) => b.dateAdded.localeCompare(a.dateAdded));
+
   return NextResponse.json({videos});
 }

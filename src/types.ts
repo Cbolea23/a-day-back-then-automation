@@ -40,15 +40,41 @@ export type SceneDirection = {
   warmFlicker?: boolean;
 };
 
+export type NPCPosition = "left-corner" | "left-bench" | "left" | "center" | "right";
+
+export type NPCConfig = {
+  theme?: string;
+  tunic?: string;
+  position?: NPCPosition;
+  facing?: "left" | "right";
+  height?: number;
+  x?: number;
+  y?: number;
+  gesture?: "explain" | "point" | "shrug" | "think" | "wave" | "idle";
+  reaction?: ReactionKind;
+  expression?: "idle" | "nervous" | "grumpy" | "surprise" | "happy" | "sad";
+  speechBubble?: string;
+  audio?: string;
+  talking?: boolean;
+};
+
 export type Scene = {
   /** Narration text. Also used for the captions. */
   text: string;
+  /** Active speaker: narrator (default) or npc. */
+  speaker?: "narrator" | "npc";
+  /** Speaker label displayed in subtitles if desired (e.g. "VOLUNTEER"). */
+  speakerName?: string;
   /** Optional manual duration. If missing, it is estimated from the word count. */
   seconds?: number;
   /** Path inside /public, e.g. "images/rome-morning/1.png". If missing, a gradient is used. */
   image?: string;
   /** Path inside /public, e.g. "audio/rome-morning/1.mp3". Optional voiceover. */
   audio?: string;
+  /** Optional ambient soundscape audio track for the scene or chapter. */
+  ambientAudio?: string;
+  /** Secondary interactive character (NPC) in the scene. */
+  npc?: NPCConfig;
   /** Used for the fallback gradient when there is no image. */
   mood?: Mood;
   /** Prompt for your image generator (not used by the renderer). */

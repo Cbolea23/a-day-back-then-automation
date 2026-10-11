@@ -13,6 +13,8 @@ type Props = {
   uppercase?: boolean;
   /** Horizontal padding of the caption block in px. */
   paddingX?: number;
+  /** Active word highlight color (default #ffd93b). */
+  highlightColor?: string;
 };
 
 /**
@@ -27,6 +29,7 @@ export const Captions: React.FC<Props> = ({
   fontSize = 92,
   uppercase = true,
   paddingX = 60,
+  highlightColor = "#ffd93b",
 }) => {
   const frame = useCurrentFrame();
   const words = useMemo(() => splitWords(text), [text]);
@@ -80,7 +83,7 @@ export const Captions: React.FC<Props> = ({
         <span
           key={i}
           style={{
-            color: i === activeWord ? "#ffd93b" : "#ffffff",
+            color: i === activeWord ? highlightColor : "#ffffff",
             WebkitTextStroke: `${stroke}px #000`,
             paintOrder: "stroke fill",
             textShadow: "0 6px 0 rgba(0,0,0,0.55)",
