@@ -1,0 +1,56 @@
+{
+  "slug": "wwii-fake-coffee-and-mock-banana",
+  "title": "Mock Bananas and Acorn Coffee",
+  "hook": "Boiled parsnips with banana essence fooled British kids.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "During wartime rationing, exotic imported fruits completely vanished from British grocery store shelves for over five years.",
+      "mood": "cool",
+      "imagePrompt": "1940s traditional wooden grocery storefront with empty wicker fruit crates in the window under soft morning light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-fake-coffee-and-mock-banana/1.mp3",
+      "voicedText": "During wartime rationing, exotic imported fruits completely vanished from British grocery store shelves for over five years.",
+      "seconds": 8
+    },
+    {
+      "text": "Most children born during the war had never seen a real yellow banana, only hearing rumors of the mythical fruit from their parents.",
+      "mood": "warm",
+      "imagePrompt": "Rustic wooden kitchen counter with a ceramic mixing bowl, wooden spoon, and a recipe booklet from the Ministry of Food. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-fake-coffee-and-mock-banana/2.mp3",
+      "voicedText": "Most children born during the war had never seen a real yellow banana, only hearing rumors of the mythical fruit from their parents.",
+      "seconds": 8.2
+    },
+    {
+      "text": "Clever mothers invented 'Mock Banana': boiling root parsnips until soft, mashing them with sugar and drops of artificial banana essence.",
+      "mood": "warm",
+      "imagePrompt": "Enameled vintage saucepan with yellow parsnip mash beside a tiny amber bottle of baker's essence on a checked tablecloth. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-fake-coffee-and-mock-banana/3.mp3",
+      "voicedText": "Clever mothers invented 'Mock Banana': boiling root parsnips until soft, mashing them with sugar and drops of artificial banana essence.",
+      "seconds": 9.3
+    },
+    {
+      "text": "Coffee lovers drank roasted chicory root or toasted roasted acorns ground into bitter brown powder.",
+      "mood": "dark",
+      "imagePrompt": "Cast-iron vintage hand coffee grinder with roasted brown chicory roots and acorns on a wooden kitchen workbench. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-fake-coffee-and-mock-banana/4.mp3",
+      "voicedText": "Coffee lovers drank roasted chicory root or toasted roasted acorns ground into bitter brown powder.",
+      "seconds": 7.1
+    },
+    {
+      "text": "Meanwhile, 'National Wheatmeal Bread' was heavy, grey, and legally banned from being sold until a day old to curb binge eating.",
+      "mood": "cool",
+      "imagePrompt": "Dense loaf of greyish wartime wheat bread sliced on a wooden board beside a bread knife on an enamel kitchen tabletop. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-fake-coffee-and-mock-banana/5.mp3",
+      "voicedText": "Meanwhile, 'National Wheatmeal Bread' was heavy, grey, and legally banned from being sold until a day old to curb binge eating.",
+      "seconds": 8
+    },
+    {
+      "text": "Would you have been fooled by a parsnip banana? Let us know below and follow for daily history stories!",
+      "mood": "day",
+      "imagePrompt": "Sunlit British cottage kitchen window with lace curtains looking out onto an herb garden. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-fake-coffee-and-mock-banana/6.mp3",
+      "voicedText": "Would you have been fooled by a parsnip banana? Let us know below and follow for daily history stories!",
+      "seconds": 6
+    }
+  ]
+}

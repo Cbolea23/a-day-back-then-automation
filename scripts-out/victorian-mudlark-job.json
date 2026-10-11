@@ -1,0 +1,56 @@
+{
+  "slug": "victorian-mudlark-job",
+  "title": "Scavenging for Coins in River Sewage",
+  "hook": "Poor Victorian kids waded through raw river sewage for pennies.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "In Victorian London, impoverished children called 'mudlarks' survived by scavenging the muddy banks of the River Thames at low tide.",
+      "mood": "cool",
+      "imagePrompt": "Muddy, misty banks of the River Thames in Victorian London with low tide revealing wooden dock pilings and river sludge. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-mudlark-job/1.mp3",
+      "voicedText": "In Victorian London, impoverished children called 'mudlarks' survived by scavenging the muddy banks of the River Thames at low tide.",
+      "seconds": 8.1
+    },
+    {
+      "text": "Barefoot and dressed in ragged burlap, they waded knee-deep through freezing black mud filled with raw sewage and industrial runoff.",
+      "mood": "cool",
+      "imagePrompt": "Wet cobblestone river stairs covered in green slime leading into murky brown river water beside stone bridges. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-mudlark-job/2.mp3",
+      "voicedText": "Barefoot and dressed in ragged burlap, they waded knee-deep through freezing black mud filled with raw sewage and industrial runoff.",
+      "seconds": 8.5
+    },
+    {
+      "text": "They hunted for anything saleable: dropped copper pennies, pieces of coal, rusted iron nails, old bones, and rope fibers.",
+      "mood": "warm",
+      "imagePrompt": "Crude tin collecting can resting in mud containing a few verdigris-covered copper pennies, an iron nail, and beef bones. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-mudlark-job/3.mp3",
+      "voicedText": "They hunted for anything saleable: dropped copper pennies, pieces of coal, rusted iron nails, old bones, and rope fibers.",
+      "seconds": 8.9
+    },
+    {
+      "text": "Hidden danger lurked everywhere: jagged broken glass, drowned carcasses, and sudden incoming tides that trapped children against river walls.",
+      "mood": "dark",
+      "imagePrompt": "High granite embankment wall of the Thames river with rising dark water swirling around iron mooring rings. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-mudlark-job/4.mp3",
+      "voicedText": "Hidden danger lurked everywhere: jagged broken glass, drowned carcasses, and sudden incoming tides that trapped children against river walls.",
+      "seconds": 9.4
+    },
+    {
+      "text": "A lucky mudlark made barely three pennies a day—just enough to buy a crust of stale bread and a night in a lodging house.",
+      "mood": "warm",
+      "imagePrompt": "Dark London rag-and-bone shop counter with brass balance scales, empty bottles, and heaps of discarded scrap iron. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-mudlark-job/5.mp3",
+      "voicedText": "A lucky mudlark made barely three pennies a day—just enough to buy a crust of stale bread and a night in a lodging house.",
+      "seconds": 7.7
+    },
+    {
+      "text": "Could you have scavenged bare-handed in Victorian sewage for three pence? Let us know below and subscribe!",
+      "mood": "day",
+      "imagePrompt": "Misty Victorian London skyline with steam tugboats on the Thames and St Paul's Cathedral dome rising in the morning sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-mudlark-job/6.mp3",
+      "voicedText": "Could you have scavenged bare-handed in Victorian sewage for three pence? Let us know below and subscribe!",
+      "seconds": 7
+    }
+  ]
+}

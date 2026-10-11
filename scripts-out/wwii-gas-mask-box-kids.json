@@ -1,0 +1,56 @@
+{
+  "slug": "wwii-gas-mask-box-kids",
+  "title": "Why Every Child Carried a Gas Mask Box",
+  "hook": "You couldn't board a school bus without your cardboard box.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "At the outbreak of World War II, the British government issued thirty-eight million gas masks to every man, woman, and baby.",
+      "mood": "cool",
+      "imagePrompt": "1940s schoolroom wooden cloakroom with rows of cardboard gas mask boxes hanging from brass coat pegs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-gas-mask-box-kids/1.mp3",
+      "voicedText": "At the outbreak of World War II, the British government issued thirty-eight million gas masks to every man, woman, and baby.",
+      "seconds": 8.3
+    },
+    {
+      "text": "Every child was required by law to carry their square cardboard box on a canvas string everywhere: to school, parks, and cinemas.",
+      "mood": "day",
+      "imagePrompt": "Vintage wooden school desk with open notebook, dip inkwell pen, and square brown cardboard box resting on the corner. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-gas-mask-box-kids/2.mp3",
+      "voicedText": "Every child was required by law to carry their square cardboard box on a canvas string everywhere: to school, parks, and cinemas.",
+      "seconds": 8.7
+    },
+    {
+      "text": "Bus conductors refused boarding to anyone who forgot their box, and headmasters conducted surprise gas drills during arithmetic class.",
+      "mood": "cool",
+      "imagePrompt": "Interior of a 1940s red London double-decker bus with wooden floorboards and leather seats by the window. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-gas-mask-box-kids/3.mp3",
+      "voicedText": "Bus conductors refused boarding to anyone who forgot their box, and headmasters conducted surprise gas drills during arithmetic class.",
+      "seconds": 9.1
+    },
+    {
+      "text": "For toddlers, masks were terrifying rubber contraptions. To comfort them, the government produced red and blue 'Mickey Mouse' respirators.",
+      "mood": "warm",
+      "imagePrompt": "Nursery wooden shelf with a vintage rubber child's respirator featuring bright red rubber fittings and eye glass lenses. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-gas-mask-box-kids/4.mp3",
+      "voicedText": "For toddlers, masks were terrifying rubber contraptions. To comfort them, the government produced red and blue 'Mickey Mouse' respirators.",
+      "seconds": 9.4
+    },
+    {
+      "text": "Babies were placed into sealed airtight steel pods with manual hand bellows that mothers had to pump continuously.",
+      "mood": "cool",
+      "imagePrompt": "Vintage metal baby carrier apparatus with clear glass observation window and rubber accordion hand pump. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-gas-mask-box-kids/5.mp3",
+      "voicedText": "Babies were placed into sealed airtight steel pods with manual hand bellows that mothers had to pump continuously.",
+      "seconds": 7.8
+    },
+    {
+      "text": "Fortunately, poison gas was never used on British cities. Would you have remembered your gas mask box every single morning?",
+      "mood": "day",
+      "imagePrompt": "Sunny brick school playground in Britain with wrought-iron gate and autumn leaves blowing across cobblestones. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-gas-mask-box-kids/6.mp3",
+      "voicedText": "Fortunately, poison gas was never used on British cities. Would you have remembered your gas mask box every single morning?",
+      "seconds": 7.6
+    }
+  ]
+}

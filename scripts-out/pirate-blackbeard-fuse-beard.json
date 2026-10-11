@@ -1,0 +1,56 @@
+{
+  "slug": "pirate-blackbeard-fuse-beard",
+  "title": "Why Blackbeard Set His Hair on Fire",
+  "hook": "Edward Teach braided lit cannon fuses into his beard.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Edward Teach, known as Blackbeard, understood that psychological terror was far more effective than firing cannon broadsides.",
+      "mood": "dark",
+      "imagePrompt": "Dark quarterdeck of the Queen Anne's Revenge with black flags fluttering, heavy bronze cannons, and swirling ocean mist. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-blackbeard-fuse-beard/1.mp3",
+      "voicedText": "Edward Teach, known as Blackbeard, understood that psychological terror was far more effective than firing cannon broadsides.",
+      "seconds": 8.4
+    },
+    {
+      "text": "Before boarding an enemy merchant ship, he tucked slow-burning hemp cannon fuses under his tricorn hat and into his thick braided beard.",
+      "mood": "warm",
+      "imagePrompt": "Close-up of coiled saltpeter hemp match cords smoking with glowing red embers on a wooden gun carriage. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-blackbeard-fuse-beard/2.mp3",
+      "voicedText": "Before boarding an enemy merchant ship, he tucked slow-burning hemp cannon fuses under his tricorn hat and into his thick braided beard.",
+      "seconds": 7.9
+    },
+    {
+      "text": "The lit fuses sputtered sparking red embers, wreathing his face in thick grey sulfur smoke like a demon rising from hell.",
+      "mood": "dark",
+      "imagePrompt": "Billowing grey gunsmoke and sparks drifting across an ornate 18th-century pirate ship captain's stern gallery. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-blackbeard-fuse-beard/3.mp3",
+      "voicedText": "The lit fuses sputtered sparking red embers, wreathing his face in thick grey sulfur smoke like a demon rising from hell.",
+      "seconds": 9.2
+    },
+    {
+      "text": "He wore a shoulder bandolier holding six primed flintlock pistols, ready to draw and fire each one without reloading.",
+      "mood": "cool",
+      "imagePrompt": "Leather chest harness holding six brass-mounted flintlock pistols with carved wooden grips arranged across a pirate sea chest. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-blackbeard-fuse-beard/4.mp3",
+      "voicedText": "He wore a shoulder bandolier holding six primed flintlock pistols, ready to draw and fire each one without reloading.",
+      "seconds": 8.1
+    },
+    {
+      "text": "Merchant captains were so paralyzed by his demonic appearance that most surrendered their ships and gold without firing a single shot.",
+      "mood": "warm",
+      "imagePrompt": "Piles of Spanish silver eight-real coins, gold doubloons, and rum casks stacked on a sunlit ship deck. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-blackbeard-fuse-beard/5.mp3",
+      "voicedText": "Merchant captains were so paralyzed by his demonic appearance that most surrendered their ships and gold without firing a single shot.",
+      "seconds": 8.2
+    },
+    {
+      "text": "Would you have surrendered immediately if Blackbeard boarded your vessel? Drop a comment below and subscribe!",
+      "mood": "day",
+      "imagePrompt": "Calm tropical Caribbean harbor with palm trees on sandy shores and pirate ship anchored in crystal clear water. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-blackbeard-fuse-beard/6.mp3",
+      "voicedText": "Would you have surrendered immediately if Blackbeard boarded your vessel? Drop a comment below and subscribe!",
+      "seconds": 6.7
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "victorian-penny-blood",
+  "title": "Penny Dreadfuls: 1800s Trash Horror Comics",
+  "hook": "Aristocrats panicked over cheap 1-penny serial horror stories.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "In the 1830s, cheap steam-powered printing presses revolutionized literature, creating the world's first mass-market teenage fiction.",
+      "mood": "warm",
+      "imagePrompt": "19th-century cast-iron cylinder steam printing press in a London printshop with reams of inked paper hanging from rafters. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-penny-blood/1.mp3",
+      "voicedText": "In the 1830s, cheap steam-powered printing presses revolutionized literature, creating the world's first mass-market teenage fiction.",
+      "seconds": 8.8
+    },
+    {
+      "text": "Called 'Penny Bloods' or 'Penny Dreadfuls', they were weekly eight-page serials sold for just one single copper penny to working-class boys.",
+      "mood": "warm",
+      "imagePrompt": "Victorian newsagent stall counter with stacks of woodcut-illustrated pamphlets, open newspapers, and glass jars of lemon drops. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-penny-blood/2.mp3",
+      "voicedText": "Called 'Penny Bloods' or 'Penny Dreadfuls', they were weekly eight-page serials sold for just one single copper penny to working-class boys.",
+      "seconds": 8.3
+    },
+    {
+      "text": "They featured sensational, gory tales of razor-wielding fiends like Sweeney Todd: The Demon Barber of Fleet Street, and Varney the Vampire.",
+      "mood": "dark",
+      "imagePrompt": "Woodcut illustration page showing dramatic Gothic villain silhouette, full moon, and razor blade details on aged sepia newsprint. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-penny-blood/3.mp3",
+      "voicedText": "They featured sensational, gory tales of razor-wielding fiends like Sweeney Todd: The Demon Barber of Fleet Street, and Varney the Vampire.",
+      "seconds": 9.6
+    },
+    {
+      "text": "Upper-class Victorian critics panicked, claiming these trashy thrillers were corrupting youth and turning factory boys into ruthless street criminals.",
+      "mood": "cool",
+      "imagePrompt": "Stately Victorian library with leather-bound encyclopedias, oak study desk, and open editorial newspaper letter on a blotter. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-penny-blood/4.mp3",
+      "voicedText": "Upper-class Victorian critics panicked, claiming these trashy thrillers were corrupting youth and turning factory boys into ruthless street criminals.",
+      "seconds": 9.3
+    },
+    {
+      "text": "Despite moral outrage, millions were sold, establishing the origins of modern comic books, superhero serials, and detective mysteries.",
+      "mood": "warm",
+      "imagePrompt": "Young apprentice workbench under a gas lamp with a worn penny booklet tucked secretly beneath leather cobbler tools. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-penny-blood/5.mp3",
+      "voicedText": "Despite moral outrage, millions were sold, establishing the origins of modern comic books, superhero serials, and detective mysteries.",
+      "seconds": 9.4
+    },
+    {
+      "text": "Penny Dreadfuls were the 19th-century equivalent of pulp comic books! Would you have bought one for a penny? Tell us below!",
+      "mood": "day",
+      "imagePrompt": "Charming Victorian London street corner with brass letterbox and morning sun shining down on bookshop window displays. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-penny-blood/6.mp3",
+      "voicedText": "Penny Dreadfuls were the 19th-century equivalent of pulp comic books! Would you have bought one for a penny? Tell us below!",
+      "seconds": 7.6
+    }
+  ]
+}

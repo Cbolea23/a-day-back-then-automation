@@ -1,0 +1,56 @@
+{
+  "slug": "gladiator-diet-barley-men",
+  "title": "Why Gladiators Were Fat Vegetarians",
+  "hook": "Gladiators weren't shredded bodybuilders—they were stuffed with barley and bean porridge.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Hollywood films always depict Roman gladiators with chiseled abs and low body fat. But forensic archaeology proves that's completely false.",
+      "mood": "cool",
+      "imagePrompt": "Dramatic sandy arena floor of the Colosseum with towering empty stone arches under a hot Mediterranean sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/gladiator-diet-barley-men/1.mp3",
+      "voicedText": "Hollywood films always depict Roman gladiators with chiseled abs and low body fat. But forensic archaeology proves that's completely false.",
+      "seconds": 9.8
+    },
+    {
+      "text": "Chemical analysis of bones from a gladiator cemetery in Ephesus revealed they ate an almost entirely vegetarian diet based on barley and legumes.",
+      "mood": "warm",
+      "imagePrompt": "Terracotta bowls filled with hulled barley grain, dried fava beans, and coarse wheat flour on a rustic wooden table. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/gladiator-diet-barley-men/2.mp3",
+      "voicedText": "Chemical analysis of bones from a gladiator cemetery in Ephesus revealed they ate an almost entirely vegetarian diet based on barley and legumes.",
+      "seconds": 10
+    },
+    {
+      "text": "Romans called them 'hordearii'—literally 'barley-men'. Their trainers deliberately fattened them up with thick carbohydrate porridge.",
+      "mood": "warm",
+      "imagePrompt": "Iron pot of steaming thick barley porridge simmering over an outdoor hearth with a wooden ladle. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/gladiator-diet-barley-men/3.mp3",
+      "voicedText": "Romans called them 'hordearii'—literally 'barley-men'. Their trainers deliberately fattened them up with thick carbohydrate porridge.",
+      "seconds": 7.9
+    },
+    {
+      "text": "A thick layer of subcutaneous fat was vital armor: it absorbed flesh cuts without exposing nerves, major blood vessels, or vital organs.",
+      "mood": "dark",
+      "imagePrompt": "Heavy bronze gladiator helmet with grilled face visor and dented rectangular curved scutum shield resting on stone. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/gladiator-diet-barley-men/4.mp3",
+      "voicedText": "A thick layer of subcutaneous fat was vital armor: it absorbed flesh cuts without exposing nerves, major blood vessels, or vital organs.",
+      "seconds": 9.3
+    },
+    {
+      "text": "Bloody surface cuts looked dramatic to cheering crowds while keeping the valuable trained fighters alive to compete another day.",
+      "mood": "dramatic",
+      "imagePrompt": "Sunlight shining down onto the red sand of an ancient amphitheater floor with abandoned wooden practice swords. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/gladiator-diet-barley-men/5.mp3",
+      "voicedText": "Bloody surface cuts looked dramatic to cheering crowds while keeping the valuable trained fighters alive to compete another day.",
+      "seconds": 8
+    },
+    {
+      "text": "They even drank a tonic of plant ash to fortify bone density. Did this gladiator fact surprise you? Subscribe for more Roman secrets!",
+      "mood": "day",
+      "imagePrompt": "Bronze roman oil lamp and small glass flask beside a gladius short sword on a Roman villa terrace. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/gladiator-diet-barley-men/6.mp3",
+      "voicedText": "They even drank a tonic of plant ash to fortify bone density. Did this gladiator fact surprise you? Subscribe for more Roman secrets!",
+      "seconds": 9
+    }
+  ]
+}

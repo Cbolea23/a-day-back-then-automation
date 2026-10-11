@@ -1,0 +1,56 @@
+{
+  "slug": "han-dynasty-crossbow-trigger",
+  "title": "China's Mass-Produced Bronze Crossbows",
+  "hook": "2,000 years ago, Han Dynasty armories mass-produced precision bronze triggers.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Two thousand years before the Industrial Revolution, the Han Dynasty of China pioneered precision mass-produced weapon components.",
+      "mood": "warm",
+      "imagePrompt": "Ancient Han Dynasty stone imperial armory courtyard with stacked timber weapon crates and military banners under sunny skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/han-dynasty-crossbow-trigger/1.mp3",
+      "voicedText": "Two thousand years before the Industrial Revolution, the Han Dynasty of China pioneered precision mass-produced weapon components.",
+      "seconds": 8.5
+    },
+    {
+      "text": "Their core infantry weapon was the repeating and heavy crossbow, powered by a three-piece cast bronze trigger mechanism.",
+      "mood": "cool",
+      "imagePrompt": "Intricately cast ancient bronze crossbow trigger lock mechanism showing sear lever, tumbler, and trigger hook on a workbench. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/han-dynasty-crossbow-trigger/2.mp3",
+      "voicedText": "Their core infantry weapon was the repeating and heavy crossbow, powered by a three-piece cast bronze trigger mechanism.",
+      "seconds": 7.4
+    },
+    {
+      "text": "Crafted in state foundries using standardized ceramic molds, the parts were completely interchangeable between hundreds of thousands of weapons.",
+      "mood": "warm",
+      "imagePrompt": "Foundry bronze casting table with clay mold halves, bronze filing tools, and finished trigger locks awaiting inspection. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/han-dynasty-crossbow-trigger/3.mp3",
+      "voicedText": "Crafted in state foundries using standardized ceramic molds, the parts were completely interchangeable between hundreds of thousands of weapons.",
+      "seconds": 9
+    },
+    {
+      "text": "If a soldier's trigger broke on the northern frontier, an armorer replaced the sear pin in seconds without custom metal filing.",
+      "mood": "cool",
+      "imagePrompt": "Fortress watchtower on the Han Great Wall of China overlooking misty northern frontier mountains under morning light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/han-dynasty-crossbow-trigger/4.mp3",
+      "voicedText": "If a soldier's trigger broke on the northern frontier, an armorer replaced the sear pin in seconds without custom metal filing.",
+      "seconds": 7.8
+    },
+    {
+      "text": "The trigger was so smooth that peasant conscripts required only three weeks of drill to pierce heavy nomad cavalry armor at two hundred paces.",
+      "mood": "dramatic",
+      "imagePrompt": "Wooden target dummy with iron lamellar armor pierced through by heavy bronze crossbow bolts on an army training field. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/han-dynasty-crossbow-trigger/5.mp3",
+      "voicedText": "The trigger was so smooth that peasant conscripts required only three weeks of drill to pierce heavy nomad cavalry armor at two hundred paces.",
+      "seconds": 9.3
+    },
+    {
+      "text": "China invented standardized interchangeable parts two millennia before Eli Whitney! Did you know about ancient Han technology?",
+      "mood": "day",
+      "imagePrompt": "Terracotta roof tile pavilion in Chang'an with blooming plum trees and stone lanterns glowing in serene morning sunshine. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/han-dynasty-crossbow-trigger/6.mp3",
+      "voicedText": "China invented standardized interchangeable parts two millennia before Eli Whitney! Did you know about ancient Han technology?",
+      "seconds": 8.9
+    }
+  ]
+}

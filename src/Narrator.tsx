@@ -22,10 +22,47 @@ export type CharacterTheme =
   | "knight"
   | "plague-doctor"
   | "greek"
-  | "gladiator";
+  | "gladiator"
+  | "ninja"
+  | "asian"
+  | "mesoamerica"
+  | "pirate"
+  | "victorian"
+  | "wwii"
+  | "ottoman";
 
 export function getThemeFromSlug(slug: string = ""): CharacterTheme {
   const s = slug.toLowerCase();
+  if (
+    s.includes("wwii") ||
+    s.includes("ration") ||
+    (s.includes("war") && s.includes("britain"))
+  ) {
+    return "wwii";
+  }
+  if (
+    s.includes("victorian") ||
+    s.includes("chimney") ||
+    s.includes("factory") ||
+    s.includes("gold-rush")
+  ) {
+    return "victorian";
+  }
+  if (s.includes("pirate")) {
+    return "pirate";
+  }
+  if (s.includes("ottoman") || s.includes("coffeehouse")) {
+    return "ottoman";
+  }
+  if (
+    s.includes("aztec") ||
+    s.includes("maya") ||
+    s.includes("inca") ||
+    s.includes("chinampa") ||
+    s.includes("mesoamerica")
+  ) {
+    return "mesoamerica";
+  }
   if (s.includes("gladiator")) {
     return "gladiator";
   }
@@ -45,14 +82,33 @@ export function getThemeFromSlug(slug: string = ""): CharacterTheme {
     s.includes("athens") ||
     s.includes("sparta") ||
     s.includes("olympic") ||
-    s.includes("symposium")
+    s.includes("symposium") ||
+    s.includes("byzantine") ||
+    s.includes("delphi") ||
+    s.includes("oracle")
   ) {
     return "greek";
   }
   if (s.includes("viking") || s.includes("norse")) {
     return "viking";
   }
-  if (s.includes("knight") || s.includes("samurai") || s.includes("ninja")) {
+  if (s.includes("ninja") || s.includes("shinobi")) {
+    return "ninja";
+  }
+  if (
+    s.includes("china") ||
+    s.includes("han-") ||
+    s.includes("silk-road") ||
+    s.includes("tang") ||
+    s.includes("song") ||
+    s.includes("ming") ||
+    s.includes("samurai") ||
+    s.includes("edo") ||
+    s.includes("mongol")
+  ) {
+    return "asian";
+  }
+  if (s.includes("knight")) {
     return "knight";
   }
   if (s.includes("plague")) {
@@ -71,22 +127,6 @@ export function getThemeFromSlug(slug: string = ""): CharacterTheme {
     s.includes("renaissance") ||
     s.includes("wages") ||
     s.includes("fast-days")
-  ) {
-    return "medieval";
-  }
-  if (
-    s.includes("pirate") ||
-    s.includes("victorian") ||
-    s.includes("gold-rush") ||
-    s.includes("wwii") ||
-    s.includes("ottoman") ||
-    s.includes("edo") ||
-    s.includes("silk-road") ||
-    s.includes("mongol") ||
-    s.includes("aztec") ||
-    s.includes("maya") ||
-    s.includes("inca") ||
-    s.includes("chinampa")
   ) {
     return "medieval";
   }
@@ -440,6 +480,7 @@ function wordTimingMouth(
 
 const SKIN = "#f2dcb0";
 const SKIN_EGYPT = "#e5b780";
+const SKIN_MESOAMERICA = "#c68d58";
 const INK = "#111";
 
 /** Eyebrows for every expression. Plague doctor has no visible face. */
@@ -677,7 +718,12 @@ const NarratorBody: React.FC<BodyProps> = ({
       extrapolateRight: "clamp",
     }) * (expression === "surprise" ? 1.2 : 1);
 
-  const skin = theme === "egypt" ? SKIN_EGYPT : SKIN;
+  const skin =
+    theme === "egypt"
+      ? SKIN_EGYPT
+      : theme === "mesoamerica"
+      ? SKIN_MESOAMERICA
+      : SKIN;
   const talking = mouthOpen > 0.06;
 
   // Viseme: the mouth shape follows the vowel of the word being spoken,
@@ -718,6 +764,41 @@ const NarratorBody: React.FC<BodyProps> = ({
           <rect x="110" y="555" width="20" height="8" rx="2" fill="#e5b32f" stroke={INK} strokeWidth="3" />
           <rect x="170" y="555" width="20" height="8" rx="2" fill="#e5b32f" stroke={INK} strokeWidth="3" />
         </>
+      ) : theme === "mesoamerica" ? (
+        <>
+          <line x1="125" y1="400" x2="120" y2="570" stroke={INK} strokeWidth="9" strokeLinecap="round" />
+          <line x1="175" y1="400" x2="180" y2="570" stroke={INK} strokeWidth="9" strokeLinecap="round" />
+          {/* Bare feet on leather soles */}
+          <line x1="120" y1="572" x2="98" y2="578" stroke={INK} strokeWidth="9" strokeLinecap="round" />
+          <line x1="180" y1="572" x2="202" y2="578" stroke={INK} strokeWidth="9" strokeLinecap="round" />
+          {/* Leather cactli heel guards and ankle wraps */}
+          <rect x="114" y="550" width="12" height="22" rx="3" fill="#7a421d" stroke={INK} strokeWidth="3" />
+          <rect x="174" y="550" width="12" height="22" rx="3" fill="#7a421d" stroke={INK} strokeWidth="3" />
+          <line x1="112" y1="500" x2="126" y2="512" stroke="#7a421d" strokeWidth="4" />
+          <line x1="126" y1="520" x2="114" y2="532" stroke="#7a421d" strokeWidth="4" />
+          <line x1="172" y1="500" x2="186" y2="512" stroke="#7a421d" strokeWidth="4" />
+          <line x1="186" y1="520" x2="174" y2="532" stroke="#7a421d" strokeWidth="4" />
+        </>
+      ) : theme === "ninja" ? (
+        <>
+          <line x1="125" y1="400" x2="120" y2="570" stroke={INK} strokeWidth="11" strokeLinecap="round" />
+          <line x1="175" y1="400" x2="180" y2="570" stroke={INK} strokeWidth="11" strokeLinecap="round" />
+          {/* Leg wrappings (kyahan) */}
+          <line x1="114" y1="500" x2="126" y2="500" stroke="#33333d" strokeWidth="4" />
+          <line x1="114" y1="520" x2="126" y2="520" stroke="#33333d" strokeWidth="4" />
+          <line x1="174" y1="500" x2="186" y2="500" stroke="#33333d" strokeWidth="4" />
+          <line x1="174" y1="520" x2="186" y2="520" stroke="#33333d" strokeWidth="4" />
+          {/* Ninja Tabi boots */}
+          <path d="M100 560 L128 560 L126 580 L94 580 Z" fill="#18181f" stroke={INK} strokeWidth="4" />
+          <path d="M172 560 L200 560 L206 580 L174 580 Z" fill="#18181f" stroke={INK} strokeWidth="4" />
+        </>
+      ) : theme === "asian" ? (
+        <>
+          <line x1="125" y1="400" x2="120" y2="570" stroke={INK} strokeWidth="10" strokeLinecap="round" />
+          <line x1="175" y1="400" x2="180" y2="570" stroke={INK} strokeWidth="10" strokeLinecap="round" />
+          <path d="M100 558 L128 558 L126 580 L94 580 Z" fill="#2b2d38" stroke={INK} strokeWidth="4" />
+          <path d="M172 558 L200 558 L206 580 L174 580 Z" fill="#2b2d38" stroke={INK} strokeWidth="4" />
+        </>
       ) : theme === "viking" || theme === "knight" || theme === "medieval" ? (
         <>
           <line x1="125" y1="400" x2="120" y2="570" stroke={INK} strokeWidth="11" strokeLinecap="round" />
@@ -751,6 +832,41 @@ const NarratorBody: React.FC<BodyProps> = ({
           <line x1="128" y1="515" x2="114" y2="525" stroke="#633e1f" strokeWidth="5" />
           <line x1="114" y1="542" x2="126" y2="552" stroke="#633e1f" strokeWidth="5" />
         </>
+      ) : theme === "wwii" ? (
+        <>
+          <line x1="125" y1="400" x2="120" y2="570" stroke={INK} strokeWidth="10" strokeLinecap="round" />
+          <line x1="175" y1="400" x2="180" y2="570" stroke={INK} strokeWidth="10" strokeLinecap="round" />
+          {/* 1940s Oxford shoes */}
+          <path d="M100 558 L128 558 L126 580 L94 580 Z" fill="#1c1a17" stroke={INK} strokeWidth="4" />
+          <path d="M172 558 L200 558 L206 580 L174 580 Z" fill="#1c1a17" stroke={INK} strokeWidth="4" />
+        </>
+      ) : theme === "victorian" ? (
+        <>
+          <line x1="125" y1="400" x2="120" y2="570" stroke={INK} strokeWidth="10" strokeLinecap="round" />
+          <line x1="175" y1="400" x2="180" y2="570" stroke={INK} strokeWidth="10" strokeLinecap="round" />
+          {/* Victorian work boots */}
+          <path d="M98 554 L130 554 L128 580 L92 580 Z" fill="#211e1b" stroke={INK} strokeWidth="4" />
+          <path d="M170 554 L202 554 L208 580 L172 580 Z" fill="#211e1b" stroke={INK} strokeWidth="4" />
+        </>
+      ) : theme === "pirate" ? (
+        <>
+          <line x1="125" y1="400" x2="120" y2="570" stroke={INK} strokeWidth="10" strokeLinecap="round" />
+          <line x1="175" y1="400" x2="180" y2="570" stroke={INK} strokeWidth="10" strokeLinecap="round" />
+          {/* Folded pirate boot cuffs */}
+          <path d="M108 520 L136 520 L134 545 L106 545 Z" fill="#3b2012" stroke={INK} strokeWidth="3" />
+          <path d="M164 520 L192 520 L194 545 L166 545 Z" fill="#3b2012" stroke={INK} strokeWidth="3" />
+          {/* Boots */}
+          <path d="M100 556 L130 556 L128 580 L92 580 Z" fill="#23130a" stroke={INK} strokeWidth="4" />
+          <path d="M170 556 L200 556 L208 580 L172 580 Z" fill="#23130a" stroke={INK} strokeWidth="4" />
+        </>
+      ) : theme === "ottoman" ? (
+        <>
+          <line x1="125" y1="400" x2="120" y2="570" stroke={INK} strokeWidth="11" strokeLinecap="round" />
+          <line x1="175" y1="400" x2="180" y2="570" stroke={INK} strokeWidth="11" strokeLinecap="round" />
+          {/* Pointed Turkish shoes */}
+          <path d="M96 558 L128 558 L124 580 L86 578 Q90 568 96 558 Z" fill="#4a2916" stroke={INK} strokeWidth="4" />
+          <path d="M172 558 L204 558 Q210 568 214 578 L176 580 L172 558 Z" fill="#4a2916" stroke={INK} strokeWidth="4" />
+        </>
       ) : (
         <>
           <line x1="125" y1="400" x2="120" y2="570" stroke={INK} strokeWidth="9" strokeLinecap="round" />
@@ -779,6 +895,30 @@ const NarratorBody: React.FC<BodyProps> = ({
           <path d="M96 175 Q150 230 204 175" stroke="#187a82" strokeWidth="6" fill="none" />
           <path d="M106 185 Q150 220 194 185" stroke="#9e1e1e" strokeWidth="5" fill="none" />
         </>
+      ) : theme === "mesoamerica" ? (
+        <>
+          {/* Mesoamerican cotton tunic (xicolli) */}
+          <path d="M96 168 Q150 150 204 168 L228 410 Q150 425 72 410 Z" fill="#f2ebdc" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Stepped fret / geometric border at hem */}
+          <rect x="76" y="380" width="148" height="26" fill="#b83323" stroke={INK} strokeWidth="3" />
+          <line x1="76" y1="388" x2="224" y2="388" stroke="#1a8c79" strokeWidth="4" />
+          <line x1="76" y1="398" x2="224" y2="398" stroke="#dfa837" strokeWidth="3" />
+          {/* Tilmatli cloak shoulder wrap */}
+          <path d="M96 168 Q135 220 185 275 L155 275 Q115 220 90 174 Z" fill="#b83323" stroke={INK} strokeWidth="3.5" />
+          {/* Patterned sash waistband */}
+          <rect x="76" y="278" width="148" height="22" rx="3" fill="#b83323" stroke={INK} strokeWidth="4" />
+          <line x1="76" y1="289" x2="224" y2="289" stroke="#dfa837" strokeWidth="3" />
+          {/* Hanging sash front apron with fringe */}
+          <path d="M136 300 L164 300 L168 375 L132 375 Z" fill="#b83323" stroke={INK} strokeWidth="3.5" />
+          <line x1="134" y1="365" x2="166" y2="365" stroke="#1a8c79" strokeWidth="4" />
+          {/* Jade & gold collar pectoral necklace */}
+          <path d="M102 168 Q150 215 198 168" stroke="#1a8c79" strokeWidth="6" fill="none" />
+          <circle cx="120" cy="184" r="5" fill="#1a8c79" stroke={INK} strokeWidth="2" />
+          <circle cx="135" cy="193" r="5.5" fill="#dfa837" stroke={INK} strokeWidth="2" />
+          <circle cx="150" cy="196" r="7" fill="#1a8c79" stroke={INK} strokeWidth="2.5" />
+          <circle cx="165" cy="193" r="5.5" fill="#dfa837" stroke={INK} strokeWidth="2" />
+          <circle cx="180" cy="184" r="5" fill="#1a8c79" stroke={INK} strokeWidth="2" />
+        </>
       ) : theme === "viking" ? (
         <>
           <path d="M96 168 Q150 150 204 168 L228 410 Q150 425 72 410 Z" fill="#3d5639" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
@@ -789,6 +929,31 @@ const NarratorBody: React.FC<BodyProps> = ({
           <rect x="76" y="285" width="148" height="22" rx="4" fill="#301f13" stroke={INK} strokeWidth="4" />
           <circle cx="150" cy="296" r="10" fill="#9e9e9e" stroke={INK} strokeWidth="3" />
           <rect x="180" y="295" width="28" height="32" rx="6" fill="#4d301b" stroke={INK} strokeWidth="3" />
+        </>
+      ) : theme === "asian" ? (
+        <>
+          {/* Chinese Hanfu / Tang robe (deep indigo/teal silk) */}
+          <path d="M96 168 Q150 150 204 168 L228 410 Q150 425 72 410 Z" fill="#2d4f6c" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Diagonal collar fold */}
+          <path d="M100 170 L170 280" stroke="#d4af37" strokeWidth="6" />
+          <path d="M196 172 L140 280" stroke="#d4af37" strokeWidth="6" />
+          {/* Golden silk waist sash */}
+          <rect x="76" y="275" width="148" height="24" rx="3" fill="#d4af37" stroke={INK} strokeWidth="4" />
+          {/* Jade pendant ornament (yupei) */}
+          <circle cx="150" cy="287" r="8" fill="#3ba868" stroke={INK} strokeWidth="3" />
+          <path d="M148 295 L148 340" stroke="#c42b2b" strokeWidth="4" />
+        </>
+      ) : theme === "ninja" ? (
+        <>
+          {/* Ninja Shozoku (dark charcoal stealth robe) */}
+          <path d="M96 168 Q150 150 204 168 L228 410 Q150 425 72 410 Z" fill="#1b1b22" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Cross-over kimono fold (right over left) */}
+          <path d="M104 175 L168 285" stroke="#333340" strokeWidth="5" />
+          <path d="M196 175 L132 285" stroke="#333340" strokeWidth="5" />
+          {/* Red/crimson shinobi sash (obi) */}
+          <rect x="76" y="275" width="148" height="24" rx="3" fill="#8a1818" stroke={INK} strokeWidth="4" />
+          {/* Hanging sash tie */}
+          <path d="M165 299 L175 365 L160 365 L152 299 Z" fill="#8a1818" stroke={INK} strokeWidth="3" />
         </>
       ) : theme === "knight" ? (
         <>
@@ -824,6 +989,9 @@ const NarratorBody: React.FC<BodyProps> = ({
         </>
       ) : theme === "gladiator" ? (
         <>
+          {/* Main torso (chest / muscular cuirass) */}
+          <path d="M96 168 Q150 150 204 168 L228 405 Q150 425 72 405 Z" fill="#b87843" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Gladiator subligaculum (loincloth/skirt) */}
           <path d="M96 270 Q150 258 204 270 L226 412 Q150 430 74 412 Z" fill="#8e2222" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
           <path d="M120 310 L115 410" stroke="#5a1515" strokeWidth="3" />
           <path d="M180 310 L185 410" stroke="#5a1515" strokeWidth="3" />
@@ -841,6 +1009,66 @@ const NarratorBody: React.FC<BodyProps> = ({
           <circle cx="150" cy="227" r="6" fill="#8e2222" />
           <path d="M188 165 Q232 150 228 208 Q196 215 188 165 Z" fill="#d49b33" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
           <circle cx="210" cy="180" r="4" fill="#3d2212" />
+        </>
+      ) : theme === "wwii" ? (
+        <>
+          {/* 1940s British wool vest & shirt */}
+          <path d="M96 168 Q150 150 204 168 L228 410 Q150 425 72 410 Z" fill="#4a473e" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Cream shirt chest opening */}
+          <path d="M130 162 L150 235 L170 162 Z" fill="#e8e2d3" stroke={INK} strokeWidth="3" />
+          {/* 1940s necktie */}
+          <path d="M146 195 L154 195 L157 265 L150 275 L143 265 Z" fill="#782424" stroke={INK} strokeWidth="2.5" />
+          {/* Gas mask box canvas strap across shoulder */}
+          <line x1="104" y1="175" x2="198" y2="340" stroke="#7a6344" strokeWidth="8" strokeLinecap="round" />
+          <line x1="104" y1="175" x2="198" y2="340" stroke="#52402a" strokeWidth="2" strokeLinecap="round" />
+          {/* Vest buttons */}
+          <circle cx="150" cy="295" r="3" fill="#2b2923" />
+          <circle cx="150" cy="325" r="3" fill="#2b2923" />
+          <circle cx="150" cy="355" r="3" fill="#2b2923" />
+        </>
+      ) : theme === "victorian" ? (
+        <>
+          {/* Victorian worker waistcoat over shirt */}
+          <path d="M96 168 Q150 150 204 168 L228 410 Q150 425 72 410 Z" fill="#36312a" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Shirt v-neck collar */}
+          <path d="M130 162 L150 225 L170 162 Z" fill="#dfd8cb" stroke={INK} strokeWidth="3" />
+          {/* Red neckerchief scarf */}
+          <path d="M138 178 Q150 205 162 178 Q150 170 138 178 Z" fill="#962424" stroke={INK} strokeWidth="3" />
+          <path d="M147 195 L143 235 L152 230 L157 235 L153 195 Z" fill="#962424" stroke={INK} strokeWidth="2" />
+          {/* Suspenders */}
+          <line x1="118" y1="172" x2="114" y2="400" stroke="#221e1a" strokeWidth="6" />
+          <line x1="182" y1="172" x2="186" y2="400" stroke="#221e1a" strokeWidth="6" />
+          {/* Watch chain */}
+          <path d="M136 315 Q150 330 162 315" stroke="#c79f38" strokeWidth="3" fill="none" />
+        </>
+      ) : theme === "pirate" ? (
+        <>
+          {/* Pirate captain/deck coat */}
+          <path d="M96 168 Q150 150 204 168 L228 410 Q150 425 72 410 Z" fill="#1b263b" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* White open ruffled chest */}
+          <path d="M130 162 L150 250 L170 162 Z" fill="#f4ede1" stroke={INK} strokeWidth="3" />
+          <path d="M142 185 Q150 205 158 185" stroke="#8a8377" strokeWidth="2.5" fill="none" />
+          <path d="M140 210 Q150 230 160 210" stroke="#8a8377" strokeWidth="2.5" fill="none" />
+          {/* Wide crimson sash */}
+          <rect x="76" y="275" width="148" height="28" rx="3" fill="#8f1d1d" stroke={INK} strokeWidth="4" />
+          <path d="M162 303 L172 380 L156 380 L148 303 Z" fill="#8f1d1d" stroke={INK} strokeWidth="3" />
+          {/* Gold belt buckle */}
+          <rect x="136" y="271" width="28" height="36" rx="4" fill="#d4af37" stroke={INK} strokeWidth="3.5" />
+          <rect x="143" y="278" width="14" height="22" rx="2" fill="#8f1d1d" stroke={INK} strokeWidth="2.5" />
+        </>
+      ) : theme === "ottoman" ? (
+        <>
+          {/* Ottoman embroidered vest */}
+          <path d="M96 168 Q150 150 204 168 L228 410 Q150 425 72 410 Z" fill="#184363" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Cream inner tunic */}
+          <path d="M132 162 L150 240 L168 162 Z" fill="#f5ede0" stroke={INK} strokeWidth="3" />
+          {/* Gold braid embroidery (kaytan) */}
+          <path d="M102 172 Q130 220 148 245" stroke="#d4af37" strokeWidth="5" fill="none" />
+          <path d="M198 172 Q170 220 152 245" stroke="#d4af37" strokeWidth="5" fill="none" />
+          {/* Wide silk kusak sash */}
+          <rect x="76" y="270" width="148" height="30" rx="3" fill="#9e1e1e" stroke={INK} strokeWidth="4" />
+          <line x1="76" y1="280" x2="224" y2="280" stroke="#d4af37" strokeWidth="3" />
+          <line x1="76" y1="290" x2="224" y2="290" stroke="#d4af37" strokeWidth="3" />
         </>
       ) : (
         <>
@@ -906,10 +1134,24 @@ const NarratorBody: React.FC<BodyProps> = ({
         skin={skin}
       />
 
-      {theme === "egypt" && (
+      {(theme === "egypt" || theme === "mesoamerica") && (
         <>
-          <circle cx={p.lHand[0]} cy={p.lHand[1]} r="10" fill="none" stroke="#e5b32f" strokeWidth="4" />
-          <circle cx={p.rHand[0]} cy={p.rHand[1]} r="10" fill="none" stroke="#e5b32f" strokeWidth="4" />
+          <circle
+            cx={p.lHand[0]}
+            cy={p.lHand[1]}
+            r="10"
+            fill="none"
+            stroke={theme === "mesoamerica" ? "#1a8c79" : "#e5b32f"}
+            strokeWidth="4"
+          />
+          <circle
+            cx={p.rHand[0]}
+            cy={p.rHand[1]}
+            r="10"
+            fill="none"
+            stroke={theme === "mesoamerica" ? "#1a8c79" : "#e5b32f"}
+            strokeWidth="4"
+          />
         </>
       )}
 
@@ -939,10 +1181,50 @@ const NarratorBody: React.FC<BodyProps> = ({
             <line x1="215" y1="170" x2="229" y2="170" stroke="#e5b32f" strokeWidth="5" />
             <circle cx="150" cy="35" r="7" fill="#e5b32f" stroke={INK} strokeWidth="3" />
           </>
+        ) : theme === "mesoamerica" ? (
+          <>
+            {/* Elegant arching Quetzal feather plumes */}
+            <path d="M136 35 Q120 -30 96 -60 Q122 -30 140 35 Z" fill="#147348" stroke={INK} strokeWidth="3" />
+            <path d="M144 30 Q136 -45 120 -78 Q140 -40 148 30 Z" fill="#1ba165" stroke={INK} strokeWidth="3" />
+            <path d="M150 28 Q150 -55 150 -90 Q152 -55 154 28 Z" fill="#25bf78" stroke={INK} strokeWidth="3.5" />
+            <path d="M156 30 Q164 -45 180 -78 Q160 -40 152 30 Z" fill="#1ba165" stroke={INK} strokeWidth="3" />
+            <path d="M164 35 Q180 -30 204 -60 Q178 -30 160 35 Z" fill="#147348" stroke={INK} strokeWidth="3" />
+            {/* Red & gold embroidered headband */}
+            <path d="M84 75 Q150 40 216 75 L214 53 Q150 18 86 53 Z" fill="#b83323" stroke={INK} strokeWidth="4" />
+            <line x1="86" y1="64" x2="214" y2="64" stroke="#dfa837" strokeWidth="4" />
+            {/* Center sun medallion */}
+            <circle cx="150" cy="50" r="10" fill="#dfa837" stroke={INK} strokeWidth="3" />
+            <circle cx="150" cy="50" r="5" fill="#1a8c79" />
+            {/* Jade circular ear flares */}
+            <circle cx="82" cy="100" r="9" fill="#1a8c79" stroke={INK} strokeWidth="3" />
+            <circle cx="82" cy="100" r="4" fill="#dfa837" />
+            <circle cx="218" cy="100" r="9" fill="#1a8c79" stroke={INK} strokeWidth="3" />
+            <circle cx="218" cy="100" r="4" fill="#dfa837" />
+          </>
         ) : theme === "viking" ? (
           <>
             <path d="M88 75 Q85 25 150 25 Q215 25 212 75 Z" fill="#694b2f" stroke={INK} strokeWidth="5" />
             <ellipse cx="150" cy="72" rx="66" ry="14" fill="#91704d" stroke={INK} strokeWidth="4" />
+          </>
+        ) : theme === "asian" ? (
+          <>
+            {/* Traditional Asian conical straw hat (douli) */}
+            <path d="M60 70 L150 0 L240 70 Z" fill="#d9b677" stroke={INK} strokeWidth="5" strokeLinejoin="round" />
+            <line x1="75" y1="58" x2="225" y2="58" stroke="#a6813b" strokeWidth="3" />
+            <line x1="95" y1="42" x2="205" y2="42" stroke="#a6813b" strokeWidth="3" />
+            <line x1="120" y1="24" x2="180" y2="24" stroke="#a6813b" strokeWidth="3" />
+            <line x1="150" y1="0" x2="150" y2="70" stroke="#a6813b" strokeWidth="3" />
+            {/* Chin tie cord */}
+            <path d="M105 68 Q150 145 195 68" stroke="#a82323" strokeWidth="3.5" fill="none" />
+          </>
+        ) : theme === "ninja" ? (
+          <>
+            {/* Ninja shinobi hood covering top and sides */}
+            <path d="M86 90 Q80 20 150 20 Q220 20 214 90 Q225 155 150 162 Q75 155 86 90 Z" fill="#1b1b22" stroke={INK} strokeWidth="5" />
+            {/* Eye slit opening revealing eyes */}
+            <ellipse cx="150" cy="88" rx="46" ry="16" fill={skin} stroke={INK} strokeWidth="4" />
+            {/* Headband cloth tie */}
+            <line x1="84" y1="68" x2="216" y2="68" stroke="#8a1818" strokeWidth="6" />
           </>
         ) : theme === "knight" ? (
           <>
@@ -997,6 +1279,43 @@ const NarratorBody: React.FC<BodyProps> = ({
             <circle cx="112" cy="72" r="3.5" fill="#3d2212" />
             <circle cx="150" cy="69" r="5" fill="#b82222" stroke={INK} strokeWidth="2" />
             <circle cx="188" cy="72" r="3.5" fill="#3d2212" />
+          </>
+        ) : theme === "wwii" ? (
+          <>
+            {/* 1940s Tweed Flat Cap */}
+            <path d="M82 72 Q85 18 150 16 Q215 18 218 72 Q150 52 82 72 Z" fill="#4a473e" stroke={INK} strokeWidth="5" />
+            <path d="M90 68 Q150 48 210 68 L218 74 Q150 56 82 74 Z" fill="#36332a" stroke={INK} strokeWidth="3" />
+            {/* Small peak brim */}
+            <path d="M102 70 Q150 60 198 70 Q150 78 102 70 Z" fill="#36332a" stroke={INK} strokeWidth="3" />
+            <circle cx="150" cy="20" r="3.5" fill="#2b2923" />
+          </>
+        ) : theme === "victorian" ? (
+          <>
+            {/* Victorian scally/newsboy cap */}
+            <path d="M84 72 Q86 16 150 14 Q214 16 216 72 Q150 50 84 72 Z" fill="#332f2a" stroke={INK} strokeWidth="5" />
+            {/* Brim overhang */}
+            <path d="M98 70 Q150 58 202 70 Q150 78 98 70 Z" fill="#24211d" stroke={INK} strokeWidth="3.5" />
+            <circle cx="150" cy="18" r="3.5" fill="#1c1916" />
+          </>
+        ) : theme === "pirate" ? (
+          <>
+            {/* Pirate Tricorn Hat */}
+            <path d="M60 62 Q150 0 240 62 Q210 32 150 38 Q90 32 60 62 Z" fill="#1c1917" stroke={INK} strokeWidth="5" />
+            <path d="M60 62 Q100 82 150 82 Q200 82 240 62" stroke="#d4af37" strokeWidth="4" fill="none" />
+            <circle cx="150" cy="50" r="6" fill="#8f1d1d" stroke={INK} strokeWidth="2" />
+            <circle cx="150" cy="50" r="2.5" fill="#d4af37" />
+            {/* Pirate gold hoop earring in left ear */}
+            <circle cx="82" cy="100" r="7" fill="none" stroke="#d4af37" strokeWidth="3.5" />
+          </>
+        ) : theme === "ottoman" ? (
+          <>
+            {/* Ottoman Crimson Fez */}
+            <path d="M110 58 L122 0 L178 0 L190 58 Z" fill="#9e1a1a" stroke={INK} strokeWidth="5" strokeLinejoin="round" />
+            <ellipse cx="150" cy="56" rx="40" ry="8" fill="#801414" stroke={INK} strokeWidth="4" />
+            {/* Center top knot & hanging black tassel */}
+            <circle cx="150" cy="2" r="3.5" fill="#141414" />
+            <path d="M150 2 Q182 15 186 50" stroke="#141414" strokeWidth="3.5" fill="none" />
+            <ellipse cx="186" cy="52" rx="4" ry="7" fill="#141414" />
           </>
         ) : (
           <>

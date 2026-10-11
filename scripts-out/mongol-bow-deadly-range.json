@@ -1,0 +1,56 @@
+{
+  "slug": "mongol-bow-deadly-range",
+  "title": "The Deadliest Weapon of the Steppe",
+  "hook": "A Mongol composite bow pierced armor from 300 yards at full gallop.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "The engine that propelled the Mongol Empire from Beijing to the gates of Vienna was the revolutionary Mongol composite recurve bow.",
+      "mood": "warm",
+      "imagePrompt": "Endless windswept grassy Mongolian steppe under a vast turquoise sky with distant rolling hills and wild herds. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mongol-bow-deadly-range/1.mp3",
+      "voicedText": "The engine that propelled the Mongol Empire from Beijing to the gates of Vienna was the revolutionary Mongol composite recurve bow.",
+      "seconds": 8.3
+    },
+    {
+      "text": "Constructed over two years, its wooden core was layered with water buffalo horn on the belly and animal tendon sinew on the back.",
+      "mood": "warm",
+      "imagePrompt": "Steppe craftsman workshop with curved buffalo horns, bundles of dried sinew, fish glue pots, and wooden bow presses. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mongol-bow-deadly-range/2.mp3",
+      "voicedText": "Constructed over two years, its wooden core was layered with water buffalo horn on the belly and animal tendon sinew on the back.",
+      "seconds": 8.3
+    },
+    {
+      "text": "With a massive draw weight of up to 160 pounds, it hurled armor-piercing bodkin arrows over three hundred yards with devastating kinetic energy.",
+      "mood": "cool",
+      "imagePrompt": "Heavy iron-tipped armor-piercing bodkin arrows resting in an embroidered leather birchbark quiver on grass. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mongol-bow-deadly-range/3.mp3",
+      "voicedText": "With a massive draw weight of up to 160 pounds, it hurled armor-piercing bodkin arrows over three hundred yards with devastating kinetic energy.",
+      "seconds": 10.3
+    },
+    {
+      "text": "Mongol horse archers loosed arrows at the exact instant all four hooves of their horse left the ground during a full gallop for maximum accuracy.",
+      "mood": "dramatic",
+      "imagePrompt": "Leather Mongol horse saddle with high wooden pommel and birchbark stirrups resting on an open grassy meadow. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mongol-bow-deadly-range/4.mp3",
+      "voicedText": "Mongol horse archers loosed arrows at the exact instant all four hooves of their horse left the ground during a full gallop for maximum accuracy.",
+      "seconds": 9.4
+    },
+    {
+      "text": "They carried sixty arrows in specialized quivers, along with whistling signal arrows used by commanders to direct battlefield maneuvers.",
+      "mood": "warm",
+      "imagePrompt": "Bone-headed whistling signal arrow with hollow air whistle holes resting beside an archer's jade thumb ring on felt. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mongol-bow-deadly-range/5.mp3",
+      "voicedText": "They carried sixty arrows in specialized quivers, along with whistling signal arrows used by commanders to direct battlefield maneuvers.",
+      "seconds": 9.3
+    },
+    {
+      "text": "Could you draw a 160-pound bow while riding a galloping horse? Tell us below and subscribe for daily history stories!",
+      "mood": "day",
+      "imagePrompt": "Majestic circular felt yurt ger tent pitched under the vast azure sky of the Mongolian wilderness in morning sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mongol-bow-deadly-range/6.mp3",
+      "voicedText": "Could you draw a 160-pound bow while riding a galloping horse? Tell us below and subscribe for daily history stories!",
+      "seconds": 8.2
+    }
+  ]
+}

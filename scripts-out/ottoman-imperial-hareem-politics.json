@@ -1,0 +1,56 @@
+{
+  "slug": "ottoman-imperial-hareem-politics",
+  "title": "The Powerful Women Who Ruled the Empire",
+  "hook": "During the 'Sultanate of Women', imperial mothers ruled from palace walls.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Western orientalist paintings depicted the Ottoman imperial harem as a sensual palace prison, but the reality was a political nerve center.",
+      "mood": "warm",
+      "imagePrompt": "Lavish tiled courtyard of the Topkapi Palace imperial harem with mother-of-pearl shutters, stained glass windows, and marble fountains. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-imperial-hareem-politics/1.mp3",
+      "voicedText": "Western orientalist paintings depicted the Ottoman imperial harem as a sensual palace prison, but the reality was a political nerve center.",
+      "seconds": 9.6
+    },
+    {
+      "text": "The harem was an elite academy where hundreds of women received years of education in law, diplomacy, Islamic theology, and calligraphy.",
+      "mood": "warm",
+      "imagePrompt": "Intricately carved wooden writing desk in the harem schoolroom with reed pens, ink bottles, and illuminated manuscripts. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-imperial-hareem-politics/2.mp3",
+      "voicedText": "The harem was an elite academy where hundreds of women received years of education in law, diplomacy, Islamic theology, and calligraphy.",
+      "seconds": 9
+    },
+    {
+      "text": "The supreme ruler was the 'Valide Sultan'—the Sultan's mother—who outranked grand viziers and managed astronomical wealth.",
+      "mood": "warm",
+      "imagePrompt": "Imperial chambers of the Valide Sultan with gilded domed ceilings, Iznik floral tiles, and an elaborate gold-trimmed canopied throne. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-imperial-hareem-politics/3.mp3",
+      "voicedText": "The supreme ruler was the 'Valide Sultan'—the Sultan's mother—who outranked grand viziers and managed astronomical wealth.",
+      "seconds": 8.8
+    },
+    {
+      "text": "During the 16th and 17th centuries, known as the 'Sultanate of Women', matriarchs like Hürrem and Kösem Sultan effectively ran the entire empire.",
+      "mood": "cool",
+      "imagePrompt": "Gilded lattice screen window overlooking the imperial divan council hall where women secretly observed political debates. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-imperial-hareem-politics/4.mp3",
+      "voicedText": "During the 16th and 17th centuries, known as the 'Sultanate of Women', matriarchs like Hürrem and Kösem Sultan effectively ran the entire empire.",
+      "seconds": 10.7
+    },
+    {
+      "text": "They corresponded with European monarchs, financed great architectural mosques, and negotiated international peace treaties.",
+      "mood": "warm",
+      "imagePrompt": "Royal diplomatic letter with gold illumination and wax seal addressed to European queens resting on a velvet desk runner. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-imperial-hareem-politics/5.mp3",
+      "voicedText": "They corresponded with European monarchs, financed great architectural mosques, and negotiated international peace treaties.",
+      "seconds": 8.1
+    },
+    {
+      "text": "These brilliant women wielded unprecedented global power from within palace walls. Did you know the empire was ruled by women?",
+      "mood": "day",
+      "imagePrompt": "Soaring domes and minarets of the Sultanahmet district in Istanbul shining in warm afternoon sunlight over the Marmara sea. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-imperial-hareem-politics/6.mp3",
+      "voicedText": "These brilliant women wielded unprecedented global power from within palace walls. Did you know the empire was ruled by women?",
+      "seconds": 8
+    }
+  ]
+}

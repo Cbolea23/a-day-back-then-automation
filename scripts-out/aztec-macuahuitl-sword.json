@@ -1,0 +1,56 @@
+{
+  "slug": "aztec-macuahuitl-sword",
+  "title": "The Obsidian Razor Sword",
+  "hook": "An oak club lined with volcanic glass so sharp it beheaded a horse.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "The primary close-quarters weapon of elite Aztec warriors was the 'macuahuitl': a flat hardwood club edged with volcanic glass.",
+      "mood": "warm",
+      "imagePrompt": "Aztec warrior armory room with heavy oak macuahuitl swords resting against stone temple walls beside feather shields. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/aztec-macuahuitl-sword/1.mp3",
+      "voicedText": "The primary close-quarters weapon of elite Aztec warriors was the 'macuahuitl': a flat hardwood club edged with volcanic glass.",
+      "seconds": 8.6
+    },
+    {
+      "text": "Crafted from dense mountain oak, grooves along both sides held rows of razor-sharp prismatic blades flaked from black volcanic obsidian.",
+      "mood": "dark",
+      "imagePrompt": "Close-up of pitch-black volcanic obsidian razor blades fitted into carved grooves of a polished dark oak war club. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/aztec-macuahuitl-sword/2.mp3",
+      "voicedText": "Crafted from dense mountain oak, grooves along both sides held rows of razor-sharp prismatic blades flaked from black volcanic obsidian.",
+      "seconds": 8.8
+    },
+    {
+      "text": "Obsidian fractures down to a single molecule thick—hundreds of times sharper than the finest European steel surgical scalpels.",
+      "mood": "cool",
+      "imagePrompt": "Stonemason's workbench with raw black obsidian volcanic nodules, deer antler pressure flakers, and tree resin glue pots. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/aztec-macuahuitl-sword/3.mp3",
+      "voicedText": "Obsidian fractures down to a single molecule thick—hundreds of times sharper than the finest European steel surgical scalpels.",
+      "seconds": 8.7
+    },
+    {
+      "text": "Spanish conquistadors recorded with terror that a single full-force blow from a macuahuitl could sever a Spanish warhorse's neck clean off.",
+      "mood": "dramatic",
+      "imagePrompt": "Battlefield causeway stone paving slabs littered with spent copper arrowheads, shattered shields, and dust swirling in sunset light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/aztec-macuahuitl-sword/4.mp3",
+      "voicedText": "Spanish conquistadors recorded with terror that a single full-force blow from a macuahuitl could sever a Spanish warhorse's neck clean off.",
+      "seconds": 9.8
+    },
+    {
+      "text": "However, obsidian was brittle: striking steel armor shattered the glass edges, while European rapier swords could parry without breaking.",
+      "mood": "cool",
+      "imagePrompt": "Broken obsidian glass shards glistening on a weathered stone plaza floor beside a dented steel Spanish morion helmet. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/aztec-macuahuitl-sword/5.mp3",
+      "voicedText": "However, obsidian was brittle: striking steel armor shattered the glass edges, while European rapier swords could parry without breaking.",
+      "seconds": 9.5
+    },
+    {
+      "text": "Would you rather wield an obsidian macuahuitl or a steel broadsword in battle? Tell us your choice below!",
+      "mood": "day",
+      "imagePrompt": "Sunlit stone platform atop a Mesoamerican pyramid temple with ceremonial brazier smoke curling into a pure turquoise sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/aztec-macuahuitl-sword/6.mp3",
+      "voicedText": "Would you rather wield an obsidian macuahuitl or a steel broadsword in battle? Tell us your choice below!",
+      "seconds": 6.5
+    }
+  ]
+}

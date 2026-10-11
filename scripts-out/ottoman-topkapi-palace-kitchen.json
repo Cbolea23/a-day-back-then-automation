@@ -1,0 +1,56 @@
+{
+  "slug": "ottoman-topkapi-palace-kitchen",
+  "title": "Feeding 4,000 People in Topkapi Palace",
+  "hook": "The palace employed 1,000 cooks organized by dessert specialties.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Inside Istanbul's Topkapi Palace, the imperial kitchens formed an enormous complex of ten soaring domed culinary factories.",
+      "mood": "warm",
+      "imagePrompt": "Row of ten historic brick conical chimneys and domes of the Topkapi Palace kitchens overlooking the Sea of Marmara. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-topkapi-palace-kitchen/1.mp3",
+      "voicedText": "Inside Istanbul's Topkapi Palace, the imperial kitchens formed an enormous complex of ten soaring domed culinary factories.",
+      "seconds": 9.3
+    },
+    {
+      "text": "A workforce of over one thousand chefs and kitchen apprentices worked daily to feed four thousand imperial residents every single day.",
+      "mood": "warm",
+      "imagePrompt": "Vast kitchen hall with whitewashed brick walls, massive wood-burning stone hearths, and rows of heavy butcher prep tables. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-topkapi-palace-kitchen/2.mp3",
+      "voicedText": "A workforce of over one thousand chefs and kitchen apprentices worked daily to feed four thousand imperial residents every single day.",
+      "seconds": 9.1
+    },
+    {
+      "text": "Kitchens were strictly divided by guild: one building made only baklava, another prepared spit-roasted lamb, and another specialized in fruit sherbets.",
+      "mood": "warm",
+      "imagePrompt": "Large round copper pastry trays piled with golden flaky baklava layers soaked in honey syrup and ground green pistachios. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-topkapi-palace-kitchen/3.mp3",
+      "voicedText": "Kitchens were strictly divided by guild: one building made only baklava, another prepared spit-roasted lamb, and another specialized in fruit sherbets.",
+      "seconds": 10.1
+    },
+    {
+      "text": "The Sultan's private food was prepared under extreme security: official food tasters sampled every dish to test for assassination poisons.",
+      "mood": "cool",
+      "imagePrompt": "Imperial dining table with fine Chinese celadon green porcelain bowls, gold covered dishes, and jeweled serving spoons. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-topkapi-palace-kitchen/4.mp3",
+      "voicedText": "The Sultan's private food was prepared under extreme security: official food tasters sampled every dish to test for assassination poisons.",
+      "seconds": 9.2
+    },
+    {
+      "text": "They believed celadon porcelain bowls possessed magical properties that changed color or shattered if touched by lethal poisons.",
+      "mood": "cool",
+      "imagePrompt": "Close-up of a jade-green celadon porcelain imperial bowl with carved floral motifs resting on a gold brocade runner. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-topkapi-palace-kitchen/5.mp3",
+      "voicedText": "They believed celadon porcelain bowls possessed magical properties that changed color or shattered if touched by lethal poisons.",
+      "seconds": 8
+    },
+    {
+      "text": "Would you have trusted an imperial food taster with your life? Let us know below and subscribe for more stories!",
+      "mood": "day",
+      "imagePrompt": "Sunlight illuminating the lush Third Courtyard of Topkapi Palace with cypress trees and marble porticos under clear skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-topkapi-palace-kitchen/6.mp3",
+      "voicedText": "Would you have trusted an imperial food taster with your life? Let us know below and subscribe for more stories!",
+      "seconds": 6.7
+    }
+  ]
+}

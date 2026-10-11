@@ -1,0 +1,56 @@
+{
+  "slug": "pharaoh-cleopatra-daily-routine",
+  "title": "The Real Routine of Cleopatra",
+  "hook": "Cleopatra spoke nine languages and ran the Mediterranean's richest economy, yet myths reduce her to donkey milk baths.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Popular culture remembers Cleopatra as a glamorous seductress, but historical accounts by Plutarch describe a brilliant intellectual and statesman.",
+      "mood": "warm",
+      "imagePrompt": "Palace terrace of ancient Alexandria overlooking the Mediterranean harbor with classical colonnades and palm trees. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pharaoh-cleopatra-daily-routine/1.mp3",
+      "voicedText": "Popular culture remembers Cleopatra as a glamorous seductress, but historical accounts by Plutarch describe a brilliant intellectual and statesman.",
+      "seconds": 9.7
+    },
+    {
+      "text": "She was the first Ptolemaic monarch in three hundred years to bother learning the native Egyptian language, along with eight others.",
+      "mood": "cool",
+      "imagePrompt": "Scrolls in Greek, Latin, Demotic Egyptian, and Aramaic neatly stacked on a cedarwood study table with a bronze stylus. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pharaoh-cleopatra-daily-routine/2.mp3",
+      "voicedText": "She was the first Ptolemaic monarch in three hundred years to bother learning the native Egyptian language, along with eight others.",
+      "seconds": 8.1
+    },
+    {
+      "text": "Her day began at dawn inspecting the royal treasury books and regulating the vast Nile grain trade that fed millions across the Mediterranean.",
+      "mood": "warm",
+      "imagePrompt": "Heavy gold octodrachm coins stamped with royal emblems in a carved wooden chest next to fiscal accounting papyri. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pharaoh-cleopatra-daily-routine/3.mp3",
+      "voicedText": "Her day began at dawn inspecting the royal treasury books and regulating the vast Nile grain trade that fed millions across the Mediterranean.",
+      "seconds": 9.3
+    },
+    {
+      "text": "She held audiences with ambassadors without needing interpreters, outwitting Roman diplomats with razor-sharp legal and political arguments.",
+      "mood": "warm",
+      "imagePrompt": "Gilded throne room in Alexandria with porphyry marble floors and gold-leaf royal emblems between towering pillars. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pharaoh-cleopatra-daily-routine/4.mp3",
+      "voicedText": "She held audiences with ambassadors without needing interpreters, outwitting Roman diplomats with razor-sharp legal and political arguments.",
+      "seconds": 9.1
+    },
+    {
+      "text": "In her private laboratory, she studied alchemy, toxicology, and cosmetics—even authoring medical treatises preserved by Galen.",
+      "mood": "cool",
+      "imagePrompt": "Glass flasks, alabaster perfume jars, dried aromatic botanical bundles, and bronze scales in a royal library. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pharaoh-cleopatra-daily-routine/5.mp3",
+      "voicedText": "In her private laboratory, she studied alchemy, toxicology, and cosmetics—even authoring medical treatises preserved by Galen.",
+      "seconds": 8.6
+    },
+    {
+      "text": "A true ruler of intellect and power. What surprised you most about Cleopatra? Share below and subscribe for more history truth!",
+      "mood": "day",
+      "imagePrompt": "The great Pharos lighthouse of Alexandria standing tall at sunset with golden light reflecting across harbor waters. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pharaoh-cleopatra-daily-routine/6.mp3",
+      "voicedText": "A true ruler of intellect and power. What surprised you most about Cleopatra? Share below and subscribe for more history truth!",
+      "seconds": 8.9
+    }
+  ]
+}

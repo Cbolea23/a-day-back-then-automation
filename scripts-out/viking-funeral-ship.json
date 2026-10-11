@@ -1,0 +1,56 @@
+{
+  "slug": "viking-funeral-ship",
+  "title": "Burning Ships and Viking Burials",
+  "hook": "Did chieftains really burn on open seas, or were they buried deep underground?",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Hollywood movies almost always show a dead Viking king set adrift on a longship, with flaming arrows launched to set it ablaze.",
+      "mood": "dark",
+      "imagePrompt": "Viking wooden longship silhouetted against a dark sea with burning torches flaming along the shoreline at dusk. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-funeral-ship/1.mp3",
+      "voicedText": "Hollywood movies almost always show a dead Viking king set adrift on a longship, with flaming arrows launched to set it ablaze.",
+      "seconds": 8.9
+    },
+    {
+      "text": "While floating pyres occasionally happened, most wealthy chieftains were buried in full-sized ships dragged inland into deep earth mounds.",
+      "mood": "warm",
+      "imagePrompt": "Massive seventy-foot oak Viking ship resting inside a deep earthen burial trench before being covered in clay and turf. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-funeral-ship/2.mp3",
+      "voicedText": "While floating pyres occasionally happened, most wealthy chieftains were buried in full-sized ships dragged inland into deep earth mounds.",
+      "seconds": 9
+    },
+    {
+      "text": "The famous Oseberg ship in Norway was buried under airtight blue clay, perfectly preserving intricate dragon woodcarvings and textiles for 1,200 years.",
+      "mood": "cool",
+      "imagePrompt": "Intricately carved spiral animal woodcarvings on the prow of the historic Oseberg longship. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-funeral-ship/3.mp3",
+      "voicedText": "The famous Oseberg ship in Norway was buried under airtight blue clay, perfectly preserving intricate dragon woodcarvings and textiles for 1,200 years.",
+      "seconds": 11.4
+    },
+    {
+      "text": "Burial ships carried an entire afterlife voyage: tapestries, iron sleighs, horses, hunting dogs, and barrels of apples and grain.",
+      "mood": "warm",
+      "imagePrompt": "Carved wooden ceremonial Viking sleigh with ornate animal carvings and woven wool tapestries inside a burial chamber. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-funeral-ship/4.mp3",
+      "voicedText": "Burial ships carried an entire afterlife voyage: tapestries, iron sleighs, horses, hunting dogs, and barrels of apples and grain.",
+      "seconds": 9.7
+    },
+    {
+      "text": "The ship was believed to carry the deceased across the mystical sea to the realm of the ancestors or the halls of Hel.",
+      "mood": "dark",
+      "imagePrompt": "Moonlit mist rising over a tranquil Norwegian fjord between towering sheer granite cliff faces. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-funeral-ship/5.mp3",
+      "voicedText": "The ship was believed to carry the deceased across the mystical sea to the realm of the ancestors or the halls of Hel.",
+      "seconds": 7.3
+    },
+    {
+      "text": "A grand burial for the ultimate seafaring people. How would you want to be remembered? Tell us and subscribe for more history!",
+      "mood": "day",
+      "imagePrompt": "Green rolling coastal burial mound dotted with wild flowers overlooking calm blue fjord waters in the morning sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-funeral-ship/6.mp3",
+      "voicedText": "A grand burial for the ultimate seafaring people. How would you want to be remembered? Tell us and subscribe for more history!",
+      "seconds": 7.6
+    }
+  ]
+}

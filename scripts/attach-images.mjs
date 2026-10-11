@@ -28,15 +28,23 @@ for (const slug of slugs) {
     continue;
   }
   const script = JSON.parse(fs.readFileSync(file, "utf8"));
+  if (!script || !Array.isArray(script.scenes)) {
+    continue;
+  }
   let attached = 0;
   script.scenes.forEach((scene, i) => {
+    let found = false;
     for (const ext of EXTS) {
       const rel = `images/${slug}/${i + 1}.${ext}`;
       if (fs.existsSync(path.join(root, "public", rel))) {
         scene.image = rel;
         attached++;
+        found = true;
         break;
       }
+    }
+    if (!found) {
+      delete scene.image;
     }
   });
   fs.writeFileSync(file, JSON.stringify(script, null, 2));

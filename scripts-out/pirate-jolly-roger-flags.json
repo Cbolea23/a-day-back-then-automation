@@ -1,0 +1,56 @@
+{
+  "slug": "pirate-jolly-roger-flags",
+  "title": "The Terrifying Secret of Pirate Flags",
+  "hook": "Black flag meant surrender; red flag meant everyone dies.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Hollywood movies show pirate ships sailing 24/7 with a flapping Jolly Roger skull flag, but real pirates rarely did.",
+      "mood": "cool",
+      "imagePrompt": "Tall wooden ship mast with furled sails against an overcast grey Atlantic sky with gentle ocean swells. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-jolly-roger-flags/1.mp3",
+      "voicedText": "Hollywood movies show pirate ships sailing 24/7 with a flapping Jolly Roger skull flag, but real pirates rarely did.",
+      "seconds": 8.5
+    },
+    {
+      "text": "To sneak close to prey, pirate ships flew 'false colors': raising friendly Spanish, French, or British royal naval flags.",
+      "mood": "day",
+      "imagePrompt": "Signal halyard ropes raising a vibrant red-and-white British naval ensign on the stern flagpole. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-jolly-roger-flags/2.mp3",
+      "voicedText": "To sneak close to prey, pirate ships flew 'false colors': raising friendly Spanish, French, or British royal naval flags.",
+      "seconds": 9.1
+    },
+    {
+      "text": "Once within cannon range, they lowered the royal flag and hoisted the black Jolly Roger: the universal symbol for 'surrender and live'.",
+      "mood": "dark",
+      "imagePrompt": "Classic black Jolly Roger flag with white grinning skull and crossed bones fluttering menacingly against sea spray. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-jolly-roger-flags/3.mp3",
+      "voicedText": "Once within cannon range, they lowered the royal flag and hoisted the black Jolly Roger: the universal symbol for 'surrender and live'.",
+      "seconds": 9
+    },
+    {
+      "text": "Each captain had custom symbols: Bartholomew Roberts showed himself standing on skulls, while Edward Low used a blood-red skeleton.",
+      "mood": "dark",
+      "imagePrompt": "Embroidered black silk pirate banner with a red hourglass and pierced heart motif on a wooden cabin table. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-jolly-roger-flags/4.mp3",
+      "voicedText": "Each captain had custom symbols: Bartholomew Roberts showed himself standing on skulls, while Edward Low used a blood-red skeleton.",
+      "seconds": 9.3
+    },
+    {
+      "text": "If a merchant ship dared to fight back, pirates hoisted the dreaded solid crimson red flag: the 'Jolie Rouge', meaning 'No Quarter'—zero survivors.",
+      "mood": "dramatic",
+      "imagePrompt": "Vivid blood-red crimson flag flying from the mainmast tip against stormy bruised ocean battle clouds. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-jolly-roger-flags/5.mp3",
+      "voicedText": "If a merchant ship dared to fight back, pirates hoisted the dreaded solid crimson red flag: the 'Jolie Rouge', meaning 'No Quarter'—zero survivors.",
+      "seconds": 10
+    },
+    {
+      "text": "Seeing that red flag struck sheer panic into every sailor's heart. Would you have surrendered to the black flag immediately?",
+      "mood": "day",
+      "imagePrompt": "Calm tropical blue ocean waters gently lapping against coral reef sands under midday sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-jolly-roger-flags/6.mp3",
+      "voicedText": "Seeing that red flag struck sheer panic into every sailor's heart. Would you have surrendered to the black flag immediately?",
+      "seconds": 7.8
+    }
+  ]
+}

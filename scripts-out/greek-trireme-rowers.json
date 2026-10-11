@@ -1,0 +1,56 @@
+{
+  "slug": "greek-trireme-rowers",
+  "title": "Rowing a Greek Warship in Battle",
+  "hook": "Sitting shoulder-to-shoulder with 170 sweaty men in 100-degree heat, blind to incoming enemy rams.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "The Athenian trireme was the deadliest warship of the ancient Mediterranean: a swift wooden missile propelled by one hundred seventy oarsmen.",
+      "mood": "cool",
+      "imagePrompt": "Sleek ancient Greek wooden trireme warship with bronze battering ram gliding across deep blue Aegean waters. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/greek-trireme-rowers/1.mp3",
+      "voicedText": "The Athenian trireme was the deadliest warship of the ancient Mediterranean: a swift wooden missile propelled by one hundred seventy oarsmen.",
+      "seconds": 9
+    },
+    {
+      "text": "Contrary to movie myths, Greek rowers were not enslaved convicts in chains—they were free Athenian citizens paid a full daily wage.",
+      "mood": "warm",
+      "imagePrompt": "Leather rowing cushion, wooden oarsman bench, and a small pouch of silver drachma coins on pine deck timbers. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/greek-trireme-rowers/2.mp3",
+      "voicedText": "Contrary to movie myths, Greek rowers were not enslaved convicts in chains—they were free Athenian citizens paid a full daily wage.",
+      "seconds": 9.2
+    },
+    {
+      "text": "Inside the narrow wooden hull, rowers were stacked on three tiered benches, packed so closely their noses touched the back of the man ahead.",
+      "mood": "dark",
+      "imagePrompt": "Cramped timber interior of an ancient ship hull showing three stepped tiers of wooden rowing benches and long pine oars. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/greek-trireme-rowers/3.mp3",
+      "voicedText": "Inside the narrow wooden hull, rowers were stacked on three tiered benches, packed so closely their noses touched the back of the man ahead.",
+      "seconds": 9.1
+    },
+    {
+      "text": "Heat reached over one hundred degrees, smelling of sweat and bilge water, while rowers rowed blind to flute rhythms, unable to see enemy ships.",
+      "mood": "dark",
+      "imagePrompt": "Double-reed Greek aulos flute resting on a wooden captain's crate next to an hourglass and coiled hemp ropes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/greek-trireme-rowers/4.mp3",
+      "voicedText": "Heat reached over one hundred degrees, smelling of sweat and bilge water, while rowers rowed blind to flute rhythms, unable to see enemy ships.",
+      "seconds": 10
+    },
+    {
+      "text": "If an enemy ram smashed into the hull at ten knots, rowers in the bottom tier were instantly trapped and crushed in the splintering timber.",
+      "mood": "dramatic",
+      "imagePrompt": "Massive bronze boar-head battering ram on the bow of a warship cutting through frothing white sea foam spray. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/greek-trireme-rowers/5.mp3",
+      "voicedText": "If an enemy ram smashed into the hull at ten knots, rowers in the bottom tier were instantly trapped and crushed in the splintering timber.",
+      "seconds": 9.2
+    },
+    {
+      "text": "Their discipline turned Athens into a maritime superpower. Would you have rowed on a trireme? Tell us and subscribe!",
+      "mood": "day",
+      "imagePrompt": "Fleet of ancient Greek warships anchored in a peaceful golden coastal cove at sunset. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/greek-trireme-rowers/6.mp3",
+      "voicedText": "Their discipline turned Athens into a maritime superpower. Would you have rowed on a trireme? Tell us and subscribe!",
+      "seconds": 8.1
+    }
+  ]
+}

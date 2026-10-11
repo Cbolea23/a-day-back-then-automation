@@ -1,0 +1,56 @@
+{
+  "slug": "wwii-deception-ghost-army",
+  "title": "The 23rd Ghost Army Deception",
+  "hook": "Artists fooled the German high command with rubber tanks.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "In 1944, the US Army created the 23rd Headquarters Special Troops: a top-secret unit made of artists, designers, and sound engineers.",
+      "mood": "day",
+      "imagePrompt": "Military camouflage field tent in a French hedgerow with architectural drawing tables, painted canvas rolls, and sound equipment. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-deception-ghost-army/1.mp3",
+      "voicedText": "In 1944, the US Army created the 23rd Headquarters Special Troops: a top-secret unit made of artists, designers, and sound engineers.",
+      "seconds": 10.1
+    },
+    {
+      "text": "Their mission wasn't to fight, but to simulate entire thirty-thousand-man armored divisions where no real troops existed.",
+      "mood": "warm",
+      "imagePrompt": "Open grassy pasture in Normandy with inflatable rubber Sherman tanks parked under camouflage netting. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-deception-ghost-army/2.mp3",
+      "voicedText": "Their mission wasn't to fight, but to simulate entire thirty-thousand-man armored divisions where no real troops existed.",
+      "seconds": 7.6
+    },
+    {
+      "text": "They inflated life-size rubber Sherman tanks and artillery guns with air compressors in under thirty minutes.",
+      "mood": "day",
+      "imagePrompt": "Close-up of a rubber inflatable tank showing realistic painted mud splatters and canvas tread markings. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-deception-ghost-army/3.mp3",
+      "voicedText": "They inflated life-size rubber Sherman tanks and artillery guns with air compressors in under thirty minutes.",
+      "seconds": 7.1
+    },
+    {
+      "text": "Giant sound trucks blasted pre-recorded audio of clanking tank tracks, coughing engines, and bridge-building audible fifteen miles away.",
+      "mood": "cool",
+      "imagePrompt": "Army truck equipped with massive directional loudspeaker horns mounted on the roof facing a misty French forest. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-deception-ghost-army/4.mp3",
+      "voicedText": "Giant sound trucks blasted pre-recorded audio of clanking tank tracks, coughing engines, and bridge-building audible fifteen miles away.",
+      "seconds": 9.2
+    },
+    {
+      "text": "To fool aerial reconnaissance, soldiers used real tractors to carve fake tank tread ruts into the mud, complete with phony oil leaks.",
+      "mood": "cool",
+      "imagePrompt": "Muddy country lane with deep parallel vehicle tread tracks leading towards empty woods under overcast skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-deception-ghost-army/5.mp3",
+      "voicedText": "To fool aerial reconnaissance, soldiers used real tractors to carve fake tank tread ruts into the mud, complete with phony oil leaks.",
+      "seconds": 9.4
+    },
+    {
+      "text": "Their illusions diverted thousands of enemy troops away from real battlefields. Did you know about this secret ghost army?",
+      "mood": "warm",
+      "imagePrompt": "Peaceful French meadow bathed in warm sunset with deflated canvas gear packed into wooden army crates. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-deception-ghost-army/6.mp3",
+      "voicedText": "Their illusions diverted thousands of enemy troops away from real battlefields. Did you know about this secret ghost army?",
+      "seconds": 7.8
+    }
+  ]
+}

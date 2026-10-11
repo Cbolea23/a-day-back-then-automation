@@ -1,0 +1,56 @@
+{
+  "slug": "viking-blood-eagle-myth",
+  "title": "The Gruesome Blood Eagle: Fact or Fiction?",
+  "hook": "Did Vikings really carve enemy ribs into eagle wings, or was it a literary myth?",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "In Norse sagas, the most terrifying punishment mentioned is the 'Blood Eagle'—an agonizing execution allegedly inflicted on bitter enemies.",
+      "mood": "dark",
+      "imagePrompt": "Dark misty Norse ritual stone grove with mossy standing rune stones under ominous grey storm clouds. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-blood-eagle-myth/1.mp3",
+      "voicedText": "In Norse sagas, the most terrifying punishment mentioned is the 'Blood Eagle'—an agonizing execution allegedly inflicted on bitter enemies.",
+      "seconds": 9.4
+    },
+    {
+      "text": "According to late Icelandic poems, the victim's spine was split open, ribs pried outward like wings, and lungs pulled out into salt.",
+      "mood": "dark",
+      "imagePrompt": "Ancient iron sacrificial knife with carved antler handle resting upon a weathered stone altar slab. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-blood-eagle-myth/2.mp3",
+      "voicedText": "According to late Icelandic poems, the victim's spine was split open, ribs pried outward like wings, and lungs pulled out into salt.",
+      "seconds": 9.5
+    },
+    {
+      "text": "Victims supposedly included King Aella of Northumbria and Halfdan Long-Leg, sacrificed directly to Odin as vengeance.",
+      "mood": "dramatic",
+      "imagePrompt": "Carved wooden raven banner hanging limp from a wooden post against a bleak Northumberland moorland horizon. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-blood-eagle-myth/3.mp3",
+      "voicedText": "Victims supposedly included King Aella of Northumbria and Halfdan Long-Leg, sacrificed directly to Odin as vengeance.",
+      "seconds": 9.3
+    },
+    {
+      "text": "However, medical historians note the victim would have suffocated within seconds of the rib cage opening, making an elaborate ritual physically impossible.",
+      "mood": "cool",
+      "imagePrompt": "Ancient manuscript page in a monastery scriptorium with faded ink text describing northern pagan battles. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-blood-eagle-myth/4.mp3",
+      "voicedText": "However, medical historians note the victim would have suffocated within seconds of the rib cage opening, making an elaborate ritual physically impossible.",
+      "seconds": 10.2
+    },
+    {
+      "text": "Many scholars believe Christian scribes mistranslated kennings—poetic metaphors describing carrion eagles feeding on slain soldiers' backs.",
+      "mood": "warm",
+      "imagePrompt": "Two black ravens perched high upon a bare winter oak tree overlooking a peaceful Scandinavian valley. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-blood-eagle-myth/5.mp3",
+      "voicedText": "Many scholars believe Christian scribes mistranslated kennings—poetic metaphors describing carrion eagles feeding on slain soldiers' backs.",
+      "seconds": 9.9
+    },
+    {
+      "text": "Was it a real pagan horror or medieval sensationalism? Share your take in the comments and subscribe for more mythbusters!",
+      "mood": "day",
+      "imagePrompt": "Viking memorial runestone illuminated by bright afternoon sun standing proud among green grassy hills. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-blood-eagle-myth/6.mp3",
+      "voicedText": "Was it a real pagan horror or medieval sensationalism? Share your take in the comments and subscribe for more mythbusters!",
+      "seconds": 8.8
+    }
+  ]
+}

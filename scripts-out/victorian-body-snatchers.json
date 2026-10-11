@@ -1,0 +1,56 @@
+{
+  "slug": "victorian-body-snatchers",
+  "title": "Digging Up Fresh Graves for Doctors",
+  "hook": "Medical students paid grave robbers top dollar for fresh corpses.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "In early 19th-century London, medical anatomy schools faced a severe crisis: by law, only executed murderers could be dissected.",
+      "mood": "cool",
+      "imagePrompt": "Victorian medical amphitheater lecture hall with tiered wooden seating looking down on an empty marble dissection table. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-body-snatchers/1.mp3",
+      "voicedText": "In early 19th-century London, medical anatomy schools faced a severe crisis: by law, only executed murderers could be dissected.",
+      "seconds": 9.2
+    },
+    {
+      "text": "With only dozens of executions a year and hundreds of eager surgery students, doctors paid fortunes to shadowy 'resurrection men'.",
+      "mood": "dark",
+      "imagePrompt": "Dimly lit cobblestone alleyway in Whitechapel with rain-slicked stones, gas streetlamp glow, and shadowy brick archways. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-body-snatchers/2.mp3",
+      "voicedText": "With only dozens of executions a year and hundreds of eager surgery students, doctors paid fortunes to shadowy 'resurrection men'.",
+      "seconds": 8.8
+    },
+    {
+      "text": "Armed with wooden spades to avoid noisy clinking on stones, grave robbers slipped into churchyards hours after a fresh burial.",
+      "mood": "dark",
+      "imagePrompt": "Gothic churchyard graveyard at midnight with crooked stone headstones, weeping willows, and freshly mounded damp earth. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-body-snatchers/3.mp3",
+      "voicedText": "Armed with wooden spades to avoid noisy clinking on stones, grave robbers slipped into churchyards hours after a fresh burial.",
+      "seconds": 8.5
+    },
+    {
+      "text": "They dug a narrow hole down to the coffin head, snapped the lid with an iron crowbar, and hauled the body up with a rope loop in fifteen minutes.",
+      "mood": "dark",
+      "imagePrompt": "Iron crowbar, hemp rope coil, and lantern resting beside open freshly dug churchyard soil under moonlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-body-snatchers/4.mp3",
+      "voicedText": "They dug a narrow hole down to the coffin head, snapped the lid with an iron crowbar, and hauled the body up with a rope loop in fifteen minutes.",
+      "seconds": 9
+    },
+    {
+      "text": "Terrified families installed heavy cast-iron 'mortsafes'—massive iron cages bolted over graves—and built stone watchtowers.",
+      "mood": "cool",
+      "imagePrompt": "Historic churchyard cemetery featuring heavy decorative cast-iron mortsafe cages locked over stone tomb slabs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-body-snatchers/5.mp3",
+      "voicedText": "Terrified families installed heavy cast-iron 'mortsafes'—massive iron cages bolted over graves—and built stone watchtowers.",
+      "seconds": 9.2
+    },
+    {
+      "text": "The grim trade only ended when the Anatomy Act of 1832 legalized unclaimed hospital body donations. Did you know about mortsafes?",
+      "mood": "day",
+      "imagePrompt": "Sunlit Victorian London street with stately brick townhouses, iron railings, and horse carriages in the morning mist. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-body-snatchers/6.mp3",
+      "voicedText": "The grim trade only ended when the Anatomy Act of 1832 legalized unclaimed hospital body donations. Did you know about mortsafes?",
+      "seconds": 9.4
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "pirate-eyepatch-night-vision",
+  "title": "The Real Reason Pirates Wore Eye Patches",
+  "hook": "Eye patches kept one eye adjusted to pitch-black cargo holds.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Every classic pirate illustration shows a menacing buccaneer sporting a black leather eye patch over one eye.",
+      "mood": "warm",
+      "imagePrompt": "Weathered pirate captain's hat and round leather eye patch resting on a wooden table beside brass navigation charts. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-eyepatch-night-vision/1.mp3",
+      "voicedText": "Every classic pirate illustration shows a menacing buccaneer sporting a black leather eye patch over one eye.",
+      "seconds": 7.5
+    },
+    {
+      "text": "While some sailors lost eyes to flying wood splinters or sparking gunpowder burns, many wore patches with two perfectly good eyes.",
+      "mood": "cool",
+      "imagePrompt": "Sunlit wooden upper quarterdeck with brilliant glare bouncing off white canvas sails and bright ocean waves. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-eyepatch-night-vision/2.mp3",
+      "voicedText": "While some sailors lost eyes to flying wood splinters or sparking gunpowder burns, many wore patches with two perfectly good eyes.",
+      "seconds": 8.6
+    },
+    {
+      "text": "The human eye takes up to twenty minutes to adapt from bright tropical sunlight into pitch-black indoor darkness.",
+      "mood": "dark",
+      "imagePrompt": "Steep wooden ladder hatchway leading down from sunny upper deck into the deep pitch-black shadows of a ship hold. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-eyepatch-night-vision/3.mp3",
+      "voicedText": "The human eye takes up to twenty minutes to adapt from bright tropical sunlight into pitch-black indoor darkness.",
+      "seconds": 6.8
+    },
+    {
+      "text": "During chaotic boarding raids, fighting often moved in seconds from the blinding sun on deck down into dark cargo holds.",
+      "mood": "dark",
+      "imagePrompt": "Dim lower gun deck with low oak beams, powder kegs, and shadows illuminated only by swinging horn lanterns. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-eyepatch-night-vision/4.mp3",
+      "voicedText": "During chaotic boarding raids, fighting often moved in seconds from the blinding sun on deck down into dark cargo holds.",
+      "seconds": 8.3
+    },
+    {
+      "text": "By flipping the patch over their other eye, a pirate instantly had full night vision, giving them a deadly advantage in the dark.",
+      "mood": "cool",
+      "imagePrompt": "Close-up of a stitched leather eye patch with adjustable cord resting on polished brass spyglass. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-eyepatch-night-vision/5.mp3",
+      "voicedText": "By flipping the patch over their other eye, a pirate instantly had full night vision, giving them a deadly advantage in the dark.",
+      "seconds": 8.4
+    },
+    {
+      "text": "Military pilots still use this exact dark-adaptation trick today! Did you think eye patches were only for lost eyes?",
+      "mood": "day",
+      "imagePrompt": "Sunny Caribbean coastline with white sand beaches, coconut palms, and distant sailing ship silhouettes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-eyepatch-night-vision/6.mp3",
+      "voicedText": "Military pilots still use this exact dark-adaptation trick today! Did you think eye patches were only for lost eyes?",
+      "seconds": 7.6
+    }
+  ]
+}

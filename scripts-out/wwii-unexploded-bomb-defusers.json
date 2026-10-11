@@ -1,0 +1,56 @@
+{
+  "slug": "wwii-unexploded-bomb-defusers",
+  "title": "Defusing 500-Pound Bombs with a Wrench",
+  "hook": "One ticking clockwork fuse, zero second chances.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "During the London Blitz, one in ten German aerial bombs failed to explode on impact, burrowing twenty feet into city streets.",
+      "mood": "cool",
+      "imagePrompt": "Deep bomb crater in a cracked cobblestone London street with warning ropes and wooden red unexploded bomb signs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-unexploded-bomb-defusers/1.mp3",
+      "voicedText": "During the London Blitz, one in ten German aerial bombs failed to explode on impact, burrowing twenty feet into city streets.",
+      "seconds": 8.3
+    },
+    {
+      "text": "Royal Engineer bomb disposal officers climbed down dark, muddy timber shafts to disarm 500-pound iron monsters by hand.",
+      "mood": "dark",
+      "imagePrompt": "Timber-shored underground trench pit with wooden ladder, water seepage, and the tail fin of an iron aerial bomb half-buried in clay. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-unexploded-bomb-defusers/2.mp3",
+      "voicedText": "Royal Engineer bomb disposal officers climbed down dark, muddy timber shafts to disarm 500-pound iron monsters by hand.",
+      "seconds": 9
+    },
+    {
+      "text": "Many bombs were fitted with treacherous clockwork delay fuses or anti-handling booby traps designed to detonate if touched.",
+      "mood": "dark",
+      "imagePrompt": "Close-up of a rusted brass bomb detonator ring with precision clockwork gears resting on canvas sandbags under flashlight beam. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-unexploded-bomb-defusers/3.mp3",
+      "voicedText": "Many bombs were fitted with treacherous clockwork delay fuses or anti-handling booby traps designed to detonate if touched.",
+      "seconds": 8.4
+    },
+    {
+      "text": "Officers used copper wrenches and liquid nitrogen to freeze ticking clockwork timers before unscrewing the explosive gaine.",
+      "mood": "cool",
+      "imagePrompt": "Brass spanners, insulation gloves, and a copper flask resting beside an open wooden ordnance toolkit. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-unexploded-bomb-defusers/4.mp3",
+      "voicedText": "Officers used copper wrenches and liquid nitrogen to freeze ticking clockwork timers before unscrewing the explosive gaine.",
+      "seconds": 9.1
+    },
+    {
+      "text": "Once disarmed, the hollow bomb casing was paraded through neighborhoods to cheers, while its explosive was safely burned.",
+      "mood": "warm",
+      "imagePrompt": "Disarmed iron bomb casing painted with white chalk tallies resting harmlessly on the back of a green army flatbed truck. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-unexploded-bomb-defusers/5.mp3",
+      "voicedText": "Once disarmed, the hollow bomb casing was paraded through neighborhoods to cheers, while its explosive was safely burned.",
+      "seconds": 8
+    },
+    {
+      "text": "Could you have held a wrench steady listening to a ticking fuse? Tell us below and follow for daily history stories!",
+      "mood": "day",
+      "imagePrompt": "Quiet London street bathed in morning sun with sandbags stacked neatly outside a restored brick bakery. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-unexploded-bomb-defusers/6.mp3",
+      "voicedText": "Could you have held a wrench steady listening to a ticking fuse? Tell us below and follow for daily history stories!",
+      "seconds": 7.6
+    }
+  ]
+}

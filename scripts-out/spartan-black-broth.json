@@ -1,0 +1,56 @@
+{
+  "slug": "spartan-black-broth",
+  "title": "Sparta's Disgusting Black Broth",
+  "hook": "Spartan warriors ate a soup of boiled pig blood and vinegar that terrified neighboring city-states.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "In ancient Sparta, luxurious food was strictly outlawed to keep citizen soldiers hardened, lean, and indifferent to comfort.",
+      "mood": "cool",
+      "imagePrompt": "Rugged rocky hillsides of the Eurotas river valley in Laconia under an overcast grey Greek sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/spartan-black-broth/1.mp3",
+      "voicedText": "In ancient Sparta, luxurious food was strictly outlawed to keep citizen soldiers hardened, lean, and indifferent to comfort.",
+      "seconds": 9
+    },
+    {
+      "text": "Every Spartan male ate his daily meals in a communal mess hall called a syssitia, where the staple dish was 'melas zomos'—Black Broth.",
+      "mood": "warm",
+      "imagePrompt": "Austere stone communal mess hall with plain wooden trestle tables, benches, and bronze drinking cups. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/spartan-black-broth/2.mp3",
+      "voicedText": "Every Spartan male ate his daily meals in a communal mess hall called a syssitia, where the staple dish was 'melas zomos'—Black Broth.",
+      "seconds": 9.3
+    },
+    {
+      "text": "The recipe was notorious: boiled pork legs, pig blood, salt, and vinegar—the acid preventing the congealed blood from clotting completely.",
+      "mood": "dark",
+      "imagePrompt": "Heavy black iron cauldron bubbling over hearth coals with a thick dark soup simmering inside. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/spartan-black-broth/3.mp3",
+      "voicedText": "The recipe was notorious: boiled pork legs, pig blood, salt, and vinegar—the acid preventing the congealed blood from clotting completely.",
+      "seconds": 9.1
+    },
+    {
+      "text": "A visiting traveler from the wealthy city of Sybaris once tasted the broth and famously joked: 'Now I understand why Spartans are so eager to die in battle!'",
+      "mood": "cool",
+      "imagePrompt": "Coarse wooden trencher holding a dark clay bowl of black stew alongside a crust of hard barley bread. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/spartan-black-broth/4.mp3",
+      "voicedText": "A visiting traveler from the wealthy city of Sybaris once tasted the broth and famously joked: 'Now I understand why Spartans are so eager to die in battle!'",
+      "seconds": 10.6
+    },
+    {
+      "text": "Spartan elders believed rich delicacies made warriors soft, while black broth supplied maximum iron and calories for campaign endurance.",
+      "mood": "warm",
+      "imagePrompt": "Bronze Spartan hoplite helmet with transverse horsehair crest resting beside a crimson cloak and bronze shield. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/spartan-black-broth/5.mp3",
+      "voicedText": "Spartan elders believed rich delicacies made warriors soft, while black broth supplied maximum iron and calories for campaign endurance.",
+      "seconds": 9.8
+    },
+    {
+      "text": "Could you have survived on a diet of boiled blood soup? Let us know in the comments and subscribe for more Spartan history!",
+      "mood": "day",
+      "imagePrompt": "Sun shining brightly over the snowy peaks of Mount Taygetos overlooking the fertile plains of ancient Sparta. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/spartan-black-broth/6.mp3",
+      "voicedText": "Could you have survived on a diet of boiled blood soup? Let us know in the comments and subscribe for more Spartan history!",
+      "seconds": 7.1
+    }
+  ]
+}

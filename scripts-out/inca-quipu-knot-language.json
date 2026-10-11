@@ -1,0 +1,56 @@
+{
+  "slug": "inca-quipu-knot-language",
+  "title": "The Empire That Wrote in Knots",
+  "hook": "The Incas ruled 10 million people without writing a single sentence on paper.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "The Inca Empire stretched two thousand five hundred miles across the Andes mountains, governing ten million subjects.",
+      "mood": "warm",
+      "imagePrompt": "Monumental Inca stone fortress terrace at Sacsayhuaman with massive fitted polygonal megalithic stones under blue Andean skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/inca-quipu-knot-language/1.mp3",
+      "voicedText": "The Inca Empire stretched two thousand five hundred miles across the Andes mountains, governing ten million subjects.",
+      "seconds": 7.5
+    },
+    {
+      "text": "Yet remarkably, they never developed a written alphabet on paper or parchment—instead, their entire bureaucracy ran on 'quipus'.",
+      "mood": "warm",
+      "imagePrompt": "Close-up of an ancient Inca quipu: a thick primary wool cord with dozens of colored cotton string pendants hanging down. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/inca-quipu-knot-language/2.mp3",
+      "voicedText": "Yet remarkably, they never developed a written alphabet on paper or parchment—instead, their entire bureaucracy ran on 'quipus'.",
+      "seconds": 9.2
+    },
+    {
+      "text": "A quipu consisted of a main cord with hundreds of dangling colored llama-wool strings tied with intricate clusters of knots.",
+      "mood": "warm",
+      "imagePrompt": "Detailed view of various knot types: figure-eight knots, long spiral knots, and simple knots tied in dyed alpaca wool strings. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/inca-quipu-knot-language/3.mp3",
+      "voicedText": "A quipu consisted of a main cord with hundreds of dangling colored llama-wool strings tied with intricate clusters of knots.",
+      "seconds": 8
+    },
+    {
+      "text": "Using a decimal base-10 system, string color, spin direction, and knot spacing recorded army troop counts, gold taxes, and granary stores.",
+      "mood": "cool",
+      "imagePrompt": "Stone administrative storehouse in Cuzco with organized rows of rolled quipu string archives resting in carved wall niches. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/inca-quipu-knot-language/4.mp3",
+      "voicedText": "Using a decimal base-10 system, string color, spin direction, and knot spacing recorded army troop counts, gold taxes, and granary stores.",
+      "seconds": 10.4
+    },
+    {
+      "text": "Official masters called 'quipucamayocs' could read complex histories, tax debts, and royal decrees simply by sliding fingers across the cords.",
+      "mood": "warm",
+      "imagePrompt": "Pair of hands holding a multicolored quipu cord in golden light with fingers carefully tracing knots on a woven textile mat. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/inca-quipu-knot-language/5.mp3",
+      "voicedText": "Official masters called 'quipucamayocs' could read complex histories, tax debts, and royal decrees simply by sliding fingers across the cords.",
+      "seconds": 9.4
+    },
+    {
+      "text": "Could you run an entire empire using strings of knots? Let us know below and follow for daily history stories!",
+      "mood": "day",
+      "imagePrompt": "Breathtaking vista of Machu Picchu stone terraces bathed in morning sunlight with mountain peaks rising into clouds. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/inca-quipu-knot-language/6.mp3",
+      "voicedText": "Could you run an entire empire using strings of knots? Let us know below and follow for daily history stories!",
+      "seconds": 7.4
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "pirate-port-royal-sunk",
+  "title": "The Wickedest City Swallowed by the Sea",
+  "hook": "An earthquake sank two-thirds of Port Royal into the ocean.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "In the late 1600s, Port Royal, Jamaica was nicknamed 'the wickedest city on earth'—the lawless pirate capital of the Caribbean.",
+      "mood": "warm",
+      "imagePrompt": "Bustling colonial harbor town of Port Royal with brick merchant houses, waterfront taverns, and galleons anchored in harbor. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-port-royal-sunk/1.mp3",
+      "voicedText": "In the late 1600s, Port Royal, Jamaica was nicknamed 'the wickedest city on earth'—the lawless pirate capital of the Caribbean.",
+      "seconds": 9.4
+    },
+    {
+      "text": "One in every four buildings was a tavern or brothel, and pirates like Henry Morgan drank rum from gold bowls in the streets.",
+      "mood": "warm",
+      "imagePrompt": "Cobblestone street corner in Port Royal with wooden tavern swinging sign, wine barrels, and gold chalice on a table. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-port-royal-sunk/2.mp3",
+      "voicedText": "One in every four buildings was a tavern or brothel, and pirates like Henry Morgan drank rum from gold bowls in the streets.",
+      "seconds": 7.9
+    },
+    {
+      "text": "Then on June 7, 1692, at 11:43 in the morning, a massive magnitude 7.5 earthquake violently struck the sandy spit.",
+      "mood": "cool",
+      "imagePrompt": "Brick clock tower in Port Royal with stopped hands at 11:43 cracking dramatically against a stormy, dust-filled sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-port-royal-sunk/3.mp3",
+      "voicedText": "Then on June 7, 1692, at 11:43 in the morning, a massive magnitude 7.5 earthquake violently struck the sandy spit.",
+      "seconds": 10.5
+    },
+    {
+      "text": "Because the city was built on loose sand, soil liquefaction turned the ground into quicksand, swallowing entire brick mansions whole.",
+      "mood": "dark",
+      "imagePrompt": "Cracked cobblestone waterfront road sinking into churning seawater with shattered brick walls slipping into the tide. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-port-royal-sunk/4.mp3",
+      "voicedText": "Because the city was built on loose sand, soil liquefaction turned the ground into quicksand, swallowing entire brick mansions whole.",
+      "seconds": 8.6
+    },
+    {
+      "text": "Moments later, a giant tsunami wave crashed over the remains, plunging two-thirds of the wicked city thirty feet beneath the sea.",
+      "mood": "cool",
+      "imagePrompt": "Submerged ruins of colonial brick buildings visible beneath clear turquoise Caribbean water with coral and swimming fish. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-port-royal-sunk/5.mp3",
+      "voicedText": "Moments later, a giant tsunami wave crashed over the remains, plunging two-thirds of the wicked city thirty feet beneath the sea.",
+      "seconds": 9.2
+    },
+    {
+      "text": "Today, marine archaeologists dive through intact 17th-century pirate taverns preserved underwater. Would you dive the sunken city?",
+      "mood": "day",
+      "imagePrompt": "Sunlight dancing across the calm surface of modern Kingston harbor with distant blue Jamaican mountains in the background. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-port-royal-sunk/6.mp3",
+      "voicedText": "Today, marine archaeologists dive through intact 17th-century pirate taverns preserved underwater. Would you dive the sunken city?",
+      "seconds": 9.2
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "ancient-oracle-of-delphi",
+  "title": "The Drug-Fueled Oracle of Delphi",
+  "hook": "Kings marched across mountains to ask the Pythia for military advice while she inhaled intoxicating gas from rock fissures.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Perched high on the mist-covered cliffs of Mount Parnassus stood the Sanctuary of Delphi—the sacred spiritual center of the Greek world.",
+      "mood": "cool",
+      "imagePrompt": "Stunning classical stone temple ruins of Delphi perched on steep rocky mountain cliffs overlooking deep olive valleys. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ancient-oracle-of-delphi/1.mp3",
+      "voicedText": "Perched high on the mist-covered cliffs of Mount Parnassus stood the Sanctuary of Delphi—the sacred spiritual center of the Greek world.",
+      "seconds": 8.8
+    },
+    {
+      "text": "Before launching wars or planting colonies, Greek kings and generals waited months to consult the high priestess: the Pythia.",
+      "mood": "warm",
+      "imagePrompt": "Grand marble temple stairway leading up to the inner sanctuary of Apollo flanked by bronze victory tripods. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ancient-oracle-of-delphi/2.mp3",
+      "voicedText": "Before launching wars or planting colonies, Greek kings and generals waited months to consult the high priestess: the Pythia.",
+      "seconds": 9.3
+    },
+    {
+      "text": "The Pythia sat upon a tall bronze tripod suspended directly over a deep chasm in the temple floor called the adyton.",
+      "mood": "dark",
+      "imagePrompt": "Tall three-legged bronze tripod stand positioned over an open stone fissure in a shadowy subterranean stone chamber. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ancient-oracle-of-delphi/3.mp3",
+      "voicedText": "The Pythia sat upon a tall bronze tripod suspended directly over a deep chasm in the temple floor called the adyton.",
+      "seconds": 8.8
+    },
+    {
+      "text": "Modern geologists discovered two active tectonic faults intersect right under the temple, venting hydrocarbon gases including sweet-smelling ethylene.",
+      "mood": "cool",
+      "imagePrompt": "Faint sweet vapor rising from a rocky crevice in the floor catching the soft glow of an oil lamp. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ancient-oracle-of-delphi/4.mp3",
+      "voicedText": "Modern geologists discovered two active tectonic faults intersect right under the temple, venting hydrocarbon gases including sweet-smelling ethylene.",
+      "seconds": 10.8
+    },
+    {
+      "text": "Inhaling the gas induced a trance state where she uttered cryptic riddles, which cunning priests translated into ambiguous hexameter verse.",
+      "mood": "warm",
+      "imagePrompt": "Laurel branch sprigs, a bowl of holy spring water from the Castalian spring, and inscribed lead tablets on an altar. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ancient-oracle-of-delphi/5.mp3",
+      "voicedText": "Inhaling the gas induced a trance state where she uttered cryptic riddles, which cunning priests translated into ambiguous hexameter verse.",
+      "seconds": 9.2
+    },
+    {
+      "text": "Her prophecies changed the fate of empires for a thousand years. Would you have trusted her predictions? Subscribe for more ancient mysteries!",
+      "mood": "day",
+      "imagePrompt": "Golden morning sun illuminating the towering stone pillars of the Tholos of Delphi against dramatic Greek mountains. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ancient-oracle-of-delphi/6.mp3",
+      "voicedText": "Her prophecies changed the fate of empires for a thousand years. Would you have trusted her predictions? Subscribe for more ancient mysteries!",
+      "seconds": 9.5
+    }
+  ]
+}

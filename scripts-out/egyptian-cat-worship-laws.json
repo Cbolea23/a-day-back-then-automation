@@ -1,0 +1,56 @@
+{
+  "slug": "egyptian-cat-worship-laws",
+  "title": "Killing a Cat Was a Capital Crime",
+  "hook": "In ancient Egypt, if your house caught fire, saving the family cat came before saving your own furniture.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Ancient Egyptians revered cats not merely as beloved household pets, but as sacred earthly protectors linked to the goddess Bastet.",
+      "mood": "warm",
+      "imagePrompt": "Warm sunlit stone courtyard of an Egyptian villa with flowering date palms and carved stone lotus fountains. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/egyptian-cat-worship-laws/1.mp3",
+      "voicedText": "Ancient Egyptians revered cats not merely as beloved household pets, but as sacred earthly protectors linked to the goddess Bastet.",
+      "seconds": 9.2
+    },
+    {
+      "text": "Cats guarded granaries against mice and killed venomous horned vipers, safeguarding the entire family's survival and food supply.",
+      "mood": "warm",
+      "imagePrompt": "Woven reed grain baskets filled with golden emmer wheat and barley inside a mudbrick storehouse. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/egyptian-cat-worship-laws/2.mp3",
+      "voicedText": "Cats guarded granaries against mice and killed venomous horned vipers, safeguarding the entire family's survival and food supply.",
+      "seconds": 8.5
+    },
+    {
+      "text": "Egyptian law was merciless: killing a cat, even completely by accident, carried an automatic mandatory death sentence by mob stoning.",
+      "mood": "dark",
+      "imagePrompt": "Carved bronze cat statuette with golden nose ring and beaded collar resting upon an altar of green malachite. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/egyptian-cat-worship-laws/3.mp3",
+      "voicedText": "Egyptian law was merciless: killing a cat, even completely by accident, carried an automatic mandatory death sentence by mob stoning.",
+      "seconds": 8.9
+    },
+    {
+      "text": "Historian Herodotus wrote that during a house fire, Egyptians formed human cordons to save cats before extinguishing the flames.",
+      "mood": "dramatic",
+      "imagePrompt": "Flames illuminating the clay brick roof of a building at night as smoke rises into the starry sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/egyptian-cat-worship-laws/4.mp3",
+      "voicedText": "Historian Herodotus wrote that during a house fire, Egyptians formed human cordons to save cats before extinguishing the flames.",
+      "seconds": 8.5
+    },
+    {
+      "text": "When a pet cat died naturally, the entire grieving household shaved their own eyebrows as a public sign of deep mourning.",
+      "mood": "cool",
+      "imagePrompt": "Small linen mummy bundle adorned with a painted feline face mask resting beside miniature milk bowls. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/egyptian-cat-worship-laws/5.mp3",
+      "voicedText": "When a pet cat died naturally, the entire grieving household shaved their own eyebrows as a public sign of deep mourning.",
+      "seconds": 8.7
+    },
+    {
+      "text": "The cat was then lovingly mummified and entombed in the holy cemetery of Bubastis. Subscribe for more incredible ancient history!",
+      "mood": "day",
+      "imagePrompt": "Golden morning rays falling across the sandstone pylon gate of the temple of Bastet in lower Egypt. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/egyptian-cat-worship-laws/6.mp3",
+      "voicedText": "The cat was then lovingly mummified and entombed in the holy cemetery of Bubastis. Subscribe for more incredible ancient history!",
+      "seconds": 9.7
+    }
+  ]
+}

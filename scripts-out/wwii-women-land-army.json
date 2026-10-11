@@ -1,0 +1,56 @@
+{
+  "slug": "wwii-women-land-army",
+  "title": "Women's Land Army: Feeding a Nation",
+  "hook": "City girls took over heavy farm plows to save Britain.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "With hundreds of thousands of male farm workers drafted into the military, British agriculture faced total collapse.",
+      "mood": "cool",
+      "imagePrompt": "Rolling green English agricultural countryside with stone dry-stack walls under cloudy skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-women-land-army/1.mp3",
+      "voicedText": "With hundreds of thousands of male farm workers drafted into the military, British agriculture faced total collapse.",
+      "seconds": 7.6
+    },
+    {
+      "text": "Eighty thousand women volunteered for the Women's Land Army, swapping office desks and shop counters for heavy rubber gumboots.",
+      "mood": "warm",
+      "imagePrompt": "Muddy stone farmyard with a wooden hay rake, iron milk churns, and a pair of tall Wellington boots by a rustic barn door. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-women-land-army/2.mp3",
+      "voicedText": "Eighty thousand women volunteered for the Women's Land Army, swapping office desks and shop counters for heavy rubber gumboots.",
+      "seconds": 7.3
+    },
+    {
+      "text": "They worked fifty-hour weeks milking stubborn cows before dawn, catching destructive rats, and digging drainage ditches in freezing rain.",
+      "mood": "cool",
+      "imagePrompt": "Interior of an old timber cow barn with wooden stalls, clean golden straw, and tin lanterns hanging from rafters. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-women-land-army/3.mp3",
+      "voicedText": "They worked fifty-hour weeks milking stubborn cows before dawn, catching destructive rats, and digging drainage ditches in freezing rain.",
+      "seconds": 9
+    },
+    {
+      "text": "City women who had never touched machinery learned to steer heavy iron Fordson tractors across rocky hillsides.",
+      "mood": "day",
+      "imagePrompt": "Vintage 1940s Fordson iron tractor with spoked wheels parked in a freshly tilled brown earth field. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-women-land-army/4.mp3",
+      "voicedText": "City women who had never touched machinery learned to steer heavy iron Fordson tractors across rocky hillsides.",
+      "seconds": 7.7
+    },
+    {
+      "text": "Thanks to the 'Land Girls', Britain doubled its domestic food output, ensuring the country never starved during blockade years.",
+      "mood": "warm",
+      "imagePrompt": "Golden wheat field in full harvest under warm sunshine with stooks of grain tied with twine. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-women-land-army/5.mp3",
+      "voicedText": "Thanks to the 'Land Girls', Britain doubled its domestic food output, ensuring the country never starved during blockade years.",
+      "seconds": 7.7
+    },
+    {
+      "text": "Could you trade city life for 5 AM winter mornings in a muddy barn? Let us know below and follow for daily history stories!",
+      "mood": "day",
+      "imagePrompt": "Charming English countryside lane with stone cottage and blooming elderflower bushes under morning sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-women-land-army/6.mp3",
+      "voicedText": "Could you trade city life for 5 AM winter mornings in a muddy barn? Let us know below and follow for daily history stories!",
+      "seconds": 9.3
+    }
+  ]
+}

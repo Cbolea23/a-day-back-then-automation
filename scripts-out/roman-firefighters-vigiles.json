@@ -1,0 +1,56 @@
+{
+  "slug": "roman-firefighters-vigiles",
+  "title": "Rome's Corrupt Fire Brigade",
+  "hook": "Marcus Crassus made billions by negotiating real estate while the house burned down.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "In ancient Rome, cramped wooden apartment blocks called insulae caught fire constantly from charcoal braziers and oil lamps.",
+      "mood": "dark",
+      "imagePrompt": "Dense narrow ancient Roman cobblestone street with multi-story timber-frame apartment buildings under a twilight sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/roman-firefighters-vigiles/1.mp3",
+      "voicedText": "In ancient Rome, cramped wooden apartment blocks called insulae caught fire constantly from charcoal braziers and oil lamps.",
+      "seconds": 8.3
+    },
+    {
+      "text": "Rome's richest oligarch, Marcus Licinius Crassus, saw disaster as the greatest real estate racket in history.",
+      "mood": "warm",
+      "imagePrompt": "Ornate Roman writing desk with bronze coin scales, stacks of silver denarii coins, and wax tally tablets. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/roman-firefighters-vigiles/2.mp3",
+      "voicedText": "Rome's richest oligarch, Marcus Licinius Crassus, saw disaster as the greatest real estate racket in history.",
+      "seconds": 7.9
+    },
+    {
+      "text": "Crassus bought over 500 enslaved architects and builders to form his private, profit-driven firefighting brigade.",
+      "mood": "cool",
+      "imagePrompt": "Row of leather water buckets, iron axes, and demolition hooks arranged neatly outside a Roman stone depot. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/roman-firefighters-vigiles/3.mp3",
+      "voicedText": "Crassus bought over 500 enslaved architects and builders to form his private, profit-driven firefighting brigade.",
+      "seconds": 8.4
+    },
+    {
+      "text": "When an insula caught fire, his crew rushed to the scene but refused to lift a finger while Crassus offered to buy the property for pennies.",
+      "mood": "dramatic",
+      "imagePrompt": "Distant glow of flickering orange flames and grey smoke rising into the night sky above Roman clay tile rooftops. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/roman-firefighters-vigiles/4.mp3",
+      "voicedText": "When an insula caught fire, his crew rushed to the scene but refused to lift a finger while Crassus offered to buy the property for pennies.",
+      "seconds": 8.3
+    },
+    {
+      "text": "If the panicked homeowner agreed to sell at a ruined discount, the men put out the flames. If not, they stood by and watched it burn to ash.",
+      "mood": "dark",
+      "imagePrompt": "Charred wooden beams and broken terracotta tiles smoldering among smoking ash on an ancient street corner. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/roman-firefighters-vigiles/5.mp3",
+      "voicedText": "If the panicked homeowner agreed to sell at a ruined discount, the men put out the flames. If not, they stood by and watched it burn to ash.",
+      "seconds": 9.1
+    },
+    {
+      "text": "Eventually Augustus created the public 'Vigiles' brigade to stop the extortion. What do you think of Crassus? Subscribe for more crazy history!",
+      "mood": "day",
+      "imagePrompt": "Sunlit panoramic view of ancient Rome's Forum with marble basilicas and triumphal arches under clear blue skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/roman-firefighters-vigiles/6.mp3",
+      "voicedText": "Eventually Augustus created the public 'Vigiles' brigade to stop the extortion. What do you think of Crassus? Subscribe for more crazy history!",
+      "seconds": 9.5
+    }
+  ]
+}

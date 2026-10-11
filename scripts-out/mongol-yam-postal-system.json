@@ -1,0 +1,56 @@
+{
+  "slug": "mongol-yam-postal-system",
+  "title": "Genghis Khan's 5,000-Mile Pony Express",
+  "hook": "Riders carrying golden passports traveled 200 miles a day switching fresh horses.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "To govern an empire that spanned from the Pacific Ocean to Eastern Europe, Genghis Khan created the 'Örtöö' or 'Yam' postal messenger network.",
+      "mood": "warm",
+      "imagePrompt": "Expansive Mongolian steppe horizon with a solitary wooden relay outpost station beside horse corrals under dramatic skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mongol-yam-postal-system/1.mp3",
+      "voicedText": "To govern an empire that spanned from the Pacific Ocean to Eastern Europe, Genghis Khan created the 'Örtöö' or 'Yam' postal messenger network.",
+      "seconds": 8.6
+    },
+    {
+      "text": "Stations were positioned every twenty-five miles along empire highways, stocked with fresh steppe horses, food rations, and armed guards.",
+      "mood": "warm",
+      "imagePrompt": "Wooden horse stables on the open steppe with tethered sturdy Mongol ponies feeding on golden hay in mountain sunshine. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mongol-yam-postal-system/2.mp3",
+      "voicedText": "Stations were positioned every twenty-five miles along empire highways, stocked with fresh steppe horses, food rations, and armed guards.",
+      "seconds": 9.2
+    },
+    {
+      "text": "Messengers wore bells on their saddles so station staff heard them approaching from miles away and readied a fresh galloping horse.",
+      "mood": "cool",
+      "imagePrompt": "Close-up of brass saddle bells attached to carved leather harness straps resting on a wooden railing. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mongol-yam-postal-system/3.mp3",
+      "voicedText": "Messengers wore bells on their saddles so station staff heard them approaching from miles away and readied a fresh galloping horse.",
+      "seconds": 8.3
+    },
+    {
+      "text": "They wore tight leather bindings around their torsos and heads to withstand the physical trauma of riding two hundred miles in a single day.",
+      "mood": "cool",
+      "imagePrompt": "Leather messenger satchel, felt riding boots, and water skin flask resting on a wooden chest inside a yurt. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mongol-yam-postal-system/4.mp3",
+      "voicedText": "They wore tight leather bindings around their torsos and heads to withstand the physical trauma of riding two hundred miles in a single day.",
+      "seconds": 8.5
+    },
+    {
+      "text": "Riders wore a golden 'paiza' tablet inscribed with the Khan's royal seal, granting them authority to commandeer fresh horses from anyone on penalty of death.",
+      "mood": "warm",
+      "imagePrompt": "Gilded bronze Mongol paiza passport tablet engraved with Mongolian script and falcon crest hanging from a silk cord. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mongol-yam-postal-system/5.mp3",
+      "voicedText": "Riders wore a golden 'paiza' tablet inscribed with the Khan's royal seal, granting them authority to commandeer fresh horses from anyone on penalty of death.",
+      "seconds": 10.1
+    },
+    {
+      "text": "A message traveled across five thousand miles in under two weeks! Could you ride two hundred miles on horseback in a single day?",
+      "mood": "day",
+      "imagePrompt": "Stunning sunset casting golden amber rays across the vast grasslands of Central Asia under a tranquil sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mongol-yam-postal-system/6.mp3",
+      "voicedText": "A message traveled across five thousand miles in under two weeks! Could you ride two hundred miles on horseback in a single day?",
+      "seconds": 8.4
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "pirate-ship-surgeon-saw",
+  "title": "High Seas Surgery Without Anesthesia",
+  "hook": "The carpenter sawed off your shattered leg in 90 seconds.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "In 18th-century sea battles, cannonballs rarely killed men directly—flying jagged oak splinters did.",
+      "mood": "cool",
+      "imagePrompt": "Splintered oak timber bulkheads inside an 18th-century gun deck with wood fragments scattered across deck planks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-ship-surgeon-saw/1.mp3",
+      "voicedText": "In 18th-century sea battles, cannonballs rarely killed men directly—flying jagged oak splinters did.",
+      "seconds": 7.4
+    },
+    {
+      "text": "When an oak splinter shattered a sailor's arm or leg, the wounded man was rushed below to the 'cockpit' near the ship's keel.",
+      "mood": "dark",
+      "imagePrompt": "Cramped wooden surgery table in the dark orlop deck illuminated by swinging tallow oil lanterns. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-ship-surgeon-saw/2.mp3",
+      "voicedText": "When an oak splinter shattered a sailor's arm or leg, the wounded man was rushed below to the 'cockpit' near the ship's keel.",
+      "seconds": 7.9
+    },
+    {
+      "text": "Because real doctors were rare on pirate ships, the ship's carpenter—trained only in sawing wood planks—performed amputations.",
+      "mood": "dark",
+      "imagePrompt": "Iron bone saw with sharp serrated teeth, leather tourniquet, and brass probes laid on a stained wooden surgery board. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-ship-surgeon-saw/3.mp3",
+      "voicedText": "Because real doctors were rare on pirate ships, the ship's carpenter—trained only in sawing wood planks—performed amputations.",
+      "seconds": 8.7
+    },
+    {
+      "text": "With zero anesthesia, the patient was given a leather belt to bite and a cup of pure rum while strong crewmen pinned his shoulders.",
+      "mood": "warm",
+      "imagePrompt": "Heavy leather sailor's belt with teeth bite impressions resting beside a pewter flask of rum on a rough crate. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-ship-surgeon-saw/4.mp3",
+      "voicedText": "With zero anesthesia, the patient was given a leather belt to bite and a cup of pure rum while strong crewmen pinned his shoulders.",
+      "seconds": 7.8
+    },
+    {
+      "text": "Speed was the only mercy: a skilled carpenter tightened a tourniquet, sliced the flesh, and sawed the bone in under ninety seconds.",
+      "mood": "cool",
+      "imagePrompt": "Tub of steaming hot pitch tar with iron ladle used for cauterizing wounds beside clean linen bandages. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-ship-surgeon-saw/5.mp3",
+      "voicedText": "Speed was the only mercy: a skilled carpenter tightened a tourniquet, sliced the flesh, and sawed the bone in under ninety seconds.",
+      "seconds": 9.1
+    },
+    {
+      "text": "Surviving meant earning six hundred silver pieces from the ship's fund. Would you have survived 18th-century surgery? Tell us below!",
+      "mood": "day",
+      "imagePrompt": "Sunlit deck looking out through an open gunport toward calm blue ocean horizon with billowing clouds. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-ship-surgeon-saw/6.mp3",
+      "voicedText": "Surviving meant earning six hundred silver pieces from the ship's fund. Would you have survived 18th-century surgery? Tell us below!",
+      "seconds": 8
+    }
+  ]
+}

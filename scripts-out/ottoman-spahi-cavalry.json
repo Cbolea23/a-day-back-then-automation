@@ -1,0 +1,56 @@
+{
+  "slug": "ottoman-spahi-cavalry",
+  "title": "The Heavily Armored Sipahi Horsemen",
+  "hook": "Sipahi cavalry were feudal landlords who rode Arabian warhorses into battle.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "While Janissaries fought on foot, the heavy striking fist of the Ottoman military was the elite mounted 'Sipahi' cavalry.",
+      "mood": "warm",
+      "imagePrompt": "Sunlit cavalry stables with leather saddles, brass stirrups, and iron horse armor resting against stable stall doors. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-spahi-cavalry/1.mp3",
+      "voicedText": "While Janissaries fought on foot, the heavy striking fist of the Ottoman military was the elite mounted 'Sipahi' cavalry.",
+      "seconds": 7.8
+    },
+    {
+      "text": "Sipahis were aristocratic landed lords who collected village taxes in exchange for providing fully armed cavalrymen for imperial campaigns.",
+      "mood": "warm",
+      "imagePrompt": "Rolling Anatolian countryside with stone estate manor and green wheat fields under expansive sunny skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-spahi-cavalry/2.mp3",
+      "voicedText": "Sipahis were aristocratic landed lords who collected village taxes in exchange for providing fully armed cavalrymen for imperial campaigns.",
+      "seconds": 8.9
+    },
+    {
+      "text": "They wore intricate 'krug' armor: interlocking steel rings riveted with heavy steel circular breastplates for maximum mobility.",
+      "mood": "cool",
+      "imagePrompt": "Ornate Ottoman chainmail and plate cuirass displayed on a wooden stand with gold koftgari calligraphic inlay. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-spahi-cavalry/3.mp3",
+      "voicedText": "They wore intricate 'krug' armor: interlocking steel rings riveted with heavy steel circular breastplates for maximum mobility.",
+      "seconds": 9
+    },
+    {
+      "text": "In battle, Sipahis wheeled across wings wielding nine-foot wooden lances, jeweled steel maces, and curved horn composite bows.",
+      "mood": "dramatic",
+      "imagePrompt": "Heavy steel-flanged war mace with gilded grip and small round buckler shield resting on military leather saddlebags. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-spahi-cavalry/4.mp3",
+      "voicedText": "In battle, Sipahis wheeled across wings wielding nine-foot wooden lances, jeweled steel maces, and curved horn composite bows.",
+      "seconds": 9
+    },
+    {
+      "text": "Their lightning flank charges routed European knight armies at Varna and Mohács, expanding the empire across three continents.",
+      "mood": "warm",
+      "imagePrompt": "Expansive battle plain with distant dust clouds rising against a dramatic mountain ridge under late afternoon light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-spahi-cavalry/5.mp3",
+      "voicedText": "Their lightning flank charges routed European knight armies at Varna and Mohács, expanding the empire across three continents.",
+      "seconds": 8.5
+    },
+    {
+      "text": "Could you have held off an armored Sipahi charge on horseback? Let us know below and follow for daily history stories!",
+      "mood": "day",
+      "imagePrompt": "Ancient stone fortress ruins overlooking a calm Anatolian valley with wildflowers blooming in gentle morning light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-spahi-cavalry/6.mp3",
+      "voicedText": "Could you have held off an armored Sipahi charge on horseback? Let us know below and follow for daily history stories!",
+      "seconds": 7.2
+    }
+  ]
+}

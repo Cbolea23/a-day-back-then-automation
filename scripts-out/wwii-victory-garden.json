@@ -1,0 +1,56 @@
+{
+  "slug": "wwii-victory-garden",
+  "title": "Digging for Victory: Potatoes Over Lawns",
+  "hook": "London dug up the Tower moat to plant cabbages.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "To avoid mass starvation when U-boats blockaded merchant shipping, Britain launched the famous Dig for Victory campaign.",
+      "mood": "day",
+      "imagePrompt": "1940s vintage public park garden transformed into neat rows of vegetable allotments with wooden signs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-victory-garden/1.mp3",
+      "voicedText": "To avoid mass starvation when U-boats blockaded merchant shipping, Britain launched the famous Dig for Victory campaign.",
+      "seconds": 7.5
+    },
+    {
+      "text": "Ornamental flowerbeds, golf courses, cricket pitches, and even the dry medieval moat of the Tower of London were plowed for potatoes.",
+      "mood": "warm",
+      "imagePrompt": "Historic stone castle moat converted into lush green rows of potato plants under afternoon light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-victory-garden/2.mp3",
+      "voicedText": "Ornamental flowerbeds, golf courses, cricket pitches, and even the dry medieval moat of the Tower of London were plowed for potatoes.",
+      "seconds": 8.8
+    },
+    {
+      "text": "Every suburban backyard had a compost heap and homemade chicken coops built from scrap timber and bomb shelter metal.",
+      "mood": "day",
+      "imagePrompt": "Suburban brick cottage garden with a wooden chicken coop, wire fencing, and neat rows of ripening carrots. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-victory-garden/3.mp3",
+      "voicedText": "Every suburban backyard had a compost heap and homemade chicken coops built from scrap timber and bomb shelter metal.",
+      "seconds": 7
+    },
+    {
+      "text": "Families formed 'Pig Clubs', feeding neighborhood kitchen scraps to community pigs kept in shared pens.",
+      "mood": "warm",
+      "imagePrompt": "Rustic wooden farm pen with hay bales, wooden feed trough, and a stone barn in the English countryside. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-victory-garden/4.mp3",
+      "voicedText": "Families formed 'Pig Clubs', feeding neighborhood kitchen scraps to community pigs kept in shared pens.",
+      "seconds": 7
+    },
+    {
+      "text": "By 1943, over one million tons of vegetables were produced in personal gardens, keeping millions from malnutrition.",
+      "mood": "day",
+      "imagePrompt": "Bountiful wooden bushel baskets overflowing with freshly harvested cabbages, leeks, and earthy potatoes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-victory-garden/5.mp3",
+      "voicedText": "By 1943, over one million tons of vegetables were produced in personal gardens, keeping millions from malnutrition.",
+      "seconds": 8.2
+    },
+    {
+      "text": "Could you have lived entirely on vegetables you grew in your backyard? Let us know below and subscribe for more history!",
+      "mood": "warm",
+      "imagePrompt": "Peaceful English cottage allotment bathed in golden sunset with wooden garden spade resting against a picket fence. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-victory-garden/6.mp3",
+      "voicedText": "Could you have lived entirely on vegetables you grew in your backyard? Let us know below and subscribe for more history!",
+      "seconds": 7.2
+    }
+  ]
+}

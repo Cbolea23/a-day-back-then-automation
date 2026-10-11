@@ -1,0 +1,56 @@
+{
+  "slug": "ottoman-mehter-military-band",
+  "title": "The World's Loudest Military Marching Band",
+  "hook": "The Mehter band marched into battle with giant kettledrums on camels.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Long before European armies marched to drums, the Ottoman Empire pioneered the world's first dedicated military marching orchestra: the Mehter.",
+      "mood": "warm",
+      "imagePrompt": "Sunlit military encampment with red silk pavilions and rows of polished brass trumpets and percussion instruments. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-mehter-military-band/1.mp3",
+      "voicedText": "Long before European armies marched to drums, the Ottoman Empire pioneered the world's first dedicated military marching orchestra: the Mehter.",
+      "seconds": 9.4
+    },
+    {
+      "text": "They marched right behind charging infantry battalions, producing a deafening wall of sound designed for psychological warfare.",
+      "mood": "dramatic",
+      "imagePrompt": "Ornate brass military horn with swirling calligraphic engravings and silk tassels hanging against a military tent wall. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-mehter-military-band/2.mp3",
+      "voicedText": "They marched right behind charging infantry battalions, producing a deafening wall of sound designed for psychological warfare.",
+      "seconds": 8.9
+    },
+    {
+      "text": "Giant copper kettledrums called 'kös'—measuring five feet across—were mounted in pairs on the backs of marching war camels.",
+      "mood": "warm",
+      "imagePrompt": "Pair of massive hammered copper kettledrums with thick rawhide drum skins mounted on a leather pack saddle. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-mehter-military-band/3.mp3",
+      "voicedText": "Giant copper kettledrums called 'kös'—measuring five feet across—were mounted in pairs on the backs of marching war camels.",
+      "seconds": 8.6
+    },
+    {
+      "text": "Clashing heavy cast-bronze cymbals, piercing zurna shawms, and roaring bass drums created a sonic wave audible three miles away.",
+      "mood": "dramatic",
+      "imagePrompt": "Pair of heavy chased bronze hand cymbals resting beside a carved wooden double-reed zurna horn on crimson carpet. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-mehter-military-band/4.mp3",
+      "voicedText": "Clashing heavy cast-bronze cymbals, piercing zurna shawms, and roaring bass drums created a sonic wave audible three miles away.",
+      "seconds": 9.4
+    },
+    {
+      "text": "They marched in a slow, hypnotic three-step cadence, chanting praises of bravery that paralyzed enemy defenders with dread.",
+      "mood": "warm",
+      "imagePrompt": "High-flying Ottoman crescent horsehair tugh banner waving in the wind against a golden sunset sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-mehter-military-band/5.mp3",
+      "voicedText": "They marched in a slow, hypnotic three-step cadence, chanting praises of bravery that paralyzed enemy defenders with dread.",
+      "seconds": 9.1
+    },
+    {
+      "text": "European composers like Mozart and Beethoven fell in love with Mehter cymbals, creating 'Turkish' classical music. Did you know this?",
+      "mood": "day",
+      "imagePrompt": "Grand historic gate of Istanbul Military Museum with brass ceremonial cannons standing guard under blue skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-mehter-military-band/6.mp3",
+      "voicedText": "European composers like Mozart and Beethoven fell in love with Mehter cymbals, creating 'Turkish' classical music. Did you know this?",
+      "seconds": 8.5
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "wwii-night-fighter-carrots-myth",
+  "title": "The Carrot Night Vision Propaganda Lie",
+  "hook": "Britain told the world carrots gave pilots night vision.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "In 1940, British night fighter pilots suddenly began shooting down German bombers in total pitch-black darkness with uncanny precision.",
+      "mood": "dark",
+      "imagePrompt": "Dark night sky over the English coast with searchlight beams slicing through black clouds and distant anti-aircraft flashes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-night-fighter-carrots-myth/1.mp3",
+      "voicedText": "In 1940, British night fighter pilots suddenly began shooting down German bombers in total pitch-black darkness with uncanny precision.",
+      "seconds": 9.3
+    },
+    {
+      "text": "In reality, the RAF had secretly installed top-secret Airborne Interception radar units into twin-engine Bristol Beaufighter cockpits.",
+      "mood": "cool",
+      "imagePrompt": "Vintage twin-engine British Beaufighter fighter aircraft parked inside an airfield hangar with radar antenna arrays visible on the nose. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-night-fighter-carrots-myth/2.mp3",
+      "voicedText": "In reality, the RAF had secretly installed top-secret Airborne Interception radar units into twin-engine Bristol Beaufighter cockpits.",
+      "seconds": 9
+    },
+    {
+      "text": "To hide the radar breakthrough from German intelligence, the British Air Ministry launched a brilliant propaganda cover story.",
+      "mood": "warm",
+      "imagePrompt": "1940s newspaper clipping and Ministry of Information posters displayed on a wooden billboard under streetlamp glow. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-night-fighter-carrots-myth/3.mp3",
+      "voicedText": "To hide the radar breakthrough from German intelligence, the British Air Ministry launched a brilliant propaganda cover story.",
+      "seconds": 7.7
+    },
+    {
+      "text": "They claimed fighter ace John 'Cat's Eyes' Cunningham possessed superhuman night vision because he ate bowls of raw carrots every day.",
+      "mood": "day",
+      "imagePrompt": "Wooden kitchen table with a ceramic bowl piled high with fresh, unpeeled orange carrots with leafy green tops. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-night-fighter-carrots-myth/4.mp3",
+      "voicedText": "They claimed fighter ace John 'Cat's Eyes' Cunningham possessed superhuman night vision because he ate bowls of raw carrots every day.",
+      "seconds": 8.5
+    },
+    {
+      "text": "The public eagerly believed it: families ate millions of carrots to see better in blackout streets, and even German commanders took notes.",
+      "mood": "warm",
+      "imagePrompt": "Vintage kitchen pantry with jars of pickled carrots, carrot marmalade pots, and recipe cards from wartime magazines. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-night-fighter-carrots-myth/5.mp3",
+      "voicedText": "The public eagerly believed it: families ate millions of carrots to see better in blackout streets, and even German commanders took notes.",
+      "seconds": 8.9
+    },
+    {
+      "text": "Did your parents tell you carrots help you see in the dark? It all started with this WWII radar deception!",
+      "mood": "day",
+      "imagePrompt": "Sunny vegetable garden allotment with neat rows of vibrant green carrot tops swaying in a gentle breeze. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/wwii-night-fighter-carrots-myth/6.mp3",
+      "voicedText": "Did your parents tell you carrots help you see in the dark? It all started with this WWII radar deception!",
+      "seconds": 6.9
+    }
+  ]
+}

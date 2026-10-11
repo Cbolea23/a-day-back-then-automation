@@ -1,0 +1,56 @@
+{
+  "slug": "victorian-pea-souper-smog",
+  "title": "London's Killer Pea-Souper Fog",
+  "hook": "Burning coal created yellow toxic fog so thick people walked into rivers.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "During the 19th century, millions of domestic fireplaces and industrial factories burned heavy, sulfurous bituminous coal across London.",
+      "mood": "dark",
+      "imagePrompt": "Victorian London cityscape of crowded factory brick smokestacks and rooftop chimneys pumping black smoke into a gloomy sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-pea-souper-smog/1.mp3",
+      "voicedText": "During the 19th century, millions of domestic fireplaces and industrial factories burned heavy, sulfurous bituminous coal across London.",
+      "seconds": 9.4
+    },
+    {
+      "text": "When weather inversions trapped the soot over the Thames valley, it mixed with river damp to create the notorious 'pea-souper' fog.",
+      "mood": "cool",
+      "imagePrompt": "Dense, yellowish-green sulfurous smog shrouding gas streetlamps and horse carriage silhouettes on a wet cobblestone bridge. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-pea-souper-smog/2.mp3",
+      "voicedText": "When weather inversions trapped the soot over the Thames valley, it mixed with river damp to create the notorious 'pea-souper' fog.",
+      "seconds": 7.9
+    },
+    {
+      "text": "The smog was a pungent, yellowish-green blanket of sulfuric acid so thick that pedestrians could not see their own feet or hands.",
+      "mood": "cool",
+      "imagePrompt": "Victorian lamppost casting only a dim, blurry yellow halo of light in choking murky yellow fog on a deserted street corner. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-pea-souper-smog/3.mp3",
+      "voicedText": "The smog was a pungent, yellowish-green blanket of sulfuric acid so thick that pedestrians could not see their own feet or hands.",
+      "seconds": 9.2
+    },
+    {
+      "text": "Street traffic ground to a halt: omnibus drivers had to lead horses on foot holding burning torches, while disoriented walkers fell into canals.",
+      "mood": "dark",
+      "imagePrompt": "Cast-iron canal bridge railing with swirling smog clouds illuminated by the faint red glow of a handheld kerosene torch. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-pea-souper-smog/4.mp3",
+      "voicedText": "Street traffic ground to a halt: omnibus drivers had to lead horses on foot holding burning torches, while disoriented walkers fell into canals.",
+      "seconds": 10
+    },
+    {
+      "text": "The toxic air choked thousands to death from bronchitis, while soot accumulated so heavily that people blew black soot from their noses for days.",
+      "mood": "dark",
+      "imagePrompt": "Vintage apothecary window showing rows of cough syrup bottles, horehound candy jars, and carbolic inhalers in the gloomy smog. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-pea-souper-smog/5.mp3",
+      "voicedText": "The toxic air choked thousands to death from bronchitis, while soot accumulated so heavily that people blew black soot from their noses for days.",
+      "seconds": 9.4
+    },
+    {
+      "text": "Clean air laws finally banned coal fires in the 1950s. Could you have walked through London's deadly yellow fog? Tell us below!",
+      "mood": "day",
+      "imagePrompt": "Crisp clear morning sunlight illuminating modern clean London embankment with Big Ben tower rising sharply against blue sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/victorian-pea-souper-smog/6.mp3",
+      "voicedText": "Clean air laws finally banned coal fires in the 1950s. Could you have walked through London's deadly yellow fog? Tell us below!",
+      "seconds": 8.1
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "viking-longhouse-winter-smoke",
+  "title": "Living with 30 People in a Smoky Longhouse",
+  "hook": "In the dead of winter, an entire Norse clan slept around a trench fire with no chimney.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "When sub-zero blizzards hit Scandinavia, survival meant crowding an entire extended family into a single turf-insulated longhouse.",
+      "mood": "cool",
+      "imagePrompt": "Snow-covered Norse turf longhouse with grass roof nestled against dark winter pine woods under starry northern lights. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-longhouse-winter-smoke/1.mp3",
+      "voicedText": "When sub-zero blizzards hit Scandinavia, survival meant crowding an entire extended family into a single turf-insulated longhouse.",
+      "seconds": 9
+    },
+    {
+      "text": "Down the center ran a long open hearth trench burning peat, birch logs, and seal blubber. But there was no chimney.",
+      "mood": "warm",
+      "imagePrompt": "Long stone-lined open hearth pit burning glowing peat and logs in the center of an earthen longhouse floor. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-longhouse-winter-smoke/2.mp3",
+      "voicedText": "Down the center ran a long open hearth trench burning peat, birch logs, and seal blubber. But there was no chimney.",
+      "seconds": 8.1
+    },
+    {
+      "text": "Smoke escaped only through small ceiling slits, leaving a thick haze hanging over everyone's heads and blackening the rafters with soot.",
+      "mood": "dark",
+      "imagePrompt": "Soot-blackened timber rafters under a steep thatched roof with drifting grey smoke catching light from a ceiling vent. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-longhouse-winter-smoke/3.mp3",
+      "voicedText": "Smoke escaped only through small ceiling slits, leaving a thick haze hanging over everyone's heads and blackening the rafters with soot.",
+      "seconds": 9
+    },
+    {
+      "text": "To preserve body heat, livestock including dairy cows, sheep, and pigs were housed at the far end of the same building behind wattle hurdles.",
+      "mood": "warm",
+      "imagePrompt": "Woven wooden wattle barn partition in a longhouse with fresh straw bedding, wooden pitchforks, and copper milk pails. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-longhouse-winter-smoke/4.mp3",
+      "voicedText": "To preserve body heat, livestock including dairy cows, sheep, and pigs were housed at the far end of the same building behind wattle hurdles.",
+      "seconds": 8.9
+    },
+    {
+      "text": "Up to thirty people slept on raised wooden benches lined with heather and sheepskins, listening to skaldic poets recite epic sagas in the gloom.",
+      "mood": "warm",
+      "imagePrompt": "Wooden bench lined with thick wool blankets, sheepskins, and a carved horn cup resting near the glowing hearth embers. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-longhouse-winter-smoke/5.mp3",
+      "voicedText": "Up to thirty people slept on raised wooden benches lined with heather and sheepskins, listening to skaldic poets recite epic sagas in the gloom.",
+      "seconds": 9.3
+    },
+    {
+      "text": "Could you have endured months trapped in a dark, smoky longhouse? Tell us your reaction and subscribe for daily history shorts!",
+      "mood": "day",
+      "imagePrompt": "Morning light breaking over a quiet Norse village as smoke gently curls from longhouse roofs into the crisp winter air. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/viking-longhouse-winter-smoke/6.mp3",
+      "voicedText": "Could you have endured months trapped in a dark, smoky longhouse? Tell us your reaction and subscribe for daily history shorts!",
+      "seconds": 8.8
+    }
+  ]
+}

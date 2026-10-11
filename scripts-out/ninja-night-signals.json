@@ -1,0 +1,56 @@
+{
+  "slug": "ninja-night-signals",
+  "title": "Secret Shinobi Signals and Smoke",
+  "hook": "Shinobi communicated across miles using wolf dung smoke and secret codes.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Behind enemy lines during midnight infiltration operations, shinobi agents needed communication methods that made zero sound.",
+      "mood": "dark",
+      "imagePrompt": "Misty mountain ridge in Iga province at twilight with silhouette of pine trees overlooking a shadowy valley below. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ninja-night-signals/1.mp3",
+      "voicedText": "Behind enemy lines during midnight infiltration operations, shinobi agents needed communication methods that made zero sound.",
+      "seconds": 8.3
+    },
+    {
+      "text": "For daytime long-range signaling, they burned dried wolf dung: known as 'rōen', its unique smoke rose completely vertical without dispersing in wind.",
+      "mood": "cool",
+      "imagePrompt": "Single straight, dense plume of dark smoke rising vertically into a calm morning sky from an iron brazier on a mountain peak. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ninja-night-signals/2.mp3",
+      "voicedText": "For daytime long-range signaling, they burned dried wolf dung: known as 'rōen', its unique smoke rose completely vertical without dispersing in wind.",
+      "seconds": 10.6
+    },
+    {
+      "text": "At night, they sent messages with 'goshiki-mai'—five-colored dyed rice: scattering grains along forest trails to leave encoded rendezvous instructions.",
+      "mood": "dark",
+      "imagePrompt": "Close-up of mossy stone forest trail with scattered grains of rice dyed in red, yellow, blue, black, and purple. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ninja-night-signals/3.mp3",
+      "voicedText": "At night, they sent messages with 'goshiki-mai'—five-colored dyed rice: scattering grains along forest trails to leave encoded rendezvous instructions.",
+      "seconds": 9.8
+    },
+    {
+      "text": "Because birds and animals ignored dyed rice, enemy castle patrols walked right past the secret codes without noticing a thing.",
+      "mood": "cool",
+      "imagePrompt": "Ancient mossy stone lantern along a forest path leading to an old wooden Shinto shrine gate under pale moonlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ninja-night-signals/4.mp3",
+      "voicedText": "Because birds and animals ignored dyed rice, enemy castle patrols walked right past the secret codes without noticing a thing.",
+      "seconds": 8.4
+    },
+    {
+      "text": "They carried handheld directional fire lanterns called 'gandō', using internal gimbals to shine beams forward without casting light onto the bearer.",
+      "mood": "dark",
+      "imagePrompt": "Antique Japanese copper gando bullseye lantern with internal gimbal rings and candle holder on a tatami floor. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ninja-night-signals/5.mp3",
+      "voicedText": "They carried handheld directional fire lanterns called 'gandō', using internal gimbals to shine beams forward without casting light onto the bearer.",
+      "seconds": 9.4
+    },
+    {
+      "text": "Shinobi spycraft was centuries ahead of its time! Would you have cracked their secret colored rice code?",
+      "mood": "day",
+      "imagePrompt": "Serene mountain temple overlook in Japan with ancient stone steps surrounded by lush cedar and pine trees in morning light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ninja-night-signals/6.mp3",
+      "voicedText": "Shinobi spycraft was centuries ahead of its time! Would you have cracked their secret colored rice code?",
+      "seconds": 6.1
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "mesopotamia-beer-currency",
+  "title": "When Workers Were Paid in Beer",
+  "hook": "5,000 years ago in Sumeria, money didn't exist—laborers were paid in gallons of fermenting beer.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "Long before coins or banknotes were invented, the ancient Sumerian city-states built the world's first civilization powered entirely by beer.",
+      "mood": "warm",
+      "imagePrompt": "Towering mudbrick ziggurat temple rising above the fertile green river plain of Mesopotamia at dawn. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mesopotamia-beer-currency/1.mp3",
+      "voicedText": "Long before coins or banknotes were invented, the ancient Sumerian city-states built the world's first civilization powered entirely by beer.",
+      "seconds": 9.3
+    },
+    {
+      "text": "Mesopotamian beer wasn't like modern lager: it was a thick, sour, nutrient-dense porridge brewed from twice-baked barley bread called 'bappir'.",
+      "mood": "warm",
+      "imagePrompt": "Earthenware brewing vats with malted barley grain, dried loaves of bappir bread, and ceramic measuring bowls. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mesopotamia-beer-currency/2.mp3",
+      "voicedText": "Mesopotamian beer wasn't like modern lager: it was a thick, sour, nutrient-dense porridge brewed from twice-baked barley bread called 'bappir'.",
+      "seconds": 9.4
+    },
+    {
+      "text": "Because river water was full of dangerous parasites, boiling the mash made beer the safest hydrating drink available.",
+      "mood": "cool",
+      "imagePrompt": "Clay jug of frothy golden beer with long hollow reed drinking straws resting on an adobe table. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mesopotamia-beer-currency/3.mp3",
+      "voicedText": "Because river water was full of dangerous parasites, boiling the mash made beer the safest hydrating drink available.",
+      "seconds": 7.8
+    },
+    {
+      "text": "Temple records on clay tablets reveal standard wages: laborers received two liters a day, while senior officials received five liters daily.",
+      "mood": "warm",
+      "imagePrompt": "Cuneiform clay tablet inscribed with reed stylus tally marks showing the beer jar pictograph symbol. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mesopotamia-beer-currency/4.mp3",
+      "voicedText": "Temple records on clay tablets reveal standard wages: laborers received two liters a day, while senior officials received five liters daily.",
+      "seconds": 9.9
+    },
+    {
+      "text": "Because chaff floated on top, drinkers used long bent bronze and reed straws to sip clean brew from the bottom of communal jars.",
+      "mood": "warm",
+      "imagePrompt": "Large communal ceramic amphora sealed with bitumen pitch and fitted with reed straws under palm frond shade. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mesopotamia-beer-currency/5.mp3",
+      "voicedText": "Because chaff floated on top, drinkers used long bent bronze and reed straws to sip clean brew from the bottom of communal jars.",
+      "seconds": 8.7
+    },
+    {
+      "text": "Would you accept a paycheck paid entirely in beer? Let us know in the comments and subscribe for more ancient daily life!",
+      "mood": "day",
+      "imagePrompt": "Ancient Sumerian mudbrick market street with pottery stalls and date palm trees in the golden evening light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/mesopotamia-beer-currency/6.mp3",
+      "voicedText": "Would you accept a paycheck paid entirely in beer? Let us know in the comments and subscribe for more ancient daily life!",
+      "seconds": 7.9
+    }
+  ]
+}

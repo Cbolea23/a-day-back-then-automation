@@ -1,0 +1,56 @@
+{
+  "slug": "pirate-diet-and-scurvy",
+  "title": "Hardtack, Maggots, and Grog",
+  "hook": "Sailors tapped their rock-hard ship biscuits in the dark.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "After three months on the open Atlantic, fresh vegetables and meat were distant memories for pirate crews.",
+      "mood": "cool",
+      "imagePrompt": "Dimly lit wooden galley pantry on an 18th-century ship with empty salt barrels and hanging empty iron meat hooks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-diet-and-scurvy/1.mp3",
+      "voicedText": "After three months on the open Atlantic, fresh vegetables and meat were distant memories for pirate crews.",
+      "seconds": 6.8
+    },
+    {
+      "text": "Daily rations revolved around 'hardtack': baked flour biscuits so rock-hard that sailors had to soak them in beer or broth to bite them.",
+      "mood": "warm",
+      "imagePrompt": "Wooden mess table with rock-hard square ship biscuits, a chipped ceramic bowl of grey pease porridge, and an iron spoon. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-diet-and-scurvy/2.mp3",
+      "voicedText": "Daily rations revolved around 'hardtack': baked flour biscuits so rock-hard that sailors had to soak them in beer or broth to bite them.",
+      "seconds": 8.4
+    },
+    {
+      "text": "Biscuits quickly infested with weevils and white maggots. Sailors ate their dinner in pitch darkness so they wouldn't see the bugs squirming.",
+      "mood": "dark",
+      "imagePrompt": "Close-up of a broken flour biscuit showing tiny holes and fine flour dust resting on rough burlap sacking in candle glow. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-diet-and-scurvy/3.mp3",
+      "voicedText": "Biscuits quickly infested with weevils and white maggots. Sailors ate their dinner in pitch darkness so they wouldn't see the bugs squirming.",
+      "seconds": 8.9
+    },
+    {
+      "text": "Without vitamin C, deadly scurvy struck: gums turned black and bled, teeth fell out, and old healed bone fractures mysteriously reopened.",
+      "mood": "cool",
+      "imagePrompt": "Ship's apothecary wooden chest with small glass tonic bottles, dried roots, and measuring scales in a cramped wooden cabin. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-diet-and-scurvy/4.mp3",
+      "voicedText": "Without vitamin C, deadly scurvy struck: gums turned black and bled, teeth fell out, and old healed bone fractures mysteriously reopened.",
+      "seconds": 10
+    },
+    {
+      "text": "Salted beef stored in brine barrels turned green and leathery. Sailors often carved tobacco pipes and belt buckles out of hard beef gristle.",
+      "mood": "warm",
+      "imagePrompt": "Open wooden brine cask showing pale salted meat slabs resting beside a carved bone pipe and sailor's clasp knife. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-diet-and-scurvy/5.mp3",
+      "voicedText": "Salted beef stored in brine barrels turned green and leathery. Sailors often carved tobacco pipes and belt buckles out of hard beef gristle.",
+      "seconds": 9.8
+    },
+    {
+      "text": "Could your stomach survive six months on maggot-filled hardtack? Let us know below and follow for daily history stories!",
+      "mood": "day",
+      "imagePrompt": "Sunny ship deck looking out toward calm azure tropical waters and lush green Caribbean islands on the horizon. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/pirate-diet-and-scurvy/6.mp3",
+      "voicedText": "Could your stomach survive six months on maggot-filled hardtack? Let us know below and follow for daily history stories!",
+      "seconds": 7.4
+    }
+  ]
+}

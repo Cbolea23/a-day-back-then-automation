@@ -41,19 +41,32 @@ export function buildReelCaption(script, slug) {
   const hook = script.hook || script.title || "Did you know?";
   const hashtags = ["#history", "#ancienthistory", "#historyfacts", "#reels", "#ADayBackThen"];
 
-  if (slug.includes("roman")) hashtags.push("#ancientrome", "#romanempire");
-  if (slug.includes("gladiator")) hashtags.push("#gladiator", "#colosseum");
-  if (slug.includes("medieval") || slug.includes("peasant") || slug.includes("castle")) hashtags.push("#medieval", "#middleages");
-  if (slug.includes("viking")) hashtags.push("#vikings", "#norse");
-  if (slug.includes("egypt")) hashtags.push("#ancientegypt", "#pharaoh");
+  if (slug.includes("roman")) hashtags.push("#ancientrome");
+  if (slug.includes("gladiator")) hashtags.push("#colosseum");
+  if (slug.includes("medieval") || slug.includes("peasant") || slug.includes("castle")) hashtags.push("#middleages");
+  if (slug.includes("viking")) hashtags.push("#vikings");
+  if (slug.includes("egypt")) hashtags.push("#ancientegypt");
   if (slug.includes("greek") || slug.includes("athens") || slug.includes("sparta")) hashtags.push("#ancientgreece");
-  if (slug.includes("samurai") || slug.includes("edo") || slug.includes("ninja")) hashtags.push("#samurai", "#japanhistory");
-  if (slug.includes("pirate")) hashtags.push("#pirates", "#maritimehistory");
+  if (slug.includes("samurai") || slug.includes("edo") || slug.includes("ninja")) hashtags.push("#japanhistory");
+  if (slug.includes("pirate")) hashtags.push("#pirates");
+  if (slug.includes("wwii")) hashtags.push("#ww2");
+  if (slug.includes("victorian")) hashtags.push("#victorian");
+  if (slug.includes("ottoman")) hashtags.push("#ottoman");
 
-  const body = script.description || (script.scenes ? script.scenes.map((s) => s.text).slice(0, 2).join(" ") : "");
-  const engagementCta = "💬 What are your thoughts on this? Drop a comment below!\n👉 Follow A Day Back Then for daily stories from history!";
+  const tagString = Array.from(new Set(hashtags)).slice(0, 6).join(" ");
+  const cta = "👉 Follow A Day Back Then for daily history!";
 
-  return `${hook}\n\n${body}\n\n${engagementCta}\n\n${Array.from(new Set(hashtags)).join(" ")}`;
+  let full = `${hook}\n\n${cta}\n\n${tagString}`;
+  const firstScene = script.scenes && script.scenes[0] ? script.scenes[0].text : "";
+  if (firstScene && (hook.length + firstScene.length + cta.length + tagString.length + 8) <= 380) {
+    full = `${hook}\n\n${firstScene}\n\n${cta}\n\n${tagString}`;
+  }
+
+  // Ensure strict compliance with Facebook's 10-400 character requirement
+  if (full.length > 390) {
+    full = full.slice(0, 385) + "...";
+  }
+  return full;
 }
 
 export async function uploadReel(slug, options = {}) {

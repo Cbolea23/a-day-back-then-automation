@@ -1,0 +1,546 @@
+{
+  "totalTarget": 140,
+  "civilizations": [
+    {
+      "name": "Ancient Rome & Colosseum",
+      "target": 14,
+      "existing": 12,
+      "newNeeded": 2,
+      "newTopics": [
+        {
+          "slug": "gladiator-diet-barley-men",
+          "title": "Why Gladiators Were Fat Vegetarians",
+          "theme": "gladiator",
+          "hook": "Hollywood shows gladiators with shredded six-pack abs. In reality, arena doctors stuffed them full of barley mash and bean sludge until they were fat."
+        },
+        {
+          "slug": "roman-firefighters-vigiles",
+          "title": "Rome's Corrupt Fire Brigade",
+          "hook": "Rome's richest man, Crassus, ran a private fire brigade. When a house caught fire, his men stood outside with buckets and negotiated the sale price while it burned."
+        }
+      ]
+    },
+    {
+      "name": "Ancient Egypt & Mesopotamia",
+      "target": 14,
+      "existing": 8,
+      "newNeeded": 6,
+      "newTopics": [
+        {
+          "slug": "egyptian-tomb-robber-trial",
+          "title": "How Egyptians Caught Tomb Raiders",
+          "hook": "Breaking into a Pharaoh's tomb wasn't just treason—it carried the death penalty of impalement on a wooden stake."
+        },
+        {
+          "slug": "egyptian-crocodile-god-sobek",
+          "title": "Worshipping 12-Foot Sacred Crocodiles",
+          "hook": "In ancient Fayum, priests kept a live Nile crocodile draped in gold earrings and crystal bracelets inside a sacred temple pond."
+        },
+        {
+          "slug": "mesopotamia-beer-currency",
+          "title": "When Workers Were Paid in Beer",
+          "hook": "5,000 years ago in Sumeria, money didn't exist. If you laid bricks all day, your paycheck was literally a five-liter clay jar of thick, fermenting beer."
+        },
+        {
+          "slug": "egyptian-cat-worship-laws",
+          "title": "Killing a Cat Was a Capital Crime",
+          "hook": "In ancient Egypt, if your house caught fire, saving the household cat came before saving your own furniture or gold."
+        },
+        {
+          "slug": "egyptian-magic-and-scorpions",
+          "title": "Egyptian Spells for Scorpion Stings",
+          "hook": "Ancient Egyptians didn't just carry medicine—they carried ivory magic wands engraved with hippos to scare venomous cobras away."
+        },
+        {
+          "slug": "pharaoh-cleopatra-daily-routine",
+          "title": "The Real Routine of Cleopatra",
+          "hook": "Cleopatra spoke nine languages and ran the wealthiest Mediterranean grain trade, yet modern myth only remembers her donkey milk baths."
+        }
+      ]
+    },
+    {
+      "name": "Ancient Greece & Sparta",
+      "target": 14,
+      "existing": 6,
+      "newNeeded": 8,
+      "newTopics": [
+        {
+          "slug": "spartan-black-broth",
+          "title": "Sparta's Disgusting Black Broth",
+          "hook": "Spartan warriors ate a porridge made of boiled pig blood, vinegar, and pig legs. An Athenian once tasted it and remarked: 'Now I understand why Spartans are so eager to die in battle.'"
+        },
+        {
+          "slug": "greek-ostracism-voting",
+          "title": "Voting to Banish Your Most Annoying Neighbor",
+          "hook": "Every year, Athenians gathered in the marketplace and scratched one politician's name onto a pottery shard. Whoever got 6,000 votes was exiled for ten years."
+        },
+        {
+          "slug": "greek-philosopher-insults",
+          "title": "Diogenes: History's Wildest Philosopher",
+          "hook": "Diogenes lived in a ceramic tub in Athens, mocked Alexander the Great to his face, and walked around with a lit lantern in broad daylight looking for an honest man."
+        },
+        {
+          "slug": "spartan-women-freedom",
+          "title": "Why Spartan Women Were Feared",
+          "hook": "While Athenian women were locked indoors, Spartan women owned 40% of the land, wrestled in public, and rode horses bareback."
+        },
+        {
+          "slug": "greek-trireme-rowers",
+          "title": "Rowing a Greek Warship in Battle",
+          "hook": "Being a rower on an Athenian trireme meant sitting shoulder-to-shoulder with 170 sweaty men in 100-degree heat, blind to incoming enemy rams."
+        },
+        {
+          "slug": "ancient-oracle-of-delphi",
+          "title": "The Drug-Fueled Oracle of Delphi",
+          "hook": "Kings marched across mountains to ask the Pythia for military advice while she inhaled intoxicating hydrocarbon gas seeping through rock fissures."
+        },
+        {
+          "slug": "spartan-stealing-trial",
+          "title": "Spartan Boys Were Taught to Steal",
+          "hook": "In Sparta's agoge academy, boys were deliberately starved. They were ordered to steal food from farms—and only punished if they got caught."
+        },
+        {
+          "slug": "greek-theatre-heckling",
+          "title": "Rowdy Hecklers in Greek Theatres",
+          "hook": "Ancient Greek audiences didn't just clap. If an actor fumbled a line, 14,000 spectators threw rotten figs, olives, and stones onto the stage."
+        }
+      ]
+    },
+    {
+      "name": "Vikings & Norse",
+      "target": 14,
+      "existing": 5,
+      "newNeeded": 9,
+      "newTopics": [
+        {
+          "slug": "viking-berserker-rage",
+          "title": "The Terrifying Norse Berserkers",
+          "hook": "Before battle, Norse champions called Berserkers howled like wolves, bit their iron shield rims, and charged shirtless into spear walls."
+        },
+        {
+          "slug": "viking-hygiene-secrets",
+          "title": "Vikings Were Cleaner Than the English",
+          "hook": "English monks complained that Norse raiders were too attractive to local women because they bathed every Saturday and combed their hair daily."
+        },
+        {
+          "slug": "viking-sunstone-navigation",
+          "title": "Navigating Oceans with Magic Sunstones",
+          "hook": "Vikings crossed the fog-covered North Atlantic without magnetic compasses using calcite crystals that polarized hidden sunlight behind storm clouds."
+        },
+        {
+          "slug": "viking-longhouse-winter-smoke",
+          "title": "Living with 30 People in a Smoky Longhouse",
+          "hook": "In the dead of a Scandinavian winter, an entire Norse clan, their dogs, and cows slept around a single indoor trench fire with no chimney."
+        },
+        {
+          "slug": "viking-blood-eagle-myth",
+          "title": "The Gruesome Blood Eagle: Fact or Fiction?",
+          "hook": "Did Vikings really carve enemy ribs backwards into eagle wings, or was it a literary exaggeration invented by later Christian scribes?"
+        },
+        {
+          "slug": "viking-shieldmaidens-real",
+          "title": "Real Female Viking Warriors",
+          "hook": "DNA tests on a 10th-century warrior grave in Birka, Sweden, packed with two horses, a sword, and armor, revealed the chief was biologically female."
+        },
+        {
+          "slug": "viking-valhalla-diet",
+          "title": "What Vikings Thought Heaven Was Like",
+          "hook": "In Norse Valhalla, warriors hacked each other to pieces every morning, revived every evening, and feasted on a magic boar that regenerated every day."
+        },
+        {
+          "slug": "viking-funeral-ship",
+          "title": "Burning Ships and Viking Burials",
+          "hook": "When a wealthy Viking chieftain died, his community buried him inside an 80-foot carved wooden longship packed with silver coins and weapons."
+        },
+        {
+          "slug": "viking-runestones-graffiti",
+          "title": "Viking Graffiti in Constantinople",
+          "hook": "Inside the sacred Hagia Sophia cathedral in Istanbul, you can still see Norse runes scratched into a marble balustrade reading: 'Halfdan was here.'"
+        }
+      ]
+    },
+    {
+      "name": "Feudal East Asia & Shinobi",
+      "target": 14,
+      "existing": 6,
+      "newNeeded": 8,
+      "newTopics": [
+        {
+          "slug": "samurai-bushido-dark-truth",
+          "title": "The Dark Truth of Samurai Honor",
+          "hook": "Romantic stories depict samurai as noble peacekeepers, but in 16th-century Sengoku Japan, testing a new katana sword on random commoners was legal."
+        },
+        {
+          "slug": "ninja-poison-and-disguises",
+          "title": "Shinobi Masters of Disguise",
+          "hook": "Real ninjas rarely wore black pajamas. They disguised themselves as wandering Buddhist monks, tea vendors, and circus performers to slip into castles."
+        },
+        {
+          "slug": "mongol-bow-deadly-range",
+          "title": "The Deadliest Weapon of the Steppe",
+          "hook": "A Mongol composite bow made of horn, sinew, and bamboo could penetrate heavy armor from 300 yards away at a full horse gallop."
+        },
+        {
+          "slug": "han-dynasty-crossbow-trigger",
+          "title": "China's Mass-Produced Bronze Crossbows",
+          "hook": "2,000 years ago, Han Dynasty armories mass-produced precision bronze triggers with interchangeable parts that pierced barbarian armor with a trigger pull."
+        },
+        {
+          "slug": "edo-firefighter-heroes",
+          "title": "Edo Japan's Daredevil Firefighters",
+          "hook": "Because Edo was built of paper and wood, fires spread in minutes. Japanese firefighter brigades competed to climb burning roofs waving giant paper standards."
+        },
+        {
+          "slug": "mongol-yam-postal-system",
+          "title": "Genghis Khan's 5,000-Mile Pony Express",
+          "hook": "The Mongol Yam messenger network allowed riders carrying golden passports to travel 200 miles a day by switching fresh horses at relay stations."
+        },
+        {
+          "slug": "samurai-armor-lacquer-secret",
+          "title": "Why Samurai Armor Was Made of Silk and Lacquer",
+          "hook": "Samurai armor wasn't heavy solid steel like European knights—it was thousands of tiny lacquered iron plates laced together with water-resistant silk cords."
+        },
+        {
+          "slug": "ninja-night-signals",
+          "title": "Secret Shinobi Signals and Smoke",
+          "hook": "Shinobi communicated across miles using colored smokes made of wolf dung and gunpowder recipes kept secret on pain of execution."
+        }
+      ]
+    },
+    {
+      "name": "Mesoamerica (Aztec, Maya, Inca)",
+      "target": 14,
+      "existing": 4,
+      "newNeeded": 10,
+      "newTopics": [
+        {
+          "slug": "aztec-chocolate-currency",
+          "title": "When Money Grew on Trees in Tenochtitlan",
+          "hook": "In the Aztec empire, cacao beans were official legal tender. For 100 cacao beans you could buy a fine woven cloak, and counterfeiters filled empty shells with dirt!"
+        },
+        {
+          "slug": "aztec-macuahuitl-sword",
+          "title": "The Obsidian Razor Sword",
+          "hook": "The Aztec macuahuitl was an oak club lined with volcanic glass blades so sharp that Spanish conquistadors recorded it beheading a horse in one strike."
+        },
+        {
+          "slug": "maya-astronomy-calendar",
+          "title": "How the Maya Tracked Venus Without Telescopes",
+          "hook": "Maya astronomers calculated the planetary orbit of Venus to within two hours of modern NASA atomic clocks using stone sighting slits."
+        },
+        {
+          "slug": "inca-quipu-knot-language",
+          "title": "The Empire That Wrote in Knots",
+          "hook": "The Incas ruled 10 million people across 2,500 miles of mountain peaks without writing a single sentence on paper—all accounts were kept on colored strings."
+        },
+        {
+          "slug": "maya-rubber-ball-game",
+          "title": "The Lethal Maya Ballgame",
+          "hook": "Ancient Maya athletes bounced a heavy 9-pound solid rubber ball using only their hips and knees through elevated stone rings, often with human sacrifice on the line."
+        },
+        {
+          "slug": "aztec-cleanliness-vs-europe",
+          "title": "Tenochtitlan Was Cleaner Than London",
+          "hook": "While European cities dumped raw waste into unpaved streets, Tenochtitlan had 1,000 public street cleaners and dual fresh-water aqueducts from Chapultepec."
+        },
+        {
+          "slug": "inca-rope-bridges-chasm",
+          "title": "Inca Grass Bridges Over 200-Foot Canyons",
+          "hook": "Inca engineers wove bridges across raging mountain rivers entirely out of wild grass fibers braided as thick as a human torso."
+        },
+        {
+          "slug": "aztec-eagle-and-jaguar-knights",
+          "title": "Aztec Eagle and Jaguar Warriors",
+          "hook": "To join the elite Aztec warrior orders, a fighter had to capture four enemy soldiers alive in hand-to-hand combat to earn feathered armor."
+        },
+        {
+          "slug": "maya-blue-miracle-pigment",
+          "title": "The Secret Formula of Maya Blue",
+          "hook": "Maya blue pigment resisted acid, rot, and 1,000 years of jungle rains because priests fused indigo dye with clay crystals over boiling copal incense."
+        },
+        {
+          "slug": "inca-freeze-dried-potatoes",
+          "title": "Incas Invented Freeze-Dried Food",
+          "hook": "500 years before NASA astronauts, Inca mountain farmers created 'chuño' by leaving potatoes out in sub-zero Andean nights and trampling the moisture out at dawn."
+        }
+      ]
+    },
+    {
+      "name": "Age of Sail & Pirates",
+      "target": 14,
+      "existing": 2,
+      "newNeeded": 12,
+      "newTopics": [
+        {
+          "slug": "pirate-punishments-code",
+          "title": "Marooning vs Keelhauling",
+          "hook": "Stealing from your fellow pirate crew didn't get you thrown in jail—you were dropped on an uninhabited sandbar with one pistol, gunpowder, and a flask of water."
+        },
+        {
+          "slug": "pirate-diet-and-scurvy",
+          "title": "Hardtack, Maggots, and Grog",
+          "hook": "Months at sea turned ship biscuits into rock-hard crackers crawling with live weevils. Sailors had to tap their biscuits on the table in the dark before taking a bite."
+        },
+        {
+          "slug": "pirate-blackbeard-fuse-beard",
+          "title": "Why Blackbeard Set His Hair on Fire",
+          "hook": "Edward Teach wove smoking cannon fuses into his massive black beard before boarding enemy merchant ships to look like a demon from hell."
+        },
+        {
+          "slug": "pirate-democracy-articles",
+          "title": "Pirate Ships Were Democracies",
+          "hook": "While European navies flogged sailors for speaking, pirate crews elected their captains by vote and paid equal disability pensions for lost eyes and limbs."
+        },
+        {
+          "slug": "pirate-women-anne-bonny",
+          "title": "The Deadliest Female Pirates",
+          "hook": "Anne Bonny and Mary Read disguised themselves in trousers, fought with dual pistols on the quarterdeck, and were the last to surrender when their ship was raided."
+        },
+        {
+          "slug": "pirate-grog-and-rum",
+          "title": "Why Sailors Drank So Much Rum",
+          "hook": "Wooden water casks stored in a damp ship bilge grew green algae and slimy rot within weeks, so sailors mixed it with rum and lime juice to make it drinkable."
+        },
+        {
+          "slug": "pirate-jolly-roger-flags",
+          "title": "The Real Meaning of the Jolly Roger",
+          "hook": "If a pirate ship flew the black skull flag, you could surrender with your life. But if they raised the solid blood-red flag, it meant 'No Quarter'—everyone dies."
+        },
+        {
+          "slug": "pirate-ship-surgeon-saw",
+          "title": "Surgery on the High Seas Without Anesthesia",
+          "hook": "If a cannonball splinter shattered your leg in battle, the ship's carpenter held you down and sawed off the limb with an unsterilized bone saw in under two minutes."
+        },
+        {
+          "slug": "pirate-eyepatch-night-vision",
+          "title": "The Real Reason Pirates Wore Eye Patches",
+          "hook": "Eye patches weren't just for missing eyes. Sailors kept one eye adjusted to the dark so they could see clearly when running below deck into dark cargo holds."
+        },
+        {
+          "slug": "pirate-hidden-treasure-myth",
+          "title": "Did Pirates Really Bury Treasure?",
+          "hook": "Almost no pirate ever buried their gold. Real pirate booty was rum, cocoa, silk, and gunpowder, and they spent every silver coin immediately in port taverns."
+        },
+        {
+          "slug": "pirate-port-royal-sunk",
+          "title": "The Wickedest City on Earth Sunk into the Ocean",
+          "hook": "Port Royal, Jamaica was home to thousands of drunken buccaneers until an earthquake in 1692 swallowed two-thirds of the city straight into the sea."
+        },
+        {
+          "slug": "pirate-cannon-battle-smoke",
+          "title": "Inside a Raging Sea Cannon Battle",
+          "hook": "During a broadside exchange, cannon smoke was so thick sailors couldn't see their own hands, and wooden splinters from shredded hull walls killed more men than cannonballs."
+        }
+      ]
+    },
+    {
+      "name": "Victorian & 19th Century",
+      "target": 14,
+      "existing": 3,
+      "newNeeded": 11,
+      "newTopics": [
+        {
+          "slug": "victorian-mudlark-job",
+          "title": "Scavenging for Coins in River Sewage",
+          "hook": "Poor Victorian kids called mudlarks waded through raw human sewage on the Thames riverbanks at low tide searching for dropped copper pennies and old bones."
+        },
+        {
+          "slug": "victorian-penny-blood",
+          "title": "Penny Dreadfuls: 1800s Trash Horror Comics",
+          "hook": "Victorian aristocrats panicked that cheap 1-penny horror stories about razor-wielding fiends were corrupting the moral minds of teenage factory boys."
+        },
+        {
+          "slug": "victorian-arsenic-green-wallpaper",
+          "title": "The Deadly Green Wallpaper of Victorian Homes",
+          "hook": "Victorian parlors loved a vibrant emerald green shade called Scheele's Green. Unfortunately, it was made of copper arsenite and poisoned families in their sleep."
+        },
+        {
+          "slug": "victorian-phossy-jaw-matchgirls",
+          "title": "The Match Factory Girls of London",
+          "hook": "Teenage girls working 14-hour shifts in match factories breathed white phosphorus fumes until their teeth rotted and their jawbones literally glowed in the dark."
+        },
+        {
+          "slug": "victorian-body-snatchers",
+          "title": "Digging Up Fresh Graves for Doctors",
+          "hook": "Before modern body donation laws, medical students paid ruthless resurrection men top dollar to dig up newly buried coffins in London churchyards."
+        },
+        {
+          "slug": "victorian-post-mortem-photos",
+          "title": "Why Victorians Posed with the Dead",
+          "hook": "Because photography was so expensive, the only picture a family could afford of their child was often taken hours after they passed away."
+        },
+        {
+          "slug": "victorian-penny-sit-up-coffin-beds",
+          "title": "Two-Penny Hangover and Coffin Beds",
+          "hook": "Homeless Londoners paid two pennies to sleep leaning against a taut rope in a crowded shed. At 6 AM, the landlord cut the rope to drop everyone awake."
+        },
+        {
+          "slug": "victorian-sewer-hunters-toshers",
+          "title": "Hunting Gold in London's Underground Sewers",
+          "hook": "Toshers carried lanterns and iron scrapers into miles of underground brick tunnels beneath London, braving giant rats to find dropped jewelry."
+        },
+        {
+          "slug": "victorian-corset-fainting",
+          "title": "The Real Story Behind Victorian Corsets",
+          "hook": "Victorian tight-lacing didn't just deform women's ribcages—it squished their internal organs and reduced lung capacity by a third, causing fainting couches."
+        },
+        {
+          "slug": "victorian-pea-souper-smog",
+          "title": "London's Killer Pea-Souper Fog",
+          "hook": "Burning millions of coal fireplaces created toxic yellow fog so thick that London pedestrians walked off Thames river piers because they couldn't see their own feet."
+        },
+        {
+          "slug": "gold-rush-claim-jumping",
+          "title": "Boomtown Justice in the California Gold Rush",
+          "hook": "In 1849 San Francisco, miners paid $10 for a single egg, slept in mud tents, and settled gold claim disputes with revolvers before sheriffs even arrived."
+        }
+      ]
+    },
+    {
+      "name": "Ottoman Empire",
+      "target": 14,
+      "existing": 1,
+      "newNeeded": 13,
+      "newTopics": [
+        {
+          "slug": "ottoman-janissary-life",
+          "title": "The Sultan's Elite Janissary Soldiers",
+          "hook": "Janissaries weren't typical conscripts—they were raised as elite slave-soldiers from childhood and used giant copper soup cauldrons as sacred military flags."
+        },
+        {
+          "slug": "ottoman-grand-bazaar-trade",
+          "title": "A Day in the 1461 Grand Bazaar",
+          "hook": "With 4,000 shops under covered vaulted ceilings, Istanbul's Grand Bazaar was the bustling trade bridge connecting Persian silk, African gold, and Venetian glass."
+        },
+        {
+          "slug": "ottoman-hamam-bathhouse",
+          "title": "Gossip and Steam in the Turkish Hamam",
+          "hook": "The Ottoman bathhouse wasn't just for cleaning—mothers used it to inspect prospective brides for their sons, and men conducted major real estate deals in the steam."
+        },
+        {
+          "slug": "ottoman-coffeehouse-bans",
+          "title": "When Drinking Coffee Was Punishable by Death",
+          "hook": "Sultan Murad IV banned coffeehouses across Istanbul and disguised himself as a commoner with a scimitar to execute anyone caught sipping black coffee."
+        },
+        {
+          "slug": "ottoman-topkapi-palace-kitchen",
+          "title": "Feeding 4,000 People in Topkapi Palace",
+          "hook": "The imperial palace kitchens employed 1,000 cooks organized by specialty—one kitchen made only baklava, while another prepared the Sultan's personal sherbets."
+        },
+        {
+          "slug": "ottoman-silent-language-court",
+          "title": "The Mute Guards and Silent Court",
+          "hook": "Inside the Sultan's private courtyard, speaking aloud was banned. High officials communicated entirely through complex sign language to maintain eerie imperial silence."
+        },
+        {
+          "slug": "ottoman-tulip-mania-istanbul",
+          "title": "When Tulips Bankrupted Ottoman Nobles",
+          "hook": "During the 1720s Tulip Era, rare Ottoman bulbs with feathery petals cost more than palace mansions, and turtles carried lit candles through nocturnal flower gardens."
+        },
+        {
+          "slug": "ottoman-spahi-cavalry",
+          "title": "The Heavily Armored Sipahi Horsemen",
+          "hook": "Ottoman Sipahi cavalry were feudal landlords who rode Arabian warhorses into battle wearing mail-and-plate cuirasses and carrying jewel-hilted maces."
+        },
+        {
+          "slug": "ottoman-siege-cannon-dardanelles",
+          "title": "The 18-Ton Super-Cannons of 1453",
+          "hook": "To breach the massive Theodosian walls of Constantinople, Hungarian engineer Urban cast bronze cannons so heavy they required 60 oxen and 200 men to move."
+        },
+        {
+          "slug": "ottoman-mehter-military-band",
+          "title": "The World's Loudest Military Marching Band",
+          "hook": "The Ottoman Mehter band marched into battle with giant kettledrums on camels and crashing cymbals to psychologically shatter enemy morale before a single shot was fired."
+        },
+        {
+          "slug": "ottoman-imperial-hareem-politics",
+          "title": "The Powerful Women Who Ruled the Empire",
+          "hook": "During the 'Sultanate of Women', imperial mothers like Kösem Sultan managed treaties, treasury budgets, and viziers from within the palace walls."
+        },
+        {
+          "slug": "ottoman-sherbet-snow-drinks",
+          "title": "Mountain Snow Sherbets in the Summer Heat",
+          "hook": "To serve chilled pomegranate sherbet in mid-July Istanbul, couriers rushed packed snow down from Mount Olympus on swift mules."
+        },
+        {
+          "slug": "ottoman-archery-world-record",
+          "title": "Ottoman Bows Broke World Flight Records",
+          "hook": "In 1798, Sultan Selim III shot an arrow 972 yards across an archery field in Istanbul—a composite bow distance that modern athletes took two centuries to beat."
+        }
+      ]
+    },
+    {
+      "name": "World War II & 20th Century",
+      "target": 14,
+      "existing": 1,
+      "newNeeded": 13,
+      "newTopics": [
+        {
+          "slug": "wwii-blackout-night",
+          "title": "Surviving the Blitz in Total Blackout",
+          "hook": "During the London Blitz, lighting a cigarette outside could get you arrested. Street lamps were shut off, and cars drove with tiny slotted slits over their headlights."
+        },
+        {
+          "slug": "wwii-spitfire-pilot-day",
+          "title": "Scramble: 5 Minutes to Dogfight",
+          "hook": "Battle of Britain fighter pilots waited in deckchairs on airfield grass. When the scramble siren wailed, they were airborne and dogfighting Messerschmitts in under four minutes."
+        },
+        {
+          "slug": "wwii-victory-garden",
+          "title": "Digging for Victory: Potatoes Over Lawns",
+          "hook": "To avoid starvation from U-boat blockades, Britain dug up the Tower of London moat, cricket pitches, and royal parks to plant millions of cabbages."
+        },
+        {
+          "slug": "wwii-gas-mask-box-kids",
+          "title": "Every Child Carried a Gas Mask Box",
+          "hook": "British schoolchildren couldn't enter school, board a bus, or watch a cinema matinee without their cardboard gas mask box slung over their shoulder."
+        },
+        {
+          "slug": "wwii-anderson-shelter-backyard",
+          "title": "Sleeping in a Corrugated Steel Pit",
+          "hook": "Millions of British families slept inside damp corrugated steel Anderson shelters dug six feet deep into their back gardens while air raid sirens wailed overhead."
+        },
+        {
+          "slug": "wwii-unexploded-bomb-defusers",
+          "title": "Ticking Time Bombs: Bomb Disposal Squads",
+          "hook": "Royal Engineer officers dug down through basement rubble to defuse 500-pound delayed-action German bombs with clockwork fuses using hand wrenches."
+        },
+        {
+          "slug": "wwii-deception-ghost-army",
+          "title": "The Inflatable Ghost Army of D-Day",
+          "hook": "Before D-Day, the Allies built hundreds of dummy rubber inflatable tanks and recorded fake engine rumble sounds played through giant loudspeakers to trick German scouts."
+        },
+        {
+          "slug": "wwii-pigeon-spies-dickin-medal",
+          "title": "Homing Pigeons Behind Enemy Lines",
+          "hook": "Over 250,000 carrier pigeons were dropped by parachute into occupied France in wicker baskets to fly secret intelligence back across the English Channel."
+        },
+        {
+          "slug": "wwii-women-land-army",
+          "title": "The Girls Who Farmed to Save Britain",
+          "hook": "Eighty thousand city women joined the Women's Land Army, trading high heels for dungarees to drive tractors, milk cows, and catch farm rats."
+        },
+        {
+          "slug": "wwii-fake-coffee-and-mock-banana",
+          "title": "Mock Bananas and Parsnip Cakes",
+          "hook": "Because no fresh fruit reached Britain for six years, mothers boiled parsnips with banana flavoring essence to make 'mock bananas' for kids who had never seen one."
+        },
+        {
+          "slug": "wwii-morse-code-bletchley-park",
+          "title": "Cracking Enigma in Secret Huts",
+          "hook": "Inside freezing wooden huts in Buckinghamshire, 10,000 codebreakers intercepted millions of scrambled radio dots and dashes to shorten the war by two years."
+        },
+        {
+          "slug": "wwii-night-fighter-carrots-myth",
+          "title": "Why Britain Told the World Carrots Give Night Vision",
+          "hook": "To hide that British night fighters were using secret radar technology to shoot down German bombers in the dark, the government launched a propaganda campaign claiming pilots ate tons of carrots."
+        },
+        {
+          "slug": "wwii-underground-tube-sleepers",
+          "title": "Sleeping on the Rails in London Underground",
+          "hook": "Over 150,000 Londoners slept every night on subway platforms, setting up bunk beds inches away from electrified tracks while bomb explosions shook the tunnels."
+        }
+      ]
+    }
+  ]
+}

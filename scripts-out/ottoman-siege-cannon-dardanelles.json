@@ -1,0 +1,56 @@
+{
+  "slug": "ottoman-siege-cannon-dardanelles",
+  "title": "The 18-Ton Super-Cannons of 1453",
+  "hook": "Urban's bronze cannons required 60 oxen and 200 men to move.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "For a thousand years, the triple Theodosian walls of Constantinople stood impregnable against every invading army in history.",
+      "mood": "cool",
+      "imagePrompt": "Colossal historic limestone and brick Theodosian walls of Constantinople with towering defensive battlements under dramatic skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-siege-cannon-dardanelles/1.mp3",
+      "voicedText": "For a thousand years, the triple Theodosian walls of Constantinople stood impregnable against every invading army in history.",
+      "seconds": 8.8
+    },
+    {
+      "text": "In 1453, twenty-one-year-old Sultan Mehmed hired a Hungarian master foundry engineer named Urban to cast the unthinkable.",
+      "mood": "warm",
+      "imagePrompt": "Foundry furnace glowing with molten bronze with iron tongs, clay casting molds, and wooden bellows in a stone workshop. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-siege-cannon-dardanelles/2.mp3",
+      "voicedText": "In 1453, twenty-one-year-old Sultan Mehmed hired a Hungarian master foundry engineer named Urban to cast the unthinkable.",
+      "seconds": 9.7
+    },
+    {
+      "text": "They cast the 'Basilica': a bronze super-bombard twenty-seven feet long, weighing eighteen tons, capable of firing 1,200-pound granite boulders.",
+      "mood": "cool",
+      "imagePrompt": "Massive dark bronze siege cannon barrel resting on heavy oak timber carriages with iron reinforcement bands. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-siege-cannon-dardanelles/3.mp3",
+      "voicedText": "They cast the 'Basilica': a bronze super-bombard twenty-seven feet long, weighing eighteen tons, capable of firing 1,200-pound granite boulders.",
+      "seconds": 10.7
+    },
+    {
+      "text": "Moving the colossus took sixty massive oxen and two hundred laborers two full months to drag over reinforced wooden bridges.",
+      "mood": "warm",
+      "imagePrompt": "Muddy medieval siege road with heavy oak log corduroy pathways cut through forest hillsides under cloudy skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-siege-cannon-dardanelles/4.mp3",
+      "voicedText": "Moving the colossus took sixty massive oxen and two hundred laborers two full months to drag over reinforced wooden bridges.",
+      "seconds": 9
+    },
+    {
+      "text": "It fired only seven times a day because the bronze barrel overheated so violently that crews had to bathe it in warm olive oil.",
+      "mood": "dark",
+      "imagePrompt": "Earthen siege earthworks with barrels of olive oil and spherical carved granite cannonballs stacked beside smoking bronze cannon. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-siege-cannon-dardanelles/5.mp3",
+      "voicedText": "It fired only seven times a day because the bronze barrel overheated so violently that crews had to bathe it in warm olive oil.",
+      "seconds": 8.2
+    },
+    {
+      "text": "The thunderous stone impacts shattered the ancient walls, ending the Byzantine Empire forever. Did you know cannons ended the Middle Ages?",
+      "mood": "day",
+      "imagePrompt": "Modern preserved Dardanelles bronze cannon on a stone fortress platform overlooking the deep blue waters of the strait. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/ottoman-siege-cannon-dardanelles/6.mp3",
+      "voicedText": "The thunderous stone impacts shattered the ancient walls, ending the Byzantine Empire forever. Did you know cannons ended the Middle Ages?",
+      "seconds": 9.4
+    }
+  ]
+}

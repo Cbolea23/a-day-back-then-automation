@@ -1,0 +1,56 @@
+{
+  "slug": "greek-ostracism-voting",
+  "title": "Voting to Banish Your Most Annoying Neighbor",
+  "hook": "Every year, Athenians gathered in the agora to exile one powerful politician for ten whole years.",
+  "channelName": "A Day Back Then",
+  "scenes": [
+    {
+      "text": "In classical Athens, democracy had a ruthless safeguard against tyranny: an annual election called 'ostracism'.",
+      "mood": "warm",
+      "imagePrompt": "The sprawling sunlit Agora marketplace of ancient Athens surrounded by marble porticoes and olive trees. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/greek-ostracism-voting/1.mp3",
+      "voicedText": "In classical Athens, democracy had a ruthless safeguard against tyranny: an annual election called 'ostracism'.",
+      "seconds": 7.7
+    },
+    {
+      "text": "Citizens gathered in the central marketplace and scratched the name of the politician they found most dangerous onto a broken pottery shard called an 'ostrakon'.",
+      "mood": "warm",
+      "imagePrompt": "Broken terracotta pottery shards with scratched ancient Greek lettering and an iron stylus resting on marble steps. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/greek-ostracism-voting/2.mp3",
+      "voicedText": "Citizens gathered in the central marketplace and scratched the name of the politician they found most dangerous onto a broken pottery shard called an 'ostrakon'.",
+      "seconds": 9.5
+    },
+    {
+      "text": "If at least six thousand votes were cast, the individual with the highest tally was banished from Athens for ten full years.",
+      "mood": "cool",
+      "imagePrompt": "Bronze ballot urns and wicker tally baskets placed on a stone voting platform under a striped awning. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/greek-ostracism-voting/3.mp3",
+      "voicedText": "If at least six thousand votes were cast, the individual with the highest tally was banished from Athens for ten full years.",
+      "seconds": 7.6
+    },
+    {
+      "text": "They weren't accused of any crime, and their property wasn't confiscated—they were simply exiled because people were tired of their ambition.",
+      "mood": "cool",
+      "imagePrompt": "Dusty coastal road leading away from Athens toward the distant Aegean sea at sunset. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/greek-ostracism-voting/4.mp3",
+      "voicedText": "They weren't accused of any crime, and their property wasn't confiscated—they were simply exiled because people were tired of their ambition.",
+      "seconds": 8.2
+    },
+    {
+      "text": "Aristides 'The Just' was once asked by an illiterate voter to write Aristides' own name on a shard. When asked why, the voter replied: 'I'm sick of hearing everyone call him Just!'",
+      "mood": "warm",
+      "imagePrompt": "Single curved pottery shard inscribed with the Greek name 'ARISTIDES' illuminated by afternoon sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/greek-ostracism-voting/5.mp3",
+      "voicedText": "Aristides 'The Just' was once asked by an illiterate voter to write Aristides' own name on a shard. When asked why, the voter replied: 'I'm sick of hearing everyone call him Just!'",
+      "seconds": 12.5
+    },
+    {
+      "text": "Imagine if we could vote to exile politicians for ten years today! Who would you banish? Tell us and subscribe!",
+      "mood": "day",
+      "imagePrompt": "The magnificent Parthenon on the Acropolis of Athens glowing under a radiant blue Mediterranean sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "audio": "audio/greek-ostracism-voting/6.mp3",
+      "voicedText": "Imagine if we could vote to exile politicians for ten years today! Who would you banish? Tell us and subscribe!",
+      "seconds": 7.3
+    }
+  ]
+}
