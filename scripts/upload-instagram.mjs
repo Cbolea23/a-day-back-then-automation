@@ -37,6 +37,27 @@ function getCredentials() {
   return config;
 }
 
+const IG_QUESTIONS = [
+  "Would you have survived this? Tell us why 👇",
+  "Which fact shocked you the most? 👇",
+  "Could you live like this for one day? Be honest 👇",
+  "What era should we time-travel to next? 👇",
+  "Did you know this before watching? 👇",
+  "True or false: you could handle this life 👇",
+];
+
+const IG_CTAS = [
+  "Follow @adaybackthenofficial for daily history deep-dives!",
+  "🔔 Follow @adaybackthenofficial — a new time trip every day!",
+  "👉 Follow @adaybackthenofficial for your daily trip back in time!",
+];
+
+function pickBySlug(arr, slug) {
+  let h = 0;
+  for (const ch of String(slug)) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  return arr[h % arr.length];
+}
+
 export function buildInstagramCaption(script, slug) {
   // Extract hook and first dialogue lines
   const rawHook = script.hook || script.title || "";
@@ -54,7 +75,7 @@ export function buildInstagramCaption(script, slug) {
   // Natural commentary body
   const body = script.description || firstLines;
 
-  // Era-specific authentic hashtags (focused, high-intent, no generic spam)
+  // Era-specific authentic hashtags
   const tags = ["#ADayBackThen", "#history", "#ancienthistory", "#reels"];
   if (slug.includes("roman") || slug.includes("garum")) tags.push("#AncientRome", "#Pompeii", "#RomanEmpire");
   if (slug.includes("gladiator")) tags.push("#Colosseum", "#Gladiator", "#AncientRome");
@@ -67,8 +88,8 @@ export function buildInstagramCaption(script, slug) {
   if (slug.includes("victorian")) tags.push("#VictorianEra", "#LondonHistory");
   if (slug.includes("wwii")) tags.push("#WW2History", "#HistoryTok");
 
-  // Engaging question to drive comments naturally
-  const question = script.question || "Would you have survived a week living like this?";
+  const question = pickBySlug(IG_QUESTIONS, slug);
+  const cta = pickBySlug(IG_CTAS, slug);
 
   return [
     cleanHook,
@@ -77,7 +98,7 @@ export function buildInstagramCaption(script, slug) {
     "",
     `💬 ${question}`,
     "",
-    "Follow @adaybackthenofficial for daily animated history deep-dives.",
+    cta,
     "",
     Array.from(new Set(tags)).join(" ")
   ].filter(Boolean).join("\n");

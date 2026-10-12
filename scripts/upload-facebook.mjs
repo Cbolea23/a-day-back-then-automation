@@ -54,19 +54,45 @@ export function buildReelCaption(script, slug) {
   if (slug.includes("ottoman")) hashtags.push("#ottoman");
 
   const tagString = Array.from(new Set(hashtags)).slice(0, 6).join(" ");
-  const cta = "👉 Follow A Day Back Then for daily history!";
+  const cta = pickBySlug(CTAS_FB, slug);
+  const question = pickBySlug(QUESTIONS, slug);
 
-  let full = `${hook}\n\n${cta}\n\n${tagString}`;
+  let body = "";
   const firstScene = script.scenes && script.scenes[0] ? script.scenes[0].text : "";
-  if (firstScene && (hook.length + firstScene.length + cta.length + tagString.length + 8) <= 380) {
-    full = `${hook}\n\n${firstScene}\n\n${cta}\n\n${tagString}`;
+  if (firstScene && (hook.length + firstScene.length) <= 220) {
+    body = `\n\n${firstScene}`;
   }
+
+  let full = `${hook}${body}\n\n💬 ${question}\n\n${cta}\n\n${tagString}`;
 
   // Ensure strict compliance with Facebook's 10-400 character requirement
   if (full.length > 390) {
     full = full.slice(0, 385) + "...";
   }
   return full;
+}
+
+// Rotating engagement questions and CTAs so 90+ scheduled posts don't read
+// identically. Deterministic per slug so a caption never changes between runs.
+const QUESTIONS = [
+  "Would you have survived this? Tell us why 👇",
+  "Which fact shocked you the most? 👇",
+  "Could you live like this for one day? Be honest 👇",
+  "What era should we time-travel to next? 👇",
+  "Did you know this before watching? 👇",
+  "True or false: you could handle this life 👇",
+];
+
+const CTAS_FB = [
+  "👉 Follow A Day Back Then for daily history!",
+  "🔔 Follow A Day Back Then — a new time trip every day!",
+  "👉 Follow for your daily trip back in time!",
+];
+
+export function pickBySlug(arr, slug) {
+  let h = 0;
+  for (const ch of String(slug)) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  return arr[h % arr.length];
 }
 
 export async function uploadReel(slug, options = {}) {

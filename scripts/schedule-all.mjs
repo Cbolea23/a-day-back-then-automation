@@ -3,7 +3,9 @@
  * Master Cross-Platform Scheduler
  * 
  * Schedules Shorts across Facebook Reels and YouTube Shorts
- * spaced out 2-3 per day at peak hours (11:00 AM, 5:00 PM, 9:00 PM UTC+8).
+ * spaced out 2-3 per day at peak hours (11:00 AM, 5:00 PM, 9:00 PM UTC+8),
+ * starting October 12, 2026 through October 23, 2026 (expansion batch takes
+ * over on October 24).
  * 
  * Usage:
  *   node scripts/schedule-all.mjs [--dry-run]
@@ -64,15 +66,26 @@ console.log(`Scheduling ${BATCH_SLUGS.length} Shorts for cross-platform release.
 // Slot 3: 09:00 PM UTC+8 -> 13:00 UTC
 const SLOTS_UTC_HOURS = [3, 9, 13];
 
-// Start scheduling starting Oct 16, 2026 (right after existing scheduled videos through Oct 15)
-const startDate = new Date(Date.UTC(2026, 9, 16, 0, 0, 0)); // Note: month 9 = October in JS 0-indexed months
+// Start scheduling starting Oct 12, 2026 (today) so the page posts daily
+// with no gap before the expansion batch takes over on Oct 24.
+const startDate = new Date(Date.UTC(2026, 9, 12, 0, 0, 0)); // month 9 = October: start today so the page posts daily with no gap before the expansion batch
+
+// Guard: videos that finish rendering after their slot passed must never be
+// scheduled in the past — publish them ASAP instead, spread ~1h apart.
+let asapOffsetMs = 10 * 60 * 1000;
+function resolveTargetDate(planned) {
+  if (planned.getTime() > Date.now() - 60000) return planned;
+  const target = new Date(Date.now() + asapOffsetMs);
+  asapOffsetMs += 65 * 60 * 1000;
+  return target;
+}
 
 const schedulePlan = [];
 let dayOffset = 0;
 let slotIndex = 0;
 
 for (const slug of BATCH_SLUGS) {
-  const targetDate = new Date(Date.UTC(
+  const planned = new Date(Date.UTC(
     startDate.getUTCFullYear(),
     startDate.getUTCMonth(),
     startDate.getUTCDate() + dayOffset,
@@ -80,6 +93,7 @@ for (const slug of BATCH_SLUGS) {
     0,
     0
   ));
+  const targetDate = resolveTargetDate(planned);
 
   schedulePlan.push({
     slug,

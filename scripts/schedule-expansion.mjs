@@ -7,7 +7,8 @@
  *   - Slot 1: 11:00 AM UTC+8 (03:00 UTC)
  *   - Slot 2: 05:00 PM UTC+8 (09:00 UTC)
  *   - Slot 3: 09:00 PM UTC+8 (13:00 UTC)
- * Starting October 28, 2026 onwards through late November 2026.
+ * Starting October 24, 2026 onwards through late November 2026
+ * (right after the foundational batch completes on Oct 23).
  * 
  * Usage:
  *   node scripts/schedule-expansion.mjs [--dry-run]
@@ -28,15 +29,25 @@ const isDryRun = process.argv.includes("--dry-run");
 // Slot 3: 09:00 PM UTC+8 -> 13:00 UTC
 const SLOTS_UTC_HOURS = [3, 9, 13];
 
-// Start scheduling on October 28, 2026 (right after foundational batch completes on Oct 27)
-const startDate = new Date(Date.UTC(2026, 9, 28, 0, 0, 0)); // month 9 = October
+// Start scheduling on October 24, 2026 (right after foundational batch completes on Oct 23)
+const startDate = new Date(Date.UTC(2026, 9, 24, 0, 0, 0)); // month 9 = October: right after the foundational batch completes on Oct 23
+
+// Guard: videos that finish rendering after their slot passed must never be
+// scheduled in the past — publish them ASAP instead, spread ~1h apart.
+let asapOffsetMs = 10 * 60 * 1000;
+function resolveTargetDate(planned) {
+  if (planned.getTime() > Date.now() - 60000) return planned;
+  const target = new Date(Date.now() + asapOffsetMs);
+  asapOffsetMs += 65 * 60 * 1000;
+  return target;
+}
 
 const schedulePlan = [];
 let dayOffset = 0;
 let slotIndex = 0;
 
 for (const slug of ALL_EXPANSION_SLUGS) {
-  const targetDate = new Date(Date.UTC(
+  const planned = new Date(Date.UTC(
     startDate.getUTCFullYear(),
     startDate.getUTCMonth(),
     startDate.getUTCDate() + dayOffset,
@@ -44,6 +55,7 @@ for (const slug of ALL_EXPANSION_SLUGS) {
     0,
     0
   ));
+  const targetDate = resolveTargetDate(planned);
 
   schedulePlan.push({
     slug,
