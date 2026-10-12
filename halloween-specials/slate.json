@@ -1,0 +1,190 @@
+{
+  "project": "Halloween Specials 2026",
+  "rule": "3 shorts per day, Oct 23 - Nov 3 (12 days = 36 shorts). User handles all posting/scheduling. Assistant produces everything.",
+  "shorts": [
+    {
+      "day": "2026-10-23",
+      "slug": "halloween-history-short",
+      "status": "done",
+      "title": "Halloween Wasn't Invented for Fun"
+    },
+    {
+      "day": "2026-10-23",
+      "slug": "samhain-night",
+      "title": "The Night the Dead Came Back",
+      "status": "done"
+    },
+    {
+      "day": "2026-10-23",
+      "slug": "banshee",
+      "title": "The Banshee: Ireland's Death Omen",
+      "status": "done"
+    },
+    {
+      "day": "2026-10-24",
+      "slug": "vlad-impaler",
+      "title": "Vlad the Impaler: The Real Dracula",
+      "status": "done"
+    },
+    {
+      "day": "2026-10-24",
+      "slug": "witch-finder",
+      "title": "The Witch Finder General"
+    },
+    {
+      "day": "2026-10-24",
+      "slug": "tower-ghosts",
+      "title": "The Ghosts of the Tower of London"
+    },
+    {
+      "day": "2026-10-25",
+      "slug": "plague-doctor-short",
+      "title": "The Truth About Plague Doctors"
+    },
+    {
+      "day": "2026-10-25",
+      "slug": "dancing-plague",
+      "title": "The Dancing Plague of 1518"
+    },
+    {
+      "day": "2026-10-25",
+      "slug": "body-snatchers",
+      "title": "The Body Snatchers"
+    },
+    {
+      "day": "2026-10-26",
+      "slug": "taphophobia",
+      "title": "Buried Alive: The Fear That Built Safety Coffins"
+    },
+    {
+      "day": "2026-10-26",
+      "slug": "catacombs-paris",
+      "title": "Beneath Paris: Empire of Death"
+    },
+    {
+      "day": "2026-10-26",
+      "slug": "bathory",
+      "title": "Elizabeth Bathory: The Blood Countess"
+    },
+    {
+      "day": "2026-10-27",
+      "slug": "beast-gevaudan",
+      "title": "The Beast of Gevaudan"
+    },
+    {
+      "day": "2026-10-27",
+      "slug": "werewolf-trials",
+      "title": "The Werewolf Trials"
+    },
+    {
+      "day": "2026-10-27",
+      "slug": "krampus",
+      "title": "Krampus: The Dark Side of Christmas"
+    },
+    {
+      "day": "2026-10-28",
+      "slug": "headless-horseman",
+      "title": "The True Story of the Headless Horseman"
+    },
+    {
+      "day": "2026-10-28",
+      "slug": "bell-witch",
+      "title": "The Bell Witch Haunting"
+    },
+    {
+      "day": "2026-10-28",
+      "slug": "flying-dutchman",
+      "title": "The Flying Dutchman"
+    },
+    {
+      "day": "2026-10-29",
+      "slug": "spring-heeled-jack",
+      "title": "Spring-Heeled Jack: London's Demon"
+    },
+    {
+      "day": "2026-10-29",
+      "slug": "jack-ripper-short",
+      "title": "Jack the Ripper: What We Actually Know"
+    },
+    {
+      "day": "2026-10-29",
+      "slug": "green-children",
+      "title": "The Green Children of Woolpit"
+    },
+    {
+      "day": "2026-10-30",
+      "slug": "tollund-man",
+      "title": "The Tollund Man: A 2,400-Year-Old Murder Mystery"
+    },
+    {
+      "day": "2026-10-30",
+      "slug": "sin-eaters",
+      "title": "The Sin Eaters"
+    },
+    {
+      "day": "2026-10-30",
+      "slug": "corpse-roads",
+      "title": "The Corpse Roads"
+    },
+    {
+      "day": "2026-10-31",
+      "slug": "vampire-panics",
+      "title": "The Real Vampire Panics of 1725"
+    },
+    {
+      "day": "2026-10-31",
+      "slug": "salem-witches",
+      "title": "What Really Happened at Salem"
+    },
+    {
+      "day": "2026-10-31",
+      "slug": "black-death-night",
+      "title": "A Night During the Black Death"
+    },
+    {
+      "day": "2026-11-01",
+      "slug": "mirror-veil",
+      "title": "Why Mirrors Were Covered for the Dead"
+    },
+    {
+      "day": "2026-11-01",
+      "slug": "mummy-parties",
+      "title": "The Victorians Who Ate Mummies"
+    },
+    {
+      "day": "2026-11-01",
+      "slug": "london-fire",
+      "title": "The Great Fire of London"
+    },
+    {
+      "day": "2026-11-02",
+      "slug": "pompeii-short",
+      "title": "Pompeii: The Day the Sky Turned Black"
+    },
+    {
+      "day": "2026-11-02",
+      "slug": "llorona",
+      "title": "La Llorona: The Weeping Woman"
+    },
+    {
+      "day": "2026-11-02",
+      "slug": "loudun",
+      "title": "The Possessed Nuns of Loudun"
+    },
+    {
+      "day": "2026-11-03",
+      "slug": "goldi",
+      "title": "The Last Witch of Europe"
+    },
+    {
+      "day": "2026-11-03",
+      "slug": "edinburgh-vaults",
+      "title": "The Haunted Vaults of Edinburgh"
+    },
+    {
+      "day": "2026-11-03",
+      "slug": "executioner",
+      "title": "Why Executioners Wore Masks"
+    }
+  ]
+}

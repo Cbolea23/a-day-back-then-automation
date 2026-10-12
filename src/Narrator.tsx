@@ -29,7 +29,18 @@ export type CharacterTheme =
   | "pirate"
   | "victorian"
   | "wwii"
-  | "ottoman";
+  | "ottoman"
+  | "witch"
+  | "vampire"
+  | "werewolf"
+  | "ghost"
+  | "krampus"
+  | "executioner"
+  | "druid"
+  | "mummy"
+  | "gravedigger"
+  | "nun"
+  | "demon";
 
 export function getThemeFromSlug(slug: string = ""): CharacterTheme {
   const s = slug.toLowerCase();
@@ -112,6 +123,63 @@ export function getThemeFromSlug(slug: string = ""): CharacterTheme {
     return "knight";
   }
   if (s.includes("plague")) {
+    return "plague-doctor";
+  }
+  // ---- Halloween Specials 2026: the narrator dresses for the topic ----
+  const HWEEN: Record<string, CharacterTheme> = {
+    "halloween-history-short": "plague-doctor",
+    "samhain-night": "druid",
+    "banshee": "ghost",
+    "vlad-impaler": "vampire",
+    "witch-finder": "witch",
+    "tower-ghosts": "ghost",
+    "plague-doctor-short": "plague-doctor",
+    "dancing-plague": "plague-doctor",
+    "body-snatchers": "gravedigger",
+    "taphophobia": "victorian",
+    "catacombs-paris": "gravedigger",
+    "bathory": "vampire",
+    "beast-gevaudan": "werewolf",
+    "werewolf-trials": "werewolf",
+    "krampus": "krampus",
+    "headless-horseman": "ghost",
+    "bell-witch": "witch",
+    "flying-dutchman": "pirate",
+    "spring-heeled-jack": "demon",
+    "jack-ripper-short": "victorian",
+    "green-children": "medieval",
+    "tollund-man": "druid",
+    "sin-eaters": "medieval",
+    "corpse-roads": "gravedigger",
+    "vampire-panics": "vampire",
+    "salem-witches": "witch",
+    "black-death-night": "plague-doctor",
+    "mirror-veil": "victorian",
+    "mummy-parties": "mummy",
+    "london-fire": "victorian",
+    "pompeii-short": "roman",
+    "llorona": "ghost",
+    "loudun": "nun",
+    "goldi": "witch",
+    "edinburgh-vaults": "victorian",
+    "executioner": "executioner",
+  };
+  if (HWEEN[s]) {
+    return HWEEN[s];
+  }
+  if (s.includes("witch")) {
+    return "witch";
+  }
+  if (s.includes("vampire")) {
+    return "vampire";
+  }
+  if (s.includes("werewolf")) {
+    return "werewolf";
+  }
+  if (s.includes("ghost")) {
+    return "ghost";
+  }
+  if (s.includes("halloween") || s.includes("haunt")) {
     return "plague-doctor";
   }
   if (
@@ -494,6 +562,7 @@ const Brows: React.FC<{expression: Expression}> = ({expression}) => {
     sad: [117, 66, 128, 70, 139, 68],
     surprise: [115, 60, 128, 56, 141, 60],
     thoughtful: [117, 70, 128, 66, 139, 70],
+    spooked: [117, 66, 128, 60, 139, 53],
   };
   const right: Record<Expression, [number, number, number, number, number, number]> = {
     neutral: [161, 70, 172, 66, 183, 70],
@@ -503,6 +572,7 @@ const Brows: React.FC<{expression: Expression}> = ({expression}) => {
     sad: [161, 68, 172, 70, 183, 66],
     surprise: [159, 60, 172, 56, 185, 60],
     thoughtful: [161, 62, 172, 58, 183, 62],
+    spooked: [161, 53, 172, 60, 183, 66],
   };
   const L = left[expression];
   const R = right[expression];
@@ -655,6 +725,8 @@ const NarratorBody: React.FC<BodyProps> = ({
   // Life, not randomness: breathing is always on but subtle; gesture-specific
   // motion only plays while its gesture is active.
   const breath = Math.sin(frame / 26) * 2.5;
+  // Horror-story shiver: a fast, subtle tremble while spooked.
+  const shiverX = expression === "spooked" ? Math.sin(frame / 2.1) * 2.4 : 0;
   const p = {...resolvedPose};
   if (activeGesture === "explain") {
     const m = Math.sin(frame / 9) * 7;
@@ -716,13 +788,17 @@ const NarratorBody: React.FC<BodyProps> = ({
   const eyeScaleY =
     interpolate(blinkT, [0, 4, 8], [1, 0.1, 1], {
       extrapolateRight: "clamp",
-    }) * (expression === "surprise" ? 1.2 : 1);
+    }) * (expression === "surprise" ? 1.2 : expression === "spooked" ? 1.35 : 1);
 
   const skin =
     theme === "egypt"
       ? SKIN_EGYPT
       : theme === "mesoamerica"
       ? SKIN_MESOAMERICA
+      : theme === "ghost"
+      ? "#eef1f7"
+      : theme === "vampire"
+      ? "#f2e7de"
       : SKIN;
   const talking = mouthOpen > 0.06;
 
@@ -750,7 +826,7 @@ const NarratorBody: React.FC<BodyProps> = ({
       height={height}
       style={{
         overflow: "visible",
-        transform: `translateX(${p.shiftX}px) translateY(${breath}px) rotate(${p.lean}deg)`,
+        transform: `translateX(${p.shiftX + shiverX}px) translateY(${breath}px) rotate(${p.lean}deg)`,
         transformOrigin: "50% 100%",
       }}
     >
@@ -799,7 +875,7 @@ const NarratorBody: React.FC<BodyProps> = ({
           <path d="M100 558 L128 558 L126 580 L94 580 Z" fill="#2b2d38" stroke={INK} strokeWidth="4" />
           <path d="M172 558 L200 558 L206 580 L174 580 Z" fill="#2b2d38" stroke={INK} strokeWidth="4" />
         </>
-      ) : theme === "viking" || theme === "knight" || theme === "medieval" ? (
+      ) : theme === "viking" || theme === "knight" || theme === "medieval" || theme === "druid" ? (
         <>
           <line x1="125" y1="400" x2="120" y2="570" stroke={INK} strokeWidth="11" strokeLinecap="round" />
           <line x1="175" y1="400" x2="180" y2="570" stroke={INK} strokeWidth="11" strokeLinecap="round" />
@@ -866,6 +942,77 @@ const NarratorBody: React.FC<BodyProps> = ({
           {/* Pointed Turkish shoes */}
           <path d="M96 558 L128 558 L124 580 L86 578 Q90 568 96 558 Z" fill="#4a2916" stroke={INK} strokeWidth="4" />
           <path d="M172 558 L204 558 Q210 568 214 578 L176 580 L172 558 Z" fill="#4a2916" stroke={INK} strokeWidth="4" />
+        </>
+      ) : theme === "witch" ? (
+        <>
+          <line x1="125" y1="400" x2="120" y2="560" stroke={INK} strokeWidth="10" strokeLinecap="round" />
+          <line x1="175" y1="400" x2="180" y2="560" stroke={INK} strokeWidth="10" strokeLinecap="round" />
+          {/* Striped witch stockings */}
+          {[0, 1, 2, 3].map((i) => (
+            <g key={i}>
+              <line x1="117" y1={430 + i * 32} x2="127" y2={430 + i * 32} stroke="#7a3fa0" strokeWidth="13" />
+              <line x1="173" y1={430 + i * 32} x2="183" y2={430 + i * 32} stroke="#7a3fa0" strokeWidth="13" />
+            </g>
+          ))}
+          {/* Pointy witch boots */}
+          <path d="M98 548 L132 548 L130 580 L86 580 Q92 562 98 548 Z" fill="#141114" stroke={INK} strokeWidth="4" />
+          <path d="M168 548 L202 548 Q208 562 214 580 L170 580 L168 548 Z" fill="#141114" stroke={INK} strokeWidth="4" />
+        </>
+      ) : theme === "vampire" || theme === "executioner" || theme === "demon" ? (
+        <>
+          <line x1="125" y1="400" x2="120" y2="570" stroke={INK} strokeWidth="11" strokeLinecap="round" />
+          <line x1="175" y1="400" x2="180" y2="570" stroke={INK} strokeWidth="11" strokeLinecap="round" />
+          {/* Black formal trousers + boots */}
+          <path d="M100 556 L130 556 L128 580 L92 580 Z" fill="#161316" stroke={INK} strokeWidth="4" />
+          <path d="M170 556 L200 556 L208 580 L172 580 Z" fill="#161316" stroke={INK} strokeWidth="4" />
+        </>
+      ) : theme === "werewolf" ? (
+        <>
+          {/* Shaggy fur legs */}
+          <path d="M118 400 Q112 480 116 565 L142 565 Q146 480 140 400 Z" fill="#5a3d22" stroke={INK} strokeWidth="5" />
+          <path d="M160 400 Q154 480 158 565 L184 565 Q188 480 182 400 Z" fill="#5a3d22" stroke={INK} strokeWidth="5" />
+          <path d="M122 440 L136 448 M160 440 L174 448 M122 500 L136 508 M160 500 L174 508" stroke="#3d2a16" strokeWidth="3" />
+          {/* Clawed wolf feet */}
+          <path d="M96 556 L140 556 L138 580 L90 580 Z" fill="#3d2a16" stroke={INK} strokeWidth="4" />
+          <path d="M160 556 L204 556 L210 580 L162 580 Z" fill="#3d2a16" stroke={INK} strokeWidth="4" />
+          <path d="M100 580 L94 590 M118 580 L116 591 M182 580 L184 591 M200 580 L206 590" stroke={INK} strokeWidth="3" strokeLinecap="round" />
+        </>
+      ) : theme === "krampus" ? (
+        <>
+          {/* Bent goat legs */}
+          <path d="M125 400 Q100 470 118 520 Q130 545 122 565" fill="none" stroke="#2b1c12" strokeWidth="14" strokeLinecap="round" />
+          <path d="M175 400 Q200 470 182 520 Q170 545 178 565" fill="none" stroke="#2b1c12" strokeWidth="14" strokeLinecap="round" />
+          <path d="M112 430 L128 436 M188 430 L172 436 M116 470 L130 476 M184 470 L170 476" stroke="#17100a" strokeWidth="3" />
+          {/* Cloven hooves */}
+          <path d="M104 556 L140 556 L138 580 L100 580 Z" fill="#0f0b08" stroke={INK} strokeWidth="4" />
+          <path d="M160 556 L196 556 L200 580 L162 580 Z" fill="#0f0b08" stroke={INK} strokeWidth="4" />
+          <line x1="120" y1="558" x2="120" y2="580" stroke={INK} strokeWidth="3" />
+          <line x1="180" y1="558" x2="180" y2="580" stroke={INK} strokeWidth="3" />
+        </>
+      ) : theme === "mummy" ? (
+        <>
+          {/* Bandage-wrapped legs */}
+          <line x1="125" y1="400" x2="120" y2="565" stroke="#d9cfbe" strokeWidth="16" strokeLinecap="round" />
+          <line x1="175" y1="400" x2="180" y2="565" stroke="#d9cfbe" strokeWidth="16" strokeLinecap="round" />
+          {[0, 1, 2, 3].map((i) => (
+            <g key={i}>
+              <line x1="112" y1={430 + i * 36} x2="132" y2={442 + i * 36} stroke="#b8ab93" strokeWidth="3" />
+              <line x1="188" y1={430 + i * 36} x2="168" y2={442 + i * 36} stroke="#b8ab93" strokeWidth="3" />
+            </g>
+          ))}
+          {/* Wrapped feet */}
+          <path d="M100 556 L130 556 L128 580 L94 580 Z" fill="#cfc3ad" stroke={INK} strokeWidth="4" />
+          <path d="M170 556 L200 556 L206 580 L172 580 Z" fill="#cfc3ad" stroke={INK} strokeWidth="4" />
+        </>
+      ) : theme === "ghost" || theme === "nun" ? (
+        <>{/* Robe/sheet covers the legs entirely */}</>
+      ) : theme === "gravedigger" ? (
+        <>
+          <line x1="125" y1="400" x2="120" y2="570" stroke={INK} strokeWidth="10" strokeLinecap="round" />
+          <line x1="175" y1="400" x2="180" y2="570" stroke={INK} strokeWidth="10" strokeLinecap="round" />
+          {/* Undertaker boots */}
+          <path d="M98 554 L130 554 L128 580 L92 580 Z" fill="#1d1a1a" stroke={INK} strokeWidth="4" />
+          <path d="M170 554 L202 554 L208 580 L172 580 Z" fill="#1d1a1a" stroke={INK} strokeWidth="4" />
         </>
       ) : (
         <>
@@ -1069,6 +1216,158 @@ const NarratorBody: React.FC<BodyProps> = ({
           <rect x="76" y="270" width="148" height="30" rx="3" fill="#9e1e1e" stroke={INK} strokeWidth="4" />
           <line x1="76" y1="280" x2="224" y2="280" stroke="#d4af37" strokeWidth="3" />
           <line x1="76" y1="290" x2="224" y2="290" stroke="#d4af37" strokeWidth="3" />
+        </>
+      ) : theme === "witch" ? (
+        <>
+          {/* Tattered cape behind */}
+          <path d="M70 180 Q40 300 55 430 L90 400 Q80 300 92 200 Z" fill="#2a1430" stroke={INK} strokeWidth="4" />
+          <path d="M230 180 Q260 300 245 430 L210 400 Q220 300 208 200 Z" fill="#2a1430" stroke={INK} strokeWidth="4" />
+          {/* Black witch dress with jagged hem */}
+          <path d="M96 168 Q150 152 204 168 L222 380 L205 395 L190 378 L172 396 L155 380 L138 396 L120 380 L105 394 L88 378 L72 392 Z" fill="#1b141f" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Purple corset with laces */}
+          <path d="M118 200 L182 200 L176 320 L124 320 Z" fill="#5b2d86" stroke={INK} strokeWidth="4" />
+          <path d="M138 210 L138 310 M150 210 L150 310 M162 210 L162 310" stroke="#3a1c58" strokeWidth="3" />
+          <path d="M138 230 L162 240 M162 255 L138 265 M138 280 L162 290" stroke="#d9b8f0" strokeWidth="2.5" />
+          {/* Moon brooch */}
+          <path d="M150 340 A14 14 0 1 0 150 368 A11 11 0 1 1 150 340" fill="#e8d44d" stroke={INK} strokeWidth="3" />
+        </>
+      ) : theme === "vampire" ? (
+        <>
+          {/* Bat-wing high collar behind the head */}
+          <path d="M96 175 Q60 120 45 60 Q90 90 110 160 Z" fill="#141114" stroke={INK} strokeWidth="5" strokeLinejoin="round" />
+          <path d="M204 175 Q240 120 255 60 Q210 90 190 160 Z" fill="#141114" stroke={INK} strokeWidth="5" strokeLinejoin="round" />
+          <path d="M96 175 Q60 120 45 60 Q75 95 100 165 Z" fill="#7a1010" />
+          <path d="M204 175 Q240 120 255 60 Q225 95 200 165 Z" fill="#7a1010" />
+          {/* Black tailcoat torso */}
+          <path d="M96 168 Q150 152 204 168 L228 410 Q150 430 72 410 Z" fill="#181419" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Satin lapels */}
+          <path d="M150 175 L120 175 L142 300 L150 320 L158 300 L180 175 L150 175 Z" fill="#0c0a0d" stroke={INK} strokeWidth="3" />
+          {/* Red shirt front + cravat */}
+          <path d="M138 175 L162 175 L158 320 L150 340 L142 320 Z" fill="#8f1212" stroke={INK} strokeWidth="3" />
+          <ellipse cx="150" cy="200" rx="14" ry="18" fill="#5c0c0c" stroke={INK} strokeWidth="3" />
+          {/* Medallion */}
+          <circle cx="150" cy="330" r="10" fill="#c9a227" stroke={INK} strokeWidth="3" />
+          <circle cx="150" cy="330" r="4" fill="#7a1010" />
+        </>
+      ) : theme === "werewolf" ? (
+        <>
+          {/* Torn dark shirt */}
+          <path d="M96 168 Q150 152 204 168 L228 410 Q150 430 72 410 Z" fill="#4d4438" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Torn slashes revealing fur */}
+          <path d="M120 220 L170 250 L125 275 Z" fill="#5a3d22" stroke={INK} strokeWidth="3" />
+          <path d="M180 300 L135 330 L175 355 Z" fill="#5a3d22" stroke={INK} strokeWidth="3" />
+          <path d="M115 350 L150 365 L120 390 Z" fill="#5a3d22" stroke={INK} strokeWidth="3" />
+          {/* Shaggy fur ruff at neck */}
+          <path d="M100 175 L115 150 L128 172 L142 148 L155 172 L170 148 L182 172 L196 152 L200 178 Q150 195 100 178 Z" fill="#5a3d22" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
+        </>
+      ) : theme === "ghost" ? (
+        <>
+          {/* Flowing sheet from shoulders to the ground */}
+          <path d="M80 175 Q150 145 220 175 Q238 350 232 555 Q210 572 190 556 Q172 572 150 558 Q128 572 108 557 Q88 572 68 556 Q62 350 80 175 Z" fill="#f2f4fa" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Sheet folds */}
+          <path d="M120 220 Q112 350 118 520" stroke="#c9d2e4" strokeWidth="4" fill="none" />
+          <path d="M180 220 Q188 350 182 520" stroke="#c9d2e4" strokeWidth="4" fill="none" />
+          <path d="M150 250 Q148 380 150 540" stroke="#c9d2e4" strokeWidth="3" fill="none" />
+          {/* Faint blue shroud glow patches */}
+          <ellipse cx="105" cy="420" rx="18" ry="40" fill="#dfe7f5" opacity="0.7" />
+          <ellipse cx="195" cy="430" rx="16" ry="36" fill="#dfe7f5" opacity="0.7" />
+        </>
+      ) : theme === "krampus" ? (
+        <>
+          {/* Dark fur torso */}
+          <path d="M96 168 Q150 152 204 168 L228 410 Q150 430 72 410 Z" fill="#2b1c12" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          <path d="M110 200 L125 230 M190 200 L175 230 M110 300 L130 320 M190 300 L170 320 M130 360 L145 380 M170 360 L155 380" stroke="#17100a" strokeWidth="3" />
+          {/* Iron chain belt */}
+          {[0, 1, 2, 3, 4, 5].map((i) => (
+            <ellipse key={i} cx={95 + i * 22} cy={285 + (i % 2) * 6} rx="11" ry="8" fill="none" stroke="#6e6e78" strokeWidth="5" />
+          ))}
+          {/* Belt bell */}
+          <circle cx="150" cy="310" r="12" fill="#c9a227" stroke={INK} strokeWidth="4" />
+          <line x1="150" y1="318" x2="150" y2="326" stroke={INK} strokeWidth="3" />
+        </>
+      ) : theme === "executioner" ? (
+        <>
+          {/* Black tunic */}
+          <path d="M96 168 Q150 152 204 168 L228 410 Q150 430 72 410 Z" fill="#1e1b20" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Leather baldric strap */}
+          <path d="M108 168 L196 330 L182 342 L94 180 Z" fill="#5c3a1e" stroke={INK} strokeWidth="4" />
+          {/* Wide belt */}
+          <rect x="80" y="290" width="140" height="20" rx="4" fill="#3a2a18" stroke={INK} strokeWidth="4" />
+          <rect x="140" y="286" width="20" height="28" rx="3" fill="#8a8f96" stroke={INK} strokeWidth="3" />
+          {/* Hood drape over shoulders */}
+          <path d="M92 175 Q70 220 78 280 Q95 250 100 200 Z" fill="#141216" stroke={INK} strokeWidth="4" />
+          <path d="M208 175 Q230 220 222 280 Q205 250 200 200 Z" fill="#141216" stroke={INK} strokeWidth="4" />
+        </>
+      ) : theme === "druid" ? (
+        <>
+          {/* Earthy hooded robe */}
+          <path d="M96 168 Q150 152 204 168 L228 410 Q150 430 72 410 Z" fill="#4a5a3a" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Rope belt */}
+          <path d="M84 290 Q150 305 216 290" stroke="#a6813b" strokeWidth="8" fill="none" />
+          <path d="M140 296 L138 330 M160 296 L162 330" stroke="#a6813b" strokeWidth="5" />
+          {/* Oak leaf sprigs */}
+          <ellipse cx="115" cy="220" rx="10" ry="5" fill="#6e8c3f" stroke={INK} strokeWidth="2" transform="rotate(-30 115 220)" />
+          <ellipse cx="130" cy="235" rx="10" ry="5" fill="#7fa04c" stroke={INK} strokeWidth="2" transform="rotate(20 130 235)" />
+          <ellipse cx="185" cy="220" rx="10" ry="5" fill="#6e8c3f" stroke={INK} strokeWidth="2" transform="rotate(30 185 220)" />
+          {/* Autumn berries */}
+          <circle cx="150" cy="260" r="5" fill="#a83232" stroke={INK} strokeWidth="2" />
+          <circle cx="162" cy="266" r="5" fill="#a83232" stroke={INK} strokeWidth="2" />
+          <circle cx="138" cy="266" r="5" fill="#a83232" stroke={INK} strokeWidth="2" />
+        </>
+      ) : theme === "mummy" ? (
+        <>
+          {/* Bandage-wrapped torso */}
+          <path d="M96 168 Q150 152 204 168 L228 410 Q150 430 72 410 Z" fill="#d9cfbe" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Wrap lines */}
+          <path d="M92 210 L208 230 M88 260 L212 245 M90 310 L210 330 M95 360 L205 350" stroke="#b8ab93" strokeWidth="4" fill="none" />
+          <path d="M120 180 L100 400 M180 180 L200 400" stroke="#b8ab93" strokeWidth="3" fill="none" />
+          {/* Loose hanging strip */}
+          <path d="M190 340 Q200 380 192 420 L178 418 Q186 380 178 342 Z" fill="#cfc3ad" stroke={INK} strokeWidth="3" />
+          {/* Exposed dark gap at chest */}
+          <path d="M135 240 L165 245 L160 290 L140 288 Z" fill="#3a332a" stroke={INK} strokeWidth="3" />
+        </>
+      ) : theme === "gravedigger" ? (
+        <>
+          {/* Long black undertaker coat */}
+          <path d="M96 168 Q150 152 204 168 L232 415 Q150 435 68 415 Z" fill="#191619" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* White shirt front */}
+          <path d="M132 175 L168 175 L162 340 L150 360 L138 340 Z" fill="#e8e4da" stroke={INK} strokeWidth="3" />
+          {/* Dark cravat */}
+          <path d="M142 180 L158 180 L154 230 L150 245 L146 230 Z" fill="#2c2626" stroke={INK} strokeWidth="3" />
+          {/* Coat buttons */}
+          <circle cx="112" cy="260" r="4" fill="#8a8f96" />
+          <circle cx="112" cy="300" r="4" fill="#8a8f96" />
+          <circle cx="188" cy="260" r="4" fill="#8a8f96" />
+          <circle cx="188" cy="300" r="4" fill="#8a8f96" />
+          {/* Mourning armband */}
+          <rect x="196" y="230" width="26" height="14" rx="3" fill="#0c0a0c" stroke={INK} strokeWidth="3" />
+        </>
+      ) : theme === "nun" ? (
+        <>
+          {/* Black habit to the ground */}
+          <path d="M88 170 Q150 148 212 170 Q226 360 220 572 L80 572 Q74 360 88 170 Z" fill="#1c1a1e" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* White coif collar */}
+          <path d="M118 170 Q150 195 182 170 L176 200 Q150 218 124 200 Z" fill="#ece7db" stroke={INK} strokeWidth="4" />
+          {/* Wooden rosary cross */}
+          <line x1="150" y1="280" x2="150" y2="330" stroke="#6e4a26" strokeWidth="8" strokeLinecap="round" />
+          <line x1="132" y1="300" x2="168" y2="300" stroke="#6e4a26" strokeWidth="8" strokeLinecap="round" />
+          {/* Rosary beads */}
+          <path d="M120 240 Q150 260 180 240" stroke="#2c2626" strokeWidth="3" fill="none" />
+          <circle cx="130" cy="248" r="4" fill="#3a332a" stroke={INK} strokeWidth="2" />
+          <circle cx="150" cy="253" r="4" fill="#3a332a" stroke={INK} strokeWidth="2" />
+          <circle cx="170" cy="248" r="4" fill="#3a332a" stroke={INK} strokeWidth="2" />
+        </>
+      ) : theme === "demon" ? (
+        <>
+          {/* Dark crimson robes */}
+          <path d="M96 168 Q150 152 204 168 L228 410 Q150 430 72 410 Z" fill="#3d0f0f" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Ember cracks */}
+          <path d="M120 200 L135 260 L122 300 L140 360" stroke="#e8641f" strokeWidth="4" fill="none" />
+          <path d="M180 210 L168 270 L182 310 L170 370" stroke="#e8641f" strokeWidth="4" fill="none" />
+          <circle cx="135" cy="262" r="3.5" fill="#ffb13d" />
+          <circle cx="168" cy="272" r="3.5" fill="#ffb13d" />
+          {/* Jagged collar */}
+          <path d="M100 172 L115 150 L130 170 L145 148 L160 170 L175 148 L190 170 L200 175 Q150 195 100 175 Z" fill="#200808" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
         </>
       ) : (
         <>
@@ -1317,6 +1616,116 @@ const NarratorBody: React.FC<BodyProps> = ({
             <path d="M150 2 Q182 15 186 50" stroke="#141414" strokeWidth="3.5" fill="none" />
             <ellipse cx="186" cy="52" rx="4" ry="7" fill="#141414" />
           </>
+        ) : theme === "witch" ? (
+          <>
+            {/* Tall bent witch hat */}
+            <ellipse cx="150" cy="60" rx="96" ry="16" fill="#1b141f" stroke={INK} strokeWidth="5" />
+            <path d="M104 56 Q120 -20 165 -55 Q150 -15 178 52 Q140 40 104 56 Z" fill="#241a2b" stroke={INK} strokeWidth="5" strokeLinejoin="round" />
+            <path d="M112 30 Q150 44 188 30 L186 52 Q150 64 114 52 Z" fill="#5b2d86" stroke={INK} strokeWidth="3" />
+            <circle cx="150" cy="47" r="7" fill="#e8d44d" stroke={INK} strokeWidth="3" />
+            {/* Messy black hair */}
+            <path d="M92 70 Q80 110 88 150 Q96 120 98 90 Z" fill="#141114" stroke={INK} strokeWidth="3" />
+            <path d="M208 70 Q220 110 212 150 Q204 120 202 90 Z" fill="#141114" stroke={INK} strokeWidth="3" />
+          </>
+        ) : theme === "vampire" ? (
+          <>
+            {/* Slick black widow's-peak hair */}
+            <path d="M86 92 Q82 28 150 26 Q218 28 214 92 Q200 60 186 52 Q172 44 160 58 Q150 70 140 58 Q128 44 114 52 Q100 60 86 92 Z" fill="#100d12" stroke={INK} strokeWidth="5" strokeLinejoin="round" />
+            <path d="M120 40 Q150 30 180 40" stroke="#3a3340" strokeWidth="3" fill="none" />
+            {/* Sharp sideburns */}
+            <path d="M90 85 L98 125 L88 120 Z" fill="#100d12" stroke={INK} strokeWidth="3" />
+            <path d="M210 85 L202 125 L212 120 Z" fill="#100d12" stroke={INK} strokeWidth="3" />
+          </>
+        ) : theme === "werewolf" ? (
+          <>
+            {/* Wolf ears */}
+            <path d="M96 40 L78 -8 L128 18 Z" fill="#5a3d22" stroke={INK} strokeWidth="5" strokeLinejoin="round" />
+            <path d="M204 40 L222 -8 L172 18 Z" fill="#5a3d22" stroke={INK} strokeWidth="5" strokeLinejoin="round" />
+            <path d="M100 28 L92 2 L114 20 Z" fill="#8a6a42" />
+            <path d="M200 28 L208 2 L186 20 Z" fill="#8a6a42" />
+            {/* Shaggy fur framing the face */}
+            <path d="M88 80 L70 100 L84 112 L68 128 L86 138 L92 120 Z" fill="#5a3d22" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+            <path d="M212 80 L230 100 L216 112 L232 128 L214 138 L208 120 Z" fill="#5a3d22" stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+            <path d="M100 45 Q150 20 200 45 Q150 35 100 45 Z" fill="#6e4e2c" stroke={INK} strokeWidth="3" />
+          </>
+        ) : theme === "ghost" ? (
+          <>
+            {/* Sheet hood around the face */}
+            <circle cx="150" cy="92" r="80" fill="#f2f4fa" stroke={INK} strokeWidth="5" />
+            <circle cx="150" cy="92" r="62" fill={skin} stroke={INK} strokeWidth="5" />
+            {/* Wavy sheet edge under the chin */}
+            <path d="M90 130 Q110 165 130 140 Q150 170 170 140 Q190 165 210 130 L210 155 Q190 185 170 158 Q150 190 130 158 Q110 185 90 155 Z" fill="#f2f4fa" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
+          </>
+        ) : theme === "krampus" ? (
+          <>
+            {/* Curved goat horns */}
+            <path d="M108 40 Q70 -20 55 -55 Q95 -30 118 25 Z" fill="#cfc3ad" stroke={INK} strokeWidth="5" strokeLinejoin="round" />
+            <path d="M192 40 Q230 -20 245 -55 Q205 -30 182 25 Z" fill="#cfc3ad" stroke={INK} strokeWidth="5" strokeLinejoin="round" />
+            <path d="M95 -10 Q85 -25 80 -38 M205 -10 Q215 -25 220 -38" stroke="#a89a80" strokeWidth="3" />
+            {/* Dark fur cap */}
+            <path d="M88 80 Q90 25 150 24 Q210 25 212 80 Q180 55 150 58 Q120 55 88 80 Z" fill="#2b1c12" stroke={INK} strokeWidth="5" />
+          </>
+        ) : theme === "executioner" ? (
+          <>
+            {/* Black executioner's hood */}
+            <circle cx="150" cy="92" r="68" fill="#141216" stroke={INK} strokeWidth="6" />
+            {/* Hood drape over shoulders */}
+            <path d="M88 110 Q70 160 78 210 Q95 180 100 130 Z" fill="#141216" stroke={INK} strokeWidth="4" />
+            <path d="M212 110 Q230 160 222 210 Q205 180 200 130 Z" fill="#141216" stroke={INK} strokeWidth="4" />
+            {/* Stitched seams */}
+            <path d="M150 24 L150 44 M110 34 Q120 40 132 42 M190 34 Q180 40 168 42" stroke="#3a3640" strokeWidth="3" />
+          </>
+        ) : theme === "druid" ? (
+          <>
+            {/* Brown hood around the face */}
+            <circle cx="150" cy="92" r="78" fill="#5c4526" stroke={INK} strokeWidth="5" />
+            <circle cx="150" cy="92" r="62" fill={skin} stroke={INK} strokeWidth="5" />
+            {/* Oak leaves on the hood */}
+            <ellipse cx="100" cy="40" rx="12" ry="6" fill="#6e8c3f" stroke={INK} strokeWidth="2.5" transform="rotate(-30 100 40)" />
+            <ellipse cx="200" cy="40" rx="12" ry="6" fill="#7fa04c" stroke={INK} strokeWidth="2.5" transform="rotate(30 200 40)" />
+            <ellipse cx="150" cy="18" rx="12" ry="6" fill="#6e8c3f" stroke={INK} strokeWidth="2.5" />
+            {/* Hood drape */}
+            <path d="M84 120 Q66 170 74 220 Q92 190 96 140 Z" fill="#4a3820" stroke={INK} strokeWidth="4" />
+            <path d="M216 120 Q234 170 226 220 Q208 190 204 140 Z" fill="#4a3820" stroke={INK} strokeWidth="4" />
+          </>
+        ) : theme === "mummy" ? (
+          <>
+            {/* Bandage wraps (face left clear for lipsync) */}
+            <path d="M92 30 L208 30 L206 58 L94 58 Z" fill="#d9cfbe" stroke={INK} strokeWidth="4" transform="rotate(-4 150 44)" />
+            <path d="M86 105 L116 100 L112 140 L84 145 Z" fill="#cfc3ad" stroke={INK} strokeWidth="3" />
+            <path d="M214 105 L184 100 L188 140 L216 145 Z" fill="#cfc3ad" stroke={INK} strokeWidth="3" />
+            <path d="M120 148 L180 148 L178 162 L122 162 Z" fill="#d9cfbe" stroke={INK} strokeWidth="3" />
+            {/* Loose strip fluttering */}
+            <path d="M205 45 Q230 60 235 90 L222 92 Q216 68 196 58 Z" fill="#cfc3ad" stroke={INK} strokeWidth="3" />
+          </>
+        ) : theme === "gravedigger" ? (
+          <>
+            {/* Black top hat */}
+            <ellipse cx="150" cy="58" rx="82" ry="14" fill="#141114" stroke={INK} strokeWidth="5" />
+            <path d="M112 56 L114 -6 Q150 -14 186 -6 L188 56 Q150 44 112 56 Z" fill="#1d1a1c" stroke={INK} strokeWidth="5" />
+            <path d="M112 40 Q150 52 188 40 L188 56 Q150 68 112 56 Z" fill="#0c0a0c" stroke={INK} strokeWidth="3" />
+            {/* Mourning band */}
+            <rect x="112" y="30" width="76" height="10" fill="#3a3640" />
+          </>
+        ) : theme === "nun" ? (
+          <>
+            {/* Black veil + white coif */}
+            <circle cx="150" cy="92" r="78" fill="#1c1a1e" stroke={INK} strokeWidth="5" />
+            <circle cx="150" cy="92" r="68" fill="#ece7db" stroke={INK} strokeWidth="4" />
+            <circle cx="150" cy="92" r="60" fill={skin} stroke={INK} strokeWidth="5" />
+            {/* Veil drape */}
+            <path d="M82 115 Q64 165 72 215 Q90 185 94 135 Z" fill="#1c1a1e" stroke={INK} strokeWidth="4" />
+            <path d="M218 115 Q236 165 228 215 Q210 185 206 135 Z" fill="#1c1a1e" stroke={INK} strokeWidth="4" />
+          </>
+        ) : theme === "demon" ? (
+          <>
+            {/* Small curved demon horns */}
+            <path d="M112 38 Q92 10 96 -18 Q116 2 126 30 Z" fill="#7a1a1a" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
+            <path d="M188 38 Q208 10 204 -18 Q184 2 174 30 Z" fill="#7a1a1a" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
+            {/* Dark red hair */}
+            <path d="M88 85 Q90 25 150 24 Q210 25 212 85 Q185 58 150 60 Q115 58 88 85 Z" fill="#3d0f0f" stroke={INK} strokeWidth="5" />
+            <path d="M150 24 Q155 40 150 55" stroke="#e8641f" strokeWidth="3" />
+          </>
         ) : (
           <>
             <path d="M92 78 Q150 40 208 78" stroke="#386b2d" strokeWidth="4" fill="none" />
@@ -1347,7 +1756,7 @@ const NarratorBody: React.FC<BodyProps> = ({
                   cy={88}
                   rx={8.5}
                   ry={Math.max(1.2, 9.5 * eyeScaleY)}
-                  fill="#ffffff"
+                  fill={theme === "demon" ? "#ff4030" : "#ffffff"}
                   stroke={INK}
                   strokeWidth={2.5}
                 />
@@ -1394,12 +1803,21 @@ const NarratorBody: React.FC<BodyProps> = ({
                   />
                 )}
               </g>
+            ) : expression === "spooked" ? (
+              <path d="M134 122 q4 -5 8 0 t8 0 t8 0 t8 0" stroke={INK} strokeWidth="4" fill="none" strokeLinecap="round" />
             ) : expression === "sad" ? (
               <path d="M134 126 Q150 116 166 126" stroke={INK} strokeWidth="5" fill="none" strokeLinecap="round" />
             ) : expression === "happy" ? (
               <path d="M132 116 Q150 132 168 116" stroke={INK} strokeWidth="5" fill="none" strokeLinecap="round" />
             ) : (
               <path d="M134 118 Q150 128 166 118" stroke={INK} strokeWidth="5" fill="none" strokeLinecap="round" />
+            )}
+            {/* Vampire fangs over the mouth */}
+            {theme === "vampire" && (
+              <>
+                <path d="M137 110 L148 110 L142.5 126 Z" fill="#ffffff" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+                <path d="M152 110 L163 110 L157.5 126 Z" fill="#ffffff" stroke={INK} strokeWidth="2" strokeLinejoin="round" />
+              </>
             )}
           </>
         )}

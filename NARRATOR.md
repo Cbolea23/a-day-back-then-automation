@@ -76,8 +76,21 @@ To change the acting, edit the cue word lists / priority in
 - **Draw order** (matters!): legs → torso/outfit → arms+hands → head.
   Arms and hands must stay **in front of** the torso or crossed gestures get
   swallowed. (Past bug, fixed twice — don't regress it.)
-- **Themes** (8): roman, egypt, viking, medieval, knight, plague-doctor,
-  greek, gladiator — picked by `getThemeFromSlug()`. Sleeves were tried and
+- **Themes** (26): roman, egypt, viking, medieval, knight, plague-doctor,
+  greek, gladiator, ninja, asian, mesoamerica, pirate, victorian, wwii,
+  ottoman, **witch, vampire, werewolf, ghost, krampus, executioner, druid,
+  mummy, gravedigger, nun, demon** — picked by `getThemeFromSlug()`.
+  The last 11 are the Halloween Specials 2026 cast: `getThemeFromSlug()`
+  carries an exact per-slug table (`HWEEN`) mapping all 36 Halloween slugs to
+  their costume, plus keyword fallbacks (witch/vampire/werewolf/ghost →
+  their theme, halloween/haunt → plague-doctor).
+- **Expressions** (8): neutral, happy, question, emphasis, sad, surprise,
+  thoughtful, **spooked** — the Halloween expression. `classifySentence()`
+  in `speech.ts` maps a large horror vocabulary (ghost, blood, scream,
+  haunted, terror, etc.) to `spooked`, using the hands-up `surprise` pose.
+  Rendered as fear brows (inner ends raised), 1.35x widened eyes, a wavy
+  trembling mouth when not talking, and a fast subtle body shiver
+  (`shiverX = sin(frame/2.1) * 2.4` on the body transform). Sleeves were tried and
   **removed by user request** — keep the arms as clean sticks; don't re-add
   sleeves without asking. Gladiator keeps a pose-following bronze manica on
   the right forearm; egypt keeps gold wrist cuffs.

@@ -116,7 +116,7 @@ async function edgeSynth(text, outPath, overrides = {}) {
     for (let attempt = 1; attempt <= 3; attempt++) {
       try {
         execFileSync(
-          "python",
+          "python3",
           ["-m", "edge_tts", "--voice", voice, `--rate=${rate}`, "--text", text, "--write-media", outPath],
           {stdio: "pipe"},
         );
