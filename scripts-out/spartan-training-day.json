@@ -1,62 +1,73 @@
 {
   "slug": "spartan-training-day",
   "title": "Growing Up in Sparta",
-  "hook": "Spartan kids never went to school.",
+  "hook": "Spartan kids didn't go to school... they were thrown into survival camp.",
   "channelName": "A Day Back Then",
   "scenes": [
     {
-      "text": "Spartan kids never went to school. You wake up on a thin straw mat at seven years old.",
+      "text": "Spartan kids never sat at a school desk. The moment you turned seven, you were ripped from your parents and thrown into the agoge.",
       "mood": "cool",
       "imagePrompt": "A minimalist, rugged stone floor in an ancient Greek courtyard.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/spartan-training-day/1.png",
       "audio": "audio/spartan-training-day/1.wav",
-      "seconds": 5.8,
-      "voicedText": "Spartan kids never went to school. You wake up on a thin straw mat at seven years old."
+      "seconds": 8.1,
+      "voicedText": "Spartan kids never sat at a school desk. The moment you turned seven, you were ripped from your parents and thrown into the agoge."
     },
     {
-      "text": "You are taken from your parents to join the agoge. It is a state-run training program.",
+      "text": "No shoes. No warm cloaks. You slept on sharp river reeds you had to rip out of the ground with your bare hands.",
       "mood": "day",
       "imagePrompt": "A dusty, sun-drenched training ground surrounded by tall stone walls.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/spartan-training-day/2.png",
       "audio": "audio/spartan-training-day/2.wav",
-      "seconds": 5.2,
-      "voicedText": "You are taken from your parents to join the agoge. It is a state-run training program."
+      "seconds": 7.4,
+      "voicedText": "No shoes. No warm cloaks. You slept on sharp river reeds you had to rip out of the ground with your bare hands."
     },
     {
-      "text": "You spend your days barefoot and hungry. The goal is to make you tough and resourceful.",
+      "text": "The state deliberately starved you so you would learn how to sneak around and steal food from farms and pantries.",
       "mood": "warm",
       "imagePrompt": "A barren, rocky landscape under a harsh, bright sun.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/spartan-training-day/3.png",
       "audio": "audio/spartan-training-day/3.wav",
-      "seconds": 5.6,
-      "voicedText": "You spend your days barefoot and hungry. The goal is to make you tough and resourceful."
+      "seconds": 6.2,
+      "voicedText": "The state deliberately starved you so you would learn how to sneak around and steal food from farms and pantries."
     },
     {
-      "text": "You are encouraged to steal food. If you get caught, you are punished—not for stealing, but for being sloppy.",
+      "text": "Stealing bread is fine, boy! Getting CAUGHT is treason! Ten laps in the dirt!",
       "mood": "day",
       "imagePrompt": "A dark, shadows-filled corner of a marketplace storage room.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/spartan-training-day/4.png",
       "audio": "audio/spartan-training-day/4.wav",
-      "seconds": 6.7,
-      "voicedText": "You are encouraged to steal food. If you get caught, you are punished—not for stealing, but for being sloppy."
+      "seconds": 5.9,
+      "voicedText": "Stealing bread is fine, boy! Getting CAUGHT is treason! Ten laps in the dirt!",
+      "speaker": "npc",
+      "speakerName": "DRILLMASTER",
+      "voice": "Fenrir",
+      "voiceStyle": "Furious, harsh Spartan military drill instructor barking discipline at a recruit.",
+      "npc": {
+        "archetype": "guard",
+        "position": "left",
+        "expression": "grumpy",
+        "speechBubble": "Ten laps in the dirt!",
+        "talking": true
+      }
     },
     {
-      "text": "Your education focuses on athletic drills and tactical endurance. You learn to read and write, but only the basics.",
+      "text": "If you got caught, you weren't beaten for stealing — you were whipped for being clumsy enough to get spotted.",
       "mood": "day",
       "imagePrompt": "Ancient stone pillars casting long, sharp shadows on the ground.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/spartan-training-day/5.png",
       "audio": "audio/spartan-training-day/5.wav",
-      "seconds": 7.6,
-      "voicedText": "Your education focuses on athletic drills and tactical endurance. You learn to read and write, but only the basics."
+      "seconds": 5.5,
+      "voicedText": "If you got caught, you weren't beaten for stealing — you were whipped for being clumsy enough to get spotted."
     },
     {
-      "text": "By adulthood, you are expected to be a lethal soldier. But did this system actually produce the best warriors in Greece?",
+      "text": "Would you have survived Sparta's brutal childhood? Tell us in the comments.",
       "mood": "cool",
       "imagePrompt": "An empty bronze helmet sitting on a weathered stone ledge.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/spartan-training-day/6.png",
       "audio": "audio/spartan-training-day/6.wav",
-      "seconds": 7.9,
-      "voicedText": "By adulthood, you are expected to be a lethal soldier. But did this system actually produce the best warriors in Greece?"
+      "seconds": 5,
+      "voicedText": "Would you have survived Sparta's brutal childhood? Tell us in the comments."
     }
   ],
   "claimsToVerify": [

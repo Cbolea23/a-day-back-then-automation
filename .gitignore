@@ -25,5 +25,9 @@ tiktok-tokens.json
 .tiktok-session/
 .facebook-session/
 published-urls-*.json
+test-*
+test.*
+sample-*.mp4
+*.tmp
 
 

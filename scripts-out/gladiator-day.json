@@ -8,7 +8,7 @@
       "text": "You wake up behind locked gates, but you are not treated like garbage.",
       "mood": "dark",
       "imagePrompt": "Cell block corridor inside a Roman ludus with stone arches, iron gate bars, and early morning light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/gladiator-day/1.jpg",
+      "image": "images/gladiator-day/1.png",
       "audio": "audio/gladiator-day/1.wav",
       "seconds": 4.3,
       "voicedText": "You wake up behind locked gates, but you are not treated like garbage."
@@ -17,7 +17,7 @@
       "text": "As an expensive investment, your training school wants to keep you alive.",
       "mood": "cool",
       "imagePrompt": "Sandy courtyard of a Roman gladiator training barracks surrounded by columned walkways. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/gladiator-day/2.jpg",
+      "image": "images/gladiator-day/2.png",
       "audio": "audio/gladiator-day/2.wav",
       "seconds": 4.3,
       "voicedText": "As an expensive investment, your training school wants to keep you alive."
@@ -26,7 +26,7 @@
       "text": "Breakfast is a thick, carb-heavy porridge made of barley and beans.",
       "mood": "warm",
       "imagePrompt": "Earthenware bowls filled with thick barley porridge on a communal wooden bench. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/gladiator-day/3.jpg",
+      "image": "images/gladiator-day/3.png",
       "audio": "audio/gladiator-day/3.wav",
       "seconds": 4.4,
       "voicedText": "Breakfast is a thick, carb-heavy porridge made of barley and beans."
@@ -35,7 +35,7 @@
       "text": "Historians know this diet built a protective layer of fat over muscle.",
       "mood": "day",
       "imagePrompt": "Sunlit gladiator training arena with wooden practice posts (palus) stuck into deep sand. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/gladiator-day/4.jpg",
+      "image": "images/gladiator-day/4.png",
       "audio": "audio/gladiator-day/4.wav",
       "seconds": 5.1,
       "voicedText": "Historians know this diet built a protective layer of fat over muscle."
@@ -44,7 +44,7 @@
       "text": "You train for hours using heavy wooden weapons, then visit school doctors.",
       "mood": "day",
       "imagePrompt": "Medical room in a Roman training school with terracotta jars, clean linen bandages, and bronze surgical tools. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/gladiator-day/5.jpg",
+      "image": "images/gladiator-day/5.png",
       "audio": "audio/gladiator-day/5.wav",
       "seconds": 5.2,
       "voicedText": "You train for hours using heavy wooden weapons, then visit school doctors."
@@ -53,7 +53,7 @@
       "text": "Gladiators got some of the finest medical care in the ancient world.",
       "mood": "warm",
       "imagePrompt": "Roman bath chamber within a ludus with steaming water basin and stone massage benches. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/gladiator-day/6.jpg",
+      "image": "images/gladiator-day/6.png",
       "audio": "audio/gladiator-day/6.wav",
       "seconds": 4.4,
       "voicedText": "Gladiators got some of the finest medical care in the ancient world."
@@ -62,7 +62,7 @@
       "text": "Today is fight day, but most matches do not end in death.",
       "mood": "day",
       "imagePrompt": "Dark stone tunnel leading out toward a blindingly bright, sunlit amphitheater arena floor. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/gladiator-day/7.jpg",
+      "image": "images/gladiator-day/7.png",
       "audio": "audio/gladiator-day/7.wav",
       "seconds": 4.2,
       "voicedText": "Today is fight day, but most matches do not end in death."
@@ -71,7 +71,7 @@
       "text": "Survive this afternoon, and you might eventually win your wooden sword.",
       "mood": "warm",
       "imagePrompt": "A single wooden training sword (rudis) resting against a weathered stone arena wall. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/gladiator-day/8.jpg",
+      "image": "images/gladiator-day/8.png",
       "audio": "audio/gladiator-day/8.wav",
       "seconds": 4.3,
       "voicedText": "Survive this afternoon, and you might eventually win your wooden sword."

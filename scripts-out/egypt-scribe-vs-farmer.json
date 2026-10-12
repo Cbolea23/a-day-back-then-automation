@@ -8,7 +8,7 @@
       "text": "Two boys wake up in the same ancient Egyptian village along the Nile.",
       "mood": "warm",
       "imagePrompt": "Mudbrick village on the banks of the green Nile River under early morning golden sunshine. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/egypt-scribe-vs-farmer/1.jpg",
+      "image": "images/egypt-scribe-vs-farmer/1.png",
       "audio": "audio/egypt-scribe-vs-farmer/1.wav",
       "seconds": 4.8,
       "voicedText": "Two boys wake up in the same ancient Egyptian village along the Nile."
@@ -17,7 +17,7 @@
       "text": "One goes to the fields, bracing his back for hours of hauling water.",
       "mood": "day",
       "imagePrompt": "Irrigation canal running through lush green wheat fields with a wooden shaduf by the riverbank. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/egypt-scribe-vs-farmer/2.jpg",
+      "image": "images/egypt-scribe-vs-farmer/2.png",
       "audio": "audio/egypt-scribe-vs-farmer/2.wav",
       "seconds": 4.7,
       "voicedText": "One goes to the fields, bracing his back for hours of hauling water."
@@ -26,7 +26,7 @@
       "text": "The other sits in school, copying texts on broken pottery under strict discipline.",
       "mood": "day",
       "imagePrompt": "Shaded temple courtyard with stacks of ostraca pottery shards and reed brushes on a woven mat. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/egypt-scribe-vs-farmer/3.jpg",
+      "image": "images/egypt-scribe-vs-farmer/3.png",
       "audio": "audio/egypt-scribe-vs-farmer/3.wav",
       "seconds": 5.6,
       "voicedText": "The other sits in school, copying texts on broken pottery under strict discipline."
@@ -35,7 +35,7 @@
       "text": "Surviving texts show teachers frequently beat students to keep them studying hard.",
       "mood": "cool",
       "imagePrompt": "Carved stone classroom portico in an ancient Egyptian temple with hieroglyphic practice tablets. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/egypt-scribe-vs-farmer/4.jpg",
+      "image": "images/egypt-scribe-vs-farmer/4.png",
       "audio": "audio/egypt-scribe-vs-farmer/4.wav",
       "seconds": 5.6,
       "voicedText": "Surviving texts show teachers frequently beat students to keep them studying hard."
@@ -44,7 +44,7 @@
       "text": "When the Nile floods, the farmer cannot farm, so the state conscripts him.",
       "mood": "day",
       "imagePrompt": "Expansive blue floodwaters covering Egyptian agricultural plains, distant palm trees on raised dikes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/egypt-scribe-vs-farmer/5.jpg",
+      "image": "images/egypt-scribe-vs-farmer/5.png",
       "audio": "audio/egypt-scribe-vs-farmer/5.wav",
       "seconds": 5,
       "voicedText": "When the Nile floods, the farmer cannot farm, so the state conscripts him."
@@ -53,7 +53,7 @@
       "text": "He hauls stone or builds dikes instead of resting at home.",
       "mood": "warm",
       "imagePrompt": "Construction ramp of packed mud and stone blocks alongside a rising sandstone monument. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/egypt-scribe-vs-farmer/6.jpg",
+      "image": "images/egypt-scribe-vs-farmer/6.png",
       "audio": "audio/egypt-scribe-vs-farmer/6.wav",
       "seconds": 3.6,
       "voicedText": "He hauls stone or builds dikes instead of resting at home."
@@ -62,7 +62,7 @@
       "text": "The scribe stays clean, calculating grain taxes and exempt from hard labor.",
       "mood": "day",
       "imagePrompt": "Papyrus rolls, inkwell with red and black pigment cakes, and rush pens resting on a wooden desk. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/egypt-scribe-vs-farmer/7.jpg",
+      "image": "images/egypt-scribe-vs-farmer/7.png",
       "audio": "audio/egypt-scribe-vs-farmer/7.wav",
       "seconds": 5.3,
       "voicedText": "The scribe stays clean, calculating grain taxes and exempt from hard labor."
@@ -71,7 +71,7 @@
       "text": "Ancient Egyptian satire texts agree: being a scribe beat farming every time.",
       "mood": "warm",
       "imagePrompt": "Sunlit Egyptian granary courtyard with limestone steps and sealed grain bins. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/egypt-scribe-vs-farmer/8.jpg",
+      "image": "images/egypt-scribe-vs-farmer/8.png",
       "audio": "audio/egypt-scribe-vs-farmer/8.wav",
       "seconds": 5.8,
       "voicedText": "Ancient Egyptian satire texts agree: being a scribe beat farming every time."

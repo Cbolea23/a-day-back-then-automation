@@ -1,62 +1,73 @@
 {
   "slug": "greek-symposium",
   "title": "The Greek Drinking Party",
-  "hook": "Party like an ancient Greek.",
+  "hook": "Ancient Greek drinking parties had one strict rule: NEVER drink wine straight.",
   "channelName": "A Day Back Then",
   "scenes": [
     {
-      "text": "You recline on a couch at a Greek symposium, the ultimate high-society drinking club.",
+      "text": "You scored an invite to an elite Greek symposium — but forget about doing keg stands.",
       "mood": "warm",
       "imagePrompt": "an ancient Greek banquet hall with stone pillars and empty wooden couches. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/greek-symposium/1.png",
       "audio": "audio/greek-symposium/1.wav",
-      "seconds": 5.8,
-      "voicedText": "You recline on a couch at a Greek symposium, the ultimate high-society drinking club."
+      "seconds": 5.6,
+      "voicedText": "You scored an invite to an elite Greek symposium — but forget about doing keg stands."
     },
     {
-      "text": "Don't expect a wild rager. It is a strictly controlled environment for conversation and music.",
+      "text": "This was a high-society lounge where wealthy men reclined on couches to debate philosophy and gossip.",
       "mood": "warm",
       "imagePrompt": "a dimly lit room with ceramic wine vessels on a low table. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/greek-symposium/2.png",
       "audio": "audio/greek-symposium/2.wav",
-      "seconds": 6.1,
-      "voicedText": "Don't expect a wild rager. It is a strictly controlled environment for conversation and music."
+      "seconds": 6.4,
+      "voicedText": "This was a high-society lounge where wealthy men reclined on couches to debate philosophy and gossip."
     },
     {
-      "text": "The host appoints a master of ceremonies who decides how much to water down the wine.",
+      "text": "The host appointed a symposium master who strictly controlled how much alcohol flowed into the mixing krater.",
       "mood": "warm",
       "imagePrompt": "a large clay mixing bowl sitting on a marble floor. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/greek-symposium/3.png",
       "audio": "audio/greek-symposium/3.wav",
-      "seconds": 5.4,
-      "voicedText": "The host appoints a master of ceremonies who decides how much to water down the wine."
+      "seconds": 6.7,
+      "voicedText": "The host appointed a symposium master who strictly controlled how much alcohol flowed into the mixing krater."
     },
     {
-      "text": "Drinking wine straight is considered uncivilized. You probably dilute it heavily to keep the vibe sophisticated.",
+      "text": "Three parts water to one part wine! We are discussing philosophy, not starting a brawl!",
       "mood": "warm",
       "imagePrompt": "pouring water from a decorative pitcher into a painted clay jar. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/greek-symposium/4.png",
       "audio": "audio/greek-symposium/4.wav",
-      "seconds": 7.8,
-      "voicedText": "Drinking wine straight is considered uncivilized. You probably dilute it heavily to keep the vibe sophisticated."
+      "seconds": 6.5,
+      "voicedText": "Three parts water to one part wine! We are discussing philosophy, not starting a brawl!",
+      "speaker": "npc",
+      "speakerName": "WINE MASTER",
+      "voice": "Puck",
+      "voiceStyle": "Snooty, dramatic Greek symposium master scolding guests.",
+      "npc": {
+        "archetype": "merchant",
+        "position": "left",
+        "expression": "grumpy",
+        "speechBubble": "Three parts water!",
+        "talking": true
+      }
     },
     {
-      "text": "Between rounds, you play kottabos, flicking wine dregs at a target to predict your love life.",
+      "text": "Drinking undiluted wine was considered barbaric and trashy. Only barbarians drank straight from the flask.",
       "mood": "warm",
       "imagePrompt": "an empty bronze stand used for games in a quiet courtyard. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/greek-symposium/5.png",
       "audio": "audio/greek-symposium/5.wav",
-      "seconds": 6.1,
-      "voicedText": "Between rounds, you play kottabos, flicking wine dregs at a target to predict your love life."
+      "seconds": 7.5,
+      "voicedText": "Drinking undiluted wine was considered barbaric and trashy. Only barbarians drank straight from the flask."
     },
     {
-      "text": "The night ends with a boisterous street parade, but the most scandalous secrets were whispered inside.",
+      "text": "Between deep debates, guests played kottabos — flicking wine dregs from their cups at bronze targets to predict their love lives.",
       "mood": "dark",
       "imagePrompt": "a dark city street at night with stone paved paths. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/greek-symposium/6.png",
       "audio": "audio/greek-symposium/6.wav",
-      "seconds": 6.3,
-      "voicedText": "The night ends with a boisterous street parade, but the most scandalous secrets were whispered inside."
+      "seconds": 8.3,
+      "voicedText": "Between deep debates, guests played kottabos — flicking wine dregs from their cups at bronze targets to predict their love lives."
     }
   ],
   "claimsToVerify": [

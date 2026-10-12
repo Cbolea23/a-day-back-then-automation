@@ -10,7 +10,8 @@
       "imagePrompt": "Traditional Ottoman coffeehouse interior with low wooden benches, Persian rugs, hanging brass lanterns, and nargile water pipes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-coffeehouse-bans/1.mp3",
       "voicedText": "In the 16th century, coffee arrived in Istanbul from Yemen, igniting a craze for public 'kahvehane' coffeehouses.",
-      "seconds": 7.5
+      "seconds": 7.5,
+      "image": "images/ottoman-coffeehouse-bans/1.png"
     },
     {
       "text": "Unlike quiet mosques, coffeehouses buzzed with poets, chess players, political gossip, and fierce debates about government policy.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Intricately inlaid mother-of-pearl wooden chess set sitting on an octagonal table beside an open manuscript book. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-coffeehouse-bans/2.mp3",
       "voicedText": "Unlike quiet mosques, coffeehouses buzzed with poets, chess players, political gossip, and fierce debates about government policy.",
-      "seconds": 8.8
+      "seconds": 8.8,
+      "image": "images/ottoman-coffeehouse-bans/2.png"
     },
     {
       "text": "Sultans viewed these caffeine-fueled debates as dangerous breeding grounds for treason, revolution, and military coups.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Dark Ottoman palace corridor with arched marble colonnades and heavy velvet draperies illuminated by flickering torchlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-coffeehouse-bans/3.mp3",
       "voicedText": "Sultans viewed these caffeine-fueled debates as dangerous breeding grounds for treason, revolution, and military coups.",
-      "seconds": 8.2
+      "seconds": 8.2,
+      "image": "images/ottoman-coffeehouse-bans/3.png"
     },
     {
       "text": "In 1633, Sultan Murad IV strictly banned coffee and tobacco across the entire empire under penalty of immediate public execution.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Imperial Ottoman decree parchment with red and gold royal tughra seal nailed onto a wooden public notice board. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-coffeehouse-bans/4.mp3",
       "voicedText": "In 1633, Sultan Murad IV strictly banned coffee and tobacco across the entire empire under penalty of immediate public execution.",
-      "seconds": 10.6
+      "seconds": 10.6,
+      "image": "images/ottoman-coffeehouse-bans/4.png"
     },
     {
       "text": "Murad disguised himself as a common beggar and stalked Istanbul taverns at night, beheading illicit coffee drinkers on the spot.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Curved Ottoman steel kilij scimitar resting across a stone balustrade overlooking dark Istanbul minarets at midnight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-coffeehouse-bans/5.mp3",
       "voicedText": "Murad disguised himself as a common beggar and stalked Istanbul taverns at night, beheading illicit coffee drinkers on the spot.",
-      "seconds": 8.1
+      "seconds": 8.1,
+      "image": "images/ottoman-coffeehouse-bans/5.png"
     },
     {
       "text": "Despite the brutal ban, the love for coffee was unstoppable, and later Sultans taxed coffee instead. Could you give up coffee on pain of death?",
@@ -50,7 +55,8 @@
       "imagePrompt": "Steaming brass cezve coffee pot with frothy black coffee pouring into a delicate painted ceramic cup in morning sunshine. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-coffeehouse-bans/6.mp3",
       "voicedText": "Despite the brutal ban, the love for coffee was unstoppable, and later Sultans taxed coffee instead. Could you give up coffee on pain of death?",
-      "seconds": 9.3
+      "seconds": 9.3,
+      "image": "images/ottoman-coffeehouse-bans/6.png"
     }
   ]
 }

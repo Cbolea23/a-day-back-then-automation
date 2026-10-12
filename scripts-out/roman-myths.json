@@ -1,80 +1,91 @@
 {
   "slug": "roman-myths",
   "title": "4 Roman Myths You Believed",
-  "hook": "4 Roman Myths You Believed",
+  "hook": "4 Roman 'facts' you believed that are completely made up.",
   "channelName": "A Day Back Then",
   "scenes": [
     {
-      "text": "You stand inside a roaring Roman Colosseum, ready to watch history's biggest lies unfold.",
+      "text": "You think you know ancient Rome, but most famous 'facts' were totally invented by Hollywood.",
       "mood": "warm",
       "imagePrompt": "A wide angle shot of the massive stone arches of the Roman Colosseum under a bright, sunny sky.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-myths/1.png",
       "audio": "audio/roman-myths/1.wav",
-      "seconds": 6.7,
-      "voicedText": "You stand inside a roaring Roman Colosseum, ready to watch history's biggest lies unfold."
+      "seconds": 5.2,
+      "voicedText": "You think you know ancient Rome, but most famous 'facts' were totally invented by Hollywood."
     },
     {
-      "text": "You feel stuffed after a massive feast and look for the famous vomitorium.",
+      "text": "Myth number one: Romans gorged at feasts and ran to a vomitorium to throw up so they could eat more.",
       "mood": "warm",
       "imagePrompt": "A lavish Roman dining room with low tables, empty bronze platters, and spilled wine on a mosaic floor.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-myths/2.png",
       "audio": "audio/roman-myths/2.wav",
-      "seconds": 5.1,
-      "voicedText": "You feel stuffed after a massive feast and look for the famous vomitorium."
+      "seconds": 6.4,
+      "voicedText": "Myth number one: Romans gorged at feasts and ran to a vomitorium to throw up so they could eat more."
     },
     {
-      "text": "But you only find a wide exit passage. That's all a vomitorium actually is.",
+      "text": "From Latin vomere: to spew forth a crowd! It is just an exit hallway, you barbarian!",
       "mood": "cool",
       "imagePrompt": "A vaulted stone corridor inside a Roman amphitheater, empty and leading to bright sunlight at the end.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-myths/3.png",
       "audio": "audio/roman-myths/3.wav",
-      "seconds": 5.5,
-      "voicedText": "But you only find a wide exit passage. That's all a vomitorium actually is."
+      "seconds": 6.8,
+      "voicedText": "From Latin vomere: to spew forth a crowd! It is just an exit hallway, you barbarian!",
+      "speaker": "npc",
+      "speakerName": "DR. AURELIUS",
+      "voice": "Puck",
+      "voiceStyle": "Haughty, eccentric ancient scholar lecturing with theatrical exasperation.",
+      "npc": {
+        "archetype": "doctor",
+        "position": "left",
+        "expression": "grumpy",
+        "speechBubble": "It's just an exit!",
+        "talking": true
+      }
     },
     {
-      "text": "Next, a defeated gladiator awaits his fate. You expect a dramatic thumbs-down.",
+      "text": "Myth number two: thumbs down meant death in the Colosseum. Scholars aren't even sure — it may have meant sheathe your sword.",
       "mood": "warm",
       "imagePrompt": "The dusty floor of a Roman arena, littered with discarded shields and wooden swords under a hot sun.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-myths/4.png",
       "audio": "audio/roman-myths/4.wav",
-      "seconds": 5.8,
-      "voicedText": "Next, a defeated gladiator awaits his fate. You expect a dramatic thumbs-down."
+      "seconds": 8.2,
+      "voicedText": "Myth number two: thumbs down meant death in the Colosseum. Scholars aren't even sure — it may have meant sheathe your sword."
     },
     {
-      "text": "Actually, historians aren't sure. A pressed thumb might have meant death, or maybe life.",
+      "text": "Myth number three: everyone wore togas. Everyday Romans despised togas because they were heavy wool blankets.",
       "mood": "cool",
       "imagePrompt": "A close-up of a weather-worn ancient Roman stone relief showing vague hand gestures.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-myths/5.png",
       "audio": "audio/roman-myths/5.wav",
-      "seconds": 6.2,
-      "voicedText": "Actually, historians aren't sure. A pressed thumb might have meant death, or maybe life."
+      "seconds": 7.6,
+      "voicedText": "Myth number three: everyone wore togas. Everyday Romans despised togas because they were heavy wool blankets."
     },
     {
-      "text": "You notice everyone wearing massive, heavy white togas.",
+      "text": "Instead, citizens wore simple, comfortable tunics and only put on a toga for annoying court appearances.",
       "mood": "day",
       "imagePrompt": "A bustling Roman forum with grand marble pillars and stone steps under a clear blue sky.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-myths/6.png",
       "audio": "audio/roman-myths/6.wav",
-      "seconds": 4,
-      "voicedText": "You notice everyone wearing massive, heavy white togas."
+      "seconds": 7.3,
+      "voicedText": "Instead, citizens wore simple, comfortable tunics and only put on a toga for annoying court appearances."
     },
     {
-      "text": "In reality, many Romans hated them. They probably wore simple tunics instead.",
+      "text": "And those classic pure white statues? They were originally painted in wild, garish psychedelic colors.",
       "mood": "day",
       "imagePrompt": "A simple Roman street with modest brick buildings and clotheslines hanging between windows.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-myths/7.png",
       "audio": "audio/roman-myths/7.wav",
-      "seconds": 5.3,
-      "voicedText": "In reality, many Romans hated them. They probably wore simple tunics instead."
+      "seconds": 7.4,
+      "voicedText": "And those classic pure white statues? They were originally painted in wild, garish psychedelic colors."
     },
     {
-      "text": "And those marble statues? They weren't white either. Next time, we look at their wild colors.",
+      "text": "Which Roman myth surprised you the most? Let us know below.",
       "mood": "day",
       "imagePrompt": "A row of clean white marble statues in a grand museum hall, casting soft shadows.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-myths/8.png",
       "audio": "audio/roman-myths/8.wav",
-      "seconds": 6.6,
-      "voicedText": "And those marble statues? They weren't white either. Next time, we look at their wild colors."
+      "seconds": 4.3,
+      "voicedText": "Which Roman myth surprised you the most? Let us know below."
     }
   ],
   "claimsToVerify": [

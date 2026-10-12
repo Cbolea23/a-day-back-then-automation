@@ -1,62 +1,73 @@
 {
   "slug": "medieval-monk-day",
   "title": "A Monk's Day",
-  "hook": "You live your life in silence.",
+  "hook": "Living in complete silence: a typical day in a medieval monastery.",
   "channelName": "A Day Back Then",
   "scenes": [
     {
-      "text": "You live your life in silence.",
+      "text": "Imagine spending your entire life where speaking out loud was strictly forbidden.",
       "mood": "dark",
       "imagePrompt": "A long, shadowed stone cloister corridor with arches at night.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-monk-day/1.png",
       "audio": "audio/medieval-monk-day/1.wav",
-      "voicedText": "You live your life in silence.",
-      "seconds": 2.6,
-      "image": "images/medieval-monk-day/1.png"
+      "seconds": 5,
+      "voicedText": "Imagine spending your entire life where speaking out loud was strictly forbidden."
     },
     {
-      "text": "You wake before dawn for the first prayer. The stone floor is freezing under your bare feet.",
+      "text": "At two in the morning, the bells ring for Vigils. You step out of your cell onto freezing stone floors in bare feet.",
       "mood": "dark",
       "imagePrompt": "A simple, empty monastic cell with a wooden bench and a small window.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-monk-day/2.png",
       "audio": "audio/medieval-monk-day/2.wav",
-      "voicedText": "You wake before dawn for the first prayer. The stone floor is freezing under your bare feet.",
-      "seconds": 5.8,
-      "image": "images/medieval-monk-day/2.png"
+      "seconds": 7.4,
+      "voicedText": "At two in the morning, the bells ring for Vigils. You step out of your cell onto freezing stone floors in bare feet."
     },
     {
-      "text": "Your day is strictly measured by the bells. You rotate between chanting, manual labor, and long hours of copying manuscripts.",
+      "text": "Your entire day is sliced into strict prayer bells, hard garden labor, and endless hours in the chilly scriptorium.",
       "mood": "day",
       "imagePrompt": "A wooden desk with a quill, ink pot, and a blank piece of parchment.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-monk-day/3.png",
       "audio": "audio/medieval-monk-day/3.wav",
-      "voicedText": "Your day is strictly measured by the bells. You rotate between chanting, manual labor, and long hours of copying manuscripts.",
-      "seconds": 8.6,
-      "image": "images/medieval-monk-day/3.png"
+      "seconds": 7.9,
+      "voicedText": "Your entire day is sliced into strict prayer bells, hard garden labor, and endless hours in the chilly scriptorium."
     },
     {
-      "text": "Communication is rare. You probably use a complex system of hand signals to talk to the other monks.",
+      "text": "Shhh! Brother Marcus! Three taps means pass the cheese, not the butter!",
       "mood": "day",
       "imagePrompt": "An arched doorway leading into a sunny, quiet monastery garden.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-monk-day/4.png",
       "audio": "audio/medieval-monk-day/4.wav",
-      "voicedText": "Communication is rare. You probably use a complex system of hand signals to talk to the other monks.",
-      "seconds": 7,
-      "image": "images/medieval-monk-day/4.png"
+      "seconds": 5.9,
+      "voicedText": "Shhh! Brother Marcus! Three taps means pass the cheese, not the butter!",
+      "speaker": "npc",
+      "speakerName": "BROTHER THOMAS",
+      "voice": "Puck",
+      "voiceStyle": "Hushed, urgent medieval monk whispering furiously in a silent abbey scriptorium.",
+      "npc": {
+        "archetype": "doctor",
+        "position": "left",
+        "expression": "grumpy",
+        "speechBubble": "Pass the cheese!",
+        "talking": true
+      }
     },
     {
-      "text": "While the world outside changes, your routine stays exactly the same. You are preserving history one page at a time.",
+      "text": "Monks developed elaborate hand sign languages so they could communicate without breaking their sacred vow of silence.",
       "mood": "day",
       "imagePrompt": "A library shelf filled with ancient, leather-bound books.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-monk-day/5.png",
       "audio": "audio/medieval-monk-day/5.wav",
-      "voicedText": "While the world outside changes, your routine stays exactly the same. You are preserving history one page at a time.",
-      "seconds": 7.9,
-      "image": "images/medieval-monk-day/5.png"
+      "seconds": 6.7,
+      "voicedText": "Monks developed elaborate hand sign languages so they could communicate without breaking their sacred vow of silence."
     },
     {
-      "text": "Then, you notice a mistake in a sacred text that could change everything you believe. What do you do?",
+      "text": "While wars raged outside, these silent scribes quietly copied and preserved the world's ancient books for centuries.",
       "mood": "dark",
       "imagePrompt": "A single candle flickering on a desk, illuminating a handwritten page.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-monk-day/6.png",
       "audio": "audio/medieval-monk-day/6.wav",
-      "voicedText": "Then, you notice a mistake in a sacred text that could change everything you believe. What do you do?",
-      "seconds": 6.2,
-      "image": "images/medieval-monk-day/6.png"
+      "seconds": 7.6,
+      "voicedText": "While wars raged outside, these silent scribes quietly copied and preserved the world's ancient books for centuries."
     }
   ],
   "claimsToVerify": [

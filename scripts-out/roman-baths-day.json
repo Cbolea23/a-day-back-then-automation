@@ -8,7 +8,7 @@
       "text": "You step inside the colossal public baths around mid-afternoon, along with half the neighborhood.",
       "mood": "day",
       "imagePrompt": "Monumental entrance hall of a Roman public bathhouse with soaring arched ceilings and mosaic tile floors.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-baths-day/1.webp",
+      "image": "images/roman-baths-day/1.png",
       "audio": "audio/roman-baths-day/1.wav",
       "seconds": 5.9,
       "voicedText": "You step inside the colossal public baths around mid-afternoon, along with half the neighborhood."
@@ -17,7 +17,7 @@
       "text": "There is no soap anywhere in sight. Instead, an attendant slathers your skin in olive oil.",
       "mood": "warm",
       "imagePrompt": "Marble bench in a Roman bath changing room with small glass bottles of scented oil and linen towels.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-baths-day/2.webp",
+      "image": "images/roman-baths-day/2.png",
       "audio": "audio/roman-baths-day/2.wav",
       "seconds": 6.2,
       "voicedText": "There is no soap anywhere in sight. Instead, an attendant slathers your skin in olive oil."
@@ -26,7 +26,7 @@
       "text": "Then, they scrape off the oil, sweat, and street grime using a curved metal blade called a strigil.",
       "mood": "warm",
       "imagePrompt": "Stone ledge holding curved bronze strigils and small cosmetic pots beside a shallow water basin.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-baths-day/3.webp",
+      "image": "images/roman-baths-day/3.png",
       "audio": "audio/roman-baths-day/3.wav",
       "seconds": 6.6,
       "voicedText": "Then, they scrape off the oil, sweat, and street grime using a curved metal blade called a strigil."
@@ -35,7 +35,7 @@
       "text": "You sweat it out in the vaulted caldarium, heated from below by roaring wood fires.",
       "mood": "warm",
       "imagePrompt": "Steam-filled Roman caldarium with arched brick vaults and a sunken hot water pool.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-baths-day/4.webp",
+      "image": "images/roman-baths-day/4.png",
       "audio": "audio/roman-baths-day/4.wav",
       "seconds": 5.8,
       "voicedText": "You sweat it out in the vaulted caldarium, heated from below by roaring wood fires."
@@ -44,7 +44,7 @@
       "text": "Next, you cool down through the warm tepidarium before shocking your system in the icy frigidarium pool.",
       "mood": "cool",
       "imagePrompt": "Deep plunge pool of a frigidarium with turquoise water, marble columns, and ornate ceiling stucco.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-baths-day/5.webp",
+      "image": "images/roman-baths-day/5.png",
       "audio": "audio/roman-baths-day/5.wav",
       "seconds": 7.6,
       "voicedText": "Next, you cool down through the warm tepidarium before shocking your system in the icy frigidarium pool."
@@ -53,7 +53,7 @@
       "text": "People exercise, buy hot meat pies, and negotiate business deals right by the water.",
       "mood": "day",
       "imagePrompt": "Outdoor peristyle courtyard of the palaestra flanked by Doric columns and shaded porticos.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-baths-day/6.webp",
+      "image": "images/roman-baths-day/6.png",
       "audio": "audio/roman-baths-day/6.wav",
       "seconds": 5.9,
       "voicedText": "People exercise, buy hot meat pies, and negotiate business deals right by the water."
@@ -62,7 +62,7 @@
       "text": "It is noisy, social, and the civic center of daily Roman life.",
       "mood": "warm",
       "imagePrompt": "Sunlit colonnaded hall of a thermal bath complex with ornate wall mosaics and decorative water fountains.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-baths-day/7.webp",
+      "image": "images/roman-baths-day/7.png",
       "audio": "audio/roman-baths-day/7.wav",
       "seconds": 5.1,
       "voicedText": "It is noisy, social, and the civic center of daily Roman life."
@@ -71,7 +71,7 @@
       "text": "But wait until you hear how dirty that communal bath water actually became.",
       "mood": "dark",
       "imagePrompt": "Drainage channel and lead pipe network beneath ancient Roman stone paving slabs in dim lighting.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-baths-day/8.webp",
+      "image": "images/roman-baths-day/8.png",
       "audio": "audio/roman-baths-day/8.wav",
       "seconds": 4.9,
       "voicedText": "But wait until you hear how dirty that communal bath water actually became."

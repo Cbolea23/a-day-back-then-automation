@@ -1,0 +1,764 @@
+{
+  "channelName": "A Day Back Then",
+  "topics": [
+    {
+      "slug": "roman-day-hour-by-hour",
+      "title": "A Day in Ancient Rome, Hour by Hour",
+      "format": "day-in-the-life",
+      "targetMinutes": 11,
+      "angle": "Follow one ordinary working Roman from before sunrise to night: apartment block, breakfast, water, work, the baths, dinner. Contrast rich and poor where evidence allows.",
+      "relatedShorts": [
+        "roman-morning",
+        "roman-baths-day",
+        "roman-street-food",
+        "roman-money"
+      ]
+    },
+    {
+      "slug": "roman-survive-a-week",
+      "title": "Would You Survive a Week in Ancient Rome?",
+      "format": "survival-guide",
+      "targetMinutes": 10,
+      "angle": "A modern visitor's problems: language, money, finding food and water, fire risk, crowding, health. Practical and funny but accurate.",
+      "relatedShorts": [
+        "roman-toilets",
+        "roman-street-food",
+        "roman-money"
+      ]
+    },
+    {
+      "slug": "gladiator-real-life",
+      "title": "The Real Life of a Gladiator",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Who became gladiators, the training schools, diet, medical care, how the games were organized, and what is myth. Avoid gore.",
+      "relatedShorts": [
+        "gladiator-day",
+        "roman-myths"
+      ]
+    },
+    {
+      "slug": "roman-legionary-career",
+      "title": "A Career in the Roman Army",
+      "format": "year-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Recruitment, long service (roughly 20-25 years depending on period), training, pay, daily routine, building roads and forts, retirement benefits. Hedge numbers that changed over time.",
+      "relatedShorts": [
+        "roman-legionary-march"
+      ]
+    },
+    {
+      "slug": "roman-myths-debunked",
+      "title": "Roman Myths, Debunked",
+      "format": "myth-buster",
+      "targetMinutes": 9,
+      "angle": "Pick 6-7 popular claims (vomitoriums, thumbs-down, Roman excess feasts, etc.) and separate documented facts from later legend. Say plainly where evidence is uncertain.",
+      "relatedShorts": [
+        "roman-myths",
+        "roman-garum"
+      ]
+    },
+    {
+      "slug": "ancient-jobs-ranked",
+      "title": "Ancient and Medieval Jobs, Ranked Worst to Best",
+      "format": "ranked-list",
+      "targetMinutes": 10,
+      "angle": "Rank 8 jobs (e.g. miller, barber-surgeon, blacksmith, scribe, tanner, army doctor) by danger, pay and status, with caveats that ranking is subjective and evidence varies.",
+      "relatedShorts": [
+        "roman-doctor-job",
+        "plague-doctor-job",
+        "medieval-miller-job",
+        "barber-surgeon-job",
+        "medieval-blacksmith-job"
+      ]
+    },
+    {
+      "slug": "medieval-peasant-year",
+      "title": "A Year in the Life of a Medieval Peasant",
+      "format": "year-in-the-life",
+      "targetMinutes": 11,
+      "angle": "Follow the seasons: plowing, planting, harvest, winter. Food, housing, church days, taxes and obligations, what leisure looked like. Note regional differences.",
+      "relatedShorts": [
+        "medieval-peasant-day",
+        "medieval-fast-days",
+        "medieval-wages-and-prices"
+      ]
+    },
+    {
+      "slug": "medieval-town-survival",
+      "title": "Welcome to a Medieval Town: A Survival Guide",
+      "format": "survival-guide",
+      "targetMinutes": 10,
+      "angle": "Crowding, guilds, markets, water and waste, disease risk, laws and curfews, how to earn a living. Compare with village life.",
+      "relatedShorts": [
+        "medieval-village-vs-city",
+        "barber-surgeon-job",
+        "medieval-bath-myths"
+      ]
+    },
+    {
+      "slug": "medieval-week-survival",
+      "title": "Would You Survive a Week in the Middle Ages?",
+      "format": "survival-guide",
+      "targetMinutes": 10,
+      "angle": "Food, hygiene, work, travel, law, medicine. Debunk the 'everyone was filthy and stupid' stereotype while staying honest about hardship.",
+      "relatedShorts": [
+        "medieval-bath-myths",
+        "dark-ages-myths",
+        "castle-food"
+      ]
+    },
+    {
+      "slug": "black-death-1348",
+      "title": "Surviving the Black Death",
+      "format": "survival-guide",
+      "targetMinutes": 11,
+      "angle": "What people knew and believed in 1348, how it spread, documented responses (quarantine ideas, flight, religious reactions), social effects afterward. Separate documented facts from myths and be sensitive.",
+      "relatedShorts": [
+        "plague-quarantine-city",
+        "plague-doctor-job"
+      ]
+    },
+    {
+      "slug": "castle-life-inside",
+      "title": "What Life Inside a Castle Was Really Like",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Who lived there, servants versus lords, food, toilets (garderobes), cold and smoke, daily schedule, how often castles saw fighting.",
+      "relatedShorts": [
+        "castle-food",
+        "castle-toilets",
+        "knight-myths"
+      ]
+    },
+    {
+      "slug": "knights-truth",
+      "title": "Knights: What They Actually Did",
+      "format": "myth-buster",
+      "targetMinutes": 9,
+      "angle": "Training, armour weight and mobility, tournaments, the economics of being a knight, and common myths.",
+      "relatedShorts": [
+        "knight-myths"
+      ]
+    },
+    {
+      "slug": "medieval-monk-life",
+      "title": "Inside a Medieval Monastery",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "The daily cycle of prayer, labor, copying books, food and silence, role in learning and medicine. Differences between orders.",
+      "relatedShorts": [
+        "medieval-monk-day"
+      ]
+    },
+    {
+      "slug": "tudor-england-ladder",
+      "title": "A Day in Tudor England: From Palace to Peasant",
+      "format": "comparison",
+      "targetMinutes": 11,
+      "angle": "Compare a royal court servant, a merchant, a farmer and a servant in the same day: food, housing, work, risks.",
+      "relatedShorts": [
+        "tudor-kitchen-boy"
+      ]
+    },
+    {
+      "slug": "viking-village-year",
+      "title": "A Year in a Viking Village",
+      "format": "year-in-the-life",
+      "targetMinutes": 11,
+      "angle": "Mostly farming, fishing and crafts; seasonal cycle, longhouse life, assemblies (thing), trade and the occasional voyage. Separate sagas from archaeology.",
+      "relatedShorts": [
+        "viking-farmer-day",
+        "viking-winter",
+        "viking-food-and-drink"
+      ]
+    },
+    {
+      "slug": "viking-myths-debunked",
+      "title": "Viking Myths You Probably Believe",
+      "format": "myth-buster",
+      "targetMinutes": 9,
+      "angle": "Horned helmets, filthy barbarians, only raiders, and more: what archaeology and sources actually say.",
+      "relatedShorts": [
+        "viking-myths"
+      ]
+    },
+    {
+      "slug": "viking-sea-voyage",
+      "title": "Crossing the North Atlantic in a Viking Ship",
+      "format": "survival-guide",
+      "targetMinutes": 9,
+      "angle": "Ship design, crew life, weather, navigation methods that are well supported versus speculative ones, supplies.",
+      "relatedShorts": [
+        "viking-ocean-voyage"
+      ]
+    },
+    {
+      "slug": "egypt-daily-life",
+      "title": "Daily Life in Ancient Egypt",
+      "format": "day-in-the-life",
+      "targetMinutes": 11,
+      "angle": "Follow a farming family and a scribe through the flood-season cycle: food, houses, work, beliefs, taxes. Note changes across the long history.",
+      "relatedShorts": [
+        "egypt-bread-and-beer",
+        "egypt-scribe-vs-farmer"
+      ]
+    },
+    {
+      "slug": "pyramid-builders-truth",
+      "title": "The People Who Really Built the Pyramids",
+      "format": "myth-buster",
+      "targetMinutes": 10,
+      "angle": "What archaeology says about the workforce: organized, fed and housed laborers, villages for workers, medical care, logistics. Be clear about what is debated.",
+      "relatedShorts": [
+        "egypt-pyramid-workers",
+        "egypt-myths"
+      ]
+    },
+    {
+      "slug": "mummification-explained",
+      "title": "How Mummification Worked",
+      "format": "explainer",
+      "targetMinutes": 9,
+      "angle": "General steps, time involved, who could afford it, the role of priests and workshops, beliefs behind it. Keep it non-graphic.",
+      "relatedShorts": [
+        "egypt-embalmer-job"
+      ]
+    },
+    {
+      "slug": "mesopotamia-daily-life",
+      "title": "Daily Life in Ancient Mesopotamia",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Cities, irrigation farming, clay tablets, schools for scribes, trade, houses. Hedge differences across periods and cities.",
+      "relatedShorts": [
+        "mesopotamia-scribe-school"
+      ]
+    },
+    {
+      "slug": "athens-day",
+      "title": "A Day in Ancient Athens",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Citizen, woman, foreigner and enslaved person each experienced Athens differently; agora, assembly, home life, evening gatherings. Be honest about unequal rights.",
+      "relatedShorts": [
+        "athens-citizen-day",
+        "greek-symposium"
+      ]
+    },
+    {
+      "slug": "sparta-what-we-know",
+      "title": "Sparta: What We Actually Know",
+      "format": "myth-buster",
+      "targetMinutes": 10,
+      "angle": "Training system, society, helots, women's roles, and how later writers and films shaped the legend. Flag late or biased sources and disputed claims.",
+      "relatedShorts": [
+        "spartan-training-day",
+        "sparta-myths"
+      ]
+    },
+    {
+      "slug": "ancient-olympics-real",
+      "title": "The Ancient Olympics: What It Was Really Like",
+      "format": "day-in-the-life",
+      "targetMinutes": 9,
+      "angle": "Events, rules, athletes, crowds, prizes, sanctuary at Olympia, who could and could not take part. Hedge uncertain details.",
+      "relatedShorts": [
+        "ancient-olympics-athlete"
+      ]
+    },
+    {
+      "slug": "byzantine-constantinople-day",
+      "title": "A Day in Byzantine Constantinople",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Streets, markets, the Hippodrome and its fan factions, church life, court versus ordinary people.",
+      "relatedShorts": [
+        "byzantine-chariot-fan"
+      ]
+    },
+    {
+      "slug": "edo-japan-life",
+      "title": "Daily Life in Edo Japan",
+      "format": "comparison",
+      "targetMinutes": 11,
+      "angle": "Samurai, merchants, farmers and artisans in the Tokugawa era: status rules versus real wealth, food, housing, city life.",
+      "relatedShorts": [
+        "samurai-day",
+        "edo-merchant-vs-samurai"
+      ]
+    },
+    {
+      "slug": "ninja-history-vs-myth",
+      "title": "Ninja: History vs Myth",
+      "format": "myth-buster",
+      "targetMinutes": 9,
+      "angle": "What documents say about shinobi, their actual roles, and where the black-costume image came from. Stress that evidence is limited.",
+      "relatedShorts": [
+        "ninja-myths"
+      ]
+    },
+    {
+      "slug": "silk-road-journey",
+      "title": "Traveling the Silk Road",
+      "format": "survival-guide",
+      "targetMinutes": 10,
+      "angle": "Relay trade rather than one traveler going end to end, caravans, deserts, inns, taxes, what was traded and what spread (ideas, religions, technologies).",
+      "relatedShorts": [
+        "silk-road-merchant"
+      ]
+    },
+    {
+      "slug": "mongol-empire-daily-life",
+      "title": "Daily Life in the Mongol Empire",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Herding, tents, food, horse culture, the relay post system, trade and tolerance policies. Focus on ordinary life rather than conquest.",
+      "relatedShorts": [
+        "mongol-steppe-day"
+      ]
+    },
+    {
+      "slug": "han-china-life",
+      "title": "Life in Han Dynasty China",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Farmers, officials and merchants, taxes and labor service, iron tools, markets, family life. Note regional differences.",
+      "relatedShorts": [
+        "han-china-farmer-day"
+      ]
+    },
+    {
+      "slug": "tenochtitlan-day",
+      "title": "Tenochtitlan: A Day in the Aztec Capital",
+      "format": "day-in-the-life",
+      "targetMinutes": 11,
+      "angle": "Causeways and canals, the great market at Tlatelolco as described by Spanish observers, floating gardens (chinampas), food, social classes. Note most descriptions come from colonial-era sources.",
+      "relatedShorts": [
+        "aztec-market-day",
+        "chinampa-farmer-day"
+      ]
+    },
+    {
+      "slug": "inca-empire-system",
+      "title": "How the Inca Ran an Empire Without Writing",
+      "format": "explainer",
+      "targetMinutes": 10,
+      "angle": "Roads, relay runners, storehouses, labor tax (mit'a), quipu record-keeping and the debate over what quipu could record.",
+      "relatedShorts": [
+        "inca-runner-job"
+      ]
+    },
+    {
+      "slug": "maya-city-life",
+      "title": "Life in a Maya City",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Farming, markets, rulers and scribes, ball game, writing system, and what archaeology still cannot answer.",
+      "relatedShorts": [
+        "maya-scribe-job"
+      ]
+    },
+    {
+      "slug": "pirate-life-truth",
+      "title": "Pirate Life: Truth vs Hollywood",
+      "format": "myth-buster",
+      "targetMinutes": 10,
+      "angle": "Ship life, crew agreements and shared shares, food and discipline, how the famous images (plank walking, treasure maps) arose.",
+      "relatedShorts": [
+        "pirate-ship-day",
+        "pirate-myths"
+      ]
+    },
+    {
+      "slug": "renaissance-workshop-inside",
+      "title": "Inside a Renaissance Workshop",
+      "format": "day-in-the-life",
+      "targetMinutes": 9,
+      "angle": "Apprentices, pigments, panels, commissions, patrons, and how a painting was actually produced.",
+      "relatedShorts": [
+        "renaissance-apprentice-day"
+      ]
+    },
+    {
+      "slug": "ottoman-istanbul-life",
+      "title": "Daily Life in Ottoman Istanbul",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Markets, neighborhoods, coffeehouses, religious communities living side by side, the palace versus ordinary life.",
+      "relatedShorts": [
+        "ottoman-coffeehouse"
+      ]
+    },
+    {
+      "slug": "victorian-london-day",
+      "title": "A Day in Victorian London",
+      "format": "comparison",
+      "targetMinutes": 11,
+      "angle": "Rich, middle-class and poor Londoners: housing, work, food, smog, sanitation, child labor and the reforms that followed.",
+      "relatedShorts": [
+        "victorian-chimney-sweep-job",
+        "victorian-factory-day"
+      ]
+    },
+    {
+      "slug": "gold-rush-reality",
+      "title": "The California Gold Rush: What Miners Really Faced",
+      "format": "survival-guide",
+      "targetMinutes": 10,
+      "angle": "Getting there, prices, working conditions, disease, who actually got rich (often merchants), and the human and environmental costs.",
+      "relatedShorts": [
+        "gold-rush-miner-day"
+      ]
+    },
+    {
+      "slug": "britain-home-front-ww2",
+      "title": "Britain's Home Front: Daily Life in WWII",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Rationing, blackouts, evacuation, shelters, work and community. Focus on everyday life with a respectful tone and hedge exact quantities.",
+      "relatedShorts": [
+        "wwii-ration-day"
+      ]
+    },
+    {
+      "slug": "pompeii-last-day",
+      "title": "The Last Day of Pompeii, Hour by Hour",
+      "format": "explainer",
+      "targetMinutes": 10,
+      "angle": "What daily life in Pompeii looked like on the eve of the 79 CE eruption, then the sequence of the eruption as reconstructed by volcanologists and archaeologists. Hedge the exact date (sources are debated) and keep the tone respectful, not graphic.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "roman-britain-life",
+      "title": "Life in Roman Britain",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Towns, forts, villas and farms, how locals and newcomers lived side by side, food, baths in a cold climate, trade and taxes. Use evidence from sites and writing tablets; hedge generalizations across 350 years.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "hadrians-wall-soldier",
+      "title": "A Soldier on Hadrian's Wall",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Garrison life on the northern frontier: duties, cold, food and supplies, trade at forts, and what surviving Vindolanda writing tablets reveal about ordinary soldiers and families. Most troops were auxiliaries; say so.",
+      "relatedShorts": [
+        "roman-legionary-march"
+      ]
+    },
+    {
+      "slug": "roman-engineering-explained",
+      "title": "How the Romans Built Roads and Aqueducts",
+      "format": "explainer",
+      "targetMinutes": 9,
+      "angle": "Surveying methods, layers of a road, the gentle gradients of aqueducts, concrete, who did the labor (soldiers, hired and enslaved workers), and how long these systems lasted. Stick to well-documented engineering.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "roman-women-life",
+      "title": "Women in Ancient Rome: Rights and Daily Life",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Differences by class: legal status, marriage, property, household management, work in shops and workshops, religion, and the limits on public life. Evidence is mostly from elite sources; say so.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "enslaved-life-rome",
+      "title": "Daily Life of the Enslaved in Ancient Rome",
+      "format": "explainer",
+      "targetMinutes": 10,
+      "angle": "Who was enslaved, where they worked (households, farms, mines, workshops), legal status, the possibility and limits of freedom, and resistance. Treat the subject seriously and factually, without graphic content, and note that most surviving evidence comes from slave owners.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "fall-of-rome-explained",
+      "title": "What Really Happened When Rome Fell?",
+      "format": "myth-buster",
+      "targetMinutes": 11,
+      "angle": "Why historians argue about causes and the date, the difference between the Western and Eastern empires, what changed in daily life, and what continued. Present competing explanations fairly instead of one tidy story.",
+      "relatedShorts": [
+        "dark-ages-myths"
+      ]
+    },
+    {
+      "slug": "carthage-life",
+      "title": "Life in Carthage: Rome's Great Rival",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "A Mediterranean trading city: harbors, merchants, farms, religion, government. Be clear that most surviving descriptions were written by Rome's side and that Carthaginian sources are limited.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "greek-trireme-rowers",
+      "title": "Life as a Rower on a Greek Trireme",
+      "format": "day-in-the-life",
+      "targetMinutes": 9,
+      "angle": "Crew roles, cramped conditions, heat, training, food and pay, and what the reconstructed trireme Olympias taught researchers. Note that Athenian rowers were largely free citizens and that some details are debated.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "alexander-army-march",
+      "title": "Marching With Alexander the Great",
+      "format": "survival-guide",
+      "targetMinutes": 11,
+      "angle": "Daily routine of a Macedonian soldier: gear, supply, distances, climate extremes, camp life, followers and logistics. Distinguish what ancient writers claim from what is plausible, and avoid battlefield gore.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "persian-royal-road",
+      "title": "Ancient Persia: Daily Life on the Royal Road",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "The Achaemenid empire's road and courier system, way stations, administration and tolerance policies, and ordinary life across a vast empire. Note that many descriptions come from Greek authors.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "greek-medicine-hippocrates",
+      "title": "How Ancient Greek Doctors Treated Patients",
+      "format": "explainer",
+      "targetMinutes": 9,
+      "angle": "Observation-based medicine, the humors theory, diet and exercise advice, healing temples, and where it helped or failed. Avoid presenting any ancient treatment as effective unless the evidence supports it.",
+      "relatedShorts": [
+        "roman-doctor-job"
+      ]
+    },
+    {
+      "slug": "neanderthal-day",
+      "title": "A Day in the Life of a Neanderthal",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "What archaeology and genetics suggest about hunting, tools, fire, shelter, diet, family groups and health. This is reconstruction, so use cautious language and say clearly what is uncertain or debated.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "ice-age-survival",
+      "title": "Surviving the Ice Age",
+      "format": "survival-guide",
+      "targetMinutes": 10,
+      "angle": "How Late Ice Age humans handled cold: clothing, shelter, fire, food storage, tools and cooperation, based on archaeological finds. Be careful to separate evidence from imagination.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "catalhoyuk-first-towns",
+      "title": "Life in One of the World's Earliest Towns: Çatalhöyük",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "A Neolithic settlement of packed houses entered from the roof, wall paintings, farming and herding, burial under floors. Many interpretations remain debated; say so.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "stonehenge-builders",
+      "title": "Who Built Stonehenge, and Why?",
+      "format": "explainer",
+      "targetMinutes": 10,
+      "angle": "Phases of construction, sourcing of the stones, the people who built it, nearby settlements, and competing ideas about its purpose. Present evidence-based theories fairly and avoid claims of certainty.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "baghdad-golden-age",
+      "title": "A Day in Golden Age Baghdad",
+      "format": "day-in-the-life",
+      "targetMinutes": 11,
+      "angle": "A planned round city, markets, paper and book culture, translation and scholarship, merchants and scholars of different faiths. Describe the House of Wisdom cautiously, since its exact nature is debated.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "mali-empire-timbuktu",
+      "title": "Mali Empire: Timbuktu and Mansa Musa's World",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Trans-Saharan trade in gold and salt, learning in Timbuktu, how the empire was governed, and the famous pilgrimage of Mansa Musa. Hedge wealth estimates and note that many sources are Arabic travelers' accounts.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "swahili-coast-cities",
+      "title": "Trading Cities of the Swahili Coast",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Stone towns such as Kilwa, monsoon-driven Indian Ocean trade, goods exchanged, language and culture, houses and mosques. Use archaeological evidence and hedge population figures.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "kush-nubia-life",
+      "title": "Life in Ancient Nubia (Kush)",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "The kingdom south of Egypt: relationship with Egypt, gold and trade, Meroe, iron working, pyramids and religion, and its own writing. Present Kush on its own terms, not only as Egypt's neighbor.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "indus-valley-cities",
+      "title": "Life in the Indus Valley Cities",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Planned cities, drains and wells, standard weights, trade with Mesopotamia, crafts. The script is undeciphered and there are few written sources, so be explicit about how much is inference.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "mughal-india-life",
+      "title": "Daily Life in Mughal India",
+      "format": "comparison",
+      "targetMinutes": 11,
+      "angle": "Court versus city versus village: food, textiles and trade, administration, religious diversity, and the gap between rich and poor. Note regional and period differences across the empire.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "angkor-khmer-life",
+      "title": "Life in Angkor, the Khmer Capital",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Temples and water management, rice farming, the role of the king and priests, and what inscriptions and a Chinese envoy's account reveal about ordinary people. Hedge population estimates.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "joseon-korea-day",
+      "title": "A Day in Joseon Korea",
+      "format": "comparison",
+      "targetMinutes": 10,
+      "angle": "Scholar-officials, farmers, artisans and enslaved people in a rigid status society, with food, housing (including ondol heating), and daily routine. Note changes over the dynasty's long history.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "china-exam-system",
+      "title": "How to Become an Official in Imperial China",
+      "format": "explainer",
+      "targetMinutes": 9,
+      "angle": "The civil service examinations: what was studied, how exams were held, odds of success, the social impact, and how the system changed across dynasties. Avoid overgeneralizing across centuries.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "zheng-he-treasure-fleets",
+      "title": "Zheng He's Treasure Fleets",
+      "format": "explainer",
+      "targetMinutes": 10,
+      "angle": "The Ming voyages across the Indian Ocean, what the fleets carried, why they were launched and ended, and what is debated (ship sizes are uncertain). Present competing estimates honestly.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "polynesian-navigators",
+      "title": "How Polynesians Crossed the Pacific",
+      "format": "explainer",
+      "targetMinutes": 10,
+      "angle": "Double-hulled voyaging canoes, wayfinding by stars, swells and birds, settlement of distant islands, and modern revival of traditional navigation. Mark theories that are debated.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "cahokia-city-life",
+      "title": "Life in Cahokia, North America's Lost City",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "The Mississippian city near modern St. Louis: mounds, plaza, maize farming, trade, ceremonies and why it declined. Much of this is archaeological inference, so use hedged language.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "chaco-canyon-puebloans",
+      "title": "Chaco Canyon: Life of the Ancestral Puebloans",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Great houses, roads, astronomy-aligned architecture, farming in a dry land, trade networks. Explain what archaeologists still debate and respect Pueblo oral traditions as sources.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "oregon-trail-journey",
+      "title": "The Oregon Trail: What the Journey Was Really Like",
+      "format": "survival-guide",
+      "targetMinutes": 10,
+      "angle": "Distance and timing, supplies, river crossings, weather, disease (more deadly than most imagined dangers), daily routine, and the impact on Native peoples. Use diaries and historical records.",
+      "relatedShorts": [
+        "gold-rush-miner-day"
+      ]
+    },
+    {
+      "slug": "colonial-america-daily-life",
+      "title": "Daily Life in Colonial America",
+      "format": "comparison",
+      "targetMinutes": 11,
+      "angle": "Compare a New England farm family, a Southern plantation owner, an enslaved person and an urban craftsman in the 1700s: food, work, housing, rights. Treat slavery and Native displacement honestly and factually.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "medieval-pilgrim-journey",
+      "title": "A Medieval Pilgrim's Journey",
+      "format": "survival-guide",
+      "targetMinutes": 10,
+      "angle": "Routes such as the Camino de Santiago, hostels and hospitals, relics and badges, dangers and costs, and why people went. Use surviving guidebooks and records and hedge numbers.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "medieval-university-student",
+      "title": "Student Life in a Medieval University",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Lectures in Latin, the trivium and quadrivium, lodgings, costs, discipline, student riots and town-gown tension, and who could attend. Note differences between Paris, Bologna and Oxford.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "longbow-archer-life",
+      "title": "The Life of a Medieval English Archer",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Lifelong training required by law, the bow's draw weight and skeletal evidence from wrecks and graves, pay, equipment and camp life. Focus on training and everyday life, not slaughter.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "medieval-medicine-reality",
+      "title": "Medieval Medicine: What Doctors Really Did",
+      "format": "myth-buster",
+      "targetMinutes": 10,
+      "angle": "Physicians, surgeons, barbers, midwives and monastic healers; herbs, bloodletting and theories of the humors; what worked, what did not, and common myths. Never present a dangerous practice as advice.",
+      "relatedShorts": [
+        "barber-surgeon-job",
+        "plague-doctor-job",
+        "medieval-bath-myths"
+      ]
+    },
+    {
+      "slug": "cathedral-builders-explained",
+      "title": "How Medieval Cathedrals Were Built",
+      "format": "explainer",
+      "targetMinutes": 10,
+      "angle": "Master masons, quarrying, scaffolding and cranes, financing over generations, stained glass, and the guild structure. Dispel the idea that everything was built by unpaid labor, if the evidence supports that.",
+      "relatedShorts": []
+    },
+    {
+      "slug": "medieval-feasts-manners",
+      "title": "Medieval Feasts and Table Manners",
+      "format": "day-in-the-life",
+      "targetMinutes": 9,
+      "angle": "Seating by rank, courses and showpiece dishes, shared cups and knives, etiquette books of the period, fast days and feast days. Hedge popular claims about 'crazy' medieval dishes.",
+      "relatedShorts": [
+        "castle-food",
+        "medieval-fast-days"
+      ]
+    },
+    {
+      "slug": "florence-medici-day",
+      "title": "A Day in Renaissance Florence",
+      "format": "comparison",
+      "targetMinutes": 10,
+      "angle": "Banking families, wool guilds, artists' workshops, ordinary workers and the poor; how wealth and patronage shaped the city. Keep the Medici's role balanced between patronage and political power.",
+      "relatedShorts": [
+        "renaissance-apprentice-day"
+      ]
+    },
+    {
+      "slug": "age-of-sail-navy-sailor",
+      "title": "Life as a Sailor in the Age of Sail",
+      "format": "day-in-the-life",
+      "targetMinutes": 10,
+      "angle": "Watches and routine aboard a warship, food and drink, discipline, pay, impressment, disease and sea-going skills. Use naval records and diaries and avoid graphic detail.",
+      "relatedShorts": [
+        "pirate-ship-day"
+      ]
+    },
+    {
+      "slug": "titanic-class-comparison",
+      "title": "Life Aboard the Titanic: First Class vs Third Class",
+      "format": "comparison",
+      "targetMinutes": 10,
+      "angle": "Accommodation, meals, daily routine and costs by class, how passengers and crew spent their days, using passenger records and surviving menus and plans. Respectful and factual about the disaster; avoid speculation.",
+      "relatedShorts": []
+    }
+  ]
+}

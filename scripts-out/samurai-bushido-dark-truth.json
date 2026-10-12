@@ -10,7 +10,8 @@
       "imagePrompt": "Peaceful Japanese Zen rock garden with raked white gravel and mossy stones under cherry blossom petals. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/samurai-bushido-dark-truth/1.mp3",
       "voicedText": "Modern pop culture portrays samurai as chivalrous, poetic warriors guided by a strict pacifist moral code.",
-      "seconds": 7.9
+      "seconds": 7.9,
+      "image": "images/samurai-bushido-dark-truth/1.png"
     },
     {
       "text": "In reality, during the Sengoku Civil War era, samurai were pragmatic, ruthless warlords whose loyalty was bought with land and gold.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Stone courtyard of a Sengoku period Japanese fortress castle with wooden watchtowers and battle banners in twilight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/samurai-bushido-dark-truth/2.mp3",
       "voicedText": "In reality, during the Sengoku Civil War era, samurai were pragmatic, ruthless warlords whose loyalty was bought with land and gold.",
-      "seconds": 9.6
+      "seconds": 9.6,
+      "image": "images/samurai-bushido-dark-truth/2.png"
     },
     {
       "text": "They practiced 'tsujigiri' or 'crossroads cutting': testing the sharpness of a newly forged katana on unsuspecting travelers at dark crossroads.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Dark misty dirt crossroads outside a Japanese village at night with a stone roadside Jizo statue in moonlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/samurai-bushido-dark-truth/3.mp3",
       "voicedText": "They practiced 'tsujigiri' or 'crossroads cutting': testing the sharpness of a newly forged katana on unsuspecting travelers at dark crossroads.",
-      "seconds": 9.3
+      "seconds": 9.3,
+      "image": "images/samurai-bushido-dark-truth/3.png"
     },
     {
       "text": "Furthermore, under the 'kiri-sute gomen' law, a samurai had the legal right to execute any peasant on the spot for perceived disrespect.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Traditional Japanese village street with thatched roofs, wooden irrigation channels, and sliding rice-paper shoji doors. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/samurai-bushido-dark-truth/4.mp3",
       "voicedText": "Furthermore, under the 'kiri-sute gomen' law, a samurai had the legal right to execute any peasant on the spot for perceived disrespect.",
-      "seconds": 8.8
+      "seconds": 8.8,
+      "image": "images/samurai-bushido-dark-truth/4.png"
     },
     {
       "text": "The romantic 'Bushido' honor code was actually codified centuries later during peacetime Edo, long after large-scale sword battles had ceased.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Lacquered wooden sword stand holding a katana and wakizashi beside an open calligraphy scroll and inkstone in a tatami room. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/samurai-bushido-dark-truth/5.mp3",
       "voicedText": "The romantic 'Bushido' honor code was actually codified centuries later during peacetime Edo, long after large-scale sword battles had ceased.",
-      "seconds": 8.8
+      "seconds": 8.8,
+      "image": "images/samurai-bushido-dark-truth/5.png"
     },
     {
       "text": "Did you believe samurai were always honorable protectors? Tell us below and follow for daily history stories!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Sunlight shining on a peaceful Japanese garden pond filled with swimming orange koi fish under weeping willow branches. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/samurai-bushido-dark-truth/6.mp3",
       "voicedText": "Did you believe samurai were always honorable protectors? Tell us below and follow for daily history stories!",
-      "seconds": 7.3
+      "seconds": 7.3,
+      "image": "images/samurai-bushido-dark-truth/6.png"
     }
   ]
 }

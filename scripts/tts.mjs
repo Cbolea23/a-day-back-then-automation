@@ -46,7 +46,7 @@ async function geminiSynth(text, outPath, overrides = {}) {
   }
   const model = process.env.TTS_MODEL || "gemini-3.8-flash-tts";
   const voice = overrides.voice || process.env.VOICE || "Charon";
-  const style = process.env.VOICE_STYLE || DEFAULT_STYLE;
+  const style = overrides.style || process.env.VOICE_STYLE || DEFAULT_STYLE;
 
   const body = {
     model,

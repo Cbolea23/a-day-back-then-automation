@@ -10,7 +10,8 @@
       "imagePrompt": "Sunlit olive grove in ancient Athens with classical marble statues and open discussion terraces. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/greek-philosopher-insults/1.mp3",
       "voicedText": "While Plato and Aristotle taught wealthy aristocrats in private academies, Diogenes of Sinope took philosophy straight into the gutter.",
-      "seconds": 9.7
+      "seconds": 9.7,
+      "image": "images/greek-philosopher-insults/1.png"
     },
     {
       "text": "He rejected all material possessions, living in a massive ceramic storage jar called a pithos in the Athenian marketplace.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Enormous weathered terracotta storage pithos jar resting on its side against an ancient stone wall in the marketplace. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/greek-philosopher-insults/2.mp3",
       "voicedText": "He rejected all material possessions, living in a massive ceramic storage jar called a pithos in the Athenian marketplace.",
-      "seconds": 8
+      "seconds": 8,
+      "image": "images/greek-philosopher-insults/2.png"
     },
     {
       "text": "Diogenes famously walked through Athens in broad daylight carrying a lit oil lamp, telling confused citizens he was 'looking for an honest man'.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Ancient bronze oil lamp with glowing orange flame resting on a cobblestone pavement in midday sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/greek-philosopher-insults/3.mp3",
       "voicedText": "Diogenes famously walked through Athens in broad daylight carrying a lit oil lamp, telling confused citizens he was 'looking for an honest man'.",
-      "seconds": 9.2
+      "seconds": 9.2,
+      "image": "images/greek-philosopher-insults/3.png"
     },
     {
       "text": "When Plato defined man as a 'featherless biped', Diogenes plucked a live chicken, brought it into Plato's lecture hall, and shouted: 'Behold! Plato's man!'",
@@ -34,7 +37,8 @@
       "imagePrompt": "Parchment scroll and lecture podium in a Greek philosophical academy with a stray white feather on the marble floor. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/greek-philosopher-insults/4.mp3",
       "voicedText": "When Plato defined man as a 'featherless biped', Diogenes plucked a live chicken, brought it into Plato's lecture hall, and shouted: 'Behold! Plato's man!'",
-      "seconds": 11.4
+      "seconds": 11.4,
+      "image": "images/greek-philosopher-insults/4.png"
     },
     {
       "text": "When Alexander the Great visited and offered to grant any wish, Diogenes casually squinted and replied: 'Yes, stand out of my sunlight.'",
@@ -42,7 +46,8 @@
       "imagePrompt": "Gleaming golden Macedonian spear and crested helmet casting a sharp shadow across dusty sunlit stone steps. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/greek-philosopher-insults/5.mp3",
       "voicedText": "When Alexander the Great visited and offered to grant any wish, Diogenes casually squinted and replied: 'Yes, stand out of my sunlight.'",
-      "seconds": 9.8
+      "seconds": 9.8,
+      "image": "images/greek-philosopher-insults/5.png"
     },
     {
       "text": "Alexander remarked: 'If I were not Alexander, I would want to be Diogenes.' What's your favorite Diogenes moment? Subscribe for more history!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Warm sunlight illuminating ancient Corinth with classical Greek temple columns against a bright blue sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/greek-philosopher-insults/6.mp3",
       "voicedText": "Alexander remarked: 'If I were not Alexander, I would want to be Diogenes.' What's your favorite Diogenes moment? Subscribe for more history!",
-      "seconds": 9.4
+      "seconds": 9.4,
+      "image": "images/greek-philosopher-insults/6.png"
     }
   ]
 }

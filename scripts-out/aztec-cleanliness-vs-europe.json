@@ -10,7 +10,8 @@
       "imagePrompt": "Immaculate paved stone causeway leading across turquoise Lake Texcoco into the gleaming white pyramids of Tenochtitlan. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/aztec-cleanliness-vs-europe/1.mp3",
       "voicedText": "When Spanish conquistadors first entered Tenochtitlan in 1519, they were stunned by a city far cleaner than Paris, London, or Madrid.",
-      "seconds": 9.4
+      "seconds": 9.4,
+      "image": "images/aztec-cleanliness-vs-europe/1.png"
     },
     {
       "text": "While European cities threw raw chamber pots directly into dirt streets, Tenochtitlan employed one thousand dedicated municipal street sweepers.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Spotless stone marketplace plaza swept clean with reed brooms under clear blue skies beside whitewashed adobe walls. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/aztec-cleanliness-vs-europe/2.mp3",
       "voicedText": "While European cities threw raw chamber pots directly into dirt streets, Tenochtitlan employed one thousand dedicated municipal street sweepers.",
-      "seconds": 9.8
+      "seconds": 9.8,
+      "image": "images/aztec-cleanliness-vs-europe/2.png"
     },
     {
       "text": "Fresh mountain spring water flowed into city centers through the Chapultepec aqueduct: twin pipes engineered so one could be cleaned while water flowed.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Double stone aqueduct bridge crossing turquoise lake waters with clean mountain water flowing through smooth mortar channels. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/aztec-cleanliness-vs-europe/3.mp3",
       "voicedText": "Fresh mountain spring water flowed into city centers through the Chapultepec aqueduct: twin pipes engineered so one could be cleaned while water flowed.",
-      "seconds": 8.9
+      "seconds": 8.9,
+      "image": "images/aztec-cleanliness-vs-europe/3.png"
     },
     {
       "text": "Aztecs bathed twice daily in freshwater canals or private dome steam baths called 'temazcals', using saponin-rich soaproot plants.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Dome-shaped stone temazcal steam lodge beside volcanic river rocks, steaming herbal water buckets, and dried soaproot roots. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/aztec-cleanliness-vs-europe/4.mp3",
       "voicedText": "Aztecs bathed twice daily in freshwater canals or private dome steam baths called 'temazcals', using saponin-rich soaproot plants.",
-      "seconds": 9.4
+      "seconds": 9.4,
+      "image": "images/aztec-cleanliness-vs-europe/4.png"
     },
     {
       "text": "They brushed their teeth with charred charcoal and wild pepper bark, and chewed aromatic 'chicle' tree sap to sweeten their breath.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Carved clay vanity tray holding chunks of natural chicle gum, aromatic herb leaves, and powdered tooth-cleaning bark. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/aztec-cleanliness-vs-europe/5.mp3",
       "voicedText": "They brushed their teeth with charred charcoal and wild pepper bark, and chewed aromatic 'chicle' tree sap to sweeten their breath.",
-      "seconds": 8.4
+      "seconds": 8.4,
+      "image": "images/aztec-cleanliness-vs-europe/5.png"
     },
     {
       "text": "Aztecs found Spanish soldiers' body odor completely repulsive! Did you know the Aztecs invented natural chewing gum?",
@@ -50,7 +55,8 @@
       "imagePrompt": "Sunlight dancing across lush floating chinampa garden islands with willow trees and purple flowering water hyacinths. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/aztec-cleanliness-vs-europe/6.mp3",
       "voicedText": "Aztecs found Spanish soldiers' body odor completely repulsive! Did you know the Aztecs invented natural chewing gum?",
-      "seconds": 7.9
+      "seconds": 7.9,
+      "image": "images/aztec-cleanliness-vs-europe/6.png"
     }
   ]
 }

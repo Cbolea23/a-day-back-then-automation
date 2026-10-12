@@ -10,7 +10,8 @@
       "imagePrompt": "Lower gun deck of an 18th-century galleon with heavy iron 24-pounder cannons secured with thick hemp breeching ropes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-cannon-battle-smoke/1.mp3",
       "voicedText": "A broadside artillery battle between wooden sailing warships was one of the loudest, most suffocating experiences in military history.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/pirate-cannon-battle-smoke/1.png"
     },
     {
       "text": "In the cramped lower gun deck, gun crews of six men hauled 3,000-pound iron cannons back on ropes after each massive recoil.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Heavy iron cannon pulled back inside a gunport with wooden rammers, sponges, and copper gunpowder powder horns on the deck. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-cannon-battle-smoke/2.mp3",
       "voicedText": "In the cramped lower gun deck, gun crews of six men hauled 3,000-pound iron cannons back on ropes after each massive recoil.",
-      "seconds": 8.9
+      "seconds": 8.9,
+      "image": "images/pirate-cannon-battle-smoke/2.png"
     },
     {
       "text": "Within three discharges, acrid black gunpowder smoke became so dense that gunners could not see their own hands or open gunports.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Dense swirling grey gunsmoke obscuring wooden deck beams with faint orange muzzle flash glows illuminating the gloom. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-cannon-battle-smoke/3.mp3",
       "voicedText": "Within three discharges, acrid black gunpowder smoke became so dense that gunners could not see their own hands or open gunports.",
-      "seconds": 9.1
+      "seconds": 9.1,
+      "image": "images/pirate-cannon-battle-smoke/3.png"
     },
     {
       "text": "The deafening sonic roar ruptured eardrums permanently; sailors stuffed beeswax into their ears and fought with open mouths to equalize ear pressure.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Pyramid of iron cannonballs in a wooden deck rack beside buckets of sea water and wet wool swabs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-cannon-battle-smoke/4.mp3",
       "voicedText": "The deafening sonic roar ruptured eardrums permanently; sailors stuffed beeswax into their ears and fought with open mouths to equalize ear pressure.",
-      "seconds": 11.1
+      "seconds": 11.1,
+      "image": "images/pirate-cannon-battle-smoke/4.png"
     },
     {
       "text": "When enemy solid shot smashed into two-foot-thick oak hull walls, thousands of sharp wood splinters acted like explosive shrapnel.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Shattered wooden hull wall showing jagged jagged wood splinters and sunlight piercing through broken planks into the hold. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-cannon-battle-smoke/5.mp3",
       "voicedText": "When enemy solid shot smashed into two-foot-thick oak hull walls, thousands of sharp wood splinters acted like explosive shrapnel.",
-      "seconds": 9
+      "seconds": 9,
+      "image": "images/pirate-cannon-battle-smoke/5.png"
     },
     {
       "text": "Could you have loaded a three-ton cannon in choking smoke while wood splinters flew? Tell us below and subscribe!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Afternoon sea breeze clearing cannon smoke from the upper deck of a majestic sailing vessel on the open Atlantic. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-cannon-battle-smoke/6.mp3",
       "voicedText": "Could you have loaded a three-ton cannon in choking smoke while wood splinters flew? Tell us below and subscribe!",
-      "seconds": 7
+      "seconds": 7,
+      "image": "images/pirate-cannon-battle-smoke/6.png"
     }
   ]
 }

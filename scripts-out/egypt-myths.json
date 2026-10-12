@@ -1,80 +1,91 @@
 {
   "slug": "egypt-myths",
   "title": "3 Egypt Myths Debunked",
-  "hook": "Everything You Know About Egypt Is Wrong",
+  "hook": "Think Indiana Jones was accurate? Egypt's biggest myths debunked.",
   "channelName": "A Day Back Then",
   "scenes": [
     {
-      "text": "You think you know ancient Egypt, but Hollywood lied to you.",
+      "text": "Movies made us believe Egyptian tombs are full of rolling boulder traps, poisonous darts, and cursed mummies.",
       "mood": "warm",
       "imagePrompt": "Cinematic wide shot of the Giza Plateau at sunset, towering pyramids against an amber sky and sweeping sand dunes.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-myths/1.png",
       "audio": "audio/egypt-myths/1.wav",
-      "seconds": 3.6,
-      "voicedText": "You think you know ancient Egypt, but Hollywood lied to you."
+      "seconds": 7.2,
+      "voicedText": "Movies made us believe Egyptian tombs are full of rolling boulder traps, poisonous darts, and cursed mummies."
     },
     {
-      "text": "You picture millions of enslaved workers building pyramids under a brutal desert whip.",
+      "text": "First: zero rolling boulders existed. Ancient architects relied on simple massive stone portcullis slabs and false dead-ends.",
       "mood": "day",
       "imagePrompt": "An ancient limestone quarry site near the Nile riverbank, bright sunny glare over rugged desert rocks.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-myths/2.png",
       "audio": "audio/egypt-myths/2.wav",
-      "seconds": 5.7,
-      "voicedText": "You picture millions of enslaved workers building pyramids under a brutal desert whip."
+      "seconds": 9,
+      "voicedText": "First: zero rolling boulders existed. Ancient architects relied on simple massive stone portcullis slabs and false dead-ends."
     },
     {
-      "text": "In reality, archaeologists found worker towns showing they ate prime beef and received care.",
+      "text": "No poison darts? Just a giant two-ton granite block in my way!",
       "mood": "day",
       "imagePrompt": "Excavated mudbrick ruins of an ancient Egyptian worker village, dusty archaeological grid under clear sunlight.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-myths/3.png",
       "audio": "audio/egypt-myths/3.wav",
-      "seconds": 6.5,
-      "voicedText": "In reality, archaeologists found worker towns showing they ate prime beef and received care."
+      "seconds": 5,
+      "voicedText": "No poison darts? Just a giant two-ton granite block in my way!",
+      "speaker": "npc",
+      "speakerName": "GRAVEROBBER",
+      "voice": "Puck",
+      "voiceStyle": "Disappointed, sneaky ancient thief whining about tomb construction.",
+      "npc": {
+        "archetype": "citizen",
+        "position": "left",
+        "expression": "grumpy",
+        "speechBubble": "A giant two-ton rock!",
+        "talking": true
+      }
     },
     {
-      "text": "Next, forget about giant rolling boulders or secret mechanical poison traps inside tombs.",
+      "text": "Second: King Tut's deadly mummy curse was almost entirely made up by 1920s British tabloids hungry for clicks.",
       "mood": "dark",
       "imagePrompt": "A narrow, dimly lit sandstone corridor inside a pyramid, flickering torchlight casting long shadows on plain stone walls.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-myths/4.png",
       "audio": "audio/egypt-myths/4.wav",
-      "seconds": 6.4,
-      "voicedText": "Next, forget about giant rolling boulders or secret mechanical poison traps inside tombs."
+      "seconds": 8,
+      "voicedText": "Second: King Tut's deadly mummy curse was almost entirely made up by 1920s British tabloids hungry for clicks."
     },
     {
-      "text": "Architects mostly relied on heavy stone slabs and simple dead-ends to block thieves.",
+      "text": "Howard Carter, the man who actually cracked open the tomb, lived another seventeen peaceful years in London.",
       "mood": "cool",
       "imagePrompt": "A massive granite portcullis blocking stone tightly fitted into a dark subterranean vault passageway.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-myths/5.png",
       "audio": "audio/egypt-myths/5.wav",
-      "seconds": 6.4,
-      "voicedText": "Architects mostly relied on heavy stone slabs and simple dead-ends to block thieves."
+      "seconds": 7.2,
+      "voicedText": "Howard Carter, the man who actually cracked open the tomb, lived another seventeen peaceful years in London."
     },
     {
-      "text": "And that deadly pharaoh's curse that struck down King Tut's tomb discoverers?",
+      "text": "And Cleopatra? She wasn't ethnically Egyptian at all — she was pure Greek Macedonian royalty.",
       "mood": "dark",
       "imagePrompt": "Entrance to a carved underground pharaoh tomb, covered in painted golden hieroglyphs on aged stone.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-myths/6.png",
       "audio": "audio/egypt-myths/6.wav",
-      "seconds": 5.3,
-      "voicedText": "And that deadly pharaoh's curse that struck down King Tut's tomb discoverers?"
+      "seconds": 6.9,
+      "voicedText": "And Cleopatra? She wasn't ethnically Egyptian at all — she was pure Greek Macedonian royalty."
     },
     {
-      "text": "1920s newspapers probably invented most of it just to sell sensational stories.",
+      "text": "Did you fall for any of these Egyptian myths? Tell us in the comments.",
       "mood": "warm",
       "imagePrompt": "Vintage 1920s style newspaper printing shop setting, warm desk lamp illuminating stacks of freshly printed papers.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-myths/7.png",
       "audio": "audio/egypt-myths/7.wav",
-      "seconds": 6.5,
-      "voicedText": "1920s newspapers probably invented most of it just to sell sensational stories."
+      "seconds": 4.8,
+      "voicedText": "Did you fall for any of these Egyptian myths? Tell us in the comments."
     },
     {
-      "text": "Yet, scientists did discover real toxic mold hiding in sealed tombs. Want part two?",
+      "text": "Follow for more real history they never taught you in school.",
       "mood": "dark",
       "imagePrompt": "Deep inside a pitch-black stone tomb chamber, a faint cool blue light revealing ancient organic dust clinging to dark rock surfaces.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-myths/8.png",
       "audio": "audio/egypt-myths/8.wav",
-      "seconds": 6.7,
-      "voicedText": "Yet, scientists did discover real toxic mold hiding in sealed tombs. Want part two?"
+      "seconds": 3.9,
+      "voicedText": "Follow for more real history they never taught you in school."
     }
   ],
   "claimsToVerify": [

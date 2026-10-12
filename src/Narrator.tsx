@@ -12,7 +12,12 @@ import {
   SpeechPlan,
   activeWordIndex,
 } from "./speech";
-import {ReactionKind} from "./types";
+import {NPCArchetype, ReactionKind} from "./types";
+import {
+  ArchetypeFaceDetails,
+  ArchetypeHeadwear,
+  ArchetypeOutfit,
+} from "./NPCArchetypes";
 
 export type CharacterTheme =
   | "roman"
@@ -144,6 +149,7 @@ export type Gesture =
 
 type Props = {
   theme?: CharacterTheme;
+  archetype?: NPCArchetype;
   talking?: boolean;
   height?: number;
   tunic?: string;
@@ -584,6 +590,7 @@ type BodyProps = Props & {
 
 const NarratorBody: React.FC<BodyProps> = ({
   theme = "roman",
+  archetype,
   height = 760,
   tunic,
   gesture,
@@ -881,7 +888,9 @@ const NarratorBody: React.FC<BodyProps> = ({
 
 
       {/* ================= BODY / OUTFIT ================= */}
-      {theme === "egypt" ? (
+      {archetype ? (
+        <ArchetypeOutfit archetype={archetype} tunic={tunic} />
+      ) : theme === "egypt" ? (
         <>
           <path d="M96 168 Q150 152 204 168 L228 410 Q150 430 72 410 Z" fill="#f7f2e7" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
           <path d="M125 280 L115 410" stroke="#d5c8ad" strokeWidth="3" />
@@ -1164,7 +1173,9 @@ const NarratorBody: React.FC<BodyProps> = ({
       >
         <circle cx="150" cy="92" r="64" fill={skin} stroke={INK} strokeWidth="6" />
 
-        {theme === "egypt" ? (
+        {archetype ? (
+          <ArchetypeHeadwear archetype={archetype} />
+        ) : theme === "egypt" ? (
           <>
             <path d="M86 90 Q80 20 150 20 Q220 20 214 90 Q215 50 150 40 Q85 50 86 90 Z" fill="#1d4370" stroke={INK} strokeWidth="5" />
             <path d="M120 25 Q135 40 135 50" stroke="#e5b32f" strokeWidth="6" fill="none" />
@@ -1331,6 +1342,7 @@ const NarratorBody: React.FC<BodyProps> = ({
         {/* ================= FACE ================= */}
         {theme !== "plague-doctor" && (
           <>
+            {archetype && <ArchetypeFaceDetails archetype={archetype} />}
             {theme === "egypt" && (
               <>
                 <path d="M120 86 L112 83 L110 88" stroke={INK} strokeWidth="3" fill="none" strokeLinecap="round" />
@@ -1359,9 +1371,19 @@ const NarratorBody: React.FC<BodyProps> = ({
               </g>
             ))}
 
-            {expression === "surprise" ? (
+            {!talking ? (
+              expression === "surprise" ? (
+                <path d="M136 122 Q150 114 164 122" stroke={INK} strokeWidth="5" fill="none" strokeLinecap="round" />
+              ) : expression === "sad" ? (
+                <path d="M134 126 Q150 116 166 126" stroke={INK} strokeWidth="5" fill="none" strokeLinecap="round" />
+              ) : expression === "happy" ? (
+                <path d="M132 116 Q150 132 168 116" stroke={INK} strokeWidth="5" fill="none" strokeLinecap="round" />
+              ) : (
+                <path d="M134 118 Q150 128 166 118" stroke={INK} strokeWidth="5" fill="none" strokeLinecap="round" />
+              )
+            ) : expression === "surprise" ? (
               <ellipse cx="150" cy="122" rx="10" ry="13" fill="#5a1d1d" stroke={INK} strokeWidth="3" />
-            ) : talking ? (
+            ) : (
               <g>
                 <ellipse
                   cx="150"
@@ -1393,12 +1415,6 @@ const NarratorBody: React.FC<BodyProps> = ({
                   />
                 )}
               </g>
-            ) : expression === "sad" ? (
-              <path d="M134 126 Q150 116 166 126" stroke={INK} strokeWidth="5" fill="none" strokeLinecap="round" />
-            ) : expression === "happy" ? (
-              <path d="M132 116 Q150 132 168 116" stroke={INK} strokeWidth="5" fill="none" strokeLinecap="round" />
-            ) : (
-              <path d="M134 118 Q150 128 166 118" stroke={INK} strokeWidth="5" fill="none" strokeLinecap="round" />
             )}
           </>
         )}

@@ -10,7 +10,8 @@
       "imagePrompt": "Industrial brick factory interior in Victorian London with massive rows of workbenches and dusty gas lamps overhead. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-phossy-jaw-matchgirls/1.mp3",
       "voicedText": "In 1888, the Bryant & May match factory in East London employed thousands of poor young girls working fourteen-hour days.",
-      "seconds": 8.8
+      "seconds": 8.8,
+      "image": "images/victorian-phossy-jaw-matchgirls/1.png"
     },
     {
       "text": "They dipped thousands of wooden match splints into steaming vats of hot white phosphorus paste without masks or ventilation.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Steaming iron vat filled with bubbling yellow phosphorus chemical paste beside stacks of wooden matchstick splints. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-phossy-jaw-matchgirls/2.mp3",
       "voicedText": "They dipped thousands of wooden match splints into steaming vats of hot white phosphorus paste without masks or ventilation.",
-      "seconds": 8.2
+      "seconds": 8.2,
+      "image": "images/victorian-phossy-jaw-matchgirls/2.png"
     },
     {
       "text": "Constant exposure caused a horrifying occupational disease called 'phossy jaw': toxic fumes seeped into teeth, rotting the lower jawbone.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Medical laboratory table with anatomical jaw diagrams, antique dental forceps, and an amber glass medicine jar. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-phossy-jaw-matchgirls/3.mp3",
       "voicedText": "Constant exposure caused a horrifying occupational disease called 'phossy jaw': toxic fumes seeped into teeth, rotting the lower jawbone.",
-      "seconds": 9.6
+      "seconds": 9.6,
+      "image": "images/victorian-phossy-jaw-matchgirls/3.png"
     },
     {
       "text": "In dark bedrooms, the rotting infected jawbone literally glowed with greenish-white bioluminescent light.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Dimly lit garret bedroom corner with faint greenish phosphorescent glow reflecting softly on bare floorboards in moonlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-phossy-jaw-matchgirls/4.mp3",
       "voicedText": "In dark bedrooms, the rotting infected jawbone literally glowed with greenish-white bioluminescent light.",
-      "seconds": 7.5
+      "seconds": 7.5,
+      "image": "images/victorian-phossy-jaw-matchgirls/4.png"
     },
     {
       "text": "In 1888, 1,400 brave matchgirls walked out on strike, winning safe working conditions and igniting the British labor union movement.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Cobblestone street outside factory gates with printed strike placards leaning against brick walls in morning light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-phossy-jaw-matchgirls/5.mp3",
       "voicedText": "In 1888, 1,400 brave matchgirls walked out on strike, winning safe working conditions and igniting the British labor union movement.",
-      "seconds": 9.7
+      "seconds": 9.7,
+      "image": "images/victorian-phossy-jaw-matchgirls/5.png"
     },
     {
       "text": "Their historic victory banned white phosphorus matches forever. Did you know about the matchgirl heroes of London?",
@@ -50,7 +55,8 @@
       "imagePrompt": "Clean wooden writing desk with a modern box of red-tipped safety matches sitting peacefully in afternoon sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-phossy-jaw-matchgirls/6.mp3",
       "voicedText": "Their historic victory banned white phosphorus matches forever. Did you know about the matchgirl heroes of London?",
-      "seconds": 7.1
+      "seconds": 7.1,
+      "image": "images/victorian-phossy-jaw-matchgirls/6.png"
     }
   ]
 }

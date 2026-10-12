@@ -10,7 +10,8 @@
       "imagePrompt": "Capstan table in a dimly lit pirate ship cabin with parchment Ship's Articles, black iron flintlock pistol, and dripping beeswax candle. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-punishments-code/1.mp3",
       "voicedText": "Golden Age pirates lived under strict written rules called the Ship's Articles, sworn on a Bible or an iron hatchet.",
-      "seconds": 7.7
+      "seconds": 7.7,
+      "image": "images/pirate-punishments-code/1.png"
     },
     {
       "text": "If a pirate stole from his fellow crewmates or cheated in dice, the punishment wasn't prison—it was marooning.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Desolate coral sandbar surrounded by vast turquoise ocean under blistering Caribbean sun with a single stunted palm tree. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-punishments-code/2.mp3",
       "voicedText": "If a pirate stole from his fellow crewmates or cheated in dice, the punishment wasn't prison—it was marooning.",
-      "seconds": 7
+      "seconds": 7,
+      "image": "images/pirate-punishments-code/2.png"
     },
     {
       "text": "The guilty sailor was rowed to an uninhabited desert island and left with one pistol, one lead ball, a flask of water, and a pouch of gunpowder.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Single wooden gunpowder flask and iron pistol resting half-buried in pristine white beach sand near gentle breaking waves. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-punishments-code/3.mp3",
       "voicedText": "The guilty sailor was rowed to an uninhabited desert island and left with one pistol, one lead ball, a flask of water, and a pouch of gunpowder.",
-      "seconds": 10
+      "seconds": 10,
+      "image": "images/pirate-punishments-code/3.png"
     },
     {
       "text": "Even worse was royal navy punishment: 'keelhauling' meant tying a sailor to a rope and dragging him under the barnacle-crusted ship hull.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Underneath a wooden ship hull encrusted with sharp barnacles and seaweed underwater with shafts of sunlight filtering down. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-punishments-code/4.mp3",
       "voicedText": "Even worse was royal navy punishment: 'keelhauling' meant tying a sailor to a rope and dragging him under the barnacle-crusted ship hull.",
-      "seconds": 8.3
+      "seconds": 8.3,
+      "image": "images/pirate-punishments-code/4.png"
     },
     {
       "text": "Razor-sharp barnacles tore flesh to ribbons, and many drowned before being hauled up onto the opposite deck.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Weathered wooden quarterdeck planks with wet coiled hemp ropes, iron cleats, and brass ship bells under grey overcast ocean skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-punishments-code/5.mp3",
       "voicedText": "Razor-sharp barnacles tore flesh to ribbons, and many drowned before being hauled up onto the opposite deck.",
-      "seconds": 8
+      "seconds": 8,
+      "image": "images/pirate-punishments-code/5.png"
     },
     {
       "text": "Which terrifying fate would you fear more: marooning or keelhauling? Drop a comment below and subscribe!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Silhouette of an 18th-century three-masted pirate galleon sailing into a fiery orange tropical sunset horizon. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-punishments-code/6.mp3",
       "voicedText": "Which terrifying fate would you fear more: marooning or keelhauling? Drop a comment below and subscribe!",
-      "seconds": 7.6
+      "seconds": 7.6,
+      "image": "images/pirate-punishments-code/6.png"
     }
   ]
 }

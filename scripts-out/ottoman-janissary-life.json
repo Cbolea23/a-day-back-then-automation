@@ -10,7 +10,8 @@
       "imagePrompt": "Grand courtyard of the Janissary barracks in Istanbul with stone arches, cypress trees, and weapon racks under morning sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-janissary-life/1.mp3",
       "voicedText": "In the 14th century, the Ottoman Sultan created the Janissaries: history's first professional standing infantry in Europe.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/ottoman-janissary-life/1.png"
     },
     {
       "text": "Recruited as boys through the Devshirme system, they converted to Islam and underwent brutal discipline, archery, and musket training.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Armory workshop with matchlock muskets, curved yatagan daggers, and composite bows displayed on whitewashed stone walls. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-janissary-life/2.mp3",
       "voicedText": "Recruited as boys through the Devshirme system, they converted to Islam and underwent brutal discipline, archery, and musket training.",
-      "seconds": 8.9
+      "seconds": 8.9,
+      "image": "images/ottoman-janissary-life/2.png"
     },
     {
       "text": "Curiously, their military ranks revolved entirely around the kitchen: colonels were called 'Soup Makers', and captains were 'Head Cooks'.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Giant hammered copper soup cauldron resting on an outdoor hearth with long brass ladles and wooden bread bowls. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-janissary-life/3.mp3",
       "voicedText": "Curiously, their military ranks revolved entirely around the kitchen: colonels were called 'Soup Makers', and captains were 'Head Cooks'.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/ottoman-janissary-life/3.png"
     },
     {
       "text": "Their sacred regimental standard wasn't a silk banner, but a massive copper soup cauldron carried at the head of every charging column.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Heavy copper cauldron carried on iron poles adorned with horsehair plumes and crescent brass emblems in sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-janissary-life/4.mp3",
       "voicedText": "Their sacred regimental standard wasn't a silk banner, but a massive copper soup cauldron carried at the head of every charging column.",
-      "seconds": 7.8
+      "seconds": 7.8,
+      "image": "images/ottoman-janissary-life/4.png"
     },
     {
       "text": "If Janissaries overturned their soup cauldrons in the public square, it struck terror into the Sultan: it signaled armed military rebellion.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Atmospheric Istanbul public square with overturned copper cauldrons and torches burning in the evening dusk outside palace gates. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-janissary-life/5.mp3",
       "voicedText": "If Janissaries overturned their soup cauldrons in the public square, it struck terror into the Sultan: it signaled armed military rebellion.",
-      "seconds": 9.2
+      "seconds": 9.2,
+      "image": "images/ottoman-janissary-life/5.png"
     },
     {
       "text": "Janissaries held veto power over Sultans for centuries. Did you know a chef's cauldron was the most feared flag in Europe?",
@@ -50,7 +55,8 @@
       "imagePrompt": "Magnificent view of the Bosphorus strait in Istanbul with minarets of the Blue Mosque glowing against clear blue skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-janissary-life/6.mp3",
       "voicedText": "Janissaries held veto power over Sultans for centuries. Did you know a chef's cauldron was the most feared flag in Europe?",
-      "seconds": 7.8
+      "seconds": 7.8,
+      "image": "images/ottoman-janissary-life/6.png"
     }
   ]
 }

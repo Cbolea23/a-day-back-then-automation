@@ -10,7 +10,8 @@
       "imagePrompt": "1940s London high street under total midnight blackout with dark silhouette of Big Ben and searchlight beams crisscrossing the cloudy sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-blackout-night/1.mp3",
       "voicedText": "During the London Blitz, every single city street was plunged into pitch-black darkness by order of the government.",
-      "seconds": 7
+      "seconds": 7,
+      "image": "images/wwii-blackout-night/1.png"
     },
     {
       "text": "Wardens patrolled neighborhoods shouting 'Put that light out!' if even a crack of candlelight escaped heavy blackout curtains.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Row of Victorian brick terraced houses at night with thick black cloth drawn tight across glowing window frames. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-blackout-night/2.mp3",
       "voicedText": "Wardens patrolled neighborhoods shouting 'Put that light out!' if even a crack of candlelight escaped heavy blackout curtains.",
-      "seconds": 8.3
+      "seconds": 8.3,
+      "image": "images/wwii-blackout-night/2.png"
     },
     {
       "text": "Streetlights were turned off, and cars drove with metal slotted hoods over their headlamps that emitted only faint downwards glows.",
@@ -26,7 +28,8 @@
       "imagePrompt": "1940s vintage black automobile parked by a cobblestone curb with hooded slotted headlights casting dim beams onto wet asphalt. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-blackout-night/3.mp3",
       "voicedText": "Streetlights were turned off, and cars drove with metal slotted hoods over their headlamps that emitted only faint downwards glows.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/wwii-blackout-night/3.png"
     },
     {
       "text": "Walking home was treacherous: thousands tripped into bomb craters, bumped into lampposts, or accidentally fell into the Thames river.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Misty Thames riverbank with cast-iron railings and white stripes painted on tree trunks to guide night walkers. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-blackout-night/4.mp3",
       "voicedText": "Walking home was treacherous: thousands tripped into bomb craters, bumped into lampposts, or accidentally fell into the Thames river.",
-      "seconds": 9.2
+      "seconds": 9.2,
+      "image": "images/wwii-blackout-night/4.png"
     },
     {
       "text": "To avoid nighttime car crashes, city councils painted curbs, lamp posts, and even cow tails with reflective white stripes.",
@@ -42,7 +46,8 @@
       "imagePrompt": "English country roadside hedge with painted white stripes on stone markers and wooden fences under pale moonlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-blackout-night/5.mp3",
       "voicedText": "To avoid nighttime car crashes, city councils painted curbs, lamp posts, and even cow tails with reflective white stripes.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/wwii-blackout-night/5.png"
     },
     {
       "text": "Could you have navigated an entire city in absolute pitch darkness? Drop a comment below and follow for daily history stories!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Morning sunrise over London rooftops with smoke clearing over chimney pots and St Pauls dome in the distance. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-blackout-night/6.mp3",
       "voicedText": "Could you have navigated an entire city in absolute pitch darkness? Drop a comment below and follow for daily history stories!",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/wwii-blackout-night/6.png"
     }
   ]
 }

@@ -10,7 +10,8 @@
       "imagePrompt": "Massive stone ballcourt at Chichen Itza with sloping stone aprons, temple platforms, and high parallel limestone walls. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-rubber-ball-game/1.mp3",
       "voicedText": "Long before European sports existed, ancient Mesoamericans played 'pok-a-tok': a high-stakes, spiritual ballgame.",
-      "seconds": 7.8
+      "seconds": 7.8,
+      "image": "images/maya-rubber-ball-game/1.png"
     },
     {
       "text": "The ball was solid tree latex rubber weighing up to nine pounds—so dense and heavy that hitting it wrong shattered ribs and fractured skulls.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Heavy solid black rubber game ball resting on carved limestone court paving beside a leather protective waist yoke. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-rubber-ball-game/2.mp3",
       "voicedText": "The ball was solid tree latex rubber weighing up to nine pounds—so dense and heavy that hitting it wrong shattered ribs and fractured skulls.",
-      "seconds": 8.9
+      "seconds": 8.9,
+      "image": "images/maya-rubber-ball-game/2.png"
     },
     {
       "text": "Players were strictly forbidden from using hands or feet; they could only strike the heavy rubber with padded hips, elbows, and knees.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Carved wooden and leather hip yoke armor adorned with jade stone ornaments resting on a stone bench in sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-rubber-ball-game/3.mp3",
       "voicedText": "Players were strictly forbidden from using hands or feet; they could only strike the heavy rubber with padded hips, elbows, and knees.",
-      "seconds": 9
+      "seconds": 9,
+      "image": "images/maya-rubber-ball-game/3.png"
     },
     {
       "text": "To win, players had to propel the bouncing ball through vertical stone scoring hoops mounted twenty-five feet high on court walls.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Elaborately carved stone ring hoop mounted high on a vertical temple wall showing feathered serpent reliefs in bright sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-rubber-ball-game/4.mp3",
       "voicedText": "To win, players had to propel the bouncing ball through vertical stone scoring hoops mounted twenty-five feet high on court walls.",
-      "seconds": 7.9
+      "seconds": 7.9,
+      "image": "images/maya-rubber-ball-game/4.png"
     },
     {
       "text": "Matches simulated cosmic battles between the sun and underworld gods; on sacred occasions, the losing team captain was sacrificed.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Carved stone relief panel on court wall depicting mythological underworld deities, feather serpents, and offering bowls. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-rubber-ball-game/5.mp3",
       "voicedText": "Matches simulated cosmic battles between the sun and underworld gods; on sacred occasions, the losing team captain was sacrificed.",
-      "seconds": 8.9
+      "seconds": 8.9,
+      "image": "images/maya-rubber-ball-game/5.png"
     },
     {
       "text": "Could you play soccer with a nine-pound solid rubber ball using only your hips? Tell us below and subscribe!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Sunny Yucatan jungle sky framing the majestic pyramid of El Castillo rising gracefully over the ballcourt lawns. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-rubber-ball-game/6.mp3",
       "voicedText": "Could you play soccer with a nine-pound solid rubber ball using only your hips? Tell us below and subscribe!",
-      "seconds": 6.8
+      "seconds": 6.8,
+      "image": "images/maya-rubber-ball-game/6.png"
     }
   ]
 }

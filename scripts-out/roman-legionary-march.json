@@ -1,71 +1,82 @@
 {
   "slug": "roman-legionary-march",
   "title": "A Roman Soldier on the March",
-  "hook": "Marching eighty pounds for twenty miles.",
+  "hook": "Imagine marching twenty miles a day carrying eighty pounds of iron.",
   "channelName": "A Day Back Then",
   "scenes": [
     {
-      "text": "You wake up at dawn to carry eighty pounds of gear for twenty miles.",
+      "text": "Imagine waking up at sunrise and strapping eighty pounds of solid gear to your back for a twenty-mile trek.",
       "mood": "cool",
       "imagePrompt": "A misty, rolling dirt road cutting through a dense European forest at sunrise.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-legionary-march/1.png",
       "audio": "audio/roman-legionary-march/1.wav",
-      "seconds": 4.3,
-      "voicedText": "You wake up at dawn to carry eighty pounds of gear for twenty miles."
+      "seconds": 6.3,
+      "voicedText": "Imagine waking up at sunrise and strapping eighty pounds of solid gear to your back for a twenty-mile trek."
     },
     {
-      "text": "Your fellow soldiers call themselves Marius' Mules. You are basically a walking military warehouse.",
+      "text": "Roman legionaries weren't called Marius' Mules for nothing — you were literally a walking human supply convoy.",
       "mood": "day",
       "imagePrompt": "An ancient gravel road stretching through a vast, grassy plain under a bright midday sun.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-legionary-march/2.png",
       "audio": "audio/roman-legionary-march/2.wav",
-      "seconds": 6.6,
-      "voicedText": "Your fellow soldiers call themselves Marius' Mules. You are basically a walking military warehouse."
+      "seconds": 6.4,
+      "voicedText": "Roman legionaries weren't called Marius' Mules for nothing — you were literally a walking human supply convoy."
     },
     {
-      "text": "Besides armor and weapons, you carry wooden stakes, a cooking pot, and rations for weeks.",
+      "text": "You carried your shield, pilum spears, a cooking pot, two heavy palisade stakes, and two weeks of hard grain.",
       "mood": "day",
       "imagePrompt": "A crude wooden table displaying a collection of ancient Roman iron tools, a bronze kettle, and leather straps.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-legionary-march/3.png",
       "audio": "audio/roman-legionary-march/3.wav",
-      "seconds": 6.3,
-      "voicedText": "Besides armor and weapons, you carry wooden stakes, a cooking pot, and rations for weeks."
+      "seconds": 7.2,
+      "voicedText": "You carried your shield, pilum spears, a cooking pot, two heavy palisade stakes, and two weeks of hard grain."
     },
     {
-      "text": "Lunch is hard bread called buccellatum and sour wine mixed with water. It keeps you moving.",
+      "text": "Lunch was hardtack bread and sour vinegar-wine called posca to kill bacteria in muddy stream water.",
       "mood": "warm",
       "imagePrompt": "A close-up of coarse, flat wheat bread and a rustic terracotta jug on a wooden surface.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-legionary-march/4.png",
       "audio": "audio/roman-legionary-march/4.wav",
-      "seconds": 6.3,
-      "voicedText": "Lunch is hard bread called buccellatum and sour wine mixed with water. It keeps you moving."
+      "seconds": 6.2,
+      "voicedText": "Lunch was hardtack bread and sour vinegar-wine called posca to kill bacteria in muddy stream water."
     },
     {
-      "text": "After marching all day, you don't sleep yet. Your unit must build a fortified camp.",
+      "text": "Pick up that shovel, recruit! The barbarians aren't waiting for your blisters to heal!",
       "mood": "warm",
       "imagePrompt": "An unfinished earthen rampart and a deep ditch overlooking a wild valley at late afternoon.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-legionary-march/5.png",
       "audio": "audio/roman-legionary-march/5.wav",
-      "seconds": 6.2,
-      "voicedText": "After marching all day, you don't sleep yet. Your unit must build a fortified camp."
+      "seconds": 5.4,
+      "voicedText": "Pick up that shovel, recruit! The barbarians aren't waiting for your blisters to heal!",
+      "speaker": "npc",
+      "speakerName": "CENTURION",
+      "voice": "Fenrir",
+      "voiceStyle": "Gruff, stern Roman centurion barking orders at tired soldiers.",
+      "npc": {
+        "archetype": "guard",
+        "position": "left",
+        "expression": "grumpy",
+        "speechBubble": "Pick up that shovel!",
+        "talking": true
+      }
     },
     {
-      "text": "You dig ditches and raise wooden walls. Every single night, in the exact same layout.",
+      "text": "After eight hours of marching, you didn't rest. You dug deep ditches and built a fortified mini-fortress every single night.",
       "mood": "dark",
       "imagePrompt": "An aerial view of a symmetrical Roman military camp layout with neat rows of leather tents under a twilight sky.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-legionary-march/6.png",
       "audio": "audio/roman-legionary-march/6.wav",
-      "seconds": 5.9,
-      "voicedText": "You dig ditches and raise wooden walls. Every single night, in the exact same layout."
+      "seconds": 7.8,
+      "voicedText": "After eight hours of marching, you didn't rest. You dug deep ditches and built a fortified mini-fortress every single night."
     },
     {
-      "text": "You finally crawl into your leather tent. But what happens if the war horn blows tonight?",
+      "text": "Could you endure a month in a Roman legion? Tell us in the comments.",
       "mood": "night",
       "imagePrompt": "The cozy, dim interior of an ancient leather tent, with a small iron lamp casting shadows on wool blankets.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-legionary-march/7.png",
       "audio": "audio/roman-legionary-march/7.wav",
-      "seconds": 5.1,
-      "voicedText": "You finally crawl into your leather tent. But what happens if the war horn blows tonight?"
+      "seconds": 4.8,
+      "voicedText": "Could you endure a month in a Roman legion? Tell us in the comments."
     }
   ],
   "claimsToVerify": [

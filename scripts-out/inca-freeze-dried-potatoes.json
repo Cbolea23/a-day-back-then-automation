@@ -10,7 +10,8 @@
       "imagePrompt": "High-altitude windswept Andean plateau with frost-covered bunchgrass and dramatic snowy volcanic peaks on the horizon. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/inca-freeze-dried-potatoes/1.mp3",
       "voicedText": "High on the Andean plateau thirteen thousand feet above sea level, intense frosts made growing standard crops nearly impossible.",
-      "seconds": 9
+      "seconds": 9,
+      "image": "images/inca-freeze-dried-potatoes/1.png"
     },
     {
       "text": "To guarantee food security against drought and famine, Inca farmers invented 'chuño': the world's first freeze-dried potatoes.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Woven reed baskets filled with colorful native Andean purple, red, and golden potatoes arranged on stone drying terraces. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/inca-freeze-dried-potatoes/2.mp3",
       "voicedText": "To guarantee food security against drought and famine, Inca farmers invented 'chuño': the world's first freeze-dried potatoes.",
-      "seconds": 8.3
+      "seconds": 8.3,
+      "image": "images/inca-freeze-dried-potatoes/2.png"
     },
     {
       "text": "At harvest, farmers spread thousands of small native potatoes across open straw mats during sub-zero freezing Andean nights.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Starlit Andean night with frost forming crystals across potatoes spread out on golden straw mats under a full moon. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/inca-freeze-dried-potatoes/3.mp3",
       "voicedText": "At harvest, farmers spread thousands of small native potatoes across open straw mats during sub-zero freezing Andean nights.",
-      "seconds": 9.3
+      "seconds": 9.3,
+      "image": "images/inca-freeze-dried-potatoes/3.png"
     },
     {
       "text": "At sunrise, families stomped the thawed potatoes with bare feet to squeeze out moisture, letting the blistering dry mountain sun evaporate the rest.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Sunlit stone terrace showing trampled dark dried potato nuggets drying in high-altitude mountain sunshine. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/inca-freeze-dried-potatoes/4.mp3",
       "voicedText": "At sunrise, families stomped the thawed potatoes with bare feet to squeeze out moisture, letting the blistering dry mountain sun evaporate the rest.",
-      "seconds": 10.1
+      "seconds": 10.1,
+      "image": "images/inca-freeze-dried-potatoes/4.png"
     },
     {
       "text": "Repeated for five days, the result was a rock-hard, lightweight black nugget that could be stored in royal granaries for over ten years without rotting.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Clay storage pots filled with dark dried chuño nuggets stored inside a cool Inca stone colca granary on a mountain ridge. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/inca-freeze-dried-potatoes/5.mp3",
       "voicedText": "Repeated for five days, the result was a rock-hard, lightweight black nugget that could be stored in royal granaries for over ten years without rotting.",
-      "seconds": 9
+      "seconds": 9,
+      "image": "images/inca-freeze-dried-potatoes/5.png"
     },
     {
       "text": "Soaked in water, chuño reconstituted into hearty soups that fed armies. Would you try a 500-year-old freeze-dried potato? Tell us below!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Clay cooking pot simmering with steaming potato and herb soup on a stone hearth with panoramic mountain views. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/inca-freeze-dried-potatoes/6.mp3",
       "voicedText": "Soaked in water, chuño reconstituted into hearty soups that fed armies. Would you try a 500-year-old freeze-dried potato? Tell us below!",
-      "seconds": 8.8
+      "seconds": 8.8,
+      "image": "images/inca-freeze-dried-potatoes/6.png"
     }
   ]
 }

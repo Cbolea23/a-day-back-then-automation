@@ -3,6 +3,7 @@ import {Composition} from "remotion";
 import {Short} from "./Short";
 import {Long} from "./LongVideo";
 import {NarratorLineup} from "./NarratorLineup";
+import {NPCLineup} from "./NPCLineup";
 import {FPS, ScriptProps, totalFrames} from "./types";
 import sampleData from "../data/sample.json";
 import sampleLongData from "../data/sample-long.json";
@@ -40,6 +41,14 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="Lineup"
         component={NarratorLineup}
+        width={1920}
+        height={1080}
+        fps={FPS}
+        durationInFrames={30}
+      />
+      <Composition
+        id="NPCLineup"
+        component={NPCLineup}
         width={1920}
         height={1080}
         fps={FPS}

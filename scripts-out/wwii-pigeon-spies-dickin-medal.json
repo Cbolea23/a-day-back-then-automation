@@ -10,7 +10,8 @@
       "imagePrompt": "Military mobile pigeon loft truck parked behind sandbagged hedgerow in countryside with open wicker release baskets. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-pigeon-spies-dickin-medal/1.mp3",
       "voicedText": "During World War II, when radio silence was vital to avoid detection, the British military deployed over 250,000 homing pigeons.",
-      "seconds": 9.7
+      "seconds": 9.7,
+      "image": "images/wwii-pigeon-spies-dickin-medal/1.png"
     },
     {
       "text": "RAF bomber crews carried pigeons in sealed floating watertight canisters in case their aircraft was shot down into the freezing sea.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Wicker aircraft basket lined with straw and blue canvas straps beside an aircraft instrument panel. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-pigeon-spies-dickin-medal/2.mp3",
       "voicedText": "RAF bomber crews carried pigeons in sealed floating watertight canisters in case their aircraft was shot down into the freezing sea.",
-      "seconds": 9
+      "seconds": 9,
+      "image": "images/wwii-pigeon-spies-dickin-medal/2.png"
     },
     {
       "text": "Downed airmen scribbled their ocean coordinates onto thin tissue paper, rolled it into an aluminum leg capsule, and released the bird.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Close-up of a tiny silver aluminum message tube with screw cap resting on damp flight chart paper. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-pigeon-spies-dickin-medal/3.mp3",
       "voicedText": "Downed airmen scribbled their ocean coordinates onto thin tissue paper, rolled it into an aluminum leg capsule, and released the bird.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/wwii-pigeon-spies-dickin-medal/3.png"
     },
     {
       "text": "Birds like 'Winkie' flew over one hundred miles across stormy seas through gunfire and hawk attacks to alert rescue sea launches.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Grey stormy North Sea waves crashing beneath dramatic rolling rain clouds with distant lighthouse beacon. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-pigeon-spies-dickin-medal/4.mp3",
       "voicedText": "Birds like 'Winkie' flew over one hundred miles across stormy seas through gunfire and hawk attacks to alert rescue sea launches.",
-      "seconds": 8.8
+      "seconds": 8.8,
+      "image": "images/wwii-pigeon-spies-dickin-medal/4.png"
     },
     {
       "text": "Thirty-two pigeons were awarded the Dickin Medal—the animal equivalent of the Victoria Cross—for gallantry under enemy fire.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Bronze military Dickin medal with green, dark brown, and pale blue ribbon resting on velvet cushion in a museum case. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-pigeon-spies-dickin-medal/5.mp3",
       "voicedText": "Thirty-two pigeons were awarded the Dickin Medal—the animal equivalent of the Victoria Cross—for gallantry under enemy fire.",
-      "seconds": 8.5
+      "seconds": 8.5,
+      "image": "images/wwii-pigeon-spies-dickin-medal/5.png"
     },
     {
       "text": "Could you imagine your life depending on a pigeon's sense of direction? Let us know below and follow for daily history stories!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Sunlight shining on a peaceful English village church steeple with gentle birds resting on ancient stone parapets. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-pigeon-spies-dickin-medal/6.mp3",
       "voicedText": "Could you imagine your life depending on a pigeon's sense of direction? Let us know below and follow for daily history stories!",
-      "seconds": 7.2
+      "seconds": 7.2,
+      "image": "images/wwii-pigeon-spies-dickin-medal/6.png"
     }
   ]
 }

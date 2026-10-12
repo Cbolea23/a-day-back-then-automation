@@ -39,6 +39,17 @@
       "mood": "cool",
       "image": "long/gladiator-real-life/2.png",
       "audio": "audio/long/gladiator-real-life/3.wav",
+      "ambientAudio": "audio/ambient/gladiator-barracks.wav",
+      "npc": {
+        "theme": "roman",
+        "tunic": "#e2d2b4",
+        "position": "left-corner",
+        "facing": "right",
+        "height": 410,
+        "gesture": "think",
+        "expression": "nervous",
+        "speechBubble": "I just needed money..."
+      },
       "voicedText": "But look closer. That guy in the corner? He’s a free citizen. Some Romans actually volunteered for this, signing away their freedom to escape crushing debt or to chase the intoxicating, dangerous glow of public fame.",
       "seconds": 14.4
     },

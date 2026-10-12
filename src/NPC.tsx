@@ -1,6 +1,7 @@
 import React from "react";
 import {Audio, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from "remotion";
 import {Narrator, CharacterTheme} from "./Narrator";
+import {SpeechPlan} from "./speech";
 import {NPCConfig} from "./types";
 
 const POSITION_PRESETS = {
@@ -11,9 +12,14 @@ const POSITION_PRESETS = {
   right: {left: 1400, bottom: 24, height: 580, facing: "left" as const},
 };
 
-export const NPC: React.FC<{npc: NPCConfig; durationInFrames: number}> = ({
+export const NPC: React.FC<{
+  npc: NPCConfig;
+  durationInFrames: number;
+  plan?: SpeechPlan;
+}> = ({
   npc,
   durationInFrames,
+  plan,
 }) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
@@ -104,6 +110,7 @@ export const NPC: React.FC<{npc: NPCConfig; durationInFrames: number}> = ({
         }}
       >
         <Narrator
+          archetype={npc.archetype}
           theme={(npc.theme as CharacterTheme) ?? "roman"}
           height={height}
           tunic={npc.tunic ?? "#e0ceaa"}
@@ -111,6 +118,7 @@ export const NPC: React.FC<{npc: NPCConfig; durationInFrames: number}> = ({
           reaction={npc.reaction ?? "look-up"}
           talking={npc.talking ?? !!npc.audio}
           audioSrc={npc.audio}
+          plan={plan}
         />
       </div>
 

@@ -1,0 +1,225 @@
+{
+  "updatedAt": "2026-10-12T00:49:56.184Z",
+  "scheduledBatch": [
+    {
+      "slug": "roman-garum",
+      "display": "Oct 12, 11:00 AM UTC+8",
+      "isoSchedule": "2026-10-12T03:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "kOCrxluUriY",
+        "url": "https://youtube.com/shorts/kOCrxluUriY",
+        "status": "SCHEDULED"
+      },
+      "facebook": {
+        "videoId": "2210475756166606",
+        "postId": "122097680901511536",
+        "url": "https://www.facebook.com/reel/2210475756166606/",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "spartan-training-day",
+      "display": "Oct 12, 05:00 PM UTC+8",
+      "isoSchedule": "2026-10-12T09:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "GLqu0rbC56A",
+        "url": "https://youtube.com/shorts/GLqu0rbC56A",
+        "status": "SCHEDULED"
+      },
+      "facebook": {
+        "videoId": "1098527082881871",
+        "url": "https://www.facebook.com/reel/1098527082881871/",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "sparta-myths",
+      "display": "Oct 12, 09:00 PM UTC+8",
+      "isoSchedule": "2026-10-12T13:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "tyU60scalbc",
+        "url": "https://youtube.com/shorts/tyU60scalbc",
+        "status": "SCHEDULED"
+      },
+      "facebook": {
+        "videoId": "1810999129921570",
+        "postId": "122097681195511536",
+        "url": "https://www.facebook.com/reel/1810999129921570/",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "roman-patrician-vs-plebeian",
+      "display": "Oct 13, 11:00 AM UTC+8",
+      "isoSchedule": "2026-10-13T03:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "KAOg5-A0rkA",
+        "url": "https://youtube.com/shorts/KAOg5-A0rkA",
+        "status": "SCHEDULED"
+      },
+      "facebook": {
+        "videoId": "992708753846267",
+        "postId": "122097681795511536",
+        "url": "https://www.facebook.com/reel/992708753846267/",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "roman-myths",
+      "display": "Oct 13, 05:00 PM UTC+8",
+      "isoSchedule": "2026-10-13T09:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "LLE36hmYkIU",
+        "url": "https://youtube.com/shorts/LLE36hmYkIU",
+        "status": "SCHEDULED"
+      },
+      "facebook": {
+        "videoId": "2597806557316108",
+        "postId": "122097682059511536",
+        "url": "https://www.facebook.com/reel/2597806557316108/",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "roman-legionary-march",
+      "display": "Oct 13, 09:00 PM UTC+8",
+      "isoSchedule": "2026-10-13T13:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "ojY2Cm7f3m8",
+        "url": "https://youtube.com/shorts/ojY2Cm7f3m8",
+        "status": "SCHEDULED"
+      },
+      "facebook": {
+        "videoId": "1117698307315655",
+        "postId": "122097682173511536",
+        "url": "https://www.facebook.com/reel/1117698307315655/",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "greek-symposium",
+      "display": "Oct 14, 11:00 AM UTC+8",
+      "isoSchedule": "2026-10-14T03:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "J7qtd7bq2yM",
+        "url": "https://youtube.com/shorts/J7qtd7bq2yM",
+        "status": "SCHEDULED"
+      },
+      "facebook": {
+        "videoId": "1816636376185030",
+        "postId": "122097682395511536",
+        "url": "https://www.facebook.com/reel/1816636376185030/",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "egypt-pyramid-workers",
+      "display": "Oct 14, 05:00 PM UTC+8",
+      "isoSchedule": "2026-10-14T09:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "LFlTlHt-zU0",
+        "url": "https://youtube.com/shorts/LFlTlHt-zU0",
+        "status": "SCHEDULED"
+      },
+      "facebook": {
+        "videoId": "1658401659202199",
+        "postId": "122097682497511536",
+        "url": "https://www.facebook.com/reel/1658401659202199/",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "egypt-pharaoh-day",
+      "display": "Oct 14, 09:00 PM UTC+8",
+      "isoSchedule": "2026-10-14T13:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "JtJizBnTSeo",
+        "url": "https://youtube.com/shorts/JtJizBnTSeo",
+        "status": "SCHEDULED"
+      },
+      "facebook": {
+        "videoId": "3546319842196769",
+        "postId": "122097682803511536",
+        "url": "https://www.facebook.com/reel/3546319842196769/",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "egypt-myths",
+      "display": "Oct 15, 09:00 AM UTC+8",
+      "isoSchedule": "2026-10-15T01:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "X9BJv8RLqBw",
+        "url": "https://youtube.com/shorts/X9BJv8RLqBw",
+        "status": "SCHEDULED"
+      },
+      "facebook": {
+        "videoId": "3726238627549390",
+        "postId": "122097682983511536",
+        "url": "https://www.facebook.com/reel/3726238627549390/",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "roman-money",
+      "display": "Oct 15, 01:00 PM UTC+8",
+      "isoSchedule": "2026-10-15T05:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "iq0CvG4GvLw",
+        "url": "https://youtube.com/shorts/iq0CvG4GvLw",
+        "status": "SCHEDULED"
+      },
+      "facebook": {
+        "videoId": "1576593290312790",
+        "postId": "122097683451511536",
+        "url": "https://www.facebook.com/reel/1576593290312790/",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "medieval-blacksmith-job",
+      "display": "Oct 15, 05:00 PM UTC+8",
+      "isoSchedule": "2026-10-15T09:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "vLYPc13WsG8",
+        "url": "https://youtube.com/shorts/vLYPc13WsG8",
+        "status": "SCHEDULED"
+      },
+      "facebook": {
+        "videoId": "1875769977202618",
+        "postId": "122097683865511536",
+        "url": "https://www.facebook.com/reel/1875769977202618/",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "medieval-monk-day",
+      "display": "Oct 15, 09:00 PM UTC+8",
+      "isoSchedule": "2026-10-15T13:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "HMVbfL_FwxE",
+        "url": "https://youtube.com/shorts/HMVbfL_FwxE",
+        "status": "SCHEDULED"
+      },
+      "facebook": {
+        "videoId": "1448504593909927",
+        "postId": "122097684117511536",
+        "url": "https://www.facebook.com/reel/1448504593909927/",
+        "status": "SCHEDULED"
+      }
+    }
+  ]
+}

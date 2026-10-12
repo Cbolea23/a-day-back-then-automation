@@ -10,7 +10,8 @@
       "imagePrompt": "Grim foggy brick alleyway in Victorian London with smoking brick chimneys and gas streetlights casting long shadows. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-penny-sit-up-coffin-beds/1.mp3",
       "voicedText": "In Victorian London's East End, thousands of destitute laborers could never afford a sixpence bed in a boarding house.",
-      "seconds": 7.7
+      "seconds": 7.7,
+      "image": "images/victorian-penny-sit-up-coffin-beds/1.png"
     },
     {
       "text": "Instead, commercial doss houses offered brutal tiered sleeping options starting at just one single copper penny.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Grubby wooden ticket booth in a dimly lit Victorian lodging cellar with chalk prices on a slate board. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-penny-sit-up-coffin-beds/2.mp3",
       "voicedText": "Instead, commercial doss houses offered brutal tiered sleeping options starting at just one single copper penny.",
-      "seconds": 7.4
+      "seconds": 7.4,
+      "image": "images/victorian-penny-sit-up-coffin-beds/2.png"
     },
     {
       "text": "For one penny, you got the 'Penny Sit Up': permission to sit on a bare wooden bench inside out of the rain, but you were beaten if you fell asleep.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Long bare wooden bench against damp peeling brick cellar wall with dim gas jet lamp hissing overhead. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-penny-sit-up-coffin-beds/3.mp3",
       "voicedText": "For one penny, you got the 'Penny Sit Up': permission to sit on a bare wooden bench inside out of the rain, but you were beaten if you fell asleep.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/victorian-penny-sit-up-coffin-beds/3.png"
     },
     {
       "text": "For two pennies, you got the 'Two-Penny Hangover': sitting on a bench with a thick clothesline rope tied taut across your chest to lean on.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Heavy hemp clothesline rope strung taut across rows of wooden benches in a crowded boarding shed. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-penny-sit-up-coffin-beds/4.mp3",
       "voicedText": "For two pennies, you got the 'Two-Penny Hangover': sitting on a bench with a thick clothesline rope tied taut across your chest to lean on.",
-      "seconds": 7.6
+      "seconds": 7.6,
+      "image": "images/victorian-penny-sit-up-coffin-beds/4.png"
     },
     {
       "text": "At 6 AM sharp, the landlord cut or untied the rope with a knife, abruptly dropping dozens of exhausted sleepers straight to the floor.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Coiled rope end on bare timber floorboards with morning light filtering through high grimy cellar grates. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-penny-sit-up-coffin-beds/5.mp3",
       "voicedText": "At 6 AM sharp, the landlord cut or untied the rope with a knife, abruptly dropping dozens of exhausted sleepers straight to the floor.",
-      "seconds": 9.5
+      "seconds": 9.5,
+      "image": "images/victorian-penny-sit-up-coffin-beds/5.png"
     },
     {
       "text": "For four pence, Salvation Army shelters offered 'coffin beds': wooden boxes with tarpaulin covers. Could you have survived a night there?",
@@ -50,7 +55,8 @@
       "imagePrompt": "Morning sun shining over London brick rooftops and factory chimneys with clean blue sky breaking through. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-penny-sit-up-coffin-beds/6.mp3",
       "voicedText": "For four pence, Salvation Army shelters offered 'coffin beds': wooden boxes with tarpaulin covers. Could you have survived a night there?",
-      "seconds": 8.8
+      "seconds": 8.8,
+      "image": "images/victorian-penny-sit-up-coffin-beds/6.png"
     }
   ]
 }

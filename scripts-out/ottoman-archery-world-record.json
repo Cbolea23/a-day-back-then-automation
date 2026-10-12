@@ -10,7 +10,8 @@
       "imagePrompt": "Expansive green archery field of Okmeydani in Istanbul with distant marble target columns standing under clear morning skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-archery-world-record/1.mp3",
       "voicedText": "To the Ottomans, archery was not merely a weapon of war—it was a sacred imperial art form practiced by Sultans and commoners alike.",
-      "seconds": 9.2
+      "seconds": 9.2,
+      "image": "images/ottoman-archery-world-record/1.png"
     },
     {
       "text": "Master artisans spent over a year crafting a single composite flight bow from maple wood, water buffalo horn, and animal tendon sinew.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Craftsman workbench with curved horn limbs, fish glue pots, sinew bundles, and exquisite painted lacquer flight bows. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-archery-world-record/2.mp3",
       "voicedText": "Master artisans spent over a year crafting a single composite flight bow from maple wood, water buffalo horn, and animal tendon sinew.",
-      "seconds": 9.1
+      "seconds": 9.1,
+      "image": "images/ottoman-archery-world-record/2.png"
     },
     {
       "text": "Archers drew the bowstring with a carved jade or bone thumb ring called a 'zihgir', using the thumb to release arrows with zero finger drag.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Close-up of a carved green jade archer's thumb ring resting on polished velvet beside feathered reed arrows. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-archery-world-record/3.mp3",
       "voicedText": "Archers drew the bowstring with a carved jade or bone thumb ring called a 'zihgir', using the thumb to release arrows with zero finger drag.",
-      "seconds": 8.4
+      "seconds": 8.4,
+      "image": "images/ottoman-archery-world-record/3.png"
     },
     {
       "text": "In 1798, Sultan Selim III stood on the hills of Okmeydanı and loosed a flight arrow that soared an astounding 972 yards.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Soaring flight arrow cutting through the upper atmosphere against bright clouds overlooking the Istanbul city skyline. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-archery-world-record/4.mp3",
       "voicedText": "In 1798, Sultan Selim III stood on the hills of Okmeydanı and loosed a flight arrow that soared an astounding 972 yards.",
-      "seconds": 10.4
+      "seconds": 10.4,
+      "image": "images/ottoman-archery-world-record/4.png"
     },
     {
       "text": "That is over half a mile—more than eight football fields long—a world distance flight record that stood unbroken for nearly two centuries.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Carved marble target monument column erected on a hillside with Ottoman calligraphy commemorating an imperial record shot. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-archery-world-record/5.mp3",
       "voicedText": "That is over half a mile—more than eight football fields long—a world distance flight record that stood unbroken for nearly two centuries.",
-      "seconds": 9.5
+      "seconds": 9.5,
+      "image": "images/ottoman-archery-world-record/5.png"
     },
     {
       "text": "Could you have drawn a hundred-pound composite bow with your bare thumb? Drop a comment below and subscribe!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Peaceful grassy hilltop overlooking the Golden Horn in Istanbul with ancient stone minarets glowing in midday sunshine. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-archery-world-record/6.mp3",
       "voicedText": "Could you have drawn a hundred-pound composite bow with your bare thumb? Drop a comment below and subscribe!",
-      "seconds": 6.1
+      "seconds": 6.1,
+      "image": "images/ottoman-archery-world-record/6.png"
     }
   ]
 }

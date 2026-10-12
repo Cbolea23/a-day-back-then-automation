@@ -42,7 +42,15 @@ export type SceneDirection = {
 
 export type NPCPosition = "left-corner" | "left-bench" | "left" | "center" | "right";
 
+export type NPCArchetype =
+  | "citizen"
+  | "doctor"
+  | "worker"
+  | "guard"
+  | "merchant";
+
 export type NPCConfig = {
+  archetype?: NPCArchetype;
   theme?: string;
   tunic?: string;
   position?: NPCPosition;

@@ -10,7 +10,8 @@
       "imagePrompt": "Ancient Maya temple stone wall mural with vivid turquoise-blue painted backgrounds showing hieroglyphs and royal figures in jungle light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-blue-miracle-pigment/1.mp3",
       "voicedText": "Across the ancient ruins of Palenque and Bonampak, thousand-year-old temple murals still glow with an astonishingly vibrant sky-blue hue.",
-      "seconds": 9.8
+      "seconds": 9.8,
+      "image": "images/maya-blue-miracle-pigment/1.png"
     },
     {
       "text": "While European oil paintings faded or darkened within decades, 'Maya Blue' resisted chemical acids, blistering heat, and tropical mold.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Laboratory glass beaker with foaming acid bubbling harmlessly against a stone slab painted with radiant Maya Blue pigment. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-blue-miracle-pigment/2.mp3",
       "voicedText": "While European oil paintings faded or darkened within decades, 'Maya Blue' resisted chemical acids, blistering heat, and tropical mold.",
-      "seconds": 9.9
+      "seconds": 9.9,
+      "image": "images/maya-blue-miracle-pigment/2.png"
     },
     {
       "text": "For centuries, modern chemists could not crack the secret recipe of this indestructible miracle pigment.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Alchemist's wooden worktable with natural raw clay powder, dried indigo leaves, ceramic mixing bowls, and pestle. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-blue-miracle-pigment/3.mp3",
       "voicedText": "For centuries, modern chemists could not crack the secret recipe of this indestructible miracle pigment.",
-      "seconds": 7.2
+      "seconds": 7.2,
+      "image": "images/maya-blue-miracle-pigment/3.png"
     },
     {
       "text": "The secret was nano-chemistry: Maya priests heated organic indigo dye together with palygorskite clay crystals over burning copal incense fires.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Clay ceremonial incense burner with smoking fragrant copal resin embers heating ceramic pigment bowls in a temple sanctum. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-blue-miracle-pigment/4.mp3",
       "voicedText": "The secret was nano-chemistry: Maya priests heated organic indigo dye together with palygorskite clay crystals over burning copal incense fires.",
-      "seconds": 10.6
+      "seconds": 10.6,
+      "image": "images/maya-blue-miracle-pigment/4.png"
     },
     {
       "text": "The heat permanently locked indigo molecules inside microscopic silicate clay channels, shielding the color from sun and rot forever.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Close-up of vibrant turquoise blue ceramic glaze on a ceremonial Maya pottery tripod vessel glowing in daylight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-blue-miracle-pigment/5.mp3",
       "voicedText": "The heat permanently locked indigo molecules inside microscopic silicate clay channels, shielding the color from sun and rot forever.",
-      "seconds": 9.4
+      "seconds": 9.4,
+      "image": "images/maya-blue-miracle-pigment/5.png"
     },
     {
       "text": "Ancient Maya priests invented nanotechnology a thousand years before modern science! Did you know about Maya Blue?",
@@ -50,7 +55,8 @@
       "imagePrompt": "Majestic Maya pyramid of Palenque rising out of emerald jungle canopy surrounded by swirling morning mist. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-blue-miracle-pigment/6.mp3",
       "voicedText": "Ancient Maya priests invented nanotechnology a thousand years before modern science! Did you know about Maya Blue?",
-      "seconds": 7.8
+      "seconds": 7.8,
+      "image": "images/maya-blue-miracle-pigment/6.png"
     }
   ]
 }

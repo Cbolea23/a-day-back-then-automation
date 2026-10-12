@@ -1,80 +1,91 @@
 {
   "slug": "roman-money",
   "title": "What Money Was Worth in Rome",
-  "hook": "What does one Roman coin buy you?",
+  "hook": "What could one silver coin actually buy you in ancient Rome?",
   "channelName": "A Day Back Then",
   "scenes": [
     {
-      "text": "You finish a brutal day of manual labor in Rome and receive one silver denarius.",
+      "text": "You bust your back doing manual labor in downtown Rome and get handed a single silver denarius at sunset.",
       "mood": "day",
       "imagePrompt": "Stone counter of a Roman street stall with a small pile of stamped silver denarii and bronze sestertii.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-money/1.jpg",
+      "image": "images/roman-money/1.png",
       "audio": "audio/roman-money/1.wav",
-      "seconds": 5.7,
-      "voicedText": "You finish a brutal day of manual labor in Rome and receive one silver denarius."
+      "seconds": 6.4,
+      "voicedText": "You bust your back doing manual labor in downtown Rome and get handed a single silver denarius at sunset."
     },
     {
-      "text": "For many ordinary laborers, this is roughly a full day of pay.",
+      "text": "For a common laborer or Roman legionary, this single coin represented an entire hard day's wages.",
       "mood": "warm",
       "imagePrompt": "Sunlit Roman construction site showing scaffolding around tufa brick walls and limestone blocks.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-money/2.jpg",
+      "image": "images/roman-money/2.png",
       "audio": "audio/roman-money/2.wav",
-      "seconds": 4.6,
-      "voicedText": "For many ordinary laborers, this is roughly a full day of pay."
+      "seconds": 6.6,
+      "voicedText": "For a common laborer or Roman legionary, this single coin represented an entire hard day's wages."
     },
     {
-      "text": "A basic loaf of bread costs you a couple of brass coins, a fraction of your wage.",
+      "text": "A fresh round loaf of bread from the stone bakery cost just a couple of tiny copper asses.",
       "mood": "warm",
       "imagePrompt": "Ancient Roman bakery interior featuring stacked round loaves of wheat bread and a stone grain mill.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-money/3.jpg",
+      "image": "images/roman-money/3.png",
       "audio": "audio/roman-money/3.wav",
-      "seconds": 5,
-      "voicedText": "A basic loaf of bread costs you a couple of brass coins, a fraction of your wage."
+      "seconds": 5.7,
+      "voicedText": "A fresh round loaf of bread from the stone bakery cost just a couple of tiny copper asses."
     },
     {
-      "text": "Cheap, watered-down street wine is remarkably affordable, costing just a coin or two per jug.",
+      "text": "One copper coin for street swill, but two denarii if you want real Falernian wine!",
       "mood": "day",
       "imagePrompt": "Thermopolium street shop with clay amphorae embedded into a decorative stone counter.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-money/4.jpg",
+      "image": "images/roman-money/4.png",
       "audio": "audio/roman-money/4.wav",
-      "seconds": 6.8,
-      "voicedText": "Cheap, watered-down street wine is remarkably affordable, costing just a coin or two per jug."
+      "seconds": 6,
+      "voicedText": "One copper coin for street swill, but two denarii if you want real Falernian wine!",
+      "speaker": "npc",
+      "speakerName": "TAVERN KEEPER",
+      "voice": "Puck",
+      "voiceStyle": "Shrewd, charismatic ancient Roman street tavern merchant haggling.",
+      "npc": {
+        "archetype": "merchant",
+        "position": "left",
+        "expression": "grumpy",
+        "speechBubble": "Two denarii for wine!",
+        "talking": true
+      }
     },
     {
-      "text": "But city rent eats up most of your earnings, trapping you in a cramped, fire-prone apartment.",
+      "text": "Cheap street wine and barley porridge were affordable, but downtown rent would completely wipe out your savings.",
       "mood": "dark",
       "imagePrompt": "Cramped upper-floor room of a Roman insula apartment with bare plaster walls and a narrow wooden shutter.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-money/5.jpg",
+      "image": "images/roman-money/5.png",
       "audio": "audio/roman-money/5.wav",
-      "seconds": 6.2,
-      "voicedText": "But city rent eats up most of your earnings, trapping you in a cramped, fire-prone apartment."
+      "seconds": 6.4,
+      "voicedText": "Cheap street wine and barley porridge were affordable, but downtown rent would completely wipe out your savings."
     },
     {
-      "text": "Meanwhile, a wealthy senator owns multiple sprawling country estates funded by hundreds of tenant farms.",
+      "text": "Meanwhile, wealthy Roman senators owned multiple country villas making millions of sestertii every harvest.",
       "mood": "day",
       "imagePrompt": "Expansive view of a luxury Roman villa rustica with colonnaded courtyards, olive groves, and vineyards.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-money/6.jpg",
+      "image": "images/roman-money/6.png",
       "audio": "audio/roman-money/6.wav",
-      "seconds": 7.6,
-      "voicedText": "Meanwhile, a wealthy senator owns multiple sprawling country estates funded by hundreds of tenant farms."
+      "seconds": 7,
+      "voicedText": "Meanwhile, wealthy Roman senators owned multiple country villas making millions of sestertii every harvest."
     },
     {
-      "text": "The rich spend fortunes on rare fish and silk while you count small change for beans.",
+      "text": "The rich paid thousands for rare turbot fish while ordinary citizens counted spare change for chickpeas.",
       "mood": "warm",
       "imagePrompt": "Marble banquet table set with bronze platters, glass wine bowls, and delicate linen napkins.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-money/7.jpg",
+      "image": "images/roman-money/7.png",
       "audio": "audio/roman-money/7.wav",
-      "seconds": 5.4,
-      "voicedText": "The rich spend fortunes on rare fish and silk while you count small change for beans."
+      "seconds": 6.1,
+      "voicedText": "The rich paid thousands for rare turbot fish while ordinary citizens counted spare change for chickpeas."
     },
     {
-      "text": "So how did poor Romans actually survive when grain shortages hit the empire?",
+      "text": "Could your budget survive on one Roman coin a day? Drop your thoughts below.",
       "mood": "cool",
       "imagePrompt": "Vast empty Roman granary with tall brick pillars, high arched windows, and wooden storage bins.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/roman-money/8.jpg",
+      "image": "images/roman-money/8.png",
       "audio": "audio/roman-money/8.wav",
       "seconds": 5.3,
-      "voicedText": "So how did poor Romans actually survive when grain shortages hit the empire?"
+      "voicedText": "Could your budget survive on one Roman coin a day? Drop your thoughts below."
     }
   ],
   "claimsToVerify": [

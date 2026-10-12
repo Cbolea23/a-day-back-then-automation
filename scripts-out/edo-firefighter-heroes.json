@@ -10,7 +10,8 @@
       "imagePrompt": "Tightly packed Edo period city street with wooden two-story merchant houses and tiled watchtowers under dramatic sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/edo-firefighter-heroes/1.mp3",
       "voicedText": "Because the metropolis of Edo was built almost entirely of cedar timber and paper screens, fires spread like wildfire.",
-      "seconds": 8.5
+      "seconds": 8.5,
+      "image": "images/edo-firefighter-heroes/1.png"
     },
     {
       "text": "Conflagrations were nicknamed 'the flowers of Edo', striking so often that the Shogun established forty-eight neighborhood firefighter brigades.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Tall wooden fire watchtower in Edo with brass alarm bell and hemp pull-rope overlooking sprawling tile rooftops. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/edo-firefighter-heroes/2.mp3",
       "voicedText": "Conflagrations were nicknamed 'the flowers of Edo', striking so often that the Shogun established forty-eight neighborhood firefighter brigades.",
-      "seconds": 9
+      "seconds": 9,
+      "image": "images/edo-firefighter-heroes/2.png"
     },
     {
       "text": "Firefighters were working-class heroes called 'hikeshi', famous for their full-body dragon tattoos and heavy quilted indigo coats soaked in water.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Heavy indigo-dyed cotton firefighter coat sashiko-stitched with geometric patterns and water crest symbols on a wooden hanger. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/edo-firefighter-heroes/3.mp3",
       "voicedText": "Firefighters were working-class heroes called 'hikeshi', famous for their full-body dragon tattoos and heavy quilted indigo coats soaked in water.",
-      "seconds": 9.5
+      "seconds": 9.5,
+      "image": "images/edo-firefighter-heroes/3.png"
     },
     {
       "text": "Their job wasn't putting out flames with water, but tearing down neighboring houses with long iron-hooked poles called 'tobiguchi' to create firebreaks.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Iron-hooked wooden firefighter pry poles, timber saws, and wooden water buckets resting beside charred building beams. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/edo-firefighter-heroes/4.mp3",
       "voicedText": "Their job wasn't putting out flames with water, but tearing down neighboring houses with long iron-hooked poles called 'tobiguchi' to create firebreaks.",
-      "seconds": 9.3
+      "seconds": 9.3,
+      "image": "images/edo-firefighter-heroes/4.png"
     },
     {
       "text": "Daredevils scaled collapsing burning roofs to plant their brigade's 'matoi' standard—a heavy paper and wood banner—claiming honor for their squad.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Traditional Japanese matoi firefighter standard with lacquered geometric wooden emblems and white paper streamers standing tall on a roof. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/edo-firefighter-heroes/5.mp3",
       "voicedText": "Daredevils scaled collapsing burning roofs to plant their brigade's 'matoi' standard—a heavy paper and wood banner—claiming honor for their squad.",
-      "seconds": 9.4
+      "seconds": 9.4,
+      "image": "images/edo-firefighter-heroes/5.png"
     },
     {
       "text": "Could you have balanced on a burning roof waving a thirty-pound wooden banner? Tell us below and subscribe!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Quiet morning after rain in traditional Edo with wet slate roof tiles glistening in peaceful early morning sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/edo-firefighter-heroes/6.mp3",
       "voicedText": "Could you have balanced on a burning roof waving a thirty-pound wooden banner? Tell us below and subscribe!",
-      "seconds": 7.1
+      "seconds": 7.1,
+      "image": "images/edo-firefighter-heroes/6.png"
     }
   ]
 }

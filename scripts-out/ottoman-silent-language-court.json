@@ -10,7 +10,8 @@
       "imagePrompt": "Third Courtyard of Topkapi Palace with manicured gardens, serene marble colonnades, and bronze fountains under midday light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-silent-language-court/1.mp3",
       "voicedText": "Inside the innermost Third Courtyard of Topkapi Palace, absolute silence was strictly enforced by imperial decree.",
-      "seconds": 7.9
+      "seconds": 7.9,
+      "image": "images/ottoman-silent-language-court/1.png"
     },
     {
       "text": "Speaking above a whisper was considered grave disrespect to the Sultan, and footsteps were muffled by thick wool carpets.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Grand imperial corridor paved with exquisite Iznik blue ceramic tiles and carpeted with long crimson silk runners. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-silent-language-court/2.mp3",
       "voicedText": "Speaking above a whisper was considered grave disrespect to the Sultan, and footsteps were muffled by thick wool carpets.",
-      "seconds": 8.2
+      "seconds": 8.2,
+      "image": "images/ottoman-silent-language-court/2.png"
     },
     {
       "text": "To protect state secrets, the Sultan's personal bodyguards and attendants were deaf and mute men known as 'dilsizler'.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Ornate carved wooden palace doorway with mother-of-pearl inlay and heavy brass hanging knocker in quiet shadow. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-silent-language-court/3.mp3",
       "voicedText": "To protect state secrets, the Sultan's personal bodyguards and attendants were deaf and mute men known as 'dilsizler'.",
-      "seconds": 8.2
+      "seconds": 8.2,
+      "image": "images/ottoman-silent-language-court/3.png"
     },
     {
       "text": "Because they could neither overhear sensitive war discussions nor reveal secrets under torture, they were trusted completely.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Imperial council chamber table with scroll maps, wax seals, and jeweled inkpots beneath gilded ceiling domes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-silent-language-court/4.mp3",
       "voicedText": "Because they could neither overhear sensitive war discussions nor reveal secrets under torture, they were trusted completely.",
-      "seconds": 8.1
+      "seconds": 8.1,
+      "image": "images/ottoman-silent-language-court/4.png"
     },
     {
       "text": "The court developed a sophisticated sign language called 'Iksarat', allowing ministers to debate military treaties entirely without voice.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Pair of hands wearing gold imperial signet rings resting on an open velvet-bound ledger book in soft candlelight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-silent-language-court/5.mp3",
       "voicedText": "The court developed a sophisticated sign language called 'Iksarat', allowing ministers to debate military treaties entirely without voice.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/ottoman-silent-language-court/5.png"
     },
     {
       "text": "Could you have spent your working life communicating entirely in absolute silence? Tell us below and subscribe!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Peaceful palace marble terrace overlooking the sparkling blue waters of the Golden Horn and distant minarets. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-silent-language-court/6.mp3",
       "voicedText": "Could you have spent your working life communicating entirely in absolute silence? Tell us below and subscribe!",
-      "seconds": 7.7
+      "seconds": 7.7,
+      "image": "images/ottoman-silent-language-court/6.png"
     }
   ]
 }

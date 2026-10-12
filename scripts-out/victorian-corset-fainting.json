@@ -10,7 +10,8 @@
       "imagePrompt": "Victorian lady's dressing room with a silk-embroidered corset laced tightly on a dressmaker's wooden mannequin in soft window light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-corset-fainting/1.mp3",
       "voicedText": "In the 1870s, high Victorian fashion demanded aristocratic women possess an impossibly tiny eighteen-inch 'wasp waist'.",
-      "seconds": 8.9
+      "seconds": 8.9,
+      "image": "images/victorian-corset-fainting/1.png"
     },
     {
       "text": "Corsets were reinforced with rigid steel busks and curved whalebone stays, tightened with back cords pulled with all a maid's strength.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Close-up of polished whalebone stays and heavy braided silk lacing cords looped through brass eyelets. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-corset-fainting/2.mp3",
       "voicedText": "Corsets were reinforced with rigid steel busks and curved whalebone stays, tightened with back cords pulled with all a maid's strength.",
-      "seconds": 8.5
+      "seconds": 8.5,
+      "image": "images/victorian-corset-fainting/2.png"
     },
     {
       "text": "Extreme 'tight-lacing' physically compressed the floating ribs inwards, shifting the stomach and liver downwards into unnatural positions.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Victorian medical anatomical book open on a mahogany desk comparing normal ribcage geometry to a deformed corset-cinched skeleton. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-corset-fainting/3.mp3",
       "voicedText": "Extreme 'tight-lacing' physically compressed the floating ribs inwards, shifting the stomach and liver downwards into unnatural positions.",
-      "seconds": 10
+      "seconds": 10,
+      "image": "images/victorian-corset-fainting/3.png"
     },
     {
       "text": "With lung capacity reduced by thirty percent, women could only take shallow breaths, leading to frequent bouts of dizziness.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Plush velvet fainting couch with carved mahogany scrollwork beside a small tea table with smelling salts bottle. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-corset-fainting/4.mp3",
       "voicedText": "With lung capacity reduced by thirty percent, women could only take shallow breaths, leading to frequent bouts of dizziness.",
-      "seconds": 8.3
+      "seconds": 8.3,
+      "image": "images/victorian-corset-fainting/4.png"
     },
     {
       "text": "Victorian parlors specifically installed 'fainting couches' and every lady carried glass vinaigrette bottles of pungent ammonia smelling salts.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Cut-crystal smelling salts vial with sterling silver filigree cap open beside an embroidered silk lace handkerchief. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-corset-fainting/5.mp3",
       "voicedText": "Victorian parlors specifically installed 'fainting couches' and every lady carried glass vinaigrette bottles of pungent ammonia smelling salts.",
-      "seconds": 9.5
+      "seconds": 9.5,
+      "image": "images/victorian-corset-fainting/5.png"
     },
     {
       "text": "Would you have endured organ-crushing steel stays for high society fashion? Tell us your thoughts below!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Sunlit Victorian drawing room with velvet drapes tied back to reveal a lush conservatory greenhouse full of blooming ferns. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/victorian-corset-fainting/6.mp3",
       "voicedText": "Would you have endured organ-crushing steel stays for high society fashion? Tell us your thoughts below!",
-      "seconds": 6.5
+      "seconds": 6.5,
+      "image": "images/victorian-corset-fainting/6.png"
     }
   ]
 }

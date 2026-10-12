@@ -8,7 +8,7 @@
       "text": "You wake at sunrise on a straw mattress shared with your family.",
       "mood": "dark",
       "imagePrompt": "Interior of a small medieval wattle-and-daub cottage with a central hearth and straw bedding. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/medieval-peasant-day/1.jpg",
+      "image": "images/medieval-peasant-day/1.png",
       "audio": "audio/medieval-peasant-day/1.wav",
       "seconds": 4.1,
       "voicedText": "You wake at sunrise on a straw mattress shared with your family."
@@ -17,7 +17,7 @@
       "text": "There are no clocks, so the village church bell tells you everything.",
       "mood": "cool",
       "imagePrompt": "Stone parish church steeple rising above a misty medieval English village at sunrise. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/medieval-peasant-day/2.jpg",
+      "image": "images/medieval-peasant-day/2.png",
       "audio": "audio/medieval-peasant-day/2.wav",
       "seconds": 4,
       "voicedText": "There are no clocks, so the village church bell tells you everything."
@@ -26,7 +26,7 @@
       "text": "Breakfast is pottage: an ongoing stew of oats, peas, and root greens.",
       "mood": "warm",
       "imagePrompt": "Cast iron pot suspended over glowing embers in an open hearth, coarse wooden spoons nearby. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/medieval-peasant-day/3.jpg",
+      "image": "images/medieval-peasant-day/3.png",
       "audio": "audio/medieval-peasant-day/3.wav",
       "seconds": 6,
       "voicedText": "Breakfast is pottage: an ongoing stew of oats, peas, and root greens."
@@ -35,7 +35,7 @@
       "text": "By dawn, you are out in the open fields strip-farming rye.",
       "mood": "day",
       "imagePrompt": "Vast medieval open-field system showing long narrow cultivation strips bordered by green turf ridges. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/medieval-peasant-day/4.jpg",
+      "image": "images/medieval-peasant-day/4.png",
       "audio": "audio/medieval-peasant-day/4.wav",
       "seconds": 3.6,
       "voicedText": "By dawn, you are out in the open fields strip-farming rye."
@@ -44,7 +44,7 @@
       "text": "You must work your lord’s land first, then tend your own.",
       "mood": "day",
       "imagePrompt": "Muddy farm field with a wooden ox-drawn plow resting beside furrows under an overcast sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/medieval-peasant-day/5.jpg",
+      "image": "images/medieval-peasant-day/5.png",
       "audio": "audio/medieval-peasant-day/5.wav",
       "seconds": 3.6,
       "voicedText": "You must work your lord’s land first, then tend your own."
@@ -53,7 +53,7 @@
       "text": "The physical labor is brutal, but church holy days bring constant breaks.",
       "mood": "day",
       "imagePrompt": "Village green outside a thatched parish church decorated with simple festival greenery. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/medieval-peasant-day/6.jpg",
+      "image": "images/medieval-peasant-day/6.png",
       "audio": "audio/medieval-peasant-day/6.wav",
       "seconds": 5.2,
       "voicedText": "The physical labor is brutal, but church holy days bring constant breaks."
@@ -62,7 +62,7 @@
       "text": "Historians estimate medieval peasants enjoyed dozens of official holidays every year.",
       "mood": "warm",
       "imagePrompt": "Trestle tables and wooden ale jugs set up outdoors on a grassy medieval village commons. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/medieval-peasant-day/7.jpg",
+      "image": "images/medieval-peasant-day/7.png",
       "audio": "audio/medieval-peasant-day/7.wav",
       "seconds": 6.1,
       "voicedText": "Historians estimate medieval peasants enjoyed dozens of official holidays every year."
@@ -71,7 +71,7 @@
       "text": "Sundays mean ale and wrestling, provided the harvest survives the coming winter.",
       "mood": "cool",
       "imagePrompt": "Quiet medieval village clearing at dusk with thatch-roofed cottages under an autumn twilight sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
-      "image": "images/medieval-peasant-day/8.jpg",
+      "image": "images/medieval-peasant-day/8.png",
       "audio": "audio/medieval-peasant-day/8.wav",
       "seconds": 5.5,
       "voicedText": "Sundays mean ale and wrestling, provided the harvest survives the coming winter."

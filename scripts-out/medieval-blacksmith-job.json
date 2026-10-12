@@ -1,62 +1,73 @@
 {
   "slug": "medieval-blacksmith-job",
   "title": "Being a Medieval Blacksmith",
-  "hook": "You are the village's only hope.",
+  "hook": "In a medieval village, the blacksmith was literally the difference between life and death.",
   "channelName": "A Day Back Then",
   "scenes": [
     {
-      "text": "You are the village's only hope.",
+      "text": "If the medieval blacksmith died, the entire village was basically doomed.",
       "mood": "warm",
       "imagePrompt": "A dimly lit stone medieval forge with glowing embers and iron tools scattered on a wooden table.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-blacksmith-job/1.png",
       "audio": "audio/medieval-blacksmith-job/1.wav",
-      "voicedText": "You are the village's only hope.",
-      "seconds": 2.5,
-      "image": "images/medieval-blacksmith-job/1.png"
+      "seconds": 4.9,
+      "voicedText": "If the medieval blacksmith died, the entire village was basically doomed."
     },
     {
-      "text": "It is dawn, and the forge is already searing hot. You swallow grit as the heavy bellows pump air into the coals.",
+      "text": "At dawn, the forge is already blistering. You swallow soot as the bellows pump air into red-hot charcoal.",
       "mood": "warm",
       "imagePrompt": "Close up of ancient iron bellows made of leather and wood inside a dark workshop.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-blacksmith-job/2.png",
       "audio": "audio/medieval-blacksmith-job/2.wav",
-      "voicedText": "It is dawn, and the forge is already searing hot. You swallow grit as the heavy bellows pump air into the coals.",
-      "seconds": 7.9,
-      "image": "images/medieval-blacksmith-job/2.png"
+      "seconds": 7.5,
+      "voicedText": "At dawn, the forge is already blistering. You swallow soot as the bellows pump air into red-hot charcoal."
     },
     {
-      "text": "The local farmers need plowshares repaired, and the local lord demands new spearheads. You shift between these tasks constantly.",
+      "text": "Farmers line up with broken iron plowshares, and the local lord demands newly tempered spearheads for his men-at-arms.",
       "mood": "warm",
       "imagePrompt": "Rusty iron agricultural tools leaning against a stone wall.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-blacksmith-job/3.png",
       "audio": "audio/medieval-blacksmith-job/3.wav",
-      "voicedText": "The local farmers need plowshares repaired, and the local lord demands new spearheads. You shift between these tasks constantly.",
-      "seconds": 8.6,
-      "image": "images/medieval-blacksmith-job/3.png"
+      "seconds": 7.4,
+      "voicedText": "Farmers line up with broken iron plowshares, and the local lord demands newly tempered spearheads for his men-at-arms."
     },
     {
-      "text": "Your muscles ache from the rhythmic hammer strikes. You have spent years as an apprentice just to master this heat.",
+      "text": "Master! The coals are white-hot, and the anvil's about to crack!",
       "mood": "warm",
       "imagePrompt": "A heavy iron anvil sitting in the center of a dusty, sun-streaked room.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-blacksmith-job/4.png",
       "audio": "audio/medieval-blacksmith-job/4.wav",
-      "voicedText": "Your muscles ache from the rhythmic hammer strikes. You have spent years as an apprentice just to master this heat.",
-      "seconds": 7,
-      "image": "images/medieval-blacksmith-job/4.png"
+      "seconds": 5,
+      "voicedText": "Master! The coals are white-hot, and the anvil's about to crack!",
+      "speaker": "npc",
+      "speakerName": "APPRENTICE",
+      "voice": "Puck",
+      "voiceStyle": "Exhausted, panting medieval blacksmith apprentice sweating by the fire.",
+      "npc": {
+        "archetype": "worker",
+        "position": "left",
+        "expression": "grumpy",
+        "speechBubble": "Anvil's cracking!",
+        "talking": true
+      }
     },
     {
-      "text": "Without your metalwork, the harvest fails and the village stays defenseless. You are the heartbeat of the town.",
+      "text": "Without your forged iron tools, crops rot unharvested in the fields and the town is left completely defenseless.",
       "mood": "warm",
       "imagePrompt": "An overhead view of a small, medieval village surrounded by fields.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-blacksmith-job/5.png",
       "audio": "audio/medieval-blacksmith-job/5.wav",
-      "voicedText": "Without your metalwork, the harvest fails and the village stays defenseless. You are the heartbeat of the town.",
-      "seconds": 7.2,
-      "image": "images/medieval-blacksmith-job/5.png"
+      "seconds": 7.4,
+      "voicedText": "Without your forged iron tools, crops rot unharvested in the fields and the town is left completely defenseless."
     },
     {
-      "text": "But a stranger just arrived with a broken blade that looks like nothing you have ever seen before.",
+      "text": "Would you have had the stamina to swing a blacksmith's hammer all day? Tell us below.",
       "mood": "cool",
       "imagePrompt": "A shadowy silhouette standing in the doorway of a forge at twilight.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "image": "images/medieval-blacksmith-job/6.png",
       "audio": "audio/medieval-blacksmith-job/6.wav",
-      "voicedText": "But a stranger just arrived with a broken blade that looks like nothing you have ever seen before.",
-      "seconds": 5.9,
-      "image": "images/medieval-blacksmith-job/6.png"
+      "seconds": 5.3,
+      "voicedText": "Would you have had the stamina to swing a blacksmith's hammer all day? Tell us below."
     }
   ],
   "claimsToVerify": [

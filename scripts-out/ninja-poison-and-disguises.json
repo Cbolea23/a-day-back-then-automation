@@ -10,7 +10,8 @@
       "imagePrompt": "Rooftop of a Japanese feudal castle with curved grey clay tiles and a gargoyle shachihoko fish statue under twilight skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ninja-poison-and-disguises/1.mp3",
       "voicedText": "In cinema, ninjas leap across rooftops wearing pitch-black hoods and masks, but in feudal Japan, that outfit would get you executed immediately.",
-      "seconds": 9.7
+      "seconds": 9.7,
+      "image": "images/ninja-poison-and-disguises/1.png"
     },
     {
       "text": "Historical shinobi relied on the 'Shichi-hō-de'—the Seven Disguises: wandering Buddhist priests, acrobats, farmers, and traveling merchants.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Japanese traveling monk's woven wicker basket hat, wooden walking staff, and prayer beads resting on a tatami mat. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ninja-poison-and-disguises/2.mp3",
       "voicedText": "Historical shinobi relied on the 'Shichi-hō-de'—the Seven Disguises: wandering Buddhist priests, acrobats, farmers, and traveling merchants.",
-      "seconds": 10.8
+      "seconds": 10.8,
+      "image": "images/ninja-poison-and-disguises/2.png"
     },
     {
       "text": "Dressed as street performers, they slipped freely past castle checkpoints, observing palace floorplans and counting guard rotations.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Bustling Edo period castle town marketplace with wooden tea stalls, paper lanterns, and stone castle walls in the background. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ninja-poison-and-disguises/3.mp3",
       "voicedText": "Dressed as street performers, they slipped freely past castle checkpoints, observing palace floorplans and counting guard rotations.",
-      "seconds": 9.1
+      "seconds": 9.1,
+      "image": "images/ninja-poison-and-disguises/3.png"
     },
     {
       "text": "Their weapons were ordinary farming tools: 'kunai' trowels for digging masonry, and iron sickles converted into concealed climbing claws.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Iron garden trowel kunai blade, climbing claw spikes, and coiled hemp rope laid on rough wooden floorboards. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ninja-poison-and-disguises/4.mp3",
       "voicedText": "Their weapons were ordinary farming tools: 'kunai' trowels for digging masonry, and iron sickles converted into concealed climbing claws.",
-      "seconds": 9.3
+      "seconds": 9.3,
+      "image": "images/ninja-poison-and-disguises/4.png"
     },
     {
       "text": "For silent assassinations, they poisoned water wells or coated needles in aconite wolfsbane toxin that induced heart attacks without leaving wounds.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Small earthenware poison vial with bamboo dropper and dried purple monkshood flowers on an apothecary wooden workbench. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ninja-poison-and-disguises/5.mp3",
       "voicedText": "For silent assassinations, they poisoned water wells or coated needles in aconite wolfsbane toxin that induced heart attacks without leaving wounds.",
-      "seconds": 9.9
+      "seconds": 9.9,
+      "image": "images/ninja-poison-and-disguises/5.png"
     },
     {
       "text": "Real ninjas were masters of social engineering and psychology! Would you have spotted a disguised shinobi?",
@@ -50,7 +55,8 @@
       "imagePrompt": "Serene bamboo forest path in Kyoto with sunlight filtering through tall green stalks in a gentle breeze. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ninja-poison-and-disguises/6.mp3",
       "voicedText": "Real ninjas were masters of social engineering and psychology! Would you have spotted a disguised shinobi?",
-      "seconds": 6.8
+      "seconds": 6.8,
+      "image": "images/ninja-poison-and-disguises/6.png"
     }
   ]
 }

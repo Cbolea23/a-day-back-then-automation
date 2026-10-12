@@ -1,71 +1,82 @@
 {
   "slug": "egypt-pyramid-workers",
   "title": "Who Really Built the Pyramids",
-  "hook": "Slaves didn't build the pyramids",
+  "hook": "Slaves didn't build the pyramids. Well-fed craft guilds did.",
   "channelName": "A Day Back Then",
   "scenes": [
     {
-      "text": "You wake up in a dusty barrack right beside the rising Giza Pyramids.",
+      "text": "Hollywood convinced the world that whipped slaves built the Great Pyramids under the scorching Egyptian sun.",
       "mood": "cool",
       "imagePrompt": "Dusty ancient Egyptian barracks made of mudbrick, Giza plateau, dawn light, Pyramids of Giza in the distance.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-pyramid-workers/1.png",
       "audio": "audio/egypt-pyramid-workers/1.wav",
-      "seconds": 5.3,
-      "voicedText": "You wake up in a dusty barrack right beside the rising Giza Pyramids."
+      "seconds": 6.3,
+      "voicedText": "Hollywood convinced the world that whipped slaves built the Great Pyramids under the scorching Egyptian sun."
     },
     {
-      "text": "But you are not a movie-style slave. You are actually a respected, well-fed builder.",
+      "text": "Archaeologists have completely shattered that myth. The pyramid builders were respected, paid Egyptian laborers.",
       "mood": "warm",
       "imagePrompt": "Wide shot of a clean ancient Egyptian construction site, limestone blocks, scaffolding, warm sunlight.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-pyramid-workers/2.png",
       "audio": "audio/egypt-pyramid-workers/2.wav",
-      "seconds": 5.5,
-      "voicedText": "But you are not a movie-style slave. You are actually a respected, well-fed builder."
+      "seconds": 7.5,
+      "voicedText": "Archaeologists have completely shattered that myth. The pyramid builders were respected, paid Egyptian laborers."
     },
     {
-      "text": "Your team has a competitive crew name, like the proud \"Friends of Khufu\" gang.",
+      "text": "Crews organized into competitive work guilds with proud gang names painted in red ochre, like the 'Friends of Khufu.'",
       "mood": "warm",
       "imagePrompt": "Close-up of an ancient Egyptian limestone block with red ochre hieroglyphic graffiti, warm afternoon.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-pyramid-workers/3.png",
       "audio": "audio/egypt-pyramid-workers/3.wav",
-      "seconds": 4.7,
-      "voicedText": "Your team has a competitive crew name, like the proud \"Friends of Khufu\" gang."
+      "seconds": 7.3,
+      "voicedText": "Crews organized into competitive work guilds with proud gang names painted in red ochre, like the 'Friends of Khufu.'"
     },
     {
-      "text": "For lunch, you receive massive rations of fresh bread, garlic, and hydrating, thick beer.",
+      "text": "Four jugs of thick beer and prime beef rations! Now heave that stone before noon!",
       "mood": "day",
       "imagePrompt": "A rustic wooden table in ancient Egypt, loaded with loaves of crusty bread, garlic bulbs, and clay beer jugs.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-pyramid-workers/4.png",
       "audio": "audio/egypt-pyramid-workers/4.wav",
-      "seconds": 6.4,
-      "voicedText": "For lunch, you receive massive rations of fresh bread, garlic, and hydrating, thick beer."
+      "seconds": 5.8,
+      "voicedText": "Four jugs of thick beer and prime beef rations! Now heave that stone before noon!",
+      "speaker": "npc",
+      "speakerName": "BUILDER HORUS",
+      "voice": "Puck",
+      "voiceStyle": "Enthusiastic, burly ancient Egyptian stone mason shouting encouragement.",
+      "npc": {
+        "archetype": "worker",
+        "position": "left",
+        "expression": "grumpy",
+        "speechBubble": "Heave that stone!",
+        "talking": true
+      }
     },
     {
-      "text": "If you get hurt, the pharaoh’s skilled doctors will treat you with advanced ancient medicine.",
+      "text": "Excavations revealed worker villages where builders ate prime cattle, crusty garlic bread, and high-protein beer.",
       "mood": "day",
       "imagePrompt": "An ancient Egyptian medical tent, clay jars of ointments, linen bandages, papyrus scrolls on a wooden table.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-pyramid-workers/5.png",
       "audio": "audio/egypt-pyramid-workers/5.wav",
-      "seconds": 5.5,
-      "voicedText": "If you get hurt, the pharaoh’s skilled doctors will treat you with advanced ancient medicine."
+      "seconds": 7.6,
+      "voicedText": "Excavations revealed worker villages where builders ate prime cattle, crusty garlic bread, and high-protein beer."
     },
     {
-      "text": "At night, you rest in a bustling, purpose-built town with thousands of your coworkers.",
+      "text": "When grain shipments were late, Egyptian workers did something incredible: they staged history's first recorded labor strikes.",
       "mood": "dark",
       "imagePrompt": "Overlooking a sprawling ancient Egyptian workers' village, mudbrick houses, smoky cooking fires, evening light.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-pyramid-workers/6.png",
       "audio": "audio/egypt-pyramid-workers/6.wav",
-      "seconds": 5.7,
-      "voicedText": "At night, you rest in a bustling, purpose-built town with thousands of your coworkers."
+      "seconds": 7.8,
+      "voicedText": "When grain shipments were late, Egyptian workers did something incredible: they staged history's first recorded labor strikes."
     },
     {
-      "text": "But how did these workers react when their rations were late? Find out next time.",
+      "text": "Would you have worked on the Great Pyramid for beer and glory? Tell us below.",
       "mood": "warm",
       "imagePrompt": "A dusty ancient Egyptian administrative courtyard, stone tablets, papyrus rolls on a desk, dramatic shadows.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/egypt-pyramid-workers/7.png",
       "audio": "audio/egypt-pyramid-workers/7.wav",
-      "seconds": 4.8,
-      "voicedText": "But how did these workers react when their rations were late? Find out next time."
+      "seconds": 5,
+      "voicedText": "Would you have worked on the Great Pyramid for beer and glory? Tell us below."
     }
   ],
   "claimsToVerify": [

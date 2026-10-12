@@ -10,7 +10,8 @@
       "imagePrompt": "Sun-drenched marble terrace in Istanbul overlooking the shimmering waters of the Bosphorus with sailing caïques. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-sherbet-snow-drinks/1.mp3",
       "voicedText": "During sweltering humid summer months in 16th-century Istanbul, royal palaces enjoyed ice-cold fruity drinks without electric freezers.",
-      "seconds": 10.2
+      "seconds": 10.2,
+      "image": "images/ottoman-sherbet-snow-drinks/1.png"
     },
     {
       "text": "The secret was an imperial relay system of swift mule couriers who rode high into the snow-capped peaks of Mount Uludağ.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Dramatic rocky alpine mountain ridges of Mount Uludağ covered in glistening snow under crisp blue skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-sherbet-snow-drinks/2.mp3",
       "voicedText": "The secret was an imperial relay system of swift mule couriers who rode high into the snow-capped peaks of Mount Uludağ.",
-      "seconds": 8.1
+      "seconds": 8.1,
+      "image": "images/ottoman-sherbet-snow-drinks/2.png"
     },
     {
       "text": "Workers carved blocks of packed glacier snow, wrapped them in thick wool felt blankets, and stored them in deep mountain caves lined with straw.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Underground stone icehouse cellar with stacked rectangular ice blocks insulated with golden straw and thick woven wool mats. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-sherbet-snow-drinks/3.mp3",
       "voicedText": "Workers carved blocks of packed glacier snow, wrapped them in thick wool felt blankets, and stored them in deep mountain caves lined with straw.",
-      "seconds": 8.4
+      "seconds": 8.4,
+      "image": "images/ottoman-sherbet-snow-drinks/3.png"
     },
     {
       "text": "At midnight, express couriers rushed the frozen cargo down to waiting boats, sailing across the Marmara sea into palace kitchens before dawn.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Fast Ottoman rowed caïque boat slicing through midnight waters under glowing stars with covered burlap cargo in the bow. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-sherbet-snow-drinks/4.mp3",
       "voicedText": "At midnight, express couriers rushed the frozen cargo down to waiting boats, sailing across the Marmara sea into palace kitchens before dawn.",
-      "seconds": 9.6
+      "seconds": 9.6,
+      "image": "images/ottoman-sherbet-snow-drinks/4.png"
     },
     {
       "text": "Confectioners crushed the mountain snow into refreshing 'sherbet': flavored with ruby pomegranate juice, rosewater, tamarind, and fragrant mint.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Crystal glass goblet filled with crushed shaved ice and ruby-red pomegranate sherbet garnished with fresh mint leaves and silver spoon. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-sherbet-snow-drinks/5.mp3",
       "voicedText": "Confectioners crushed the mountain snow into refreshing 'sherbet': flavored with ruby pomegranate juice, rosewater, tamarind, and fragrant mint.",
-      "seconds": 10.1
+      "seconds": 10.1,
+      "image": "images/ottoman-sherbet-snow-drinks/5.png"
     },
     {
       "text": "This ancient delicacy was the direct ancestor of modern sorbet and ice cream! What flavor of Ottoman sherbet would you try?",
@@ -50,7 +55,8 @@
       "imagePrompt": "Shaded Ottoman garden pavilion with flowering jasmine vines climbing stone pillars beside a cool bubbling fountain. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-sherbet-snow-drinks/6.mp3",
       "voicedText": "This ancient delicacy was the direct ancestor of modern sorbet and ice cream! What flavor of Ottoman sherbet would you try?",
-      "seconds": 8.8
+      "seconds": 8.8,
+      "image": "images/ottoman-sherbet-snow-drinks/6.png"
     }
   ]
 }

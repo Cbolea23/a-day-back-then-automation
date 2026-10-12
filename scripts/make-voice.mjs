@@ -74,7 +74,19 @@ for (const slug of slugs) {
       continue;
     }
 
-    await synth(scene.text, abs);
+    const overrides = scene.speaker === "npc"
+      ? {
+          voice: scene.voice || "Puck",
+          style:
+            scene.voiceStyle ||
+            "Exasperated, angry Roman tenant shouting out his window in disgust.",
+        }
+      : {
+          ...(scene.voice ? {voice: scene.voice} : {}),
+          ...(scene.voiceStyle ? {style: scene.voiceStyle} : {}),
+        };
+
+    await synth(scene.text, abs, overrides);
     const seconds = durationSeconds(abs);
     scene.audio = rel;
     scene.voicedText = scene.text;

@@ -10,7 +10,8 @@
       "imagePrompt": "Wild California river gorge with pine forests, gravel riverbeds, and simple canvas prospector tents pitched on the bank. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/gold-rush-claim-jumping/1.mp3",
       "voicedText": "In 1849, the discovery of gold at Sutter's Mill triggered the fastest, wildest mass migration in American history.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/gold-rush-claim-jumping/1.png"
     },
     {
       "text": "Over three hundred thousand 'Forty-Niners' rushed to San Francisco, turning a sleepy village of two hundred into a sprawling city of mud tents.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Muddy boomtown main street lined with rough unpainted wooden storefronts, canvas tents, and horse hitching posts under midday sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/gold-rush-claim-jumping/2.mp3",
       "voicedText": "Over three hundred thousand 'Forty-Niners' rushed to San Francisco, turning a sleepy village of two hundred into a sprawling city of mud tents.",
-      "seconds": 9.5
+      "seconds": 9.5,
+      "image": "images/gold-rush-claim-jumping/2.png"
     },
     {
       "text": "Inflation was insane: with gold dust everywhere, a single egg cost ten dollars—equivalent to three hundred dollars today—and a loaf of bread cost five.",
@@ -26,7 +28,8 @@
       "imagePrompt": "General store wooden counter with brass balance scales weighing gold dust beside expensive tin cans of peaches and fresh eggs in straw. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/gold-rush-claim-jumping/3.mp3",
       "voicedText": "Inflation was insane: with gold dust everywhere, a single egg cost ten dollars—equivalent to three hundred dollars today—and a loaf of bread cost five.",
-      "seconds": 11.1
+      "seconds": 11.1,
+      "image": "images/gold-rush-claim-jumping/3.png"
     },
     {
       "text": "Because formal law enforcement was non-existent, mining camps created informal 'miners' codes' to define who owned each river gravel claim.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Wooden claim stake with carved initials driven into rocky river gravel beside a wooden sluice box and iron gold pan. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/gold-rush-claim-jumping/4.mp3",
       "voicedText": "Because formal law enforcement was non-existent, mining camps created informal 'miners' codes' to define who owned each river gravel claim.",
-      "seconds": 8.7
+      "seconds": 8.7,
+      "image": "images/gold-rush-claim-jumping/4.png"
     },
     {
       "text": "Stealing another prospector's staked claim—called 'claim jumping'—was settled instantly by ad-hoc miner juries, often with immediate hanging.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Gnarled California live oak tree on a dry grassy hillside with a coiled hemp rope hanging from a sturdy branch in sunset light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/gold-rush-claim-jumping/5.mp3",
       "voicedText": "Stealing another prospector's staked claim—called 'claim jumping'—was settled instantly by ad-hoc miner juries, often with immediate hanging.",
-      "seconds": 9.5
+      "seconds": 9.5,
+      "image": "images/gold-rush-claim-jumping/5.png"
     },
     {
       "text": "The real fortunes weren't made by gold panners, but by merchants selling shovels and blue jeans! Would you have headed west in 1849?",
@@ -50,7 +55,8 @@
       "imagePrompt": "Glistening mountain stream in the Sierra Nevada mountains with pure water rippling over colorful pebbles in bright morning sunshine. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/gold-rush-claim-jumping/6.mp3",
       "voicedText": "The real fortunes weren't made by gold panners, but by merchants selling shovels and blue jeans! Would you have headed west in 1849?",
-      "seconds": 9.1
+      "seconds": 9.1,
+      "image": "images/gold-rush-claim-jumping/6.png"
     }
   ]
 }

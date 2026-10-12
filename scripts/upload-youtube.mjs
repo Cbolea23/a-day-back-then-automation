@@ -270,8 +270,9 @@ function buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong = fal
 
     let descriptionLines = [];
     if (customDesc) {
+      const cleanCustomDesc = customDesc.split("========================================================")[0].trim();
       descriptionLines = [
-        customDesc.trim(),
+        cleanCustomDesc,
         "",
         "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
         "🔔 Subscribe to A Day Back Then for daily journeys into history!",
@@ -402,14 +403,14 @@ async function uploadVideo(slug, options) {
   const cleanSlug = slug.replace(/^long-/, "");
   const candidatePaths = [
     path.join(root, "out", "Longform", "2 - Unpublished Vault", `long-${cleanSlug}.mp4`),
+    path.join(root, "out", "2 - Unpublished Vault", `${slug}.mp4`),
+    path.join(root, "out", "Unpublished Vault", `${slug}.mp4`),
+    path.join(root, "out", `${slug}.mp4`),
     path.join(root, "out", "Longform", "1 - Published", `long-${cleanSlug}.mp4`),
     path.join(root, "out", "Longform", `long-${cleanSlug}.mp4`),
     path.join(root, "out", `long-${cleanSlug}.mp4`),
-    path.join(root, "out", `${slug}.mp4`),
     path.join(root, "out", "1 - Published", `${slug}.mp4`),
-    path.join(root, "out", "2 - Unpublished Vault", `${slug}.mp4`),
     path.join(root, "out", "Published", `${slug}.mp4`),
-    path.join(root, "out", "Unpublished Vault", `${slug}.mp4`),
   ];
   const mp4Path = candidatePaths.find((p) => fs.existsSync(p));
   if (!mp4Path) {
@@ -525,6 +526,40 @@ async function uploadVideo(slug, options) {
   }
   console.log(`Studio URL:  https://studio.youtube.com/video/${videoId}/edit`);
   console.log("========================================================\n");
+
+  // Step 3: Upload custom thumbnail if available
+  const thumbCandidates = [
+    path.join(root, "out", "Longform", "2 - Unpublished Vault", `long-${cleanSlug}-thumbnail.jpg`),
+    path.join(root, "out", "Longform", "1 - Published", `long-${cleanSlug}-thumbnail.jpg`),
+    path.join(root, "out", "Longform", `long-${cleanSlug}-thumbnail.jpg`),
+    path.join(root, "out", `long-${cleanSlug}-thumbnail.jpg`),
+  ];
+  const thumbPath = thumbCandidates.find((p) => fs.existsSync(p));
+  if (thumbPath) {
+    console.log(`Uploading custom thumbnail: ${path.basename(thumbPath)}...`);
+    try {
+      const thumbBuffer = fs.readFileSync(thumbPath);
+      const thumbRes = await fetch(
+        `https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId=${videoId}&uploadType=media`,
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+            "Content-Type": "image/jpeg",
+          },
+          body: thumbBuffer,
+        }
+      );
+      if (thumbRes.ok) {
+        console.log("✓ Custom thumbnail uploaded successfully!");
+      } else {
+        const err = await thumbRes.text();
+        console.warn(`Thumbnail upload response (${thumbRes.status}):`, err);
+      }
+    } catch (thumbErr) {
+      console.warn("Thumbnail upload failed:", thumbErr.message);
+    }
+  }
 
   // Save to published-urls.json for automatic description links
   try {

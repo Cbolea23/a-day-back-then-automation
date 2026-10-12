@@ -10,7 +10,8 @@
       "imagePrompt": "Lush green papyrus reeds swaying gently along the banks of the blue Nile river under a bright Egyptian morning sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-crocodile-god-sobek/1.mp3",
       "voicedText": "To the ancient Egyptians, the Nile crocodile wasn't just a deadly river predator—it was the living embodiment of Sobek, god of fertility and power.",
-      "seconds": 10.2
+      "seconds": 10.2,
+      "image": "images/egyptian-crocodile-god-sobek/1.png"
     },
     {
       "text": "In the city of Crocodilopolis, priests handpicked one sacred crocodile called Petsuchos to live in a luxurious temple lake.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Tranquil rectangular temple stone pool surrounded by carved sandstone columns and flowering blue lotus waterlilies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-crocodile-god-sobek/2.mp3",
       "voicedText": "In the city of Crocodilopolis, priests handpicked one sacred crocodile called Petsuchos to live in a luxurious temple lake.",
-      "seconds": 9
+      "seconds": 9,
+      "image": "images/egyptian-crocodile-god-sobek/2.png"
     },
     {
       "text": "Priests pierced its ears with gold and turquoise earrings, and fitted its forelegs with sparkling crystal and electrum bracelets.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Polished gold hoop earrings and beaded turquoise bracelets resting on a royal linen cushion beside temple incense burners. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-crocodile-god-sobek/3.mp3",
       "voicedText": "Priests pierced its ears with gold and turquoise earrings, and fitted its forelegs with sparkling crystal and electrum bracelets.",
-      "seconds": 8.1
+      "seconds": 8.1,
+      "image": "images/egyptian-crocodile-god-sobek/3.png"
     },
     {
       "text": "Visiting Greek tourists like Strabo watched in awe as priests pried open the giant reptile's jaws to feed it cakes, roasted meat, and honey wine.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Golden platters of honey pastries, roasted fowl, and an ornate terracotta flagon of sweetened wine by the poolside. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-crocodile-god-sobek/4.mp3",
       "voicedText": "Visiting Greek tourists like Strabo watched in awe as priests pried open the giant reptile's jaws to feed it cakes, roasted meat, and honey wine.",
-      "seconds": 9.9
+      "seconds": 9.9,
+      "image": "images/egyptian-crocodile-god-sobek/4.png"
     },
     {
       "text": "When Petsuchos died of old age, priests embalmed the massive creature with sacred resins and entombed it in an underground catacomb.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Underground stone catacomb lined with linen-wrapped animal mummies decorated with painted gesso masks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-crocodile-god-sobek/5.mp3",
       "voicedText": "When Petsuchos died of old age, priests embalmed the massive creature with sacred resins and entombed it in an underground catacomb.",
-      "seconds": 9
+      "seconds": 9,
+      "image": "images/egyptian-crocodile-god-sobek/5.png"
     },
     {
       "text": "Would you have dared to feed a 12-foot sacred crocodile honey cake? Tell us below and subscribe for more amazing history!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Carved sandstone relief of Sobek with crocodile head holding an ankh key of life bathed in warm desert sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-crocodile-god-sobek/6.mp3",
       "voicedText": "Would you have dared to feed a 12-foot sacred crocodile honey cake? Tell us below and subscribe for more amazing history!",
-      "seconds": 7.9
+      "seconds": 7.9,
+      "image": "images/egyptian-crocodile-god-sobek/6.png"
     }
   ]
 }

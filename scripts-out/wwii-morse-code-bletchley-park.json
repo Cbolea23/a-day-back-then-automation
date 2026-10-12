@@ -11,7 +11,7 @@
       "audio": "audio/wwii-morse-code-bletchley-park/1.mp3",
       "voicedText": "Deep in the Buckinghamshire countryside, an eccentric Victorian mansion called Bletchley Park housed Britain's greatest codebreaking minds.",
       "seconds": 8.4,
-      "image": "images/wwii-morse-code-bletchley-park/1.jpg"
+      "image": "images/wwii-morse-code-bletchley-park/1.png"
     },
     {
       "text": "Recruits weren't just mathematicians—they included chess masters, linguists, and crossword champions scouted through national newspapers.",
@@ -19,7 +19,8 @@
       "imagePrompt": "Wooden desk inside a dimly lit codebreaker hut with paper crossword puzzles, pencils, and teacups beside Morse code telegraph keys. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-morse-code-bletchley-park/2.mp3",
       "voicedText": "Recruits weren't just mathematicians—they included chess masters, linguists, and crossword champions scouted through national newspapers.",
-      "seconds": 8.8
+      "seconds": 8.8,
+      "image": "images/wwii-morse-code-bletchley-park/2.png"
     },
     {
       "text": "Every day, German military units scrambled their secret orders using Enigma machines with 150 million million possible rotor settings.",
@@ -27,7 +28,8 @@
       "imagePrompt": "Close-up of a three-rotor German Enigma cipher machine in an oak case showing brass alphabet keyboard and plugboard wires. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-morse-code-bletchley-park/3.mp3",
       "voicedText": "Every day, German military units scrambled their secret orders using Enigma machines with 150 million million possible rotor settings.",
-      "seconds": 9.7
+      "seconds": 9.7,
+      "image": "images/wwii-morse-code-bletchley-park/3.png"
     },
     {
       "text": "To break the cipher before midnight, Alan Turing designed the 'Bombe': an electromechanical machine of spinning red and black drums.",
@@ -35,7 +37,8 @@
       "imagePrompt": "Massive electromechanical Turing Bombe machine with dozens of rotating colored drums and bundles of copper wire inside a timber hut. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-morse-code-bletchley-park/4.mp3",
       "voicedText": "To break the cipher before midnight, Alan Turing designed the 'Bombe': an electromechanical machine of spinning red and black drums.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/wwii-morse-code-bletchley-park/4.png"
     },
     {
       "text": "Operating in freezing wooden huts called Hut 6 and Hut 8, ten thousand staff deciphered intercepted signals that shortened the war by two years.",
@@ -43,7 +46,8 @@
       "imagePrompt": "Interior of Hut 8 with long wooden trestle tables stacked with teleprinter paper tapes, cubbyholes, and filing cabinets. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-morse-code-bletchley-park/5.mp3",
       "voicedText": "Operating in freezing wooden huts called Hut 6 and Hut 8, ten thousand staff deciphered intercepted signals that shortened the war by two years.",
-      "seconds": 9.9
+      "seconds": 9.9,
+      "image": "images/wwii-morse-code-bletchley-park/5.png"
     },
     {
       "text": "Staff swore absolute secrecy and told no one—not even their spouses—for thirty years. Could you keep that secret?",
@@ -51,7 +55,8 @@
       "imagePrompt": "Peaceful Bletchley Park grounds with leafy willow trees weeping over a quiet reflecting lake in morning light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-morse-code-bletchley-park/6.mp3",
       "voicedText": "Staff swore absolute secrecy and told no one—not even their spouses—for thirty years. Could you keep that secret?",
-      "seconds": 8.4
+      "seconds": 8.4,
+      "image": "images/wwii-morse-code-bletchley-park/6.png"
     }
   ]
 }

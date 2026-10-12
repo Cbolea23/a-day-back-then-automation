@@ -210,36 +210,46 @@ const LongScene: React.FC<{
       {/* If NPC is speaking, NPC component handles its own audio lipsync */}
       {!isNpcSpeaking && scene.audio ? <Audio src={staticFile(scene.audio)} /> : null}
 
-      {/* Render interactive secondary character if present in the scene */}
-      {npcConfig ? (
-        <NPC npc={npcConfig} durationInFrames={durationInFrames} />
-      ) : null}
-
-      {/* Narrator performs bottom-right, listening or speaking */}
+      {/* Compute plan for speech synchronization */}
       {(() => {
         const plan = planSpeech(scene.text, durationInFrames, {
           isFirstScene: index === 0,
         });
+
         return (
-          <div
-            style={{
-              position: "absolute",
-              right: 90,
-              bottom: 24,
-              filter: "drop-shadow(0 14px 28px rgba(0,0,0,0.65))",
-            }}
-          >
-            <Narrator
-              height={600}
-              theme={theme}
-              tunic={index % 2 === 0 ? "#e8cf9a" : "#d9bd86"}
-              plan={plan}
-              talking={!isNpcSpeaking}
-              audioSrc={!isNpcSpeaking ? scene.audio : undefined}
-              focus={npcConfig ? {x: 0.25, y: 0.55} : undefined}
-              anchorX={0.88}
-            />
-          </div>
+          <>
+            {/* Render interactive secondary character if present in the scene */}
+            {npcConfig ? (
+              <NPC
+                npc={npcConfig}
+                durationInFrames={durationInFrames}
+                plan={isNpcSpeaking ? plan : undefined}
+              />
+            ) : null}
+
+            {/* Narrator performs bottom-right, listening or speaking */}
+            <div
+              style={{
+                position: "absolute",
+                right: 90,
+                bottom: 24,
+                filter: "drop-shadow(0 14px 28px rgba(0,0,0,0.65))",
+              }}
+            >
+              <Narrator
+                height={600}
+                theme={theme}
+                tunic={index % 2 === 0 ? "#e8cf9a" : "#d9bd86"}
+                plan={isNpcSpeaking ? undefined : plan}
+                gesture={isNpcSpeaking ? "think" : undefined}
+                talking={!isNpcSpeaking}
+                audioSrc={!isNpcSpeaking ? scene.audio : undefined}
+                focus={npcConfig ? {x: 0.25, y: 0.55} : undefined}
+                anchorX={0.88}
+                reaction={isNpcSpeaking ? "recoil" : undefined}
+              />
+            </div>
+          </>
         );
       })()}
 

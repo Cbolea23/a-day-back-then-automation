@@ -10,7 +10,8 @@
       "imagePrompt": "English backyard garden with an arch-roofed corrugated steel shelter dug into the turf and covered with mounded earth. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-anderson-shelter-backyard/1.mp3",
       "voicedText": "During the Blitz, over two million British families assembled an Anderson shelter in their backyard garden.",
-      "seconds": 6.9
+      "seconds": 6.9,
+      "image": "images/wwii-anderson-shelter-backyard/1.png"
     },
     {
       "text": "Made from six curved corrugated steel sheets bolted together, it was buried three feet deep into the soil and covered with dirt.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Cross-section of an earth-covered corrugated steel shelter with heavy wooden blast door and sandbags piled outside. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-anderson-shelter-backyard/2.mp3",
       "voicedText": "Made from six curved corrugated steel sheets bolted together, it was buried three feet deep into the soil and covered with dirt.",
-      "seconds": 8.3
+      "seconds": 8.3,
+      "image": "images/wwii-anderson-shelter-backyard/2.png"
     },
     {
       "text": "Inside, it was cramped, damp, and freezing cold. Mud floors often flooded with rainwater after autumn downpours.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Interior of dim underground shelter with wooden plank duckboards over shallow puddle, twin wire bunk beds, and a wool blanket. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-anderson-shelter-backyard/3.mp3",
       "voicedText": "Inside, it was cramped, damp, and freezing cold. Mud floors often flooded with rainwater after autumn downpours.",
-      "seconds": 7.6
+      "seconds": 7.6,
+      "image": "images/wwii-anderson-shelter-backyard/3.png"
     },
     {
       "text": "Families huddled under wool blankets by the light of a single kerosene hurricane lantern while bomb concussions rattled the walls.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Glowing glass paraffin hurricane lamp resting on a small wooden crate beside a thermos flask and a paperback book. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-anderson-shelter-backyard/4.mp3",
       "voicedText": "Families huddled under wool blankets by the light of a single kerosene hurricane lantern while bomb concussions rattled the walls.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/wwii-anderson-shelter-backyard/4.png"
     },
     {
       "text": "Despite the damp discomfort, Anderson shelters saved countless lives by deflecting deadly flying shrapnel and falling building masonry.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Morning light peeking through the open wooden hatch of a steel bunker revealing quiet garden soil. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-anderson-shelter-backyard/5.mp3",
       "voicedText": "Despite the damp discomfort, Anderson shelters saved countless lives by deflecting deadly flying shrapnel and falling building masonry.",
-      "seconds": 9.1
+      "seconds": 9.1,
+      "image": "images/wwii-anderson-shelter-backyard/5.png"
     },
     {
       "text": "Could you spend ninety consecutive nights sleeping in a cold, muddy garden trench? Tell us your thoughts below!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Backyard rose bushes flowering on top of an earth-covered garden bunker under calm morning blue skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-anderson-shelter-backyard/6.mp3",
       "voicedText": "Could you spend ninety consecutive nights sleeping in a cold, muddy garden trench? Tell us your thoughts below!",
-      "seconds": 7
+      "seconds": 7,
+      "image": "images/wwii-anderson-shelter-backyard/6.png"
     }
   ]
 }

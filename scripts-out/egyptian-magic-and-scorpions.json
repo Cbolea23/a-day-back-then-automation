@@ -10,7 +10,8 @@
       "imagePrompt": "Ancient Egyptian physician's medical workroom with ceramic salve jars, bronze lancets, and linen bandage rolls on a table. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-magic-and-scorpions/1.mp3",
       "voicedText": "In ancient Egypt, medicine and magic were indistinguishable: doctors were simultaneously trained physicians and ordained priests of Sekhmet.",
-      "seconds": 9.3
+      "seconds": 9.3,
+      "image": "images/egyptian-magic-and-scorpions/1.png"
     },
     {
       "text": "The harsh desert sand crawled with deadly yellow deathstalker scorpions and horned asps whose venom killed within hours.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Dramatic close-up view of wind-blown desert sand dunes with animal tracks under an intense midday sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-magic-and-scorpions/2.mp3",
       "voicedText": "The harsh desert sand crawled with deadly yellow deathstalker scorpions and horned asps whose venom killed within hours.",
-      "seconds": 7.9
+      "seconds": 7.9,
+      "image": "images/egyptian-magic-and-scorpions/2.png"
     },
     {
       "text": "To treat stings, the Ebers Papyrus prescribed poultices of crushed garlic, beer dregs, and natron salts to draw out venom.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Mortar and pestle grinding garlic cloves and dried desert herbs beside a small bowl of white natron mineral salt. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-magic-and-scorpions/3.mp3",
       "voicedText": "To treat stings, the Ebers Papyrus prescribed poultices of crushed garlic, beer dregs, and natron salts to draw out venom.",
-      "seconds": 8.5
+      "seconds": 8.5,
+      "image": "images/egyptian-magic-and-scorpions/3.png"
     },
     {
       "text": "At the same time, the doctor drew a protective circle on the floor using a curved ivory magic wand carved from hippopotamus tusk.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Curved white ivory wand carved with protective deities including Bes and Taweret resting on woven reed matting. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-magic-and-scorpions/4.mp3",
       "voicedText": "At the same time, the doctor drew a protective circle on the floor using a curved ivory magic wand carved from hippopotamus tusk.",
-      "seconds": 8.3
+      "seconds": 8.3,
+      "image": "images/egyptian-magic-and-scorpions/4.png"
     },
     {
       "text": "Patients drank water poured directly over magic healing cippus statues, believing the dissolved sacred spell inscriptions neutralized poison.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Stele cippus of Horus standing on crocodiles with water flowing over carved hieroglyphic spell inscriptions into a basin. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-magic-and-scorpions/5.mp3",
       "voicedText": "Patients drank water poured directly over magic healing cippus statues, believing the dissolved sacred spell inscriptions neutralized poison.",
-      "seconds": 9.8
+      "seconds": 9.8,
+      "image": "images/egyptian-magic-and-scorpions/5.png"
     },
     {
       "text": "A fascinating blend of herbal pharmacology and spiritual psychology! Subscribe for more untold secrets from ancient times!",
@@ -50,7 +55,8 @@
       "imagePrompt": "View of the Great Pyramids of Giza rising majestically against a bright clear blue desert morning sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-magic-and-scorpions/6.mp3",
       "voicedText": "A fascinating blend of herbal pharmacology and spiritual psychology! Subscribe for more untold secrets from ancient times!",
-      "seconds": 9.5
+      "seconds": 9.5,
+      "image": "images/egyptian-magic-and-scorpions/6.png"
     }
   ]
 }

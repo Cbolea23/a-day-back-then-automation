@@ -12,6 +12,7 @@ import {
 } from "remotion";
 import {Captions} from "./Captions";
 import {Narrator, getThemeFromSlug} from "./Narrator";
+import {NPC} from "./NPC";
 import {planSpeech} from "./speech";
 import {FPS, Mood, Scene, ScriptProps, AtmosphereKind, sceneFrames} from "./types";
 
@@ -266,10 +267,20 @@ const SceneView: React.FC<{
 }> = ({scene, index, hook, durationInFrames, slug}) => {
   const theme = getThemeFromSlug(slug);
   const {fps} = useVideoConfig();
+
+  const isNpcSpeaking = scene.speaker === "npc";
+  let npcConfig = scene.npc;
+  if (npcConfig && isNpcSpeaking) {
+    npcConfig = {
+      ...npcConfig,
+      talking: true,
+      audio: scene.audio,
+      gesture: npcConfig.gesture ?? "explain",
+    };
+  }
+
   // One speech plan per scene: gestures, expressions and nods all follow
-  // the narration text, in sync with the captions. When the script carries
-  // measured word timings (scene.wordTimings), the plan is anchored to the
-  // real voiceover instead of the heuristic spread.
+  // the narration text, in sync with the captions.
   const plan = useMemo(
     () =>
       planSpeech(scene.text, durationInFrames, {
@@ -279,22 +290,40 @@ const SceneView: React.FC<{
       }),
     [scene.text, scene.wordTimings, durationInFrames, index, fps],
   );
+
   return (
     <AbsoluteFill>
       <Background scene={scene} durationInFrames={durationInFrames} seed={index} />
-      {scene.audio ? <Audio src={staticFile(scene.audio)} /> : null}
+      {scene.ambientAudio ? (
+        <Audio src={staticFile(scene.ambientAudio)} volume={0.25} />
+      ) : null}
+      {/* Audio playback: NPC manages its own audio if speaking; otherwise played for narrator */}
+      {!isNpcSpeaking && scene.audio ? <Audio src={staticFile(scene.audio)} /> : null}
 
-      {/* Narrator performs the narration: entrance, then purposeful gestures.
-          Stage direction places them in the frame so they never cover the
-          scene's focus point, and they aim their gaze/pointing arm at it. */}
+      {/* Interactive Secondary Character (NPC Cameo) if present */}
+      {npcConfig ? (
+        <NPC
+          npc={npcConfig}
+          durationInFrames={durationInFrames}
+          plan={isNpcSpeaking ? plan : undefined}
+        />
+      ) : null}
+
+      {/* Narrator performs: smooth grounded entrance on scene 0, seamless afterwards */}
       {(() => {
-        // Subtle entrance slide-up on each scene switch
-        const slideUp = interpolate(useCurrentFrame(), [0, 10], [28, 0], {
-          extrapolateRight: "clamp",
-        });
+        // Only scene 0 slides in gently; subsequent scenes remain grounded
+        const slideUp =
+          index === 0
+            ? interpolate(useCurrentFrame(), [0, 8], [30, 0], {
+                extrapolateRight: "clamp",
+              })
+            : 0;
+
         const dir = scene.direction ?? {};
-        const narratorX = dir.narratorX ?? 0.5;
-        const narratorScale = dir.narratorScale ?? 1;
+        // If NPC is present, shift narrator to the right so they don't overlap
+        const defaultX = npcConfig ? (isNpcSpeaking ? 0.74 : 0.68) : 0.5;
+        const narratorX = dir.narratorX ?? defaultX;
+        const narratorScale = dir.narratorScale ?? (npcConfig ? 0.92 : 1);
         const nHeight = 700 * narratorScale;
 
         return (
@@ -323,26 +352,39 @@ const SceneView: React.FC<{
             <Narrator
               height={nHeight}
               theme={theme}
-              plan={plan}
-              audioSrc={scene.audio}
+              plan={isNpcSpeaking ? undefined : plan}
+              gesture={isNpcSpeaking ? "think" : undefined}
+              talking={!isNpcSpeaking}
+              audioSrc={!isNpcSpeaking ? scene.audio : undefined}
               anchorX={narratorX}
-              focus={dir.focus ? {x: dir.focus[0], y: dir.focus[1]} : undefined}
-              reaction={dir.reaction}
+              focus={
+                npcConfig
+                  ? {x: 0.28, y: 0.55}
+                  : dir.focus
+                    ? {x: dir.focus[0], y: dir.focus[1]}
+                    : undefined
+              }
+              reaction={isNpcSpeaking ? "recoil" : dir.reaction}
             />
           </div>
         );
       })()}
 
-      {/* Captions sit above the narrator, clear of the Shorts UI at the bottom */}
+      {/* Captions sit above the characters with expressive human-edited typography */}
       <div
         style={{
           position: "absolute",
-          top: 820,
+          top: 800,
           left: 0,
           right: 0,
         }}
       >
-        <Captions text={scene.text} durationInFrames={durationInFrames} />
+        <Captions
+          text={scene.text}
+          durationInFrames={durationInFrames}
+          speakerName={scene.speakerName}
+          speaker={scene.speaker}
+        />
       </div>
 
       {index === 0 ? <HookBanner text={hook} /> : null}

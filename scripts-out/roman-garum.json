@@ -1,87 +1,97 @@
 {
   "slug": "roman-garum",
   "title": "Rome's Smelly Fish Sauce",
-  "hook": "Rome's favorite sauce is rancid fish.",
+  "hook": "Imagine paying $500 for dinner in Rome... only to drown it in rotten fish guts.",
   "channelName": "A Day Back Then",
   "scenes": [
     {
-      "text": "You pour a dark, pungent liquid over your expensive Roman dinner.",
+      "text": "Imagine paying a fortune for a lavish Roman dinner, only to drown your food in liquid rotten fish guts.",
       "mood": "warm",
       "imagePrompt": "A grand Roman dining room with a table laden with bronze platters and figs under warm lamplight.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-garum/1.png",
       "audio": "audio/roman-garum/1.wav",
-      "seconds": 4.5,
-      "voicedText": "You pour a dark, pungent liquid over your expensive Roman dinner."
+      "seconds": 9.4,
+      "voicedText": "Imagine paying a fortune for a lavish Roman dinner, only to drown your food in liquid rotten fish guts."
     },
     {
-      "text": "This is garum, the absolute king of Roman condiments.",
+      "text": "This is garum. Ancient Rome's ketchup, and the undisputed king of every dining table.",
       "mood": "day",
       "imagePrompt": "Sunlight filtering into a stone Roman kitchen with terra cotta jars lining the shelves.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-garum/2.png",
       "audio": "audio/roman-garum/2.wav",
-      "seconds": 4.3,
-      "voicedText": "This is garum, the absolute king of Roman condiments."
+      "seconds": 7.4,
+      "voicedText": "This is garum. Ancient Rome's ketchup, and the undisputed king of every dining table."
     },
     {
-      "text": "To make it, workers leave fish guts out in the sun for months.",
+      "text": "To make it, workers dumped mackerel entrails into stone vats and let them bake under the scorching sun for three months.",
       "mood": "warm",
       "imagePrompt": "An outdoor courtyard lined with large clay vats baking under a hot Mediterranean sun.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-garum/3.png",
       "audio": "audio/roman-garum/3.wav",
-      "seconds": 4.6,
-      "voicedText": "To make it, workers leave fish guts out in the sun for months."
+      "seconds": 9,
+      "voicedText": "To make it, workers dumped mackerel entrails into stone vats and let them bake under the scorching sun for three months."
     },
     {
-      "text": "It ferments and liquefies, creating a smell so bad that factories are banned inside cities.",
+      "text": "Shut the window, Marcus! The breeze just shifted and it smells like death!",
+      "speaker": "npc",
+      "speakerName": "NEIGHBOR",
+      "voice": "Puck",
+      "voiceStyle": "Exasperated, angry Roman tenant shouting out his window in disgust.",
+      "npc": {
+        "archetype": "citizen",
+        "position": "left",
+        "expression": "grumpy",
+        "speechBubble": "Shut the window, Marcus!",
+        "talking": true
+      },
       "mood": "day",
       "imagePrompt": "An ancient stone factory ruin overlooking the blue sea, surrounded by grassy hills.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-garum/4.png",
       "audio": "audio/roman-garum/4.wav",
-      "seconds": 6.7,
-      "voicedText": "It ferments and liquefies, creating a smell so bad that factories are banned inside cities."
+      "seconds": 7.2,
+      "voicedText": "Shut the window, Marcus! The breeze just shifted and it smells like death!"
     },
     {
-      "text": "Yet, you put it on everything from boiled eggs to sweet desserts.",
-      "mood": "warm",
-      "imagePrompt": "A rustic wooden table set with a simple ceramic bowl of boiled eggs and a small flask.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "text": "The stench was so repulsive that the Roman Senate literally outlawed garum factories within city walls.",
+      "mood": "day",
+      "imagePrompt": "An ancient stone factory ruin overlooking the blue sea, surrounded by grassy hills.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-garum/5.png",
       "audio": "audio/roman-garum/5.wav",
-      "seconds": 4.5,
-      "voicedText": "Yet, you put it on everything from boiled eggs to sweet desserts."
+      "seconds": 7.5,
+      "voicedText": "The stench was so repulsive that the Roman Senate literally outlawed garum factories within city walls."
     },
     {
-      "text": "It adds a rich, salty flavor that historians compare to modern soy sauce.",
-      "mood": "day",
-      "imagePrompt": "A bustling Roman marketplace alley with amphorae stacked outside a shop.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
+      "text": "Yet Romans were obsessed. They poured this salty umami gold over everything — from boiled eggs to sweet figs.",
+      "mood": "warm",
+      "imagePrompt": "A rustic wooden table set with a simple ceramic bowl of boiled eggs and a small flask.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-garum/6.png",
       "audio": "audio/roman-garum/6.wav",
-      "seconds": 5.3,
-      "voicedText": "It adds a rich, salty flavor that historians compare to modern soy sauce."
+      "seconds": 10.6,
+      "voicedText": "Yet Romans were obsessed. They poured this salty umami gold over everything — from boiled eggs to sweet figs."
     },
     {
-      "text": "The highest grade of garum costs a small fortune, prized by Rome's elite.",
+      "text": "A single amphora of top-shelf garum cost a working man's entire yearly salary.",
       "mood": "warm",
       "imagePrompt": "A luxurious Roman villa atrium with a marble pool and lush green plants.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-garum/7.png",
       "audio": "audio/roman-garum/7.wav",
-      "seconds": 5.1,
-      "voicedText": "The highest grade of garum costs a small fortune, prized by Rome's elite."
+      "seconds": 6.4,
+      "voicedText": "A single amphora of top-shelf garum cost a working man's entire yearly salary."
     },
     {
-      "text": "But did this salty obsession actually give the entire empire a parasitic infection?",
+      "text": "Would you dare put rotten fish ketchup on your dinner? Tell us in the comments.",
       "mood": "cool",
       "imagePrompt": "A dim Roman doctor's study with scrolls and small bronze medical instruments on a table.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-garum/8.png",
       "audio": "audio/roman-garum/8.wav",
-      "seconds": 5.9,
-      "voicedText": "But did this salty obsession actually give the entire empire a parasitic infection?"
+      "seconds": 6,
+      "voicedText": "Would you dare put rotten fish ketchup on your dinner? Tell us in the comments."
     }
   ],
   "claimsToVerify": [
     "Garum was made by fermenting fish intestines in the sun for several months.",
     "Garum factories were banned from operating inside Roman cities due to the foul odor.",
     "Garum was used widely on both savory and sweet dishes.",
-    "High-grade garum was expensive and prized by the Roman elite.",
-    "Archaeological studies suggest Roman fish sauce may have contributed to the spread of fish tapeworm parasites."
+    "High-grade garum was expensive and prized by the Roman elite."
   ]
 }

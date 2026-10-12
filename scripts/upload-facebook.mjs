@@ -73,11 +73,11 @@ export async function uploadReel(slug, options = {}) {
   const {pageId, pageAccessToken, pageName} = getCredentials();
   const cleanSlug = slug.replace(/^long-/, "");
   const candidatePaths = [
+    path.join(root, "out", "2 - Unpublished Vault", `${cleanSlug}.mp4`),
+    path.join(root, "out", "Unpublished Vault", `${cleanSlug}.mp4`),
     path.join(root, "out", `${cleanSlug}.mp4`),
     path.join(root, "out", "1 - Published", `${cleanSlug}.mp4`),
-    path.join(root, "out", "2 - Unpublished Vault", `${cleanSlug}.mp4`),
     path.join(root, "out", "Published", `${cleanSlug}.mp4`),
-    path.join(root, "out", "Unpublished Vault", `${cleanSlug}.mp4`),
   ];
   const videoPath = candidatePaths.find((p) => fs.existsSync(p));
 

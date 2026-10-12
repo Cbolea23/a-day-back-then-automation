@@ -10,7 +10,8 @@
       "imagePrompt": "Vast ancient Swedish burial mound covered in wild meadow grass under a soft dramatic overcast sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-shieldmaidens-real/1.mp3",
       "voicedText": "For over a century, historians claimed Viking 'shieldmaidens' like Lagertha were merely mythical figures created for epic poetry.",
-      "seconds": 8.9
+      "seconds": 8.9,
+      "image": "images/viking-shieldmaidens-real/1.png"
     },
     {
       "text": "In 1878, archaeologists in Birka, Sweden uncovered grave Bj 581: the ultimate archetype of a high-status Viking military officer.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Excavated stone-lined chamber grave showing arrangement of ancient iron weapons and grave goods on earth. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-shieldmaidens-real/2.mp3",
       "voicedText": "In 1878, archaeologists in Birka, Sweden uncovered grave Bj 581: the ultimate archetype of a high-status Viking military officer.",
-      "seconds": 11.2
+      "seconds": 11.2,
+      "image": "images/viking-shieldmaidens-real/2.png"
     },
     {
       "text": "The chamber contained a deadly steel sword, battle axe, fighting knife, two spears, twenty-five armor-piercing arrows, and two sacrificed warhorses.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Pattern-welded iron Viking sword with silver-inlaid hilt and an iron battle axe resting upon a leather saddle. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-shieldmaidens-real/3.mp3",
       "voicedText": "The chamber contained a deadly steel sword, battle axe, fighting knife, two spears, twenty-five armor-piercing arrows, and two sacrificed warhorses.",
-      "seconds": 10.3
+      "seconds": 10.3,
+      "image": "images/viking-shieldmaidens-real/3.png"
     },
     {
       "text": "Crucially, it held a complete set of gaming pieces and a hnefatafl board—indicating the deceased was a strategic battle commander.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Carved bone and walrus ivory hnefatafl Viking board game pieces arranged on a wooden board table. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-shieldmaidens-real/4.mp3",
       "voicedText": "Crucially, it held a complete set of gaming pieces and a hnefatafl board—indicating the deceased was a strategic battle commander.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/viking-shieldmaidens-real/4.png"
     },
     {
       "text": "In 2017, genomic DNA analysis shocked the archaeological world by proving conclusively that the warrior had two X chromosomes: she was biologically female.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Intricately woven silver wire posament headband and silver brooches resting on fine dark woolen fabric. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-shieldmaidens-real/5.mp3",
       "voicedText": "In 2017, genomic DNA analysis shocked the archaeological world by proving conclusively that the warrior had two X chromosomes: she was biologically female.",
-      "seconds": 11.3
+      "seconds": 11.3,
+      "image": "images/viking-shieldmaidens-real/5.png"
     },
     {
       "text": "Norse women commanded respect on and off the battlefield. What do you think of the Birka warrior? Subscribe for more untold history!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Viking dragon-headed warship sailing proudly across calm Scandinavian coastal waters in bright sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-shieldmaidens-real/6.mp3",
       "voicedText": "Norse women commanded respect on and off the battlefield. What do you think of the Birka warrior? Subscribe for more untold history!",
-      "seconds": 8.8
+      "seconds": 8.8,
+      "image": "images/viking-shieldmaidens-real/6.png"
     }
   ]
 }

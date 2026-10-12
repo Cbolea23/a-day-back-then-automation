@@ -10,7 +10,8 @@
       "imagePrompt": "Weathered antique treasure map with burned edges, red 'X' mark, and sea monster illustrations on parchment. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-hidden-treasure-myth/1.mp3",
       "voicedText": "Treasure Island and pirate legends convinced the world that buccaneers constantly buried iron chests on remote tropical islands.",
-      "seconds": 8.4
+      "seconds": 8.4,
+      "image": "images/pirate-hidden-treasure-myth/1.png"
     },
     {
       "text": "In reality, in the entire Golden Age of Piracy, only one famous pirate ever confirmed burying loot: Captain William Kidd.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Gloomy sandy shoreline on Gardiners Island, New York, with dunes and autumn coastal grasses under stormy skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-hidden-treasure-myth/2.mp3",
       "voicedText": "In reality, in the entire Golden Age of Piracy, only one famous pirate ever confirmed burying loot: Captain William Kidd.",
-      "seconds": 8.9
+      "seconds": 8.9,
+      "image": "images/pirate-hidden-treasure-myth/2.png"
     },
     {
       "text": "Kidd buried his gold near New York purely as a desperate bargaining chip to avoid being hanged by British authorities.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Shallow pit in sandy earth revealing the iron handle and brass corner fittings of a buried wooden chest. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-hidden-treasure-myth/3.mp3",
       "voicedText": "Kidd buried his gold near New York purely as a desperate bargaining chip to avoid being hanged by British authorities.",
-      "seconds": 7.1
+      "seconds": 7.1,
+      "image": "images/pirate-hidden-treasure-myth/3.png"
     },
     {
       "text": "Real pirate plunder wasn't just gold: it was silk bolts, barrels of flour, tobacco bales, nails, and precious gunpowder.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Pirate ship warehouse deck packed with stacked barrels of rum, bales of raw cotton, and iron cannonball pyramids. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-hidden-treasure-myth/4.mp3",
       "voicedText": "Real pirate plunder wasn't just gold: it was silk bolts, barrels of flour, tobacco bales, nails, and precious gunpowder.",
-      "seconds": 8.4
+      "seconds": 8.4,
+      "image": "images/pirate-hidden-treasure-myth/4.png"
     },
     {
       "text": "Pirates had notoriously short life expectancies and divided their silver immediately to spend every penny in taverns in Port Royal and Nassau.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Bustling Caribbean port tavern counter with clay beer jugs, wooden tankards, scattered gold coins, and pipe smoke. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-hidden-treasure-myth/5.mp3",
       "voicedText": "Pirates had notoriously short life expectancies and divided their silver immediately to spend every penny in taverns in Port Royal and Nassau.",
-      "seconds": 9.5
+      "seconds": 9.5,
+      "image": "images/pirate-hidden-treasure-myth/5.png"
     },
     {
       "text": "Burying loot would have made a crew mutiny on the spot! Would you spend your pirate plunder immediately or save it?",
@@ -50,7 +55,8 @@
       "imagePrompt": "Tropical turquoise lagoon with gentle waves washing ashore beside palm trees swaying under bright blue skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-hidden-treasure-myth/6.mp3",
       "voicedText": "Burying loot would have made a crew mutiny on the spot! Would you spend your pirate plunder immediately or save it?",
-      "seconds": 7.3
+      "seconds": 7.3,
+      "image": "images/pirate-hidden-treasure-myth/6.png"
     }
   ]
 }

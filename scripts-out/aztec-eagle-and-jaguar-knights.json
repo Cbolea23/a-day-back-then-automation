@@ -10,7 +10,8 @@
       "imagePrompt": "Stone ceremonial courtyard of the Aztec temple of the Eagle and Jaguar warriors in Malinalco with carved rock portals. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/aztec-eagle-and-jaguar-knights/1.mp3",
       "voicedText": "In the Aztec army, hereditary birth did not guarantee military status: true honor had to be earned on the field of combat.",
-      "seconds": 7.8
+      "seconds": 7.8,
+      "image": "images/aztec-eagle-and-jaguar-knights/1.png"
     },
     {
       "text": "To join the elite warrior fraternities—the Eagle and Jaguar societies—a soldier had to capture four enemy champions alive in single combat.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Quilted cotton ichcahuipilli armor suit soaked in brine for toughness displayed on a wooden armor stand in temple light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/aztec-eagle-and-jaguar-knights/2.mp3",
       "voicedText": "To join the elite warrior fraternities—the Eagle and Jaguar societies—a soldier had to capture four enemy champions alive in single combat.",
-      "seconds": 9.5
+      "seconds": 9.5,
+      "image": "images/aztec-eagle-and-jaguar-knights/2.png"
     },
     {
       "text": "Jaguar warriors wore full-body battle suits tailored from real spotted jaguar pelts, with their faces peering out from the snarling open jaw.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Snarling jaguar head helmet headdress with jade stone teeth and real spotted ocelot fur draped over an altar. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/aztec-eagle-and-jaguar-knights/3.mp3",
       "voicedText": "Jaguar warriors wore full-body battle suits tailored from real spotted jaguar pelts, with their faces peering out from the snarling open jaw.",
-      "seconds": 9.5
+      "seconds": 9.5,
+      "image": "images/aztec-eagle-and-jaguar-knights/3.png"
     },
     {
       "text": "Eagle warriors wore helmets shaped like curved raptor beaks, adorned with thousands of iridescent green quetzal and eagle feathers.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Majestic eagle warrior carved wooden helmet with an open curved beak crest adorned with green emerald quetzal plumes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/aztec-eagle-and-jaguar-knights/4.mp3",
       "voicedText": "Eagle warriors wore helmets shaped like curved raptor beaks, adorned with thousands of iridescent green quetzal and eagle feathers.",
-      "seconds": 9
+      "seconds": 9,
+      "image": "images/aztec-eagle-and-jaguar-knights/4.png"
     },
     {
       "text": "They were rewarded with private estates, fine woven cotton robes, and the exclusive right to drink chocolate and wear gold jewelry.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Gold Aztec pectoral necklace with filigree sun discs and turquoise ear spools resting on a red feather blanket. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/aztec-eagle-and-jaguar-knights/5.mp3",
       "voicedText": "They were rewarded with private estates, fine woven cotton robes, and the exclusive right to drink chocolate and wear gold jewelry.",
-      "seconds": 9.1
+      "seconds": 9.1,
+      "image": "images/aztec-eagle-and-jaguar-knights/5.png"
     },
     {
       "text": "Which elite order would you have joined: the Eagle of the sun, or the Jaguar of the night? Tell us below!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Dramatic golden sunrise breaking over the twin volcanic peaks of Popocatepetl and Iztaccihuatl behind Tenochtitlan. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/aztec-eagle-and-jaguar-knights/6.mp3",
       "voicedText": "Which elite order would you have joined: the Eagle of the sun, or the Jaguar of the night? Tell us below!",
-      "seconds": 6.4
+      "seconds": 6.4,
+      "image": "images/aztec-eagle-and-jaguar-knights/6.png"
     }
   ]
 }

@@ -1,71 +1,82 @@
 {
   "slug": "roman-patrician-vs-plebeian",
   "title": "Rich vs Poor in Rome",
-  "hook": "Rome's Ultimate Class Divide",
+  "hook": "Waking up in ancient Rome depended entirely on how much gold you had.",
   "channelName": "A Day Back Then",
   "scenes": [
     {
-      "text": "You wake up in Rome, but your morning depends entirely on your wallet.",
+      "text": "Waking up in Rome was heaven or absolute nightmare, depending entirely on your wallet.",
       "mood": "day",
       "imagePrompt": "A wide, sunlit view of the ancient Roman skyline with marble temples on hills and crowded wooden insulae below.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-patrician-vs-plebeian/1.png",
       "audio": "audio/roman-patrician-vs-plebeian/1.wav",
-      "seconds": 4.2,
-      "voicedText": "You wake up in Rome, but your morning depends entirely on your wallet."
+      "seconds": 5.7,
+      "voicedText": "Waking up in Rome was heaven or absolute nightmare, depending entirely on your wallet."
     },
     {
-      "text": "As a wealthy patrician, you relax in a quiet, sprawling mansion with beautiful courtyard gardens.",
+      "text": "As a wealthy patrician, you woke up in a sprawling marble villa with private fountains and slaves feeding you imported grapes.",
       "mood": "warm",
       "imagePrompt": "An opulent Roman domus interior with an open atrium, a central pool reflecting sunlight, and colorful frescoes on the walls.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-patrician-vs-plebeian/2.png",
       "audio": "audio/roman-patrician-vs-plebeian/2.wav",
-      "seconds": 7,
-      "voicedText": "As a wealthy patrician, you relax in a quiet, sprawling mansion with beautiful courtyard gardens."
+      "seconds": 7.4,
+      "voicedText": "As a wealthy patrician, you woke up in a sprawling marble villa with private fountains and slaves feeding you imported grapes."
     },
     {
-      "text": "As a poor plebeian, you squeeze out of a drafty, wooden apartment that might collapse.",
+      "text": "Fifth floor, zero plumbing, and the landlord just raised the rent!",
       "mood": "cool",
       "imagePrompt": "A narrow, dark Roman street flanked by tall, precarious wooden apartment buildings with laundry hanging between balconies.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-patrician-vs-plebeian/3.png",
       "audio": "audio/roman-patrician-vs-plebeian/3.wav",
-      "seconds": 6.3,
-      "voicedText": "As a poor plebeian, you squeeze out of a drafty, wooden apartment that might collapse."
+      "seconds": 5.1,
+      "voicedText": "Fifth floor, zero plumbing, and the landlord just raised the rent!",
+      "speaker": "npc",
+      "speakerName": "PLEBEIAN",
+      "voice": "Puck",
+      "voiceStyle": "Exasperated Roman commoner complaining loudly about his terrible apartment.",
+      "npc": {
+        "archetype": "citizen",
+        "position": "left",
+        "expression": "grumpy",
+        "speechBubble": "Zero plumbing!",
+        "talking": true
+      }
     },
     {
-      "text": "Your breakfast is either exotic imported delicacies, or a piece of hard, salted bread.",
+      "text": "Poor plebeians crammed into creaky wooden insulae that collapsed or caught fire on a weekly basis.",
       "mood": "day",
       "imagePrompt": "A wooden table displaying a contrast of rich foods like figs and honey versus a single piece of coarse, dark Roman bread.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-patrician-vs-plebeian/4.png",
       "audio": "audio/roman-patrician-vs-plebeian/4.wav",
-      "seconds": 6.3,
-      "voicedText": "Your breakfast is either exotic imported delicacies, or a piece of hard, salted bread."
+      "seconds": 6,
+      "voicedText": "Poor plebeians crammed into creaky wooden insulae that collapsed or caught fire on a weekly basis."
     },
     {
-      "text": "The rich man's workday ends by noon. The poor laborer works until sunset.",
+      "text": "The rich man's workday was done by noon. The poor laborer baked bricks in the scorching heat until sundown.",
       "mood": "warm",
       "imagePrompt": "A dusty Roman marketplace with merchant stalls under canvas awnings, sun rays filtering through the heat.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-patrician-vs-plebeian/5.png",
       "audio": "audio/roman-patrician-vs-plebeian/5.wav",
-      "seconds": 5.3,
-      "voicedText": "The rich man's workday ends by noon. The poor laborer works until sunset."
+      "seconds": 6.8,
+      "voicedText": "The rich man's workday was done by noon. The poor laborer baked bricks in the scorching heat until sundown."
     },
     {
-      "text": "Both of you visit the grand public baths, but you mingle in very different social circles.",
+      "text": "Both used public baths, but rich Romans brought bodyguard entourages while the poor bathed in murky communal water.",
       "mood": "cool",
       "imagePrompt": "The interior of a massive Roman public bathhouse with steaming pools, marble columns, and sunlight streaming through high arched windows.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-patrician-vs-plebeian/6.png",
       "audio": "audio/roman-patrician-vs-plebeian/6.wav",
-      "seconds": 5.8,
-      "voicedText": "Both of you visit the grand public baths, but you mingle in very different social circles."
+      "seconds": 7.6,
+      "voicedText": "Both used public baths, but rich Romans brought bodyguard entourages while the poor bathed in murky communal water."
     },
     {
-      "text": "At night, one enjoys peaceful luxury. The other prays the building doesn't burn down. Want to see their bathrooms next?",
+      "text": "Would you have survived a single day in a Roman slum? Drop a comment below.",
       "mood": "dark",
       "imagePrompt": "A flickering oil lamp lighting a dark, cramped Roman apartment room with wooden walls and a small window overlooking the city at night.. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "image": "images/roman-patrician-vs-plebeian/7.png",
       "audio": "audio/roman-patrician-vs-plebeian/7.wav",
-      "seconds": 7.8,
-      "voicedText": "At night, one enjoys peaceful luxury. The other prays the building doesn't burn down. Want to see their bathrooms next?"
+      "seconds": 5.3,
+      "voicedText": "Would you have survived a single day in a Roman slum? Drop a comment below."
     }
   ],
   "claimsToVerify": [

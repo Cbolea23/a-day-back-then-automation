@@ -10,7 +10,8 @@
       "imagePrompt": "Moody misty Scandinavian fjord shore with wooden longships beached on grey pebble sands under dark stormy skies. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-berserker-rage/1.mp3",
       "voicedText": "In the Norse sagas, the most feared warriors on the battlefield were the 'Berserkers'—warriors consecrated to the god Odin.",
-      "seconds": 7.4
+      "seconds": 7.4,
+      "image": "images/viking-berserker-rage/1.png"
     },
     {
       "text": "Before battle commenced, berserkers whipped themselves into a frenzy called 'berserksgangr': foaming at the mouth and howling like wild wolves.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Carved wooden dragon prow of a Norse longship looming through swirling sea mist and cold rain spray. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-berserker-rage/2.mp3",
       "voicedText": "Before battle commenced, berserkers whipped themselves into a frenzy called 'berserksgangr': foaming at the mouth and howling like wild wolves.",
-      "seconds": 9
+      "seconds": 9,
+      "image": "images/viking-berserker-rage/2.png"
     },
     {
       "text": "To channel animal spirits, they bit hard into the iron rims of their painted lime-wood round shields until their teeth cracked.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Round wooden Viking battle shield painted red and black with iron boss and dented iron rim showing teeth scrape marks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-berserker-rage/3.mp3",
       "voicedText": "To channel animal spirits, they bit hard into the iron rims of their painted lime-wood round shields until their teeth cracked.",
-      "seconds": 7.9
+      "seconds": 7.9,
+      "image": "images/viking-berserker-rage/3.png"
     },
     {
       "text": "They fought bare-chested or clad in wolf and bear pelts without chainmail armor, seemingly immune to cold and insensible to pain.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Heavy grey wolf pelt cloak draped over an iron Viking broadaxe and bearded axe head resting on a wooden bench. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-berserker-rage/4.mp3",
       "voicedText": "They fought bare-chested or clad in wolf and bear pelts without chainmail armor, seemingly immune to cold and insensible to pain.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/viking-berserker-rage/4.png"
     },
     {
       "text": "Historians theorize their trance came from adrenaline hysteria, ergot grain alkaloids, or hallucinogenic henbane seeds found in warrior graves.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Small clay pouch of dried henbane seeds and dried medicinal roots resting beside an amber Odin amulet on fur. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-berserker-rage/5.mp3",
       "voicedText": "Historians theorize their trance came from adrenaline hysteria, ergot grain alkaloids, or hallucinogenic henbane seeds found in warrior graves.",
-      "seconds": 9.3
+      "seconds": 9.3,
+      "image": "images/viking-berserker-rage/5.png"
     },
     {
       "text": "Would you have stood in a shield wall facing a howling berserker? Tell us your thoughts below and subscribe!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Sunlight breaking through storm clouds over dramatic Norwegian mountain fjords with evergreen pine forests. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-berserker-rage/6.mp3",
       "voicedText": "Would you have stood in a shield wall facing a howling berserker? Tell us your thoughts below and subscribe!",
-      "seconds": 6.6
+      "seconds": 6.6,
+      "image": "images/viking-berserker-rage/6.png"
     }
   ]
 }

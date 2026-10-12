@@ -10,7 +10,8 @@
       "imagePrompt": "Vast stone amphitheater of Dionysus carved into the southern cliffside of the Acropolis under a bright Aegean sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/greek-theatre-heckling/1.mp3",
       "voicedText": "Attending the Theatre of Dionysus in Athens wasn't a quiet cultural night out—it was an all-day, wine-soaked civic spectacle with 14,000 rowdy spectators.",
-      "seconds": 10.7
+      "seconds": 10.7,
+      "image": "images/greek-theatre-heckling/1.png"
     },
     {
       "text": "Performances of tragedies and comedies were high-stakes competitions where playwrights like Sophocles and Aristophanes competed for the golden ivy wreath.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Golden carved ivy wreath resting on a velvet-draped marble pedestal next to an ornate terracotta prize vase. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/greek-theatre-heckling/2.mp3",
       "voicedText": "Performances of tragedies and comedies were high-stakes competitions where playwrights like Sophocles and Aristophanes competed for the golden ivy wreath.",
-      "seconds": 9.5
+      "seconds": 9.5,
+      "image": "images/greek-theatre-heckling/2.png"
     },
     {
       "text": "Audiences brought baskets stuffed with snacks: garlic, barley cakes, dried figs, and heavy terracotta flagons of unmixed wine.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Wicker basket brimming with purple dried figs, green olives, garlic cloves, and wine jars on stone theatre steps. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/greek-theatre-heckling/3.mp3",
       "voicedText": "Audiences brought baskets stuffed with snacks: garlic, barley cakes, dried figs, and heavy terracotta flagons of unmixed wine.",
-      "seconds": 9
+      "seconds": 9,
+      "image": "images/greek-theatre-heckling/3.png"
     },
     {
       "text": "If an actor mispronounced a syllable or delivered a flat punchline, thousands of spectators drummed their heels against stone benches, hissing and booing.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Empty tiered semi-circular stone benches of an ancient theatre catching bright midday Mediterranean light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/greek-theatre-heckling/4.mp3",
       "voicedText": "If an actor mispronounced a syllable or delivered a flat punchline, thousands of spectators drummed their heels against stone benches, hissing and booing.",
-      "seconds": 9.4
+      "seconds": 9.4,
+      "image": "images/greek-theatre-heckling/4.png"
     },
     {
       "text": "They hurled rotten fruit, olive pits, and even cobblestones onto the stage, forcing terrified actors to flee mid-monologue.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Carved comic theatre mask made of painted linen and clay lying abandoned on the orchestra stage stones. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/greek-theatre-heckling/5.mp3",
       "voicedText": "They hurled rotten fruit, olive pits, and even cobblestones onto the stage, forcing terrified actors to flee mid-monologue.",
-      "seconds": 9.4
+      "seconds": 9.4,
+      "image": "images/greek-theatre-heckling/5.png"
     },
     {
       "text": "The theatre was so volatile that special rod-bearers called 'rhabdouchoi' were hired to beat unruly hecklers. Subscribe for more ancient theater lore!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Dramatic view looking out from the ancient theatre orchestra toward the Aegean horizon at sunset. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/greek-theatre-heckling/6.mp3",
       "voicedText": "The theatre was so volatile that special rod-bearers called 'rhabdouchoi' were hired to beat unruly hecklers. Subscribe for more ancient theater lore!",
-      "seconds": 10.1
+      "seconds": 10.1,
+      "image": "images/greek-theatre-heckling/6.png"
     }
   ]
 }

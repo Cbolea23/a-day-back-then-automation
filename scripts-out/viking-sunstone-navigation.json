@@ -10,7 +10,8 @@
       "imagePrompt": "Vast cold North Atlantic ocean expanse under heavy grey rolling fog banks and distant jagged ocean swells. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-sunstone-navigation/1.mp3",
       "voicedText": "Centuries before magnetic compasses reached Europe, Viking longships crossed the freezing, fog-shrouded North Atlantic all the way to America.",
-      "seconds": 9.8
+      "seconds": 9.8,
+      "image": "images/viking-sunstone-navigation/1.png"
     },
     {
       "text": "How did Norse captains steer accurately when thick polar mist and snowstorms completely hid the sun and stars for days on end?",
@@ -18,7 +19,8 @@
       "imagePrompt": "Wooden ship deck of a Viking knarr cargo vessel with coiled hemp ropes and wooden barrels shrouded in thick white fog. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-sunstone-navigation/2.mp3",
       "voicedText": "How did Norse captains steer accurately when thick polar mist and snowstorms completely hid the sun and stars for days on end?",
-      "seconds": 8.4
+      "seconds": 8.4,
+      "image": "images/viking-sunstone-navigation/2.png"
     },
     {
       "text": "Medieval sagas speak of the legendary 'Sólarsteinn'—the mythical Sunstone said to reveal the hidden sun behind overcast skies.",
@@ -26,7 +28,8 @@
       "imagePrompt": "A transparent rhomboid Iceland spar calcite crystal resting on a weathered wooden chart table catching a glint of light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-sunstone-navigation/3.mp3",
       "voicedText": "Medieval sagas speak of the legendary 'Sólarsteinn'—the mythical Sunstone said to reveal the hidden sun behind overcast skies.",
-      "seconds": 9.1
+      "seconds": 9.1,
+      "image": "images/viking-sunstone-navigation/3.png"
     },
     {
       "text": "Modern scientists discovered this stone was Iceland spar: a birefringent calcite crystal that polarizes ultraviolet light.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Scientific demonstration showing light splitting into two polarized beams through a clear crystal onto parchment paper. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-sunstone-navigation/4.mp3",
       "voicedText": "Modern scientists discovered this stone was Iceland spar: a birefringent calcite crystal that polarizes ultraviolet light.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/viking-sunstone-navigation/4.png"
     },
     {
       "text": "By rotating the crystal until both split light beams matched in brightness, navigators pinpointed the sun's exact heading within one degree.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Carved wooden sun compass dial disc with notched hour marks and central gnomon peg resting beside an Iceland spar crystal. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-sunstone-navigation/5.mp3",
       "voicedText": "By rotating the crystal until both split light beams matched in brightness, navigators pinpointed the sun's exact heading within one degree.",
-      "seconds": 9.2
+      "seconds": 9.2,
+      "image": "images/viking-sunstone-navigation/5.png"
     },
     {
       "text": "Ancient magic turned out to be pure optical science! What ancient invention fascinates you most? Subscribe for more history secrets!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Golden sun setting over the open ocean horizon casting warm amber light across gentle rolling waves. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-sunstone-navigation/6.mp3",
       "voicedText": "Ancient magic turned out to be pure optical science! What ancient invention fascinates you most? Subscribe for more history secrets!",
-      "seconds": 9.3
+      "seconds": 9.3,
+      "image": "images/viking-sunstone-navigation/6.png"
     }
   ]
 }

@@ -10,7 +10,8 @@
       "imagePrompt": "1940s London Underground curved tunnel station with white subway tiles and a wooden platform edge over steel train tracks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-underground-tube-sleepers/1.mp3",
       "voicedText": "When nightly Blitz bombing raids devastated London, 150,000 civilians took shelter seventy feet underground in the Tube network.",
-      "seconds": 9.2
+      "seconds": 9.2,
+      "image": "images/wwii-underground-tube-sleepers/1.png"
     },
     {
       "text": "At first, the government tried locking subway station gates, but desperate crowds bought penny tickets and simply refused to leave.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Cast-iron folding subway turnstile gate with vintage enamel London transport signs and cobblestones above ground. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-underground-tube-sleepers/2.mp3",
       "voicedText": "At first, the government tried locking subway station gates, but desperate crowds bought penny tickets and simply refused to leave.",
-      "seconds": 8.8
+      "seconds": 8.8,
+      "image": "images/wwii-underground-tube-sleepers/2.png"
     },
     {
       "text": "Families claimed their small patches of platform concrete each evening with blankets, tea thermoses, and cardboard suitcases.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Subway platform wall with round London Underground roundel sign, stacked wool blankets, and a vintage tartan picnic thermos. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-underground-tube-sleepers/3.mp3",
       "voicedText": "Families claimed their small patches of platform concrete each evening with blankets, tea thermoses, and cardboard suitcases.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/wwii-underground-tube-sleepers/3.png"
     },
     {
       "text": "Deep underground, entire communities formed: mobile tea trollies rolled down tracks, musical concerts played, and libraries lent books.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Steel mobile canteen tea cart with metal tea urn, white ceramic mugs, and buns parked beside tiled subway columns. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-underground-tube-sleepers/4.mp3",
       "voicedText": "Deep underground, entire communities formed: mobile tea trollies rolled down tracks, musical concerts played, and libraries lent books.",
-      "seconds": 9.6
+      "seconds": 9.6,
+      "image": "images/wwii-underground-tube-sleepers/4.png"
     },
     {
       "text": "Conditions were stifling: the air was thick with disinfectant, and seven thousand trains rattled by on daytime schedules before night shutdowns.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Dimly lit arched railway tunnel extending into dark perspective with twin rails reflecting overhead incandescent bulbs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-underground-tube-sleepers/5.mp3",
       "voicedText": "Conditions were stifling: the air was thick with disinfectant, and seven thousand trains rattled by on daytime schedules before night shutdowns.",
-      "seconds": 9.5
+      "seconds": 9.5,
+      "image": "images/wwii-underground-tube-sleepers/5.png"
     },
     {
       "text": "Could you have slept through the night on a subway platform? Let us know below and follow for daily history stories!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Morning light pouring down stone subway entrance stairs leading up to a calm London street with red telephone boxes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/wwii-underground-tube-sleepers/6.mp3",
       "voicedText": "Could you have slept through the night on a subway platform? Let us know below and follow for daily history stories!",
-      "seconds": 6.6
+      "seconds": 6.6,
+      "image": "images/wwii-underground-tube-sleepers/6.png"
     }
   ]
 }

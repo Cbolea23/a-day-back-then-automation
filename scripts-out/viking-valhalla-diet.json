@@ -10,7 +10,8 @@
       "imagePrompt": "Colossal wooden grand hall with towering carved timber pillars and a roof thatched with gleaming golden shields. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-valhalla-diet/1.mp3",
       "voicedText": "For a Norse warrior, falling in glorious combat didn't mean floating among quiet clouds—it meant entering Odin's majestic hall of Valhalla.",
-      "seconds": 9.9
+      "seconds": 9.9,
+      "image": "images/viking-valhalla-diet/1.png"
     },
     {
       "text": "Valhalla featured 540 enormous gates, each wide enough for eight hundred warriors to march through shoulder to shoulder.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Massive carved wooden oak gates reinforced with heavy iron bands and Viking knotwork carvings swinging open. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-valhalla-diet/2.mp3",
       "voicedText": "Valhalla featured 540 enormous gates, each wide enough for eight hundred warriors to march through shoulder to shoulder.",
-      "seconds": 8.5
+      "seconds": 8.5,
+      "image": "images/viking-valhalla-diet/2.png"
     },
     {
       "text": "Every morning, the einherjar warriors marched onto the plains of Idavoll to hack each other to pieces in brutal combat practice.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Misty grassy battlefield meadow scattered with split round wooden shields and dropped iron swords. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-valhalla-diet/3.mp3",
       "voicedText": "Every morning, the einherjar warriors marched onto the plains of Idavoll to hack each other to pieces in brutal combat practice.",
-      "seconds": 7.8
+      "seconds": 7.8,
+      "image": "images/viking-valhalla-diet/3.png"
     },
     {
       "text": "By dusk, all wounds magically regenerated, and the warriors returned to the hall to banquet for eternity.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Immense wooden banquet table laden with wooden trenchers, steaming roasted meats, and carved drinking horns. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-valhalla-diet/4.mp3",
       "voicedText": "By dusk, all wounds magically regenerated, and the warriors returned to the hall to banquet for eternity.",
-      "seconds": 7.5
+      "seconds": 7.5,
+      "image": "images/viking-valhalla-diet/4.png"
     },
     {
       "text": "They feasted on Saehrimnir—a cosmic wild boar boiled in the cauldron Eldhrimnir that miraculously came back to life whole every single night.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Enormous black iron cauldron bubbling over roaring hearth flames in a great medieval hall. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-valhalla-diet/5.mp3",
       "voicedText": "They feasted on Saehrimnir—a cosmic wild boar boiled in the cauldron Eldhrimnir that miraculously came back to life whole every single night.",
-      "seconds": 9.8
+      "seconds": 9.8,
+      "image": "images/viking-valhalla-diet/5.png"
     },
     {
       "text": "Endless mead and regenerating bacon: the ultimate Viking warrior paradise. Would you want to go there? Subscribe for more Norse lore!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Polished bull horn drinking vessel tipped in silver resting beside a bowl of golden honeycomb under sunlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/viking-valhalla-diet/6.mp3",
       "voicedText": "Endless mead and regenerating bacon: the ultimate Viking warrior paradise. Would you want to go there? Subscribe for more Norse lore!",
-      "seconds": 8.8
+      "seconds": 8.8,
+      "image": "images/viking-valhalla-diet/6.png"
     }
   ]
 }

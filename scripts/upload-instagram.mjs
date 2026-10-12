@@ -18,6 +18,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import {spawnSync, execSync} from "node:child_process";
 import {fileURLToPath} from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -37,28 +38,49 @@ function getCredentials() {
 }
 
 export function buildInstagramCaption(script, slug) {
-  const hook = script.hook || script.title || "Did you know?";
-  const hashtags = [
-    "#reels",
-    "#history",
-    "#historytok",
-    "#ancienthistory",
-    "#historyfacts",
-    "#learnoninstagram",
-    "#ADayBackThen",
-    "#animation",
-  ];
+  // Extract hook and first dialogue lines
+  const rawHook = script.hook || script.title || "";
+  const firstLines = script.scenes && script.scenes.length
+    ? script.scenes.slice(0, 2).map((s) => s.text).join(" ")
+    : "";
 
-  if (slug.includes("roman")) hashtags.push("#ancientrome", "#rome", "#romanempire");
-  if (slug.includes("gladiator")) hashtags.push("#gladiator", "#colosseum");
-  if (slug.includes("medieval") || slug.includes("peasant")) hashtags.push("#medieval", "#middleages");
-  if (slug.includes("viking")) hashtags.push("#vikings", "#norse");
-  if (slug.includes("egypt")) hashtags.push("#ancientegypt", "#pharaoh");
-  if (slug.includes("greek") || slug.includes("athens") || slug.includes("sparta")) hashtags.push("#ancientgreece");
+  // Human-crafted curiosity hooks without AI clichés ("Did you know?", "Have you ever wondered?")
+  let cleanHook = rawHook
+    .replace(/^did you know\??\s*/i, "")
+    .replace(/^have you ever wondered\??\s*/i, "")
+    .replace(/^in this video,?\s*/i, "")
+    .trim();
 
-  const body = script.description || (script.scenes ? script.scenes.map((s) => s.text).slice(0, 2).join(" ") : "");
+  // Natural commentary body
+  const body = script.description || firstLines;
 
-  return `${hook}\n\n${body}\n\nFollow @adaybackthenofficial for daily history deep-dives!\n\n${Array.from(new Set(hashtags)).join(" ")}`;
+  // Era-specific authentic hashtags (focused, high-intent, no generic spam)
+  const tags = ["#ADayBackThen", "#history", "#ancienthistory", "#reels"];
+  if (slug.includes("roman") || slug.includes("garum")) tags.push("#AncientRome", "#Pompeii", "#RomanEmpire");
+  if (slug.includes("gladiator")) tags.push("#Colosseum", "#Gladiator", "#AncientRome");
+  if (slug.includes("spartan") || slug.includes("greek") || slug.includes("athens")) tags.push("#AncientGreece", "#Sparta");
+  if (slug.includes("egypt")) tags.push("#AncientEgypt", "#Pharaoh", "#Pyramids");
+  if (slug.includes("medieval") || slug.includes("monk") || slug.includes("blacksmith")) tags.push("#MiddleAges", "#MedievalHistory");
+  if (slug.includes("viking")) tags.push("#Vikings", "#NorseHistory");
+  if (slug.includes("pirate")) tags.push("#PirateHistory", "#AgeOfSail");
+  if (slug.includes("samurai") || slug.includes("edo") || slug.includes("ninja")) tags.push("#FeudalJapan", "#Samurai");
+  if (slug.includes("victorian")) tags.push("#VictorianEra", "#LondonHistory");
+  if (slug.includes("wwii")) tags.push("#WW2History", "#HistoryTok");
+
+  // Engaging question to drive comments naturally
+  const question = script.question || "Would you have survived a week living like this?";
+
+  return [
+    cleanHook,
+    "",
+    body,
+    "",
+    `💬 ${question}`,
+    "",
+    "Follow @adaybackthenofficial for daily animated history deep-dives.",
+    "",
+    Array.from(new Set(tags)).join(" ")
+  ].filter(Boolean).join("\n");
 }
 
 /**
@@ -66,7 +88,7 @@ export function buildInstagramCaption(script, slug) {
  */
 export async function getInstagramAccountId() {
   const {pageId, pageAccessToken} = getCredentials();
-  const url = `https://graph.facebook.com/v20.0/${pageId}?fields=instagram_business_account&access_token=${pageAccessToken}`;
+  const url = `https://graph.facebook.com/v20.0/${pageId}?fields=instagram_business_account,page_backed_instagram_accounts&access_token=${pageAccessToken}`;
   const res = await fetch(url);
   const data = await res.json();
 
@@ -74,11 +96,15 @@ export async function getInstagramAccountId() {
     throw new Error(`Meta API error: ${data.error.message}`);
   }
 
-  if (!data.instagram_business_account || !data.instagram_business_account.id) {
-    return null;
+  if (data.instagram_business_account && data.instagram_business_account.id) {
+    return data.instagram_business_account.id;
   }
 
-  return data.instagram_business_account.id;
+  if (data.page_backed_instagram_accounts && data.page_backed_instagram_accounts.data && data.page_backed_instagram_accounts.data.length > 0) {
+    return data.page_backed_instagram_accounts.data[0].id;
+  }
+
+  return null;
 }
 
 /**
@@ -114,6 +140,34 @@ export async function uploadInstagramReel(slug, options = {}) {
     throw new Error(`Video file for ${slug} not found in out/ folders.`);
   }
 
+  // Pre-process stream for Instagram Reels ingest standards (faststart + yuv420p Rec.709)
+  let activeVideoPath = videoPath;
+  const initialStats = fs.statSync(videoPath);
+  if (initialStats.size > 35 * 1024 * 1024) {
+    const optDir = path.join(root, "out", ".ig-optimized");
+    fs.mkdirSync(optDir, {recursive: true});
+    const optPath = path.join(optDir, `${slug}.mp4`);
+    if (!fs.existsSync(optPath)) {
+      console.log(`Optimizing ${slug} for Instagram ingest (faststart + standard yuv420p)...`);
+      spawnSync("ffmpeg", [
+        "-i", videoPath,
+        "-c:v", "libx264",
+        "-pix_fmt", "yuv420p",
+        "-colorspace", "bt709",
+        "-color_primaries", "bt709",
+        "-color_trc", "bt709",
+        "-movflags", "+faststart",
+        "-c:a", "aac",
+        "-b:a", "192k",
+        optPath,
+        "-y"
+      ], { stdio: "ignore" });
+    }
+    if (fs.existsSync(optPath)) {
+      activeVideoPath = optPath;
+    }
+  }
+
   // 3. Load metadata and build caption
   let script = {title: slug};
   const scriptPath = path.join(root, "scripts-out", `${slug}.json`);
@@ -126,13 +180,13 @@ export async function uploadInstagramReel(slug, options = {}) {
   console.log(`   Uploading to Instagram Reels: ${slug}`);
   console.log("========================================================");
   console.log(`IG Account:  ${igUserId}`);
-  console.log(`Video File:  ${videoPath}`);
-  console.log(`Caption:     ${caption.split("\n")[0]}`);
+  console.log(`Video File:  ${activeVideoPath}`);
+  console.log(`Caption:\n${caption}`);
   console.log("--------------------------------------------------------");
 
   // Step 1: Create an IG Media Container using resumable video upload
   console.log("1. Initializing Instagram Media Container...");
-  const stats = fs.statSync(videoPath);
+  const stats = fs.statSync(activeVideoPath);
   const fileSize = stats.size;
 
   const initUrl = `https://graph.facebook.com/v20.0/${igUserId}/media`;
@@ -159,25 +213,17 @@ export async function uploadInstagramReel(slug, options = {}) {
   const uploadUri = initData.uri;
   console.log(`✓ Media container created (ID: ${creationId})`);
 
-  // Step 2: Upload video binary to uploadUri
-  console.log("2. Uploading video stream to Instagram servers...");
-  const videoBuffer = fs.readFileSync(videoPath);
-  const uploadRes = await fetch(uploadUri, {
-    method: "POST",
-    headers: {
-      Authorization: `OAuth ${pageAccessToken}`,
-      offset: "0",
-      file_size: String(fileSize),
-      "Content-Type": "application/octet-stream",
-    },
-    body: videoBuffer,
-  });
-
-  const uploadData = await uploadRes.json();
-  if (!uploadRes.ok || uploadData.success === false) {
-    throw new Error(`Instagram binary upload failed: ${JSON.stringify(uploadData)}`);
+  // Step 2: Upload video binary to uploadUri via curl.exe (Meta rupload standard)
+  console.log(`2. Uploading ${fileSize} bytes to Instagram servers...`);
+  try {
+    const curlOut = execSync(
+      `curl.exe -s -X POST "${uploadUri}" -H "Authorization: OAuth ${pageAccessToken}" -H "offset: 0" -H "file_size: ${fileSize}" -H "Content-Type: application/octet-stream" --data-binary "@${activeVideoPath}"`,
+      { encoding: "utf8" }
+    );
+    console.log("✓ Video stream transfer submitted to Meta.");
+  } catch (err) {
+    throw new Error(`Instagram binary upload via curl failed: ${err.message}`);
   }
-  console.log("✓ Video stream uploaded to Meta.");
 
   // Step 3: Wait for Meta to finish processing video
   console.log("3. Waiting for Instagram processing...");

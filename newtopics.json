@@ -1,78 +1,401 @@
 {
   "channelName": "A Day Back Then",
   "topics": [
-    {"slug": "roman-morning", "title": "Your Morning in Ancient Rome", "format": "day-in-the-life", "angle": "Wake before sunrise in a crowded apartment block; breakfast, water, greeting a patron."},
-    {"slug": "roman-toilets", "title": "How Romans Used the Toilet", "format": "gross-facts", "angle": "Public latrines, shared seating, sponge-on-a-stick (tersorium) debate, what we actually know vs. popular claims."},
-    {"slug": "gladiator-day", "title": "A Gladiator's Day", "format": "day-in-the-life", "angle": "Training school (ludus), diet, medical care, what a fight day looked like. Avoid gore."},
-    {"slug": "medieval-peasant-day", "title": "A Medieval Peasant's Day", "format": "day-in-the-life", "angle": "Dawn start, seasonal farm work, church obligations, food, what 'free time' really was."},
-    {"slug": "viking-winter", "title": "Surviving a Viking Winter", "format": "survival", "angle": "Longhouse life, stored food, textile work, ice and darkness. Separate sagas from archaeology."},
-    {"slug": "egypt-scribe-vs-farmer", "title": "Egyptian Scribe vs Farmer", "format": "comparison", "angle": "Two lives in the same village: who had it easier, taxes, flood season (Nile)."},
-    {"slug": "plague-doctor-job", "title": "The Plague Doctor Job", "format": "jobs-nobody-wants", "angle": "What municipal plague doctors actually did; clear up the beak-mask myth (it is mostly a later image)."},
-    {"slug": "castle-food", "title": "What People Ate in a Castle", "format": "gross-facts", "angle": "Feast tables vs daily food, spices, bread plates (trenchers), fast days."},
-    {"slug": "roman-money", "title": "What Money Was Worth in Rome", "format": "money-and-class", "angle": "What a day's wage bought; bread, rent, wine; rich vs poor. Use ranges and hedge uncertain figures."},
-    {"slug": "knight-myths", "title": "3 Myths About Knights", "format": "myth-buster", "angle": "Armour weight and mobility, crane-lifted knights, what knights did most of the time."},
-
-    {"slug": "roman-baths-day", "title": "A Day at the Roman Baths", "format": "day-in-the-life", "angle": "The sequence of rooms (warm, hot, cold), oil and scraper (strigil), exercise, and why the baths were also a social hub."},
-    {"slug": "roman-street-food", "title": "Roman Fast Food", "format": "gross-facts", "angle": "Counters selling hot food and wine (thermopolia), who ate out because many homes lacked kitchens, what was typically sold."},
-    {"slug": "roman-school-day", "title": "School Day for a Roman Kid", "format": "day-in-the-life", "angle": "Early start, wax tablets, learning letters and counting, tutors for the wealthy, strict discipline. Note most children did not attend long."},
-    {"slug": "roman-legionary-march", "title": "A Roman Soldier on the March", "format": "day-in-the-life", "angle": "Carrying gear, building a fortified camp each night, rations, daily routine. Avoid battle gore."},
-    {"slug": "roman-garum", "title": "Rome's Smelly Fish Sauce", "format": "gross-facts", "angle": "Garum: fermented fish sauce, how it was made in general terms, how widely it was used as seasoning, why it was prized."},
-    {"slug": "roman-doctor-job", "title": "Being a Doctor in Rome", "format": "jobs-nobody-wants", "angle": "What Roman medicine could and could not do: herbs, bandaging, surgery tools, army doctors. Hedge what is uncertain."},
-    {"slug": "roman-patrician-vs-plebeian", "title": "Rich vs Poor in Rome", "format": "comparison", "angle": "Housing, food, work hours and daily routine for a wealthy household versus a working family."},
-    {"slug": "roman-myths", "title": "4 Roman Myths You Believed", "format": "myth-buster", "angle": "Vomitoriums were passageways not vomit rooms; the thumbs-down gladiator gesture is uncertain; separate popular claims from evidence."},
-
-    {"slug": "egypt-pyramid-workers", "title": "Who Really Built the Pyramids", "format": "day-in-the-life", "angle": "Evidence points to organized, fed and housed laborers rather than slaves (per mainstream archaeology); work crews, rations, medical care."},
-    {"slug": "egypt-embalmer-job", "title": "Being an Embalmer in Egypt", "format": "jobs-nobody-wants", "angle": "The general steps of mummification, why it took many days, the role of priests and workshops. Keep it non-graphic."},
-    {"slug": "egypt-bread-and-beer", "title": "What Egyptians Ate Every Day", "format": "gross-facts", "angle": "Bread and beer as staples, onions, fish, dates; how the beer differed from modern beer."},
-    {"slug": "egypt-pharaoh-day", "title": "A Day as Pharaoh", "format": "day-in-the-life", "angle": "Ritual duties, meetings with officials, building projects, religious role. Note that details vary by period."},
-    {"slug": "egypt-myths", "title": "3 Egypt Myths Debunked", "format": "myth-buster", "angle": "The 'curse of the pharaohs', slaves building pyramids, and other popular claims versus what archaeologists say."},
-    {"slug": "egypt-eye-makeup", "title": "Why Egyptians Wore Eye Makeup", "format": "gross-facts", "angle": "Kohl ingredients, possible protective and symbolic purposes, who wore it. Hedge uncertain health claims."},
-
-    {"slug": "athens-citizen-day", "title": "A Day as an Athenian Citizen", "format": "day-in-the-life", "angle": "Morning at the agora, politics and the assembly, who was and was not a citizen, evening gatherings."},
-    {"slug": "spartan-training-day", "title": "Growing Up in Sparta", "format": "day-in-the-life", "angle": "The agoge training system as described by ancient writers; note that sources are limited and later."},
-    {"slug": "greek-symposium", "title": "The Greek Drinking Party", "format": "gross-facts", "angle": "Watered-down wine, couches, games, music and discussion; what the rules and customs were."},
-    {"slug": "ancient-olympics-athlete", "title": "Being an Ancient Olympian", "format": "day-in-the-life", "angle": "Training, rules, events, how it differed from modern games, prizes. Hedge the sacred truce details."},
-    {"slug": "sparta-myths", "title": "Sparta: Myth vs Reality", "format": "myth-buster", "angle": "Popular movie images versus what ancient sources say; flag disputed claims such as the treatment of infants."},
-
-    {"slug": "medieval-blacksmith-job", "title": "Being a Medieval Blacksmith", "format": "jobs-nobody-wants", "angle": "Forge heat, tools made for farmers and soldiers, apprenticeship, why the village depended on the smith."},
-    {"slug": "medieval-monk-day", "title": "A Monk's Day", "format": "day-in-the-life", "angle": "Prayer hours through the day and night, manual work, copying books, silence rules. Varies by order."},
-    {"slug": "medieval-bath-myths", "title": "Did Medieval People Bathe?", "format": "myth-buster", "angle": "Public bathhouses, washing habits, and why 'nobody bathed' is an exaggeration."},
-    {"slug": "castle-toilets", "title": "Toilets in a Castle", "format": "gross-facts", "angle": "Garderobes, where waste went, how they were cleaned, comfort and smell. Use cautious language."},
-    {"slug": "medieval-village-vs-city", "title": "Village vs Town in the Middle Ages", "format": "comparison", "angle": "Work, food, freedom, crowding, disease risk and opportunities in each."},
-    {"slug": "barber-surgeon-job", "title": "The Barber Who Was Also a Surgeon", "format": "jobs-nobody-wants", "angle": "Why barbers did bloodletting and minor surgery, what tools and beliefs guided them. Hedge claims about the barber pole."},
-    {"slug": "medieval-fast-days", "title": "Fast Days in the Middle Ages", "format": "gross-facts", "angle": "Church fast days, what was forbidden, fish substitutes, and clever workarounds recorded in sources."},
-    {"slug": "medieval-wages-and-prices", "title": "What a Medieval Worker Earned", "format": "money-and-class", "angle": "Typical wages and prices by region and period; use ranges and clearly hedge uncertain figures."},
-    {"slug": "medieval-miller-job", "title": "The Medieval Miller", "format": "jobs-nobody-wants", "angle": "Grinding grain, the mill fee, why millers were often disliked, and the mill's importance to a village."},
-    {"slug": "dark-ages-myths", "title": "Were the 'Dark Ages' Really Dark?", "format": "myth-buster", "angle": "Why historians avoid the term, what advances and trade continued, and what evidence is thin."},
-
-    {"slug": "viking-farmer-day", "title": "A Viking Farmer's Day", "format": "day-in-the-life", "angle": "Most Norse people were farmers; animals, crops, weaving, local assemblies. Not just raiding."},
-    {"slug": "viking-ocean-voyage", "title": "Crossing the North Atlantic", "format": "survival", "angle": "Open ships, limited shelter, navigation by sun, stars and landmarks; hedge speculative tools like the sunstone."},
-    {"slug": "viking-myths", "title": "3 Viking Myths", "format": "myth-buster", "angle": "Horned helmets, dirty barbarians, and other claims versus archaeology (combs, grooming tools)."},
-    {"slug": "viking-food-and-drink", "title": "What Vikings Ate and Drank", "format": "gross-facts", "angle": "Dried and fermented fish, dairy, grains, ale and mead; what archaeology and sagas suggest."},
-
-    {"slug": "samurai-day", "title": "A Samurai in Peacetime Japan", "format": "day-in-the-life", "angle": "In the Edo period many samurai were administrators; stipends, duties, study, status rules."},
-    {"slug": "edo-merchant-vs-samurai", "title": "Merchant vs Samurai in Edo Japan", "format": "money-and-class", "angle": "Official status versus actual wealth; why many merchants became rich while some samurai struggled."},
-    {"slug": "ninja-myths", "title": "Ninja: Myth vs History", "format": "myth-buster", "angle": "What historical shinobi are known to have done versus the black-costume pop culture image."},
-    {"slug": "han-china-farmer-day", "title": "A Farmer in Han Dynasty China", "format": "day-in-the-life", "angle": "Crops, taxes, labor service, iron tools, market days. Note regional differences."},
-    {"slug": "silk-road-merchant", "title": "A Silk Road Trader's Journey", "format": "survival", "angle": "Caravans, relay trade rather than one person traveling the whole route, deserts, taxes and inns."},
-    {"slug": "mongol-steppe-day", "title": "Daily Life on the Mongol Steppe", "format": "day-in-the-life", "angle": "Herding, felt tents (gers), dairy-based food, horse culture; focus on ordinary life, not battles."},
-
-    {"slug": "aztec-market-day", "title": "Market Day in Tenochtitlan", "format": "day-in-the-life", "angle": "The huge market at Tlatelolco as described by Spanish observers, goods sold, cacao as currency, order and inspectors."},
-    {"slug": "maya-scribe-job", "title": "Being a Maya Scribe", "format": "jobs-nobody-wants", "angle": "Writing in hieroglyphs, bark-paper books, high status, what survives and what was lost."},
-    {"slug": "inca-runner-job", "title": "Inca Relay Runners", "format": "jobs-nobody-wants", "angle": "The chasqui relay system on mountain roads, knotted-cord records (quipu), distances, altitude."},
-    {"slug": "chinampa-farmer-day", "title": "Farming on Floating Gardens", "format": "day-in-the-life", "angle": "Chinampas in the Valley of Mexico: how raised garden beds worked, crops, canals, and productivity."},
-
-    {"slug": "tudor-kitchen-boy", "title": "A Tudor Kitchen Boy", "format": "jobs-nobody-wants", "angle": "Huge royal kitchens, turning spits, heat, hierarchy among staff, what was cooked."},
-    {"slug": "pirate-ship-day", "title": "Daily Life on a Pirate Ship", "format": "day-in-the-life", "angle": "Crew agreements, shared shares of loot, food and discipline; much was labor and boredom."},
-    {"slug": "pirate-myths", "title": "Pirate Myths", "format": "myth-buster", "angle": "Walking the plank, buried treasure maps, parrots; what is documented versus later fiction."},
-    {"slug": "victorian-chimney-sweep-job", "title": "The Victorian Chimney Sweep", "format": "jobs-nobody-wants", "angle": "Why small boys were used, hazards, reform laws and campaigners. Keep it factual and not graphic."},
-    {"slug": "victorian-factory-day", "title": "A Day in a Victorian Factory", "format": "day-in-the-life", "angle": "Long shifts, noise, bells, wages, child workers and the reforms that followed."},
-    {"slug": "renaissance-apprentice-day", "title": "Apprentice to a Renaissance Painter", "format": "day-in-the-life", "angle": "Grinding pigments, preparing panels, copying drawings, workshop hierarchy."},
-    {"slug": "ottoman-coffeehouse", "title": "The Ottoman Coffeehouse", "format": "day-in-the-life", "angle": "Coffeehouses as social and news hubs, games and storytelling, and periodic attempts to restrict them."},
-    {"slug": "gold-rush-miner-day", "title": "A California Gold Rush Miner", "format": "survival", "angle": "Panning and digging, prices of basic goods, disease and hardship; most miners did not get rich."},
-    {"slug": "wwii-ration-day", "title": "Wartime Rationing Day", "format": "money-and-class", "angle": "How ration books worked in Britain, typical weekly amounts (hedge exact numbers), allotments and substitutions."},
-    {"slug": "mesopotamia-scribe-school", "title": "School in Ancient Mesopotamia", "format": "day-in-the-life", "angle": "Clay tablets, learning cuneiform, strict teachers as shown in surviving texts, who attended."},
-    {"slug": "byzantine-chariot-fan", "title": "A Chariot Race Fan in Byzantium", "format": "day-in-the-life", "angle": "The Hippodrome, team colors and rivalries, social and political significance of fan groups."},
-    {"slug": "plague-quarantine-city", "title": "A City During the Black Death", "format": "survival", "angle": "What people did in 1348: quarantine ideas, fleeing, religious responses; separate documented measures from myths."}
+    {
+      "slug": "bading-tropa-ko",
+      "title": "Bading tropa ko",
+      "format": "gross-facts",
+      "angle": ""
+    },
+    {
+      "slug": "roman-morning",
+      "title": "Your Morning in Ancient Rome",
+      "format": "day-in-the-life",
+      "angle": "Wake before sunrise in a crowded apartment block; breakfast, water, greeting a patron."
+    },
+    {
+      "slug": "roman-toilets",
+      "title": "How Romans Used the Toilet",
+      "format": "gross-facts",
+      "angle": "Public latrines, shared seating, sponge-on-a-stick (tersorium) debate, what we actually know vs. popular claims."
+    },
+    {
+      "slug": "gladiator-day",
+      "title": "A Gladiator's Day",
+      "format": "day-in-the-life",
+      "angle": "Training school (ludus), diet, medical care, what a fight day looked like. Avoid gore."
+    },
+    {
+      "slug": "medieval-peasant-day",
+      "title": "A Medieval Peasant's Day",
+      "format": "day-in-the-life",
+      "angle": "Dawn start, seasonal farm work, church obligations, food, what 'free time' really was."
+    },
+    {
+      "slug": "viking-winter",
+      "title": "Surviving a Viking Winter",
+      "format": "survival",
+      "angle": "Longhouse life, stored food, textile work, ice and darkness. Separate sagas from archaeology."
+    },
+    {
+      "slug": "egypt-scribe-vs-farmer",
+      "title": "Egyptian Scribe vs Farmer",
+      "format": "comparison",
+      "angle": "Two lives in the same village: who had it easier, taxes, flood season (Nile)."
+    },
+    {
+      "slug": "plague-doctor-job",
+      "title": "The Plague Doctor Job",
+      "format": "jobs-nobody-wants",
+      "angle": "What municipal plague doctors actually did; clear up the beak-mask myth (it is mostly a later image)."
+    },
+    {
+      "slug": "castle-food",
+      "title": "What People Ate in a Castle",
+      "format": "gross-facts",
+      "angle": "Feast tables vs daily food, spices, bread plates (trenchers), fast days."
+    },
+    {
+      "slug": "roman-money",
+      "title": "What Money Was Worth in Rome",
+      "format": "money-and-class",
+      "angle": "What a day's wage bought; bread, rent, wine; rich vs poor. Use ranges and hedge uncertain figures."
+    },
+    {
+      "slug": "knight-myths",
+      "title": "3 Myths About Knights",
+      "format": "myth-buster",
+      "angle": "Armour weight and mobility, crane-lifted knights, what knights did most of the time."
+    },
+    {
+      "slug": "roman-baths-day",
+      "title": "A Day at the Roman Baths",
+      "format": "day-in-the-life",
+      "angle": "The sequence of rooms (warm, hot, cold), oil and scraper (strigil), exercise, and why the baths were also a social hub."
+    },
+    {
+      "slug": "roman-street-food",
+      "title": "Roman Fast Food",
+      "format": "gross-facts",
+      "angle": "Counters selling hot food and wine (thermopolia), who ate out because many homes lacked kitchens, what was typically sold."
+    },
+    {
+      "slug": "roman-school-day",
+      "title": "School Day for a Roman Kid",
+      "format": "day-in-the-life",
+      "angle": "Early start, wax tablets, learning letters and counting, tutors for the wealthy, strict discipline. Note most children did not attend long."
+    },
+    {
+      "slug": "roman-legionary-march",
+      "title": "A Roman Soldier on the March",
+      "format": "day-in-the-life",
+      "angle": "Carrying gear, building a fortified camp each night, rations, daily routine. Avoid battle gore."
+    },
+    {
+      "slug": "roman-garum",
+      "title": "Rome's Smelly Fish Sauce",
+      "format": "gross-facts",
+      "angle": "Garum: fermented fish sauce, how it was made in general terms, how widely it was used as seasoning, why it was prized."
+    },
+    {
+      "slug": "roman-doctor-job",
+      "title": "Being a Doctor in Rome",
+      "format": "jobs-nobody-wants",
+      "angle": "What Roman medicine could and could not do: herbs, bandaging, surgery tools, army doctors. Hedge what is uncertain."
+    },
+    {
+      "slug": "roman-patrician-vs-plebeian",
+      "title": "Rich vs Poor in Rome",
+      "format": "comparison",
+      "angle": "Housing, food, work hours and daily routine for a wealthy household versus a working family."
+    },
+    {
+      "slug": "roman-myths",
+      "title": "4 Roman Myths You Believed",
+      "format": "myth-buster",
+      "angle": "Vomitoriums were passageways not vomit rooms; the thumbs-down gladiator gesture is uncertain; separate popular claims from evidence."
+    },
+    {
+      "slug": "egypt-pyramid-workers",
+      "title": "Who Really Built the Pyramids",
+      "format": "day-in-the-life",
+      "angle": "Evidence points to organized, fed and housed laborers rather than slaves (per mainstream archaeology); work crews, rations, medical care."
+    },
+    {
+      "slug": "egypt-embalmer-job",
+      "title": "Being an Embalmer in Egypt",
+      "format": "jobs-nobody-wants",
+      "angle": "The general steps of mummification, why it took many days, the role of priests and workshops. Keep it non-graphic."
+    },
+    {
+      "slug": "egypt-bread-and-beer",
+      "title": "What Egyptians Ate Every Day",
+      "format": "gross-facts",
+      "angle": "Bread and beer as staples, onions, fish, dates; how the beer differed from modern beer."
+    },
+    {
+      "slug": "egypt-pharaoh-day",
+      "title": "A Day as Pharaoh",
+      "format": "day-in-the-life",
+      "angle": "Ritual duties, meetings with officials, building projects, religious role. Note that details vary by period."
+    },
+    {
+      "slug": "egypt-myths",
+      "title": "3 Egypt Myths Debunked",
+      "format": "myth-buster",
+      "angle": "The 'curse of the pharaohs', slaves building pyramids, and other popular claims versus what archaeologists say."
+    },
+    {
+      "slug": "egypt-eye-makeup",
+      "title": "Why Egyptians Wore Eye Makeup",
+      "format": "gross-facts",
+      "angle": "Kohl ingredients, possible protective and symbolic purposes, who wore it. Hedge uncertain health claims."
+    },
+    {
+      "slug": "athens-citizen-day",
+      "title": "A Day as an Athenian Citizen",
+      "format": "day-in-the-life",
+      "angle": "Morning at the agora, politics and the assembly, who was and was not a citizen, evening gatherings."
+    },
+    {
+      "slug": "spartan-training-day",
+      "title": "Growing Up in Sparta",
+      "format": "day-in-the-life",
+      "angle": "The agoge training system as described by ancient writers; note that sources are limited and later."
+    },
+    {
+      "slug": "greek-symposium",
+      "title": "The Greek Drinking Party",
+      "format": "gross-facts",
+      "angle": "Watered-down wine, couches, games, music and discussion; what the rules and customs were."
+    },
+    {
+      "slug": "ancient-olympics-athlete",
+      "title": "Being an Ancient Olympian",
+      "format": "day-in-the-life",
+      "angle": "Training, rules, events, how it differed from modern games, prizes. Hedge the sacred truce details."
+    },
+    {
+      "slug": "sparta-myths",
+      "title": "Sparta: Myth vs Reality",
+      "format": "myth-buster",
+      "angle": "Popular movie images versus what ancient sources say; flag disputed claims such as the treatment of infants."
+    },
+    {
+      "slug": "medieval-blacksmith-job",
+      "title": "Being a Medieval Blacksmith",
+      "format": "jobs-nobody-wants",
+      "angle": "Forge heat, tools made for farmers and soldiers, apprenticeship, why the village depended on the smith."
+    },
+    {
+      "slug": "medieval-monk-day",
+      "title": "A Monk's Day",
+      "format": "day-in-the-life",
+      "angle": "Prayer hours through the day and night, manual work, copying books, silence rules. Varies by order."
+    },
+    {
+      "slug": "medieval-bath-myths",
+      "title": "Did Medieval People Bathe?",
+      "format": "myth-buster",
+      "angle": "Public bathhouses, washing habits, and why 'nobody bathed' is an exaggeration."
+    },
+    {
+      "slug": "castle-toilets",
+      "title": "Toilets in a Castle",
+      "format": "gross-facts",
+      "angle": "Garderobes, where waste went, how they were cleaned, comfort and smell. Use cautious language."
+    },
+    {
+      "slug": "medieval-village-vs-city",
+      "title": "Village vs Town in the Middle Ages",
+      "format": "comparison",
+      "angle": "Work, food, freedom, crowding, disease risk and opportunities in each."
+    },
+    {
+      "slug": "barber-surgeon-job",
+      "title": "The Barber Who Was Also a Surgeon",
+      "format": "jobs-nobody-wants",
+      "angle": "Why barbers did bloodletting and minor surgery, what tools and beliefs guided them. Hedge claims about the barber pole."
+    },
+    {
+      "slug": "medieval-fast-days",
+      "title": "Fast Days in the Middle Ages",
+      "format": "gross-facts",
+      "angle": "Church fast days, what was forbidden, fish substitutes, and clever workarounds recorded in sources."
+    },
+    {
+      "slug": "medieval-wages-and-prices",
+      "title": "What a Medieval Worker Earned",
+      "format": "money-and-class",
+      "angle": "Typical wages and prices by region and period; use ranges and clearly hedge uncertain figures."
+    },
+    {
+      "slug": "medieval-miller-job",
+      "title": "The Medieval Miller",
+      "format": "jobs-nobody-wants",
+      "angle": "Grinding grain, the mill fee, why millers were often disliked, and the mill's importance to a village."
+    },
+    {
+      "slug": "dark-ages-myths",
+      "title": "Were the 'Dark Ages' Really Dark?",
+      "format": "myth-buster",
+      "angle": "Why historians avoid the term, what advances and trade continued, and what evidence is thin."
+    },
+    {
+      "slug": "viking-farmer-day",
+      "title": "A Viking Farmer's Day",
+      "format": "day-in-the-life",
+      "angle": "Most Norse people were farmers; animals, crops, weaving, local assemblies. Not just raiding."
+    },
+    {
+      "slug": "viking-ocean-voyage",
+      "title": "Crossing the North Atlantic",
+      "format": "survival",
+      "angle": "Open ships, limited shelter, navigation by sun, stars and landmarks; hedge speculative tools like the sunstone."
+    },
+    {
+      "slug": "viking-myths",
+      "title": "3 Viking Myths",
+      "format": "myth-buster",
+      "angle": "Horned helmets, dirty barbarians, and other claims versus archaeology (combs, grooming tools)."
+    },
+    {
+      "slug": "viking-food-and-drink",
+      "title": "What Vikings Ate and Drank",
+      "format": "gross-facts",
+      "angle": "Dried and fermented fish, dairy, grains, ale and mead; what archaeology and sagas suggest."
+    },
+    {
+      "slug": "samurai-day",
+      "title": "A Samurai in Peacetime Japan",
+      "format": "day-in-the-life",
+      "angle": "In the Edo period many samurai were administrators; stipends, duties, study, status rules."
+    },
+    {
+      "slug": "edo-merchant-vs-samurai",
+      "title": "Merchant vs Samurai in Edo Japan",
+      "format": "money-and-class",
+      "angle": "Official status versus actual wealth; why many merchants became rich while some samurai struggled."
+    },
+    {
+      "slug": "ninja-myths",
+      "title": "Ninja: Myth vs History",
+      "format": "myth-buster",
+      "angle": "What historical shinobi are known to have done versus the black-costume pop culture image."
+    },
+    {
+      "slug": "han-china-farmer-day",
+      "title": "A Farmer in Han Dynasty China",
+      "format": "day-in-the-life",
+      "angle": "Crops, taxes, labor service, iron tools, market days. Note regional differences."
+    },
+    {
+      "slug": "silk-road-merchant",
+      "title": "A Silk Road Trader's Journey",
+      "format": "survival",
+      "angle": "Caravans, relay trade rather than one person traveling the whole route, deserts, taxes and inns."
+    },
+    {
+      "slug": "mongol-steppe-day",
+      "title": "Daily Life on the Mongol Steppe",
+      "format": "day-in-the-life",
+      "angle": "Herding, felt tents (gers), dairy-based food, horse culture; focus on ordinary life, not battles."
+    },
+    {
+      "slug": "aztec-market-day",
+      "title": "Market Day in Tenochtitlan",
+      "format": "day-in-the-life",
+      "angle": "The huge market at Tlatelolco as described by Spanish observers, goods sold, cacao as currency, order and inspectors."
+    },
+    {
+      "slug": "maya-scribe-job",
+      "title": "Being a Maya Scribe",
+      "format": "jobs-nobody-wants",
+      "angle": "Writing in hieroglyphs, bark-paper books, high status, what survives and what was lost."
+    },
+    {
+      "slug": "inca-runner-job",
+      "title": "Inca Relay Runners",
+      "format": "jobs-nobody-wants",
+      "angle": "The chasqui relay system on mountain roads, knotted-cord records (quipu), distances, altitude."
+    },
+    {
+      "slug": "chinampa-farmer-day",
+      "title": "Farming on Floating Gardens",
+      "format": "day-in-the-life",
+      "angle": "Chinampas in the Valley of Mexico: how raised garden beds worked, crops, canals, and productivity."
+    },
+    {
+      "slug": "tudor-kitchen-boy",
+      "title": "A Tudor Kitchen Boy",
+      "format": "jobs-nobody-wants",
+      "angle": "Huge royal kitchens, turning spits, heat, hierarchy among staff, what was cooked."
+    },
+    {
+      "slug": "pirate-ship-day",
+      "title": "Daily Life on a Pirate Ship",
+      "format": "day-in-the-life",
+      "angle": "Crew agreements, shared shares of loot, food and discipline; much was labor and boredom."
+    },
+    {
+      "slug": "pirate-myths",
+      "title": "Pirate Myths",
+      "format": "myth-buster",
+      "angle": "Walking the plank, buried treasure maps, parrots; what is documented versus later fiction."
+    },
+    {
+      "slug": "victorian-chimney-sweep-job",
+      "title": "The Victorian Chimney Sweep",
+      "format": "jobs-nobody-wants",
+      "angle": "Why small boys were used, hazards, reform laws and campaigners. Keep it factual and not graphic."
+    },
+    {
+      "slug": "victorian-factory-day",
+      "title": "A Day in a Victorian Factory",
+      "format": "day-in-the-life",
+      "angle": "Long shifts, noise, bells, wages, child workers and the reforms that followed."
+    },
+    {
+      "slug": "renaissance-apprentice-day",
+      "title": "Apprentice to a Renaissance Painter",
+      "format": "day-in-the-life",
+      "angle": "Grinding pigments, preparing panels, copying drawings, workshop hierarchy."
+    },
+    {
+      "slug": "ottoman-coffeehouse",
+      "title": "The Ottoman Coffeehouse",
+      "format": "day-in-the-life",
+      "angle": "Coffeehouses as social and news hubs, games and storytelling, and periodic attempts to restrict them."
+    },
+    {
+      "slug": "gold-rush-miner-day",
+      "title": "A California Gold Rush Miner",
+      "format": "survival",
+      "angle": "Panning and digging, prices of basic goods, disease and hardship; most miners did not get rich."
+    },
+    {
+      "slug": "wwii-ration-day",
+      "title": "Wartime Rationing Day",
+      "format": "money-and-class",
+      "angle": "How ration books worked in Britain, typical weekly amounts (hedge exact numbers), allotments and substitutions."
+    },
+    {
+      "slug": "mesopotamia-scribe-school",
+      "title": "School in Ancient Mesopotamia",
+      "format": "day-in-the-life",
+      "angle": "Clay tablets, learning cuneiform, strict teachers as shown in surviving texts, who attended."
+    },
+    {
+      "slug": "byzantine-chariot-fan",
+      "title": "A Chariot Race Fan in Byzantium",
+      "format": "day-in-the-life",
+      "angle": "The Hippodrome, team colors and rivalries, social and political significance of fan groups."
+    },
+    {
+      "slug": "plague-quarantine-city",
+      "title": "A City During the Black Death",
+      "format": "survival",
+      "angle": "What people did in 1348: quarantine ideas, fleeing, religious responses; separate documented measures from myths."
+    }
   ]
 }

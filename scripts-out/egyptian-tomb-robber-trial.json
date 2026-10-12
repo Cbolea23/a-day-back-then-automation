@@ -10,7 +10,8 @@
       "imagePrompt": "Dramatic rugged desert limestone valley with sun-scorched cliffs and hidden tomb entrances under a blazing Egyptian sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-tomb-robber-trial/1.mp3",
       "voicedText": "The Valley of the Kings held incalculable wealth in solid gold, lapis lazuli, and fine linen—making it the prime target for daring thieves.",
-      "seconds": 10
+      "seconds": 10,
+      "image": "images/egyptian-tomb-robber-trial/1.png"
     },
     {
       "text": "During the 20th Dynasty, high inflation caused rampant tomb looting, leading to famous court trials recorded on the Mayer Papyrus.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Ancient Egyptian papyrus scroll unfurled showing black and red hieratic script beside a reed pen and bronze inkwell. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-tomb-robber-trial/2.mp3",
       "voicedText": "During the 20th Dynasty, high inflation caused rampant tomb looting, leading to famous court trials recorded on the Mayer Papyrus.",
-      "seconds": 8.5
+      "seconds": 8.5,
+      "image": "images/egyptian-tomb-robber-trial/2.png"
     },
     {
       "text": "Grave robbers tunneled through solid rock by fire-setting, burning the wooden coffins inside to quickly melt and peel off pure gold leaf.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Flickering torchlight illuminating a narrow rock-hewn tunnel with broken plaster seals and gold flakes on the limestone dust. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-tomb-robber-trial/3.mp3",
       "voicedText": "Grave robbers tunneled through solid rock by fire-setting, burning the wooden coffins inside to quickly melt and peel off pure gold leaf.",
-      "seconds": 9.5
+      "seconds": 9.5,
+      "image": "images/egyptian-tomb-robber-trial/3.png"
     },
     {
       "text": "To extract confessions, royal judges used 'bastinado': beating suspects on the soles of their feet and twisting their hands with wooden batons.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Egyptian court chamber in Thebes with carved stone lotus pillars and ceremonial wooden judgment chairs. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-tomb-robber-trial/4.mp3",
       "voicedText": "To extract confessions, royal judges used 'bastinado': beating suspects on the soles of their feet and twisting their hands with wooden batons.",
-      "seconds": 9.4
+      "seconds": 9.4,
+      "image": "images/egyptian-tomb-robber-trial/4.png"
     },
     {
       "text": "Once convicted of desecrating the divine dead, robbers were sentenced to public impalement on sharpened stakes outside the city gates.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Silhouetted wooden stakes standing on a windswept sand dune ridge outside the stone city walls at sunset. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-tomb-robber-trial/5.mp3",
       "voicedText": "Once convicted of desecrating the divine dead, robbers were sentenced to public impalement on sharpened stakes outside the city gates.",
-      "seconds": 8.7
+      "seconds": 8.7,
+      "image": "images/egyptian-tomb-robber-trial/5.png"
     },
     {
       "text": "Even ancient curses couldn't stop desperate thieves. Would you risk a Pharaoh's tomb? Share your thoughts and subscribe for more!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Golden Egyptian pectoral necklace with turquoise scarab inlay catching the morning sunlight over sand dunes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/egyptian-tomb-robber-trial/6.mp3",
       "voicedText": "Even ancient curses couldn't stop desperate thieves. Would you risk a Pharaoh's tomb? Share your thoughts and subscribe for more!",
-      "seconds": 7.9
+      "seconds": 7.9,
+      "image": "images/egyptian-tomb-robber-trial/6.png"
     }
   ]
 }

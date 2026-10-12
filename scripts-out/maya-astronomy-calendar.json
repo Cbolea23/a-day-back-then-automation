@@ -10,7 +10,8 @@
       "imagePrompt": "Carved stone Maya observatory temple tower rising above dense jungle canopy with viewing slits oriented toward the night sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-astronomy-calendar/1.mp3",
       "voicedText": "Deep in the Mesoamerican rainforest, ancient Maya priest-astronomers turned temple towers into precision celestial observatories.",
-      "seconds": 9.9
+      "seconds": 9.9,
+      "image": "images/maya-astronomy-calendar/1.png"
     },
     {
       "text": "Without optical glass lenses or metal instruments, they tracked celestial bodies using simple crossed wooden sighting sticks.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Crossed wooden sighting sticks aligned through a stone masonry window aperture targeting a brilliant glowing morning star. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-astronomy-calendar/2.mp3",
       "voicedText": "Without optical glass lenses or metal instruments, they tracked celestial bodies using simple crossed wooden sighting sticks.",
-      "seconds": 8
+      "seconds": 8,
+      "image": "images/maya-astronomy-calendar/2.png"
     },
     {
       "text": "Their primary obsession was Venus: calculated as having a synodic cycle of 583.92 days—matching modern atomic clock measurements within hours.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Deep blue night sky with millions of stars and the radiant morning star Venus glowing intensely over Maya pyramid silhouettes. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-astronomy-calendar/3.mp3",
       "voicedText": "Their primary obsession was Venus: calculated as having a synodic cycle of 583.92 days—matching modern atomic clock measurements within hours.",
-      "seconds": 11.9
+      "seconds": 11.9,
+      "image": "images/maya-astronomy-calendar/3.png"
     },
     {
       "text": "Venus was viewed as the fierce herald of war; kings scheduled military invasions and coronation rites around its morning rise.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Bark-paper accordion folding Maya codex manuscript open on a cedar table displaying red and black hieroglyphic astronomical tables. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-astronomy-calendar/4.mp3",
       "voicedText": "Venus was viewed as the fierce herald of war; kings scheduled military invasions and coronation rites around its morning rise.",
-      "seconds": 8.9
+      "seconds": 8.9,
+      "image": "images/maya-astronomy-calendar/4.png"
     },
     {
       "text": "Their calendar interlocked the 260-day sacred count with the 365-day solar year, creating a 52-year cycle where time itself seemed to loop.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Monumental circular carved stone calendar wheel covered in intricate Maya hieroglyphic date cartouches in golden light. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-astronomy-calendar/5.mp3",
       "voicedText": "Their calendar interlocked the 260-day sacred count with the 365-day solar year, creating a 52-year cycle where time itself seemed to loop.",
-      "seconds": 11.1
+      "seconds": 11.1,
+      "image": "images/maya-astronomy-calendar/5.png"
     },
     {
       "text": "Could you calculate planetary orbits using only stone viewing slits? Let us know below and subscribe!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Morning tropical mist clearing over the limestone temples of Tikal surrounded by towering emerald rainforest trees. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/maya-astronomy-calendar/6.mp3",
       "voicedText": "Could you calculate planetary orbits using only stone viewing slits? Let us know below and subscribe!",
-      "seconds": 7
+      "seconds": 7,
+      "image": "images/maya-astronomy-calendar/6.png"
     }
   ]
 }

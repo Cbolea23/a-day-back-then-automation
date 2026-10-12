@@ -10,7 +10,8 @@
       "imagePrompt": "Terraced imperial palace garden in Istanbul overlooking the Bosphorus filled with beds of exotic colorful tulips. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-tulip-mania-istanbul/1.mp3",
       "voicedText": "In the 1720s, during the reign of Sultan Ahmed III, Istanbul succumbed to an extravagant obsession known as the 'Tulip Era'.",
-      "seconds": 9.4
+      "seconds": 9.4,
+      "image": "images/ottoman-tulip-mania-istanbul/1.png"
     },
     {
       "text": "The prized flower was the slender Ottoman tulip, bred for razor-sharp dagger petals and intricate variegated color flame patterns.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Close-up of a delicate porcelain Iznik vase displaying a single elongated crimson tulip with pointed dagger petals. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-tulip-mania-istanbul/2.mp3",
       "voicedText": "The prized flower was the slender Ottoman tulip, bred for razor-sharp dagger petals and intricate variegated color flame patterns.",
-      "seconds": 8.9
+      "seconds": 8.9,
+      "image": "images/ottoman-tulip-mania-istanbul/2.png"
     },
     {
       "text": "Prices exploded: a single rare bulb called 'Light of the Mind' sold for over one thousand gold coins, bankrupting aristocratic viziers.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Antique velvet-lined wooden jewel casket containing rare dried tulip bulbs resting on a carpet beside stacks of gold ducats. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-tulip-mania-istanbul/3.mp3",
       "voicedText": "Prices exploded: a single rare bulb called 'Light of the Mind' sold for over one thousand gold coins, bankrupting aristocratic viziers.",
-      "seconds": 9.3
+      "seconds": 9.3,
+      "image": "images/ottoman-tulip-mania-istanbul/3.png"
     },
     {
       "text": "At lavish nocturnal palace garden festivals, live tortoises with small candles strapped to their shells wandered among flowerbeds.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Nocturnal garden path illuminated by tiny glowing candle flames wandering between dark tulip beds under crescent moonlight. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-tulip-mania-istanbul/4.mp3",
       "voicedText": "At lavish nocturnal palace garden festivals, live tortoises with small candles strapped to their shells wandered among flowerbeds.",
-      "seconds": 8.5
+      "seconds": 8.5,
+      "image": "images/ottoman-tulip-mania-istanbul/4.png"
     },
     {
       "text": "While nobles squandered fortunes on floral parties, the common people faced starvation, sparking a violent rebellion that dethroned the Sultan.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Smoldering palace garden gate with broken wooden flower trellises and overturned marble planters in the aftermath of revolt. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-tulip-mania-istanbul/5.mp3",
       "voicedText": "While nobles squandered fortunes on floral parties, the common people faced starvation, sparking a violent rebellion that dethroned the Sultan.",
-      "seconds": 8.8
+      "seconds": 8.8,
+      "image": "images/ottoman-tulip-mania-istanbul/5.png"
     },
     {
       "text": "Would you have spent a fortune on a single rare flower bulb? Drop a comment below and subscribe!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Peaceful morning sunshine over the gardens of Istanbul with ancient cypress trees standing tall against a bright sky. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/ottoman-tulip-mania-istanbul/6.mp3",
       "voicedText": "Would you have spent a fortune on a single rare flower bulb? Drop a comment below and subscribe!",
-      "seconds": 5.9
+      "seconds": 5.9,
+      "image": "images/ottoman-tulip-mania-istanbul/6.png"
     }
   ]
 }

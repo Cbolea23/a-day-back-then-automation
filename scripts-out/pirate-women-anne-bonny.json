@@ -10,7 +10,8 @@
       "imagePrompt": "Foggy Caribbean mangrove inlet with a sleek pirate sloop concealed behind hanging moss and tropical vines. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-women-anne-bonny/1.mp3",
       "voicedText": "In 1720, maritime authorities across the Caribbean were terrified by two ruthless buccaneers: Anne Bonny and Mary Read.",
-      "seconds": 8.7
+      "seconds": 8.7,
+      "image": "images/pirate-women-anne-bonny/1.png"
     },
     {
       "text": "Both women disguised themselves in men's loose sailor trousers and wool jackets, swearing oaths and fighting alongside the male crew.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Deck locker with rolled canvas trousers, red wool sash, iron cutlass, and leather powder horn. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-women-anne-bonny/2.mp3",
       "voicedText": "Both women disguised themselves in men's loose sailor trousers and wool jackets, swearing oaths and fighting alongside the male crew.",
-      "seconds": 9.2
+      "seconds": 9.2,
+      "image": "images/pirate-women-anne-bonny/2.png"
     },
     {
       "text": "During sea battles, victims testified that Bonny and Read fought with unmatched ferocity, wielding curved cutlasses and dual flintlock pistols.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Pair of brass-fitted flintlock pistols and a curved steel boarding cutlass crossed over a ship gunnel rail. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-women-anne-bonny/3.mp3",
       "voicedText": "During sea battles, victims testified that Bonny and Read fought with unmatched ferocity, wielding curved cutlasses and dual flintlock pistols.",
-      "seconds": 10
+      "seconds": 10,
+      "image": "images/pirate-women-anne-bonny/3.png"
     },
     {
       "text": "When a royal navy pirate hunter ship ambushed them off Jamaica, the drunken male crew hid below deck in the cargo hold.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Dark cargo hold of a wooden ship packed with rum casks, hanging hammocks, and dim lantern shadows. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-women-anne-bonny/4.mp3",
       "voicedText": "When a royal navy pirate hunter ship ambushed them off Jamaica, the drunken male crew hid below deck in the cargo hold.",
-      "seconds": 7.7
+      "seconds": 7.7,
+      "image": "images/pirate-women-anne-bonny/4.png"
     },
     {
       "text": "Anne and Mary stood their ground alone on the open quarterdeck, holding off armed British boarding parties until finally overpowered.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Splintered wooden ship quarterdeck with spent bullet shells and tangled rigging ropes after a boarding action. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-women-anne-bonny/5.mp3",
       "voicedText": "Anne and Mary stood their ground alone on the open quarterdeck, holding off armed British boarding parties until finally overpowered.",
-      "seconds": 8.5
+      "seconds": 8.5,
+      "image": "images/pirate-women-anne-bonny/5.png"
     },
     {
       "text": "Both escaped the gallows because they were pregnant. Did you know the fiercest pirates were two armed women?",
@@ -50,7 +55,8 @@
       "imagePrompt": "Peaceful tropical sunset over Port Royal harbor with stone fort walls looking out towards calm blue water. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-women-anne-bonny/6.mp3",
       "voicedText": "Both escaped the gallows because they were pregnant. Did you know the fiercest pirates were two armed women?",
-      "seconds": 6.1
+      "seconds": 6.1,
+      "image": "images/pirate-women-anne-bonny/6.png"
     }
   ]
 }

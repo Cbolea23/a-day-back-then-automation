@@ -10,7 +10,8 @@
       "imagePrompt": "Sunlit quarterdeck of a wooden pirate galleon with ship's wheel, compass binnacle, and voting ballot box on a barrel. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-democracy-articles/1.mp3",
       "voicedText": "While European monarchs ruled with iron fists, 18th-century pirate ships practiced radical pure democracy.",
-      "seconds": 7.9
+      "seconds": 7.9,
+      "image": "images/pirate-democracy-articles/1.png"
     },
     {
       "text": "Every crewman had an equal vote when electing their captain, choosing which merchant trade routes to raid, and deciding when to retreat.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Nautical navigation chart laid across a wooden capstan with brass dividers, calipers, and a horn rum cup. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-democracy-articles/2.mp3",
       "voicedText": "Every crewman had an equal vote when electing their captain, choosing which merchant trade routes to raid, and deciding when to retreat.",
-      "seconds": 8.2
+      "seconds": 8.2,
+      "image": "images/pirate-democracy-articles/2.png"
     },
     {
       "text": "If a captain proved cowardly, greedy, or abusive, the crew held a vote and instantly demoted him back to regular deckhand.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Stern captain's quarters with leaded glass windows overlooking ocean wake and an empty high-backed oak chair. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-democracy-articles/3.mp3",
       "voicedText": "If a captain proved cowardly, greedy, or abusive, the crew held a vote and instantly demoted him back to regular deckhand.",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/pirate-democracy-articles/3.png"
     },
     {
       "text": "Poot loot was divided with strict equality: captains received only two shares, while standard crew members received one full share.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Open iron-banded treasure chest overflowing with Spanish silver pieces of eight and gold doubloons on deck planks. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-democracy-articles/4.mp3",
       "voicedText": "Poot loot was divided with strict equality: captains received only two shares, while standard crew members received one full share.",
-      "seconds": 8.8
+      "seconds": 8.8,
+      "image": "images/pirate-democracy-articles/4.png"
     },
     {
       "text": "They even had the world's first worker disability insurance: losing an eye paid one hundred pieces of eight, and losing a leg paid six hundred.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Carved wooden peg leg and leather eye patch resting beside stacks of silver coins on a ship ledger book. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-democracy-articles/5.mp3",
       "voicedText": "They even had the world's first worker disability insurance: losing an eye paid one hundred pieces of eight, and losing a leg paid six hundred.",
-      "seconds": 8.9
+      "seconds": 8.9,
+      "image": "images/pirate-democracy-articles/5.png"
     },
     {
       "text": "Were pirate ships fairer places to live than European royal navies? Tell us below and follow for daily history stories!",
@@ -50,7 +55,8 @@
       "imagePrompt": "Peaceful Caribbean sea with gentle blue waves under a sky of fluffy white clouds and seagulls gliding above. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/pirate-democracy-articles/6.mp3",
       "voicedText": "Were pirate ships fairer places to live than European royal navies? Tell us below and follow for daily history stories!",
-      "seconds": 8.6
+      "seconds": 8.6,
+      "image": "images/pirate-democracy-articles/6.png"
     }
   ]
 }

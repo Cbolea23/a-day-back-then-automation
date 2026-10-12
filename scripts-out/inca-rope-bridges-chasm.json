@@ -10,7 +10,8 @@
       "imagePrompt": "Deep Andean river gorge with vertical granite cliff walls and a raging whitewater river churning hundreds of feet below. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/inca-rope-bridges-chasm/1.mp3",
       "voicedText": "Across the Andes mountain range, deep roaring river canyons presented seemingly impassable barriers to Inca army expansion.",
-      "seconds": 8.3
+      "seconds": 8.3,
+      "image": "images/inca-rope-bridges-chasm/1.png"
     },
     {
       "text": "Without iron cables or wheeled construction vehicles, Inca master engineers constructed suspension bridges made entirely of wild mountain grass.",
@@ -18,7 +19,8 @@
       "imagePrompt": "Bales of harvested coarse Andean 'q'oya' bunchgrass bundled with leather ties on an open rocky terrace in mountain sun. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/inca-rope-bridges-chasm/2.mp3",
       "voicedText": "Without iron cables or wheeled construction vehicles, Inca master engineers constructed suspension bridges made entirely of wild mountain grass.",
-      "seconds": 9.3
+      "seconds": 9.3,
+      "image": "images/inca-rope-bridges-chasm/2.png"
     },
     {
       "text": "Communities gathered annually to twist wild 'q'oya' grass into small cords, which were braided into six main cables as thick as a human torso.",
@@ -26,7 +28,8 @@
       "imagePrompt": "Close-up of massive braided grass bridge cables anchored with heavy knots over massive carved stone masonry abutments. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/inca-rope-bridges-chasm/3.mp3",
       "voicedText": "Communities gathered annually to twist wild 'q'oya' grass into small cords, which were braided into six main cables as thick as a human torso.",
-      "seconds": 9.4
+      "seconds": 9.4,
+      "image": "images/inca-rope-bridges-chasm/3.png"
     },
     {
       "text": "Spanning up to two hundred feet across dizzying chasms, the cables were anchored to massive megalithic stone abutments on cliff edges.",
@@ -34,7 +37,8 @@
       "imagePrompt": "Graceful swinging grass rope suspension bridge spanning across a deep canyon gorge between twin stone pillars in clouds. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/inca-rope-bridges-chasm/4.mp3",
       "voicedText": "Spanning up to two hundred feet across dizzying chasms, the cables were anchored to massive megalithic stone abutments on cliff edges.",
-      "seconds": 9.2
+      "seconds": 9.2,
+      "image": "images/inca-rope-bridges-chasm/4.png"
     },
     {
       "text": "Woven wooden slat footpaths and braided handrails swayed gently in canyon winds, strong enough to support marching armies and llama trains.",
@@ -42,7 +46,8 @@
       "imagePrompt": "Footpath view looking across a woven rope bridge with wooden cross slats and thick braided handrails swaying over misty air. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/inca-rope-bridges-chasm/5.mp3",
       "voicedText": "Woven wooden slat footpaths and braided handrails swayed gently in canyon winds, strong enough to support marching armies and llama trains.",
-      "seconds": 9.8
+      "seconds": 9.8,
+      "image": "images/inca-rope-bridges-chasm/5.png"
     },
     {
       "text": "The Q'eswachaka bridge is still rebuilt by hand every single June! Would you walk across a bridge made of grass?",
@@ -50,7 +55,8 @@
       "imagePrompt": "Breathtaking sunny Andean mountain vista with green terraced slopes and the blue Apurimac river glistening below. 2D flat cartoon illustration, thick dark outlines, warm muted palette, hand-painted textures, vertical 9:16, no people in the foreground, no text, no logos",
       "audio": "audio/inca-rope-bridges-chasm/6.mp3",
       "voicedText": "The Q'eswachaka bridge is still rebuilt by hand every single June! Would you walk across a bridge made of grass?",
-      "seconds": 7.3
+      "seconds": 7.3,
+      "image": "images/inca-rope-bridges-chasm/6.png"
     }
   ]
 }
