@@ -25,6 +25,8 @@ tiktok-tokens.json
 .tiktok-session/
 .facebook-session/
 published-urls-*.json
+published-urls.backup.json
+webhook-config.json
 test-*
 test.*
 sample-*.mp4

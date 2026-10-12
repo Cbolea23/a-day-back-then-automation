@@ -95,7 +95,28 @@ export function pickBySlug(arr, slug) {
   return arr[h % arr.length];
 }
 
+// Hard circuit breaker for Meta rate-limit/anti-spam action blocks
+export const FB_COOLDOWN_UNTIL_UTC = "2026-10-13T05:00:00Z"; // Oct 13, 1:00 PM Manila Time
+
+export function checkFacebookCooldown() {
+  const cooldownUntil = new Date(FB_COOLDOWN_UNTIL_UTC).getTime();
+  if (Date.now() < cooldownUntil && !process.argv.includes("--ignore-cooldown")) {
+    const remainingHours = ((cooldownUntil - Date.now()) / (1000 * 60 * 60)).toFixed(1);
+    console.warn(`\n⛔ [FB CIRCUIT BREAKER ACTIVE]`);
+    console.warn(`Facebook API is in 24-hour anti-spam cooldown until Oct 13, 2026, 1:00 PM Manila Time (${remainingHours}h remaining).`);
+    console.warn(`To protect the Page from extended restrictions, Facebook uploads are locked.`);
+    console.warn(`To override (NOT RECOMMENDED), pass --ignore-cooldown.\n`);
+    return false;
+  }
+  return true;
+}
+
 export async function uploadReel(slug, options = {}) {
+  if (!checkFacebookCooldown()) {
+    process.exitCode = 0; // Exit cleanly without crashing caller
+    return { skipped: true, reason: "Facebook cooldown active" };
+  }
+
   const {pageId, pageAccessToken, pageName} = getCredentials();
   const cleanSlug = slug.replace(/^long-/, "");
   const candidatePaths = [
@@ -218,6 +239,11 @@ export async function uploadReel(slug, options = {}) {
 // LONG-FORM PAGE VIDEOS (16:9 Widescreen, Resumable Chunked Upload)
 // -----------------------------------------------------------------------------
 export async function uploadLongformVideo(slug, options = {}) {
+  if (!checkFacebookCooldown()) {
+    process.exitCode = 0;
+    return { skipped: true, reason: "Facebook cooldown active" };
+  }
+
   const {pageId, pageAccessToken, pageName} = getCredentials();
   const cleanSlug = slug.replace(/^long-/, "");
 

@@ -24,6 +24,21 @@ import {fileURLToPath} from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const tokenPath = path.join(root, "facebook-tokens.json");
 
+export const FB_COOLDOWN_UNTIL_UTC = "2026-10-13T05:00:00Z"; // Oct 13, 1:00 PM Manila Time
+
+export function checkMetaCooldown() {
+  const cooldownUntil = new Date(FB_COOLDOWN_UNTIL_UTC).getTime();
+  if (Date.now() < cooldownUntil && !process.argv.includes("--ignore-cooldown")) {
+    const remainingHours = ((cooldownUntil - Date.now()) / (1000 * 60 * 60)).toFixed(1);
+    console.warn(`\n⛔ [META / INSTAGRAM CIRCUIT BREAKER ACTIVE]`);
+    console.warn(`Meta Graph API is in 24-hour anti-spam cooldown until Oct 13, 2026, 1:00 PM Manila Time (${remainingHours}h remaining).`);
+    console.warn(`Because Instagram uses the linked Facebook Page token, Instagram uploads are locked to prevent account penalties.`);
+    console.warn(`To override (NOT RECOMMENDED), pass --ignore-cooldown.\n`);
+    return false;
+  }
+  return true;
+}
+
 function getCredentials() {
   if (!fs.existsSync(tokenPath)) {
     console.error("Missing facebook-tokens.json in project root.");
@@ -132,6 +147,11 @@ export async function getInstagramAccountId() {
  * Uploads and publishes or schedules an Instagram Reel via Meta Graph API
  */
 export async function uploadInstagramReel(slug, options = {}) {
+  if (!checkMetaCooldown()) {
+    process.exitCode = 0;
+    return { skipped: true, reason: "Meta cooldown active" };
+  }
+
   const {pageAccessToken} = getCredentials();
 
   // 1. Check for linked Instagram Account
