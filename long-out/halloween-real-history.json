@@ -1,0 +1,328 @@
+{
+  "channelName": "A Day Back Then",
+  "format": "explainer",
+  "hook": "Two thousand years ago, on the last night of October, entire villages lit giant fires, pulled on terrifying masks, and set food outside their doors. It looked like a party. It wasn't.",
+  "scenes": [
+    {
+      "chapterNumber": 0,
+      "chapterTitle": "Intro",
+      "imagePrompt": "An ancient Celtic roundhouse village at dusk, a huge sacred bonfire blazing on a hilltop above it, dark clouds gathering.",
+      "mood": "dark",
+      "text": "Two thousand years ago, on the last night of October, entire villages lit giant fires, pulled on terrifying masks, and set food outside their doors. It looked like a party. It wasn't. They believed that tonight, the dead were coming back.",
+      "audio": "audio/long/halloween-real-history/1.mp3",
+      "voicedText": "Two thousand years ago, on the last night of October, entire villages lit giant fires, pulled on terrifying masks, and set food outside their doors. It looked like a party. It wasn't. They believed that tonight, the dead were coming back.",
+      "seconds": 18.8,
+      "image": "images/long/halloween-real-history/1.png"
+    },
+    {
+      "chapterNumber": 0,
+      "chapterTitle": "Intro",
+      "mood": "dark",
+      "text": "This is the true story of Halloween. And the real history is darker than any horror movie ever made. Because everything you do tonight — the costumes, the candy, the carved pumpkins — was invented by people who were genuinely afraid of the dark.",
+      "audio": "audio/long/halloween-real-history/2.mp3",
+      "voicedText": "This is the true story of Halloween. And the real history is darker than any horror movie ever made. Because everything you do tonight — the costumes, the candy, the carved pumpkins — was invented by people who were genuinely afraid of the dark.",
+      "seconds": 18.2,
+      "image": "images/long/halloween-real-history/1.png"
+    },
+    {
+      "chapterNumber": 1,
+      "chapterTitle": "Samhain",
+      "mood": "dark",
+      "text": "Our story begins in ancient Ireland, two thousand years ago, with the Celts. Their year didn't begin in January. It began on the first of November — the day winter started. And the night before it had a name: Samhain. Summer's end.",
+      "audio": "audio/long/halloween-real-history/3.mp3",
+      "voicedText": "Our story begins in ancient Ireland, two thousand years ago, with the Celts. Their year didn't begin in January. It began on the first of November — the day winter started. And the night before it had a name: Samhain. Summer's end.",
+      "seconds": 19.3,
+      "image": "images/long/halloween-real-history/1.png"
+    },
+    {
+      "chapterNumber": 1,
+      "chapterTitle": "Samhain",
+      "mood": "dark",
+      "text": "For the Celts, winter wasn't a season. It was an enemy. Crops died. Livestock starved. The cold killed the old and the weak. And on Samhain night, they believed something worse than the cold was walking the earth.",
+      "audio": "audio/long/halloween-real-history/4.mp3",
+      "voicedText": "For the Celts, winter wasn't a season. It was an enemy. Crops died. Livestock starved. The cold killed the old and the weak. And on Samhain night, they believed something worse than the cold was walking the earth.",
+      "seconds": 24.2,
+      "image": "images/long/halloween-real-history/1.png"
+    },
+    {
+      "chapterNumber": 1,
+      "chapterTitle": "Samhain",
+      "imagePrompt": "A moonlit Celtic field at night, translucent ghostly figures rising from the ground and drifting toward a distant village, full moon behind clouds.",
+      "mood": "dark",
+      "text": "They believed the veil between the world of the living and the world of the dead grew thin on this one night — thin enough for spirits to cross. The souls of everyone who had died that year were coming home. And not all of them were friendly.",
+      "audio": "audio/long/halloween-real-history/5.mp3",
+      "voicedText": "They believed the veil between the world of the living and the world of the dead grew thin on this one night — thin enough for spirits to cross. The souls of everyone who had died that year were coming home. And not all of them were friendly.",
+      "seconds": 18.7,
+      "image": "images/long/halloween-real-history/2.png"
+    },
+    {
+      "chapterNumber": 1,
+      "chapterTitle": "Samhain",
+      "mood": "dark",
+      "text": "So the Celts fought back the only way they knew how. They built enormous sacred bonfires on the hilltops — walls of flame meant to hold the darkness back. Every family carried fire home from those bonfires to relight their hearth for the winter.",
+      "audio": "audio/long/halloween-real-history/6.mp3",
+      "voicedText": "So the Celts fought back the only way they knew how. They built enormous sacred bonfires on the hilltops — walls of flame meant to hold the darkness back. Every family carried fire home from those bonfires to relight their hearth for the winter.",
+      "seconds": 17.8,
+      "image": "images/long/halloween-real-history/2.png"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterTitle": "Masks and Offerings",
+      "imagePrompt": "Celtic villagers wearing animal skull masks and furs, dancing around a roaring hilltop bonfire at night, sparks flying into a black sky.",
+      "mood": "dark",
+      "text": "Then came the masks. The Celts pulled on animal heads and skins — stags, wolves, boars — and smeared themselves with ash from the sacred fires. The idea was simple and desperate: if you looked like a monster, the real monsters might leave you alone.",
+      "audio": "audio/long/halloween-real-history/7.mp3",
+      "voicedText": "Then came the masks. The Celts pulled on animal heads and skins — stags, wolves, boars — and smeared themselves with ash from the sacred fires. The idea was simple and desperate: if you looked like a monster, the real monsters might leave you alone.",
+      "seconds": 19.1,
+      "image": "images/long/halloween-real-history/3.png"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterTitle": "Masks and Offerings",
+      "mood": "dark",
+      "text": "They left food and drink outside their doors — offerings for the wandering dead. A hungry ghost, they reasoned, was a dangerous ghost. Feed it, and maybe it would pass your house by. Refuse it, and you might not live to see the spring.",
+      "audio": "audio/long/halloween-real-history/8.mp3",
+      "voicedText": "They left food and drink outside their doors — offerings for the wandering dead. A hungry ghost, they reasoned, was a dangerous ghost. Feed it, and maybe it would pass your house by. Refuse it, and you might not live to see the spring.",
+      "seconds": 17.3,
+      "image": "images/long/halloween-real-history/3.png"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterTitle": "Masks and Offerings",
+      "mood": "dark",
+      "text": "The night belonged to fortune-tellers, too. The Druids, the Celtic priests, believed the thin veil let them see the future — who would marry, who would die, whether the harvest would survive. And people were frightened enough to believe them.",
+      "audio": "audio/long/halloween-real-history/9.mp3",
+      "voicedText": "The night belonged to fortune-tellers, too. The Druids, the Celtic priests, believed the thin veil let them see the future — who would marry, who would die, whether the harvest would survive. And people were frightened enough to believe them.",
+      "seconds": 18.3,
+      "image": "images/long/halloween-real-history/3.png"
+    },
+    {
+      "chapterNumber": 2,
+      "chapterTitle": "Masks and Offerings",
+      "mood": "dark",
+      "text": "Picture it. A whole village huddled around a roaring fire in pitch blackness, wearing the skins of dead animals, listening to priests predict which of them wouldn't survive the winter. That was the original Halloween. Some party.",
+      "audio": "audio/long/halloween-real-history/10.mp3",
+      "voicedText": "Picture it. A whole village huddled around a roaring fire in pitch blackness, wearing the skins of dead animals, listening to priests predict which of them wouldn't survive the winter. That was the original Halloween. Some party.",
+      "seconds": 17.1,
+      "image": "images/long/halloween-real-history/3.png"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterTitle": "Rome Crashes the Party",
+      "imagePrompt": "Roman soldiers with torches marching past a Celtic hilltop bonfire at night, Celtic villagers watching from the shadows, autumn trees.",
+      "mood": "cool",
+      "text": "Then the Romans arrived. When they conquered the Celtic lands, they didn't destroy Samhain. They absorbed it, the way Rome absorbed everything. Two of their own festivals melted straight into the night of the dead.",
+      "audio": "audio/long/halloween-real-history/11.mp3",
+      "voicedText": "Then the Romans arrived. When they conquered the Celtic lands, they didn't destroy Samhain. They absorbed it, the way Rome absorbed everything. Two of their own festivals melted straight into the night of the dead.",
+      "seconds": 14.7,
+      "image": "images/long/halloween-real-history/4.png"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterTitle": "Rome Crashes the Party",
+      "mood": "cool",
+      "text": "The first was Feralia, a Roman day for honoring the dead. The second honored Pomona, the goddess of fruit and orchards — and her symbol was the apple. That's why, two thousand years later, you're still bobbing for apples on Halloween night.",
+      "audio": "audio/long/halloween-real-history/12.mp3",
+      "voicedText": "The first was Feralia, a Roman day for honoring the dead. The second honored Pomona, the goddess of fruit and orchards — and her symbol was the apple. That's why, two thousand years later, you're still bobbing for apples on Halloween night.",
+      "seconds": 18.5,
+      "image": "images/long/halloween-real-history/4.png"
+    },
+    {
+      "chapterNumber": 3,
+      "chapterTitle": "Rome Crashes the Party",
+      "mood": "dark",
+      "text": "Rome brought roads, laws, and order to the Celtic world. But October thirty-first stayed wild. You can conquer a people. It's much harder to conquer the night they're most afraid of.",
+      "audio": "audio/long/halloween-real-history/13.mp3",
+      "voicedText": "Rome brought roads, laws, and order to the Celtic world. But October thirty-first stayed wild. You can conquer a people. It's much harder to conquer the night they're most afraid of.",
+      "seconds": 13.9,
+      "image": "images/long/halloween-real-history/4.png"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterTitle": "The Church Takes Over",
+      "imagePrompt": "A medieval stone church at night, a procession of monks carrying candles through a dark churchyard, full moon above the spire.",
+      "mood": "dark",
+      "text": "Centuries later, the Christian Church tried a different strategy. If you can't beat the festival, baptize it. In the seven hundreds, Pope Gregory the Third moved All Saints' Day — a feast honoring every saint — to the first of November.",
+      "audio": "audio/long/halloween-real-history/14.mp3",
+      "voicedText": "Centuries later, the Christian Church tried a different strategy. If you can't beat the festival, baptize it. In the seven hundreds, Pope Gregory the Third moved All Saints' Day — a feast honoring every saint — to the first of November.",
+      "seconds": 17.8,
+      "image": "images/long/halloween-real-history/5.png"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterTitle": "The Church Takes Over",
+      "mood": "dark",
+      "text": "The night before became All Hallows' Eve. Say it fast, let a few centuries chew on it, and you get Halloween. The Church had claimed the date. But the people kept the bonfires, the masks, and the ghosts.",
+      "audio": "audio/long/halloween-real-history/15.mp3",
+      "voicedText": "The night before became All Hallows' Eve. Say it fast, let a few centuries chew on it, and you get Halloween. The Church had claimed the date. But the people kept the bonfires, the masks, and the ghosts.",
+      "seconds": 15.5,
+      "image": "images/long/halloween-real-history/5.png"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterTitle": "The Church Takes Over",
+      "mood": "dark",
+      "text": "In the year one thousand, the Church added All Souls' Day on November second — a day to pray for all the dead. It was a holy day. But underneath it, the old Celtic fear was still breathing.",
+      "audio": "audio/long/halloween-real-history/16.mp3",
+      "voicedText": "In the year one thousand, the Church added All Souls' Day on November second — a day to pray for all the dead. It was a holy day. But underneath it, the old Celtic fear was still breathing.",
+      "seconds": 15.3,
+      "image": "images/long/halloween-real-history/5.png"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterTitle": "The Church Takes Over",
+      "imagePrompt": "Hooded medieval figures in simple disguises knocking at a timber cottage door at night, holding soul cakes, candlelight in the window.",
+      "mood": "dark",
+      "text": "Medieval Christians went souling — walking door to door, offering prayers for the dead in exchange for small soul cakes. Sound familiar? It should. That knock on your door tonight is a thousand years old.",
+      "audio": "audio/long/halloween-real-history/17.mp3",
+      "voicedText": "Medieval Christians went souling — walking door to door, offering prayers for the dead in exchange for small soul cakes. Sound familiar? It should. That knock on your door tonight is a thousand years old.",
+      "seconds": 15.8,
+      "image": "images/long/halloween-real-history/6.png"
+    },
+    {
+      "chapterNumber": 4,
+      "chapterTitle": "The Church Takes Over",
+      "mood": "dark",
+      "text": "They called it guising — dressing in disguise and performing songs or tricks for treats. The masks had survived the Romans. They had survived the Church. They were never going away.",
+      "audio": "audio/long/halloween-real-history/18.mp3",
+      "voicedText": "They called it guising — dressing in disguise and performing songs or tricks for treats. The masks had survived the Romans. They had survived the Church. They were never going away.",
+      "seconds": 13.8,
+      "image": "images/long/halloween-real-history/6.png"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterTitle": "Witches and the Dark",
+      "imagePrompt": "A dark medieval street at night under a curfew bell tower, shuttered timber houses, a single lantern glowing, long shadows.",
+      "mood": "dark",
+      "text": "But here's what made it truly terrifying. In the Middle Ages, the night wasn't just spooky. It was lethal. No streetlights. No police. Wolves in the forests. And a genuine, bone-deep belief that witches walked among you.",
+      "audio": "audio/long/halloween-real-history/19.mp3",
+      "voicedText": "But here's what made it truly terrifying. In the Middle Ages, the night wasn't just spooky. It was lethal. No streetlights. No police. Wolves in the forests. And a genuine, bone-deep belief that witches walked among you.",
+      "seconds": 19.7,
+      "image": "images/long/halloween-real-history/7.png"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterTitle": "Witches and the Dark",
+      "imagePrompt": "A witch trial at night by torchlight, a hooded accused woman before stern judges in a torch-lit hall, crowd of fearful villagers.",
+      "mood": "dark",
+      "text": "Between the fourteen hundreds and the seventeen hundreds, tens of thousands of people — mostly women — were tried and executed as witches across Europe. Halloween season, thick with ghosts and spirits, was their season. Fear had a face. And it looked like your neighbor.",
+      "audio": "audio/long/halloween-real-history/20.mp3",
+      "voicedText": "Between the fourteen hundreds and the seventeen hundreds, tens of thousands of people — mostly women — were tried and executed as witches across Europe. Halloween season, thick with ghosts and spirits, was their season. Fear had a face. And it looked like your neighbor.",
+      "seconds": 19.1,
+      "image": "images/long/halloween-real-history/8.png"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterTitle": "Witches and the Dark",
+      "imagePrompt": "A plague doctor in a long beaked mask walking through an empty medieval street at night, abandoned carts, flickering lanterns, fog.",
+      "mood": "dark",
+      "text": "Then came the plague. When the Black Death swept through, a third of Europe died, and every shadow seemed to carry death with it. Doctors wore grotesque beaked masks, and the line between a costume and survival blurred completely.",
+      "audio": "audio/long/halloween-real-history/21.mp3",
+      "voicedText": "Then came the plague. When the Black Death swept through, a third of Europe died, and every shadow seemed to carry death with it. Doctors wore grotesque beaked masks, and the line between a costume and survival blurred completely.",
+      "seconds": 18.1,
+      "image": "images/long/halloween-real-history/9.png"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterTitle": "Witches and the Dark",
+      "mood": "dark",
+      "text": "Imagine October in a plague year. Church bells ringing for the dead every hour. Carts of bodies in the streets. Everyone whispering that the veil was thin again. Halloween wasn't a metaphor. It was the calendar of the apocalypse.",
+      "audio": "audio/long/halloween-real-history/22.mp3",
+      "voicedText": "Imagine October in a plague year. Church bells ringing for the dead every hour. Carts of bodies in the streets. Everyone whispering that the veil was thin again. Halloween wasn't a metaphor. It was the calendar of the apocalypse.",
+      "seconds": 20.3,
+      "image": "images/long/halloween-real-history/9.png"
+    },
+    {
+      "chapterNumber": 5,
+      "chapterTitle": "Witches and the Dark",
+      "imagePrompt": "A glowing carved turnip lantern with a menacing face sitting on an old stone wall at night, Irish countryside, moonlight.",
+      "mood": "dark",
+      "text": "Through it all, one small tradition kept glowing in the dark. The Irish carved terrifying faces into turnips — yes, turnips — and set candles inside to frighten away a damned soul named Stingy Jack. The first jack-o'-lanterns were the size of your fist.",
+      "audio": "audio/long/halloween-real-history/23.mp3",
+      "voicedText": "Through it all, one small tradition kept glowing in the dark. The Irish carved terrifying faces into turnips — yes, turnips — and set candles inside to frighten away a damned soul named Stingy Jack. The first jack-o'-lanterns were the size of your fist.",
+      "seconds": 19.4,
+      "image": "images/long/halloween-real-history/10.png"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterTitle": "America Reinvents It",
+      "mood": "cool",
+      "text": "Halloween crossed the Atlantic with Irish immigrants fleeing the potato famine in the eighteen forties. They carried Samhain's ghosts with them in their luggage. But America changed one thing: the turnip.",
+      "audio": "audio/long/halloween-real-history/24.mp3",
+      "voicedText": "Halloween crossed the Atlantic with Irish immigrants fleeing the potato famine in the eighteen forties. They carried Samhain's ghosts with them in their luggage. But America changed one thing: the turnip.",
+      "seconds": 13.9,
+      "image": "images/long/halloween-real-history/10.png"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterTitle": "America Reinvents It",
+      "imagePrompt": "A 19th century American street at night, children in old-fashioned costumes carrying glowing carved pumpkins, autumn leaves, gas lamps.",
+      "mood": "cool",
+      "text": "America had pumpkins. Big, round, easy to carve, and growing everywhere. The fist-sized turnip lantern became the grinning pumpkin king of the front porch. Stingy Jack got a much bigger head.",
+      "audio": "audio/long/halloween-real-history/25.mp3",
+      "voicedText": "America had pumpkins. Big, round, easy to carve, and growing everywhere. The fist-sized turnip lantern became the grinning pumpkin king of the front porch. Stingy Jack got a much bigger head.",
+      "seconds": 15.2,
+      "image": "images/long/halloween-real-history/11.png"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterTitle": "America Reinvents It",
+      "mood": "cool",
+      "text": "By the early nineteen hundreds, Halloween had become a neighborhood holiday — parties, parades, and pranks. And the old souling tradition came back wearing a new mask: trick or treat. The threat is playful now. It wasn't always.",
+      "audio": "audio/long/halloween-real-history/26.mp3",
+      "voicedText": "By the early nineteen hundreds, Halloween had become a neighborhood holiday — parties, parades, and pranks. And the old souling tradition came back wearing a new mask: trick or treat. The threat is playful now. It wasn't always.",
+      "seconds": 16.3,
+      "image": "images/long/halloween-real-history/11.png"
+    },
+    {
+      "chapterNumber": 6,
+      "chapterTitle": "America Reinvents It",
+      "mood": "dark",
+      "text": "Then Hollywood finished the job. A century of horror films turned Halloween into the scariest night on the calendar. Which is funny, when you think about it. Because for two thousand years, it already was.",
+      "audio": "audio/long/halloween-real-history/27.mp3",
+      "voicedText": "Then Hollywood finished the job. A century of horror films turned Halloween into the scariest night on the calendar. Which is funny, when you think about it. Because for two thousand years, it already was.",
+      "seconds": 14.4,
+      "image": "images/long/halloween-real-history/11.png"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterTitle": "Outro",
+      "imagePrompt": "A single glowing jack-o'-lantern in vast pitch darkness, faint ghostly shapes drifting far in the background, full moon, cinematic.",
+      "mood": "dark",
+      "text": "So tonight, when you light a pumpkin, you're doing exactly what a Celtic farmer did two thousand years ago. Pushing back the dark with a little fire. And hoping nothing comes through the veil.",
+      "audio": "audio/long/halloween-real-history/28.mp3",
+      "voicedText": "So tonight, when you light a pumpkin, you're doing exactly what a Celtic farmer did two thousand years ago. Pushing back the dark with a little fire. And hoping nothing comes through the veil.",
+      "seconds": 15,
+      "image": "images/long/halloween-real-history/12.png"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterTitle": "Outro",
+      "mood": "dark",
+      "text": "The masks, the candy, the ghosts — none of it was invented for fun. It was invented by people who believed the dead were real, the night was hungry, and winter was coming for them all.",
+      "audio": "audio/long/halloween-real-history/29.mp3",
+      "voicedText": "The masks, the candy, the ghosts — none of it was invented for fun. It was invented by people who believed the dead were real, the night was hungry, and winter was coming for them all.",
+      "seconds": 14.6,
+      "image": "images/long/halloween-real-history/12.png"
+    },
+    {
+      "chapterNumber": 7,
+      "chapterTitle": "Outro",
+      "mood": "dark",
+      "text": "Sweet dreams. And if you hear a knock at the door tonight — answer it. You don't want to find out what happens when you don't.",
+      "audio": "audio/long/halloween-real-history/30.mp3",
+      "voicedText": "Sweet dreams. And if you hear a knock at the door tonight — answer it. You don't want to find out what happens when you don't.",
+      "seconds": 8.7,
+      "image": "images/long/halloween-real-history/12.png"
+    }
+  ],
+  "slug": "halloween-real-history",
+  "targetMinutes": 10,
+  "thumbnailIdea": "A glowing jack-o'-lantern in pitch darkness, translucent ghostly figures rising behind it under a full moon, 2D flat cartoon horror style.",
+  "title": "The Real History of Halloween: Why October 31st Terrified the World",
+  "titleOptions": [
+    "The Real History of Halloween: Why October 31st Terrified the World",
+    "Halloween Wasn't Invented for Fun — It Was Invented From Fear",
+    "The True Story of Halloween: 2,000 Years of the Dead Coming Back"
+  ]
+}

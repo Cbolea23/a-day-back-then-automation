@@ -14,7 +14,7 @@ import {Captions} from "./Captions";
 import {Narrator, getThemeFromSlug, CharacterTheme} from "./Narrator";
 import {NPC} from "./NPC";
 import {planSpeech} from "./speech";
-import {Mood, Scene, ScriptProps, sceneFrames, totalFrames} from "./types";
+import {Mood, Scene, ScriptProps, SplitScreenConfig, sceneFrames, totalFrames} from "./types";
 
 const MOOD_GRADIENTS: Record<Mood, string> = {
   day: "linear-gradient(180deg, #f6d28b 0%, #e59a5b 55%, #8a4b2a 100%)",

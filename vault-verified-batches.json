@@ -79,8 +79,60 @@
     "viking-shieldmaidens-real",
     "viking-sunstone-navigation",
     "viking-valhalla-diet",
-    "wwii-anderson-shelter-backyard"
+    "wwii-anderson-shelter-backyard",
+    "wwii-deception-ghost-army"
   ],
-  "failed": [],
+  "failed": [
+    {
+      "slug": "wwii-fake-coffee-and-mock-banana",
+      "reason": "Remotion render error",
+      "timestamp": "2026-10-12T09:03:34.875Z"
+    },
+    {
+      "slug": "wwii-gas-mask-box-kids",
+      "reason": "Remotion render error",
+      "timestamp": "2026-10-12T09:03:39.482Z"
+    },
+    {
+      "slug": "wwii-morse-code-bletchley-park",
+      "reason": "Remotion render error",
+      "timestamp": "2026-10-12T09:03:43.943Z"
+    },
+    {
+      "slug": "wwii-night-fighter-carrots-myth",
+      "reason": "Remotion render error",
+      "timestamp": "2026-10-12T09:03:47.782Z"
+    },
+    {
+      "slug": "wwii-pigeon-spies-dickin-medal",
+      "reason": "Remotion render error",
+      "timestamp": "2026-10-12T09:03:51.621Z"
+    },
+    {
+      "slug": "wwii-spitfire-pilot-day",
+      "reason": "Remotion render error",
+      "timestamp": "2026-10-12T09:03:55.404Z"
+    },
+    {
+      "slug": "wwii-underground-tube-sleepers",
+      "reason": "Remotion render error",
+      "timestamp": "2026-10-12T09:03:59.258Z"
+    },
+    {
+      "slug": "wwii-unexploded-bomb-defusers",
+      "reason": "Remotion render error",
+      "timestamp": "2026-10-12T09:04:03.111Z"
+    },
+    {
+      "slug": "wwii-victory-garden",
+      "reason": "Remotion render error",
+      "timestamp": "2026-10-12T09:04:07.031Z"
+    },
+    {
+      "slug": "wwii-women-land-army",
+      "reason": "Remotion render error",
+      "timestamp": "2026-10-12T09:04:11.615Z"
+    }
+  ],
   "lastBatchIndex": 1
 }

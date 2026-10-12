@@ -71,7 +71,8 @@ export type Expression =
   | "emphasis"
   | "sad"
   | "surprise"
-  | "thoughtful";
+  | "thoughtful"
+  | "spooked";
 
 export type GestureCue = {
   fromFrame: number;
@@ -131,6 +132,35 @@ const SURPRISE_WORDS = [
   "incredible", "unbelievable", "shocking", "amazing", "insane",
   "mind-blowing", "astonishing", "wild",
 ];
+const SPOOKED_WORDS = [
+  "haunted", "haunt", "haunting", "ghost", "ghosts", "ghostly", "spirit",
+  "spirits", "specter", "spectre", "apparition", "phantom", "poltergeist",
+  "scream", "screamed", "screaming", "screams", "shriek", "shrieked",
+  "shrieking", "wail", "wailed", "wailing", "howl", "howled", "howling",
+  "moan", "moaned", "moaning", "whisper", "whispered", "whispering",
+  "terror", "terrors", "terrified", "terrifying", "horror", "horrors",
+  "blood", "bloody", "bleeding", "bled", "dark", "darkness", "nightmare",
+  "nightmares", "demon", "demons", "demonic", "devil", "satanic",
+  "witch", "witches", "witchcraft", "warlock", "curse", "cursed", "curses",
+  "monster", "monsters", "monstrous", "beast", "beasts", "creature",
+  "killer", "killers", "slayer", "murderer",
+  "fear", "feared", "fearful", "afraid", "scary", "scared", "creepy",
+  "spooky", "spooked", "chilling", "chill", "chills", "shiver", "shivered",
+  "shivering", "shivers", "tremble", "trembling", "trembled", "shaking",
+  "doom", "doomed", "evil", "sinister", "dread", "dreaded", "dreadful",
+  "panic", "panicked", "slaughter", "slaughtered", "corpse", "corpses",
+  "coffin", "coffins", "tomb", "tombs", "grave", "graves", "graveyard",
+  "crypt", "crypts", "vampire", "vampires", "werewolf", "werewolves",
+  "zombie", "mummy", "possessed", "possession", "exorcism", "seance",
+  "omen", "omens", "sacrifice", "sacrificed", "burned", "hanged",
+  "hanging", "torture", "tortured", "tormented", "torment",
+  "vanished", "disappear", "disappeared", "midnight", "shadows", "shadow",
+  "lurking", "lurk", "stalked", "stalking", "prey", "hunted", "trapped",
+  "claws", "fangs", "stake", "staked", "buried", "rotting", "rot",
+  "decay", "decayed", "skull", "skulls", "bones", "skeleton", "hell",
+  "freezing", "frozen", "petrified", "paralyzed", "spine-chilling",
+  "bloodcurdling", "gruesome", "macabre", "eerie", "uncanny",
+];
 const EMPHASIS_WORDS = [
   "very", "extremely", "never", "always", "must", "really", "just", "even",
   "only",
@@ -151,6 +181,7 @@ function classifySentence(words: string[]): {
     /!$/.test(words[words.length - 1] ?? "")
   )
     return {gesture: "surprise", expression: "surprise"};
+  if (hasAny(words, SPOOKED_WORDS)) return {gesture: "surprise", expression: "spooked"};
   if (hasAny(words, SOLEMN_WORDS)) return {gesture: "solemn", expression: "sad"};
   if (hasAny(words, NUMBER_WORDS)) return {gesture: "count", expression: "neutral"};
   if (hasAny(words, POINT_WORDS)) return {gesture: "point", expression: "neutral"};
