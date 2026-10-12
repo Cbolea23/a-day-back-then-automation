@@ -16,7 +16,6 @@
 import fs from "node:fs";
 import path from "node:path";
 import {fileURLToPath} from "node:url";
-import {isThrottleError, THROTTLE_EXIT_CODE} from "./fb-throttle.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const tokenPath = path.join(root, "facebook-tokens.json");
@@ -457,12 +456,12 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   if (isLong || slug.startsWith("long-")) {
     uploadLongformVideo(slug, {schedule, draft: isDraft}).catch((err) => {
       console.error("\n❌ Long-form upload failed:", err.message);
-      process.exit(isThrottleError(err) ? THROTTLE_EXIT_CODE : 1);
+      process.exit(1);
     });
   } else {
     uploadReel(slug, {schedule}).catch((err) => {
       console.error("\n❌ Reel upload failed:", err.message);
-      process.exit(isThrottleError(err) ? THROTTLE_EXIT_CODE : 1);
+      process.exit(1);
     });
   }
 }

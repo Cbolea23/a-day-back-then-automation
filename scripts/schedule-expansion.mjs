@@ -17,15 +17,6 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
-import {
-  sleep,
-  fbThrottleUntil,
-  markFbThrottled,
-  clearFbThrottle,
-  THROTTLE_EXIT_CODE,
-  FB_UPLOAD_GAP_MS,
-  YT_UPLOAD_GAP_MS,
-} from "./fb-throttle.mjs";
 import { fileURLToPath } from "node:url";
 import { ALL_EXPANSION_SLUGS } from "./render-all-expansion.mjs";
 
@@ -112,52 +103,29 @@ function getVideoFile(slug) {
 }
 
 // 1. Facebook Reels
-// Uploads are paced FB_UPLOAD_GAP_MS apart; a Facebook 368 throttle stops
-// the run and starts a 6h cooldown so retries don't extend the block.
-async function main() {
 console.log("1. Scheduling to Facebook Page Reels...");
 let fbScheduledCount = 0;
-let fbAborted = false;
-const throttleUntil = fbThrottleUntil();
-if (throttleUntil) {
-  console.log(`Throttled: Facebook on cooldown until ${new Date(throttleUntil).toISOString()} - skipping Facebook this run.`);
-  fbAborted = true;
-} else {
-  let firstUpload = true;
-  for (let i = 0; i < schedulePlan.length; i++) {
-    const p = schedulePlan[i];
-    if (fbPublished[p.slug]) {
-      continue;
-    }
-    const videoFile = getVideoFile(p.slug);
-    if (!videoFile) {
-      // Video hasn't been rendered yet, skip for now
-      continue;
-    }
-    if (!firstUpload) {
-      console.log(`   Pacing: waiting ${FB_UPLOAD_GAP_MS / 60000} min before next Facebook upload...`);
-      await sleep(FB_UPLOAD_GAP_MS);
-    }
-    firstUpload = false;
+for (let i = 0; i < schedulePlan.length; i++) {
+  const p = schedulePlan[i];
+  if (fbPublished[p.slug]) {
+    continue;
+  }
+  const videoFile = getVideoFile(p.slug);
+  if (!videoFile) {
+    // Video hasn't been rendered yet, skip for now
+    continue;
+  }
 
-    console.log(`\n[${i + 1}/${schedulePlan.length}] Uploading to Facebook: ${p.slug} (${p.displayLocal})...`);
-    const fbRes = spawnSync(
-      process.execPath,
-      [path.join("scripts", "upload-facebook.mjs"), p.slug, "--schedule", p.isoString],
-      { cwd: root, stdio: "inherit" }
-    );
-    if (fbRes.status === THROTTLE_EXIT_CODE) {
-      markFbThrottled();
-      console.error("\nSTOP: Facebook rate limit hit (error 368). Cooling down 6h - run aborted, nothing else will be attempted.");
-      fbAborted = true;
-      break;
-    }
-    if (fbRes.status === 0) {
-      fbScheduledCount++;
-      clearFbThrottle();
-    } else {
-      console.warn(`Warning: Facebook schedule failed for ${p.slug}`);
-    }
+  console.log(`\n[${i + 1}/${schedulePlan.length}] Uploading to Facebook: ${p.slug} (${p.displayLocal})...`);
+  const fbRes = spawnSync(
+    process.execPath,
+    [path.join("scripts", "upload-facebook.mjs"), p.slug, "--schedule", p.isoString],
+    { cwd: root, stdio: "inherit" }
+  );
+  if (fbRes.status === 0) {
+    fbScheduledCount++;
+  } else {
+    console.warn(`⚠️ Facebook schedule failed for ${p.slug}`);
   }
 }
 console.log(`\nFacebook Scheduling Progress: ${fbScheduledCount} new videos scheduled.`);
@@ -166,7 +134,6 @@ console.log(`\nFacebook Scheduling Progress: ${fbScheduledCount} new videos sche
 console.log("\n2. Scheduling to YouTube Shorts...");
 let ytScheduledCount = 0;
 let ytQuotaHit = false;
-let firstYt = true;
 for (let i = 0; i < schedulePlan.length; i++) {
   if (ytQuotaHit) break;
   const p = schedulePlan[i];
@@ -177,10 +144,6 @@ for (let i = 0; i < schedulePlan.length; i++) {
   if (!videoFile) {
     continue;
   }
-  if (!firstYt) {
-    await sleep(YT_UPLOAD_GAP_MS);
-  }
-  firstYt = false;
 
   console.log(`\n[${i + 1}/${schedulePlan.length}] Uploading to YouTube: ${p.slug} (${p.displayLocal})...`);
   const ytRes = spawnSync(
@@ -191,21 +154,12 @@ for (let i = 0; i < schedulePlan.length; i++) {
   if (ytRes.status === 0) {
     ytScheduledCount++;
   } else {
-    console.warn(`Warning: YouTube API quota reached or failed on ${p.slug}. Skipping remaining YouTube uploads.`);
+    console.warn(`⚠️ YouTube API quota reached or failed on ${p.slug}. Skipping remaining YouTube uploads.`);
     ytQuotaHit = true;
   }
 }
 console.log(`\nYouTube Scheduling Progress: ${ytScheduledCount} new videos scheduled.`);
 
 console.log("\n========================================================");
-console.log("   Expansion Batch Scheduling Run Complete!");
+console.log("   Expansion Batch Scheduling Run Complete! 🎉");
 console.log("========================================================");
-if (fbAborted) {
-  console.log("Note: Facebook scheduling was skipped/aborted (throttle cooldown). YouTube scheduling above is unaffected.");
-}
-}
-
-main().catch((err) => {
-  console.error("Scheduler failed:", err);
-  process.exit(1);
-});
