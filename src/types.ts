@@ -93,6 +93,12 @@ export type Scene = {
   chapterNumber?: number;
   /** Stage direction for the narrator/scene interaction (optional, defaults apply). */
   direction?: SceneDirection;
+  /** Ink Explainer layout modes: corner (default), center-stage, split-screen, or walking */
+  layout?: LongformLayout;
+  /** Configuration for split-screen comparison mode */
+  splitScreen?: SplitScreenConfig;
+  /** Optional sound effect audio track (e.g. whoosh, pop, ding) */
+  sfx?: string;
   /** Set by the voice script so edited text gets re-voiced. */
   voicedText?: string;
   /**
@@ -102,6 +108,19 @@ export type Scene = {
    * line up with the actual spoken words.
    */
   wordTimings?: Array<{start: number; end: number}>;
+};
+
+export type LongformLayout = "corner" | "center-stage" | "split-screen" | "walking";
+
+export type SplitScreenConfig = {
+  leftTitle: string;
+  leftSubtitle?: string;
+  leftImage?: string;
+  leftBadge?: string;
+  rightTitle: string;
+  rightSubtitle?: string;
+  rightImage?: string;
+  rightBadge?: string;
 };
 
 export type ScriptProps = {

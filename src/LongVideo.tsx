@@ -160,6 +160,224 @@ const ProgressBar: React.FC<{total: number}> = ({total}) => {
   );
 };
 
+const SplitScreenView: React.FC<{
+  config?: SplitScreenConfig;
+  durationInFrames: number;
+}> = ({config, durationInFrames}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  if (!config) return null;
+
+  const leftSlide = spring({
+    frame,
+    fps,
+    config: {damping: 14, mass: 0.8},
+  });
+  const rightSlide = spring({
+    frame: frame - 4,
+    fps,
+    config: {damping: 14, mass: 0.8},
+  });
+
+  return (
+    <AbsoluteFill style={{display: "flex", flexDirection: "row", overflow: "hidden", zIndex: 3}}>
+      {/* Left Column (e.g. Modern Day) */}
+      <div
+        style={{
+          flex: 1,
+          height: "100%",
+          position: "relative",
+          background: config.leftImage ? undefined : "linear-gradient(135deg, #1e293b 0%, #0f172a 100%)",
+          transform: `translateX(${(1 - leftSlide) * -100}%)`,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "40px 60px",
+          textAlign: "center",
+          boxSizing: "border-box",
+        }}
+      >
+        {config.leftImage ? (
+          <Img
+            src={staticFile(config.leftImage)}
+            style={{
+              position: "absolute",
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              filter: "brightness(0.6)",
+            }}
+          />
+        ) : null}
+        <div style={{position: "relative", zIndex: 2}}>
+          {config.leftBadge ? (
+            <div
+              style={{
+                display: "inline-block",
+                background: "#ef4444",
+                color: "#fff",
+                fontWeight: 900,
+                fontSize: 26,
+                padding: "8px 24px",
+                borderRadius: 50,
+                letterSpacing: 3,
+                textTransform: "uppercase",
+                marginBottom: 20,
+                boxShadow: "0 8px 20px rgba(239, 68, 68, 0.5)",
+                fontFamily: "Arial, sans-serif",
+              }}
+            >
+              {config.leftBadge}
+            </div>
+          ) : null}
+          <div
+            style={{
+              fontSize: 56,
+              fontWeight: 900,
+              color: "#fff",
+              lineHeight: 1.15,
+              textShadow: "0 6px 18px rgba(0,0,0,0.8)",
+              fontFamily: "Arial, sans-serif",
+            }}
+          >
+            {config.leftTitle}
+          </div>
+          {config.leftSubtitle ? (
+            <div
+              style={{
+                fontSize: 30,
+                color: "#94a3b8",
+                marginTop: 16,
+                fontWeight: 700,
+                textShadow: "0 4px 10px rgba(0,0,0,0.8)",
+                fontFamily: "Arial, sans-serif",
+              }}
+            >
+              {config.leftSubtitle}
+            </div>
+          ) : null}
+        </div>
+      </div>
+
+      {/* Center Divider & VS Badge */}
+      <div
+        style={{
+          width: 8,
+          height: "100%",
+          background: "#ffd93b",
+          boxShadow: "0 0 25px #ffd93b",
+          position: "relative",
+          zIndex: 10,
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            background: "#ffd93b",
+            color: "#111",
+            fontWeight: 900,
+            fontSize: 34,
+            width: 80,
+            height: 80,
+            borderRadius: "50%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            boxShadow: "0 8px 24px rgba(0,0,0,0.7)",
+            border: "4px solid #111",
+            fontFamily: "Arial, sans-serif",
+          }}
+        >
+          VS
+        </div>
+      </div>
+
+      {/* Right Column (e.g. Ancient Day) */}
+      <div
+        style={{
+          flex: 1,
+          height: "100%",
+          position: "relative",
+          background: config.rightImage ? undefined : "linear-gradient(135deg, #3f2c1d 0%, #1c130c 100%)",
+          transform: `translateX(${(1 - rightSlide) * 100}%)`,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "40px 60px",
+          textAlign: "center",
+          boxSizing: "border-box",
+        }}
+      >
+        {config.rightImage ? (
+          <Img
+            src={staticFile(config.rightImage)}
+            style={{
+              position: "absolute",
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              filter: "brightness(0.6)",
+            }}
+          />
+        ) : null}
+        <div style={{position: "relative", zIndex: 2}}>
+          {config.rightBadge ? (
+            <div
+              style={{
+                display: "inline-block",
+                background: "#22c55e",
+                color: "#111",
+                fontWeight: 900,
+                fontSize: 26,
+                padding: "8px 24px",
+                borderRadius: 50,
+                letterSpacing: 3,
+                textTransform: "uppercase",
+                marginBottom: 20,
+                boxShadow: "0 8px 20px rgba(34, 197, 94, 0.5)",
+                fontFamily: "Arial, sans-serif",
+              }}
+            >
+              {config.rightBadge}
+            </div>
+          ) : null}
+          <div
+            style={{
+              fontSize: 56,
+              fontWeight: 900,
+              color: "#ffd93b",
+              lineHeight: 1.15,
+              textShadow: "0 6px 18px rgba(0,0,0,0.8)",
+              fontFamily: "Arial, sans-serif",
+            }}
+          >
+            {config.rightTitle}
+          </div>
+          {config.rightSubtitle ? (
+            <div
+              style={{
+                fontSize: 30,
+                color: "#fde047",
+                marginTop: 16,
+                fontWeight: 700,
+                textShadow: "0 4px 10px rgba(0,0,0,0.8)",
+                fontFamily: "Arial, sans-serif",
+              }}
+            >
+              {config.rightSubtitle}
+            </div>
+          ) : null}
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 const LongScene: React.FC<{
   scene: Scene;
   index: number;
@@ -167,9 +385,53 @@ const LongScene: React.FC<{
   sameAsPrev: boolean;
   theme?: CharacterTheme;
 }> = ({scene, index, durationInFrames, sameAsPrev, theme}) => {
+  const frame = useCurrentFrame();
   const showCard = !!scene.chapterTitle && (scene.chapterNumber ?? 0) > 0;
 
   const isNpcSpeaking = scene.speaker === "npc";
+  const isCenterStage = scene.layout === "center-stage";
+  const isWalking = scene.layout === "walking";
+  const isSplit = scene.layout === "split-screen";
+
+  // Walking animation: horizontal movement across frame with subtle footsteps bob
+  const walkProgress = interpolate(frame, [0, durationInFrames], [180, 1280], {
+    extrapolateRight: "clamp",
+  });
+  const walkBob = Math.abs(Math.sin(frame / 4)) * 14;
+
+  let narratorContainerStyle: React.CSSProperties = {
+    position: "absolute",
+    right: 90,
+    bottom: 24,
+    filter: "drop-shadow(0 14px 28px rgba(0,0,0,0.65))",
+    zIndex: 5,
+  };
+
+  let narratorHeight = 600;
+  let narratorAnchorX = 0.88;
+
+  if (isCenterStage) {
+    narratorContainerStyle = {
+      position: "absolute",
+      left: "50%",
+      transform: "translateX(-50%)",
+      bottom: 24,
+      filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.75))",
+      zIndex: 5,
+    };
+    narratorHeight = 720;
+    narratorAnchorX = 0.5;
+  } else if (isWalking) {
+    narratorContainerStyle = {
+      position: "absolute",
+      left: walkProgress,
+      bottom: 24 + walkBob,
+      filter: "drop-shadow(0 14px 28px rgba(0,0,0,0.65))",
+      zIndex: 5,
+    };
+    narratorHeight = 580;
+    narratorAnchorX = 0.5;
+  }
 
   // Auto-detect or use explicit scene.npc
   let npcConfig =
@@ -198,14 +460,22 @@ const LongScene: React.FC<{
 
   return (
     <AbsoluteFill>
-      <Background
-        scene={scene}
-        index={index}
-        durationInFrames={durationInFrames}
-        sameAsPrev={sameAsPrev}
-      />
+      {isSplit ? (
+        <SplitScreenView config={scene.splitScreen} durationInFrames={durationInFrames} />
+      ) : (
+        <Background
+          scene={scene}
+          index={index}
+          durationInFrames={durationInFrames}
+          sameAsPrev={sameAsPrev}
+        />
+      )}
+
       {scene.ambientAudio ? (
         <Audio src={staticFile(scene.ambientAudio)} volume={0.22} />
+      ) : null}
+      {scene.sfx ? (
+        <Audio src={staticFile(scene.sfx)} volume={0.7} />
       ) : null}
       {/* If NPC is speaking, NPC component handles its own audio lipsync */}
       {!isNpcSpeaking && scene.audio ? <Audio src={staticFile(scene.audio)} /> : null}
@@ -219,7 +489,7 @@ const LongScene: React.FC<{
         return (
           <>
             {/* Render interactive secondary character if present in the scene */}
-            {npcConfig ? (
+            {npcConfig && !isSplit ? (
               <NPC
                 npc={npcConfig}
                 durationInFrames={durationInFrames}
@@ -227,28 +497,23 @@ const LongScene: React.FC<{
               />
             ) : null}
 
-            {/* Narrator performs bottom-right, listening or speaking */}
-            <div
-              style={{
-                position: "absolute",
-                right: 90,
-                bottom: 24,
-                filter: "drop-shadow(0 14px 28px rgba(0,0,0,0.65))",
-              }}
-            >
-              <Narrator
-                height={600}
-                theme={theme}
-                tunic={index % 2 === 0 ? "#e8cf9a" : "#d9bd86"}
-                plan={isNpcSpeaking ? undefined : plan}
-                gesture={isNpcSpeaking ? "think" : undefined}
-                talking={!isNpcSpeaking}
-                audioSrc={!isNpcSpeaking ? scene.audio : undefined}
-                focus={npcConfig ? {x: 0.25, y: 0.55} : undefined}
-                anchorX={0.88}
-                reaction={isNpcSpeaking ? "recoil" : undefined}
-              />
-            </div>
+            {/* Narrator performs dynamically based on scene layout */}
+            {!isSplit || isCenterStage ? (
+              <div style={narratorContainerStyle}>
+                <Narrator
+                  height={narratorHeight}
+                  theme={theme}
+                  tunic={index % 2 === 0 ? "#e8cf9a" : "#d9bd86"}
+                  plan={isNpcSpeaking ? undefined : plan}
+                  gesture={isNpcSpeaking ? "think" : isCenterStage ? "explain" : undefined}
+                  talking={!isNpcSpeaking}
+                  audioSrc={!isNpcSpeaking ? scene.audio : undefined}
+                  focus={npcConfig ? {x: 0.25, y: 0.55} : undefined}
+                  anchorX={narratorAnchorX}
+                  reaction={isNpcSpeaking ? "recoil" : undefined}
+                />
+              </div>
+            ) : null}
           </>
         );
       })()}
@@ -256,10 +521,15 @@ const LongScene: React.FC<{
       <div
         style={{
           position: "absolute",
-          left: 60,
-          right: 520,
-          bottom: 90,
+          left: isCenterStage || isSplit ? 120 : 60,
+          right: isCenterStage || isSplit ? 120 : 520,
+          bottom: isCenterStage ? 40 : isSplit ? 50 : 90,
           textAlign: "center",
+          zIndex: 15,
+          background: isCenterStage || isSplit ? "rgba(0,0,0,0.7)" : undefined,
+          borderRadius: isCenterStage || isSplit ? 16 : undefined,
+          padding: isCenterStage || isSplit ? "12px 28px" : undefined,
+          backdropFilter: isCenterStage || isSplit ? "blur(6px)" : undefined,
         }}
       >
         {scene.speakerName ? (

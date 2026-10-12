@@ -60,31 +60,60 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         fps={FPS}
-        durationInFrames={Math.round((2.2 + 6.5 + 9.3) * FPS)}
+        durationInFrames={Math.round((8.72 + 8.8 + 6.75 + 6.5) * FPS)}
+        calculateMetadata={({props}) => ({
+          durationInFrames: totalFrames(props.scenes),
+        })}
         defaultProps={{
           slug: "gladiator-real-life",
-          title: "Who Ended Up in the Sand?",
+          title: "Gladiator Reality: What Was It Actually Like?",
           hook: "Gladiator Reality",
           channelName: "A Day Back Then",
           scenes: [
             {
               speaker: "narrator",
               speakerName: "NARRATOR",
-              text: "Look at that guy over in the corner.",
+              text: "Think your morning alarm is torture? Ancient Romans did not have 9-to-5s, but waking up back then was a whole different beast.",
+              mood: "dark",
+              image: "long/gladiator-real-life/1.png",
+              audio: "audio/dialogue-test/ink_scene1.wav",
+              ambientAudio: "audio/ambient/gladiator-barracks.wav",
+              sfx: "audio/sfx/whoosh.wav",
+              layout: "split-screen",
+              splitScreen: {
+                leftBadge: "TODAY",
+                leftTitle: "9-TO-5 GRIND",
+                leftSubtitle: "Alarm at 6 AM • Rush Hour • Emails",
+                rightBadge: "ANCIENT ROME",
+                rightTitle: "SUNRISE SURVIVAL",
+                rightSubtitle: "Dawn Roll Call • Debt • Sand Arena",
+                leftImage: "long/gladiator-real-life/1.png",
+                rightImage: "long/gladiator-real-life/2.png",
+              },
+              seconds: 8.72,
+            },
+            {
+              speaker: "narrator",
+              speakerName: "NARRATOR",
+              text: "In the arena, you were not an action movie superstar. You were property, living on barley porridge and constant fear.",
+              mood: "warm",
+              image: "long/gladiator-real-life/1.png",
+              audio: "audio/dialogue-test/ink_scene2.wav",
+              ambientAudio: "audio/ambient/gladiator-barracks.wav",
+              sfx: "audio/sfx/pop.wav",
+              layout: "center-stage",
+              seconds: 8.8,
+            },
+            {
+              speaker: "narrator",
+              speakerName: "NARRATOR",
+              text: "Every single morning, gladiators marched into the training courtyard under the watchful eyes of their doctors and guards.",
               mood: "cool",
               image: "long/gladiator-real-life/2.png",
-              audio: "audio/dialogue-test/1_narrator.mp3",
+              audio: "audio/dialogue-test/ink_scene3.wav",
               ambientAudio: "audio/ambient/gladiator-barracks.wav",
-              npc: {
-                theme: "roman",
-                tunic: "#e2d2b4",
-                position: "left-corner",
-                facing: "right",
-                height: 410,
-                gesture: "think",
-                expression: "nervous",
-              },
-              seconds: 2.2,
+              layout: "walking",
+              seconds: 6.75,
             },
             {
               speaker: "npc",
@@ -94,6 +123,8 @@ export const RemotionRoot: React.FC = () => {
               image: "long/gladiator-real-life/2.png",
               audio: "audio/dialogue-test/2_npc.mp3",
               ambientAudio: "audio/ambient/gladiator-barracks.wav",
+              sfx: "audio/sfx/pop.wav",
+              layout: "corner",
               npc: {
                 theme: "roman",
                 tunic: "#e2d2b4",
@@ -107,25 +138,6 @@ export const RemotionRoot: React.FC = () => {
                 audio: "audio/dialogue-test/2_npc.mp3",
               },
               seconds: 6.5,
-            },
-            {
-              speaker: "narrator",
-              speakerName: "NARRATOR",
-              text: "Believe it or not, he's a free citizen. Some Romans actually volunteered for this, signing away their freedom just to escape crushing debt.",
-              mood: "cool",
-              image: "long/gladiator-real-life/2.png",
-              audio: "audio/dialogue-test/3_narrator.mp3",
-              ambientAudio: "audio/ambient/gladiator-barracks.wav",
-              npc: {
-                theme: "roman",
-                tunic: "#e2d2b4",
-                position: "left-corner",
-                facing: "right",
-                height: 410,
-                gesture: "think",
-                expression: "nervous",
-              },
-              seconds: 9.3,
             },
           ],
         }}
