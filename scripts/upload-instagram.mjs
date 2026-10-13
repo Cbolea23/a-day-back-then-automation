@@ -269,7 +269,7 @@ export async function uploadInstagramReel(slug, options = {}) {
   // Step 3: Wait for Meta to finish processing video
   console.log("3. Waiting for Instagram processing...");
   let ready = false;
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 60; i++) {
     await new Promise((r) => setTimeout(r, 4000));
     const statusRes = await fetch(`https://graph.facebook.com/v20.0/${creationId}?fields=status_code&access_token=${pageAccessToken}`);
     const statusData = await statusRes.json();
