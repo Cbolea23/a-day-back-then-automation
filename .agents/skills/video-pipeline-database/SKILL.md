@@ -2,8 +2,9 @@
 name: video-pipeline-database
 description: >-
   Manage video vault storage, scheduling calendars, cross-platform metadata,
-  and social publishing queues across YouTube, Facebook, and TikTok.
+  and social publishing queues across YouTube and Instagram ONLY.
   Handles quota throttling, scheduled release slots, and database tracking.
+  Facebook and TikTok are explicitly excluded.
   Use when scheduling videos, checking publishing status, or auditing the vault.
 ---
 
