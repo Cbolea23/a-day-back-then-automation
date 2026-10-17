@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T06:27:29.612Z",
+  "updatedAt": "2026-10-17T10:07:35.731Z",
   "scheduledBatch": [
     {
       "slug": "roman-garum",
@@ -350,6 +350,72 @@
       "youtube": {
         "videoId": "M7osQJyd578",
         "url": "https://youtube.com/shorts/M7osQJyd578",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "maya-blue-miracle-pigment",
+      "display": "Oct 20, 11:00 AM UTC+8",
+      "isoSchedule": "2026-10-20T03:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "ifPjUZiCoTI",
+        "url": "https://youtube.com/shorts/ifPjUZiCoTI",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "maya-rubber-ball-game",
+      "display": "Oct 20, 05:00 PM UTC+8",
+      "isoSchedule": "2026-10-20T09:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "NwUMe_O6UTw",
+        "url": "https://youtube.com/shorts/NwUMe_O6UTw",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "mesopotamia-beer-currency",
+      "display": "Oct 21, 11:00 AM UTC+8",
+      "isoSchedule": "2026-10-21T03:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "zP8NwlIvrjQ",
+        "url": "https://youtube.com/shorts/zP8NwlIvrjQ",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "mongol-bow-deadly-range",
+      "display": "Oct 21, 05:00 PM UTC+8",
+      "isoSchedule": "2026-10-21T09:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "yt2Mbf95hAE",
+        "url": "https://youtube.com/shorts/yt2Mbf95hAE",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "mongol-yam-postal-system",
+      "display": "Oct 22, 11:00 AM UTC+8",
+      "isoSchedule": "2026-10-22T03:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "py5xPXqO8dg",
+        "url": "https://youtube.com/shorts/py5xPXqO8dg",
+        "status": "SCHEDULED"
+      }
+    },
+    {
+      "slug": "ninja-night-signals",
+      "display": "Oct 22, 05:00 PM UTC+8",
+      "isoSchedule": "2026-10-22T09:00:00Z",
+      "remasteredVersion": true,
+      "youtube": {
+        "videoId": "D_wYQ8G5acg",
+        "url": "https://youtube.com/shorts/D_wYQ8G5acg",
         "status": "SCHEDULED"
       }
     }
