@@ -32,6 +32,10 @@ export const HALLOWEEN_THEMES: CharacterTheme[] = [
   "gravedigger",
   "nun",
   "demon",
+  "albularyo",
+  "barong",
+  "katipunero",
+  "modern",
 ];
 
 export const ALL_THEMES: CharacterTheme[] = [

@@ -264,8 +264,11 @@ const SceneView: React.FC<{
   hook: string;
   durationInFrames: number;
   slug: string;
-}> = ({scene, index, hook, durationInFrames, slug}) => {
-  const theme = getThemeFromSlug(slug);
+  narratorTheme?: string;
+  narratorTunic?: string;
+  narratorAccent?: string;
+}> = ({scene, index, hook, durationInFrames, slug, narratorTheme, narratorTunic, narratorAccent}) => {
+  const theme = (narratorTheme as any) || getThemeFromSlug(slug);
   const {fps} = useVideoConfig();
 
   const isNpcSpeaking = scene.speaker === "npc";
@@ -352,6 +355,8 @@ const SceneView: React.FC<{
             <Narrator
               height={nHeight}
               theme={theme}
+              tunic={narratorTunic}
+              accentColor={narratorAccent}
               plan={isNpcSpeaking ? undefined : plan}
               gesture={isNpcSpeaking ? "think" : undefined}
               talking={!isNpcSpeaking}
@@ -392,7 +397,15 @@ const SceneView: React.FC<{
   );
 };
 
-export const Short: React.FC<ScriptProps> = ({scenes, hook, channelName, slug}) => {
+export const Short: React.FC<ScriptProps> = ({
+  scenes,
+  hook,
+  channelName,
+  slug,
+  narratorTheme,
+  narratorTunic,
+  narratorAccent,
+}) => {
   let cursor = 0;
   return (
     <AbsoluteFill style={{backgroundColor: "#000"}}>
@@ -408,6 +421,9 @@ export const Short: React.FC<ScriptProps> = ({scenes, hook, channelName, slug}) 
               hook={hook}
               durationInFrames={frames}
               slug={slug}
+              narratorTheme={narratorTheme}
+              narratorTunic={narratorTunic}
+              narratorAccent={narratorAccent}
             />
           </Sequence>
         );

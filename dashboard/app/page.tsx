@@ -1,1682 +1,2393 @@
-'use client';
+"use client";
 
-import React, {useState, useEffect, useRef, useCallback} from 'react';
+import React, {useState, useEffect, useCallback, useRef} from "react";
+import {NarratorPreview} from "./NarratorPreview";
 
-// --- Icons (inline SVG, zero external dependencies) ---
-const IconSparkles = () => (
-  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-  </svg>
-);
-const IconPlay = () => (
-  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-  </svg>
-);
-const IconCheck = () => (
-  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-  </svg>
-);
-const IconRefresh = () => (
-  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-  </svg>
-);
-const IconTerminal = () => (
-  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-  </svg>
-);
-const IconVolume = () => (
-  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
-  </svg>
-);
-const IconUpload = () => (
-  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-  </svg>
-);
-const IconGlobe = () => (
-  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-  </svg>
-);
-const IconPhone = () => (
-  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-  </svg>
-);
-const IconCopy = () => (
-  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
-  </svg>
-);
-const IconImage = () => (
-  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-  </svg>
-);
-const IconUsers = () => (
-  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-  </svg>
-);
+type User = {
+  id: string;
+  name: string;
+  email: string;
+  role: string;
+  avatarColor: string;
+};
 
-// --- Types ---
+type SceneItem = {
+  text: string;
+  mood?: string;
+  imagePrompt?: string;
+  image?: string;
+  audio?: string;
+  seconds?: number;
+  speaker?: "narrator" | "npc";
+  speakerName?: string;
+};
+
+type StoryScript = {
+  slug: string;
+  title: string;
+  hook: string;
+  channelName: string;
+  artStyle?: string;
+  narratorTheme?: string;
+  narratorTunic?: string;
+  narratorAccent?: string;
+  voice?: string;
+  language?: string;
+  emotionPreset?: string;
+  scenes: SceneItem[];
+  claimsToVerify?: string[];
+  generatedBy?: string;
+};
+
 type VaultVideo = {
   slug: string;
-  title: string;
-  duration: string;
-  durationSec: number;
+  filename: string;
   sizeMB: number;
-  dateAdded: string;
-  type: string;
-  aspectRatio: string;
-  relPath: string;
+  durationSec: number;
+  updatedAt: number;
+  isLong?: boolean;
 };
 
-type TopicItem = {
-  slug: string;
-  title: string;
-  format?: string;
-  angle?: string;
-  category: "original-short" | "expansion-short" | "longform";
-  targetMinutes?: number;
-  imagesReady: number;
-  imagesTarget: number;
-  imageStatus: "complete" | "partial" | "waiting";
-  hasPrompt: boolean;
-  hasScript: boolean;
-  hasVoice: boolean;
-  hasVideo: boolean;
-};
-
-type RenderJob = {
+type JobItem = {
   id: string;
   kind: string;
   slug: string;
-  status: string;
+  status: "queued" | "running" | "done" | "failed" | "interrupted";
   progress: number;
-  frame: number;
-  totalFrames: number;
   log: string[];
-  startedAt: number;
-  finishedAt?: number;
   error?: string;
 };
 
-type TunnelInfo = {
-  status: "stopped" | "starting" | "running" | "error";
-  url: string | null;
-  error: string | null;
-  localUrl: string;
-  localhostUrl: string;
-  localIp: string;
+const DRESS_SWATCHES = [
+  {name: "Default", hex: ""},
+  {name: "Albularyo Earth", hex: "#5c3d28"},
+  {name: "Crimson Blood", hex: "#8f1212"},
+  {name: "Midnight Obsidian", hex: "#18181b"},
+  {name: "Royal Purple", hex: "#5b2d86"},
+  {name: "Imperial Gold", hex: "#d4af37"},
+  {name: "Forest Druid", hex: "#2d5a27"},
+  {name: "Ocean Indigo", hex: "#1e3a8a"},
+  {name: "Barong Cream", hex: "#f7f1e1"},
+  {name: "Ember Orange", hex: "#c2410c"},
+];
+
+const STYLE_GRADIENTS: Record<string, string> = {
+  "classic-cartoon": "linear-gradient(160deg, #f3b46b 0%, #c8693a 55%, #432012 100%)",
+  "dark-folklore": "linear-gradient(160deg, #0f172a 0%, #31102f 55%, #7f1d1d 100%)",
+  "anime-cinematic": "linear-gradient(160deg, #38bdf8 0%, #6366f1 55%, #1e1b4b 100%)",
+  "vintage-woodcut": "linear-gradient(160deg, #d6c7b2 0%, #8c7355 55%, #3a2e21 100%)",
+  "comic-pulp": "linear-gradient(160deg, #facc15 0%, #ef4444 55%, #111827 100%)",
+  "cinematic-realism": "linear-gradient(160deg, #1f2937 0%, #111827 55%, #030712 100%)",
 };
 
-type TopicDetails = {
-  slug: string;
-  isLong: boolean;
-  imagesCount: number;
-  images: {name: string; url: string; sizeKB: number}[];
-  promptText: string;
+const STYLE_PREVIEW_IMAGES: Record<string, string> = {
+  "classic-cartoon": "/styles/classic-cartoon.jpg",
+  "dark-folklore": "/styles/dark-folklore.png",
+  "anime-cinematic": "/styles/anime-cinematic.png",
+  "vintage-woodcut": "/styles/vintage-woodcut.png",
+  "comic-pulp": "/styles/comic-pulp.png",
+  "cinematic-realism": "/styles/cinematic-realism.png",
 };
 
-async function api<T>(path: string, init?: RequestInit): Promise<T> {
-  const res = await fetch(path, init);
-  const data = await res.json();
-  if (!res.ok) throw new Error(data.error || `Request failed (${res.status})`);
-  return data as T;
-}
+export default function StudioDashboard() {
+  // Navigation & Auth State
+  const [activeTab, setActiveTab] = useState<"create" | "vault" | "jobs" | "settings">("create");
+  const [user, setUser] = useState<User | null>(null);
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const [authMode, setAuthMode] = useState<"login" | "register">("login");
+  const [authName, setAuthName] = useState("");
+  const [authEmail, setAuthEmail] = useState("");
+  const [authPassword, setAuthPassword] = useState("");
+  const [authError, setAuthError] = useState("");
+  const [authLoading, setAuthLoading] = useState(false);
 
-export default function DashboardApp() {
-  const [activeTab, setActiveTab] = useState<'overview' | 'muse' | 'npc' | 'vault' | 'generator' | 'renders' | 'publisher' | 'remote' | 'settings'>('overview');
-  const [vault, setVault] = useState<VaultVideo[]>([]);
-  const [topics, setTopics] = useState<TopicItem[]>([]);
-  const [topicStats, setTopicStats] = useState<any>(null);
-  const [renderJobs, setRenderJobs] = useState<RenderJob[]>([]);
-  const [tunnel, setTunnel] = useState<TunnelInfo | null>(null);
-  const [tunnelBusy, setTunnelBusy] = useState(false);
-  const [logs, setLogs] = useState<{id: number; time: string; script: string; msg: string; type: string}[]>([]);
-  const logEndRef = useRef<HTMLDivElement>(null);
+  // Studio Catalogs (loaded from /api/studio)
+  const [artStyles, setArtStyles] = useState<any[]>([]);
+  const [voices, setVoices] = useState<any[]>([]);
+  const [costumes, setCostumes] = useState<any[]>([]);
+  const [topicPresets, setTopicPresets] = useState<any[]>([]);
+  const [savedStories, setSavedStories] = useState<any[]>([]);
 
-  // Filters & selection
-  const [categoryFilter, setCategoryFilter] = useState<'all' | 'original-short' | 'expansion-short' | 'longform'>('all');
-  const [artFilter, setArtFilter] = useState<'all' | 'complete' | 'partial' | 'waiting'>('all');
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedTopic, setSelectedTopic] = useState<string>('');
-  const [topicDetails, setTopicDetails] = useState<TopicDetails | null>(null);
-  const [loadingDetails, setLoadingDetails] = useState(false);
+  // Active Story Creation State
+  const [topicInput, setTopicInput] = useState("Mangkukulam: The Terrifying Truth About Filipino Witchcraft");
+  const [selectedTopicCategory, setSelectedTopicCategory] = useState<string>("all");
+  const [selectedArtStyle, setSelectedArtStyle] = useState("dark-folklore");
+  const [selectedCostumeGroup, setSelectedCostumeGroup] = useState("All");
+  const [selectedTheme, setSelectedTheme] = useState("albularyo");
+  const [selectedTunic, setSelectedTunic] = useState("");
+  const [selectedAccent, setSelectedAccent] = useState("");
+  const [selectedVoice, setSelectedVoice] = useState("fil-PH-AngeloNeural");
+  const [selectedVoiceCategory, setSelectedVoiceCategory] = useState<string>("all");
+  const [selectedEmotionPreset, setSelectedEmotionPreset] = useState<string>("spooky-suspense");
+  const [selectedLanguage, setSelectedLanguage] = useState<"en" | "taglish" | "tl">("en");
+  const [selectedTone, setSelectedTone] = useState("spooky-curious");
 
-  // Script & voice state
-  const [scriptOutput, setScriptOutput] = useState('');
-  const [isGeneratingScript, setIsGeneratingScript] = useState(false);
-  const [isGeneratingVoice, setIsGeneratingVoice] = useState(false);
-  const [voiceDone, setVoiceDone] = useState(false);
-  const [newTopicInput, setNewTopicInput] = useState('');
-  const [busyMsg, setBusyMsg] = useState('');
-  const [copyFeedback, setCopyFeedback] = useState('');
+  // Loaded / Generated Story Script
+  const [currentScript, setCurrentScript] = useState<StoryScript | null>(null);
+  const [previewSceneIndex, setPreviewSceneIndex] = useState<number>(0);
+  const [playingVoiceId, setPlayingVoiceId] = useState<string | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [busyAction, setBusyAction] = useState<string | null>(null);
+  const [sceneBusyIndex, setSceneBusyIndex] = useState<number | null>(null);
+  const [toast, setToast] = useState<{type: "ok" | "err" | "info"; text: string} | null>(null);
+  const [imageCacheBuster, setImageCacheBuster] = useState<number>(Date.now());
 
-  // Video preview modal
-  const [previewVideo, setPreviewVideo] = useState<VaultVideo | null>(null);
+  // Vault & Jobs State
+  const [vaultVideos, setVaultVideos] = useState<VaultVideo[]>([]);
+  const [selectedVaultCategory, setSelectedVaultCategory] = useState<string>("all");
+  const [previewVideoSlug, setPreviewVideoSlug] = useState<string | null>(null);
+  const [jobs, setJobs] = useState<JobItem[]>([]);
 
-  // Publisher state
-  const [publishSlug, setPublishSlug] = useState('');
-  const [platforms, setPlatforms] = useState<Record<string, boolean>>({youtube: true, facebook: true, tiktok: true, instagram: true});
-  const [publishJobs, setPublishJobs] = useState<{id: string; platform: string}[]>([]);
-  const [publishStatus, setPublishStatus] = useState<Record<string, RenderJob>>({});
-
-  // Settings
-  const [keyInput, setKeyInput] = useState('');
-  const [keyStatus, setKeyStatus] = useState<{geminiKeySet: boolean; geminiKeySource: string | null} | null>(null);
-  const [keyMsg, setKeyMsg] = useState('');
-  const [keyBusy, setKeyBusy] = useState(false);
-
-  // NPC status
-  const [npcInfo, setNpcInfo] = useState<any>(null);
-
-  const addLog = useCallback((script: string, msg: string, type = 'info') => {
-    const time = new Date().toLocaleTimeString();
-    setLogs(prev => [...prev.slice(-199), {id: Date.now() + Math.random(), time, script, msg, type}]);
-  }, []);
-
-  const refreshVault = useCallback(async () => {
-    try {
-      const d = await api<{videos: VaultVideo[]}>('/api/vault');
-      setVault(d.videos);
-    } catch (e) {
-      addLog('vault', String(e), 'warning');
-    }
-  }, [addLog]);
-
-  const refreshTopics = useCallback(async () => {
-    try {
-      const d = await api<{topics: TopicItem[]; stats: any}>('/api/topics');
-      setTopics(d.topics);
-      setTopicStats(d.stats);
-      if (!selectedTopic && d.topics.length) {
-        setSelectedTopic(d.topics[0].slug);
-      }
-    } catch (e) {
-      addLog('topics', String(e), 'warning');
-    }
-  }, [addLog, selectedTopic]);
-
-  const refreshRenders = useCallback(async () => {
-    try {
-      const d = await api<{jobs: RenderJob[]}>('/api/render');
-      setRenderJobs(d.jobs);
-      return d.jobs;
-    } catch {
-      return [];
-    }
-  }, []);
-
-  const refreshTunnel = useCallback(async () => {
-    try {
-      const d = await api<TunnelInfo>('/api/remote');
-      setTunnel(d);
-    } catch {}
-  }, []);
-
-  const refreshNpc = useCallback(async () => {
-    try {
-      const d = await api<any>('/api/npc');
-      setNpcInfo(d);
-    } catch {}
-  }, []);
-
-  const loadTopicDetails = useCallback(async (slug: string) => {
-    if (!slug) return;
-    setLoadingDetails(true);
-    try {
-      const d = await api<TopicDetails>(`/api/images?slug=${encodeURIComponent(slug)}`);
-      setTopicDetails(d);
-    } catch (e) {
-      addLog('images', `Failed loading assets for ${slug}: ${e}`, 'warning');
-    }
-    setLoadingDetails(false);
-  }, [addLog]);
-
-  useEffect(() => {
-    refreshVault();
-    refreshTopics();
-    refreshRenders();
-    refreshTunnel();
-    refreshNpc();
-    api<{geminiKeySet: boolean; geminiKeySource: string | null}>('/api/settings/keys')
-      .then(setKeyStatus)
-      .catch(() => {});
-    addLog('dashboard', '🚀 Local & Remote Hub Online. Auto-scanned topics, vault & tunnel state.', 'success');
-  }, [refreshVault, refreshTopics, refreshRenders, refreshTunnel, refreshNpc, addLog]);
-
-  useEffect(() => {
-    if (selectedTopic) {
-      loadTopicDetails(selectedTopic);
-    }
-  }, [selectedTopic, loadTopicDetails]);
-
-  useEffect(() => {
-    logEndRef.current?.scrollIntoView({behavior: 'smooth'});
-  }, [logs]);
-
-  // Poll render jobs
-  useEffect(() => {
-    const active = renderJobs.some(j => j.status === 'running' || j.status === 'queued');
-    if (!active) return;
-    const t = setInterval(refreshRenders, 2000);
-    return () => clearInterval(t);
-  }, [renderJobs, refreshRenders]);
-
-  // Toggle Cloudflare Tunnel
-  const handleToggleTunnel = async () => {
-    setTunnelBusy(true);
-    try {
-      const action = tunnel?.status === 'running' ? 'stop' : 'start';
-      addLog('tunnel', action === 'start' ? 'Connecting secure Cloudflare Tunnel for phone access…' : 'Stopping tunnel…', 'info');
-      const res = await api<TunnelInfo>('/api/remote', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({action}),
-      });
-      setTunnel(res);
-      if (res.status === 'running' && res.url) {
-        addLog('tunnel', `✅ Public Phone Access Live: ${res.url}`, 'success');
-      } else if (res.status === 'stopped') {
-        addLog('tunnel', 'Tunnel offline.', 'info');
-      }
-    } catch (e) {
-      addLog('tunnel', `Tunnel error: ${e}`, 'warning');
-    }
-    setTunnelBusy(false);
-  };
-
-  const copyToClipboard = (text: string, label: string) => {
-    navigator.clipboard.writeText(text);
-    setCopyFeedback(label);
-    setTimeout(() => setCopyFeedback(''), 2500);
-  };
-
-  // Trigger Render for short / long
-  const handleTriggerRender = async (slug: string, kind: 'short' | 'long' = 'short') => {
-    addLog('render', `Queuing ${kind} render for "${slug}"…`, 'info');
-    try {
-      const d = await api<{job: RenderJob}>('/api/render', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({slug, kind}),
-      });
-      setRenderJobs(prev => [d.job, ...prev]);
-      setActiveTab('renders');
-      addLog('render', `Job started: ${d.job.id}`, 'success');
-    } catch (e) {
-      addLog('render', `Render failed: ${e}`, 'warning');
-    }
-  };
-
-  // Trigger process images & re-render
-  const handleProcessImages = async (slug?: string) => {
-    addLog('processor', `Linking Muse AI images & batch rendering ${slug ? slug : 'all ready topics'}…`, 'info');
-    try {
-      const d = await api<{job: RenderJob}>('/api/images', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({slug}),
-      });
-      setRenderJobs(prev => [d.job, ...prev]);
-      setActiveTab('renders');
-      addLog('processor', `Process job started: ${d.job.id}`, 'success');
-    } catch (e) {
-      addLog('processor', `Failed: ${e}`, 'warning');
-    }
-  };
-
-  // Filter topics
-  const filteredTopics = topics.filter(t => {
-    if (categoryFilter !== 'all' && t.category !== categoryFilter) return false;
-    if (artFilter !== 'all' && t.imageStatus !== artFilter) return false;
-    if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase();
-      return t.title.toLowerCase().includes(q) || t.slug.toLowerCase().includes(q);
-    }
-    return true;
+  // Settings Tab State
+  const [settingsData, setSettingsData] = useState<any>(null);
+  const [keyInputs, setKeyInputs] = useState<Record<string, string>>({
+    FREELLMAPI_URL: "http://localhost:3001/v1",
+    FREELLMAPI_KEY: "",
+    GROQ_API_KEY: "",
+    CEREBRAS_API_KEY: "",
+    GEMINI_API_KEY: "",
+    OPENROUTER_API_KEY: "",
+    MISTRAL_API_KEY: "",
+    HF_API_KEY: "",
+    IMAGE_PROVIDER: "auto",
+    VOICE_PROVIDER: "edge",
+    GITHUB_REPO: "",
+    GITHUB_TOKEN: "",
+    youtubeClientSecretJson: "",
+    fbPageId: "",
+    igUserId: "",
+    fbPageAccessToken: "",
   });
+  const [llmTestResult, setLlmTestResult] = useState<any>(null);
+  const [tunnelInfo, setTunnelInfo] = useState<any>(null);
 
-  const selectedTopicObj = topics.find(t => t.slug === selectedTopic);
+  const notify = useCallback((text: string, type: "ok" | "err" | "info" = "ok") => {
+    setToast({text, type});
+    setTimeout(() => {
+      setToast((prev) => (prev?.text === text ? null : prev));
+    }, 6000);
+  }, []);
 
-  const nav = [
-    {id: 'overview', label: '📊 Dashboard', icon: '📊', badge: null},
-    {id: 'muse', label: '🎨 Muse AI Tracker', icon: '🎨', badge: topicStats ? `${topicStats.imagesComplete}/${topicStats.total}` : null},
-    {id: 'npc', label: '🎭 NPCs & Dialogue', icon: '🎭', badge: 'NEW'},
-    {id: 'vault', label: '📦 Vault Library', icon: '📦', badge: vault.length || null},
-    {id: 'generator', label: '⚡ Pipeline Studio', icon: '⚡', badge: null},
-    {id: 'renders', label: '🎥 Render Queue', icon: '🎥', badge: renderJobs.filter(r => r.status === 'running' || r.status === 'queued').length || null},
-    {id: 'publisher', label: '🚀 Publisher', icon: '🚀', badge: null},
-    {id: 'remote', label: '📱 Phone Remote', icon: '📱', badge: tunnel?.status === 'running' ? 'LIVE' : null},
-    {id: 'settings', label: '⚙️ Settings', icon: '⚙️', badge: null},
-  ];
+  const handlePlayVoiceSample = useCallback((voiceId: string) => {
+    if (playingVoiceId === voiceId) {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
+      setPlayingVoiceId(null);
+      return;
+    }
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+
+    const alt1 = voiceId.replace("Multilingual", "");
+    const alt2 = voiceId.startsWith("en-PH-")
+      ? voiceId.replace("en-PH-", "fil-PH-")
+      : voiceId.startsWith("fil-PH-")
+      ? voiceId.replace("fil-PH-", "en-PH-")
+      : voiceId;
+
+    const candidateUrls = Array.from(new Set([
+      `/api/asset?path=audio/samples/${voiceId}.mp3`,
+      `/voices/${voiceId}.mp3`,
+      `/api/asset?path=audio/samples/${alt1}.mp3`,
+      `/voices/${alt1}.mp3`,
+      `/api/asset?path=audio/samples/${alt2}.mp3`,
+      `/voices/${alt2}.mp3`,
+    ]));
+
+    let candidateIdx = 0;
+    const tryNext = () => {
+      if (candidateIdx >= candidateUrls.length) {
+        notify("Audio sample preview unavailable", "info");
+        setPlayingVoiceId(null);
+        return;
+      }
+      const url = candidateUrls[candidateIdx++];
+      const audio = new Audio(url);
+      audioRef.current = audio;
+      setPlayingVoiceId(voiceId);
+
+      audio.onended = () => {
+        setPlayingVoiceId((curr) => (curr === voiceId ? null : curr));
+      };
+      audio.onerror = () => {
+        tryNext();
+      };
+      audio.play().catch(() => {
+        tryNext();
+      });
+    };
+
+    tryNext();
+  }, [playingVoiceId, notify]);
+
+  // Initial Data Load
+  const loadStudioCatalog = useCallback(async () => {
+    try {
+      const res = await fetch("/api/studio");
+      if (res.ok) {
+        const data = await res.json();
+        setArtStyles(data.artStyles || []);
+        setVoices(data.voices || []);
+        setCostumes(data.costumes || []);
+        setTopicPresets(data.topicPresets || []);
+        setSavedStories(data.stories || []);
+      }
+    } catch {}
+  }, []);
+
+  const loadVaultAndJobs = useCallback(async () => {
+    try {
+      const [vRes, rRes] = await Promise.all([fetch("/api/vault"), fetch("/api/render")]);
+      if (vRes.ok) {
+        const vData = await vRes.json();
+        setVaultVideos(vData.videos || []);
+      }
+      if (rRes.ok) {
+        const rData = await rRes.json();
+        setJobs(rData.jobs || []);
+      }
+    } catch {}
+  }, []);
+
+  const loadSettings = useCallback(async () => {
+    try {
+      const [kRes, tRes] = await Promise.all([fetch("/api/settings/keys"), fetch("/api/remote")]);
+      if (kRes.ok) {
+        const kData = await kRes.json();
+        setSettingsData(kData);
+        setKeyInputs((prev) => ({
+          ...prev,
+          FREELLMAPI_URL: kData.freellmapiUrl || prev.FREELLMAPI_URL,
+          IMAGE_PROVIDER: kData.preferences?.IMAGE_PROVIDER || "auto",
+          VOICE_PROVIDER: kData.preferences?.VOICE_PROVIDER || "edge",
+          GITHUB_REPO: kData.preferences?.GITHUB_REPO || "",
+          fbPageId: kData.social?.facebookPageId || "",
+          igUserId: kData.social?.instagramUserId || "",
+        }));
+      }
+      if (tRes.ok) {
+        setTunnelInfo(await tRes.json());
+      }
+    } catch {}
+  }, []);
+
+  useEffect(() => {
+    fetch("/api/auth")
+      .then((r) => r.json())
+      .then((d) => {
+        if (d.authenticated && d.user) setUser(d.user);
+      })
+      .catch(() => {});
+    loadStudioCatalog();
+    loadVaultAndJobs();
+    loadSettings();
+  }, [loadStudioCatalog, loadVaultAndJobs, loadSettings]);
+
+  // Poll active jobs every 2.5s
+  useEffect(() => {
+    const hasRunning = jobs.some((j) => j.status === "running" || j.status === "queued");
+    if (!hasRunning && activeTab !== "jobs") return;
+    const timer = setInterval(() => {
+      loadVaultAndJobs();
+    }, 2500);
+    return () => clearInterval(timer);
+  }, [jobs, activeTab, loadVaultAndJobs]);
+
+  // Auth Handlers
+  async function handleAuthSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setAuthError("");
+    setAuthLoading(true);
+    try {
+      const res = await fetch("/api/auth", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          action: authMode,
+          name: authName,
+          email: authEmail,
+          password: authPassword,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setAuthError(data.error || "Authentication failed");
+      } else {
+        setUser(data.user);
+        setShowAuthModal(false);
+        notify(`Welcome, ${data.user.name}!`, "ok");
+      }
+    } catch (err: any) {
+      setAuthError(err.message || "Network error");
+    } finally {
+      setAuthLoading(false);
+    }
+  }
+
+  async function handleLogout() {
+    await fetch("/api/auth", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({action: "logout"}),
+    });
+    setUser(null);
+    notify("Signed out.", "info");
+  }
+
+  // Story Generation & Editing Handlers
+  async function handleGenerateStory() {
+    if (!topicInput.trim()) {
+      notify("Please enter a topic or story idea first!", "err");
+      return;
+    }
+    setBusyAction("Generating full story & scene prompts via AI...");
+    try {
+      const res = await fetch("/api/studio", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          action: "generate-story",
+          topic: topicInput,
+          artStyle: selectedArtStyle,
+          narratorTheme: selectedTheme,
+          narratorTunic: selectedTunic,
+          narratorAccent: selectedAccent,
+          voice: selectedVoice,
+          language: selectedLanguage,
+          tone: selectedTone,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Story generation failed");
+      setCurrentScript(data.script);
+      loadStudioCatalog();
+      notify(`Story "${data.script.title}" created (${data.script.scenes.length} scenes)!`, "ok");
+    } catch (err: any) {
+      notify(err.message || "Story generation failed", "err");
+    } finally {
+      setBusyAction(null);
+    }
+  }
+
+  async function handleLoadStory(slug: string) {
+    setBusyAction(`Loading story ${slug}...`);
+    try {
+      const res = await fetch(`/api/studio?slug=${encodeURIComponent(slug)}`);
+      const data = await res.json();
+      if (res.ok && data.script) {
+        setCurrentScript(data.script);
+        if (data.script.artStyle) setSelectedArtStyle(data.script.artStyle);
+        if (data.script.narratorTheme) setSelectedTheme(data.script.narratorTheme);
+        setSelectedTunic(data.script.narratorTunic || "");
+        setSelectedAccent(data.script.narratorAccent || "");
+        if (data.script.voice) {
+          setSelectedVoice(data.script.voice);
+          if (data.script.voice.includes("-PH-") || data.script.voice.startsWith("fil-")) {
+            setSelectedVoiceCategory("filipino");
+          }
+        }
+        if (data.script.language) setSelectedLanguage(data.script.language);
+        if (data.script.emotionPreset) setSelectedEmotionPreset(data.script.emotionPreset);
+        notify(`Loaded "${data.script.title}"`, "info");
+      }
+    } catch {
+      notify("Failed to load story", "err");
+    } finally {
+      setBusyAction(null);
+    }
+  }
+
+  async function handleSaveCurrentScript(updated?: StoryScript) {
+    const target = updated || currentScript;
+    if (!target) return;
+    const synced: StoryScript = {
+      ...target,
+      artStyle: selectedArtStyle,
+      narratorTheme: selectedTheme,
+      narratorTunic: selectedTunic || undefined,
+      narratorAccent: selectedAccent || undefined,
+      voice: selectedVoice,
+      language: selectedLanguage,
+      emotionPreset: selectedEmotionPreset,
+    };
+    setCurrentScript(synced);
+    await fetch("/api/studio", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({action: "save-story", script: synced}),
+    });
+    notify("Story & Narrator settings saved!", "ok");
+  }
+
+  async function handleGenerateSceneImage(sceneIndex?: number) {
+    if (!currentScript) return;
+    await handleSaveCurrentScript();
+    if (typeof sceneIndex === "number") {
+      setSceneBusyIndex(sceneIndex);
+    } else {
+      setBusyAction("Painting all scene background illustrations ($0 Flux/Gemini)...");
+    }
+    try {
+      const res = await fetch("/api/studio", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          action: "generate-image",
+          slug: currentScript.slug,
+          sceneIndex,
+          artStyle: selectedArtStyle,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Image generation failed");
+      setCurrentScript(data.script);
+      setImageCacheBuster(Date.now());
+      loadStudioCatalog();
+      notify(
+        typeof sceneIndex === "number"
+          ? `Scene ${sceneIndex + 1} artwork generated!`
+          : `All ${data.generated?.length || 0} scene backgrounds generated!`,
+        "ok",
+      );
+    } catch (err: any) {
+      notify(err.message || "Failed to generate artwork", "err");
+    } finally {
+      setSceneBusyIndex(null);
+      setBusyAction(null);
+    }
+  }
+
+  async function handleGenerateVoiceover() {
+    if (!currentScript) return;
+    await handleSaveCurrentScript();
+    setBusyAction("Synthesizing narrator voiceover for all scenes...");
+    try {
+      const res = await fetch("/api/studio", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          action: "generate-voice",
+          slug: currentScript.slug,
+          voice: selectedVoice,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Voiceover synthesis failed");
+      setCurrentScript(data.script);
+      setImageCacheBuster(Date.now());
+      loadStudioCatalog();
+      notify("Voiceover audio generated for all scenes!", "ok");
+    } catch (err: any) {
+      notify(err.message || "Voiceover failed", "err");
+    } finally {
+      setBusyAction(null);
+    }
+  }
+
+  async function handleRenderVideo(mode: "local" | "cloud" = "local") {
+    if (!currentScript) return;
+    await handleSaveCurrentScript();
+    setBusyAction(
+      mode === "cloud"
+        ? "Dispatching to Laptop-Off Cloud Render Worker..."
+        : "Starting Remotion 1080x1920 MP4 render...",
+    );
+    try {
+      const res = await fetch("/api/studio", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          action: "render-video",
+          slug: currentScript.slug,
+          mode,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Render failed to start");
+      if (data.cloudDispatched) {
+        notify(data.message, "ok");
+      } else {
+        notify(`Render started for "${currentScript.title}"! Track progress in Queue.`, "ok");
+        loadVaultAndJobs();
+      }
+    } catch (err: any) {
+      notify(err.message || "Render error", "err");
+    } finally {
+      setBusyAction(null);
+    }
+  }
+
+  async function handleFullAutoProduce() {
+    try {
+      let script = currentScript;
+      if (!script) {
+        setBusyAction("Step 1/4: Writing high-retention folklore story with FreeLLM...");
+        const res = await fetch("/api/studio", {
+          method: "POST",
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify({
+            action: "generate-story",
+            topic: topicInput,
+            artStyle: selectedArtStyle,
+            narratorTheme: selectedTheme,
+            narratorTunic: selectedTunic,
+            narratorAccent: selectedAccent,
+            voice: selectedVoice,
+            language: selectedLanguage,
+            tone: selectedTone,
+          }),
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || "Story generation failed");
+        script = data.script;
+        setCurrentScript(script);
+        loadStudioCatalog();
+      }
+
+      if (!script || !script.slug) return;
+      const targetSlug = script.slug;
+
+      setBusyAction("Step 2/4: Painting 4K background artwork ($0 Flux/Pollinations)...");
+      const imgRes = await fetch("/api/studio", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          action: "generate-image",
+          slug: targetSlug,
+          artStyle: selectedArtStyle,
+        }),
+      });
+      if (imgRes.ok) {
+        const imgData = await imgRes.json();
+        if (imgData.script) {
+          script = imgData.script;
+          setCurrentScript(script);
+        }
+        setImageCacheBuster(Date.now());
+      }
+
+      setBusyAction("Step 3/4: Synthesizing neural narrator voiceover & lip-sync...");
+      const vRes = await fetch("/api/studio", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          action: "generate-voice",
+          slug: targetSlug,
+          voice: selectedVoice,
+        }),
+      });
+      if (vRes.ok) {
+        const vData = await vRes.json();
+        if (vData.script) {
+          script = vData.script;
+          setCurrentScript(script);
+        }
+      }
+
+      setBusyAction("Step 4/4: Launching 1080x1920 MP4 Video Render...");
+      const rRes = await fetch("/api/studio", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          action: "render-video",
+          slug: targetSlug,
+          mode: "local",
+        }),
+      });
+      const rData = await rRes.json();
+      if (!rRes.ok) throw new Error(rData.error || "Render start failed");
+      notify(`🎉 1-Click Video render started for "${script?.title || targetSlug}"! Track progress in Queue.`, "ok");
+      loadVaultAndJobs();
+    } catch (err: any) {
+      notify(err.message || "Auto-production encountered an error", "err");
+    } finally {
+      setBusyAction(null);
+    }
+  }
+
+  async function handlePublishVideo(slug: string, platform: "youtube" | "instagram" | "facebook" | "tiktok") {
+    notify(`Starting ${platform.toUpperCase()} upload/schedule for ${slug}...`, "info");
+    try {
+      const res = await fetch("/api/publish", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({slug, platform}),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Publish failed");
+      notify(`${platform.toUpperCase()} publish job started!`, "ok");
+      loadVaultAndJobs();
+    } catch (err: any) {
+      notify(err.message || "Publish error", "err");
+    }
+  }
+
+  async function handleSaveSettings(e: React.FormEvent) {
+    e.preventDefault();
+    setBusyAction("Saving configuration & keys...");
+    try {
+      const res = await fetch("/api/settings/keys", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(keyInputs),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Failed to save settings");
+      setSettingsData(data);
+      notify("All settings & API keys saved securely!", "ok");
+    } catch (err: any) {
+      notify(err.message || "Failed to save settings", "err");
+    } finally {
+      setBusyAction(null);
+    }
+  }
+
+  async function handleTestLLM() {
+    setBusyAction("Testing FreeLLMAPI & Smart AI Pool connection...");
+    setLlmTestResult(null);
+    try {
+      const res = await fetch("/api/settings/keys", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({action: "test-llm"}),
+      });
+      const data = await res.json();
+      setLlmTestResult(data);
+      if (data.ok) {
+        notify(`Connected via ${data.provider} (${data.model}) in ${data.latencyMs}ms!`, "ok");
+      } else {
+        notify(data.error || "AI test failed", "err");
+      }
+    } catch (err: any) {
+      notify(err.message || "AI connection test error", "err");
+    } finally {
+      setBusyAction(null);
+    }
+  }
+
+  const costumeGroups = ["All", "Philippine Folklore", "Dark & Spooky", "Ancient & Classical", "Medieval & Warriors", "Early Modern", "Modern & Urban"];
+  const filteredCostumes = costumes.filter(
+    (c) => selectedCostumeGroup === "All" || c.group === selectedCostumeGroup,
+  );
+  const runningJobsCount = jobs.filter((j) => j.status === "running" || j.status === "queued").length;
 
   return (
-    <div className="flex flex-col md:flex-row md:h-screen min-h-screen bg-slate-950 text-slate-100 font-sans overflow-x-hidden selection:bg-amber-500/30 selection:text-amber-200">
-      
-      {/* Mobile Top Bar */}
-      <div className="md:hidden sticky top-0 z-40 bg-slate-900/95 backdrop-blur border-b border-slate-800">
-        <header className="px-4 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="text-xl">🏛️</span>
-            <div>
-              <h1 className="text-sm font-bold text-amber-500 tracking-wide">A Day Back Then</h1>
-              <p className="text-[10px] text-slate-400">Mobile Remote Hub</p>
-            </div>
+    <div className="min-h-screen bg-[#0b0e17] text-slate-100 pb-24 lg:pb-10 font-sans selection:bg-amber-500 selection:text-black">
+      {/* Top Header Bar */}
+      <header className="sticky top-0 z-40 backdrop-blur-xl bg-[#0b0e17]/90 border-b border-slate-800/80 px-4 lg:px-8 py-3 flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-orange-600 flex items-center justify-center text-black font-black text-xl shadow-lg shadow-amber-500/20">
+            ⏳
           </div>
-          <div className="flex items-center gap-2">
-            {tunnel?.status === 'running' && (
-              <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Phone LIVE
+          <div>
+            <h1 className="font-extrabold text-base sm:text-lg tracking-tight text-white flex items-center gap-2">
+              A Day Back Then
+              <span className="text-[11px] font-bold uppercase px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                AI Studio 2.0
               </span>
-            )}
-            <button
-              onClick={() => setActiveTab('remote')}
-              className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-400"
-              title="Remote Access"
-            >
-              <IconPhone />
-            </button>
+            </h1>
+            <p className="text-xs text-slate-400 hidden sm:block">
+              Folklore, Mythology & History Video Creator • $0 Cloud & Mobile Ready
+            </p>
           </div>
-        </header>
+        </div>
 
-        {/* Mobile Horizontal Navigation */}
-        <nav className="px-2 py-1.5 flex gap-1.5 overflow-x-auto no-scrollbar border-t border-slate-800/60 bg-slate-950/80">
-          {nav.map(item => (
+        {/* Desktop Nav Pills */}
+        <nav className="hidden md:flex items-center gap-1.5 bg-slate-900/90 p-1 rounded-xl border border-slate-800">
+          {[
+            {id: "create", label: "✨ Create Story"},
+            {id: "vault", label: `🎬 My Videos (${vaultVideos.length})`},
+            {id: "jobs", label: `🚀 Render Queue ${runningJobsCount > 0 ? `(${runningJobsCount})` : ""}`},
+            {id: "settings", label: "⚙️ Settings & Keys"},
+          ].map((t) => (
             <button
-              key={item.id}
-              onClick={() => setActiveTab(item.id as any)}
-              className={`shrink-0 px-3 py-1.5 text-[11px] font-semibold rounded-full border transition-all flex items-center gap-1.5 ${
-                activeTab === item.id
-                  ? 'bg-amber-500/20 text-amber-400 border-amber-500/40 shadow-sm shadow-amber-500/10'
-                  : 'text-slate-400 border-slate-800 hover:text-slate-200'
+              key={t.id}
+              onClick={() => setActiveTab(t.id as any)}
+              className={`px-4 py-2 rounded-lg text-xs font-bold transition-all ${
+                activeTab === t.id
+                  ? "bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20"
+                  : "text-slate-300 hover:text-white hover:bg-slate-800/60"
               }`}
             >
-              <span>{item.icon}</span>
-              <span>{item.label.replace(/^.*? /, '')}</span>
-              {item.badge && (
-                <span className={`text-[9px] px-1.5 py-0.2 rounded-full font-bold ${
-                  item.badge === 'LIVE' ? 'bg-emerald-500 text-slate-950' : 'bg-slate-800 text-slate-300'
-                }`}>
-                  {item.badge}
-                </span>
-              )}
+              {t.label}
             </button>
           ))}
         </nav>
-      </div>
 
-      {/* Desktop Sidebar */}
-      <aside className="hidden md:flex w-64 border-r border-slate-800 bg-slate-900/60 p-4 flex-col justify-between shrink-0">
-        <div>
-          <div className="mb-6 px-2 flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">🏛️</span>
-              <div>
-                <h1 className="text-base font-bold text-amber-500 tracking-wide">A Day Back Then</h1>
-                <p className="text-[11px] text-slate-400">Content Operations Hub v3.0</p>
-              </div>
-            </div>
-            <span
-              className={`w-2.5 h-2.5 rounded-full ${tunnel?.status === 'running' ? 'bg-emerald-500 animate-pulse' : 'bg-amber-500'}`}
-              title={tunnel?.status === 'running' ? 'Remote tunnel active' : 'Local PC mode'}
-            />
-          </div>
-
-          {/* Quick Remote Banner */}
-          <div className="mb-4 p-2.5 rounded-xl bg-gradient-to-br from-amber-500/10 to-indigo-500/10 border border-amber-500/20">
-            <div className="flex items-center justify-between text-xs font-semibold text-slate-300">
-              <span className="flex items-center gap-1.5"><IconPhone /> Remote Phone Link</span>
-              <span className={`text-[10px] px-1.5 py-0.5 rounded font-mono ${tunnel?.status === 'running' ? 'bg-emerald-500/20 text-emerald-400' : 'bg-slate-800 text-slate-400'}`}>
-                {tunnel?.status === 'running' ? 'Active' : 'Offline'}
-              </span>
-            </div>
-            {tunnel?.status === 'running' && tunnel.url ? (
-              <div className="mt-2 space-y-1.5">
-                <input
-                  readOnly
-                  value={tunnel.url}
-                  className="w-full text-[10px] bg-slate-950/80 border border-emerald-500/30 rounded px-2 py-1 font-mono text-emerald-300 select-all"
-                />
-                <button
-                  onClick={() => copyToClipboard(tunnel.url!, 'Remote URL copied!')}
-                  className="w-full text-[10px] py-1 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 font-bold rounded flex items-center justify-center gap-1 transition-colors"
-                >
-                  <IconCopy /> {copyFeedback || 'Copy Phone URL'}
-                </button>
-              </div>
-            ) : (
-              <button
-                onClick={handleToggleTunnel}
-                disabled={tunnelBusy}
-                className="mt-2 w-full text-[11px] py-1.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold rounded flex items-center justify-center gap-1.5 transition-colors disabled:opacity-50"
+        {/* User Account Pill */}
+        <div className="flex items-center gap-2">
+          {user ? (
+            <div className="flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full pl-2 pr-3 py-1">
+              <div
+                className="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-black"
+                style={{backgroundColor: user.avatarColor || "#f59e0b"}}
               >
-                <IconGlobe /> {tunnelBusy ? 'Starting…' : 'Enable Mobile Access'}
-              </button>
-            )}
-          </div>
-
-          <nav className="space-y-1">
-            {nav.map(item => (
+                {user.name.charAt(0).toUpperCase()}
+              </div>
+              <div className="hidden sm:block text-left">
+                <div className="text-xs font-bold text-white leading-none">{user.name}</div>
+                <div className="text-[10px] text-emerald-400 font-medium">{user.role}</div>
+              </div>
               <button
-                key={item.id}
-                onClick={() => setActiveTab(item.id as any)}
-                className={`w-full flex items-center justify-between px-3 py-2 text-xs font-semibold rounded-lg transition-all ${
-                  activeTab === item.id
-                    ? 'bg-amber-500/15 text-amber-400 border border-amber-500/30 shadow-sm'
-                    : 'text-slate-400 hover:bg-slate-800/80 hover:text-slate-200'
-                }`}
+                onClick={handleLogout}
+                className="ml-1 text-[11px] text-slate-400 hover:text-rose-400 font-semibold"
+                title="Sign Out"
               >
-                <span className="flex items-center gap-2">
-                  <span>{item.icon}</span>
-                  <span>{item.label}</span>
-                </span>
-                {item.badge && (
-                  <span className={`px-1.5 py-0.5 rounded-full text-[10px] font-bold ${
-                    item.badge === 'LIVE' || item.badge === 'NEW'
-                      ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
-                      : 'bg-slate-800 text-slate-300'
-                  }`}>
-                    {item.badge}
-                  </span>
-                )}
+                Exit
               </button>
-            ))}
-          </nav>
+            </div>
+          ) : (
+            <button
+              onClick={() => {
+                setAuthMode("login");
+                setShowAuthModal(true);
+              }}
+              className="px-3.5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs shadow-lg shadow-amber-500/20 transition"
+            >
+              👤 Login / Register
+            </button>
+          )}
         </div>
+      </header>
 
-        <div className="border-t border-slate-800/80 pt-3 px-2 text-[11px] text-slate-400 space-y-1.5">
-          <div className="flex justify-between items-center">
-            <span className="text-slate-500">Local Wi-Fi:</span>
-            <span className="font-mono text-slate-300 text-[10px]">{tunnel?.localIp ? `${tunnel.localIp}:3100` : '...'}</span>
-          </div>
-          <div className="flex justify-between items-center">
-            <span className="text-slate-500">Muse AI Art:</span>
-            <span className="font-mono text-emerald-400">{topicStats ? `${topicStats.imagesComplete} ready` : '…'}</span>
-          </div>
-          <div className="flex justify-between items-center">
-            <span className="text-slate-500">Pipeline Jobs:</span>
-            <span className="font-mono text-amber-400">{renderJobs.filter(r => r.status === 'running').length} active</span>
+      {/* Toast Notification Banner */}
+      {toast && (
+        <div className="fixed bottom-20 lg:bottom-6 right-4 left-4 sm:left-auto sm:w-96 z-50">
+          <div
+            className={`px-4 py-3 rounded-xl shadow-2xl border text-xs font-semibold flex items-center justify-between ${
+              toast.type === "err"
+                ? "bg-rose-950/95 border-rose-500/50 text-rose-200"
+                : toast.type === "info"
+                ? "bg-slate-900/95 border-sky-500/50 text-sky-200"
+                : "bg-emerald-950/95 border-emerald-500/50 text-emerald-200"
+            }`}
+          >
+            <span>{toast.text}</span>
+            <button onClick={() => setToast(null)} className="ml-3 opacity-70 hover:opacity-100">
+              ✕
+            </button>
           </div>
         </div>
-      </aside>
+      )}
 
-      {/* Main Workspace */}
-      <main className="flex-1 md:overflow-y-auto p-4 md:p-6 bg-slate-950 flex flex-col justify-between">
-        <div className="space-y-6">
-          
-          {/* TAB 1: OVERVIEW */}
-          {activeTab === 'overview' && (
-            <div className="space-y-6">
-              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
-                <div>
-                  <h2 className="text-xl font-bold text-slate-100 flex items-center gap-2">
-                    <span>🏛️</span> Pipeline Operations Control Center
-                  </h2>
-                  <p className="text-xs text-slate-400">
-                    Live automation hub for YouTube Shorts & Longform videos
-                  </p>
-                </div>
+      {/* Global Busy Overlay Bar */}
+      {busyAction && (
+        <div className="bg-amber-500/15 border-b border-amber-500/40 px-4 py-2.5 flex items-center justify-center gap-3 text-xs font-semibold text-amber-300">
+          <span className="inline-block w-4 h-4 border-2 border-amber-400 border-t-transparent rounded-full animate-spin" />
+          <span>{busyAction}</span>
+        </div>
+      )}
+
+      {/* ===================================================================== */}
+      {/* TAB 1: BEGINNER-FRIENDLY STORY & VIDEO CREATOR STUDIO                 */}
+      {/* ===================================================================== */}
+      {activeTab === "create" && (
+        <main className="max-w-7xl mx-auto px-4 lg:px-8 py-6 grid grid-cols-1 lg:grid-cols-12 gap-6">
+          {/* Left / Center Studio Column (8 cols on Desktop) */}
+          <div className="lg:col-span-8 space-y-6">
+            {/* 1-CLICK PRODUCTION ACTION HERO BANNER */}
+            <div className="bg-gradient-to-r from-amber-500/20 via-orange-500/15 to-purple-500/20 border-2 border-amber-400/40 rounded-2xl p-4 sm:p-5 shadow-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="space-y-1">
                 <div className="flex items-center gap-2">
-                  <button
-                    onClick={() => setActiveTab('muse')}
-                    className="px-3 py-1.5 text-xs font-semibold bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg flex items-center gap-1.5 transition-colors"
-                  >
-                    <IconImage /> Muse AI Tracker
-                  </button>
-                  <button
-                    onClick={() => setActiveTab('generator')}
-                    className="px-3 py-1.5 text-xs font-semibold bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-lg flex items-center gap-1.5 transition-colors"
-                  >
-                    <IconSparkles /> Studio
-                  </button>
-                </div>
-              </div>
-
-              {/* Stats Cards */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-                <div className="bg-slate-900/80 border border-slate-800 p-4 rounded-xl">
-                  <div className="text-xs text-slate-400 font-medium">Total Topics</div>
-                  <div className="text-2xl font-bold mt-1 text-slate-100">{topics.length}</div>
-                  <div className="text-[10px] text-amber-400 mt-1">160 Shorts · 33 Longform</div>
-                </div>
-
-                <div className="bg-slate-900/80 border border-slate-800 p-4 rounded-xl">
-                  <div className="text-xs text-slate-400 font-medium">Muse AI Images</div>
-                  <div className="text-2xl font-bold mt-1 text-emerald-400">
-                    {topicStats ? topicStats.imagesComplete : 0} <span className="text-sm font-normal text-slate-400">Done</span>
-                  </div>
-                  <div className="text-[10px] text-slate-400 mt-1">
-                    {topicStats ? topicStats.imagesWaiting : 0} waiting for generation
-                  </div>
-                </div>
-
-                <div className="bg-slate-900/80 border border-slate-800 p-4 rounded-xl">
-                  <div className="text-xs text-slate-400 font-medium">Rendered Vault</div>
-                  <div className="text-2xl font-bold mt-1 text-slate-100">{vault.length} Videos</div>
-                  <div className="text-[10px] text-indigo-400 mt-1 flex items-center gap-1">
-                    <IconCheck /> Published & Unpublished
-                  </div>
-                </div>
-
-                <div className="bg-slate-900/80 border border-slate-800 p-4 rounded-xl">
-                  <div className="text-xs text-slate-400 font-medium">Phone Remote</div>
-                  <div className="text-2xl font-bold mt-1 text-amber-400">
-                    {tunnel?.status === 'running' ? 'Connected' : 'Local Only'}
-                  </div>
-                  <div className="text-[10px] text-slate-400 mt-1">
-                    {tunnel?.status === 'running' ? 'Worldwide mobile access' : 'Tap Phone Remote to enable'}
-                  </div>
-                </div>
-              </div>
-
-              {/* What's New Feature Highlight */}
-              <div className="p-4 rounded-xl bg-gradient-to-r from-amber-500/10 via-indigo-500/10 to-emerald-500/10 border border-amber-500/20 space-y-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-xs font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
-                    ✨ Newly Added Pipeline Features
+                  <span className="px-2.5 py-0.5 rounded-full bg-amber-400 text-slate-950 font-black text-[11px] uppercase tracking-wider">
+                    Full AI Studio
                   </span>
-                  <button onClick={() => setActiveTab('npc')} className="text-xs text-amber-400 hover:underline">
-                    Test Dialogue & NPCs →
-                  </button>
+                  <span className="text-xs text-slate-400 font-semibold">1080 × 1920 Short</span>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs">
-                  <div className="bg-slate-950/70 p-3 rounded-lg border border-slate-800">
-                    <div className="font-bold text-slate-200 flex items-center gap-1.5">
-                      <IconUsers /> Interactive Secondary NPCs
-                    </div>
-                    <p className="text-[11px] text-slate-400 mt-1">
-                      Procedural secondary characters with comic speech bubbles, sweat animations, and position presets to banish empty scenes.
-                    </p>
-                  </div>
-                  <div className="bg-slate-950/70 p-3 rounded-lg border border-slate-800">
-                    <div className="font-bold text-slate-200 flex items-center gap-1.5">
-                      <IconVolume /> Gladiator Barracks Soundscapes
-                    </div>
-                    <p className="text-[11px] text-slate-400 mt-1">
-                      Multi-layered ambient audio and verified lipsync locking (narrator mouth locks to 0 while NPCs talk).
-                    </p>
-                  </div>
-                  <div className="bg-slate-950/70 p-3 rounded-lg border border-slate-800">
-                    <div className="font-bold text-slate-200 flex items-center gap-1.5">
-                      <IconPhone /> Worldwide Mobile Remote Access
-                    </div>
-                    <p className="text-[11px] text-slate-400 mt-1">
-                      Cloudflare Tunnel integration allows managing your pipeline, monitoring Muse AI, and triggering renders directly on your phone away from home.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Active Jobs Preview */}
-              <div className="bg-slate-900/80 border border-slate-800 p-4 rounded-xl space-y-3">
-                <div className="flex justify-between items-center">
-                  <h3 className="font-semibold text-xs text-slate-200 uppercase tracking-wider flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping" />
-                    Active Pipeline Render Jobs
-                  </h3>
-                  <button onClick={() => setActiveTab('renders')} className="text-xs text-amber-400 hover:underline">
-                    View Queue ({renderJobs.length}) →
-                  </button>
-                </div>
-                {renderJobs.length === 0 ? (
-                  <p className="text-xs text-slate-500 py-2">No jobs currently rendering.</p>
-                ) : (
-                  renderJobs.slice(0, 3).map(job => (
-                    <div key={job.id} className="bg-slate-950 p-3 rounded-lg border border-slate-800 space-y-2">
-                      <div className="flex justify-between text-xs">
-                        <span className="font-medium text-slate-200">🎬 {job.slug} ({job.kind})</span>
-                        <span className="text-amber-400 font-mono text-[11px] font-bold">{job.status}</span>
-                      </div>
-                      <div className="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
-                        <div className="bg-gradient-to-r from-amber-500 to-amber-400 h-full transition-all duration-300" style={{width: `${job.progress}%`}} />
-                      </div>
-                      <div className="flex justify-between text-[10px] text-slate-500 font-mono">
-                        <span>Frame {job.frame} / {job.totalFrames || '…'}</span>
-                        <span>{job.progress}%</span>
-                      </div>
-                    </div>
-                  ))
-                )}
-              </div>
-            </div>
-          )}
-
-          {/* TAB 2: MUSE AI TRACKER & ASSET INSPECTOR */}
-          {activeTab === 'muse' && (
-            <div className="space-y-4">
-              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
-                <div>
-                  <h2 className="text-xl font-bold flex items-center gap-2">
-                    <span>🎨</span> Muse AI Image Asset Tracker
-                  </h2>
-                  <p className="text-xs text-slate-400">
-                    Track generated background images in <code className="text-amber-400">public/images/&lt;slug&gt;/</code> and copy prompts
-                  </p>
-                </div>
-                <div className="flex items-center gap-2">
-                  <button
-                    onClick={() => handleProcessImages()}
-                    className="px-3 py-1.5 text-xs font-semibold bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg flex items-center gap-1.5 transition-colors"
-                  >
-                    <IconSparkles /> Attach All Ready Art & Render
-                  </button>
-                  <button
-                    onClick={refreshTopics}
-                    className="px-2.5 py-1.5 text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg flex items-center gap-1"
-                  >
-                    <IconRefresh />
-                  </button>
-                </div>
-              </div>
-
-              {/* Filter Bar */}
-              <div className="flex flex-wrap gap-2 items-center text-xs">
-                <input
-                  type="text"
-                  placeholder="Search topics by name or slug…"
-                  value={searchQuery}
-                  onChange={e => setSearchQuery(e.target.value)}
-                  className="bg-slate-900 border border-slate-800 rounded-lg px-3 py-1.5 text-xs text-slate-100 focus:outline-none focus:border-amber-500 min-w-[200px]"
-                />
-                <select
-                  value={categoryFilter}
-                  onChange={e => setCategoryFilter(e.target.value as any)}
-                  className="bg-slate-900 border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs text-slate-200"
-                >
-                  <option value="all">All Formats ({topics.length})</option>
-                  <option value="original-short">Original Shorts (68)</option>
-                  <option value="expansion-short">Expansion Shorts (92)</option>
-                  <option value="longform">Longform Episodes (33)</option>
-                </select>
-                <select
-                  value={artFilter}
-                  onChange={e => setArtFilter(e.target.value as any)}
-                  className="bg-slate-900 border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs text-slate-200"
-                >
-                  <option value="all">All Art Statuses</option>
-                  <option value="complete">🟢 Ready (Complete)</option>
-                  <option value="partial">🟡 In Progress (Partial)</option>
-                  <option value="waiting">⚪ Waiting for Muse AI</option>
-                </select>
-                <span className="text-[11px] text-slate-500 font-mono ml-auto">
-                  Showing {filteredTopics.length} of {topics.length} topics
-                </span>
-              </div>
-
-              {/* Two Column Layout: Topics List & Asset Inspector */}
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
-                {/* Topic list column */}
-                <div className="lg:col-span-5 bg-slate-900/80 border border-slate-800 rounded-xl p-3 max-h-[650px] overflow-y-auto space-y-1.5">
-                  {filteredTopics.map(t => {
-                    const isSelected = selectedTopic === t.slug;
-                    return (
-                      <button
-                        key={t.slug}
-                        onClick={() => setSelectedTopic(t.slug)}
-                        className={`w-full text-left p-3 rounded-xl border transition-all text-xs flex flex-col gap-1.5 ${
-                          isSelected
-                            ? 'bg-amber-500/15 border-amber-500/40 text-amber-200'
-                            : 'bg-slate-950/70 border-slate-800/80 text-slate-300 hover:border-slate-700'
-                        }`}
-                      >
-                        <div className="flex justify-between items-start gap-2">
-                          <span className="font-bold text-slate-100">{t.title}</span>
-                          <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold font-mono shrink-0 ${
-                            t.imageStatus === 'complete'
-                              ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
-                              : t.imageStatus === 'partial'
-                              ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
-                              : 'bg-slate-800 text-slate-400'
-                          }`}>
-                            {t.imagesReady}/{t.imagesTarget} Art
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-2 text-[10px] text-slate-400 font-mono">
-                          <span className="text-slate-500">{t.slug}</span>
-                          <span>•</span>
-                          <span className="capitalize">{t.category.replace('-', ' ')}</span>
-                          {t.hasVideo && <span className="text-emerald-400">✓ Rendered</span>}
-                        </div>
-                      </button>
-                    );
-                  })}
-                  {filteredTopics.length === 0 && (
-                    <div className="p-8 text-center text-slate-500 text-xs">No topics matched your search filter.</div>
-                  )}
-                </div>
-
-                {/* Topic Asset & Prompt Inspector */}
-                <div className="lg:col-span-7 bg-slate-900/80 border border-slate-800 rounded-xl p-5 space-y-4">
-                  {selectedTopicObj ? (
-                    <>
-                      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 pb-3 border-b border-slate-800">
-                        <div>
-                          <h3 className="font-bold text-base text-slate-100">{selectedTopicObj.title}</h3>
-                          <p className="text-[11px] text-amber-400 font-mono mt-0.5">{selectedTopicObj.slug}</p>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <button
-                            onClick={() => handleTriggerRender(selectedTopicObj.slug, selectedTopicObj.category === 'longform' ? 'long' : 'short')}
-                            className="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs rounded-lg flex items-center gap-1 transition-colors"
-                          >
-                            <IconPlay /> Render Video
-                          </button>
-                          <button
-                            onClick={() => handleProcessImages(selectedTopicObj.slug)}
-                            className="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-lg flex items-center gap-1 transition-colors"
-                          >
-                            <IconCheck /> Attach Art
-                          </button>
-                        </div>
-                      </div>
-
-                      {/* Images Ready Status */}
-                      <div className="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-2">
-                        <div className="flex justify-between items-center text-xs">
-                          <span className="font-semibold text-slate-300">Generated Images Progress</span>
-                          <span className="font-mono text-emerald-400 font-bold">
-                            {topicDetails ? topicDetails.imagesCount : 0} of {selectedTopicObj.imagesTarget} Ready
-                          </span>
-                        </div>
-                        <div className="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
-                          <div
-                            className="bg-gradient-to-r from-emerald-500 to-emerald-400 h-full transition-all duration-300"
-                            style={{
-                              width: `${Math.min(100, Math.round(((topicDetails?.imagesCount || 0) / selectedTopicObj.imagesTarget) * 100))}%`
-                            }}
-                          />
-                        </div>
-                      </div>
-
-                      {/* Image Thumbnails Gallery */}
-                      <div>
-                        <h4 className="text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
-                          Image Files in public/images/{selectedTopicObj.slug}/
-                        </h4>
-                        {topicDetails && topicDetails.images.length > 0 ? (
-                          <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
-                            {topicDetails.images.map(img => (
-                              <div key={img.name} className="group relative bg-slate-950 border border-slate-800 rounded-lg overflow-hidden p-1">
-                                <img
-                                  src={img.url}
-                                  alt={img.name}
-                                  className="w-full aspect-[9/16] object-cover rounded bg-black"
-                                  loading="lazy"
-                                />
-                                <div className="text-[10px] text-center font-mono text-slate-400 mt-1 truncate">
-                                  {img.name}
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        ) : (
-                          <div className="p-6 text-center text-slate-500 border border-dashed border-slate-800 rounded-xl text-xs space-y-1">
-                            <div>No images generated yet for this topic.</div>
-                            <div className="text-[11px] text-slate-600">
-                              Generate with Muse AI using the prompt below and drop into <code>public/images/{selectedTopicObj.slug}/1.png..6.png</code>
-                            </div>
-                          </div>
-                        )}
-                      </div>
-
-                      {/* Muse AI Prompt Box */}
-                      <div className="space-y-2">
-                        <div className="flex justify-between items-center">
-                          <label className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center gap-1.5">
-                            <span>📋</span> Muse AI Prompts
-                          </label>
-                          {topicDetails?.promptText && (
-                            <button
-                              onClick={() => copyToClipboard(topicDetails.promptText, 'Prompt copied to clipboard!')}
-                              className="px-2.5 py-1 text-[11px] bg-slate-800 hover:bg-slate-700 text-amber-300 font-semibold rounded flex items-center gap-1 transition-colors"
-                            >
-                              <IconCopy /> {copyFeedback || 'Copy All Prompts'}
-                            </button>
-                          )}
-                        </div>
-                        <textarea
-                          rows={6}
-                          readOnly
-                          value={topicDetails?.promptText || (loadingDetails ? 'Loading prompt text…' : 'No prompt text found for this topic.')}
-                          className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs font-mono text-slate-200 leading-relaxed select-all"
-                        />
-                      </div>
-                    </>
-                  ) : (
-                    <div className="p-12 text-center text-slate-500 text-xs">
-                      Select a topic on the left to inspect its images and prompts.
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* TAB 3: NPC & MINI-DIALOGUE STUDIO */}
-          {activeTab === 'npc' && (
-            <div className="space-y-6 max-w-4xl">
-              <div>
-                <h2 className="text-xl font-bold flex items-center gap-2">
-                  <span>🎭</span> Interactive Characters & Mini-Dialogue Studio
-                </h2>
-                <p className="text-xs text-slate-400">
-                  Preview procedural secondary characters, mini-dialogues, and gladiator barracks soundscapes
+                <h1 className="text-lg sm:text-xl font-black text-white">
+                  Ready to produce your video?
+                </h1>
+                <p className="text-xs text-slate-300">
+                  Click below to write your story, generate 5 scene backgrounds, record voiceover, and render the MP4.
                 </p>
               </div>
+              <button
+                type="button"
+                disabled={Boolean(busyAction)}
+                onClick={handleFullAutoProduce}
+                className="w-full sm:w-auto shrink-0 px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 hover:from-amber-300 hover:to-orange-300 text-slate-950 font-black text-sm shadow-xl shadow-amber-500/25 flex items-center justify-center gap-2 transition transform active:scale-95 disabled:opacity-50"
+              >
+                <span className="text-base">🎬</span>
+                <span>{currentScript ? "⚡ Render Full Video Now" : "🚀 1-Click Auto-Produce Video"}</span>
+              </button>
+            </div>
 
-              {/* Dialogue Video Preview Card */}
-              <div className="bg-slate-900/80 border border-slate-800 p-5 rounded-xl space-y-4">
-                <div className="flex justify-between items-center">
-                  <div>
-                    <h3 className="font-bold text-sm text-slate-100 flex items-center gap-2">
-                      <span>🎬</span> Verified Scene: Marcus & Cassius Mini-Dialogue
-                    </h3>
-                    <p className="text-[11px] text-slate-400">18 seconds · 1080x1920 Full HD · Dialogue Test Clip</p>
-                  </div>
-                  <span className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
-                    Lipsync & Grounding Verified
+            {/* STEP 1: TOPIC & FOLKLORE STORY ENGINE */}
+            <section className="bg-slate-900/70 border border-slate-800/90 rounded-2xl p-5 shadow-xl">
+              <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center gap-2.5">
+                  <span className="w-7 h-7 rounded-lg bg-amber-500 text-slate-950 font-black text-xs flex items-center justify-center">
+                    1
                   </span>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-                  <div className="relative aspect-[9/16] max-h-[420px] mx-auto bg-black rounded-xl overflow-hidden border border-slate-800 shadow-xl">
-                    <video
-                      src="/api/video/sample-dialogue-npc"
-                      controls
-                      playsInline
-                      className="w-full h-full object-contain"
-                    />
+                  <div>
+                    <h2 className="text-base font-extrabold text-white">
+                      What story do you want to create?
+                    </h2>
+                    <p className="text-xs text-slate-400">
+                      Type any folklore creature (e.g. Mangkukulam, Manananggal, Aswang) or historical topic
+                    </p>
                   </div>
+                </div>
+                {savedStories.length > 0 && (
+                  <select
+                    onChange={(e) => e.target.value && handleLoadStory(e.target.value)}
+                    value={currentScript?.slug || ""}
+                    className="bg-slate-950 border border-slate-700 rounded-xl px-3 py-1.5 text-xs text-slate-200 max-w-[190px]"
+                  >
+                    <option value="">📂 Load Saved Story ({savedStories.length})</option>
+                    {savedStories.map((s) => (
+                      <option key={s.slug} value={s.slug}>
+                        {s.videoReady ? "✅ " : "📝 "}
+                        {s.title}
+                      </option>
+                    ))}
+                  </select>
+                )}
+              </div>
 
-                  <div className="space-y-3 text-xs">
-                    <div className="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-2">
-                      <div className="font-bold text-amber-400 text-xs">Character Roster & Behavior</div>
-                      <div className="space-y-1.5 text-[11px] text-slate-300">
-                        <div className="flex items-center justify-between">
-                          <span className="font-bold text-amber-300">Narrator (Marcus):</span>
-                          <span className="text-slate-400">Gold Badge · Center-Left · Host</span>
-                        </div>
-                        <div className="flex items-center justify-between">
-                          <span className="font-bold text-cyan-300">Volunteer NPC (Cassius):</span>
-                          <span className="text-slate-400">Cyan Badge · Right Bench · Nervous Sweat</span>
-                        </div>
-                      </div>
-                    </div>
+              {/* Step 1 Topic Category Tabs */}
+              <div className="flex flex-wrap gap-1.5 mb-2.5 border-b border-slate-800 pb-2.5">
+                {[
+                  {id: "all", label: "🌟 All Topics"},
+                  {id: "filipino", label: "🇵🇭 Filipino / Tagalog Lore"},
+                  {id: "folklore", label: "🕯️ Dark Folklore"},
+                  {id: "ancient", label: "🏛️ Ancient Empires"},
+                  {id: "medieval", label: "⚔️ Medieval & Warriors"},
+                  {id: "modern", label: "🎩 Early Modern"},
+                ].map((tc) => (
+                  <button
+                    key={tc.id}
+                    type="button"
+                    onClick={() => setSelectedTopicCategory(tc.id)}
+                    className={`px-3 py-1 rounded-lg text-xs font-bold transition flex items-center gap-1 ${
+                      selectedTopicCategory === tc.id
+                        ? "bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20"
+                        : "bg-slate-950 text-slate-400 hover:text-white border border-slate-800"
+                    }`}
+                  >
+                    <span>{tc.label}</span>
+                  </button>
+                ))}
+              </div>
 
-                    <div className="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-2">
-                      <div className="font-bold text-emerald-400 text-xs">Bug Fixes & Engine Upgrades</div>
-                      <ul className="space-y-1 text-[11px] text-slate-300 list-disc list-inside">
-                        <li><strong>Mouth Lock:</strong> Narrator mouth remains strictly closed when NPC speaks.</li>
-                        <li><strong>Grounding:</strong> Removed sequence scale pops for permanent room presence.</li>
-                        <li><strong>Ambience:</strong> Gladiator barracks reverb & crowd chatter mixed in background.</li>
-                        <li><strong>Subtitles:</strong> Dynamic color switching (gold for Marcus, cyan for Cassius).</li>
-                      </ul>
-                    </div>
-
+              {/* Filtered Folklore & History Preset Chips */}
+              <div className="flex flex-wrap gap-1.5 mb-3">
+                {topicPresets
+                  .filter((p) => selectedTopicCategory === "all" || p.category === selectedTopicCategory)
+                  .map((p) => (
                     <button
-                      onClick={async () => {
-                        addLog('remotion', 'Re-rendering DialogueScene to sample-dialogue-npc.mp4…', 'info');
-                        try {
-                          const res = await api<any>('/api/npc', {method: 'POST'});
-                          if (res.ok) {
-                            addLog('remotion', '✅ Dialogue scene re-rendered successfully!', 'success');
-                            refreshVault();
-                          } else {
-                            addLog('remotion', `Render issue: ${res.stderr || res.stdout}`, 'warning');
-                          }
-                        } catch (e) {
-                          addLog('remotion', `Error: ${e}`, 'warning');
+                      key={p.label}
+                      type="button"
+                      onClick={() => {
+                        setTopicInput(p.topic);
+                        if (p.theme) setSelectedTheme(p.theme);
+                        if (p.style) setSelectedArtStyle(p.style);
+                        if (p.category === "filipino") {
+                          setSelectedVoice("fil-PH-AngeloNeural");
+                          setSelectedVoiceCategory("filipino");
+                          setSelectedLanguage("taglish");
+                          setSelectedEmotionPreset("spooky-suspense");
                         }
                       }}
-                      className="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 transition-colors"
+                      className="px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-800/90 hover:bg-amber-500/20 hover:text-amber-300 border border-slate-700/80 hover:border-amber-500/40 transition"
                     >
-                      <IconPlay /> Re-Render Dialogue Test Scene
+                      {p.label}
                     </button>
+                  ))}
+              </div>
+
+              <div className="space-y-3">
+                <textarea
+                  rows={2}
+                  value={topicInput}
+                  onChange={(e) => setTopicInput(e.target.value)}
+                  placeholder="e.g., Mangkukulam: How Filipino folk healers countered dark curses, or Manananggal in Capiz..."
+                  className="w-full rounded-xl bg-slate-950 border border-slate-700 focus:border-amber-500 focus:outline-none p-3.5 text-sm text-white placeholder-slate-500"
+                />
+
+                {/* Language & Tone Row */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div>
+                    <label className="block text-[11px] font-bold uppercase text-slate-400 mb-1">
+                      Language
+                    </label>
+                    <select
+                      value={selectedLanguage}
+                      onChange={(e) => setSelectedLanguage(e.target.value as any)}
+                      className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs font-semibold text-white"
+                    >
+                      <option value="en">🇺🇸 English (Global)</option>
+                      <option value="taglish">🇵🇭 Taglish (Pinoy Storyteller)</option>
+                      <option value="tl">🇵🇭 Tagalog / Filipino</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-[11px] font-bold uppercase text-slate-400 mb-1">
+                      Story Tone
+                    </label>
+                    <select
+                      value={selectedTone}
+                      onChange={(e) => setSelectedTone(e.target.value)}
+                      className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs font-semibold text-white"
+                    >
+                      <option value="spooky-curious">🕯️ Spooky, Eerie & Curious</option>
+                      <option value="dramatic-survival">🔥 Dramatic Second-Person Survival</option>
+                      <option value="witty-historical">😄 Witty & Educational History</option>
+                    </select>
+                  </div>
+                </div>
+
+                {/* Dual Action Buttons: 1-Click Video vs Write Script */}
+                <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                  <button
+                    type="button"
+                    disabled={Boolean(busyAction)}
+                    onClick={handleFullAutoProduce}
+                    className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-black text-xs sm:text-sm shadow-lg shadow-amber-500/25 disabled:opacity-50 transition flex items-center justify-center gap-2"
+                  >
+                    <span>🎬</span>
+                    <span>1-Click Auto-Produce Video (Story + Art + Voice + MP4)</span>
+                  </button>
+                  <button
+                    type="button"
+                    disabled={Boolean(busyAction)}
+                    onClick={handleGenerateStory}
+                    className="py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white font-bold text-xs border border-slate-700 transition flex items-center justify-center gap-1.5"
+                  >
+                    <span>📝</span>
+                    <span>Write Script Only</span>
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            {/* STEP 2: VISUAL ART STYLE PICKER */}
+            <section className="bg-slate-900/70 border border-slate-800/90 rounded-2xl p-5 shadow-xl">
+              <div className="flex items-center gap-2.5 mb-3">
+                <span className="w-7 h-7 rounded-lg bg-amber-500 text-slate-950 font-black text-xs flex items-center justify-center">
+                  2
+                </span>
+                <div>
+                  <h2 className="text-base font-extrabold text-white">Pick Background Art Style</h2>
+                  <p className="text-xs text-slate-400">
+                    Real visual preview of the scenery art the AI paints for every scene
+                  </p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                {artStyles.map((st) => {
+                  const active = selectedArtStyle === st.id;
+                  const previewImg = STYLE_PREVIEW_IMAGES[st.id] || "/styles/classic-cartoon.jpg";
+                  return (
+                    <button
+                      key={st.id}
+                      type="button"
+                      onClick={() => setSelectedArtStyle(st.id)}
+                      className={`group text-left rounded-xl p-3 border transition-all flex flex-col justify-between ${
+                        active
+                          ? "border-amber-400 bg-amber-500/15 ring-2 ring-amber-400/30 shadow-lg shadow-amber-500/15"
+                          : "border-slate-800 bg-slate-950/70 hover:border-slate-700 hover:bg-slate-900/60"
+                      }`}
+                    >
+                      <div className="w-full">
+                        {/* Real Visual Image Thumbnail */}
+                        <div className="relative h-28 w-full rounded-lg mb-2.5 overflow-hidden border border-white/10 bg-slate-950 group-hover:border-amber-400/50 transition">
+                          <img
+                            src={previewImg}
+                            alt={st.name}
+                            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              if (!target.src.includes("/api/asset")) {
+                                target.src = `/api/asset?path=images/styles/${st.id}.${st.id === "classic-cartoon" ? "jpg" : "png"}`;
+                              }
+                            }}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent flex items-end p-2">
+                            <span className="text-[10px] font-black px-2 py-0.5 rounded bg-black/75 text-amber-300 border border-amber-400/30 backdrop-blur-sm">
+                              {st.badge}
+                            </span>
+                          </div>
+                        </div>
+                        <div className="font-extrabold text-xs text-white flex items-center justify-between">
+                          <span>{st.name}</span>
+                          {active && <span className="text-amber-400 text-xs font-bold">✓ Active</span>}
+                        </div>
+                        <p className="text-[11px] text-slate-400 mt-1 line-clamp-2">
+                          {st.description}
+                        </p>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </section>
+
+            {/* STEP 3: NARRATOR DRESS & WARDROBE CUSTOMIZER */}
+            <section className="bg-slate-900/70 border border-slate-800/90 rounded-2xl p-5 shadow-xl">
+              <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <div className="flex items-center gap-2.5">
+                  <span className="w-7 h-7 rounded-lg bg-amber-500 text-slate-950 font-black text-xs flex items-center justify-center">
+                    3
+                  </span>
+                  <div>
+                    <h2 className="text-base font-extrabold text-white">
+                      Customize Narrator Dress & Costume
+                    </h2>
+                    <p className="text-xs text-slate-400">
+                      Choose from 30 historical & folklore outfits and customize the dress colors
+                    </p>
                   </div>
                 </div>
               </div>
 
-              {/* Longform Episodes Outline */}
-              <div className="bg-slate-900/80 border border-slate-800 p-5 rounded-xl space-y-3">
-                <div className="flex justify-between items-center">
-                  <h3 className="font-bold text-sm text-slate-100 flex items-center gap-2">
-                    <span>📜</span> Longform Documentary Episodes Ready for NPC Integration (33 Episodes)
-                  </h3>
-                  <span className="text-xs text-amber-400 font-mono">10-15 Min Formats</span>
+              {/* Category Filter Tabs */}
+              <div className="flex flex-wrap gap-1.5 mb-3">
+                {costumeGroups.map((grp) => (
+                  <button
+                    key={grp}
+                    type="button"
+                    onClick={() => setSelectedCostumeGroup(grp)}
+                    className={`px-3 py-1 rounded-lg text-xs font-bold transition ${
+                      selectedCostumeGroup === grp
+                        ? "bg-amber-500 text-slate-950"
+                        : "bg-slate-950 text-slate-400 hover:text-white border border-slate-800"
+                    }`}
+                  >
+                    {grp}
+                  </button>
+                ))}
+              </div>
+
+              {/* Costume Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 max-h-56 overflow-y-auto pr-1 mb-4">
+                {filteredCostumes.map((c) => {
+                  const active = selectedTheme === c.id;
+                  return (
+                    <button
+                      key={c.id}
+                      type="button"
+                      onClick={() => setSelectedTheme(c.id)}
+                      className={`p-2.5 rounded-xl border text-left transition flex items-center gap-2.5 ${
+                        active
+                          ? "border-amber-400 bg-amber-500/15 text-white"
+                          : "border-slate-800 bg-slate-950/60 text-slate-300 hover:border-slate-700"
+                      }`}
+                    >
+                      <span
+                        className="w-5 h-5 rounded-full border border-white/30 shrink-0"
+                        style={{backgroundColor: c.defaultTunic}}
+                      />
+                      <div className="min-w-0">
+                        <div className="text-xs font-bold truncate">{c.name}</div>
+                        <div className="text-[10px] text-slate-400 truncate">{c.group}</div>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Custom Dress Color Pickers & Swatches */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3 border-t border-slate-800/80">
+                <div>
+                  <div className="flex items-center justify-between mb-1.5">
+                    <label className="text-xs font-bold text-slate-300">
+                      Primary Dress / Tunic Color
+                    </label>
+                    <input
+                      type="color"
+                      value={selectedTunic || "#5c3d28"}
+                      onChange={(e) => setSelectedTunic(e.target.value)}
+                      className="w-7 h-7 rounded cursor-pointer bg-transparent border-0"
+                    />
+                  </div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {DRESS_SWATCHES.map((sw) => (
+                      <button
+                        key={sw.name}
+                        type="button"
+                        onClick={() => setSelectedTunic(sw.hex)}
+                        title={sw.name}
+                        className={`w-6 h-6 rounded-full border transition ${
+                          selectedTunic === sw.hex
+                            ? "ring-2 ring-amber-400 scale-110 border-white"
+                            : "border-slate-600 opacity-85 hover:opacity-100"
+                        }`}
+                        style={{
+                          background: sw.hex || "conic-gradient(#f59e0b, #ef4444, #3b82f6, #10b981)",
+                        }}
+                      />
+                    ))}
+                  </div>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-72 overflow-y-auto">
-                  {topics.filter(t => t.category === 'longform').map(t => (
-                    <div key={t.slug} className="p-3 bg-slate-950 rounded-xl border border-slate-800 space-y-1.5">
-                      <div className="flex justify-between items-start">
-                        <span className="font-bold text-xs text-slate-200">{t.title}</span>
-                        <span className="text-[10px] text-amber-400 font-mono shrink-0">{t.targetMinutes}m</span>
+
+                <div>
+                  <div className="flex items-center justify-between mb-1.5">
+                    <label className="text-xs font-bold text-slate-300">
+                      Secondary Sash / Cloak / Trim Color
+                    </label>
+                    <input
+                      type="color"
+                      value={selectedAccent || "#9e2424"}
+                      onChange={(e) => setSelectedAccent(e.target.value)}
+                      className="w-7 h-7 rounded cursor-pointer bg-transparent border-0"
+                    />
+                  </div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {DRESS_SWATCHES.map((sw) => (
+                      <button
+                        key={sw.name}
+                        type="button"
+                        onClick={() => setSelectedAccent(sw.hex)}
+                        title={sw.name}
+                        className={`w-6 h-6 rounded-full border transition ${
+                          selectedAccent === sw.hex
+                            ? "ring-2 ring-amber-400 scale-110 border-white"
+                            : "border-slate-600 opacity-85 hover:opacity-100"
+                        }`}
+                        style={{
+                          background: sw.hex || "conic-gradient(#f59e0b, #ef4444, #3b82f6, #10b981)",
+                        }}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* STEP 4: VOICE SELECTOR WITH AUDIBLE AUDIO PREVIEW */}
+            <section className="bg-slate-900/70 border border-slate-800/90 rounded-2xl p-5 shadow-xl">
+              <div className="flex items-center gap-2.5 mb-3">
+                <span className="w-7 h-7 rounded-lg bg-amber-500 text-slate-950 font-black text-xs flex items-center justify-center">
+                  4
+                </span>
+                <div>
+                  <h2 className="text-base font-extrabold text-white">Select Narrator Voice & Emotional Delivery</h2>
+                  <p className="text-xs text-slate-400">
+                    Accent-complimenting voices with real emotional prosody, breath pauses, and pitch contour
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 4 Voice Category Filter Tabs */}
+              <div className="flex flex-wrap gap-1.5 mb-3 border-b border-slate-800 pb-2.5">
+                {[
+                  {id: "all", label: "🌟 All Voices"},
+                  {id: "filipino", label: "🇵🇭 Filipino & Taglish"},
+                  {id: "folklore", label: "🕯️ Dark Folklore & Spooky"},
+                  {id: "history", label: "🏛️ History & Documentary"},
+                  {id: "viral", label: "⚡ Viral & Curious Host"},
+                ].map((vc) => (
+                  <button
+                    key={vc.id}
+                    type="button"
+                    onClick={() => setSelectedVoiceCategory(vc.id)}
+                    className={`px-3 py-1 rounded-lg text-xs font-bold transition flex items-center gap-1 ${
+                      selectedVoiceCategory === vc.id
+                        ? "bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20"
+                        : "bg-slate-950 text-slate-400 hover:text-white border border-slate-800"
+                    }`}
+                  >
+                    <span>{vc.label}</span>
+                  </button>
+                ))}
+              </div>
+
+              {/* Filtered Voice Cards Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-4">
+                {voices
+                  .filter((v) => selectedVoiceCategory === "all" || v.category === selectedVoiceCategory)
+                  .map((v) => {
+                    const active = selectedVoice === v.id;
+                    const isPlaying = playingVoiceId === v.id;
+                    return (
+                      <div
+                        key={v.id}
+                        onClick={() => {
+                          setSelectedVoice(v.id);
+                          if (v.category === "filipino") setSelectedVoiceCategory("filipino");
+                        }}
+                        className={`p-3.5 rounded-xl border text-left transition cursor-pointer flex flex-col justify-between ${
+                          active
+                            ? "border-amber-400 bg-amber-500/15 shadow-md shadow-amber-500/10 ring-1 ring-amber-400/30"
+                            : "border-slate-800 bg-slate-950/60 hover:border-slate-700 hover:bg-slate-900/40"
+                        }`}
+                      >
+                        <div>
+                          <div className="flex items-center justify-between mb-1.5">
+                            <span className="text-xs font-black text-white flex items-center gap-1.5">
+                              <span>🎙️</span>
+                              <span>{v.name}</span>
+                            </span>
+                            <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-400/20">
+                              {v.accent}
+                            </span>
+                          </div>
+                          <p className="text-[11px] text-slate-400 line-clamp-2 mb-3">{v.description}</p>
+                        </div>
+
+                        <div className="flex items-center justify-between pt-2 border-t border-slate-800/80">
+                          <span className="text-[10px] font-semibold text-slate-400">
+                            {active ? "✓ Selected Voice" : "Click to select"}
+                          </span>
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handlePlayVoiceSample(v.id);
+                            }}
+                            className={`px-3 py-1.5 rounded-lg text-xs font-black flex items-center gap-1.5 transition ${
+                              isPlaying
+                                ? "bg-amber-400 text-slate-950 shadow-lg shadow-amber-400/40 animate-pulse"
+                                : "bg-slate-800 hover:bg-slate-700 text-amber-300 border border-slate-700"
+                            }`}
+                          >
+                            <span>{isPlaying ? "⏸" : "▶"}</span>
+                            <span>{isPlaying ? "Stop" : "Listen Sample"}</span>
+                          </button>
+                        </div>
                       </div>
-                      <p className="text-[10px] text-slate-400 line-clamp-2">{t.angle}</p>
-                      <div className="flex justify-between items-center pt-1 border-t border-slate-850 text-[10px]">
-                        <span className="text-slate-500 font-mono">{t.slug}</span>
-                        <button
-                          onClick={() => handleTriggerRender(t.slug, 'long')}
-                          className="px-2 py-0.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold rounded text-[10px]"
-                        >
-                          Render Longform →
-                        </button>
-                      </div>
-                    </div>
+                    );
+                  })}
+              </div>
+
+              {/* Emotional Delivery & Prosody Pacing Sub-Panel */}
+              <div className="pt-3 border-t border-slate-800/80 space-y-2.5">
+                <div className="flex items-center justify-between">
+                  <label className="text-xs font-black text-white flex items-center gap-1.5">
+                    <span>🎭</span>
+                    <span>Emotional Delivery & Prosody Style</span>
+                  </label>
+                  <span className="text-[10px] text-emerald-400 font-bold">
+                    ✓ Auto-Accent Complimenting Active
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                  {[
+                    {id: "spooky-suspense", label: "🕯️ Eerie Dread", desc: "Campfire pauses, baritone drop (-4Hz)"},
+                    {id: "intense-survival", label: "🔥 Intense Drama", desc: "Urgent cadence, high-stakes reveal"},
+                    {id: "documentary-reverent", label: "📜 Documentary", desc: "Measured, historical authority"},
+                    {id: "curious-viral", label: "⚡ Curious Viral", desc: "Lively host, fast punchy hold-rate"},
+                  ].map((ep) => (
+                    <button
+                      key={ep.id}
+                      type="button"
+                      onClick={() => setSelectedEmotionPreset(ep.id)}
+                      className={`p-2.5 rounded-xl border text-left transition ${
+                        selectedEmotionPreset === ep.id
+                          ? "border-amber-400 bg-amber-500/15 text-white ring-1 ring-amber-400/40"
+                          : "border-slate-800 bg-slate-950/60 text-slate-400 hover:text-white"
+                      }`}
+                    >
+                      <div className="text-xs font-bold text-white">{ep.label}</div>
+                      <div className="text-[10px] text-slate-400 mt-0.5">{ep.desc}</div>
+                    </button>
                   ))}
                 </div>
               </div>
-            </div>
-          )}
+            </section>
 
-          {/* TAB 4: VAULT MANAGER */}
-          {activeTab === 'vault' && (
-            <div className="space-y-4">
-              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
-                <div>
-                  <h2 className="text-xl font-bold flex items-center gap-2">
-                    <span>📦</span> Vault Video Library
-                  </h2>
+            {/* STEP 5: STORYBOARD EDITOR, SCENE IMAGES & VIDEO RENDER ACTION */}
+            {!currentScript ? (
+              <section className="bg-slate-900/60 border border-dashed border-slate-800 hover:border-slate-700 rounded-2xl p-6 text-center space-y-4">
+                <div className="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-400 border border-amber-400/30 flex items-center justify-center text-2xl mx-auto shadow-inner">
+                  🎬
+                </div>
+                <div className="max-w-md mx-auto space-y-1">
+                  <h3 className="text-base font-extrabold text-white">
+                    Step 5 • Video Generation
+                  </h3>
                   <p className="text-xs text-slate-400">
-                    Live scan of all rendered MP4s across <code className="text-amber-400">out/</code> and longform directories
+                    When you are happy with your topic, style, dress, and voice above, click below to automatically produce and render your complete 1080×1920 Short video!
                   </p>
                 </div>
-                <button
-                  onClick={refreshVault}
-                  className="px-3 py-1.5 text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg flex items-center gap-1.5 transition-colors"
-                >
-                  <IconRefresh /> Rescan Files
-                </button>
-              </div>
-
-              {/* Video table */}
-              <div className="border border-slate-800 rounded-xl overflow-hidden bg-slate-900/80 overflow-x-auto">
-                <table className="w-full text-left text-xs text-slate-300 min-w-[680px]">
-                  <thead className="bg-slate-800/80 text-slate-400 uppercase text-[10px] tracking-wider">
-                    <tr>
-                      <th className="p-3.5">Video File</th>
-                      <th className="p-3.5">Category</th>
-                      <th className="p-3.5">Ratio</th>
-                      <th className="p-3.5">Duration</th>
-                      <th className="p-3.5">Size</th>
-                      <th className="p-3.5">Created</th>
-                      <th className="p-3.5 text-right">Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-slate-800/60 font-mono">
-                    {vault.map(v => (
-                      <tr key={v.relPath} className="hover:bg-slate-800/40 transition-colors">
-                        <td className="p-3.5 font-semibold text-slate-100 font-sans">
-                          {v.slug}.mp4
-                        </td>
-                        <td className="p-3.5">
-                          <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${
-                            v.type.includes('Published')
-                              ? 'bg-emerald-950 text-emerald-300 border border-emerald-800/50'
-                              : v.type.includes('Dialogue')
-                              ? 'bg-amber-950 text-amber-300 border border-amber-800/50'
-                              : v.type.includes('Longform')
-                              ? 'bg-blue-950 text-blue-300 border border-blue-800/50'
-                              : 'bg-purple-950 text-purple-300 border border-purple-800/50'
-                          }`}>
-                            {v.type}
-                          </span>
-                        </td>
-                        <td className="p-3.5">{v.aspectRatio}</td>
-                        <td className="p-3.5">{v.duration}</td>
-                        <td className="p-3.5">{v.sizeMB} MB</td>
-                        <td className="p-3.5">{v.dateAdded}</td>
-                        <td className="p-3.5 text-right space-x-2 font-sans">
-                          <button
-                            onClick={() => setPreviewVideo(v)}
-                            className="px-2.5 py-1 text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-md"
-                          >
-                            Play
-                          </button>
-                          <button
-                            onClick={() => {
-                              setPublishSlug(v.slug);
-                              setActiveTab('publisher');
-                            }}
-                            className="px-2.5 py-1 text-xs bg-amber-500 hover:bg-amber-600 text-slate-950 font-semibold rounded-md"
-                          >
-                            Publish
-                          </button>
-                        </td>
-                      </tr>
-                    ))}
-                    {vault.length === 0 && (
-                      <tr>
-                        <td colSpan={7} className="p-8 text-center text-slate-500">
-                          No rendered video files found on disk yet.
-                        </td>
-                      </tr>
-                    )}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          )}
-
-          {/* TAB 5: PIPELINE STUDIO (SCRIPT & VOICE) */}
-          {activeTab === 'generator' && (
-            <div className="space-y-6 max-w-4xl">
-              <div>
-                <h2 className="text-xl font-bold flex items-center gap-2">
-                  <span>⚡</span> Script & Voice AI Studio
-                </h2>
-                <p className="text-xs text-slate-400">
-                  Generate Gemini script JSON and Edge TTS voiceover with timestamps
-                </p>
-              </div>
-
-              {!keyStatus?.geminiKeySet && (
-                <div className="p-3.5 bg-amber-500/10 border border-amber-500/30 rounded-xl text-xs text-amber-300 flex items-center justify-between">
-                  <span>No Gemini API key set — script generation uses Gemini 2.5 Flash. Voiceover synthesis works offline without it.</span>
+                <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
                   <button
-                    onClick={() => setActiveTab('settings')}
-                    className="underline font-bold px-2 py-1 bg-amber-500/20 rounded"
+                    type="button"
+                    disabled={Boolean(busyAction)}
+                    onClick={handleFullAutoProduce}
+                    className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 hover:from-amber-300 hover:to-orange-300 text-slate-950 font-black text-sm shadow-xl shadow-amber-500/25 flex items-center justify-center gap-2 transition transform active:scale-95 disabled:opacity-50"
                   >
-                    Set Key →
+                    <span>⚡</span>
+                    <span>1-Click Auto-Produce Full Video Now</span>
+                  </button>
+                  <button
+                    type="button"
+                    disabled={Boolean(busyAction)}
+                    onClick={handleGenerateStory}
+                    className="w-full sm:w-auto px-5 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs border border-slate-700 transition"
+                  >
+                    <span>📝 Write Script First</span>
                   </button>
                 </div>
-              )}
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-slate-900/80 border border-slate-800 p-4 rounded-xl space-y-4">
-                  <h3 className="text-xs font-bold text-slate-300 uppercase tracking-wider">
-                    Select Topic ({topics.length})
-                  </h3>
-                  <div className="space-y-1.5 max-h-96 overflow-y-auto">
-                    {topics.map(t => (
-                      <button
-                        key={t.slug}
-                        onClick={() => {
-                          setSelectedTopic(t.slug);
-                          setScriptOutput('');
-                          setVoiceDone(false);
-                        }}
-                        className={`w-full text-left p-2.5 rounded-lg border text-xs transition-all ${
-                          selectedTopic === t.slug
-                            ? 'bg-amber-500/15 border-amber-500/40 text-amber-300 font-semibold'
-                            : 'bg-slate-950 border-slate-800 text-slate-300 hover:border-slate-700'
-                        }`}
-                      >
-                        <div className="font-medium truncate">{t.title}</div>
-                        <div className="text-[10px] text-slate-500 font-mono mt-0.5">{t.slug}</div>
-                      </button>
-                    ))}
+              </section>
+            ) : (
+              <section className="bg-slate-900/80 border border-amber-500/40 rounded-2xl p-5 shadow-2xl space-y-4">
+                <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-4">
+                  <div>
+                    <span className="text-[11px] font-bold uppercase text-amber-400">
+                      Step 5 • Storyboard & Production ({currentScript.slug})
+                    </span>
+                    <h2 className="text-lg font-black text-white mt-0.5">{currentScript.title}</h2>
+                    {currentScript.generatedBy && (
+                      <p className="text-[11px] text-emerald-400">
+                        Generated via {currentScript.generatedBy}
+                      </p>
+                    )}
                   </div>
 
-                  <div className="pt-2 border-t border-slate-800">
-                    <div className="flex gap-2">
-                      <input
-                        type="text"
-                        placeholder="New topic title…"
-                        value={newTopicInput}
-                        onChange={e => setNewTopicInput(e.target.value)}
-                        className="flex-1 bg-slate-950 border border-slate-800 rounded-lg px-2.5 py-1.5 text-xs text-slate-100 focus:outline-none focus:border-amber-500"
-                      />
-                      <button
-                        onClick={async () => {
-                          if (!newTopicInput.trim()) return;
-                          try {
-                            const res = await api<{slug: string}>('/api/topics', {
-                              method: 'POST',
-                              headers: {'Content-Type': 'application/json'},
-                              body: JSON.stringify({title: newTopicInput.trim()}),
-                            });
-                            setNewTopicInput('');
-                            await refreshTopics();
-                            setSelectedTopic(res.slug);
-                            addLog('topics', `Topic added: ${res.slug}`, 'success');
-                          } catch (e) {
-                            addLog('topics', `Failed: ${e}`, 'warning');
-                          }
-                        }}
-                        className="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-lg"
-                      >
-                        Add
-                      </button>
-                    </div>
+                  {/* Production Action Buttons */}
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      type="button"
+                      disabled={Boolean(busyAction)}
+                      onClick={() => handleGenerateSceneImage()}
+                      className="px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs transition disabled:opacity-50"
+                    >
+                      🎨 Paint All Scenes ($0)
+                    </button>
+                    <button
+                      type="button"
+                      disabled={Boolean(busyAction)}
+                      onClick={handleGenerateVoiceover}
+                      className="px-3.5 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-bold text-xs transition disabled:opacity-50"
+                    >
+                      🎙️ Record Voiceover
+                    </button>
+                    <button
+                      type="button"
+                      disabled={Boolean(busyAction)}
+                      onClick={() => handleRenderVideo("local")}
+                      className="px-4 py-2 rounded-xl bg-gradient-to-r from-amber-400 to-orange-400 hover:from-amber-300 hover:to-orange-300 text-slate-950 font-black text-xs shadow-lg shadow-amber-500/20 transition disabled:opacity-50 flex items-center gap-1.5"
+                    >
+                      <span>🎬</span>
+                      <span>Render 1080×1920 MP4</span>
+                    </button>
+                    <button
+                      type="button"
+                      disabled={Boolean(busyAction)}
+                      onClick={() => handleRenderVideo("cloud")}
+                      className="px-3.5 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs transition disabled:opacity-50 flex items-center gap-1.5"
+                      title="Render on GitHub Actions 16GB RAM server even when your laptop is off"
+                    >
+                      <span>☁️</span>
+                      <span>Cloud Render (Laptop-Off)</span>
+                    </button>
                   </div>
                 </div>
 
-                <div className="md:col-span-2 bg-slate-900/80 border border-slate-800 p-5 rounded-xl space-y-4">
-                  <h3 className="text-sm font-bold text-slate-200">
-                    Target Topic: <span className="text-amber-400 font-mono">{selectedTopic || '—'}</span>
-                  </h3>
-                  {busyMsg && (
-                    <div className="p-2.5 bg-red-500/10 border border-red-500/30 rounded-lg text-xs text-red-300 font-mono">
-                      {busyMsg}
-                    </div>
-                  )}
+                {/* Editable Hook Banner */}
+                <div>
+                  <label className="block text-xs font-bold text-slate-300 mb-1">
+                    On-Screen 3-Second Hook Banner Text
+                  </label>
+                  <input
+                    type="text"
+                    value={currentScript.hook}
+                    onChange={(e) =>
+                      setCurrentScript({...currentScript, hook: e.target.value})
+                    }
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2 text-sm font-bold text-amber-300"
+                  />
+                </div>
 
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <button
-                      onClick={async () => {
-                        if (!selectedTopic) return;
-                        setIsGeneratingScript(true);
-                        setBusyMsg('');
-                        addLog('make-script.mjs', `Generating script for "${selectedTopic}"…`, 'info');
-                        try {
-                          const d = await api<{scriptText: string; log: string}>('/api/script', {
-                            method: 'POST',
-                            headers: {'Content-Type': 'application/json'},
-                            body: JSON.stringify({slug: selectedTopic}),
-                          });
-                          setScriptOutput(d.scriptText || '(Script saved to scripts-out/)');
-                          addLog('make-script.mjs', `Script saved to scripts-out/${selectedTopic}.json`, 'success');
-                        } catch (e) {
-                          setBusyMsg(String(e));
-                          addLog('make-script.mjs', `Failed: ${e}`, 'warning');
-                        }
-                        setIsGeneratingScript(false);
-                      }}
-                      disabled={isGeneratingScript || !selectedTopic}
-                      className="flex-1 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 disabled:opacity-50"
-                    >
-                      <IconSparkles /> {isGeneratingScript ? 'Writing script…' : '1. Generate AI Script'}
-                    </button>
+                {/* Scene-by-Scene Cards */}
+                <div className="space-y-3">
+                  {currentScript.scenes.map((scene, idx) => {
+                    const imgUrl = scene.image
+                      ? `/api/asset?path=${encodeURIComponent(scene.image)}&t=${imageCacheBuster}`
+                      : null;
+                    const audUrl = scene.audio
+                      ? `/api/asset?path=${encodeURIComponent(scene.audio)}&t=${imageCacheBuster}`
+                      : null;
 
-                    <button
-                      onClick={async () => {
-                        if (!selectedTopic) return;
-                        setIsGeneratingVoice(true);
-                        setVoiceDone(false);
-                        addLog('make-voice.mjs', `Synthesizing Edge TTS audio for "${selectedTopic}"…`, 'info');
-                        try {
-                          await api('/api/voice', {
-                            method: 'POST',
-                            headers: {'Content-Type': 'application/json'},
-                            body: JSON.stringify({slug: selectedTopic}),
-                          });
-                          setVoiceDone(true);
-                          addLog('make-voice.mjs', `Audio saved in public/audio/${selectedTopic}/`, 'success');
-                        } catch (e) {
-                          addLog('make-voice.mjs', `Failed: ${e}`, 'warning');
-                        }
-                        setIsGeneratingVoice(false);
-                      }}
-                      disabled={isGeneratingVoice || !selectedTopic}
-                      className="flex-1 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 disabled:opacity-50"
-                    >
-                      <IconVolume /> {isGeneratingVoice ? 'Synthesizing voice…' : '2. Synthesize Voiceover'}
-                    </button>
-                  </div>
-
-                  {scriptOutput && (
-                    <div className="space-y-3 pt-2 border-t border-slate-800">
-                      <div className="flex justify-between items-center text-xs">
-                        <label className="font-semibold text-slate-400">Generated script preview</label>
-                        {voiceDone && <span className="text-emerald-400 font-mono flex items-center gap-1"><IconCheck /> Voiceover ready</span>}
-                      </div>
-                      <textarea
-                        rows={8}
-                        readOnly
-                        value={scriptOutput}
-                        className="w-full bg-slate-950 border border-slate-800 rounded-xl p-3 text-xs font-mono text-slate-200 leading-relaxed"
-                      />
-                    </div>
-                  )}
-
-                  <div className="pt-2 border-t border-slate-800 flex gap-2">
-                    <button
-                      onClick={() => handleTriggerRender(selectedTopic, 'short')}
-                      disabled={!selectedTopic}
-                      className="flex-1 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 disabled:opacity-50"
-                    >
-                      <IconPlay /> 3. Render Short (1080x1920)
-                    </button>
-                    {selectedTopicObj?.category === 'longform' && (
-                      <button
-                        onClick={() => handleTriggerRender(selectedTopic, 'long')}
-                        className="flex-1 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-1.5"
+                    return (
+                      <div
+                        key={idx}
+                        className="bg-slate-950/90 border border-slate-800 rounded-xl p-4 grid grid-cols-1 sm:grid-cols-12 gap-4 items-start"
                       >
-                        <IconPlay /> Render Longform (1920x1080)
+                        {/* Scene Artwork Preview */}
+                        <div className="sm:col-span-3 flex flex-col items-center">
+                          <div className="w-full aspect-[9/16] max-h-48 rounded-lg overflow-hidden border border-slate-700 bg-slate-900 flex items-center justify-center relative">
+                            {imgUrl ? (
+                              <img
+                                src={imgUrl}
+                                alt={`Scene ${idx + 1}`}
+                                className="w-full h-full object-cover"
+                              />
+                            ) : (
+                              <div className="w-full h-full relative">
+                                <img
+                                  src={STYLE_PREVIEW_IMAGES[selectedArtStyle] || "/styles/classic-cartoon.jpg"}
+                                  alt="Style placeholder"
+                                  className="w-full h-full object-cover opacity-60"
+                                />
+                                <div className="absolute inset-0 bg-black/60 flex items-center justify-center text-center p-2 text-[11px] text-white/90 font-bold">
+                                  Scene {idx + 1} Art
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                          <button
+                            type="button"
+                            disabled={sceneBusyIndex === idx || Boolean(busyAction)}
+                            onClick={() => handleGenerateSceneImage(idx)}
+                            className="mt-2 w-full py-1.5 px-2 rounded-lg bg-slate-800 hover:bg-indigo-600 text-[11px] font-bold text-white transition disabled:opacity-50"
+                          >
+                            {sceneBusyIndex === idx
+                              ? "Painting..."
+                              : imgUrl
+                              ? "🔄 Regenerate Art"
+                              : "🎨 Paint Scene Art"}
+                          </button>
+                        </div>
+
+                        {/* Scene Text & Image Prompt */}
+                        <div className="sm:col-span-9 space-y-2.5">
+                          <div className="flex items-center justify-between">
+                            <span className="text-xs font-extrabold text-amber-400">
+                              Scene {idx + 1} of {currentScript.scenes.length}
+                            </span>
+                            {scene.seconds && (
+                              <span className="text-[11px] text-emerald-400 font-semibold">
+                                ⏱️ {scene.seconds}s
+                              </span>
+                            )}
+                          </div>
+
+                          <div>
+                            <label className="block text-[10px] uppercase font-bold text-slate-400 mb-1">
+                              Spoken Narration & Subtitle Text
+                            </label>
+                            <textarea
+                              rows={2}
+                              value={scene.text}
+                              onChange={(e) => {
+                                const nextScenes = [...currentScript.scenes];
+                                nextScenes[idx] = {...nextScenes[idx], text: e.target.value};
+                                setCurrentScript({...currentScript, scenes: nextScenes});
+                              }}
+                              className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2.5 text-xs text-white"
+                            />
+                          </div>
+
+                          <div>
+                            <label className="block text-[10px] uppercase font-bold text-slate-400 mb-1">
+                              AI Background Image Prompt ({selectedArtStyle})
+                            </label>
+                            <input
+                              type="text"
+                              value={scene.imagePrompt || ""}
+                              onChange={(e) => {
+                                const nextScenes = [...currentScript.scenes];
+                                nextScenes[idx] = {
+                                  ...nextScenes[idx],
+                                  imagePrompt: e.target.value,
+                                };
+                                setCurrentScript({...currentScript, scenes: nextScenes});
+                              }}
+                              className="w-full bg-slate-900 border border-slate-800 rounded-lg px-2.5 py-1.5 text-[11px] text-slate-300"
+                            />
+                          </div>
+
+                          {audUrl && (
+                            <div className="pt-1">
+                              <audio controls src={audUrl} className="h-8 w-full max-w-xs" />
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* Bottom Save & 1-Click Auto-Produce Bar */}
+                <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-slate-800">
+                  <button
+                    type="button"
+                    onClick={() => handleSaveCurrentScript()}
+                    className="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-bold text-white"
+                  >
+                    💾 Save Story Edits
+                  </button>
+                  <button
+                    type="button"
+                    disabled={Boolean(busyAction)}
+                    onClick={handleFullAutoProduce}
+                    className="px-6 py-3 rounded-xl bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 hover:from-amber-300 hover:to-orange-300 text-slate-950 font-black text-xs shadow-lg shadow-amber-500/25 flex items-center gap-2"
+                  >
+                    <span>⚡</span>
+                    <span>1-Click Auto-Produce (Paint + Voice + Render MP4)</span>
+                  </button>
+                </div>
+              </section>
+            )}
+          </div>
+
+          {/* Right Sticky Live 9:16 Phone Preview Column (4 cols on Desktop) */}
+          <div className="lg:col-span-4">
+            <div className="sticky top-20 bg-slate-900/80 border border-slate-800 rounded-2xl p-5 flex flex-col items-center shadow-2xl">
+              <div className="w-full flex items-center justify-between mb-3">
+                <span className="text-xs font-extrabold uppercase tracking-wider text-amber-400">
+                  📱 Live 9:16 Short Preview
+                </span>
+                <span className="text-[11px] text-slate-400 font-semibold">1080 × 1920</span>
+              </div>
+
+              {/* 9:16 Vertical Phone Stage */}
+              <div className="w-64 aspect-[9/16] rounded-3xl border-4 border-slate-700 shadow-2xl overflow-hidden relative flex flex-col justify-between p-4 bg-slate-950">
+                {/* Real Background Artwork (from scene image or chosen art style) */}
+                <img
+                  src={
+                    currentScript?.scenes?.[previewSceneIndex]?.image
+                      ? `/api/asset?path=${encodeURIComponent(currentScript.scenes[previewSceneIndex].image)}&t=${imageCacheBuster}`
+                      : STYLE_PREVIEW_IMAGES[selectedArtStyle] || "/styles/classic-cartoon.jpg"
+                  }
+                  alt="Scenery preview"
+                  className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    if (!target.src.includes("classic-cartoon")) {
+                      target.src = "/styles/classic-cartoon.jpg";
+                    }
+                  }}
+                />
+
+                {/* Cinematic Vignette Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/85 pointer-events-none" />
+
+                {/* Top Channel Pill & Hook Banner */}
+                <div className="relative z-10 space-y-2">
+                  <div className="flex justify-between items-center">
+                    <span className="px-2 py-0.5 rounded-full bg-black/60 border border-amber-400/40 text-[8px] font-black uppercase text-amber-300">
+                      {selectedArtStyle}
+                    </span>
+                    <span className="px-2 py-0.5 rounded-full bg-black/60 border border-white/60 text-[8px] font-extrabold uppercase tracking-wider text-white">
+                      A Day Back Then
+                    </span>
+                  </div>
+                  <div className="bg-black/85 border-2 border-amber-400 rounded-xl p-2 text-center shadow-lg">
+                    <p className="text-xs font-black uppercase text-white leading-tight">
+                      {currentScript?.hook || topicInput.slice(0, 42) || "Did You Know?"}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Middle Dialogue / Caption Preview */}
+                <div className="relative z-10 my-auto text-center px-1">
+                  <span className="inline-block bg-black/80 border border-white/10 px-2.5 py-1.5 rounded-lg text-[11px] font-extrabold text-amber-300 shadow-lg leading-snug">
+                    {currentScript?.scenes?.[previewSceneIndex]?.text
+                      ? currentScript.scenes[previewSceneIndex].text.slice(0, 80) + "..."
+                      : "Your narrator performs with automatic lip-sync & gestures..."}
+                  </span>
+                </div>
+
+                {/* Grounded Authentic Vector Cartoon Narrator */}
+                <div className="relative z-10 flex justify-center items-end pt-2">
+                  <NarratorPreview
+                    theme={selectedTheme}
+                    tunicColor={selectedTunic || undefined}
+                    accentColor={selectedAccent || undefined}
+                    size={205}
+                    gesture="explain"
+                  />
+                </div>
+              </div>
+
+              {/* Scene Switcher Chips (when script scenes exist) */}
+              {currentScript && currentScript.scenes.length > 0 && (
+                <div className="w-full mt-3 flex items-center justify-center gap-1.5 flex-wrap">
+                  {currentScript.scenes.map((_, sIdx) => (
+                    <button
+                      key={sIdx}
+                      type="button"
+                      onClick={() => setPreviewSceneIndex(sIdx)}
+                      className={`px-2 py-1 rounded-md text-[10px] font-bold transition ${
+                        previewSceneIndex === sIdx
+                          ? "bg-amber-400 text-slate-950 font-black shadow-sm"
+                          : "bg-slate-800 text-slate-400 hover:text-white"
+                      }`}
+                    >
+                      Scene {sIdx + 1}
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* Summary Badges Below Phone Preview */}
+              <div className="w-full mt-3 space-y-2 text-xs">
+                <div className="flex justify-between py-1.5 border-b border-slate-800">
+                  <span className="text-slate-400">Art Style:</span>
+                  <span className="font-bold text-white">{selectedArtStyle}</span>
+                </div>
+                <div className="flex justify-between py-1.5 border-b border-slate-800">
+                  <span className="text-slate-400">Narrator Dress:</span>
+                  <span className="font-bold text-amber-300 uppercase">{selectedTheme}</span>
+                </div>
+                <div className="flex justify-between py-1.5 border-b border-slate-800">
+                  <span className="text-slate-400">Voice:</span>
+                  <span className="font-bold text-emerald-300">
+                    {voices.find((v) => v.id === selectedVoice)?.name || selectedVoice}
+                  </span>
+                </div>
+              </div>
+
+              {/* Quick Render Action Button in Preview Column */}
+              <button
+                type="button"
+                disabled={Boolean(busyAction)}
+                onClick={handleFullAutoProduce}
+                className="w-full mt-4 py-3 px-4 rounded-xl bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 hover:from-amber-300 hover:to-orange-300 text-slate-950 font-black text-xs shadow-lg shadow-amber-500/25 flex items-center justify-center gap-2 transition disabled:opacity-50"
+              >
+                <span>🎬</span>
+                <span>{currentScript ? "Render Video Now" : "1-Click Produce Video"}</span>
+              </button>
+            </div>
+          </div>
+        </main>
+      )}
+
+      {/* ===================================================================== */}
+      {/* TAB 2: MY VIDEOS VAULT & 1-TAP SOCIAL PUBLISHER                       */}
+      {/* ===================================================================== */}
+      {activeTab === "vault" && (
+        <main className="max-w-7xl mx-auto px-4 lg:px-8 py-6 space-y-6">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <h2 className="text-xl font-black text-white">🎬 My Rendered Videos Vault</h2>
+              <p className="text-xs text-slate-400">
+                Preview, download MP4s to your phone, or 1-tap schedule to YouTube & Instagram
+              </p>
+            </div>
+            <button
+              onClick={loadVaultAndJobs}
+              className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-bold text-white"
+            >
+              🔄 Refresh Vault
+            </button>
+          </div>
+
+          {/* Vault Category Filter Tabs */}
+          <div className="flex flex-wrap gap-1.5 border-b border-slate-800 pb-2.5">
+            {[
+              {id: "all", label: `🌟 All Videos (${vaultVideos.length})`},
+              {
+                id: "filipino",
+                label: `🇵🇭 Filipino / Tagalog (${
+                  vaultVideos.filter((v) => {
+                    const s = (v.slug || "").toLowerCase();
+                    return s.includes("kapre") || s.includes("mangkukulam") || s.includes("aswang") || s.includes("manananggal") || s.includes("tikbalang") || s.includes("bakunawa") || s.includes("balete") || s.includes("biringan") || s.includes("philippine") || s.includes("filipino");
+                  }).length
+                })`,
+              },
+              {id: "folklore", label: "🕯️ Dark Folklore & Horror"},
+              {id: "history", label: "🏛️ World History & Battles"},
+              {
+                id: "long",
+                label: `📺 Longform 16:9 (${vaultVideos.filter((v) => v.isLong).length})`,
+              },
+            ].map((vc) => (
+              <button
+                key={vc.id}
+                type="button"
+                onClick={() => setSelectedVaultCategory(vc.id)}
+                className={`px-3.5 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 ${
+                  selectedVaultCategory === vc.id
+                    ? "bg-amber-500 text-slate-950 shadow-md shadow-amber-500/20"
+                    : "bg-slate-900/90 text-slate-400 hover:text-white border border-slate-800"
+                }`}
+              >
+                <span>{vc.label}</span>
+              </button>
+            ))}
+          </div>
+
+          {vaultVideos.length === 0 ? (
+            <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-10 text-center">
+              <p className="text-sm text-slate-300 font-bold">No rendered videos in out/ yet.</p>
+              <p className="text-xs text-slate-400 mt-1">
+                Go to the Create Story tab to generate your first video!
+              </p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {vaultVideos
+                .filter((v) => {
+                  if (selectedVaultCategory === "all") return true;
+                  const s = (v.slug || "").toLowerCase();
+                  const isPh =
+                    s.includes("kapre") ||
+                    s.includes("mangkukulam") ||
+                    s.includes("aswang") ||
+                    s.includes("manananggal") ||
+                    s.includes("tikbalang") ||
+                    s.includes("bakunawa") ||
+                    s.includes("balete") ||
+                    s.includes("biringan") ||
+                    s.includes("philippine") ||
+                    s.includes("filipino");
+                  if (selectedVaultCategory === "filipino") return isPh;
+                  if (selectedVaultCategory === "long") return v.isLong;
+                  if (selectedVaultCategory === "folklore")
+                    return !isPh && (s.includes("witch") || s.includes("spooky") || s.includes("curse") || s.includes("ghost") || s.includes("plague") || s.includes("demon") || s.includes("creature"));
+                  if (selectedVaultCategory === "history")
+                    return s.includes("roman") || s.includes("gladiator") || s.includes("viking") || s.includes("wwii") || s.includes("pirate") || s.includes("victorian") || s.includes("ottoman") || s.includes("aztec") || s.includes("maya");
+                  return true;
+                })
+                .map((v) => (
+                <div
+                  key={v.slug}
+                  className="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 flex flex-col justify-between shadow-xl space-y-3"
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="font-extrabold text-sm text-white truncate">{v.slug}</span>
+                      <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">
+                        {v.sizeMB} MB • {Math.round(v.durationSec)}s
+                      </span>
+                    </div>
+
+                    {previewVideoSlug === v.slug ? (
+                      <video
+                        controls
+                        autoPlay
+                        src={`/api/video/${encodeURIComponent(v.slug)}`}
+                        className="w-full aspect-[9/16] max-h-72 rounded-xl bg-black border border-slate-700"
+                      />
+                    ) : (
+                      <button
+                        onClick={() => setPreviewVideoSlug(v.slug)}
+                        className="w-full h-44 rounded-xl bg-slate-950 border border-slate-800 hover:border-amber-500/50 flex flex-col items-center justify-center gap-2 transition"
+                      >
+                        <span className="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl">
+                          ▶
+                        </span>
+                        <span className="text-xs font-bold text-slate-300">
+                          Tap to Preview Video
+                        </span>
                       </button>
                     )}
                   </div>
+
+                  {/* Download & Social Publish Actions */}
+                  <div className="space-y-2 pt-2 border-t border-slate-800">
+                    <div className="grid grid-cols-2 gap-2">
+                      <a
+                        href={`/api/video/${encodeURIComponent(v.slug)}`}
+                        download={`${v.slug}.mp4`}
+                        className="py-2 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-center text-xs font-bold text-white"
+                      >
+                        ⬇️ Save MP4
+                      </a>
+                      <button
+                        onClick={() => handlePublishVideo(v.slug, "youtube")}
+                        className="py-2 px-3 rounded-xl bg-red-600 hover:bg-red-500 text-xs font-bold text-white"
+                      >
+                        📺 YouTube
+                      </button>
+                    </div>
+                    <div className="grid grid-cols-2 gap-2">
+                      <button
+                        onClick={() => handlePublishVideo(v.slug, "instagram")}
+                        className="py-2 px-3 rounded-xl bg-pink-600/80 hover:bg-pink-600 text-xs font-bold text-white"
+                      >
+                        📸 Instagram
+                      </button>
+                      <button
+                        onClick={() => handlePublishVideo(v.slug, "facebook")}
+                        className="py-2 px-3 rounded-xl bg-blue-600/80 hover:bg-blue-600 text-xs font-bold text-white"
+                      >
+                        📘 Facebook
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           )}
+        </main>
+      )}
 
-          {/* TAB 6: REMOTION RENDER QUEUE */}
-          {activeTab === 'renders' && (
-            <div className="space-y-4 max-w-4xl">
-              <div className="flex justify-between items-center">
-                <div>
-                  <h2 className="text-xl font-bold flex items-center gap-2">
-                    <span>🎥</span> Remotion Render Queue
-                  </h2>
-                  <p className="text-xs text-slate-400">Live multi-threaded render jobs spawned on your PC</p>
-                </div>
-                <button
-                  onClick={refreshRenders}
-                  className="px-3 py-1.5 text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg flex items-center gap-1"
+      {/* ===================================================================== */}
+      {/* TAB 3: RENDER & PUBLISH QUEUE                                         */}
+      {/* ===================================================================== */}
+      {activeTab === "jobs" && (
+        <main className="max-w-5xl mx-auto px-4 lg:px-8 py-6 space-y-4">
+          <div className="flex items-center justify-between">
+            <div>
+              <h2 className="text-xl font-black text-white">🚀 Active & Recent Jobs</h2>
+              <p className="text-xs text-slate-400">
+                Real-time Remotion rendering and social publishing logs
+              </p>
+            </div>
+            <button
+              onClick={loadVaultAndJobs}
+              className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-bold text-white"
+            >
+              🔄 Refresh
+            </button>
+          </div>
+
+          {jobs.length === 0 ? (
+            <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 text-center text-xs text-slate-400">
+              No render or publish jobs recorded yet.
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {jobs.map((j) => (
+                <div
+                  key={j.id}
+                  className="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 space-y-2"
                 >
-                  <IconRefresh /> Refresh
-                </button>
-              </div>
-
-              {renderJobs.length === 0 && (
-                <div className="p-12 text-center text-slate-500 border border-dashed border-slate-800 rounded-xl text-xs">
-                  No render jobs yet. Trigger a render from Muse AI Tracker or Pipeline Studio.
-                </div>
-              )}
-
-              {renderJobs.map(job => (
-                <div key={job.id} className="bg-slate-900/80 border border-slate-800 p-4 rounded-xl space-y-3">
-                  <div className="flex justify-between items-start">
+                  <div className="flex items-center justify-between">
                     <div>
-                      <div className="font-bold text-sm text-slate-100 flex items-center gap-2">
-                        <span>🎬</span> {job.slug}
-                        <span className="text-[10px] text-slate-400 font-mono px-2 py-0.5 rounded bg-slate-800 font-normal">
-                          {job.kind}
-                        </span>
-                      </div>
-                      <div className="text-[11px] text-slate-500 font-mono mt-0.5">{job.id}</div>
+                      <span className="font-extrabold text-sm text-white">
+                        {j.kind.toUpperCase()} — {j.slug}
+                      </span>
+                      <span className="ml-2 text-xs text-slate-400">{j.id}</span>
                     </div>
-                    <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold font-mono ${
-                      job.status === 'running'
-                        ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30 animate-pulse'
-                        : job.status === 'done'
-                        ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
-                        : job.status === 'failed'
-                        ? 'bg-red-500/20 text-red-400 border border-red-500/30'
-                        : 'bg-slate-800 text-slate-400'
-                    }`}>
-                      {job.status}
+                    <span
+                      className={`text-xs font-bold px-2.5 py-0.5 rounded-full ${
+                        j.status === "done"
+                          ? "bg-emerald-500/20 text-emerald-300"
+                          : j.status === "running"
+                          ? "bg-amber-500/20 text-amber-300"
+                          : "bg-rose-500/20 text-rose-300"
+                      }`}
+                    >
+                      {j.status.toUpperCase()} ({j.progress}%)
                     </span>
                   </div>
-
-                  <div className="w-full bg-slate-950 h-2.5 rounded-full overflow-hidden border border-slate-800">
+                  <div className="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
                     <div
-                      className="bg-gradient-to-r from-amber-500 to-amber-400 h-full transition-all duration-300"
-                      style={{width: `${job.progress}%`}}
+                      className="h-full bg-amber-500 transition-all"
+                      style={{width: `${j.progress}%`}}
                     />
                   </div>
-
-                  <div className="flex justify-between text-[10px] text-slate-500 font-mono">
-                    <span>Frame {job.frame} / {job.totalFrames || '…'}</span>
-                    <span>{job.progress}%</span>
-                  </div>
-
-                  {job.error && (
-                    <div className="text-[11px] text-red-400 font-mono bg-red-950/30 p-2 rounded border border-red-900/40">
-                      {job.error}
-                    </div>
-                  )}
-
-                  {job.log.length > 0 && (
-                    <details className="text-[11px] font-mono text-slate-400">
-                      <summary className="cursor-pointer text-slate-500 hover:text-slate-300">
-                        Render console log ({job.log.length} lines)
-                      </summary>
-                      <div className="mt-2 p-2.5 bg-slate-950 rounded border border-slate-800 max-h-36 overflow-y-auto whitespace-pre-wrap text-[10px]">
-                        {job.log.slice(-25).join('\n')}
-                      </div>
-                    </details>
+                  {j.log && j.log.length > 0 && (
+                    <pre className="bg-slate-950 border border-slate-800 rounded-xl p-3 text-[11px] text-slate-300 max-h-36 overflow-y-auto font-mono">
+                      {j.log.slice(-12).join("\n")}
+                    </pre>
                   )}
                 </div>
               ))}
             </div>
           )}
+        </main>
+      )}
 
-          {/* TAB 7: MULTI-PUBLISHER */}
-          {activeTab === 'publisher' && (
-            <div className="space-y-6 max-w-3xl">
-              <div>
-                <h2 className="text-xl font-bold flex items-center gap-2">
-                  <span>🚀</span> Multi-Platform Publisher
-                </h2>
-                <p className="text-xs text-slate-400">
-                  Publish rendered videos straight to YouTube Shorts, Facebook Reels, TikTok & Instagram
-                </p>
-              </div>
+      {/* ===================================================================== */}
+      {/* TAB 4: COMPREHENSIVE SETTINGS, FREELLMAPI & INTEGRATIONS              */}
+      {/* ===================================================================== */}
+      {activeTab === "settings" && (
+        <main className="max-w-5xl mx-auto px-4 lg:px-8 py-6 space-y-6">
+          <div>
+            <h2 className="text-xl font-black text-white">
+              ⚙️ Studio Settings, FreeLLMAPI & Social Credentials
+            </h2>
+            <p className="text-xs text-slate-400">
+              Enter your free API keys, social tokens, and Laptop-Off Cloud Render settings in one place. All keys are stored encrypted/mode-600 on the server.
+            </p>
+          </div>
 
-              <div className="bg-slate-900/80 border border-slate-800 p-5 rounded-xl space-y-5">
+          <form onSubmit={handleSaveSettings} className="space-y-6">
+            {/* 1. FreeLLMAPI Gateway & Multi-Provider Pool */}
+            <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 space-y-4">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
                 <div>
-                  <label className="block text-xs font-semibold text-slate-400 mb-1.5">Select Video</label>
-                  <select
-                    value={publishSlug}
-                    onChange={e => setPublishSlug(e.target.value)}
-                    className="w-full bg-slate-950 border border-slate-800 rounded-lg p-2.5 text-xs text-slate-100 font-mono"
-                  >
-                    <option value="">— Choose a rendered video from vault —</option>
-                    {vault.map(v => (
-                      <option key={v.slug} value={v.slug}>
-                        {v.slug}.mp4 ({v.duration} · {v.type})
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-semibold text-slate-400 mb-2">Publish Destinations</label>
-                  <div className="grid grid-cols-2 gap-3">
-                    {[
-                      {id: 'youtube', name: 'YouTube Shorts', hint: 'youtube-tokens.json'},
-                      {id: 'facebook', name: 'Facebook Reels', hint: 'facebook-tokens.json'},
-                      {id: 'tiktok', name: 'TikTok', hint: '.tiktok-session/'},
-                      {id: 'instagram', name: 'Instagram Reels', hint: 'via FB Page API'},
-                    ].map(p => (
-                      <label
-                        key={p.id}
-                        className="flex items-start space-x-3 bg-slate-950 p-3 rounded-xl border border-slate-800 cursor-pointer hover:border-slate-700 transition-colors"
-                      >
-                        <input
-                          type="checkbox"
-                          checked={!!platforms[p.id]}
-                          onChange={e => setPlatforms(prev => ({...prev, [p.id]: e.target.checked}))}
-                          className="mt-0.5 accent-amber-500 rounded"
-                        />
-                        <div>
-                          <div className="text-xs font-semibold text-slate-200">{p.name}</div>
-                          <div className="text-[10px] text-slate-500 mt-0.5">{p.hint}</div>
-                        </div>
-                      </label>
-                    ))}
-                  </div>
-                </div>
-
-                <button
-                  onClick={async () => {
-                    if (!publishSlug) {
-                      addLog('publisher', 'Select a video first.', 'warning');
-                      return;
-                    }
-                    const chosen = Object.keys(platforms).filter(k => platforms[k]);
-                    if (!chosen.length) {
-                      addLog('publisher', 'Select at least one platform.', 'warning');
-                      return;
-                    }
-                    try {
-                      const d = await api<{jobs: {id: string; platform: string}[]}>('/api/publish', {
-                        method: 'POST',
-                        headers: {'Content-Type': 'application/json'},
-                        body: JSON.stringify({slug: publishSlug, platforms: chosen}),
-                      });
-                      setPublishJobs(prev => [...d.jobs, ...prev]);
-                      addLog('publisher', `Publish queued for ${publishSlug} → ${chosen.join(', ')}`, 'info');
-                    } catch (e) {
-                      addLog('publisher', `Failed: ${e}`, 'warning');
-                    }
-                  }}
-                  className="w-full py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs rounded-xl flex items-center justify-center gap-2 transition-colors shadow-lg shadow-amber-500/10"
-                >
-                  <IconUpload /> Upload to Selected Platforms
-                </button>
-              </div>
-            </div>
-          )}
-
-          {/* TAB 8: PHONE REMOTE ACCESS */}
-          {activeTab === 'remote' && (
-            <div className="space-y-6 max-w-2xl">
-              <div>
-                <h2 className="text-xl font-bold flex items-center gap-2">
-                  <span>📱</span> Phone & Remote Access Hub
-                </h2>
-                <p className="text-xs text-slate-400">
-                  Control the entire pipeline, monitor Muse AI, and trigger renders from your phone anywhere in the world
-                </p>
-              </div>
-
-              {/* Status & Toggle Card */}
-              <div className="bg-slate-900/80 border border-slate-800 p-5 rounded-xl space-y-4">
-                <div className="flex justify-between items-center">
-                  <div>
-                    <h3 className="font-bold text-sm text-slate-100 flex items-center gap-2">
-                      <IconGlobe /> Cloudflare Secure Tunnel (Global Access)
-                    </h3>
-                    <p className="text-[11px] text-slate-400 mt-0.5">
-                      Works over 4G/5G mobile cellular data with zero router port forwarding
-                    </p>
-                  </div>
-                  <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold font-mono ${
-                    tunnel?.status === 'running'
-                      ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
-                      : 'bg-slate-800 text-slate-400'
-                  }`}>
-                    {tunnel?.status === 'running' ? '● Connected' : 'Offline'}
-                  </span>
-                </div>
-
-                {tunnel?.status === 'running' && tunnel.url ? (
-                  <div className="space-y-3 p-4 bg-slate-950 rounded-xl border border-emerald-500/30">
-                    <label className="text-xs font-semibold text-emerald-400 block">
-                      Your Phone Web & PWA URL (Tap to Copy):
-                    </label>
-                    <div className="flex gap-2">
-                      <input
-                        readOnly
-                        value={tunnel.url}
-                        className="flex-1 bg-slate-900 border border-emerald-500/40 rounded-lg px-3 py-2 text-xs font-mono text-emerald-300 select-all"
-                      />
-                      <button
-                        onClick={() => copyToClipboard(tunnel.url!, 'Copied to clipboard!')}
-                        className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-lg flex items-center gap-1.5 transition-colors"
-                      >
-                        <IconCopy /> {copyFeedback || 'Copy'}
-                      </button>
-                    </div>
-                    <p className="text-[11px] text-slate-400">
-                      Open this link on Safari (iOS) or Chrome (Android) while your PC is on.
-                    </p>
-                  </div>
-                ) : null}
-
-                <div className="flex gap-3">
-                  <button
-                    onClick={handleToggleTunnel}
-                    disabled={tunnelBusy}
-                    className={`flex-1 py-3 font-bold text-xs rounded-xl flex items-center justify-center gap-2 transition-colors disabled:opacity-50 ${
-                      tunnel?.status === 'running'
-                        ? 'bg-red-500/20 hover:bg-red-500/30 text-red-400 border border-red-500/30'
-                        : 'bg-amber-500 hover:bg-amber-600 text-slate-950 shadow-lg shadow-amber-500/10'
-                    }`}
-                  >
-                    <IconGlobe />
-                    {tunnelBusy
-                      ? 'Updating Tunnel…'
-                      : tunnel?.status === 'running'
-                      ? 'Disconnect Tunnel'
-                      : 'Launch Public Mobile Link'}
-                  </button>
-                </div>
-              </div>
-
-              {/* Local Network Info */}
-              <div className="bg-slate-900/80 border border-slate-800 p-5 rounded-xl space-y-3">
-                <h3 className="font-bold text-sm text-slate-100 flex items-center gap-2">
-                  <span>📶</span> Home Wi-Fi Network Access
-                </h3>
-                <p className="text-[11px] text-slate-400">
-                  When your phone is connected to the same home Wi-Fi as this PC:
-                </p>
-                <div className="flex justify-between items-center p-3 bg-slate-950 rounded-lg border border-slate-800 text-xs font-mono">
-                  <span className="text-slate-300">http://{tunnel?.localIp || '192.168.1.17'}:3100</span>
-                  <button
-                    onClick={() => copyToClipboard(`http://${tunnel?.localIp || '192.168.1.17'}:3100`, 'Copied!')}
-                    className="text-amber-400 hover:underline"
-                  >
-                    Copy
-                  </button>
-                </div>
-              </div>
-
-              {/* How to Install as App on Phone */}
-              <div className="bg-slate-900/80 border border-slate-800 p-5 rounded-xl space-y-3 text-xs">
-                <h3 className="font-bold text-sm text-slate-100 flex items-center gap-2">
-                  <span>📲</span> How to Install as Fullscreen App on Phone
-                </h3>
-                <div className="space-y-2 text-slate-300">
-                  <div className="p-3 bg-slate-950 rounded-lg border border-slate-800">
-                    <span className="font-bold text-amber-400 block mb-1">🍎 iPhone / iPad (Safari):</span>
-                    1. Open the URL in Safari.<br />
-                    2. Tap the <strong>Share</strong> button (box with upward arrow).<br />
-                    3. Tap <strong>&quot;Add to Home Screen&quot;</strong>.<br />
-                    4. Launch it anytime like a native App with full offline icon!
-                  </div>
-                  <div className="p-3 bg-slate-950 rounded-lg border border-slate-800">
-                    <span className="font-bold text-emerald-400 block mb-1">🤖 Android (Chrome):</span>
-                    1. Open the URL in Chrome.<br />
-                    2. Tap the three dots (⋮) in the top-right corner.<br />
-                    3. Tap <strong>&quot;Install app&quot;</strong> or <strong>&quot;Add to Home screen&quot;</strong>.
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* TAB 9: SETTINGS */}
-          {activeTab === 'settings' && (
-            <div className="space-y-6 max-w-2xl">
-              <div>
-                <h2 className="text-xl font-bold">Settings & API Configuration</h2>
-                <p className="text-xs text-slate-400">Pipeline settings stored securely on your PC</p>
-              </div>
-
-              <div className="bg-slate-900/80 border border-slate-800 p-5 rounded-xl space-y-4">
-                <div>
-                  <h3 className="text-sm font-bold text-slate-200">🔑 Gemini API Key</h3>
-                  <p className="text-[11px] text-slate-500 mt-1">
-                    Used for AI script writing. Stored server-side in <code>data/keys.json</code> (never committed to git).
+                  <h3 className="text-base font-extrabold text-amber-400">
+                    ⚡ 1. FreeLLMAPI & Multi-Provider AI Pool ($0 Token Aggregation)
+                  </h3>
+                  <p className="text-xs text-slate-400">
+                    Connect your self-hosted FreeLLMAPI gateway OR add free provider keys directly for automatic 429 failover. Works out-of-the-box with Pollinations Zero-Key AI!
                   </p>
                 </div>
+                <button
+                  type="button"
+                  onClick={handleTestLLM}
+                  className="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs"
+                >
+                  ⚡ Test AI Connection
+                </button>
+              </div>
 
-                <div className="p-3.5 bg-slate-950 rounded-lg border border-slate-800 space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-xs font-semibold text-slate-200">Gemini Key Status</span>
-                    <span className={`text-[11px] font-mono ${keyStatus?.geminiKeySet ? 'text-emerald-400' : 'text-amber-400'}`}>
-                      {keyStatus ? (keyStatus.geminiKeySet ? `Configured (${keyStatus.geminiKeySource})` : 'Missing') : '…'}
+              {llmTestResult && (
+                <div
+                  className={`p-3 rounded-xl border text-xs ${
+                    llmTestResult.ok
+                      ? "bg-emerald-950/60 border-emerald-500/40 text-emerald-200"
+                      : "bg-rose-950/60 border-rose-500/40 text-rose-200"
+                  }`}
+                >
+                  {llmTestResult.ok ? (
+                    <>
+                      ✅ <strong>Active Provider:</strong> {llmTestResult.provider} (
+                      {llmTestResult.model}) • <strong>Latency:</strong> {llmTestResult.latencyMs}ms
+                    </>
+                  ) : (
+                    <>❌ {llmTestResult.error}</>
+                  )}
+                </div>
+              )}
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-bold text-slate-300 mb-1">
+                    FreeLLMAPI Gateway URL
+                  </label>
+                  <input
+                    type="text"
+                    value={keyInputs.FREELLMAPI_URL}
+                    onChange={(e) =>
+                      setKeyInputs({...keyInputs, FREELLMAPI_URL: e.target.value})
+                    }
+                    placeholder="http://localhost:3001/v1"
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white"
+                  />
+                </div>
+                <div>
+                  <div className="flex justify-between mb-1">
+                    <label className="text-xs font-bold text-slate-300">
+                      FreeLLMAPI Unified Master Key
+                    </label>
+                    <span className="text-[11px] text-emerald-400">
+                      {settingsData?.keys?.FREELLMAPI_KEY?.masked || "Optional"}
                     </span>
                   </div>
+                  <input
+                    type="password"
+                    value={keyInputs.FREELLMAPI_KEY}
+                    onChange={(e) =>
+                      setKeyInputs({...keyInputs, FREELLMAPI_KEY: e.target.value})
+                    }
+                    placeholder="freellmapi-..."
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white"
+                  />
+                </div>
+              </div>
 
-                  <div className="flex gap-2">
-                    <input
-                      type="password"
-                      value={keyInput}
-                      onChange={e => setKeyInput(e.target.value)}
-                      placeholder="Paste Gemini API key…"
-                      className="flex-1 bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs text-slate-100 font-mono focus:outline-none focus:border-amber-500"
-                    />
-                    <button
-                      onClick={async () => {
-                        if (!keyInput.trim()) return;
-                        setKeyBusy(true);
-                        try {
-                          await api('/api/settings/keys', {
-                            method: 'POST',
-                            headers: {'Content-Type': 'application/json'},
-                            body: JSON.stringify({geminiKey: keyInput.trim()}),
-                          });
-                          setKeyInput('');
-                          setKeyMsg('API Key saved.');
-                          const ks = await api<any>('/api/settings/keys');
-                          setKeyStatus(ks);
-                          addLog('settings', 'Gemini API key updated.', 'success');
-                        } catch (e) {
-                          setKeyMsg(String(e));
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                {[
+                  {
+                    key: "GROQ_API_KEY",
+                    label: "Groq API Key (Free 800 tok/s Llama 3.3)",
+                    url: "https://console.groq.com/keys",
+                    placeholder: "gsk_...",
+                  },
+                  {
+                    key: "CEREBRAS_API_KEY",
+                    label: "Cerebras API Key (Free 1800 tok/s)",
+                    url: "https://cloud.cerebras.ai/",
+                    placeholder: "csk-...",
+                  },
+                  {
+                    key: "GEMINI_API_KEY",
+                    label: "Google Gemini AI Studio Key (Script + Image + TTS)",
+                    url: "https://aistudio.google.com/apikey",
+                    placeholder: "AIzaSy...",
+                  },
+                  {
+                    key: "OPENROUTER_API_KEY",
+                    label: "OpenRouter API Key (Free Models Pool)",
+                    url: "https://openrouter.ai/keys",
+                    placeholder: "sk-or-v1-...",
+                  },
+                  {
+                    key: "MISTRAL_API_KEY",
+                    label: "Mistral Free Tier API Key",
+                    url: "https://console.mistral.ai/api-keys/",
+                    placeholder: "Mistral key...",
+                  },
+                  {
+                    key: "HF_API_KEY",
+                    label: "Hugging Face Token (Free FLUX.1 Image Gen)",
+                    url: "https://huggingface.co/settings/tokens",
+                    placeholder: "hf_...",
+                  },
+                ].map((item) => {
+                  const status = settingsData?.keys?.[item.key];
+                  return (
+                    <div key={item.key}>
+                      <div className="flex items-center justify-between mb-1">
+                        <label className="text-xs font-bold text-slate-300">{item.label}</label>
+                        <div className="flex items-center gap-2">
+                          {status?.isSet && (
+                            <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">
+                              ✓ {status.masked}
+                            </span>
+                          )}
+                          <a
+                            href={item.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-[11px] text-amber-400 hover:underline font-semibold"
+                          >
+                            Get Free Key ↗
+                          </a>
+                        </div>
+                      </div>
+                      <input
+                        type="password"
+                        value={keyInputs[item.key] || ""}
+                        onChange={(e) =>
+                          setKeyInputs({...keyInputs, [item.key]: e.target.value})
                         }
-                        setKeyBusy(false);
-                      }}
-                      disabled={keyBusy || !keyInput.trim()}
-                      className="px-4 py-2 bg-amber-500 hover:bg-amber-600 disabled:opacity-50 text-slate-950 text-xs font-bold rounded-lg"
-                    >
-                      Save
-                    </button>
-                  </div>
-                  {keyMsg && <p className="text-[11px] text-slate-400">{keyMsg}</p>}
+                        placeholder={status?.isSet ? "Saved (enter new key to replace)" : item.placeholder}
+                        className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white"
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* 2. Default Image & Voice Engine Selectors */}
+            <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 space-y-4">
+              <h3 className="text-base font-extrabold text-amber-400">
+                🎨 2. Default Artwork & Voice Synthesis Engines
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-bold text-slate-300 mb-1">
+                    Background Image Engine
+                  </label>
+                  <select
+                    value={keyInputs.IMAGE_PROVIDER}
+                    onChange={(e) =>
+                      setKeyInputs({...keyInputs, IMAGE_PROVIDER: e.target.value})
+                    }
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white"
+                  >
+                    <option value="auto">
+                      ⚡ Auto Failover (Gemini → HuggingFace Flux → Pollinations Flux $0)
+                    </option>
+                    <option value="pollinations">
+                      🌸 Pollinations.ai Flux (100% Free, Zero API Key Required)
+                    </option>
+                    <option value="gemini">🎨 Google Gemini Image Generation</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-slate-300 mb-1">
+                    Voiceover Synthesis Engine
+                  </label>
+                  <select
+                    value={keyInputs.VOICE_PROVIDER}
+                    onChange={(e) =>
+                      setKeyInputs({...keyInputs, VOICE_PROVIDER: e.target.value})
+                    }
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white"
+                  >
+                    <option value="edge">
+                      🎙️ Free Neural TTS (100% Free, Zero Key Needed)
+                    </option>
+                    <option value="gemini">✨ Google Gemini Studio TTS</option>
+                  </select>
                 </div>
               </div>
             </div>
-          )}
-        </div>
 
-        {/* Live Terminal Log Stream at Bottom */}
-        <div className="mt-8 border-t border-slate-800/80 pt-4 space-y-2">
-          <div className="flex justify-between items-center text-xs text-slate-400">
-            <span className="font-semibold text-slate-300 flex items-center gap-1.5 font-mono">
-              <IconTerminal /> Live Pipeline Console
-            </span>
-            <button
-              onClick={() => setLogs([])}
-              className="text-[10px] text-slate-500 hover:text-slate-300 transition-colors"
-            >
-              Clear Log
-            </button>
-          </div>
-          <div className="h-28 bg-slate-950 border border-slate-800 rounded-xl p-3 overflow-y-auto font-mono text-[11px] space-y-1">
-            {logs.map(log => (
-              <div key={log.id} className="flex items-start gap-2">
-                <span className="text-slate-600 shrink-0">[{log.time}]</span>
-                <span className="text-amber-500 font-semibold shrink-0">[{log.script}]</span>
-                <span className={log.type === 'success' ? 'text-emerald-400' : log.type === 'warning' ? 'text-amber-300' : 'text-slate-300'}>
-                  {log.msg}
-                </span>
+            {/* 3. Social Publishing Connections */}
+            <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 space-y-4">
+              <h3 className="text-base font-extrabold text-amber-400">
+                📺 3. Social Publishing Setup (YouTube, Instagram, Facebook)
+              </h3>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div className="p-3 rounded-xl bg-slate-950 border border-slate-800">
+                  <div className="text-xs font-bold text-white">📺 YouTube Channel</div>
+                  <div
+                    className={`text-xs font-bold mt-1 ${
+                      settingsData?.social?.youtubeAuthorized
+                        ? "text-emerald-400"
+                        : "text-amber-400"
+                    }`}
+                  >
+                    {settingsData?.social?.youtubeAuthorized
+                      ? "✅ Connected & Verified"
+                      : "⚠️ Needs Authorization"}
+                  </div>
+                </div>
+                <div className="p-3 rounded-xl bg-slate-950 border border-slate-800">
+                  <div className="text-xs font-bold text-white">📸 Instagram & Facebook</div>
+                  <div
+                    className={`text-xs font-bold mt-1 ${
+                      settingsData?.social?.metaTokenSet ? "text-emerald-400" : "text-slate-400"
+                    }`}
+                  >
+                    {settingsData?.social?.metaTokenSet
+                      ? "✅ Meta Token Saved"
+                      : "Not Configured Yet"}
+                  </div>
+                </div>
+                <div className="p-3 rounded-xl bg-slate-950 border border-slate-800">
+                  <div className="text-xs font-bold text-white">🎵 TikTok Session</div>
+                  <div
+                    className={`text-xs font-bold mt-1 ${
+                      settingsData?.social?.tiktokSessionReady
+                        ? "text-emerald-400"
+                        : "text-slate-400"
+                    }`}
+                  >
+                    {settingsData?.social?.tiktokSessionReady
+                      ? "✅ Session Saved"
+                      : "Run login-tiktok.bat"}
+                  </div>
+                </div>
               </div>
-            ))}
-            <div ref={logEndRef} />
-          </div>
-        </div>
-      </main>
 
-      {/* Video Player Modal */}
-      {previewVideo && (
-        <div
-          className="fixed inset-0 bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-4 z-50 animate-in fade-in"
-          onClick={() => setPreviewVideo(null)}
-        >
-          <div
-            className="bg-slate-900 border border-slate-800 rounded-2xl p-5 max-w-lg w-full space-y-4 shadow-2xl"
-            onClick={e => e.stopPropagation()}
-          >
-            <div className="flex justify-between items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                  <label className="block text-xs font-bold text-slate-300 mb-1">
+                    Facebook Page ID
+                  </label>
+                  <input
+                    type="text"
+                    value={keyInputs.fbPageId}
+                    onChange={(e) => setKeyInputs({...keyInputs, fbPageId: e.target.value})}
+                    placeholder="e.g. 1234567890"
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-slate-300 mb-1">
+                    Instagram Business Account ID
+                  </label>
+                  <input
+                    type="text"
+                    value={keyInputs.igUserId}
+                    onChange={(e) => setKeyInputs({...keyInputs, igUserId: e.target.value})}
+                    placeholder="e.g. 1784140..."
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-slate-300 mb-1">
+                    Meta Long-Lived Page Access Token
+                  </label>
+                  <input
+                    type="password"
+                    value={keyInputs.fbPageAccessToken}
+                    onChange={(e) =>
+                      setKeyInputs({...keyInputs, fbPageAccessToken: e.target.value})
+                    }
+                    placeholder="EAA..."
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white"
+                  />
+                </div>
+              </div>
+
               <div>
-                <h3 className="font-bold text-sm text-slate-100 font-sans">{previewVideo.title}</h3>
-                <p className="text-[11px] text-slate-400 font-mono">{previewVideo.slug}.mp4 · {previewVideo.type}</p>
+                <label className="block text-xs font-bold text-slate-300 mb-1">
+                  Optional: Paste YouTube `client_secret.json` Content (Already Configured!)
+                </label>
+                <textarea
+                  rows={2}
+                  value={keyInputs.youtubeClientSecretJson}
+                  onChange={(e) =>
+                    setKeyInputs({...keyInputs, youtubeClientSecretJson: e.target.value})
+                  }
+                  placeholder='{"installed":{"client_id":"...","client_secret":"..."}}'
+                  className="w-full bg-slate-950 border border-slate-700 rounded-xl p-2.5 text-xs text-white font-mono"
+                />
               </div>
+            </div>
+
+            {/* 4. Laptop-Off Cloud Render Worker */}
+            <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 space-y-4">
+              <div>
+                <h3 className="text-base font-extrabold text-amber-400">
+                  ☁️ 4. "Laptop-Off" Cloud Render Worker ($0 GitHub Actions 16GB RAM Engine)
+                </h3>
+                <p className="text-xs text-slate-400">
+                  When deployed to Vercel, configure your GitHub repo and Personal Access Token so tapping "Cloud Render" on your phone renders the video on GitHub's servers even when your laptop is powered off.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-bold text-slate-300 mb-1">
+                    GitHub Repository (`owner/repo`)
+                  </label>
+                  <input
+                    type="text"
+                    value={keyInputs.GITHUB_REPO}
+                    onChange={(e) => setKeyInputs({...keyInputs, GITHUB_REPO: e.target.value})}
+                    placeholder="e.g. yourusername/a-day-back-then-automation"
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-slate-300 mb-1">
+                    GitHub Personal Access Token (`repo` + `workflow` scope)
+                  </label>
+                  <input
+                    type="password"
+                    value={keyInputs.GITHUB_TOKEN}
+                    onChange={(e) => setKeyInputs({...keyInputs, GITHUB_TOKEN: e.target.value})}
+                    placeholder="ghp_..."
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white"
+                  />
+                </div>
+              </div>
+
+              {tunnelInfo && (
+                <div className="p-3 rounded-xl bg-slate-950 border border-slate-800 flex flex-wrap items-center justify-between gap-2 text-xs">
+                  <div>
+                    <span className="font-bold text-slate-300">📶 Home Wi-Fi Phone URL: </span>
+                    <span className="text-amber-400 font-mono">{tunnelInfo.localUrl}</span>
+                    {tunnelInfo.url && (
+                      <div className="mt-1">
+                        <span className="font-bold text-emerald-400">🌐 Public Mobile URL: </span>
+                        <a
+                          href={tunnelInfo.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-emerald-300 underline font-mono"
+                        >
+                          {tunnelInfo.url}
+                        </a>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <div className="flex justify-end">
               <button
-                onClick={() => setPreviewVideo(null)}
-                className="w-8 h-8 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center font-bold"
+                type="submit"
+                disabled={Boolean(busyAction)}
+                className="px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs shadow-lg shadow-amber-500/20"
+              >
+                💾 Save All Settings & Keys
+              </button>
+            </div>
+          </form>
+        </main>
+      )}
+
+      {/* Mobile Sticky Bottom Navigation Bar */}
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0b0e17]/95 backdrop-blur-xl border-t border-slate-800 grid grid-cols-4 py-2 px-2">
+        {[
+          {id: "create", icon: "✨", label: "Create"},
+          {id: "vault", icon: "🎬", label: `Videos (${vaultVideos.length})`},
+          {id: "jobs", icon: "🚀", label: "Queue"},
+          {id: "settings", icon: "⚙️", label: "Settings"},
+        ].map((item) => (
+          <button
+            key={item.id}
+            onClick={() => setActiveTab(item.id as any)}
+            className={`flex flex-col items-center justify-center py-1 rounded-xl text-[11px] font-bold ${
+              activeTab === item.id ? "text-amber-400" : "text-slate-400"
+            }`}
+          >
+            <span className="text-base">{item.icon}</span>
+            <span>{item.label}</span>
+          </button>
+        ))}
+      </nav>
+
+      {/* Login / Register Modal */}
+      {showAuthModal && (
+        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-slate-900 border border-slate-700 rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4">
+            <div className="flex items-center justify-between">
+              <h3 className="text-lg font-black text-white">
+                {authMode === "login" ? "👤 Sign In to Studio" : "✨ Create Creator Account"}
+              </h3>
+              <button
+                onClick={() => setShowAuthModal(false)}
+                className="text-slate-400 hover:text-white text-sm"
               >
                 ✕
               </button>
             </div>
 
-            <div className="w-full flex justify-center bg-black rounded-xl overflow-hidden">
-              <video
-                src={`/api/video/${encodeURIComponent(previewVideo.slug)}`}
-                controls
-                autoPlay
-                playsInline
-                className={`w-full ${previewVideo.aspectRatio === '16:9' ? 'aspect-video' : 'aspect-[9/16] max-h-[65vh]'} object-contain`}
-              />
-            </div>
-
-            <div className="flex gap-2">
+            <div className="grid grid-cols-2 gap-2 bg-slate-950 p-1 rounded-xl border border-slate-800">
               <button
-                onClick={() => {
-                  setPublishSlug(previewVideo.slug);
-                  setPreviewVideo(null);
-                  setActiveTab('publisher');
-                }}
-                className="flex-1 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-xs rounded-xl"
+                type="button"
+                onClick={() => setAuthMode("login")}
+                className={`py-2 rounded-lg text-xs font-bold ${
+                  authMode === "login" ? "bg-amber-500 text-slate-950" : "text-slate-400"
+                }`}
               >
-                Publish This Video
+                Login
+              </button>
+              <button
+                type="button"
+                onClick={() => setAuthMode("register")}
+                className={`py-2 rounded-lg text-xs font-bold ${
+                  authMode === "register" ? "bg-amber-500 text-slate-950" : "text-slate-400"
+                }`}
+              >
+                Register New Account
               </button>
             </div>
+
+            {authError && (
+              <div className="p-3 rounded-xl bg-rose-950/80 border border-rose-500/40 text-xs text-rose-200">
+                {authError}
+              </div>
+            )}
+
+            <form onSubmit={handleAuthSubmit} className="space-y-3">
+              {authMode === "register" && (
+                <div>
+                  <label className="block text-xs font-bold text-slate-300 mb-1">
+                    Creator Name
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    value={authName}
+                    onChange={(e) => setAuthName(e.target.value)}
+                    placeholder="e.g. Christian"
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white"
+                  />
+                </div>
+              )}
+              <div>
+                <label className="block text-xs font-bold text-slate-300 mb-1">
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  required
+                  value={authEmail}
+                  onChange={(e) => setAuthEmail(e.target.value)}
+                  placeholder="you@example.com"
+                  className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-slate-300 mb-1">Password</label>
+                <input
+                  type="password"
+                  required
+                  value={authPassword}
+                  onChange={(e) => setAuthPassword(e.target.value)}
+                  placeholder="••••••"
+                  className="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white"
+                />
+              </div>
+              <button
+                type="submit"
+                disabled={authLoading}
+                className="w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs shadow-lg shadow-amber-500/20"
+              >
+                {authLoading
+                  ? "Please wait..."
+                  : authMode === "login"
+                  ? "Sign In"
+                  : "Create Account & Enter Studio"}
+              </button>
+            </form>
           </div>
         </div>
       )}

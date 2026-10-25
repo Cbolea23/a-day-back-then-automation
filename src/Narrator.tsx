@@ -45,7 +45,11 @@ export type CharacterTheme =
   | "mummy"
   | "gravedigger"
   | "nun"
-  | "demon";
+  | "demon"
+  | "albularyo"
+  | "barong"
+  | "katipunero"
+  | "modern";
 
 export function getThemeFromSlug(slug: string = ""): CharacterTheme {
   const s = slug.toLowerCase();
@@ -203,6 +207,33 @@ export function getThemeFromSlug(slug: string = ""): CharacterTheme {
   ) {
     return "medieval";
   }
+  if (
+    s.includes("mangkukulam") ||
+    s.includes("manananggal") ||
+    s.includes("aswang") ||
+    s.includes("tikbalang") ||
+    s.includes("kapre") ||
+    s.includes("bakunawa") ||
+    s.includes("tiyanak") ||
+    s.includes("duwende") ||
+    s.includes("biringan") ||
+    s.includes("kulam") ||
+    s.includes("barang") ||
+    s.includes("anting") ||
+    s.includes("albularyo") ||
+    s.includes("babaylan")
+  ) {
+    return "albularyo";
+  }
+  if (s.includes("katipunan") || s.includes("katipunero") || s.includes("rizal") || s.includes("bonifacio")) {
+    return "katipunero";
+  }
+  if (s.includes("barong") || s.includes("filipino") || s.includes("philippine") || s.includes("manila")) {
+    return "barong";
+  }
+  if (s.includes("modern") || s.includes("urban")) {
+    return "modern";
+  }
   return "roman";
 }
 
@@ -221,6 +252,7 @@ type Props = {
   talking?: boolean;
   height?: number;
   tunic?: string;
+  accentColor?: string;
   /** Explicit gesture override (legacy). When `plan` is given, the plan wins. */
   gesture?: Gesture;
   /** Speech plan from planSpeech(): gestures follow the narration. */
@@ -663,6 +695,7 @@ const NarratorBody: React.FC<BodyProps> = ({
   archetype,
   height = 760,
   tunic,
+  accentColor,
   gesture,
   plan,
   frame,
@@ -1368,14 +1401,69 @@ const NarratorBody: React.FC<BodyProps> = ({
       ) : theme === "demon" ? (
         <>
           {/* Dark crimson robes */}
-          <path d="M96 168 Q150 152 204 168 L228 410 Q150 430 72 410 Z" fill="#3d0f0f" stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          <path d="M96 168 Q150 152 204 168 L228 410 Q150 430 72 410 Z" fill={tunic || "#3d0f0f"} stroke={INK} strokeWidth="6" strokeLinejoin="round" />
           {/* Ember cracks */}
-          <path d="M120 200 L135 260 L122 300 L140 360" stroke="#e8641f" strokeWidth="4" fill="none" />
-          <path d="M180 210 L168 270 L182 310 L170 370" stroke="#e8641f" strokeWidth="4" fill="none" />
+          <path d="M120 200 L135 260 L122 300 L140 360" stroke={accentColor || "#e8641f"} strokeWidth="4" fill="none" />
+          <path d="M180 210 L168 270 L182 310 L170 370" stroke={accentColor || "#e8641f"} strokeWidth="4" fill="none" />
           <circle cx="135" cy="262" r="3.5" fill="#ffb13d" />
           <circle cx="168" cy="272" r="3.5" fill="#ffb13d" />
           {/* Jagged collar */}
           <path d="M100 172 L115 150 L130 170 L145 148 L160 170 L175 148 L190 170 L200 175 Q150 195 100 175 Z" fill="#200808" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
+        </>
+      ) : theme === "albularyo" ? (
+        <>
+          {/* Traditional Filipino Folk Healer / Babaylan / Albularyo woven tunic */}
+          <path d="M96 168 Q150 152 204 168 L228 410 Q150 430 72 410 Z" fill={tunic || "#5c3d28"} stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Woven indigenous geometric shoulder wrap (hablon / inabel motif) */}
+          <path d="M92 168 L130 168 L145 410 L108 410 Z" fill={accentColor || "#9e2424"} stroke={INK} strokeWidth="3.5" />
+          <line x1="110" y1="170" x2="126" y2="408" stroke="#e5b32f" strokeWidth="3" strokeDasharray="8 6" />
+          {/* Abaca rope & herbal pouch belt */}
+          <rect x="76" y="282" width="148" height="22" rx="4" fill="#3a2414" stroke={INK} strokeWidth="4" />
+          <ellipse cx="182" cy="312" rx="18" ry="22" fill="#4e6b36" stroke={INK} strokeWidth="3.5" />
+          <circle cx="182" cy="296" r="5" fill="#c9a227" stroke={INK} strokeWidth="2" />
+          {/* Sacred Anting-Anting (triangular brass Eye of Providence talisman on cord) */}
+          <path d="M118 168 Q150 235 182 168" stroke="#1f1610" strokeWidth="4" fill="none" />
+          <polygon points="150,208 130,244 170,244" fill="#e5b32f" stroke={INK} strokeWidth="3.5" strokeLinejoin="round" />
+          <circle cx="150" cy="232" r="5" fill="#9e2424" stroke={INK} strokeWidth="2" />
+        </>
+      ) : theme === "barong" ? (
+        <>
+          {/* Formal Cream Piña Barong Tagalog */}
+          <path d="M96 168 Q150 152 204 168 L228 410 Q150 430 72 410 Z" fill={tunic || "#f7f1e1"} stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Intricate U-shaped pechera (chest embroidery panel) */}
+          <rect x="116" y="170" width="68" height="175" rx="6" fill={accentColor || "#ebe0c5"} stroke="#c2b28f" strokeWidth="3" />
+          <line x1="150" y1="170" x2="150" y2="345" stroke={INK} strokeWidth="3" />
+          {/* Embroidery scrollwork lines */}
+          <path d="M126 190 Q138 205 126 220 Q138 235 126 250 Q138 265 126 280 Q138 295 126 310" stroke="#b59d6b" strokeWidth="2.5" fill="none" />
+          <path d="M174 190 Q162 205 174 220 Q162 235 174 250 Q162 265 174 280 Q162 295 174 310" stroke="#b59d6b" strokeWidth="2.5" fill="none" />
+          {/* Collar & buttons */}
+          <path d="M126 164 L150 184 L174 164" stroke={INK} strokeWidth="4" fill="none" />
+          <circle cx="150" cy="200" r="3.5" fill={INK} />
+          <circle cx="150" cy="230" r="3.5" fill={INK} />
+          <circle cx="150" cy="260" r="3.5" fill={INK} />
+        </>
+      ) : theme === "katipunero" ? (
+        <>
+          {/* 1890s Camisa de Chino / Rayadillo revolutionary tunic */}
+          <path d="M96 168 Q150 152 204 168 L228 410 Q150 430 72 410 Z" fill={tunic || "#ece5d5"} stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Iconic Crimson Red Katipunan neckerchief (Alampay) */}
+          <path d="M104 165 Q150 220 196 165 Q182 205 150 228 Q118 205 104 165 Z" fill={accentColor || "#b81d1d"} stroke={INK} strokeWidth="4" strokeLinejoin="round" />
+          <path d="M142 212 L132 275 L150 265 L168 275 L158 212 Z" fill={accentColor || "#b81d1d"} stroke={INK} strokeWidth="3.5" strokeLinejoin="round" />
+          {/* Leather belt & brass buckle */}
+          <rect x="76" y="286" width="148" height="22" rx="4" fill="#3b2313" stroke={INK} strokeWidth="4" />
+          <rect x="138" y="282" width="24" height="30" rx="3" fill="#d4af37" stroke={INK} strokeWidth="3" />
+        </>
+      ) : theme === "modern" ? (
+        <>
+          {/* Stylish Modern Streetwear Hoodie & Jacket */}
+          <path d="M96 168 Q150 152 204 168 L228 410 Q150 430 72 410 Z" fill={tunic || "#1e293b"} stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Center hoodie pocket & jacket lapels */}
+          <path d="M126 168 L120 408 M174 168 L180 408" stroke={accentColor || "#38bdf8"} strokeWidth="5" />
+          <path d="M105 168 Q150 202 195 168" fill="none" stroke={INK} strokeWidth="5" />
+          {/* Hoodie drawstrings */}
+          <line x1="138" y1="185" x2="136" y2="245" stroke="#f8fafc" strokeWidth="4" strokeLinecap="round" />
+          <line x1="162" y1="185" x2="164" y2="245" stroke="#f8fafc" strokeWidth="4" strokeLinecap="round" />
+          <rect x="102" y="310" width="96" height="55" rx="12" fill={accentColor || "#334155"} stroke={INK} strokeWidth="3.5" />
         </>
       ) : (
         <>
@@ -1387,6 +1475,20 @@ const NarratorBody: React.FC<BodyProps> = ({
           <rect x="115" y="291" width="10" height="16" fill="#d4af37" />
           <rect x="175" y="291" width="10" height="16" fill="#d4af37" />
         </>
+      )}
+
+      {/* Optional user-selected custom dress color tint for any preset costume */}
+      {tunic && !["roman", "demon", "albularyo", "barong", "katipunero", "modern"].includes(theme) && (
+        <path
+          d="M96 168 Q150 152 204 168 L228 410 Q150 430 72 410 Z"
+          fill={tunic}
+          opacity={0.55}
+          stroke="none"
+          style={{mixBlendMode: "multiply"}}
+        />
+      )}
+      {accentColor && !["demon", "albularyo", "barong", "katipunero", "modern"].includes(theme) && (
+        <rect x="76" y="280" width="148" height="22" rx="4" fill={accentColor} stroke={INK} strokeWidth="3.5" />
       )}
 
       {/* ================= ARMS & HANDS (pose-driven) ================= */}
@@ -1735,6 +1837,28 @@ const NarratorBody: React.FC<BodyProps> = ({
             {/* Dark red hair */}
             <path d="M88 85 Q90 25 150 24 Q210 25 212 85 Q185 58 150 60 Q115 58 88 85 Z" fill="#3d0f0f" stroke={INK} strokeWidth="5" />
             <path d="M150 24 Q155 40 150 55" stroke="#e8641f" strokeWidth="3" />
+          </>
+        ) : theme === "albularyo" ? (
+          <>
+            {/* Dark wavy hair + woven crimson Putong / Purong mystic headband */}
+            <path d="M86 82 Q88 22 150 20 Q212 22 214 82 Q185 52 150 54 Q115 52 86 82 Z" fill="#1c1613" stroke={INK} strokeWidth="5" />
+            <path d="M84 68 Q150 48 216 68 L214 50 Q150 30 86 50 Z" fill={accentColor || "#9e2424"} stroke={INK} strokeWidth="4" />
+            <line x1="86" y1="59" x2="214" y2="59" stroke="#e5b32f" strokeWidth="3" strokeDasharray="6 5" />
+            {/* Side knot tie */}
+            <path d="M212 58 L236 72 L228 84 L208 66 Z" fill={accentColor || "#9e2424"} stroke={INK} strokeWidth="3.5" />
+          </>
+        ) : theme === "katipunero" ? (
+          <>
+            {/* Woven Buri / Salakot Dome Hat */}
+            <path d="M58 68 Q150 -8 242 68 Z" fill="#c9a565" stroke={INK} strokeWidth="5" strokeLinejoin="round" />
+            <path d="M85 48 Q150 20 215 48" stroke="#96743b" strokeWidth="3" fill="none" />
+            <circle cx="150" cy="14" r="7" fill="#d4af37" stroke={INK} strokeWidth="3" />
+          </>
+        ) : theme === "barong" || theme === "modern" ? (
+          <>
+            {/* Clean styled Filipino / Modern Haircut */}
+            <path d="M86 80 Q85 18 150 16 Q215 18 214 80 Q192 46 155 48 Q112 46 86 80 Z" fill="#181512" stroke={INK} strokeWidth="5" strokeLinejoin="round" />
+            <path d="M115 32 Q150 22 185 34" stroke="#36302a" strokeWidth="3" fill="none" />
           </>
         ) : (
           <>

@@ -1,0 +1,88 @@
+{
+  "slug": "kapre-the-giant-cigar-smoking-tree-dweller-watch",
+  "title": "Kapre: The Giant Tree Dweller of the Balete Tree",
+  "hook": "DO NOT LOOK UP INTO THE BALETE TREE",
+  "channelName": "A Day Back Then",
+  "artStyle": "dark-folklore",
+  "narratorTheme": "albularyo",
+  "voice": "fil-PH-AngeloNeural",
+  "language": "en",
+  "emotionPreset": "spooky-suspense",
+  "scenes": [
+    {
+      "text": "If you smell sweet roll-your-own tobacco in an empty forest at twilight, you are not alone.",
+      "mood": "dark",
+      "imagePrompt": "Dense tropical Philippine rainforest at twilight with twisted balete tree roots and creeping thick mist, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "direction": {
+        "drift": "push-in",
+        "atmosphere": "ember",
+        "warmFlicker": true
+      },
+      "image": "images/kapre-the-giant-cigar-smoking-tree-dweller-watch/1.jpg",
+      "audio": "audio/kapre-the-giant-cigar-smoking-tree-dweller-watch/1.mp3",
+      "voicedText": "If you smell sweet roll-your-own tobacco in an empty forest at twilight, you are not alone.",
+      "seconds": 6.4
+    },
+    {
+      "text": "High in the gnarled branches of an ancient Balete tree sits the Kapre: a ten-foot giant covered in dark fur, blowing endless rings of thick grey smoke.",
+      "mood": "dark",
+      "imagePrompt": "Massive dark shadowy silhouette of a giant figure perched high on an ancient mossy tree branch with glowing red embers of a cigar, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "direction": {
+        "drift": "pull-back",
+        "atmosphere": "ember",
+        "warmFlicker": true
+      },
+      "image": "images/kapre-the-giant-cigar-smoking-tree-dweller-watch/2.jpg",
+      "audio": "audio/kapre-the-giant-cigar-smoking-tree-dweller-watch/2.mp3",
+      "voicedText": "High in the gnarled branches of an ancient Balete tree sits the Kapre: a ten-foot giant covered in dark fur, blowing endless rings of thick grey smoke.",
+      "seconds": 9.9
+    },
+    {
+      "text": "He does not eat humans, but he loves confusing travelers, trapping them in endless loops where every path leads back to his roots.",
+      "mood": "cool",
+      "imagePrompt": "Winding jungle dirt path leading in an ominous circle beneath towering hanging vines and ancient banyan branches, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "direction": {
+        "drift": "push-in",
+        "atmosphere": "dust",
+        "warmFlicker": false
+      },
+      "image": "images/kapre-the-giant-cigar-smoking-tree-dweller-watch/3.jpg",
+      "audio": "audio/kapre-the-giant-cigar-smoking-tree-dweller-watch/3.mp3",
+      "voicedText": "He does not eat humans, but he loves confusing travelers, trapping them in endless loops where every path leads back to his roots.",
+      "seconds": 8.6
+    },
+    {
+      "text": "Old elders whisper that if you manage to acquire his glowing white agimat stone, the colossal beast becomes your sworn protector for life.",
+      "mood": "warm",
+      "imagePrompt": "Mystical glowing white stone pulsing with ethereal light resting among tangled ancient tree roots, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "direction": {
+        "drift": "push-in",
+        "atmosphere": "ember",
+        "warmFlicker": true
+      },
+      "image": "images/kapre-the-giant-cigar-smoking-tree-dweller-watch/4.jpg",
+      "audio": "audio/kapre-the-giant-cigar-smoking-tree-dweller-watch/4.mp3",
+      "voicedText": "Old elders whisper that if you manage to acquire his glowing white agimat stone, the colossal beast becomes your sworn protector for life.",
+      "seconds": 8.9
+    },
+    {
+      "text": "Next time you pass a giant Balete tree at dusk, whisper 'Tabi-tabi po' to show respect, and whatever you do, do not look up.",
+      "mood": "dark",
+      "imagePrompt": "Atmospheric Philippine country road passing beside an enormous ominous Balete tree under a dark starry sky, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "direction": {
+        "drift": "pull-back",
+        "atmosphere": "ember",
+        "warmFlicker": true
+      },
+      "image": "images/kapre-the-giant-cigar-smoking-tree-dweller-watch/5.jpg",
+      "audio": "audio/kapre-the-giant-cigar-smoking-tree-dweller-watch/5.mp3",
+      "voicedText": "Next time you pass a giant Balete tree at dusk, whisper 'Tabi-tabi po' to show respect, and whatever you do, do not look up.",
+      "seconds": 9.9
+    }
+  ],
+  "claimsToVerify": [
+    "Kapre folklore origins in pre-colonial and Spanish-era Philippine mythology",
+    "Belief in Balete trees (Ficus balete) as sacred dwellings of nature spirits and engkanto"
+  ],
+  "generatedBy": "Folklore Engine (Zero-Cost Synthesizer)"
+}

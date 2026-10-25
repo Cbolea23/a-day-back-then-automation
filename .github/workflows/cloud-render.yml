@@ -1,0 +1,111 @@
+name: Cloud Video Studio Render Worker ($0 Laptop-Off Engine)
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Story Slug (e.g., mangkukulam, manananggal, aswang)"
+        required: true
+        type: string
+      topic:
+        description: "Optional Topic (if generating story from scratch in cloud)"
+        required: false
+        type: string
+      art_style:
+        description: "Visual Art Style ID"
+        required: false
+        default: "classic-cartoon"
+        type: string
+      narrator_theme:
+        description: "Narrator Costume / Dress Theme"
+        required: false
+        default: "auto"
+        type: string
+      voice:
+        description: "Voice ID"
+        required: false
+        default: "en-US-ChristopherNeural"
+        type: string
+      script_json:
+        description: "Optional pre-edited Story JSON payload from Studio UI"
+        required: false
+        type: string
+      auto_schedule_youtube:
+        description: "Auto-schedule to YouTube when finished (true/false)"
+        required: false
+        default: "false"
+        type: string
+
+jobs:
+  render-short:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      HF_API_KEY: ${{ secrets.HF_API_KEY }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install Python edge-tts & FFmpeg
+        run: |
+          sudo apt-get update -y && sudo apt-get install -y ffmpeg
+          pip install edge-tts
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Prepare or Generate Story Script
+        env:
+          INPUT_SLUG: ${{ inputs.slug }}
+          INPUT_TOPIC: ${{ inputs.topic }}
+          INPUT_STYLE: ${{ inputs.art_style }}
+          INPUT_THEME: ${{ inputs.narrator_theme }}
+          INPUT_VOICE: ${{ inputs.voice }}
+          INPUT_JSON: ${{ inputs.script_json }}
+        run: |
+          mkdir -p scripts-out
+          if [ -n "$INPUT_JSON" ] && [ "$INPUT_JSON" != "{}" ]; then
+            echo "$INPUT_JSON" > "scripts-out/${INPUT_SLUG}.json"
+            echo "Loaded custom script payload for ${INPUT_SLUG}"
+          elif [ ! -f "scripts-out/${INPUT_SLUG}.json" ]; then
+            TOPIC_STR="${INPUT_TOPIC:-$INPUT_SLUG}"
+            node scripts/make-script.mjs --topic "$TOPIC_STR" --slug "$INPUT_SLUG" --style "$INPUT_STYLE" --theme "$INPUT_THEME" --voice "$INPUT_VOICE"
+          fi
+
+      - name: Generate Background Scene Artwork ($0 Flux / Gemini)
+        run: node scripts/make-images.mjs "${{ inputs.slug }}"
+
+      - name: Synthesize Voiceover Audio
+        run: node scripts/make-voice.mjs "${{ inputs.slug }}" --voice "${{ inputs.voice }}"
+
+      - name: Render 1080x1920 MP4 Video via Remotion
+        run: node scripts/render.mjs "${{ inputs.slug }}"
+
+      - name: Upload Rendered MP4 Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ inputs.slug }}
+          path: out/${{ inputs.slug }}.mp4
+          retention-days: 14
+
+      - name: Optional Auto-Schedule to YouTube
+        if: ${{ inputs.auto_schedule_youtube == 'true' }}
+        env:
+          YT_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET_JSON }}
+          YT_TOKENS: ${{ secrets.YOUTUBE_TOKENS_JSON }}
+        run: |
+          if [ -n "$YT_CLIENT_SECRET" ] && [ -n "$YT_TOKENS" ]; then
+            echo "$YT_CLIENT_SECRET" > client_secret.json
+            echo "$YT_TOKENS" > youtube-tokens.json
+            node scripts/upload-youtube.mjs "${{ inputs.slug }}"
+          fi

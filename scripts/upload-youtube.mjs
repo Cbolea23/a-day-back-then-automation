@@ -425,6 +425,7 @@ async function uploadVideo(slug, options) {
   const longScriptPath = path.join(root, "long-out", `${cleanSlug}.json`);
   const scriptPath = path.join(root, "scripts-out", `${slug}.json`);
   const samplePath = path.join(root, "data", "sample.json");
+  const slatePath = path.join(root, "halloween-specials", "slate.json");
 
   if (fs.existsSync(longScriptPath) && (isLong || !fs.existsSync(scriptPath))) {
     script = JSON.parse(fs.readFileSync(longScriptPath, "utf8"));
@@ -433,7 +434,22 @@ async function uploadVideo(slug, options) {
     script = JSON.parse(fs.readFileSync(scriptPath, "utf8"));
   } else if (slug === "sample-roman-morning" && fs.existsSync(samplePath)) {
     script = JSON.parse(fs.readFileSync(samplePath, "utf8"));
-  } else {
+  } else if (fs.existsSync(slatePath)) {
+    try {
+      const slate = JSON.parse(fs.readFileSync(slatePath, "utf8"));
+      const entry = (slate.shorts || []).find((s) => s.slug === slug || s.slug === cleanSlug);
+      if (entry && entry.title) {
+        script = {
+          title: entry.title,
+          hook: entry.title,
+          channelName: "A Day Back Then",
+          scenes: [],
+        };
+      }
+    } catch {}
+  }
+
+  if (!script) {
     console.warn(`No script file found for ${slug}. Using generic title.`);
     script = {
       title: cleanSlug.replace(/-/g, " "),

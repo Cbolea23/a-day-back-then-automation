@@ -132,6 +132,20 @@ export type ScriptProps = {
   scenes: Scene[];
   /** Facts for a human to double-check before posting (not rendered). */
   claimsToVerify?: string[];
+  /** Explicit narrator costume / dress theme override. */
+  narratorTheme?: string;
+  /** Custom primary dress/tunic color hex override (e.g. "#7c2d12"). */
+  narratorTunic?: string;
+  /** Custom secondary accent/trim color hex override (e.g. "#d4af37"). */
+  narratorAccent?: string;
+  /** Selected visual art style preset id. */
+  artStyle?: string;
+  /** Selected voice id used for synthesis. */
+  voice?: string;
+  /** Language code ("en" | "taglish" | "tl"). */
+  language?: string;
+  /** Owner user ID when created in multi-user studio. */
+  authorId?: string;
 };
 
 const WORDS_PER_SECOND = 2.6;

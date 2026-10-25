@@ -1,81 +1,39 @@
 #!/usr/bin/env node
 /**
- * Generates one background image per scene with Gemini image generation, saves it to
+ * Generates one background image per scene using the Zero-Cost Multi-Provider Image Engine
+ * (Gemini Image -> HuggingFace Flux -> Pollinations Flux 1080x1920), saves it to
  * public/images/<slug>/<n>.jpg and links it into scripts-out/<slug>.json.
  *
  * Usage:
- *   node scripts/make-images.mjs [slug ...] [--force]
- *   (no slug = every script in scripts-out/; existing images are skipped unless --force)
- *
- * Env:
- *   GEMINI_API_KEY  required
- *   IMAGE_MODEL     default "gemini-3.1-flash-lite-image" (fastest/cheapest 1K model)
- *   IMAGE_SIZE      default "1K"  (use "2K" only with models that support it)
+ *   node scripts/make-images.mjs [slug ...] [--force] [--scene <1-based-index>] [--style <artStyleId>]
  */
 import fs from "node:fs";
 import path from "node:path";
 import {fileURLToPath} from "node:url";
+import {generateSceneImage} from "./lib/free-llm-router.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outDir = path.join(root, "scripts-out");
 
 const args = process.argv.slice(2);
 const force = args.includes("--force");
-const slugArgs = args.filter((a) => !a.startsWith("--"));
+const getArg = (name) => {
+  const i = args.indexOf(`--${name}`);
+  return i === -1 ? null : args[i + 1];
+};
+const onlyScene = getArg("scene") ? Number(getArg("scene")) : null;
+const styleOverride = getArg("style");
 
-const apiKey = process.env.GEMINI_API_KEY;
-if (!apiKey) {
-  console.error("Set GEMINI_API_KEY first.");
-  process.exit(1);
-}
-const model = process.env.IMAGE_MODEL || "gemini-3.1-flash-lite-image";
-const imageSize = process.env.IMAGE_SIZE || "1K";
-const EXTS = ["png", "jpg", "jpeg", "webp"];
-
-async function generate(prompt) {
-  const body = {
-    model,
-    input: [{type: "text", text: prompt}],
-    response_format: {
-      type: "image",
-      mime_type: "image/jpeg",
-      aspect_ratio: "9:16",
-      image_size: imageSize,
-    },
-  };
-
-  let lastError = "";
-  for (let attempt = 1; attempt <= 4; attempt++) {
-    const res = await fetch("https://generativelanguage.googleapis.com/v1beta/interactions", {
-      method: "POST",
-      headers: {"Content-Type": "application/json", "x-goog-api-key": apiKey},
-      body: JSON.stringify(body),
-    });
-
-    if (res.ok) {
-      const json = await res.json();
-      const images = (json.steps || [])
-        .filter((s) => s.type === "model_output")
-        .flatMap((s) => s.content || [])
-        .filter((c) => c.type === "image" && c.data);
-      const last = images[images.length - 1];
-      if (!last) {
-        return null; // blocked or empty: caller keeps the gradient fallback
-      }
-      return Buffer.from(last.data, "base64");
-    }
-
-    lastError = `HTTP ${res.status} ${await res.text()}`;
-    if ([400, 401, 403, 404].includes(res.status)) {
-      throw new Error(
-        `Image request rejected (${lastError.slice(0, 500)}). Check GEMINI_API_KEY, IMAGE_MODEL ` +
-          "(and IMAGE_SIZE), and whether your plan allows image generation (it may need paid billing).",
-      );
-    }
-    await new Promise((r) => setTimeout(r, 3000 * attempt));
+const flagIndices = new Set();
+args.forEach((a, i) => {
+  if (a.startsWith("--")) {
+    flagIndices.add(i);
+    if (["--scene", "--style"].includes(a)) flagIndices.add(i + 1);
   }
-  throw new Error("Image generation failed after retries: " + lastError.slice(0, 500));
-}
+});
+const slugArgs = args.filter((_, i) => !flagIndices.has(i));
+
+const EXTS = ["png", "jpg", "jpeg", "webp"];
 
 const slugs = slugArgs.length
   ? slugArgs
@@ -95,15 +53,19 @@ for (const slug of slugs) {
     continue;
   }
   const script = JSON.parse(fs.readFileSync(file, "utf8"));
+  if (styleOverride) script.artStyle = styleOverride;
+  const artStyle = script.artStyle || "classic-cartoon";
   const imgDir = path.join(root, "public", "images", slug);
   fs.mkdirSync(imgDir, {recursive: true});
 
   for (let i = 0; i < script.scenes.length; i++) {
+    if (onlyScene !== null && i + 1 !== onlyScene) continue;
+
     const scene = script.scenes[i];
     const existing = EXTS.map((e) => `images/${slug}/${i + 1}.${e}`).find((rel) =>
       fs.existsSync(path.join(root, "public", rel)),
     );
-    if (existing && !force) {
+    if (existing && !force && onlyScene === null) {
       scene.image = existing;
       skipped++;
       continue;
@@ -113,22 +75,28 @@ for (const slug of slugs) {
       continue;
     }
 
-    console.log(`  ${slug} scene ${i + 1}/${script.scenes.length} ...`);
-    const bytes = await generate(scene.imagePrompt);
-    if (!bytes) {
+    console.log(`  ${slug} scene ${i + 1}/${script.scenes.length} (style: ${artStyle}) ...`);
+    try {
+      const {buffer, provider} = await generateSceneImage({
+        prompt: scene.imagePrompt,
+        artStyle,
+        aspectRatio: "9:16",
+        seed: Math.floor(Math.random() * 1000000) + i * 101,
+        allowWait: true,
+      });
+      const rel = `images/${slug}/${i + 1}.jpg`;
+      fs.writeFileSync(path.join(root, "public", rel), buffer);
+      scene.image = rel;
+      made++;
+      console.log(`    ✓ Saved ${rel} via ${provider}`);
+      fs.writeFileSync(file, JSON.stringify(script, null, 2));
+    } catch (err) {
       failed++;
-      console.warn(`    ! no image returned (maybe blocked). Keeping gradient; try --force later.`);
-      continue;
+      console.warn(`    ! Scene ${i + 1} image failed (${err.message}). Keeping fallback.`);
     }
-    const rel = `images/${slug}/${i + 1}.jpg`;
-    fs.writeFileSync(path.join(root, "public", rel), bytes);
-    scene.image = rel;
-    made++;
-    // Save progress after every image so a crash never loses finished work.
-    fs.writeFileSync(file, JSON.stringify(script, null, 2));
   }
 
   fs.writeFileSync(file, JSON.stringify(script, null, 2));
   console.log(`${slug}: done`);
 }
-console.log(`Images made: ${made}, skipped (already existed): ${skipped}, failed: ${failed}.`);
+console.log(`Images made: ${made}, skipped: ${skipped}, failed: ${failed}.`);
