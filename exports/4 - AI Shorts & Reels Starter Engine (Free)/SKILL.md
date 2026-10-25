@@ -58,10 +58,15 @@ edge-tts --voice en-US-GuyNeural --text "In 1888, a single telegram erased an en
 edge-tts --voice fil-PH-AngeloNeural --text "Did you know that deep beneath Mount Banahaw lies a lost underground fortress?" --write-media audio.mp3
 ```
 
-### Voice Timing Guidelines
+### Voice Timing & Emotional Prosody Guidelines
 - Calculate pacing at approximately **140 to 160 words per minute**.
 - A 30-second Short should contain **70 to 80 spoken words**.
 - A 45-second Short should contain **105 to 120 spoken words**.
+
+### Emotional Prosody & Cultural Accent Synergy (v1.1)
+- **Natural Dramatic Breath Pauses**: Insert ellipses (`...`) before suspenseful reveals to force neural speech engines to inhale and drop vocal pitch (*"Deep in the ancient balete tree... something was breathing."*).
+- **Acoustic Profiling**: Add `--pitch=-4Hz --rate=-5%` for eerie folklore dread; use `--pitch=+1Hz --rate=+4%` for viral trivia.
+- **Cultural Accent Matching**: Pair cultural topics with authentic regional accents (e.g. Philippine folklore with `fil-PH-AngeloNeural` or `fil-PH-BlessicaNeural`).
 
 ---
 
