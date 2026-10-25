@@ -11,8 +11,7 @@ Copy and paste the sections below directly into your listing form at **https://w
 `The 4-skill master bundle: Turn your AI agent into an end-to-end automated video studio.`
 
 ### Recommended Price:
-- **One-Time Purchase:** `$49.00` (or `$39.00` early-bird launch price)
-- *You keep 70%: ~$34.30 net profit per sale.*
+- **One-Time Purchase:** `$24.00` (Discounted bundle pricing)
 
 ### Category / Tags:
 `Bundles`, `Content Creation`, `YouTube Shorts`, `TikTok`, `Remotion`, `React`, `Video Automation`

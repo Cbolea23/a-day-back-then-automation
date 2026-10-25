@@ -2,59 +2,77 @@
 name: remotion-video-engine
 description: >-
   Render and animate code-based videos using Remotion for Shorts (1080x1920) and
-  Longform (1920x1080). Handles multi-character mouth synchronization, NPC cameo
-  corner positioning, comic speech bubbles, camera pan/zoom interpolation, and
-  layered sound beds. Use when asked to render videos, test scenes, or animate characters.
+  Longform (1920x1080). Handles multi-character mouth synchronization, dynamic camera
+  pan/zoom interpolation, kinetic typography, and headless CLI rendering.
 ---
 
 # Remotion Video Engine
 
-This skill governs programmatic video rendering and dynamic character animations using React and Remotion.
+This skill governs programmatic video rendering, camera motion formulas, and timeline synchronization using React and Remotion.
 
-## Compositions Overview
+---
 
-All compositions are defined in `src/Root.tsx`:
-- `Short` (1080x1920, 30fps): Vertical TikTok/Reels/Shorts format.
-- `Long` (1920x1080, 30fps): Horizontal YouTube documentary format.
+## 1. Compositions Overview (`src/Root.tsx`)
+
+- `Short` (1080x1920, 30fps): Vertical TikTok / Instagram Reels / YouTube Shorts composition.
+- `Long` (1920x1080, 30fps): Widescreen horizontal documentary composition.
 - `SampleScene` (1920x1080, 30fps): Quick dialogue interaction test between Narrator and NPC.
-- `Lineup` / `NPCLineup`: Static review showcases for character archetypes.
+- `Lineup` / `NPCLineup`: Showcase compositions for character archetypes.
 
-## Core Commands
+---
 
-### 1. Rendering Longform Videos
-To render a full long-form episode with concurrency:
+## 2. Production CLI Commands
+
+### Rendering Vertical Shorts
 ```bash
+# Production render to Unpublished Vault
+npx remotion render src/index.ts Short "out/2 - Unpublished Vault/<slug>.mp4" --props=scripts-out/<slug>.json
+
+# Fast draft preview (50% scale, 4x faster)
+npx remotion render src/index.ts Short "out/draft-<slug>.mp4" --props=scripts-out/<slug>.json --scale=0.5
+```
+
+### Rendering Widescreen Longform
+```bash
+# Render full longform episode with concurrency
 npx remotion render src/index.ts Long "out/Longform/2 - Unpublished Vault/long-<slug>.mp4" --props=long-out/<slug>.json --concurrency=6
 ```
 
-For a fast draft check (half-size scale, 4x faster):
+### Snapshot / Still Frame Capture
 ```bash
-npx remotion render src/index.ts Long "out/draft-long-<slug>.mp4" --props=long-out/<slug>.json --scale=0.5
+# Capture high-resolution thumbnail still
+npx remotion still src/index.ts Short "out/thumb-<slug>.png" --props=scripts-out/<slug>.json --frame=90
 ```
 
-### 2. Rendering Shorts
-To render a vertical Short:
-```bash
-npx remotion render src/index.ts Short "out/<slug>.mp4" --props=data/<slug>.json
+---
+
+## 3. Dynamic Camera Pan & Zoom Interpolation
+
+Static images look cheap and disengage viewers. Use Remotion's `interpolate()` to apply continuous, subtle focal drifts across scene cuts:
+
+```tsx
+import {interpolate, useCurrentFrame} from "remotion";
+
+export const DriftingBackground = ({src, direction = "push-in", durationInFrames}) => {
+  const frame = useCurrentFrame();
+
+  // Subtle 1.04 -> 1.16 scale prevents visual jarring while keeping viewer eyes engaged
+  const scale = direction === "push-in"
+    ? interpolate(frame, [0, durationInFrames], [1.04, 1.16], {extrapolateRight: "clamp"})
+    : interpolate(frame, [0, durationInFrames], [1.16, 1.04], {extrapolateRight: "clamp"});
+
+  return (
+    <div style={{width: "100%", height: "100%", overflow: "hidden"}}>
+      <img src={src} style={{width: "100%", height: "100%", objectFit: "cover", transform: `scale(${scale})`}} />
+    </div>
+  );
+};
 ```
 
-### 3. Rendering a Still Frame / Snapshot
-To capture a visual snapshot of a specific frame for quick review:
-```bash
-npx remotion still src/index.ts Long "out/preview-<slug>.png" --props=long-out/<slug>.json --frame=<frame_number>
-```
+---
 
-## Character & Animation Architecture
+## 4. Mobile UI Safe Zone Compliance (1080x1920)
 
-### Dual-Character Dynamics
-- **Narrator (`src/Narrator.tsx`)**:
-  - Located in foreground bottom-right (`anchorX={0.88}`).
-  - Lipsync mouth shapes derived from `planSpeech()` phoneme windows or explicit audio amplitude.
-  - When listening to an NPC, narrator pose is locked (`talking={false}`, `gesture="think"`, `reaction="recoil"`).
-- **Cameo NPC (`src/NPC.tsx`)**:
-  - Positioned in corner (`left-corner` or `right-corner`) or split screen.
-  - Supports 5 distinct archetypes: Citizen, Guard, Merchant, Worker, Doctor.
-  - Displays comic speech bubbles and handles independent mouth sync when speaking.
-
-### Camera Pan & Zoom
-- Background images alternate between slow zoom-in (`scale(1.04 -> 1.16)`) and zoom-out (`scale(1.16 -> 1.04)`) across scene cuts to maintain motion without jarring cuts.
+- **Right Edge Margin (120px):** Must remain clear of critical text or faces to avoid overlap with TikTok/Shorts action buttons (Like, Comment, Share).
+- **Bottom Margin (240px):** Must remain clear of subtitles to prevent YouTube Shorts title/channel banner occlusion.
+- **Top Margin (160px):** Must remain clear of text to prevent platform status bar and back button clipping.

@@ -1,0 +1,35 @@
+{
+  "title": "The Ghost Island of 1888",
+  "scenes": [
+    {
+      "text": "In 1888, a single telegram erased an entire island from the map.",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1080&q=80",
+      "audio": "",
+      "seconds": 5.2
+    },
+    {
+      "text": "For two hundred years, European sailors swore the island was real.",
+      "image": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1080&q=80",
+      "audio": "",
+      "seconds": 5.4
+    },
+    {
+      "text": "Governments mapped it, claimed it, and sent naval warships to patrol its coast.",
+      "image": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=1080&q=80",
+      "audio": "",
+      "seconds": 5.8
+    },
+    {
+      "text": "Yet when modern steamships arrived... there was only empty ocean.",
+      "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1080&q=80",
+      "audio": "",
+      "seconds": 5.1
+    },
+    {
+      "text": "The entire island had been a fatal optical illusion... created by heat and sky.",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1080&q=80",
+      "audio": "",
+      "seconds": 6.2
+    }
+  ]
+}

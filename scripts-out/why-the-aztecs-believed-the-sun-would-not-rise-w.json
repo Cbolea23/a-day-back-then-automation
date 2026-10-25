@@ -1,0 +1,87 @@
+{
+  "slug": "why-the-aztecs-believed-the-sun-would-not-rise-w",
+  "title": "Why the Aztecs Believed the Sun Would Not Rise Without Human: The Hidden Truth",
+  "hook": "WHAT THEY NEVER TOLD YOU ABOUT WHY THE AZTECS BELIEVED THE SUN WOULD NOT RISE WITHOUT HUMAN BLOOD",
+  "channelName": "A Day Back Then",
+  "artStyle": "vintage-woodcut",
+  "narratorTheme": "mesoamerica",
+  "voice": "fil-PH-AngeloNeural",
+  "language": "en",
+  "scenes": [
+    {
+      "text": "Most people believe the popular stories told about Why the Aztecs Believed the Sun Would Not Rise Without Human Blood, but the real historical truth is far darker than you were taught.",
+      "mood": "dark",
+      "imagePrompt": "Atmospheric mysterious historical setting related to Why the Aztecs Believed the Sun Would Not Rise Without Human Blood, dramatic dim lighting, ancient textures, no people in foreground, 19th century antique woodcut engraving illustration on aged sepia parchment, intricate crosshatching, historical bookplate aesthetic, vertical 9:16 portrait, no text, no logos",
+      "direction": {
+        "drift": "push-in",
+        "atmosphere": "ember",
+        "warmFlicker": true
+      },
+      "image": "images/why-the-aztecs-believed-the-sun-would-not-rise-w/1.jpg",
+      "audio": "audio/why-the-aztecs-believed-the-sun-would-not-rise-w/1.mp3",
+      "voicedText": "Most people believe the popular stories told about Why the Aztecs Believed the Sun Would Not Rise Without Human Blood, but the real historical truth is far darker than you were taught.",
+      "seconds": 11.6
+    },
+    {
+      "text": "Centuries ago, ancient records and eyewitnesses described terrifying encounters that terrified entire towns into taking extraordinary precautions.",
+      "mood": "dark",
+      "imagePrompt": "Ancient archives with yellowed weathered parchment scrolls and historical artifacts related to Why the Aztecs Believed the Sun Would Not Rise Without Human Blood, 19th century antique woodcut engraving illustration on aged sepia parchment, intricate crosshatching, historical bookplate aesthetic, vertical 9:16 portrait, no text, no logos",
+      "direction": {
+        "drift": "pull-back",
+        "atmosphere": "dust",
+        "warmFlicker": true
+      },
+      "image": "images/why-the-aztecs-believed-the-sun-would-not-rise-w/2.jpg",
+      "audio": "audio/why-the-aztecs-believed-the-sun-would-not-rise-w/2.mp3",
+      "voicedText": "Centuries ago, ancient records and eyewitnesses described terrifying encounters that terrified entire towns into taking extraordinary precautions.",
+      "seconds": 10.3
+    },
+    {
+      "text": "What shocked modern investigators was not just the folklore, but physical evidence and regional legal records confirming widespread panic.",
+      "mood": "cool",
+      "imagePrompt": "Dimly lit museum display case showing ancient iron tools, talismans, and stone inscriptions connected to Why the Aztecs Believed the Sun Would Not Rise Without Human Blood, 19th century antique woodcut engraving illustration on aged sepia parchment, intricate crosshatching, historical bookplate aesthetic, vertical 9:16 portrait, no text, no logos",
+      "direction": {
+        "drift": "push-in",
+        "atmosphere": "dust",
+        "warmFlicker": false
+      },
+      "image": "images/why-the-aztecs-believed-the-sun-would-not-rise-w/3.jpg",
+      "audio": "audio/why-the-aztecs-believed-the-sun-would-not-rise-w/3.mp3",
+      "voicedText": "What shocked modern investigators was not just the folklore, but physical evidence and regional legal records confirming widespread panic.",
+      "seconds": 9.2
+    },
+    {
+      "text": "Local survival lore dictated exact steps and rituals that ordinary citizens had to follow before nightfall to stay alive.",
+      "mood": "warm",
+      "imagePrompt": "Historical stone town square or sanctuary surrounded by glowing torches and heavy fortified wooden gates, 19th century antique woodcut engraving illustration on aged sepia parchment, intricate crosshatching, historical bookplate aesthetic, vertical 9:16 portrait, no text, no logos",
+      "direction": {
+        "drift": "push-in",
+        "atmosphere": "ember",
+        "warmFlicker": true
+      },
+      "image": "images/why-the-aztecs-believed-the-sun-would-not-rise-w/4.jpg",
+      "audio": "audio/why-the-aztecs-believed-the-sun-would-not-rise-w/4.mp3",
+      "voicedText": "Local survival lore dictated exact steps and rituals that ordinary citizens had to follow before nightfall to stay alive.",
+      "seconds": 8.6
+    },
+    {
+      "text": "Even today in remote regions, elders still whisper warnings about this legend whenever the sun sinks below the horizon.",
+      "mood": "dark",
+      "imagePrompt": "A solitary weathered cobblestone path disappearing into mist and ancient shadowed trees under a starry night sky, 19th century antique woodcut engraving illustration on aged sepia parchment, intricate crosshatching, historical bookplate aesthetic, vertical 9:16 portrait, no text, no logos",
+      "direction": {
+        "drift": "pull-back",
+        "atmosphere": "ember",
+        "warmFlicker": true
+      },
+      "image": "images/why-the-aztecs-believed-the-sun-would-not-rise-w/5.jpg",
+      "audio": "audio/why-the-aztecs-believed-the-sun-would-not-rise-w/5.mp3",
+      "voicedText": "Even today in remote regions, elders still whisper warnings about this legend whenever the sun sinks below the horizon.",
+      "seconds": 8.3
+    }
+  ],
+  "claimsToVerify": [
+    "Historical documents and folklore archives regarding Why the Aztecs Believed the Sun Would Not Rise Without Human Blood",
+    "Cultural traditions and community survival practices documented in local lore"
+  ],
+  "generatedBy": "Folklore Engine (Zero-Cost Synthesizer)"
+}

@@ -11,8 +11,7 @@ Copy and paste the sections below directly into your listing form at **https://w
 `Teach Claude Code & Cursor to build, animate, and render code-driven React videos with Remotion.`
 
 ### Recommended Price:
-- **One-Time Purchase:** `$29.00` (or `$24.00` promotional launch price)
-- *You keep 70%: ~$20.30 net profit per sale.*
+- **One-Time Purchase:** `$15.00` (Discounted impulse-pricing)
 
 ### Category / Tags:
 `Remotion`, `React`, `Video Automation`, `Programmatic Video`, `Coding Assistant`, `Developer Tools`

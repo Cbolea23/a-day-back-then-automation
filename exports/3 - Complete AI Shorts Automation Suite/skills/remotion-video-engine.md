@@ -146,3 +146,22 @@ npx remotion render src/index.ts Short out/draft.mp4 --props=data/script.json --
 # Export a single high-resolution still frame for thumbnail review
 npx remotion still src/index.ts Short out/thumb.png --props=data/script.json --frame=90
 ```
+
+---
+
+## 6. Emotional Prosody & Cultural Accent Matching (v1.1)
+
+Monotone "reading" voices destroy audience retention. Use the built-in emotional prosody engine:
+
+1. **Dramatic Pacing & Breath Pauses:**
+   - In neural TTS, insert ellipses (`...`) before dramatic reveals and warning clauses (*"in an empty forest at twilight... you are not alone."*).
+   - This causes the prosody model to insert realistic inhalation pauses and drop vocal pitch.
+
+2. **Acoustic Profile Calibration:**
+   - **Dark Folklore / Horror:** `--rate=-4%` to `-6%`, `--pitch=-3Hz` to `-5Hz`.
+   - **Classical History / Epic:** `--rate=-2%`, `--pitch=-2Hz`.
+   - **Viral Trivia:** `--rate=+3%` to `+5%`, `--pitch=+1Hz`.
+
+3. **Cultural Accent-Topic Synergy:**
+   - Match cultural lore to authentic accents (e.g. Philippine folklore ➔ Filipino storyteller `fil-PH-AngeloNeural` with campfire cadence; British/Victorian history ➔ BBC documentary historian `en-GB-RyanNeural`).
+

@@ -5,46 +5,50 @@ description: >-
   and social publishing queues across YouTube and Instagram ONLY.
   Handles quota throttling, scheduled release slots, and database tracking.
   Facebook and TikTok are explicitly excluded.
-  Use when scheduling videos, checking publishing status, or auditing the vault.
 ---
 
 # Video Pipeline Database
 
 This skill manages publishing calendars, video vault directories, and automated social uploading across platforms.
 
-## Directory & State Layout
+---
 
-- `out/Longform/1 - Published/`: Archive of fully uploaded and published longform videos.
-- `out/Longform/2 - Unpublished Vault/`: Production-ready longform videos, YouTube descriptions with chapter timestamps, and Facebook-tailored posts.
-- `out/*.mp4`: Standalone vertical Shorts rendered and ready for distribution.
-- `published-urls.json`: Database mapping topic slugs to live YouTube/Facebook URLs for auto-backlinking.
-- `scripts/schedule-oct-remastered.mjs`: Dedicated batch scheduler with retry logic for quota limits.
+## 1. Directory & State Layout
 
-## Scheduling Operations
+- `out/2 - Unpublished Vault/`: Production-ready vertical Shorts (1080x1920) awaiting scheduled publication.
+- `out/1 - Published/`: Archive of fully uploaded and published vertical Shorts.
+- `out/Longform/2 - Unpublished Vault/`: Production-ready longform videos (1920x1080) with YouTube descriptions and chapter timestamps.
+- `out/Longform/1 - Published/`: Archive of fully uploaded longform episodes.
+- `published-urls.json`: Database mapping topic slugs to live YouTube and Instagram URLs for auto-backlinking.
 
-### 1. Batch Scheduling
-To trigger scheduled publishing across open slots:
-```bash
-node scripts/schedule-all.mjs
-```
-Or for specific batches (e.g. remastered dates):
-```bash
-node scripts/schedule-oct-remastered.mjs
-```
+---
 
-### 2. Quota & Rate Limit Rules
-- **YouTube Data API:** Daily upload quota (~6-10 videos/day on default quota). Returns `400 uploadLimitExceeded` when full; resets at midnight Pacific (15:00 UTC+8).
-- **Facebook Graph API:** Enforces velocity spam cooldowns (Error `code 368`). Stagger requests with minimum 5-second delays between schedule API calls.
-- **Safety Precaution:** Never delete scheduled posts in bulk without backing up post IDs.
+## 2. Platform Rules (YouTube & Instagram ONLY)
 
-### 3. Publishing Audit
-To check local vault status against published inventory:
+- **YouTube Data API:**
+  - Daily quota (~10,000 units, ~1,600 units per video upload).
+  - Maximum safe uploads: 6 videos per calendar day.
+  - Quota resets at midnight Pacific Time (15:00 UTC+8).
+- **Instagram Graph API:**
+  - Upload via 2-phase container handshake (`POST /me/media` -> poll `status_code === "FINISHED"` -> `POST /me/media_publish`).
+  - Pre-process vertical video with `-movflags +faststart` and `yuv420p`.
+- **Excluded Platforms:**
+  - Facebook: Hard freeze.
+  - TikTok: Prohibited.
+
+---
+
+## 3. Vault & Inventory Audit
+
+To check local vault inventory against published records:
 ```bash
 node -e "
 const fs = require('fs');
 const published = JSON.parse(fs.readFileSync('published-urls.json', 'utf8'));
-const outFiles = fs.readdirSync('out').filter(f => f.endsWith('.mp4'));
+const vaultFiles = fs.existsSync('out/2 - Unpublished Vault') 
+  ? fs.readdirSync('out/2 - Unpublished Vault').filter(f => f.endsWith('.mp4'))
+  : [];
 console.log('Published count:', Object.keys(published).length);
-console.log('Out queue count:', outFiles.length);
+console.log('Unpublished vault queue:', vaultFiles.length);
 "
 ```

@@ -1,49 +1,68 @@
 ---
 name: video-asset-ingestion
 description: >-
-  Ingest, link, and validate media assets for the video pipeline, including 4K
-  background artwork, era-specific color palettes, sound beds, custom typography,
-  and character sprite sheets. Use when preparing video assets, validating image coverage,
-  or linking assets into scripts.
+  Ingest, link, and validate media assets for the video pipeline, including 1080x1920
+  background artwork across 6 visual art styles, multi-provider zero-cost image generation,
+  sound beds, and character sprite sheets.
 ---
 
 # Video Asset Ingestion
 
-This skill handles asset management, prompt generation, linking, and coverage verification for video production.
+This skill handles asset generation, image linking, style consistency, and asset coverage verification across the video pipeline.
 
-## Asset Directory Structure
+---
 
-- `public/long/<slug>/<n>.png`: 16:9 4K background artwork for long-form episodes.
-- `public/audio/long/<slug>/<n>.wav`: High-fidelity voiceover files.
-- `public/audio/ambient/<sound>.wav`: Continuous atmospheric background audio (e.g. `gladiator-barracks.wav`, `roman-market.wav`).
-- `public/narrator/`: Modular narrator body parts, facial visemes, clothing, and hats.
+## 1. Directory Structure
+
+- `public/images/<slug>/<n>.jpg`: 9:16 vertical (1080x1920) background artwork for Shorts.
+- `public/long/<slug>/<n>.png`: 16:9 widescreen (1920x1080) background artwork for longform episodes.
+- `public/audio/<slug>/<n>.mp3`: Scene-by-scene voiceover files.
+- `public/audio/ambient/<sound>.wav`: Continuous atmospheric background audio.
+- `public/narrator/`: Modular narrator bodies, emotions, outfits (`casual`, `toga`, `scholar`, `adventurer`, `shadow`).
 - `public/cameo/`: Modular NPC archetype assets (Citizen, Guard, Merchant, Worker, Doctor).
 
-## Workflow Commands
+---
 
-### 1. Linking Images into Scripts
-Automatically maps images in `public/long/<slug>/` into the scene definitions in `long-out/<slug>.json`:
+## 2. Multi-Provider Zero-Cost Image Pipeline
+
+Image generation runs through `scripts/make-images.mjs` with multi-tier fallback:
+1. **Gemini 3.1 Flash Image** (If API key provided)
+2. **HuggingFace Inference Flux.1-Schnell** (Fast high-detail rendering)
+3. **Pollinations Flux (1080x1920)** (Zero-key, 100% reliable fallback)
+
+### The 6 Visual Art Styles:
+- `classic-cartoon`: 1990s retro animation with bold ink lines and saturated primary hues.
+- `dark-folklore`: Moody chiaroscuro, heavy fog, eerie torchlight, and grim atmosphere.
+- `vintage-woodcut`: Medieval woodblock engraving with textured hatch lines and parchment tones.
+- `cinematic-realism`: High-dynamic-range cinematic lighting with shallow depth of field.
+- `anime-cinematic`: Modern anime production aesthetic with volumetric lighting and vibrant palettes.
+- `comic-pulp`: Golden-age comic book halftone dots with bold speech-friendly layouts.
+
+### CLI Image Commands:
 ```bash
-node scripts/build-long.mjs <slug> --no-render
-```
-Rule: If a scene does not have its own image prompt, it automatically reuses the previous scene's image to ensure uninterrupted visual continuity.
+# Generate images for all scenes with style override
+node scripts/make-images.mjs <slug> --style dark-folklore
 
-### 2. Generating Prompts for Missing Slots
-When creating a new topic, extract all visual prompts into a prompt queue:
-```bash
-node scripts/make-images.mjs --slug <slug>
-```
-Prompts are saved to `long-out/<slug>.prompts.txt` with artistic styles tailored to the historical era.
+# Regenerate a single specific scene
+node scripts/make-images.mjs <slug> --scene 3 --force
 
-### 3. Pre-flight Asset Verification
-Before launching a long render, verify that 100% of required audio files and background slots exist:
+# Extract visual prompt queue
+cat scripts-out/<slug>.prompts.txt
+```
+
+---
+
+## 3. Pre-Flight Asset Verification
+
+Never launch a final video render with missing assets. Always run preflight validation:
 ```bash
 node -e "
-const d = JSON.parse(fs.readFileSync('long-out/<slug>.json'));
-console.log('Scenes:', d.scenes.length);
+const fs = require('fs');
+const d = JSON.parse(fs.readFileSync('scripts-out/<slug>.json'));
 const missingImg = d.scenes.filter(s => !fs.existsSync('public/' + s.image));
 const missingAudio = d.scenes.filter(s => !fs.existsSync('public/' + s.audio));
+console.log('Scenes:', d.scenes.length);
 console.log('Missing images:', missingImg.length, 'Missing audio:', missingAudio.length);
+if (missingImg.length > 0 || missingAudio.length > 0) process.exit(1);
 "
 ```
-Never render a production video with missing assets unless explicitly instructed with `--allow-gradient`.

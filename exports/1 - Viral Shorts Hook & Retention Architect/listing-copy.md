@@ -11,8 +11,7 @@ Copy and paste the sections below directly into your listing form at **https://w
 `Turn Claude Code, Cursor & AI agents into an elite retention engineer for YouTube Shorts & TikToks.`
 
 ### Recommended Price:
-- **One-Time Purchase:** `$19.00` (or `$14.00` promotional launch price)
-- *You keep 70%: ~$13.30 net profit per sale.*
+- **One-Time Purchase:** `$9.00` (Discounted impulse-pricing)
 
 ### Category / Tags:
 `Content Creation`, `YouTube Shorts`, `Video Automation`, `TikTok`, `Retention Engineering`, `Prompts & Workflows`
