@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 import { callAgensiTool } from './call-agensi-tool.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const DEMO_URL = 'https://youtube.com/shorts/kR_vDip2Shc';
 
 async function updateHookRetention() {
   console.log('--- Updating hook-retention-engineer (v1.1, $9) ---');
@@ -24,6 +25,7 @@ async function updateHookRetention() {
     skill_slug: 'hook-retention-engineer',
     version: '1.1',
     price: 9,
+    demo_video_url: DEMO_URL,
     changelog: 'v1.1: Added 100-Point Viral Retention Audit Rubric, First-3-Second Acoustic Hook Coupling, and Cultural/Taglish Sensory Anchors. Lowered price to $9.',
     files
   });
@@ -62,7 +64,8 @@ async function updateRemotion() {
     skill_slug: 'remotion-video-engine',
     version: '1.2',
     price: 15,
-    changelog: 'v1.2: Added turnkey code templates (templates/ShortVideo.tsx with Ken Burns drift + safe zone margins, templates/sample-short.json, and standalone scripts/prosody-tts.mjs). Lowered price to $15.',
+    demo_video_url: DEMO_URL,
+    changelog: 'v1.2: Added turnkey code templates (ShortVideo.tsx, sample-short.json, standalone prosody-tts.js) and live production demo video. Lowered price to $15.',
     files
   });
 
@@ -116,17 +119,45 @@ async function updateSuite() {
     skill_slug: 'complete-ai-shorts-reels-tiktok-automation-suite',
     version: '1.2',
     price: 24,
-    changelog: 'v1.2: Added turnkey starter kit with ShortVideo.tsx, sample-short.json, and standalone prosody-tts.mjs. Synchronized all 4 sub-skill modules. Lowered price to $24.',
+    demo_video_url: DEMO_URL,
+    changelog: 'v1.2: Added turnkey starter kit with ShortVideo.tsx, sample-short.json, and standalone prosody-tts.js. Synchronized all 4 sub-skill modules, added live demo video. Lowered price to $24.',
     files
   });
 
   console.log('Suite update response:', JSON.stringify(res, null, 2));
 }
 
+async function updateStarter() {
+  console.log('--- Updating ai-shorts-reels-starter-engine-free (v1.1, Free) ---');
+  const baseDir = path.join(root, 'exports', '4 - AI Shorts & Reels Starter Engine (Free)');
+
+  const files = [
+    {
+      path: 'SKILL.md',
+      content: fs.readFileSync(path.join(baseDir, 'SKILL.md'), 'utf8')
+    },
+    {
+      path: 'README.md',
+      content: fs.readFileSync(path.join(baseDir, 'README.md'), 'utf8')
+    }
+  ];
+
+  const res = await callAgensiTool('update_skill', {
+    skill_slug: 'ai-shorts-reels-starter-engine-free',
+    version: '1.1',
+    demo_video_url: DEMO_URL,
+    changelog: 'v1.1: Added live production demo video (Samhain Celtic Night Reel) and updated Pro Suite pricing to $24.',
+    files
+  });
+
+  console.log('Starter update response:', JSON.stringify(res, null, 2));
+}
+
 async function main() {
   await updateHookRetention();
   await updateRemotion();
   await updateSuite();
+  await updateStarter();
 }
 
 main().catch(err => {

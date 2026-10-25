@@ -8,6 +8,11 @@
 
 This skill gives your AI coding assistant the complete architectural knowledge and **turnkey code templates** to build, animate, and render programmatic React videos using Remotion:
 
+### 📺 Live Production Demo
+Watch a real vertical video generated end-to-end with this engine:
+- **YouTube Shorts:** [The Night the Dead Came Back (YouTube Shorts)](https://youtube.com/shorts/kR_vDip2Shc)
+- **Facebook Reels:** [The Night the Dead Came Back (Facebook Reel)](https://www.facebook.com/reel/1667506658422446)
+
 - 🎥 **Dynamic Ken Burns Drift (`templates/ShortVideo.tsx`):** Ready-to-use alternating push-in and pull-back camera zoom components.
 - 🗣️ **Emotional Prosody Synthesizer (`scripts/prosody-tts.mjs`):** Standalone zero-cost Edge TTS script with emotional pitch/rate tuning and pure-Node duration calculation.
 - 🔤 **Mobile-Safe Kinetic Typography:** 3-word chunked subtitle animations with active syllable pops and safe zone clearance.

@@ -8,6 +8,11 @@
 
 This master suite turns your AI coding assistant into a full **Autonomous Short-Form Video Production Studio**.
 
+### 📺 Live Production Demo
+Watch a real vertical video generated end-to-end with this suite:
+- **YouTube Shorts:** [The Night the Dead Came Back (YouTube Shorts)](https://youtube.com/shorts/kR_vDip2Shc)
+- **Facebook Reels:** [The Night the Dead Came Back (Facebook Reel)](https://www.facebook.com/reel/1667506658422446)
+
 It bundles 5 specialized production disciplines and turnkey code templates into one unified agent skill:
 1. **Viral Hook & Retention Architect:** Cold opens, 3.5s pattern interrupts, seamless loops, and 100-Point Retention Audit.
 2. **Video Scriptwriting Ideator:** 145–165 WPM pacing, structured scene beats, curiosity gaps, and Taglish/multilingual support.

@@ -5,6 +5,11 @@
 ## Overview
 **AI Shorts & Reels Starter Engine** is an open agent skill that enables any AI coding assistant (Antigravity, Claude Code, Cursor, Codex) to generate viral vertical video scripts (YouTube Shorts, TikTok, Instagram Reels), synthesize high-quality neural voiceover with Edge TTS, and render crisp 1080x1920 code-based MP4 videos using Remotion.
 
+### 📺 Live Production Demo
+Watch a real vertical video generated end-to-end with this engine:
+- **YouTube Shorts:** [The Night the Dead Came Back (YouTube Shorts)](https://youtube.com/shorts/kR_vDip2Shc)
+- **Facebook Reels:** [The Night the Dead Came Back (Facebook Reel)](https://www.facebook.com/reel/1667506658422446)
+
 ## Features
 - **3-Second Hook Retention Blueprint:** Structured scripts designed to maximize audience hold rate and eliminate early swipes.
 - **Zero-Cost Voiceover:** Built-in integration with Microsoft Edge TTS neural voices with no API key or subscription needed.
@@ -16,11 +21,11 @@
 2. Ask your agent: *"Create a 30-second viral Short about the world's deepest underwater hole."*
 3. The agent writes the retention script, generates voiceover with Edge TTS, and renders the video via Remotion.
 
-## Upgrade to Pro Suite ($45)
+## Upgrade to Pro Suite ($24)
 Looking for end-to-end automation? Upgrade to the **Complete AI Shorts, Reels & TikTok Automation Suite**:
 - **Automated Social Publishing:** Push directly to YouTube Shorts and Instagram Reels via API governors.
 - **Dual-Character Acting:** Animate dynamic banter between a Narrator and a Cameo NPC.
 - **Automated QA Audits:** Prevent UI safe-zone icon clipping and audio clipping automatically.
 - **Content Vault & Scheduling:** Manage automated release queues and calendar drops.
 
-Available now on [Agensi.io](https://agensi.io/skills/complete-ai-shorts-reels-tiktok-automation-suite).
+Available now on [Agensi.io](https://agensi.io/skills/complete-ai-shorts-reels-tiktok-automation-suite) for only **$24**.
