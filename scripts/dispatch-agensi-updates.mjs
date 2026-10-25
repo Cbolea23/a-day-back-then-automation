@@ -23,10 +23,10 @@ async function updateHookRetention() {
 
   const res = await callAgensiTool('update_skill', {
     skill_slug: 'hook-retention-engineer',
-    version: '1.1',
+    version: '1.2',
     price: 9,
     demo_video_url: DEMO_URL,
-    changelog: 'v1.1: Added 100-Point Viral Retention Audit Rubric, First-3-Second Acoustic Hook Coupling, and Cultural/Taglish Sensory Anchors. Lowered price to $9.',
+    changelog: 'v1.2: Added Section 6 (Follower Conversion Flywheel & Anti-Collision Safe-Zone Layout Rules: 6-Word Compact HookBanner, Centered Series Header, Silent 75%-Climax Follow Micro-CTA, and Polarizing Pinned Comment Generator). Lowered price to $9.',
     files
   });
 
@@ -62,10 +62,10 @@ async function updateRemotion() {
 
   const res = await callAgensiTool('update_skill', {
     skill_slug: 'remotion-video-engine',
-    version: '1.2',
+    version: '1.3',
     price: 15,
     demo_video_url: DEMO_URL,
-    changelog: 'v1.2: Added turnkey code templates (ShortVideo.tsx, sample-short.json, standalone prosody-tts.js) and live production demo video. Lowered price to $15.',
+    changelog: 'v1.3: Upgraded ShortVideo.tsx template with Centered Safe-Zone Series Header, CompactHookBanner (zero caption collision), and Silent 75%-Climax FollowMicroCTA pill. Lowered price to $15.',
     files
   });
 
@@ -117,10 +117,10 @@ async function updateSuite() {
 
   const res = await callAgensiTool('update_skill', {
     skill_slug: 'complete-ai-shorts-reels-tiktok-automation-suite',
-    version: '1.2',
+    version: '1.3',
     price: 24,
     demo_video_url: DEMO_URL,
-    changelog: 'v1.2: Added turnkey starter kit with ShortVideo.tsx, sample-short.json, and standalone prosody-tts.js. Synchronized all 4 sub-skill modules, added live demo video. Lowered price to $24.',
+    changelog: 'v1.3: Added Module 6 (Follower Conversion Flywheel & Anti-Collision Safe-Zone Engine) + upgraded ShortVideo.tsx with Centered Series Header, CompactHookBanner, and Silent 75%-Climax FollowMicroCTA pill. Lowered price to $24.',
     files
   });
 

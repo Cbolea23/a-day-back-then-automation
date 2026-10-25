@@ -94,3 +94,22 @@ When prompted to *"Audit this script"* or *"Review retention"*, output this exac
 - **90–100:** Viral Tier (Ready to render).
 - **70–89:** High Risk of Drop-off (Needs hook tightening).
 - **<70:** Swipe-Away Guaranteed (Complete rewrite required).
+
+---
+
+## 6. The Follower Conversion Flywheel & Safe-Zone Layout Rules (v1.2)
+
+High views without followers are wasted reach. Apply these 4 rules to turn casual viewers into subscribers without hurting watch time:
+
+1. **The 6-Word Compact `HookBanner` Rule (Zero Subtitle Collision):**
+   - Never put a full 15+ word sentence inside the top visual `HookBanner` (`top: 165px`), or the box will expand downward and collide with the active captions (`top: 830px`).
+   - Always condense the visual banner to **3–6 words** (max 2 lines, `64px` font) while the narrator speaks the full sentence.
+2. **Centered Top Safe-Zone Episodic Series Header (`seriesTag`):**
+   - People rarely follow for a random isolated video, but they instinctively follow a **named series**.
+   - Place a centered pill at `top: 66px, left: 50%` (e.g., `🇵🇭 PHILIPPINE DARK LORE • CHANNEL NAME` or `🕯️ DARK FOLKLORE ARCHIVES • CHANNEL NAME`).
+   - Centering at `top: 66px` avoids both the top-left Mute icon and top-right Search (`🔍`) icon on Reels/Shorts/TikTok.
+3. **Silent 75%-Climax Animated `FollowMicroCTA` Pill:**
+   - Never *say* "like and subscribe" (which triggers a 65% swipe-away drop).
+   - Instead, at **74%–80% of the video timeline** (while the narrator is revealing the climax twist), pop a silent 2.8-second spring-animated pill (`🔔 FOLLOW FOR PART 2 & NIGHTLY LORE`) at `top: 155px`.
+4. **Polarizing "Debate" Pinned Comment (`pinnedComment`):**
+   - Every script must output a polarizing debate question to pin in the comments (e.g., *"Be honest: if you smelled sweet cigar smoke in a dark tree at 2 AM, would you look up or run? 👇"*), driving 3x–4x algorithmic comment velocity.

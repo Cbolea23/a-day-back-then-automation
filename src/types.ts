@@ -144,6 +144,10 @@ export type ScriptProps = {
   voice?: string;
   /** Language code ("en" | "taglish" | "tl"). */
   language?: string;
+  /** Episodic series badge shown in the top safe-zone header (e.g. "🇵🇭 Philippine Dark Lore"). */
+  seriesTag?: string;
+  /** Polarizing debate question to pin in comments for 3x-4x algorithmic reach. */
+  pinnedComment?: string;
   /** Owner user ID when created in multi-user studio. */
   authorId?: string;
 };

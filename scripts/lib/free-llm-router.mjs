@@ -638,7 +638,9 @@ Rules:
 - Scene 1 MUST be a powerful pattern-interrupt hook under 16 words. No "Hey guys" or greetings.
 - If the topic is Philippine folklore or mythology (e.g., Mangkukulam, Manananggal, Aswang, Tikbalang, Kapre, Bakunawa, Tiyanak, White Lady, Biringan), include authentic regional lore, traditional beliefs, how people protected themselves (buntot pagi, calamansi, salt, garlic, albularyo rituals), and eerie cultural details.
 - Include 1 or 2 scenes with a cameo NPC reaction or short comic speechBubble where appropriate.
-- "hook" is 3-7 words of punchy on-screen banner text.
+- "hook" MUST be strictly 3-6 words of punchy on-screen banner headline text (never a full sentence, so it never overlaps with captions).
+- "seriesTag" is the episodic series header (e.g., "🇵🇭 Philippine Dark Lore", "🕯️ Dark Folklore Archives", or "🏛️ Untold History Archives").
+- "pinnedComment" is a polarizing debate question to pin in the video comments that triggers viewer replies (e.g., "Be honest: if you heard this at 2 AM, would you investigate or run? 👇").
 - "mood" is one of: "day", "night", "warm", "dark", "cool".
 - "imagePrompt" describes ONLY the atmospheric setting/background for the scene in English (no text, no logos).
 
@@ -646,7 +648,9 @@ Return ONLY a valid JSON object matching this exact schema:
 {
   "slug": "${cleanSlug}",
   "title": "Catchy Video Title",
-  "hook": "3-7 Word On-Screen Hook",
+  "hook": "3-6 Word Banner Headline",
+  "seriesTag": "🕯️ Dark Folklore Archives",
+  "pinnedComment": "Polarizing question for the comment section? 👇",
   "scenes": [
     {
       "text": "Spoken narration for this scene...",
@@ -698,10 +702,28 @@ Return ONLY valid JSON.`;
     });
   }
 
+  const isPinoyLore =
+    language === "tl" ||
+    language === "taglish" ||
+    /kapre|aswang|manananggal|mangkukulam|tikbalang|tiyanak|bakunawa|biringan|diwata|multo|balete|albularyo|duwende|sigbin|santelmo/i.test(
+      `${cleanSlug} ${topic}`,
+    );
+  const defaultSeriesTag = isPinoyLore
+    ? "🇵🇭 Philippine Dark Lore"
+    : artStyle === "dark-folklore" || /ghost|witch|vampire|demon|cursed|samhain|banshee|plague/i.test(topic)
+    ? "🕯️ Dark Folklore Archives"
+    : "🏛️ Untold History Archives";
+
   const finalScript = {
     slug: cleanSlug,
     title: scriptData.title || topic,
-    hook: scriptData.hook || topic,
+    hook: scriptData.hook || topic.split(/\s+/).slice(0, 5).join(" "),
+    seriesTag: scriptData.seriesTag || defaultSeriesTag,
+    pinnedComment:
+      scriptData.pinnedComment ||
+      (isPinoyLore
+        ? `Naniniwala ka ba sa kwento ng ${topic}? Anong gagawin mo kung makita mo ito sa dilim? 👇`
+        : `Be honest: how long would you survive in this situation? Tell us in the comments 👇`),
     channelName,
     artStyle: styleObj.id,
     narratorTheme: narratorTheme === "auto" ? undefined : narratorTheme,

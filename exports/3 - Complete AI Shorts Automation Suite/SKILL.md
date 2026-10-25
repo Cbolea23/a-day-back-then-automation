@@ -52,6 +52,12 @@ All video pacing, safe zones, and typography rules are calibrated to work seamle
    - Automatic Prosody Pacing: injects dramatic breath pauses (`...`), cadence shifts, and warning drops into neural speech.
    - Dynamic Acoustic Profiles: calibrated pitch (`-4Hz`) and speed (`-5%`) for eerie dread vs. punchy viral pacing (`+1Hz` / `+4%`).
 
+6. **Module 6: Follower Conversion Flywheel & Anti-Collision Safe-Zone Engine (v1.3)**
+   - **Zero Banner-Caption Overlap:** Condenses the top `HookBanner` (`top: 165px`) to 3–9 words so it never collides with active subtitles (`top: 830px`).
+   - **Centered Top Safe-Zone Series Header:** Places the Episodic Series + Channel badge at `top: 66px, left: 50%` (`🕯️ DARK FOLKLORE ARCHIVES • CHANNEL`), completely clear of top-left Mute and top-right Search (`🔍`) icons.
+   - **Silent 75%-Climax `FollowMicroCTA` Pill:** Pops a spring-animated `🔔 FOLLOW` badge during the climax reveal without spoken outro drop-offs.
+   - **Polarizing Pinned Comment Generator:** Outputs debate questions (`pinnedComment`) that trigger 3x–4x comment velocity.
+
 
 ---
 
