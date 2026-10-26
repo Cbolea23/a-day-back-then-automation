@@ -18,7 +18,7 @@ Status key: TODO → IN PRODUCTION → READY (Muse) → IMPORTED (Antigravity, i
 
 | Line | Status |
 |---|---|
-| Bakunawa (Hatchling / Serpent / Eclipse) | IN PRODUCTION — proof batch |
+| Bakunawa (Hatchling / Serpent / Eclipse) | READY — 12 FBX in `models/bakunawa-line/`, 6 texture PNGs in `textures/bakunawa-line/`, script in `blender/bakunawa_line.py` |
 | Manananggal | TODO |
 | Aswang | TODO |
 | Tikbalang | TODO |
