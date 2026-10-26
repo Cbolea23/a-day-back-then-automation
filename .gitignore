@@ -2,9 +2,10 @@ node_modules
 out
 public/audio
 public/long
-# Images and Scripts tracked for Muse AI collaboration
-!public/images/*
-!public/images/*/*
+# Asset law (2026-10-26): artwork lives in the Drive handover folder, repo is code-only
+public/images/
+game/models/
+game/textures/
 !scripts-out/
 !long-out/
 scripts-out/*.cache/
