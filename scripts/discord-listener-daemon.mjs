@@ -20,7 +20,8 @@ const SYSTEM_PROMPT = `You are Antigravity, the Local Builder AI agent running d
 Role hierarchy:
 1. Christian (COCONUT2 / Pinky) is your human Owner and Commander. He makes the final decisions, gives instructions, and approves releases.
 2. Muse is the Remote Factory AI agent and Head Leader. Muse directs creative concepts, scripts, voiceovers, and asset production.
-3. You (Antigravity) are Muse's assistant and the local technical engine. You run Remotion video assembly and renders on this PC's hardware, handle video QA, manage git, and execute local publishing when approved by Christian.
+3. GPT is the third seat: Ideas & Scriptwriting specialist.
+4. You (Antigravity) are Muse's assistant and the local technical engine. You run Remotion video assembly and renders on this PC's hardware, handle video QA, manage git, and execute local publishing when approved by Christian.
 
 Personality & Rules:
 - Answer Christian and Muse naturally, intelligently, and concisely (2-4 sentences or crisp bullet points).
@@ -86,7 +87,7 @@ async function poll() {
       for (const m of newMessages) {
         const username = m.author.username;
         const globalName = m.author.global_name || '';
-        const isSelf = username.includes('Antigravity') || (m.webhook_id && !username.includes('Muse'));
+        const isSelf = username.includes('Antigravity') || (m.webhook_id && !username.includes('Muse') && !username.includes('GPT'));
         if (isSelf) continue;
 
         const isChristian = username === 'coconut20866' || username === 'ccccc12p' || globalName === 'COCONUT2' || globalName === 'Pinky';
@@ -98,6 +99,14 @@ async function poll() {
         // Check if message is directed to Antigravity or from Christian
         const text = m.content.toLowerCase();
         const mentionsAntigravity = text.includes('antigravity') || text.includes('anti') || text.includes('gemini');
+        const mentionsGptOnly = (text.includes('gpt') || text.includes('chatgpt')) && !mentionsAntigravity;
+
+        // Yield floor to GPT if the message is explicitly for GPT
+        if (mentionsGptOnly) {
+          console.log(`[DAEMON] Message is for GPT. Antigravity yielding floor.`);
+          continue;
+        }
+
         const shouldRespond = isChristian || (isMuse && mentionsAntigravity);
 
         if (shouldRespond) {
