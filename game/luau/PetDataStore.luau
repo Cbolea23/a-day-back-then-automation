@@ -84,8 +84,20 @@ end
 
 local autosaves = {} -- [Player] = connection
 
--- The store itself. Change the name per game to keep data separate.
-local Store = DataStoreService:GetDataStore("PetBattlerSaves")
+-- Lazy-load the store so unpublished local Studio sessions do not fail on require
+local Store
+local function getStore()
+	if Store then return Store end
+	local ok, res = pcall(function()
+		return DataStoreService:GetDataStore("PetBattlerSaves")
+	end)
+	if ok then
+		Store = res
+		return Store
+	else
+		return nil
+	end
+end
 
 --- The identifier this player's save is keyed by. Single-experience saves
 --- key off player.UserId, deliberately and only:
@@ -111,8 +123,8 @@ end
 function PetDataStore.NewData()
 	return {
 		Version = SAVE_VERSION,
-		ActivePet = { Species = "Cinderpup", Level = 1, XP = 0 },
-		Roster = { Cinderpup = { Species = "Cinderpup", Level = 1, XP = 0 } },
+		ActivePet = { Species = "BakunawaHatchling", Level = 1, XP = 0 },
+		Roster = { BakunawaHatchling = { Species = "BakunawaHatchling", Level = 1, XP = 0 } },
 		Wins = 0,
 		SavedAt = 0,
 	}
@@ -136,7 +148,9 @@ end
 function PetDataStore.Load(player)
 	local key = PetDataStore.UserKeyFor(player)
 	local ok, result = pcall(function()
-		return Store:GetAsync(key)
+		local store = getStore()
+	if not store then return nil, "DataStore unavailable in offline/unpublished Studio" end
+	return store:GetAsync(key)
 	end)
 	if not ok then
 		return nil, result -- DataStore error; caller decides (see wiring)
@@ -179,7 +193,9 @@ function PetDataStore.Save(player, data)
 	data.SavedAt = os.time()
 	local key = PetDataStore.UserKeyFor(player)
 	local ok, err = pcall(function()
-		Store:UpdateAsync(key, function(old)
+		local store = getStore()
+	if not store then return true end
+	store:UpdateAsync(key, function(old)
 			if type(old) == "table" and (old.SavedAt or 0) > data.SavedAt then
 				return old -- another server saved something newer; keep it
 			end

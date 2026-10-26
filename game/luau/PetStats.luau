@@ -69,6 +69,10 @@ PetStats.Base = {
 	Duskflit    = { Type = "Dark", HP = 50,  Attack = 60,  Defense = 40,  Speed = 70  }, -- baby
 	ShadowBat   = { Type = "Dark", HP = 75,  Attack = 90,  Defense = 60,  Speed = 100 }, -- mid
 	Nightwing   = { Type = "Dark", HP = 100, Attack = 125, Defense = 85,  Speed = 135 }, -- final
+	-- Bakunawa line (Filipino Mythic Moon Serpent)
+	BakunawaHatchling = { Type = "Water", HP = 55,  Attack = 50,  Defense = 45,  Speed = 50  }, -- baby
+	BakunawaSerpent   = { Type = "Water", HP = 80,  Attack = 75,  Defense = 70,  Speed = 75  }, -- mid
+	BakunawaEclipse   = { Type = "Water", HP = 115, Attack = 115, Defense = 95,  Speed = 105 }, -- final
 }
 
 -- Evolution lines, baby -> mid -> final (handy for UI / dex screens).
@@ -78,6 +82,7 @@ PetStats.EvolLines = {
 	Earth    = { "Pebblit", "SproutGolem", "Terratitan" },
 	Electric = { "Voltkit", "VoltBunny", "Stormhare" },
 	Dark     = { "Duskflit", "ShadowBat", "Nightwing" },
+	Bakunawa = { "BakunawaHatchling", "BakunawaSerpent", "BakunawaEclipse" },
 }
 
 -- Evolution thresholds. Finals have no entry (NextEvolution returns nil).
@@ -93,6 +98,8 @@ PetStats.Evolutions = {
 	VoltBunny = { Name = "Stormhare",  Level = 32 },
 	Duskflit  = { Name = "ShadowBat",  Level = 16 },
 	ShadowBat = { Name = "Nightwing",  Level = 32 },
+	BakunawaHatchling = { Name = "BakunawaSerpent", Level = 16 },
+	BakunawaSerpent   = { Name = "BakunawaEclipse", Level = 32 },
 }
 
 PetStats.MaxLevel = 100

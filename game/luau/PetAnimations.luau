@@ -45,6 +45,10 @@ PetAnimations.Pets = {
 	Duskflit   = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- baby
 	ShadowBat  = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- mid
 	Nightwing  = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- final
+	-- Bakunawa line (Filipino Mythic Moon Serpent)
+	BakunawaHatchling = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
+	BakunawaSerpent   = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
+	BakunawaEclipse   = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
 }
 
 -- Animation names, in FBX order. FBX file for each slot: <PetName>_<Anim>.fbx
