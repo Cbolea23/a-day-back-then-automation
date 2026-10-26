@@ -17,9 +17,9 @@ This skill enforces strict, unbending rules on all social media upload, scheduli
 - **ACTIVE & APPROVED PLATFORMS:**
   - **YouTube:** Primary focus for Shorts (vertical 1080x1920) and Longform (1920x1080).
   - **Instagram:** Active focus for Reels (`@adaybackthenofficial`).
-- **FORBIDDEN / SUSPENDED PLATFORMS:**
-  - **Facebook:** **HARD FREEZE.** Do NOT initiate API requests, do NOT attempt script uploads, do NOT test endpoints, and do NOT advise the user to perform manual upload tests unless explicitly requested.
-  - **TikTok:** **PROHIBITED.** Developer API is unapproved. Never attempt uploads or claim TikTok automation is ready.
+  - **Facebook:** Active focus for Page Reels (`A Day Back Then`).
+- **PROHIBITED PLATFORMS:**
+  - **TikTok:** Developer API is unapproved. Never attempt uploads or claim TikTok automation is ready.
 
 ---
 
@@ -49,13 +49,22 @@ When diagnosing failures, errors, or delays, the agent must adhere to these abso
   1. Immediately log the exact error payload.
   2. Stop all automated retry loops immediately.
   3. **DO NOT run test scripts against the failing endpoint.** Every failed request registers as suspicious traffic and resets the cooldown counter.
-  4. Pivot execution 100% to clean, working platforms (YouTube / Instagram).
+  4. Pivot execution 100% to clean, working platforms.
 
-### B. YouTube Quota Management
-- YouTube Data API operates on a daily quota of 10,000 units (~1,600 units per video upload).
-- Max safe uploads per 24 hours: 6 videos.
-- Never upload more than 6 videos in a single calendar day unless a quota extension has been verified.
-- YouTube daily quota resets strictly at midnight Pacific Time (15:00 Manila Time / UTC+8).
+### B. YouTube Quota, Cadence & Anti-Cannibalization Protocol
+- **Strict Cadence (1 Short Per 24 Hours Max):**
+  - **NEVER** schedule or publish multiple Shorts in the same 24-hour cycle on a growing channel.
+  - YouTube's recommendation engine requires 18–36 hours to test a Short's retention curve with seed audiences. Stacking multiple Shorts cannibalizes impression quotas, resetting the algorithm's testing phase and stalling views across all videos.
+  - Minimum spacing between consecutive YouTube Shorts: **strictly 24 hours**.
+- **Optimal Release Time Mandate:**
+  - Standard release window: **23:00 UTC (7:00 AM Manila Time / 7:00 PM US Eastern)**.
+  - Never drop Shorts at off-peak hours (e.g. 05:00 UTC / 1:00 AM US) where the primary English-speaking audience is asleep.
+- **Anti-Duplication Metadata Gate:**
+  - Never use repetitive boilerplate descriptions across consecutive uploads (e.g., identical "Would you have survived... Subscribe for daily history" strings). YouTube filters flag identical descriptions as repetitive/auto-generated spam. Every description must contain unique historical narrative context.
+- **Shorts Duration Gate:**
+  - Vertical Shorts duration must strictly remain **under 45 seconds** (target: 30–42 seconds). Videos $\ge 50$ seconds suffer severe APV drop-offs and are heavily deprioritized in the Shorts feed.
+- **YouTube API Quota:**
+  - YouTube Data API operates on a daily quota of 10,000 units (~1,600 units per video upload). Daily quota resets strictly at midnight Pacific Time (15:00 Manila Time / UTC+8).
 
 ### C. Instagram Upload Protocol
 - Always pre-process vertical video with `ffmpeg` using `-movflags +faststart`, standard `yuv420p`, and max 1080x1920 to prevent Meta container processing timeouts.
@@ -72,7 +81,9 @@ When diagnosing failures, errors, or delays, the agent must adhere to these abso
 
 Before reporting completion to the user:
 - [ ] Has the video file been verified for correct dimensions (1080x1920 vertical for Shorts/Reels)?
+- [ ] Has the video duration passed the Shorts retention gate ($\le 45$ seconds for vertical shorts)?
 - [ ] Has the file size passed quality gates (minimum $\ge 22$ MB for full visual gradients, under 100 MB for fast ingestion)?
+- [ ] Has the 24-hour cadence gap been respected to prevent algorithmic cannibalization?
 - [ ] Is the live watch URL confirmed via API?
 - [ ] Has local tracking (`published-urls.json` and `cross-platform-schedule-queue.json`) been updated?
 - [ ] If an error occurred, is the exact error code, subcode, and raw message displayed without sugarcoating?

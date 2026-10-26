@@ -215,29 +215,31 @@ async function getAccessToken() {
 }
 export function getNextOptimalSchedule() {
   const now = new Date();
-  // US Peak viewing windows in Philippine Time (UTC+8):
-  // Window 1: 7:00 AM PHT (23:00 UTC previous day / 7:00 PM US Eastern)
-  // Window 2: 1:00 AM PHT (17:00 UTC previous day / 1:00 PM US Eastern)
-  const candidates = [];
-  for (let dayOffset = 0; dayOffset <= 2; dayOffset++) {
-    const base = new Date(now);
-    base.setUTCDate(base.getUTCDate() + dayOffset);
+  // Solitary 24-hour cycle rule: Space consecutive YouTube Shorts by at least 24 hours.
+  // Optimal peak release: 23:00 UTC (7:00 PM US Eastern / 7:00 AM Manila Time)
+  let latestScheduled = now.getTime();
 
-    // 17:00 UTC = 1:00 AM PHT / 1:00 PM EST
-    const slot1 = new Date(base);
-    slot1.setUTCHours(17, 0, 0, 0);
-
-    // 23:00 UTC = 7:00 AM PHT / 7:00 PM EST
-    const slot2 = new Date(base);
-    slot2.setUTCHours(23, 0, 0, 0);
-
-    candidates.push(slot1, slot2);
+  const queuePath = path.join(root, 'cross-platform-schedule-queue.json');
+  if (fs.existsSync(queuePath)) {
+    try {
+      const q = JSON.parse(fs.readFileSync(queuePath, 'utf8'));
+      if (Array.isArray(q.scheduledBatch)) {
+        for (const item of q.scheduledBatch) {
+          if (item.isoSchedule) {
+            const t = new Date(item.isoSchedule).getTime();
+            if (t > latestScheduled) latestScheduled = t;
+          }
+        }
+      }
+    } catch {}
   }
 
-  // Must be at least 60 minutes in the future
-  const minTime = now.getTime() + 60 * 60 * 1000;
-  const next = candidates.find((c) => c.getTime() >= minTime) || candidates[candidates.length - 1];
-  return next.toISOString();
+  const baseDate = new Date(Math.max(now.getTime() + 2 * 60 * 60 * 1000, latestScheduled + 24 * 60 * 60 * 1000));
+  baseDate.setUTCHours(23, 0, 0, 0);
+  if (baseDate.getTime() <= now.getTime() + 60 * 60 * 1000) {
+    baseDate.setUTCDate(baseDate.getUTCDate() + 1);
+  }
+  return baseDate.toISOString();
 }
 
 /**
@@ -465,6 +467,18 @@ async function uploadVideo(slug, options) {
   // Auto-schedule for optimal peak viewing by default unless --now / --public or explicit privacy
   if (!scheduleTime && !options.now && !explicitPrivacy) {
     scheduleTime = getNextOptimalSchedule();
+  }
+
+  const totalSeconds = (script.scenes && script.scenes.length)
+    ? script.scenes.reduce((acc, s) => acc + (s.seconds || 0), 0)
+    : 0;
+
+  if (!isLong && totalSeconds > 48) {
+    console.warn("\n========================================================");
+    console.warn(`⚠️  [SHORTS DURATION WARNING]: Video duration is ~${totalSeconds.toFixed(1)}s!`);
+    console.warn("YouTube Shorts algorithm penalizes Shorts > 45s with low completion rates.");
+    console.warn("Target duration for 80%+ APV (Average Percentage Viewed) is 30–42 seconds.");
+    console.warn("========================================================\n");
   }
 
   const {snippet, status} = buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong);

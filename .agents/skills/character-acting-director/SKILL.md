@@ -12,9 +12,17 @@ This skill coordinates character visual acting, emotional expressions, outfit st
 
 ---
 
-## 1. Narrator Outfit Themes
+## 1. Narrator Outfit Themes & Gender Synchronization
 
-The Narrator component supports 5 distinct thematic outfits via the `theme` prop:
+### Voice-Gender Synchronization (Mandatory Rule)
+- When a **female voiceover** (e.g., `fil-PH-BlessicaNeural`) is selected, the on-screen Narrator **MUST be female** (`babaylan`, `filipina`, `nun`, or `witch`). Never pair a female voice with a male/unisex avatar.
+- When a **male voiceover** (e.g., `fil-PH-AngeloNeural`, `en-US-ChristopherNeural`) is selected, use masculine themes (`albularyo`, `katipunero`, `barong`, `adventurer`, `scholar`, `toga`).
+
+### Core Outfit Themes
+- `babaylan`: Traditional Filipina priestess/storyteller. Long cascading dark hair past the shoulders, delicate curved eyelashes, golden sampaguita hair blossom, and vibrant Baro't Saya / Katutubo bodice with alampay shoulder wrap. Ideal for Philippine dark folklore and legends.
+- `albularyo`: Traditional Filipino mystic healer. Crimson putong headband, woven inabel shoulder sash, and triangular anting-anting talisman.
+- `katipunero`: Woven buri salakot dome hat with golden sun crest, revolutionary attire.
+- `barong`: Formal embroidered barong tagalog with clean styled haircut.
 - `casual`: Modern signature jacket and jeans (default).
 - `toga`: Roman patrician draped garment with gold laurel for classical antiquity.
 - `scholar`: Renaissance velvet doublet, ruffled collar, and reading spectacles.

@@ -43,11 +43,11 @@ Viewers rarely follow for a random isolated fact, but they instinctively follow 
   - `🏛️ UNTOLD HISTORY ARCHIVES • A DAY BACK THEN`
 - **Safe-Zone Rule:** Centering at `top: 66px` keeps the badge 100% clear of the top-left Mute icon and top-right Search (`🔍`) icon on Facebook Reels, Instagram Reels, and YouTube Shorts.
 
-### B. Silent Animated "Follow" Micro-CTA at the 75% Climax Mark
+### B. Silent Animated "Follow" Micro-CTA (Dual-Window System)
 - **Never speak "Like and subscribe"**—spoken outros trigger an instant 65% swipe-away drop.
-- Instead, at **74%–80% of the total video timeline** (while the narrator is actively delivering the climax reveal), pop in a silent, 2.8-second spring-animated pill (`FollowMicroCTA`) at `top: 155px`:
-  - Swinging notification bell `🔔` + **`FOLLOW A DAY BACK THEN — Don't miss tonight's next story`**.
-  - Viewers tap Follow while still listening to the climax twist, preserving >100% loop retention.
+- Instead, use the **Dual-Window System** via `FollowMicroCTA` at `top: 155px`:
+  1. **Climax Window (~70% timeline, 5.0 seconds):** While the narrator delivers the climax twist, pop in the animated pill (`🔔 FOLLOW A DAY BACK THEN — Don't miss tonight's next story`). Viewers tap follow while engaged in the climax.
+  2. **Outro Loop Window (Final 3.5 seconds until video end):** Reappears prominently with an active swinging 🔔 animation as the video approaches the final frame. Viewers watching the ending see the follow prompt right before deciding whether to loop or swipe away.
 
 ### C. Polarizing "Debate" Pinned Comment (`pinnedComment`)
 - Every generated script outputs a `pinnedComment` question designed to spark personal stories or friendly debate in the comments:
@@ -59,3 +59,19 @@ Viewers rarely follow for a random isolated fact, but they instinctively follow 
 
 ## 4. The Seamless Loop Bridge
 - The final scene applies a `-2%` to `-4%` prosody slowdown and syntactically flows back into Scene 1's opening hook without a silent gap or outro screen.
+
+---
+
+## 5. High-CTR Curiosity-Gap Titles (Anti-Boring Title Standard)
+
+- **BANNED (Encyclopedia Titles):**
+  - ❌ *"The Truth About Plague Doctors #shorts"*
+  - ❌ *"The Witch Finder General #shorts"*
+  - ❌ *"Vlad the Impaler: The Real Dracula #shorts"*
+- **MANDATORY (Curiosity-Gap Titles):**
+  - Use high-stakes contradiction, visual intrigue, or urgent disbelief:
+  - ✅ *"Why plague doctors packed their bird beaks with dried flowers #shorts"*
+  - ✅ *"The brutal test that proved you were a witch in 1645 #shorts"*
+  - ✅ *"Why an Ottoman Sultan threw up when he saw 20,000 stakes #shorts"*
+  - ✅ *"Why ancient Celts dressed as demons on Oct 31 (Not for candy) #shorts"*
+- Titles must open an irresistible loop that can only be answered by watching the video.

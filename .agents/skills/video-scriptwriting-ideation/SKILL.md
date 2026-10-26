@@ -15,14 +15,15 @@ This skill guides script creation, humanized dialogue generation, retention paci
 
 ## 1. Script Architecture
 
-### Vertical Shorts Architecture (45–58 Seconds)
-- **Target:** 4–6 punchy scenes (~8–11 seconds per scene).
+### Vertical Shorts Architecture (30–42 Seconds Max)
+- **Target:** 3–4 punchy scenes (~8–10 seconds per scene). Hard cap: Under 45 seconds total runtime.
+- **Why (The 80%+ APV Rule):** YouTube Shorts and Instagram Reels algorithmically suppress videos $\ge 60$ seconds because viewer swipe-aways drop Average Percentage Viewed (APV) below 40%. A concise 35-second Short maintains a 75%–85%+ APV, which triggers viral distribution into cold feeds.
 - **Format:** 1080x1920 (9:16).
 - **Structure:**
   - **Scene 1 (The Hook):** 400ms cold open with bold sensory contradiction or high-stakes dilemma. Zero greetings.
-  - **Scenes 2–4 (Rapid Escalation):** Sensory details, concrete numbers, escalation, and 3.5-second pattern interrupts.
-  - **Scene 5 (Climax / Twist):** Revelation or comedic/eerie NPC reaction.
-  - **Scene 6 / Last Beat (Infinite Loop Bridge):** Trailing sentence ending that syntactically bridges into Scene 1's opening hook.
+  - **Scene 2 (Escalation / Evidence):** Sensory details, concrete historical facts, and 3.5-second pattern interrupt.
+  - **Scene 3 (Climax / Twist):** The shocking revelation or comedic/eerie NPC reaction.
+  - **Scene 4 / Last Beat (Infinite Loop Bridge):** Trailing sentence ending that syntactically bridges into Scene 1's opening hook.
 
 ### Longform Documentary Architecture (8–12 Minutes)
 - **Target:** 30–40 structured scenes (~12–16 seconds per scene).
@@ -65,14 +66,32 @@ Flat "reading" voices destroy audience retention. All scripts and voiceovers mus
 2. **Em-Dashes (`—`):** Use for rapid conversational pivots and mid-sentence realizations.
 3. **Tagalog Cadence:** In Filipino lore, insert short cultural markers (*"pero mag-ingat ka...", "ayon sa matatanda..."*) to give authentic campfire storytelling flavor.
 
-### 4 Emotion Presets:
-- `spooky-suspense`: For dark folklore, cryptids, and eerie history (`--pitch=-4Hz --rate=-5%`).
-- `intense-drama`: For gladiatorial combat, wars, and disasters (`--pitch=-2Hz --rate=-2%`).
-- `documentary-calm`: For architectural marvels and ancient civilization studies (`--pitch=default --rate=-1%`).
-- `viral-energetic`: For rapid trivia, bizarre laws, and unexpected facts (`--pitch=+1Hz --rate=+4%`).
+### 4 Emotion Presets (0Hz Formant Rule):
+- **CRITICAL 0Hz Formant Rule:** Never pass negative pitch shifts (like `-4Hz` or `-7Hz`) to neural voices. Negative pitch shifts garble digital signal formants, producing an artificial, muffled robotic drone. Keep `pitch: 0Hz` to ensure crisp, clean human timbre.
+- `spooky-suspense`: For dark folklore, cryptids, and eerie history (`pitch: 0Hz`, `rate: 0%` or `-2%`).
+- `intense-drama`: For gladiatorial combat, wars, and disasters (`pitch: 0Hz`, `rate: +3%`).
+- `documentary-calm`: For architectural marvels and ancient civilization studies (`pitch: 0Hz`, `rate: +1%`).
+- `viral-energetic`: For rapid trivia, bizarre laws, and unexpected facts (`pitch: 0Hz`, `rate: +5%`).
+
+---
+
+## 4. Philippine Lore Strategy & Voice-Avatar Synchronization
+
+### Voice & Avatar Gender Synchronization (Strict Production Rule)
+When generating scripts, the narrator avatar MUST match the selected voice actor:
+- **Female Voice (`fil-PH-BlessicaNeural`):** Set `"narratorTheme": "babaylan"` (renders traditional Filipina priestess with cascading dark hair, eyelashes, sampaguita blossom, and Baro't Saya bodice).
+- **Male Voice (`fil-PH-AngeloNeural`):** Set `"narratorTheme": "albularyo"` (renders Filipino folk healer with putong headband, inabel sash, and anting-anting).
+- *Disqualified Voices:* Never use robotic models like `en-PH-JamesNeural`. Keep Angelo and Blessica as the gold standard.
+
+### Taglish vs. Pure Tagalog Content Strategy
+1. **Modern Urban Legends & Cryptids (Taglish):** Use for Biringan City, Balete Drive, Baguio Diplomat Hotel, and modern hauntings. Mixes English elements (*GPS coordinates, delivery trucks, satellite scans*) with Tagalog suspense for viral TikTok & Reels engagement.
+2. **Ancient Pre-Colonial Mythology (Pure Tagalog):** Use for Bakunawa, Bathala, Aswang Origins, Kapre, and Diwata. Produces chilling *Gabi ng Lagim* campfire atmosphere.
+
+### Cultural Phonetic Alignment (`applyCulturalPhonetics`)
+In scripts with local entities, words are displayed with proper written spelling in subtitles (`scene.text`), but passed to the voice model with phonetic syllables (`ba-LEH-te`, `Bee-ring-gahn`, `Sah-mar`, `ahs-wahng`) so the neural voice pronounces them like a native Filipino.
 
 ### Voice Synthesis Command:
 ```bash
-# Synthesize with emotion and accent synergy
-node scripts/make-voice.mjs <slug> --emotion spooky-suspense --voice fil-PH-AngeloNeural
+# Synthesize with Blessica (Female Filipina Babaylan)
+node scripts/make-voice.mjs <slug> --voice fil-PH-BlessicaNeural
 ```
