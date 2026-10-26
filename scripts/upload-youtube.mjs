@@ -473,12 +473,8 @@ async function uploadVideo(slug, options) {
     ? script.scenes.reduce((acc, s) => acc + (s.seconds || 0), 0)
     : 0;
 
-  if (!isLong && totalSeconds > 48) {
-    console.warn("\n========================================================");
-    console.warn(`⚠️  [SHORTS DURATION WARNING]: Video duration is ~${totalSeconds.toFixed(1)}s!`);
-    console.warn("YouTube Shorts algorithm penalizes Shorts > 45s with low completion rates.");
-    console.warn("Target duration for 80%+ APV (Average Percentage Viewed) is 30–42 seconds.");
-    console.warn("========================================================\n");
+  if (!isLong) {
+    console.log(`Video Runtime: ~${totalSeconds.toFixed(1)}s (${totalSeconds >= 60 ? "Qualified for TikTok Creator Rewards >= 60s & FB Watch Time" : "Compact Shorts Cut"})`);
   }
 
   const {snippet, status} = buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong);

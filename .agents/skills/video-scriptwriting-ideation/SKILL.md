@@ -13,21 +13,30 @@ This skill guides script creation, humanized dialogue generation, retention paci
 
 ---
 
-## 1. Script Architecture
+## 1. Multi-Platform Script Architecture
 
-### Vertical Shorts Architecture (30–42 Seconds Max)
-- **Target:** 3–4 punchy scenes (~8–10 seconds per scene). Hard cap: Under 45 seconds total runtime.
-- **Why (The 80%+ APV Rule):** YouTube Shorts and Instagram Reels algorithmically suppress videos $\ge 60$ seconds because viewer swipe-aways drop Average Percentage Viewed (APV) below 40%. A concise 35-second Short maintains a 75%–85%+ APV, which triggers viral distribution into cold feeds.
-- **Format:** 1080x1920 (9:16).
-- **Structure:**
-  - **Scene 1 (The Hook):** 400ms cold open with bold sensory contradiction or high-stakes dilemma. Zero greetings.
-  - **Scene 2 (Escalation / Evidence):** Sensory details, concrete historical facts, and 3.5-second pattern interrupt.
-  - **Scene 3 (Climax / Twist):** The shocking revelation or comedic/eerie NPC reaction.
-  - **Scene 4 / Last Beat (Infinite Loop Bridge):** Trailing sentence ending that syntactically bridges into Scene 1's opening hook.
+Instead of an arbitrary blanket time limit that damages monetization on other networks, scripts are structured to satisfy the monetization and algorithmic requirements of all 4 major platforms (**TikTok, Facebook Reels, Instagram Reels, and YouTube Shorts**).
 
-### Longform Documentary Architecture (8–12 Minutes)
-- **Target:** 30–40 structured scenes (~12–16 seconds per scene).
-- **Format:** 1920x1080 (16:9).
+### A. The 60–80s Golden Monetization Tier (Standard Master Cut)
+- **Target:** 60–80 seconds (5–6 scenes, ~110–140 words).
+- **Platform Synergy:**
+  - **TikTok Creator Rewards:** Strictly fulfills the mandatory **$\ge 60$ seconds rule** required to earn RPM monetization revenue ($0.40–$1.00+ per 1,000 qualified views). 30-second clips earn $0.
+  - **Facebook Reels:** Maximizes cumulative watch minutes and 1-minute completion rates, which drives higher payouts in the Facebook Performance Bonus Program.
+  - **Instagram Reels:** Provides sufficient narrative depth for folklore, true history, and mystery, driving saves and DM shares.
+  - **YouTube Shorts:** Delivers deep storytelling without drop-off by employing the **15-Second Retention Escalation Rule**.
+
+### B. The 15-Second Retention Escalation Rule (For 60s+ Videos)
+Why do viral 60–90s creators get millions of views across both TikTok and YouTube Shorts? They do NOT deliver a flat, linear recitation. They use a 4-act micro-story arc that resets the viewer's attention every 15–20 seconds:
+1. **Act 1: The Cold Hook (0.0s – 3.0s):** Sensory contradiction, shocking mystery, or urgent warning. Zero greetings.
+2. **Act 2: The Setup & First Reveal (3s – 20s):** Historical or mythological context, concrete names, and tactile details.
+3. **Act 3: The Mid-Point Pivot / Escalation (20s – 40s):** A mid-roll pattern interrupt or micro-hook (*"Everyone thought that was the end... until they opened the door"*, *"Pero dito nagsimula ang totoong kababalaghan..."*). Resets attention and destroys the mid-video swipe urge.
+4. **Act 4: The Climax Payoff & Seamless Loop (40s – 65s):** The shocking resolution, moral paradox, or chilling folklore warning, followed by a syntactic loop bridge back to Scene 1.
+
+### C. The Snappy Cut (35–45s) (Optional / Pure Trivia)
+- Used for quick single-fact trivia (e.g. *"Why Roman gladiators didn't eat meat"*). Rapid 3–4 scenes.
+
+### D. Longform Documentary Architecture (8–12 Minutes)
+- **Target:** 30–40 structured scenes (~12–16 seconds per scene, 1920x1080 16:9).
 - **Structure:** Cold hook -> 6-7 thematic chapters -> NPC interventions -> closing thought and interactive comment prompt.
 
 ---
@@ -42,7 +51,7 @@ Scripts are generated via `scripts/lib/free-llm-router.mjs` with automatic water
 
 ### Generation Commands
 ```bash
-# Vertical Short with topic preset
+# Vertical Short with topic preset (60-80s standard)
 node scripts/make-script.mjs <slug>
 
 # Short with Tagalog / Taglish mode
