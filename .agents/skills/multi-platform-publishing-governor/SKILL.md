@@ -31,13 +31,14 @@ Each platform has completely different algorithmic physics and monetization thre
 - **PROHIBITED PLATFORMS (FOR API):**
   - **TikTok:** Developer API is unapproved. Direct desktop API uploads are prohibited; manual uploads or approved desktop clients must be used for TikTok.
 
-### 1.1 Longform Distribution Rule (Effective Oct 26, 2026)
+### 1.1 Platform Split & Distribution Rules (Consolidated Oct 26, 2026)
 
-- **Full longform documentaries (1920x1080) are strictly YouTube-exclusive.**
-- **NEVER upload or schedule full longforms to Facebook.**
-- **Ignore `.facebook.txt` description files** generated alongside longform renders (they are produced automatically by `build-long.mjs` and do not constitute an instruction to post to FB).
-- Facebook longform exposure is handled exclusively via 60–90s Tagalog-led cut-down clips produced separately by Muse a few days after the YouTube premiere. Antigravity does not cut or schedule full longforms on Facebook.
-- **Review Gate:** Finished longforms are submitted to Christian first. Nothing is scheduled or published without his explicit approval.
+- **YouTube:** Everything goes here. **Full longforms are YouTube-exclusive** — never post a full longform to Facebook or Instagram.
+- **Facebook:** Short-form only (Reels + longform cut-downs), packaged for the Filipino audience (see Section 3.D).
+- **Instagram:** Unchanged — mirrors YouTube shorts as before.
+- **Pipeline Artifacts:** The `.facebook.txt` files generated alongside longform renders by `build-long.mjs` are pipeline artifacts. Ignore them; they are not posting instructions.
+- **Thumbnails & Copy:** Thumbnails and copy arrive with the videos in the Google Drive handover package from Muse. Antigravity schedules what is in the package; do not generate or replace thumbnails locally.
+- **Review Gate:** Nothing gets scheduled on any platform without Christian's review and go-ahead first. Finished videos come to him through the Drive handover folder; schedule only what he approves.
 
 ---
 
@@ -78,7 +79,7 @@ When diagnosing failures, errors, or delays, the agent must adhere to these abso
   - Standard release window: **23:00 UTC (7:00 AM Manila Time / 7:00 PM US Eastern)**.
   - Never drop Shorts at off-peak hours (e.g. 05:00 UTC / 1:00 AM US) where the primary English-speaking audience is asleep.
 - **Anti-Duplication Metadata Gate & Clean Copy Rule:**
-  - Never use repetitive boilerplate descriptions across consecutive uploads (e.g., identical "Would you have survived... Subscribe for daily history" strings). YouTube filters flag identical descriptions as repetitive/auto-generated spam. Every description must contain unique historical narrative context.
+  - Never use repetitive boilerplate descriptions across consecutive uploads. Every description must contain unique narrative context.
   - **STRICT RULE: NO EMOJIS IN DESCRIPTIONS.** Descriptions must be clean, professional narrative text.
 - **YouTube API Quota:**
   - YouTube Data API operates on a daily quota of 10,000 units (~1,600 units per video upload). Daily quota resets strictly at midnight Pacific Time (15:00 Manila Time / UTC+8).
@@ -93,23 +94,35 @@ When diagnosing failures, errors, or delays, the agent must adhere to these abso
   - If container remains `IN_PROGRESS` after 240 seconds, abort cleanly and alert without spamming new containers.
 - **Clean Copy Rule: NO EMOJIS IN DESCRIPTIONS.**
 
-### D. Facebook Reels Protocol & Pinoy Audience Targeting (Effective Oct 26, 2026)
-- **Target Audience:** The Facebook Page audience is predominantly Filipino. Tagalog packaging massively outperforms English (e.g. 952 views vs 70 views). All Facebook publishing is strictly optimized for this audience.
+### D. Facebook Reels Protocol & Pinoy Audience Packaging (Consolidated Oct 26, 2026)
+- **Target Audience:** The Facebook Page audience is predominantly Filipino. Tagalog packaging massively outperforms English (e.g. 952 views + follow vs 70 views). All Facebook publishing is strictly optimized for this audience.
 - **Philippine Prime Windows (Asia/Manila - 3 per day):**
   - **12:00 PHT:** Lunch-break scroll.
   - **18:30 PHT:** Commute / dinner scroll.
   - **21:00 PHT:** Prime time & Horror Slot (reserve the creepiest, highest-retention piece of the day for this slot).
   - *Cadence:* Strictly 3 per day anchored to these fixed windows daily.
-- **Packaging Standard (Tagalog First, Always):**
-  - Titles and the first line of every caption MUST be in Tagalog (the hook line visible in the Facebook feed).
-  - English may follow as a secondary context line, never leading.
-  - 3–5 PH-flavored hashtags at the end (e.g. `#KwentongPinoy #PinoyHorror #ArawArawKasaysayan`). No hashtag walls.
-  - *Universal Rule:* This applies to global topics too (Vlad, Plague Doctors, European folklore). The audience is Pinoy, so the packaging speaks Tagalog even when the story is global.
+- **Packaging Standard (Tagalog First, Philippines-Focused):**
+  - **Title and first caption line in Tagalog**, always — including global topics (Vlad, Plague Doctors, European horror). The audience is Pinoy even when the story isn't.
+  - **CTA line in Tagalog too** ("Ikwento mo sa comments", "Makakauwi ka pa kaya?"). Never switch to English mid-caption.
+  - **Hashtags: Philippines-focused only.** The generic set (`#history #ancienthistory #historyfacts #reels`) is strictly RETIRED on Facebook. Build 5–8 tags per post:
+    - 1 topic tag — the creature/place/story (`#Biringan`, `#Bakunawa`, `#Manananggal`, `#Aswang`)
+    - 2–3 Pinoy identity tags — `#KwentongPinoy #PinoyHorror #PhilippineMythology` (rotate `#Alamat #KwentongBayan #PinoyFolklore`)
+    - 1 place tag when the story has one (`#Samar`, `#Cebu`, `#Bicol`)
+    - `#ADayBackThen` strictly last
+  - *Example Format (Clean Copy, Zero Emojis):*
+    > HUWAG KANG SASAKAY PAPUNTANG BIRINGAN CITY
+    >
+    > Taon-taon sa kabundukan ng Samar... may mga multi-million-peso orders for luxury cars and heavy machinery na dumarating sa isang lugar called Biringan City.
+    >
+    > Makakauwi ka pa kaya kung ikaw ang makarating doon? Ikwento mo sa comments.
+    > Follow A Day Back Then para sa araw-araw na kwentong kasaysayan.
+    >
+    > #Biringan #KwentongPinoy #PinoyHorror #PhilippineMythology #Alamat #Samar #ADayBackThen
   - **STRICT RULE: ZERO EMOJIS IN DESCRIPTIONS.**
 - **Queue Priority:**
   1. **Filipino topics go first:** Philippine Dark Lore, myths, Pinoy horror/history take priority in the queue, especially the 21:00 prime slot.
-  2. **Global horror/history fills remaining slots** with Tagalog packaging.
-  3. **Longform cut-downs:** 60–90s clips delivered by Muse from YouTube longforms are scheduled into the 21:00 slot a few days after the YouTube premiere, with Tagalog copy linking to the full YouTube video.
+  2. **Global horror/history fills remaining slots** with Tagalog packaging per above.
+  3. **Longform cut-downs:** 60–90s clips delivered by Muse from YouTube longforms are scheduled into the 21:00 slot a few days after the YouTube premiere, with Tagalog copy pointing to the full YouTube video.
 - **API Safety:**
   - Maintain at least a 5–10 second delay between API calls during batch runs to prevent Meta Sentry velocity flags.
 
@@ -122,10 +135,17 @@ Before reporting completion to the user:
 - [ ] For TikTok & Facebook, does the master video reach the $\ge 60$s threshold for monetization eligibility?
 - [ ] For YouTube, is the Short either paced with the 15-second retention escalation rule OR under 45s?
 - [ ] For Facebook Reels, is the release anchored to one of the 3 Philippine Prime Windows (12:00, 18:30, 21:00 PHT)?
-- [ ] For Facebook Reels, is the title and first caption line lead in Tagalog with zero emojis?
+- [ ] For Facebook Reels, is the title, first caption line, and CTA in Tagalog with zero emojis?
+- [ ] For Facebook Reels, are the hashtags Philippines-focused (5–8 tags ending with `#ADayBackThen`, generic tags retired)?
 - [ ] Has the file size passed quality gates (minimum $\ge 22$ MB for full visual gradients, under 100 MB for fast ingestion)?
 - [ ] Has the 24-hour cadence gap been respected for YouTube to prevent algorithmic cannibalization?
-- [ ] Has the clean copy rule been enforced (**zero emojis in descriptions**)?
+- [ ] Has the clean copy rule been enforced (**zero emojis in descriptions** across all platforms)?
 - [ ] Is the live watch URL confirmed via API?
 - [ ] Has local tracking (`published-urls.json`, `published-urls-facebook.json`, and `cross-platform-schedule-queue.json`) been updated?
 - [ ] If an error occurred, is the exact error code, subcode, and raw message displayed without sugarcoating?
+
+---
+
+## 5. The Gate (Mandatory Approval Before Scheduling)
+
+Nothing gets scheduled on ANY platform without Christian's explicit review and go-ahead first. Finished videos come to him through the Drive handover folder; schedule only what he explicitly approves.

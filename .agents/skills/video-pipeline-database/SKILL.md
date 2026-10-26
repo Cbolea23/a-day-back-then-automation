@@ -2,9 +2,9 @@
 name: video-pipeline-database
 description: >-
   Manage video vault storage, scheduling calendars, cross-platform metadata,
-  and social publishing queues across YouTube and Instagram ONLY.
+  and social publishing queues across YouTube, Facebook Reels, and Instagram Reels.
   Handles quota throttling, scheduled release slots, and database tracking.
-  Facebook and TikTok are explicitly excluded.
+  Full longforms are YouTube-exclusive; TikTok is prohibited for desktop API.
 ---
 
 # Video Pipeline Database
@@ -15,26 +15,43 @@ This skill manages publishing calendars, video vault directories, and automated 
 
 ## 1. Directory & State Layout
 
-- `out/2 - Unpublished Vault/`: Production-ready vertical Shorts (1080x1920) awaiting scheduled publication.
-- `out/1 - Published/`: Archive of fully uploaded and published vertical Shorts.
+- `out/2 - Unpublished Vault/`: Production-ready vertical Shorts/Reels (1080x1920) awaiting scheduled publication.
+- `out/1 - Published/`: Archive of fully uploaded and published vertical Shorts/Reels.
 - `out/Longform/2 - Unpublished Vault/`: Production-ready longform videos (1920x1080) with YouTube descriptions and chapter timestamps.
 - `out/Longform/1 - Published/`: Archive of fully uploaded longform episodes.
 - `published-urls.json`: Database mapping topic slugs to live YouTube and Instagram URLs for auto-backlinking.
+- `published-urls-facebook.json`: Database mapping topic slugs to live Facebook Reel URLs.
+- `cross-platform-schedule-queue.json`: Central calendar tracking scheduled releases across all active platforms.
 
 ---
 
-## 2. Platform Rules (YouTube & Instagram ONLY)
+## 2. Platform Scope & Rules (Consolidated Oct 26, 2026)
 
-- **YouTube Data API:**
-  - Daily quota (~10,000 units, ~1,600 units per video upload).
-  - Maximum safe uploads: 6 videos per calendar day.
-  - Quota resets at midnight Pacific Time (15:00 UTC+8).
-- **Instagram Graph API:**
+- **YouTube:**
+  - Shorts: 1 per 24 hours max (23:00 UTC / 7:00 AM PHT).
+  - Longform: Full episodes (1920x1080) are **YouTube-exclusive** (never post to Facebook or Instagram).
+  - Quota: Daily limit ~10,000 units (~1,600 units per video upload), resets at midnight Pacific Time (15:00 PHT).
+  - Zero emojis in descriptions.
+
+- **Facebook Reels:**
+  - Short-form only (vertical Reels + 60–90s longform cut-downs produced by Muse).
+  - Anchored to 3 Philippine prime windows daily: **12:00, 18:30, and 21:00 PHT**.
+  - Tagalog first packaging (title, first caption line, and CTA in Tagalog; 5–8 Philippines-focused hashtags; generic hashtags retired).
+  - Pipeline `.facebook.txt` artifacts from `build-long.mjs` are ignored.
+  - Zero emojis in descriptions.
+
+- **Instagram Reels:**
+  - Vertical Reels mirroring YouTube shorts (`@adaybackthenofficial`).
   - Upload via 2-phase container handshake (`POST /me/media` -> poll `status_code === "FINISHED"` -> `POST /me/media_publish`).
   - Pre-process vertical video with `-movflags +faststart` and `yuv420p`.
-- **Excluded Platforms:**
-  - Facebook: Hard freeze.
-  - TikTok: Prohibited.
+  - Zero emojis in descriptions.
+
+- **The Gate:**
+  - Nothing gets scheduled or published on any platform without Christian's prior review and approval.
+  - Thumbnails and copy arrive in the Drive handover package from Muse.
+
+- **Prohibited Platforms:**
+  - TikTok: Developer API is unapproved; direct desktop API uploads are prohibited.
 
 ---
 
