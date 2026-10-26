@@ -30,6 +30,8 @@ const tokenPath = path.join(root, "youtube-tokens.json");
 const SCOPES = [
   "https://www.googleapis.com/auth/youtube.upload",
   "https://www.googleapis.com/auth/youtube",
+  "https://www.googleapis.com/auth/yt-analytics.readonly",
+  "https://www.googleapis.com/auth/yt-analytics-monetary.readonly",
 ];
 const PORT = 8085;
 const REDIRECT_URI = `http://localhost:${PORT}/oauth2callback`;
@@ -138,10 +140,11 @@ export async function authenticate() {
         }
 
         const tokens = await tokenRes.json();
+        const existingRefreshToken = fs.existsSync(tokenPath) ? JSON.parse(fs.readFileSync(tokenPath, "utf8")).refresh_token : null;
         const stored = {
           client_id: clientId,
           client_secret: clientSecret,
-          refresh_token: tokens.refresh_token,
+          refresh_token: tokens.refresh_token || existingRefreshToken,
           access_token: tokens.access_token,
           expiry_date: Date.now() + (tokens.expires_in || 3600) * 1000,
         };
