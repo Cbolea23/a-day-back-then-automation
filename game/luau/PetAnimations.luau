@@ -1,22 +1,15 @@
 -- PetAnimations.luau
--- Animation asset ID registry for the 15 evolution pets (60 animations).
+-- Animation asset ID registry for the 15 evolution pets (60 animations) + Bakunawa.
 --
 -- HOW TO USE:
 -- 1. In Blender, set AUTO_EXPORT = True in pet_pack.py and run it.
 --    60 FBX files land in the "pet_exports" folder next to your .blend,
 --    named like "Cinderpup_Idle.fbx".
--- 2. In Roblox Studio, bulk-import the FBX files through the Asset Manager
+-- 2. In Roblox Studio, bulk-import the FBX files through the Asset Manager / 3D Importer
 --    (one per pet body + its 4 animations).
--- 3. For each animation FBX, open it in the Animation Editor
---    (Plugins -> Animation Editor -> import the FBX), then Publish to Roblox
---    as an Animation asset. Copy the asset ID.
--- 4. Paste each ID into the matching slot below (replace the 0).
--- 5. Put this ModuleScript in ReplicatedStorage and require it from your
---    pet / battle scripts:
---
---      local PetAnims = require(game.ReplicatedStorage.PetAnimations)
---      local idleId = PetAnims.Get("Infernox", "Idle")  --> "rbxassetid://123..."
---      local track = PetAnims.LoadTrack(animator, "Infernox", "AttackMelee")
+-- 3. For each animation FBX, export/publish as an Animation asset, or let the
+--    smart fallback resolve local KeyframeSequences from ServerStorage.RBX_ANIMSAVES.
+-- 4. Paste each published asset ID into the matching slot below (replace the 0).
 
 local PetAnimations = {}
 
@@ -26,47 +19,70 @@ end
 
 PetAnimations.Pets = {
 	-- Fire line
-	Cinderpup  = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- baby
-	EmberFox  = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- mid
-	Infernox  = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- final
+	Cinderpup  = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
+	EmberFox   = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
+	Infernox   = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
 	-- Water line
-	Bublet     = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- baby
-	AquaTurtle = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- mid
-	Tidalord   = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- final
+	Bublet     = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
+	AquaTurtle = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
+	Tidalord   = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
 	-- Earth line
-	Pebblit    = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- baby
-	SproutGolem= { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- mid
-	Terratitan = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- final
+	Pebblit    = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
+	SproutGolem= { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
+	Terratitan = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
 	-- Electric line
-	Voltkit    = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- baby
-	VoltBunny  = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- mid
-	Stormhare  = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- final
+	Voltkit    = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
+	VoltBunny  = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
+	Stormhare  = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
 	-- Dark line
-	Duskflit   = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- baby
-	ShadowBat  = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- mid
-	Nightwing  = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) }, -- final
+	Duskflit   = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
+	ShadowBat  = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
+	Nightwing  = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
 	-- Bakunawa line (Filipino Mythic Moon Serpent)
 	BakunawaHatchling = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
 	BakunawaSerpent   = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
 	BakunawaEclipse   = { Idle = A(0), Walk = A(0), AttackMelee = A(0), AttackRanged = A(0) },
 }
 
--- Animation names, in FBX order. FBX file for each slot: <PetName>_<Anim>.fbx
 PetAnimations.Anims = { "Idle", "Walk", "AttackMelee", "AttackRanged" }
 
---- Returns the rbxassetid string for a pet + animation. Errors if the ID
---- slot is still empty (0) or the name is misspelled.
+local registeredCache = {}
+
+--- Returns the rbxassetid string for a pet + animation. Checks published IDs
+--- first, then falls back to local KeyframeSequences in ServerStorage.RBX_ANIMSAVES.
 function PetAnimations.Get(petName, animName)
 	local pet = PetAnimations.Pets[petName]
 	assert(pet, "[PetAnimations] unknown pet: " .. tostring(petName))
 	local id = pet[animName]
-	assert(id, ("[PetAnimations] no asset ID set for %s_%s"):format(petName, animName))
-	return id
+	if id then return id end
+
+	-- Check cache or fallback to local ServerStorage.RBX_ANIMSAVES KeyframeSequence
+	local key = petName .. "_" .. animName
+	if registeredCache[key] then return registeredCache[key] end
+
+	local ksp = game:GetService("KeyframeSequenceProvider")
+	local ss = game:GetService("ServerStorage")
+	local saves = ss:FindFirstChild("RBX_ANIMSAVES")
+	if saves then
+		local folder = saves:FindFirstChild(key) or saves:FindFirstChild(petName)
+		if folder then
+			local kfs = folder:FindFirstChildOfClass("KeyframeSequence")
+			if kfs then
+				local ok, localId = pcall(function()
+					return ksp:RegisterKeyframeSequence(kfs)
+				end)
+				if ok and localId then
+					registeredCache[key] = localId
+					return localId
+				end
+			end
+		end
+	end
+
+	error(("[PetAnimations] no asset ID set for %s_%s and no KeyframeSequence found in RBX_ANIMSAVES"):format(petName, animName))
 end
 
---- Builds and loads an AnimationTrack on the given Animator. Example:
----   local track = PetAnims.LoadTrack(humanoid.Animator, "Tidalord", "AttackRanged")
----   track:Play()
+--- Builds and loads an AnimationTrack on the given Animator.
 function PetAnimations.LoadTrack(animator, petName, animName)
 	local anim = Instance.new("Animation")
 	anim.AnimationId = PetAnimations.Get(petName, animName)
