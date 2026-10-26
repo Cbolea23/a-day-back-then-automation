@@ -1,0 +1,6 @@
+{
+  "discordWebhookUrl": "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN",
+  "discordBotToken": "OPTIONAL_BOT_TOKEN_FOR_READING_MESSAGES",
+  "discordChannelId": "OPTIONAL_CHANNEL_ID_FOR_READING_MESSAGES",
+  "agentId": "antigravity"
+}
