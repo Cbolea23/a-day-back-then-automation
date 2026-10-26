@@ -31,6 +31,14 @@ Each platform has completely different algorithmic physics and monetization thre
 - **PROHIBITED PLATFORMS (FOR API):**
   - **TikTok:** Developer API is unapproved. Direct desktop API uploads are prohibited; manual uploads or approved desktop clients must be used for TikTok.
 
+### 1.1 Longform Distribution Rule (Effective Oct 26, 2026)
+
+- **Full longform documentaries (1920x1080) are strictly YouTube-exclusive.**
+- **NEVER upload or schedule full longforms to Facebook.**
+- **Ignore `.facebook.txt` description files** generated alongside longform renders (they are produced automatically by `build-long.mjs` and do not constitute an instruction to post to FB).
+- Facebook longform exposure is handled exclusively via 60–90s Tagalog-led cut-down clips produced separately by Muse a few days after the YouTube premiere. Antigravity does not cut or schedule full longforms on Facebook.
+- **Review Gate:** Finished longforms are submitted to Christian first. Nothing is scheduled or published without his explicit approval.
+
 ---
 
 ## 2. Zero-Speculation & Fact-Checking Standard
@@ -96,7 +104,7 @@ When diagnosing failures, errors, or delays, the agent must adhere to these abso
 ## 4. Outcome Verification Checklist
 
 Before reporting completion to the user:
-- [ ] Has the video file been verified for correct dimensions (1080x1920 vertical for Shorts/Reels)?
+- [ ] Has the video file been verified for correct dimensions (1080x1920 vertical for Shorts/Reels, 1920x1080 for Longform)?
 - [ ] For TikTok & Facebook, does the master video reach the $\ge 60$s threshold for monetization eligibility?
 - [ ] For YouTube, is the Short either paced with the 15-second retention escalation rule OR under 45s?
 - [ ] Has the file size passed quality gates (minimum $\ge 22$ MB for full visual gradients, under 100 MB for fast ingestion)?
