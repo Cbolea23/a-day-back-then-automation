@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T10:07:35.731Z",
+  "updatedAt": "2026-10-26T05:58:28.996Z",
   "scheduledBatch": [
     {
       "slug": "roman-garum",
@@ -418,6 +418,107 @@
         "url": "https://youtube.com/shorts/D_wYQ8G5acg",
         "status": "SCHEDULED"
       }
+    }
+  ],
+  "horrorBatch": [
+    {
+      "slug": "biringan-city",
+      "title": "Biringan City: The Phantom Metropolis of Samar",
+      "status": "PUBLISHED",
+      "scheduledFor": "IMMEDIATE",
+      "scheduledDisplay": "Published Now",
+      "facebook": {
+        "videoId": "1056288954089691",
+        "url": "https://www.facebook.com/watch/?v=1056288954089691"
+      },
+      "instagram": {
+        "mediaId": "18468559540191934",
+        "type": "instagram_reel"
+      }
+    },
+    {
+      "slug": "kapre-the-giant-cigar-smoking-tree-dweller-watch",
+      "title": "Kapre: The Giant Cigar-Smoking Tree Dweller",
+      "status": "SCHEDULED",
+      "scheduledFor": "2026-10-26T10:00:00Z",
+      "scheduledDisplay": "Oct 26, 06:00 PM UTC+8 (Tonight)",
+      "facebook": {
+        "videoId": "1095900423348264",
+        "url": "https://www.facebook.com/watch/?v=1095900423348264"
+      },
+      "instagram": null
+    },
+    {
+      "slug": "vlad-impaler",
+      "title": "Vlad the Impaler: The Real Dracula",
+      "status": "SCHEDULED",
+      "scheduledFor": "2026-10-26T13:00:00Z",
+      "scheduledDisplay": "Oct 26, 09:00 PM UTC+8 (Tonight)",
+      "facebook": {
+        "videoId": "4117862941848077",
+        "url": "https://www.facebook.com/watch/?v=4117862941848077"
+      },
+      "instagram": null
+    },
+    {
+      "slug": "witch-finder",
+      "title": "The Witch Finder General",
+      "status": "SCHEDULED",
+      "scheduledFor": "2026-10-27T10:00:00Z",
+      "scheduledDisplay": "Oct 27, 06:00 PM UTC+8 (Tomorrow)",
+      "facebook": {
+        "videoId": "1559701749175318",
+        "url": "https://www.facebook.com/watch/?v=1559701749175318"
+      },
+      "instagram": null
+    },
+    {
+      "slug": "tower-ghosts",
+      "title": "The Ghosts of the Tower of London",
+      "status": "SCHEDULED",
+      "scheduledFor": "2026-10-27T13:00:00Z",
+      "scheduledDisplay": "Oct 27, 09:00 PM UTC+8 (Tomorrow)",
+      "facebook": {
+        "videoId": "1336110658536295",
+        "url": "https://www.facebook.com/watch/?v=1336110658536295"
+      },
+      "instagram": null
+    },
+    {
+      "slug": "plague-doctor-short",
+      "title": "The Truth About Plague Doctors",
+      "status": "SCHEDULED",
+      "scheduledFor": "2026-10-28T10:00:00Z",
+      "scheduledDisplay": "Oct 28, 06:00 PM UTC+8",
+      "facebook": {
+        "videoId": "1468148131864232",
+        "url": "https://www.facebook.com/watch/?v=1468148131864232"
+      },
+      "instagram": null
+    },
+    {
+      "slug": "dancing-plague",
+      "title": "The Dancing Plague of 1518",
+      "status": "SCHEDULED",
+      "scheduledFor": "2026-10-28T13:00:00Z",
+      "scheduledDisplay": "Oct 28, 09:00 PM UTC+8",
+      "facebook": {
+        "videoId": "4621891374692083",
+        "url": "https://www.facebook.com/watch/?v=4621891374692083"
+      },
+      "instagram": null
+    },
+    {
+      "slug": "body-snatchers",
+      "title": "The Body Snatchers",
+      "status": "SCHEDULED",
+      "scheduledFor": "2026-10-29T10:00:00Z",
+      "scheduledDisplay": "Oct 29, 06:00 PM UTC+8",
+      "facebook": {
+        "videoId": "1032912999840636",
+        "url": "https://www.facebook.com/watch/?v=1032912999840636"
+      },
+      "instagram": null
     }
   ]
 }

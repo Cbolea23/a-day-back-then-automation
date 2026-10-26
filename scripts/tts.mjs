@@ -12,7 +12,7 @@ import path from "node:path";
 import os from "node:os";
 import {execFileSync} from "node:child_process";
 import {loadAllKeys} from "./lib/free-llm-router.mjs";
-import {formatEmotionalProsody, getAcousticParameters} from "./lib/prosody-engine.mjs";
+import {formatEmotionalProsody, getAcousticParameters, applyCulturalPhonetics} from "./lib/prosody-engine.mjs";
 
 const loadedKeys = loadAllKeys();
 
@@ -361,27 +361,27 @@ async function edgeSynth(text, outPath, overrides = {}) {
     ? text
     : formatEmotionalProsody(text, overrides);
 
+  // 3. Cultural Phonetic Alignment (e.g. "ba-LEH-te" so Filipino words are pronounced authentically)
+  const spokenText = applyCulturalPhonetics(emotionalText, primaryVoice, overrides.language);
+
   const pyBins = process.platform === "win32" ? ["python", "python3"] : ["python3", "python"];
 
   for (const py of pyBins) {
     for (const voice of uniqueVoices) {
       try {
-        execFileSync(
-          py,
-          [
-            "-m",
-            "edge_tts",
-            "--voice",
-            voice,
-            `--rate=${rate}`,
-            `--pitch=${pitch}`,
-            "--text",
-            emotionalText,
-            "--write-media",
-            outPath,
-          ],
-          {stdio: "pipe"},
-        );
+        const edgeArgs = [
+          "-m",
+          "edge_tts",
+          "--voice",
+          voice,
+          `--rate=${rate}`,
+        ];
+        if (pitch && pitch !== "+0Hz" && pitch !== "0Hz") {
+          edgeArgs.push(`--pitch=${pitch}`);
+        }
+        edgeArgs.push("--text", spokenText, "--write-media", outPath);
+
+        execFileSync(py, edgeArgs, {stdio: "pipe"});
         if (fs.existsSync(outPath) && fs.statSync(outPath).size > 500) {
           return;
         }
@@ -394,7 +394,7 @@ async function edgeSynth(text, outPath, overrides = {}) {
 
   // Seamless pure-Node fallback only when edge_tts Python module is unavailable
   console.warn(`[TTS] Edge TTS unavailable for "${text.slice(0, 30)}...". Falling back to HTTP TTS.`);
-  await pureNodeHttpSynth(emotionalText, outPath, overrides);
+  await pureNodeHttpSynth(spokenText, outPath, overrides);
 }
 
 let geminiQuotaExhausted = false;

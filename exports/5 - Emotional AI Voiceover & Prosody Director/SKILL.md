@@ -43,29 +43,40 @@ The final scene must decelerate speech speed by **-2% to -4%** and trail off gen
 
 ---
 
-## 3. The Acoustic Calibration Matrix
+## 3. The Acoustic Calibration Matrix & 0Hz Formant Rule
 
-Pass explicit acoustic parameters (`--pitch` and `--rate`) tailored to the emotional beat of each scene:
+> [!IMPORTANT]
+> **The 0Hz Formant Preservation Rule:**
+> Never apply heavy negative pitch offsets (e.g. `-4Hz` or `-7Hz`) to modern neural TTS models. Negative pitch DSP artificially distorts digital vocal formants, resulting in a muffled, sluggish robotic drone. For crystal-clear studio timbre, leave pitch at `0Hz` and modulate emotion primarily through **speech rate**, **breath punctuation (`...`)**, and **cadence markers**.
 
 | Emotion Preset | Pitch Offset | Speech Rate | Acoustic Impact | Best For |
 | :--- | :---: | :---: | :--- | :--- |
-| **`spooky-suspense`** | `-4Hz` to `-6Hz` | `-5%` to `-6%` | Deep chest resonance, eerie dread, deliberate campfire pacing | Cryptids, folklore, true crime, supernatural mysteries |
-| **`intense-drama`** | `-2Hz` to `-3Hz` | `-2%` to `-4%` | Gravitas, impending doom, urgent historical consequence | Battles, collapses, catastrophes, high-stakes dilemmas |
-| **`documentary-calm`** | `-1Hz` | `-1%` to `0%` | Authoritative, measured, crystal-clear documentary narration | Ancient empires, architecture, archaeology, deep dives |
-| **`viral-energetic`** | `+1Hz` to `+2Hz` | `+3%` to `+5%` | Punchy vocal fry, high momentum, curiosity triggers | Quirky trivia, mind-bending paradoxes, absurd historical laws |
+| **`spooky-suspense`** | `0Hz` | `-2%` to `0%` | Crisp, natural resonance with deliberate campfire suspense | Cryptids, folklore, true crime, supernatural mysteries |
+| **`intense-drama`** | `0Hz` | `+2%` to `+3%` | Urgent cadence, high stakes, breath pauses | Battles, collapses, catastrophes, high-stakes dilemmas |
+| **`documentary-calm`** | `0Hz` | `0%` to `+1%` | Authoritative, measured, crystal-clear documentary narration | Ancient empires, architecture, archaeology, deep dives |
+| **`viral-energetic`** | `0Hz` | `+4%` to `+5%` | Punchy momentum, dynamic inflections, curiosity triggers | Quirky trivia, mind-bending paradoxes, absurd historical laws |
 
 ---
 
-## 4. Cultural Accent-Topic Synergy
+## 4. Cultural Accent-Topic Synergy & Gender Synchronization
 
 A voice must authentically match the cultural subtext of the narrative:
 
-| Cultural Story Lore | Vocal Persona / Accent | Language Mode | Voice ID Example |
-| :--- | :--- | :--- | :--- |
-| **Philippine Folklore / Cryptids** | Filipino English Storyteller | Taglish / English | `fil-PH-AngeloNeural` / `fil-PH-BlessicaNeural` |
-| **British / Victorian / Medieval** | BBC Documentary Historian | English (UK) | `en-GB-RyanNeural` |
-| **Antiquity / Roman / Greek** | Classic Epic Narrator | English (US) | `en-US-ChristopherNeural` |
-| **Bizarre Viral Trivia** | Casual Enthusiastic Host | English (US) | `en-US-GuyNeural` / `en-US-AriaNeural` |
+| Cultural Story Lore | Vocal Persona / Accent | Language Mode | Voice ID Example | Avatar Gender Match |
+| :--- | :--- | :--- | :--- | :--- |
+| **Philippine Folklore / Cryptids (Female)** | Expressive Filipina Storyteller | Taglish / Tagalog | `fil-PH-BlessicaNeural` | `babaylan` (Female Priestess) |
+| **Philippine Folklore / Healer (Male)** | Filipino Lore Narrator | Taglish / Tagalog | `fil-PH-AngeloNeural` | `albularyo` (Male Mystic) |
+| **British / Victorian / Medieval** | BBC Documentary Historian | English (UK) | `en-GB-RyanNeural` | `scholar` / `victorian` |
+| **Antiquity / Roman / Greek** | Classic Epic Narrator | English (US) | `en-US-ChristopherNeural` | `toga` / `adventurer` |
+| **Bizarre Viral Trivia** | Casual Enthusiastic Host | English (US) | `en-US-GuyNeural` / `en-US-AriaNeural` | `casual` |
+
+### Cultural Phonetic Alignment
+Neural TTS models reading English often mangle indigenous names (`balete` -> "buh-leet"). Always pass local words through a phonetic alignment map:
+- `balete` ➔ `ba-LEH-te`
+- `Biringan` ➔ `Bee-ring-gahn`
+- `Samar` ➔ `Sah-mar`
+- `aswang` ➔ `ahs-wahng`
+Subtitles retain clean written spelling while the audio model outputs natural native pronunciation.
 
 ---
 

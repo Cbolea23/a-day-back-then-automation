@@ -49,6 +49,8 @@ export type CharacterTheme =
   | "albularyo"
   | "barong"
   | "katipunero"
+  | "babaylan"
+  | "filipina"
   | "modern";
 
 export function getThemeFromSlug(slug: string = ""): CharacterTheme {
@@ -1045,6 +1047,12 @@ const NarratorBody: React.FC<BodyProps> = ({
         </>
       ) : theme === "ghost" || theme === "nun" ? (
         <>{/* Robe/sheet covers the legs entirely */}</>
+      ) : theme === "babaylan" || theme === "filipina" ? (
+        <>
+          {/* Long flowing Filipina Saya skirt */}
+          <path d="M72 400 L62 568 Q150 582 238 568 L228 400 Z" fill="#4a044e" stroke={INK} strokeWidth="5" />
+          <path d="M90 568 L210 568 L206 580 L94 580 Z" fill="#facc15" stroke={INK} strokeWidth="3" />
+        </>
       ) : theme === "gravedigger" ? (
         <>
           <line x1="125" y1="400" x2="120" y2="570" stroke={INK} strokeWidth="10" strokeLinecap="round" />
@@ -1409,6 +1417,19 @@ const NarratorBody: React.FC<BodyProps> = ({
           <circle cx="168" cy="272" r="3.5" fill="#ffb13d" />
           {/* Jagged collar */}
           <path d="M100 172 L115 150 L130 170 L145 148 L160 170 L175 148 L190 170 L200 175 Q150 195 100 175 Z" fill="#200808" stroke={INK} strokeWidth="4" strokeLinejoin="round" />
+        </>
+      ) : theme === "babaylan" || theme === "filipina" ? (
+        <>
+          {/* Traditional Filipina Babaylan Bodice */}
+          <path d="M96 168 Q150 152 204 168 L226 410 Q150 432 74 410 Z" fill={tunic || "#701a75"} stroke={INK} strokeWidth="6" strokeLinejoin="round" />
+          {/* Alampay shoulder wrap */}
+          <path d="M88 165 Q150 220 212 165 L204 220 Q150 250 96 220 Z" fill={accentColor || "#be185d"} stroke={INK} strokeWidth="4" />
+          <line x1="94" y1="210" x2="206" y2="210" stroke="#facc15" strokeWidth="3" strokeDasharray="6 4" />
+          <circle cx="150" cy="235" r="8" fill="#facc15" stroke={INK} strokeWidth="3" />
+          <circle cx="150" cy="235" r="4" fill="#dc2626" />
+          {/* Woven belt */}
+          <rect x="76" y="278" width="148" height="18" rx="4" fill="#3b0764" stroke={INK} strokeWidth="3.5" />
+          <circle cx="150" cy="287" r="6" fill="#facc15" stroke={INK} strokeWidth="2" />
         </>
       ) : theme === "albularyo" ? (
         <>
@@ -1838,6 +1859,18 @@ const NarratorBody: React.FC<BodyProps> = ({
             <path d="M88 85 Q90 25 150 24 Q210 25 212 85 Q185 58 150 60 Q115 58 88 85 Z" fill="#3d0f0f" stroke={INK} strokeWidth="5" />
             <path d="M150 24 Q155 40 150 55" stroke="#e8641f" strokeWidth="3" />
           </>
+        ) : theme === "babaylan" || theme === "filipina" ? (
+          <>
+            {/* Long dark hair past shoulders */}
+            <path d="M84 75 Q62 135 68 210 Q80 205 84 150 Z" fill="#181512" stroke={INK} strokeWidth="4.5" />
+            <path d="M216 75 Q238 135 232 210 Q220 205 216 150 Z" fill="#181512" stroke={INK} strokeWidth="4.5" />
+            {/* Curved female bangs */}
+            <path d="M82 82 Q84 20 150 18 Q216 20 218 82 Q188 50 150 52 Q112 50 82 82 Z" fill="#181512" stroke={INK} strokeWidth="5" strokeLinejoin="round" />
+            <path d="M112 36 Q150 24 188 38" stroke="#383028" strokeWidth="3" fill="none" />
+            {/* Golden Sampaguita blossom */}
+            <circle cx="212" cy="62" r="8" fill="#fbbf24" stroke={INK} strokeWidth="3" />
+            <circle cx="212" cy="62" r="3.5" fill="#ffffff" />
+          </>
         ) : theme === "albularyo" ? (
           <>
             {/* Dark wavy hair + woven crimson Putong / Purong mystic headband */}
@@ -1883,6 +1916,12 @@ const NarratorBody: React.FC<BodyProps> = ({
               </>
             )}
             <Brows expression={expression} />
+            {(theme === "babaylan" || theme === "filipina") && (
+              <>
+                <path d="M120 79 Q128 72 136 79 L140 74" stroke={INK} strokeWidth="2.8" fill="none" strokeLinecap="round" />
+                <path d="M164 79 Q172 72 180 79 L184 74" stroke={INK} strokeWidth="2.8" fill="none" strokeLinecap="round" />
+              </>
+            )}
             {/* Eyes with pupils that look toward the gesture's focus */}
             {[128, 172].map((cx) => (
               <g key={cx}>

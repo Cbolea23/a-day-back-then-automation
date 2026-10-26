@@ -5,6 +5,50 @@
  * so AI voiceovers sound like genuine dramatic storytellers rather than monotone text readers.
  */
 
+export const PHILIPPINE_PHONETICS_MAP = [
+  // Philippine regions & folklore terms: maps written text to phonetically accurate pronunciation for TTS
+  { pattern: /\bbalete\b/gi, replacement: "ba-LEH-te" },
+  { pattern: /\bbiringan\b/gi, replacement: "Bee-ring-gahn" },
+  { pattern: /\bsamar\b/gi, replacement: "Sah-mar" },
+  { pattern: /\baswang\b/gi, replacement: "ahs-wahng" },
+  { pattern: /\bkapre\b/gi, replacement: "kahp-reh" },
+  { pattern: /\btikbalang\b/gi, replacement: "tik-bah-lahng" },
+  { pattern: /\btiyanak\b/gi, replacement: "ti-yah-nahk" },
+  { pattern: /\bmanananggal\b/gi, replacement: "mah-nah-nahng-gahl" },
+  { pattern: /\bmangkukulam\b/gi, replacement: "mahng-koo-koo-lahm" },
+  { pattern: /\bengkanto\b/gi, replacement: "eng-kahn-toh" },
+  { pattern: /\bdiwata\b/gi, replacement: "dee-wah-tah" },
+  { pattern: /\balbularyo\b/gi, replacement: "ahl-boo-lar-yoh" },
+  { pattern: /\bbarangay\b/gi, replacement: "bah-rahng-gahy" },
+  { pattern: /\bbakunawa\b/gi, replacement: "bah-koo-nah-wah" },
+  { pattern: /\bsigbin\b/gi, replacement: "sig-been" },
+  { pattern: /\btiktik\b/gi, replacement: "tik-tik" },
+  { pattern: /\bbatibat\b/gi, replacement: "bah-tee-baht" },
+  { pattern: /\bnuno\b/gi, replacement: "noo-noh" },
+  { pattern: /\bduwende\b/gi, replacement: "doo-wen-deh" },
+  { pattern: /\bsantelmo\b/gi, replacement: "sahn-tel-moh" },
+  { pattern: /\bpoblacion\b/gi, replacement: "pohb-lahs-yon" },
+  { pattern: /\bvisayas\b/gi, replacement: "vee-sah-yahs" },
+  { pattern: /\bluzon\b/gi, replacement: "loo-zohn" },
+  { pattern: /\bmindanao\b/gi, replacement: "min-dah-now" },
+  { pattern: /\btagalog\b/gi, replacement: "tah-gah-log" },
+  { pattern: /\bintramuros\b/gi, replacement: "een-trah-moo-rohs" },
+  { pattern: /\bcorregidor\b/gi, replacement: "koh-reh-hee-dor" },
+];
+
+/**
+ * Replaces Philippine cultural and folklore terms with phonetic equivalents
+ * so neural voices pronounce them with authentic native Filipino vowels and cadence
+ * instead of butchered English phonetics (e.g. "ba-LEH-te" instead of "buh-leet").
+ */
+export function applyCulturalPhonetics(text = "", voiceId = "", language = "en") {
+  let str = String(text || "");
+  for (const { pattern, replacement } of PHILIPPINE_PHONETICS_MAP) {
+    str = str.replace(pattern, replacement);
+  }
+  return str;
+}
+
 // Accent-Topic Synergy Rules
 export function matchAccentToTopic(topic = "", language = "en") {
   const t = topic.toLowerCase();
@@ -163,46 +207,33 @@ export function getAcousticParameters(voiceId, options = {}) {
     isLastScene = false
   } = options;
 
+  // Preserve natural formant fidelity (0Hz offset prevents robotic DSP artifacts)
   let baseRate = 0;   // percentage offset
-  let basePitch = 0;  // Hz offset
+  let basePitch = 0;  // Hz offset (keep 0Hz for crystal clear studio timbre)
 
   switch (emotionPreset) {
     case "spooky-suspense":
     case "dread":
-      baseRate = -5;
-      basePitch = -4;
+      baseRate = 0;
+      basePitch = 0;
       break;
     case "intense-survival":
     case "dramatic":
-      baseRate = +1;
-      basePitch = -2;
+      baseRate = +3;
+      basePitch = 0;
       break;
     case "documentary-reverent":
-      baseRate = -2;
-      basePitch = -2;
+      baseRate = +1;
+      basePitch = 0;
       break;
     case "curious-viral":
     case "witty":
-      baseRate = +4;
-      basePitch = +0;
+      baseRate = +5;
+      basePitch = 0;
       break;
     default:
-      baseRate = -3;
-      basePitch = -3;
-  }
-
-  // Modulate per scene mood
-  if (mood === "dark" || mood === "night") {
-    baseRate -= 1;
-    basePitch -= 1;
-  } else if (mood === "warm") {
-    baseRate += 1;
-  }
-
-  // Final scene (the climax/warning) drops pitch and lingers slightly
-  if (isLastScene) {
-    baseRate -= 2;
-    basePitch -= 2;
+      baseRate = +2;
+      basePitch = 0;
   }
 
   const rateSign = baseRate >= 0 ? `+${baseRate}%` : `${baseRate}%`;

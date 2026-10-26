@@ -19,12 +19,12 @@ const getArg = (name) => {
 const emotion = getArg('emotion') || 'spooky-suspense';
 const voice = getArg('voice') || 'en-US-GuyNeural';
 
-// Acoustic parameters per emotion
+// Acoustic parameters per emotion (0Hz pitch preserves clean natural formants)
 const ACOUSTIC_MAP = {
-  'spooky-suspense': { pitch: '-4Hz', rate: '-5%' },
-  'intense-drama': { pitch: '-2Hz', rate: '-2%' },
-  'documentary-calm': { pitch: '-1Hz', rate: '-1%' },
-  'viral-energetic': { pitch: '+1Hz', rate: '+4%' },
+  'spooky-suspense': { pitch: '+0Hz', rate: '-2%' },
+  'intense-drama': { pitch: '+0Hz', rate: '+3%' },
+  'documentary-calm': { pitch: '+0Hz', rate: '+1%' },
+  'viral-energetic': { pitch: '+0Hz', rate: '+5%' },
 };
 
 const acoustic = ACOUSTIC_MAP[emotion] || ACOUSTIC_MAP['spooky-suspense'];

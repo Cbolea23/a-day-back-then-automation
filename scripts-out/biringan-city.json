@@ -1,0 +1,90 @@
+{
+  "slug": "biringan-city",
+  "title": "Biringan City: The Phantom Metropolis of Samar",
+  "hook": "HUWAG KANG SASAKAY PAPUNTANG BIRINGAN CITY",
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "pinnedComment": "Kung may magpadala sa iyo ng mamahaling package galing 'Biringan City'... tatanggapin mo ba? 👇",
+  "channelName": "A Day Back Then",
+  "artStyle": "dark-folklore",
+  "narratorTheme": "babaylan",
+  "voice": "fil-PH-BlessicaNeural",
+  "language": "taglish",
+  "emotionPreset": "spooky-suspense",
+  "scenes": [
+    {
+      "text": "Taon-taon sa kabundukan ng Samar... may mga multi-million peso orders for luxury cars and heavy machinery na dumarating sa isang lugar called Biringan City.",
+      "mood": "dark",
+      "imagePrompt": "Nighttime satellite infrared map of tropical island jungle revealing a massive glowing cybernetic grid of towering skyscrapers hidden beneath thick green canopy, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "direction": {
+        "drift": "push-in",
+        "atmosphere": "ember",
+        "warmFlicker": true
+      },
+      "image": "images/biringan-city/1.jpg",
+      "audio": "audio/biringan-city/1.mp3",
+      "voicedText": "Taon-taon sa kabundukan ng Samar... may mga multi-million peso orders for luxury cars and heavy machinery na dumarating sa isang lugar called Biringan City.",
+      "seconds": 11.1
+    },
+    {
+      "text": "Delivery drivers follow the GPS coordinates deep into the mountains... pero pagdating nila doon, walang kalsada, walang gusali—puro lumang puno lamang ng balete at nakakabinging katahimikan.",
+      "mood": "dark",
+      "imagePrompt": "A modern shipping delivery truck stopped dead at the edge of an ancient primordial jungle with massive gnarled balete tree roots and creeping thick mist under a blood-red moon, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "direction": {
+        "drift": "pull-back",
+        "atmosphere": "dust",
+        "warmFlicker": true
+      },
+      "image": "images/biringan-city/2.jpg",
+      "audio": "audio/biringan-city/2.mp3",
+      "voicedText": "Delivery drivers follow the GPS coordinates deep into the mountains... pero pagdating nila doon, walang kalsada, walang gusali—puro lumang puno lamang ng balete at nakakabinging katahimikan.",
+      "seconds": 12.9
+    },
+    {
+      "text": "Pero pagsapit ng alas-tres ng madaling araw... ang mga mangingisdang nakatingin sa kabundukan, nakakakita ng mga nagtataasang gintong skyscraper sa ibabaw ng makapal na ulap.",
+      "mood": "cool",
+      "imagePrompt": "Distant view from a dark river of an ethereal glowing art-deco invisible metropolis with crystalline glass towers emitting mystical gold and violet light above a dark jungle, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "direction": {
+        "drift": "push-in",
+        "atmosphere": "ember",
+        "warmFlicker": false
+      },
+      "image": "images/biringan-city/3.jpg",
+      "audio": "audio/biringan-city/3.mp3",
+      "voicedText": "Pero pagsapit ng alas-tres ng madaling araw... ang mga mangingisdang nakatingin sa kabundukan, nakakakita ng mga nagtataasang gintong skyscraper sa ibabaw ng makapal na ulap.",
+      "seconds": 10.7
+    },
+    {
+      "text": "Satellite thermal scans showed massive city-scale heat signatures... pero nang lumipad ang mga eroplano kinaumagahan, puro liblib na gubat lamang ang naroon.",
+      "mood": "dark",
+      "imagePrompt": "Military reconnaissance cockpit radar screen showing high-tech city heat signatures in the shape of an enormous hidden metropolis in a misty mountain valley, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "direction": {
+        "drift": "push-in",
+        "atmosphere": "dust",
+        "warmFlicker": true
+      },
+      "image": "images/biringan-city/4.jpg",
+      "audio": "audio/biringan-city/4.mp3",
+      "voicedText": "Satellite thermal scans showed massive city-scale heat signatures... pero nang lumipad ang mga eroplano kinaumagahan, puro liblib na gubat lamang ang naroon.",
+      "seconds": 10.5
+    },
+    {
+      "text": "Sabi ng mga matatanda, pumipili lamang ang lungsod ng kanilang bisita... pero kapag inalok ka ng itim na kanin, huwag na huwag mong kakainin, dahil hindi ka na muling makakabalik.",
+      "mood": "dark",
+      "imagePrompt": "An ornate ancient stone gate wrapped in creeping luminescent vines and glowing spirit lanterns opening into a blinding mystical golden metropolis at midnight, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "direction": {
+        "drift": "pull-back",
+        "atmosphere": "ember",
+        "warmFlicker": true
+      },
+      "image": "images/biringan-city/5.jpg",
+      "audio": "audio/biringan-city/5.mp3",
+      "voicedText": "Sabi ng mga matatanda, pumipili lamang ang lungsod ng kanilang bisita... pero kapag inalok ka ng itim na kanin, huwag na huwag mong kakainin, dahil hindi ka na muling makakabalik.",
+      "seconds": 11
+    }
+  ],
+  "claimsToVerify": [
+    "Philippine folklore of Biringan City in Samar province",
+    "Reported freight deliveries and navigation anomalies documented in regional folklore"
+  ],
+  "generatedBy": "A Day Back Then Studio Engine"
+}

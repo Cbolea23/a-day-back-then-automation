@@ -341,9 +341,9 @@ const ChannelBadge: React.FC<{name: string; seriesTag: string}> = ({name, series
 );
 
 /**
- * Silent Animated "Follow" Micro-CTA Pill at ~76% of the video timeline.
- * Never interrupts spoken narration (zero swipe-away penalty), converting engaged
- * viewers right as the climax twist unfolds.
+ * Animated "Follow" Micro-CTA Pill.
+ * Pops in at ~70% during the climax (~5s) AND during the final outro loop (~3.5s)
+ * ensuring viewers see the follow trigger before scrolling or looping.
  */
 const FollowMicroCTA: React.FC<{totalDurationFrames: number; channelName: string}> = ({
   totalDurationFrames,
@@ -351,21 +351,36 @@ const FollowMicroCTA: React.FC<{totalDurationFrames: number; channelName: string
 }) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const startFrame = Math.max(HOOK_FRAMES + 30, Math.round(totalDurationFrames * 0.74));
-  const ctaDuration = 85; // ~2.8 seconds
-  const endFrame = startFrame + ctaDuration;
 
-  if (frame < startFrame || frame >= endFrame) {
+  // Window 1: Climax twist (~70% timeline, lasts ~5 seconds = 150 frames)
+  const climaxStart = Math.max(HOOK_FRAMES + 30, Math.round(totalDurationFrames * 0.70));
+  const climaxDuration = 150;
+  const climaxEnd = climaxStart + climaxDuration;
+
+  // Window 2: Outro loop (final 100 frames = ~3.3 seconds until end of video)
+  const outroDuration = 100;
+  const outroStart = Math.max(climaxEnd + 30, totalDurationFrames - outroDuration);
+  const outroEnd = totalDurationFrames;
+
+  let localFrame = -1;
+  let activeDuration = 100;
+
+  if (frame >= climaxStart && frame < climaxEnd) {
+    localFrame = frame - climaxStart;
+    activeDuration = climaxDuration;
+  } else if (frame >= outroStart && frame < outroEnd) {
+    localFrame = frame - outroStart;
+    activeDuration = outroDuration;
+  } else {
     return null;
   }
 
-  const localFrame = frame - startFrame;
   const popIn = spring({frame: localFrame, fps, config: {damping: 11, mass: 0.8}});
-  const fadeOut = interpolate(localFrame, [ctaDuration - 12, ctaDuration], [1, 0], {
+  const fadeOut = interpolate(localFrame, [activeDuration - 15, activeDuration], [1, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
-  const bellSwing = Math.sin(localFrame / 2.5) * 14 * Math.max(0, 1 - localFrame / 40);
+  const bellSwing = Math.sin(localFrame / 2.5) * 16 * Math.max(0, 1 - (localFrame % 45) / 35);
 
   return (
     <div
