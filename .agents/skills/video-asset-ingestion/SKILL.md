@@ -8,7 +8,22 @@ description: >-
 
 # Video Asset Ingestion
 
-This skill handles asset generation, image linking, style consistency, and asset coverage verification across the video pipeline.
+This skill handles asset generation, image linking, style consistency, asset coverage verification, and sync rules between the code repository and Google Drive media vault.
+
+---
+
+## 0. The Asset Law (Effective Oct 26, 2026)
+
+- **The GitHub repository is strictly CODE ONLY.** Scripts, script JSONs, prompts, Luau backend modules, documentation, and configuration files live in Git.
+- **NEVER `git add` artwork, 3D models, textures, audio, or video files.**
+- **All media lives in the Google Drive handover folder** (`Muse and atigravity handover`):
+  - `public/images/<slug>/` $\leftrightarrow$ Drive: `Artwork - Shorts (public-images)/<slug>/`
+  - `public/long/<slug>/` $\leftrightarrow$ Drive: `Artwork - Longform (public-long)/<slug>/`
+  - `game/models/<line>/`, `game/textures/<line>/` $\leftrightarrow$ Drive: `Game Assets/<line>/models|textures/`
+  - Finished video renders + thumbnails $\leftrightarrow$ Drive root (follow `DONE - ` prefix protocol)
+- **Before PC-side renders:** Download required artwork from Google Drive into the matching local directory (`public/images/<slug>/` or `public/long/<slug>/`). Render scripts read local paths unchanged.
+- **Game assets:** 3D FBX models and textures come from Drive `Game Assets/`. Blender scripts remain in `game/blender/`, and `game/HANDOVER.md` acts as the cross-pipeline checklist.
+- **Migration transition:** Muse is currently migrating existing art to Drive. Do NOT delete local/repo media until Muse explicitly confirms completion.
 
 ---
 
