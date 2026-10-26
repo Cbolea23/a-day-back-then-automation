@@ -19,7 +19,7 @@ Each platform has completely different algorithmic physics and monetization thre
 | Platform | Optimal Duration | Monetization Threshold | Posting Cadence | Primary Algorithmic Metric | Optimal Release Window |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **TikTok** | **60–80s** | **Strictly $\ge 60$s** (Creator Rewards) | 1–2 per day | Hook (0–2s) & 100% Completion | 12:00 PM & 7:00 PM Local / US |
-| **Facebook Reels** | **60–90s** | Maximize 1-min+ watch time | 1–3 per day | Cumulative Watch Minutes & Shares | 11:00 AM & 6:00 PM PHT |
+| **Facebook Reels** | **60–90s** | Maximize 1-min+ watch time | **Strictly 3 per day** | Cumulative Watch Minutes & Shares | **12:00, 18:30, 21:00 PHT** |
 | **Instagram Reels** | **50–75s** | High shares / saves | 1 per day | Saves, Sends (DMs), Comments | 6:00 PM – 9:00 PM PHT |
 | **YouTube Shorts** | **60–75s (3-Act) or 35–45s** | Shorts Ad Pool (any length) | **Strictly 1 per 24h** | Average Percentage Viewed (APV) | **23:00 UTC (7:00 PM EST)** |
 
@@ -90,14 +90,28 @@ When diagnosing failures, errors, or delays, the agent must adhere to these abso
   2. Resumable upload bytes.
   3. Poll container until `status_code === "FINISHED"`.
   4. Call `POST /me/media_publish`.
-- If container remains `IN_PROGRESS` after 240 seconds, abort cleanly and alert without spamming new containers.
+  - If container remains `IN_PROGRESS` after 240 seconds, abort cleanly and alert without spamming new containers.
 - **Clean Copy Rule: NO EMOJIS IN DESCRIPTIONS.**
 
-### D. Facebook Reels Protocol
-- Facebook Reels allows up to 90 seconds. 60–80s videos maximize watch minutes for the Performance Bonus Program.
-- Stagger scheduled posts across distinct dayparts (e.g. 11:00 AM & 6:00 PM PHT) with minimum 6–8 hours of separation.
-- Maintain at least a 5–10 second delay between API calls during batch runs to prevent Meta Sentry velocity flags.
-- **Clean Copy Rule: NO EMOJIS IN DESCRIPTIONS.**
+### D. Facebook Reels Protocol & Pinoy Audience Targeting (Effective Oct 26, 2026)
+- **Target Audience:** The Facebook Page audience is predominantly Filipino. Tagalog packaging massively outperforms English (e.g. 952 views vs 70 views). All Facebook publishing is strictly optimized for this audience.
+- **Philippine Prime Windows (Asia/Manila - 3 per day):**
+  - **12:00 PHT:** Lunch-break scroll.
+  - **18:30 PHT:** Commute / dinner scroll.
+  - **21:00 PHT:** Prime time & Horror Slot (reserve the creepiest, highest-retention piece of the day for this slot).
+  - *Cadence:* Strictly 3 per day anchored to these fixed windows daily.
+- **Packaging Standard (Tagalog First, Always):**
+  - Titles and the first line of every caption MUST be in Tagalog (the hook line visible in the Facebook feed).
+  - English may follow as a secondary context line, never leading.
+  - 3–5 PH-flavored hashtags at the end (e.g. `#KwentongPinoy #PinoyHorror #ArawArawKasaysayan`). No hashtag walls.
+  - *Universal Rule:* This applies to global topics too (Vlad, Plague Doctors, European folklore). The audience is Pinoy, so the packaging speaks Tagalog even when the story is global.
+  - **STRICT RULE: ZERO EMOJIS IN DESCRIPTIONS.**
+- **Queue Priority:**
+  1. **Filipino topics go first:** Philippine Dark Lore, myths, Pinoy horror/history take priority in the queue, especially the 21:00 prime slot.
+  2. **Global horror/history fills remaining slots** with Tagalog packaging.
+  3. **Longform cut-downs:** 60–90s clips delivered by Muse from YouTube longforms are scheduled into the 21:00 slot a few days after the YouTube premiere, with Tagalog copy linking to the full YouTube video.
+- **API Safety:**
+  - Maintain at least a 5–10 second delay between API calls during batch runs to prevent Meta Sentry velocity flags.
 
 ---
 
@@ -107,6 +121,8 @@ Before reporting completion to the user:
 - [ ] Has the video file been verified for correct dimensions (1080x1920 vertical for Shorts/Reels, 1920x1080 for Longform)?
 - [ ] For TikTok & Facebook, does the master video reach the $\ge 60$s threshold for monetization eligibility?
 - [ ] For YouTube, is the Short either paced with the 15-second retention escalation rule OR under 45s?
+- [ ] For Facebook Reels, is the release anchored to one of the 3 Philippine Prime Windows (12:00, 18:30, 21:00 PHT)?
+- [ ] For Facebook Reels, is the title and first caption line lead in Tagalog with zero emojis?
 - [ ] Has the file size passed quality gates (minimum $\ge 22$ MB for full visual gradients, under 100 MB for fast ingestion)?
 - [ ] Has the 24-hour cadence gap been respected for YouTube to prevent algorithmic cannibalization?
 - [ ] Has the clean copy rule been enforced (**zero emojis in descriptions**)?
