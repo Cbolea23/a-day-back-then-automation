@@ -245,12 +245,12 @@ export function getNextOptimalSchedule() {
 /**
  * Generates SEO-optimized title, description, and tags for Shorts or Long-Form.
  */
-function buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong = false) {
+function buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong = false, customTitle = null) {
   const cleanSlug = slug.replace(/^long-/, "");
 
   if (isLong) {
     // 1. Longform Title: Pick primary title (no #shorts tag)
-    let title = (script.titleOptions && script.titleOptions[0]) || script.title || script.hook || cleanSlug.replace(/-/g, " ");
+    let title = customTitle || (script.titleOptions && script.titleOptions[0]) || script.title || script.hook || cleanSlug.replace(/-/g, " ");
     if (title.length > 95) {
       title = title.slice(0, 95) + "...";
     }
@@ -273,14 +273,20 @@ function buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong = fal
     let descriptionLines = [];
     if (customDesc) {
       const cleanCustomDesc = customDesc.split("========================================================")[0].trim();
-      descriptionLines = [
-        cleanCustomDesc,
-        "",
-        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
-        "🔔 Subscribe to A Day Back Then for daily journeys into history!",
-        "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
-        "#History #AncientHistory #Documentary #HistoryDocumentary #AncientRome",
-      ];
+      const emojiRegex = /[\u{1F300}-\u{1F9FF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}\u{1F1E6}-\u{1F1FF}\u{1F600}-\u{1F64F}\u{1F680}-\u{1F6FF}\u{1F900}-\u{1F9FF}]/gu;
+      const strippedDesc = cleanCustomDesc.replace(emojiRegex, "").replace(/\n{3,}/g, "\n\n").trim();
+      if (strippedDesc.includes("Subscribe to") || strippedDesc.includes("#")) {
+        descriptionLines = [strippedDesc];
+      } else {
+        descriptionLines = [
+          strippedDesc,
+          "",
+          "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+          "Subscribe to A Day Back Then for daily journeys into history!",
+          "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+          "#History #Documentary #HistoryDocumentary #ADayBackThen",
+        ];
+      }
     } else {
       descriptionLines = [
         script.hook || title,
@@ -477,7 +483,7 @@ async function uploadVideo(slug, options) {
     console.log(`Video Runtime: ~${totalSeconds.toFixed(1)}s (${totalSeconds >= 60 ? "Qualified for TikTok Creator Rewards >= 60s & FB Watch Time" : "Compact Shorts Cut"})`);
   }
 
-  const {snippet, status} = buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong);
+  const {snippet, status} = buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong, options.title);
 
   console.log("\n========================================================");
   console.log(`   Uploading: ${cleanSlug} (${isLong ? "Long-Form Video" : "Short"})`);
@@ -555,9 +561,13 @@ async function uploadVideo(slug, options) {
 
   // Step 3: Upload custom thumbnail if available
   const thumbCandidates = [
+    path.join(root, "out", "Longform", "2 - Unpublished Vault", `long-${cleanSlug}-thumbnail.png`),
     path.join(root, "out", "Longform", "2 - Unpublished Vault", `long-${cleanSlug}-thumbnail.jpg`),
+    path.join(root, "out", "Longform", "1 - Published", `long-${cleanSlug}-thumbnail.png`),
     path.join(root, "out", "Longform", "1 - Published", `long-${cleanSlug}-thumbnail.jpg`),
+    path.join(root, "out", "Longform", `long-${cleanSlug}-thumbnail.png`),
     path.join(root, "out", "Longform", `long-${cleanSlug}-thumbnail.jpg`),
+    path.join(root, "out", `long-${cleanSlug}-thumbnail.png`),
     path.join(root, "out", `long-${cleanSlug}-thumbnail.jpg`),
   ];
   const thumbPath = thumbCandidates.find((p) => fs.existsSync(p));
@@ -571,7 +581,7 @@ async function uploadVideo(slug, options) {
           method: "POST",
           headers: {
             Authorization: `Bearer ${accessToken}`,
-            "Content-Type": "image/jpeg",
+            "Content-Type": thumbPath.toLowerCase().endsWith(".png") ? "image/png" : "image/jpeg",
           },
           body: thumbBuffer,
         }
@@ -614,6 +624,12 @@ async function uploadVideo(slug, options) {
       if (fs.existsSync(descSrc)) {
         fs.renameSync(descSrc, path.join(pubDir, path.basename(descSrc)));
       }
+      for (const ext of [".png", ".jpg", ".jpeg"]) {
+        const tSrc = mp4Path.replace(/\.mp4$/, `-thumbnail${ext}`);
+        if (fs.existsSync(tSrc)) {
+          fs.renameSync(tSrc, path.join(pubDir, path.basename(tSrc)));
+        }
+      }
     } else if (!isLong && mp4Path.includes("2 - Unpublished Vault")) {
       const pubDir = path.join(root, "out", "1 - Published");
       fs.mkdirSync(pubDir, {recursive: true});
@@ -640,11 +656,12 @@ const getArg = (name) => {
 
 const privacy = getArg("privacy");
 const schedule = getArg("schedule");
+const title = getArg("title");
 
 if (isAuthOnly) {
   await authenticate();
 } else if (slug) {
-  await uploadVideo(slug, {privacy, schedule, now: isNow, long: isLong});
+  await uploadVideo(slug, {privacy, schedule, now: isNow, long: isLong, title});
 } else {
   console.log(`
 Usage:
