@@ -3,7 +3,7 @@ name: multi-platform-publishing-governor
 description: >-
   Strict execution governor for social publishing, API rate limits, error diagnosis,
   and quota validation. Enforces zero-assumption verification, bans speculative recovery
-  estimates, isolates blocked platforms, and strictly enforces supported platforms (YouTube & Instagram only).
+  estimates, isolates blocked platforms, and governs supported publishing platforms (YouTube, Facebook Reels, and Instagram Reels).
 ---
 
 # Multi-Platform Publishing Governor & Reliability Protocol
@@ -23,10 +23,11 @@ Each platform has completely different algorithmic physics and monetization thre
 | **Instagram Reels** | **50–75s** | High shares / saves | 1 per day | Saves, Sends (DMs), Comments | 6:00 PM – 9:00 PM PHT |
 | **YouTube Shorts** | **60–75s (3-Act) or 35–45s** | Shorts Ad Pool (any length) | **Strictly 1 per 24h** | Average Percentage Viewed (APV) | **23:00 UTC (7:00 PM EST)** |
 
-- **ACTIVE & APPROVED PLATFORMS:**
+- **ACTIVE & APPROVED PLATFORMS (PC-SIDE PUBLISHING):**
   - **YouTube:** Primary focus for Shorts (vertical 1080x1920) and Longform (1920x1080).
   - **Instagram:** Active focus for Reels (`@adaybackthenofficial`).
   - **Facebook:** Active focus for Page Reels (`A Day Back Then`).
+  - *Publishing Authority:* All platform tokens (`client_secret.json`, `youtube-tokens.json`, `facebook-tokens.json`) exist solely on the PC. Antigravity executes all scheduling and publishing. Muse delivers finished renders + copy to the user; Muse never uploads or schedules from his box.
 - **PROHIBITED PLATFORMS (FOR API):**
   - **TikTok:** Developer API is unapproved. Direct desktop API uploads are prohibited; manual uploads or approved desktop clients must be used for TikTok.
 
@@ -68,8 +69,9 @@ When diagnosing failures, errors, or delays, the agent must adhere to these abso
 - **Optimal Release Time Mandate:**
   - Standard release window: **23:00 UTC (7:00 AM Manila Time / 7:00 PM US Eastern)**.
   - Never drop Shorts at off-peak hours (e.g. 05:00 UTC / 1:00 AM US) where the primary English-speaking audience is asleep.
-- **Anti-Duplication Metadata Gate:**
+- **Anti-Duplication Metadata Gate & Clean Copy Rule:**
   - Never use repetitive boilerplate descriptions across consecutive uploads (e.g., identical "Would you have survived... Subscribe for daily history" strings). YouTube filters flag identical descriptions as repetitive/auto-generated spam. Every description must contain unique historical narrative context.
+  - **STRICT RULE: NO EMOJIS IN DESCRIPTIONS.** Descriptions must be clean, professional narrative text.
 - **YouTube API Quota:**
   - YouTube Data API operates on a daily quota of 10,000 units (~1,600 units per video upload). Daily quota resets strictly at midnight Pacific Time (15:00 Manila Time / UTC+8).
 
@@ -81,10 +83,13 @@ When diagnosing failures, errors, or delays, the agent must adhere to these abso
   3. Poll container until `status_code === "FINISHED"`.
   4. Call `POST /me/media_publish`.
 - If container remains `IN_PROGRESS` after 240 seconds, abort cleanly and alert without spamming new containers.
+- **Clean Copy Rule: NO EMOJIS IN DESCRIPTIONS.**
 
 ### D. Facebook Reels Protocol
 - Facebook Reels allows up to 90 seconds. 60–80s videos maximize watch minutes for the Performance Bonus Program.
 - Stagger scheduled posts across distinct dayparts (e.g. 11:00 AM & 6:00 PM PHT) with minimum 6–8 hours of separation.
+- Maintain at least a 5–10 second delay between API calls during batch runs to prevent Meta Sentry velocity flags.
+- **Clean Copy Rule: NO EMOJIS IN DESCRIPTIONS.**
 
 ---
 
@@ -96,6 +101,7 @@ Before reporting completion to the user:
 - [ ] For YouTube, is the Short either paced with the 15-second retention escalation rule OR under 45s?
 - [ ] Has the file size passed quality gates (minimum $\ge 22$ MB for full visual gradients, under 100 MB for fast ingestion)?
 - [ ] Has the 24-hour cadence gap been respected for YouTube to prevent algorithmic cannibalization?
+- [ ] Has the clean copy rule been enforced (**zero emojis in descriptions**)?
 - [ ] Is the live watch URL confirmed via API?
 - [ ] Has local tracking (`published-urls.json`, `published-urls-facebook.json`, and `cross-platform-schedule-queue.json`) been updated?
 - [ ] If an error occurred, is the exact error code, subcode, and raw message displayed without sugarcoating?

@@ -3,8 +3,8 @@ name: video-scriptwriting-ideation
 description: >-
   Generate, polish, and structure high-retention video scripts with viral hooks,
   multi-lingual Tagalog/Taglish support, 3.5s pacing shifts, and emotional prosody.
-  Governs script generation via the Multi-Provider Free LLM Router and voice synthesis
-  with the Accent-Synergy Prosody Engine.
+  Governs script generation via the Multi-Provider Free LLM Router and production handoff
+  to Muse's Meta Shortwave TTS Engine.
 ---
 
 # Video Scriptwriting & Ideation
@@ -38,10 +38,32 @@ Why do viral 60–90s creators get millions of views across both TikTok and YouT
 ### D. Longform Documentary Architecture (8–12 Minutes)
 - **Target:** 30–40 structured scenes (~12–16 seconds per scene, 1920x1080 16:9).
 - **Structure:** Cold hook -> 6-7 thematic chapters -> NPC interventions -> closing thought and interactive comment prompt.
+- **Narrator & NPC Balance:** Chapters alternate narrator exposition scenes (45–60 words) with dramatized first-person NPC scenes (15–30 words).
+- **NPC Scene Fields:** `speaker: "npc"`, `speakerName`, `castVoice` ("female" | "male"), and `npc: { archetype, position, expression, speechBubble, talking: true }`.
 
 ---
 
-## 2. Multi-Provider Zero-Cost LLM Router
+## 2. Voiceover & Production Handoff Protocol (Muse vs Antigravity)
+
+### A. Production Voiceover: Muse (Meta Shortwave TTS)
+- **Rule: If a video's voice matters, Muse generates it.**
+- Muse runs **Meta Shortwave TTS** (`avocado_v2:MAI_01` feminine, `avocado_v2:qvd_01376` deep male "Brooding Boulder") on his Linux box. This engine is exclusive to Muse's environment and provides studio-grade human timbre.
+- Write the script, commit/push it, and let Muse run the production voice pass.
+
+### B. Draft Previews: Antigravity (Local Gemini / Edge TTS)
+- The repo's local voice path (`scripts/tts.mjs` via `scripts/make-voice.mjs`) utilizes Gemini TTS or Microsoft Edge Neural TTS.
+- **Strict Rule:** Local TTS is strictly for **drafts and previews**. Never ship a final production video with local TTS unless the user explicitly directs it.
+
+### C. Bilingual Tagging Standard (`taggedText` vs `text`)
+Filipino content uses EN/TL code-switching. To ensure flawless pronunciation by Muse's TTS:
+- **`text` Field:** Clean written text (e.g., *"Delivery drivers follow the GPS coordinates deep into the mountains..."*). Used directly for on-screen captions. **NEVER put language tags in `text`**—the Remotion renderer does not strip them, and tags will render into the subtitles.
+- **`taggedText` Field:** Formatted with `[tl]...[/tl]` and `[en]...[/en]` segments:
+  `"[en]Delivery drivers follow the GPS coordinates deep into the mountains...[/en] [tl]pero pagdating nila doon, puro lumang puno lamang ng balete.[/tl]"`
+  Muse's voice script parses `taggedText` and synthesizes each segment with its matching language model.
+
+---
+
+## 3. Multi-Provider Zero-Cost LLM Router
 
 Scripts are generated via `scripts/lib/free-llm-router.mjs` with automatic waterfall failover:
 1. **Google Gemini Flash** (Fastest, rich historical knowledge).
@@ -66,7 +88,7 @@ node scripts/make-long-script.mjs <slug>
 
 ---
 
-## 3. Emotional Prosody & Accent-Topic Synergy
+## 4. Emotional Prosody & Accent-Topic Synergy
 
 Flat "reading" voices destroy audience retention. All scripts and voiceovers must pass through the **Emotional Prosody Engine** (`scripts/lib/prosody-engine.mjs`).
 
@@ -84,13 +106,12 @@ Flat "reading" voices destroy audience retention. All scripts and voiceovers mus
 
 ---
 
-## 4. Philippine Lore Strategy & Voice-Avatar Synchronization
+## 5. Philippine Lore Strategy & Voice-Avatar Synchronization
 
 ### Voice & Avatar Gender Synchronization (Strict Production Rule)
 When generating scripts, the narrator avatar MUST match the selected voice actor:
-- **Female Voice (`fil-PH-BlessicaNeural`):** Set `"narratorTheme": "babaylan"` (renders traditional Filipina priestess with cascading dark hair, eyelashes, sampaguita blossom, and Baro't Saya bodice).
-- **Male Voice (`fil-PH-AngeloNeural`):** Set `"narratorTheme": "albularyo"` (renders Filipino folk healer with putong headband, inabel sash, and anting-anting).
-- *Disqualified Voices:* Never use robotic models like `en-PH-JamesNeural`. Keep Angelo and Blessica as the gold standard.
+- **Female Voice:** Set `"narratorTheme": "babaylan"` (renders traditional Filipina priestess with cascading dark hair, eyelashes, sampaguita blossom, and Baro't Saya bodice). Alias: `filipina`.
+- **Male Voice:** Set `"narratorTheme": "albularyo"` (renders Filipino folk healer with putong headband, inabel sash, and anting-anting).
 
 ### Taglish vs. Pure Tagalog Content Strategy
 1. **Modern Urban Legends & Cryptids (Taglish):** Use for Biringan City, Balete Drive, Baguio Diplomat Hotel, and modern hauntings. Mixes English elements (*GPS coordinates, delivery trucks, satellite scans*) with Tagalog suspense for viral TikTok & Reels engagement.
@@ -98,9 +119,3 @@ When generating scripts, the narrator avatar MUST match the selected voice actor
 
 ### Cultural Phonetic Alignment (`applyCulturalPhonetics`)
 In scripts with local entities, words are displayed with proper written spelling in subtitles (`scene.text`), but passed to the voice model with phonetic syllables (`ba-LEH-te`, `Bee-ring-gahn`, `Sah-mar`, `ahs-wahng`) so the neural voice pronounces them like a native Filipino.
-
-### Voice Synthesis Command:
-```bash
-# Synthesize with Blessica (Female Filipina Babaylan)
-node scripts/make-voice.mjs <slug> --voice fil-PH-BlessicaNeural
-```
