@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import {NextResponse} from "next/server";
 import {getTunnelInfo, startTunnel, stopTunnel} from "@/lib/pipeline";
 import {isWebMode} from "@/lib/mode";

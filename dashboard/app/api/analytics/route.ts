@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import {NextResponse} from "next/server";
 import {getAnalytics} from "@/lib/analytics";
 import {deployMode} from "@/lib/mode";

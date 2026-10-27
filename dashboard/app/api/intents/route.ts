@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import {NextResponse} from "next/server";
 import {listIntents} from "@/lib/intents";
 import {deployMode} from "@/lib/mode";

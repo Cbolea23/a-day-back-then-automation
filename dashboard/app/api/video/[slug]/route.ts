@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import fs from "node:fs";
 import path from "node:path";
 import {pipelineRoot} from "@/lib/pipeline";
