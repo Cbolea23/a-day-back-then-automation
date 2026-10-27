@@ -1,15 +1,14 @@
-import webpack from "webpack";
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: (config, { nextRuntime }) => {
+  webpack: (config, { webpack, nextRuntime }) => {
     if (nextRuntime === "edge") {
-      // Strip node: prefix so fallback catches it
-      config.plugins.push(
-        new webpack.NormalModuleReplacementPlugin(/^node:/, (resource) => {
-          resource.request = resource.request.replace(/^node:/, "");
-        })
-      );
+      if (webpack) {
+        config.plugins.push(
+          new webpack.NormalModuleReplacementPlugin(/^node:/, (resource) => {
+            resource.request = resource.request.replace(/^node:/, "");
+          })
+        );
+      }
 
       config.resolve.fallback = {
         ...config.resolve.fallback,
