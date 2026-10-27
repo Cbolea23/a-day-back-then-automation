@@ -2,10 +2,15 @@ import {NextResponse} from "next/server";
 import fs from "node:fs";
 import path from "node:path";
 import {pipelineRoot, startProcessImagesJob} from "@/lib/pipeline";
+import {isWebMode} from "@/lib/mode";
+import {queueIntent} from "@/lib/intents";
 
 export async function GET(req: Request) {
   const {searchParams} = new URL(req.url);
   const slug = searchParams.get("slug");
+  if (isWebMode()) {
+    return queueIntent("images.list", {slug});
+  }
   if (!slug) {
     return NextResponse.json({error: "slug parameter is required"}, {status: 400});
   }
@@ -86,6 +91,9 @@ export async function GET(req: Request) {
 /** Trigger image processing & re-render */
 export async function POST(req: Request) {
   const {slug} = (await req.json().catch(() => ({}))) as {slug?: string};
+  if (isWebMode()) {
+    return queueIntent("images.process", {slug: slug ?? null});
+  }
   const job = startProcessImagesJob(slug);
   return NextResponse.json({job});
 }

@@ -1,5 +1,7 @@
 import {NextResponse} from "next/server";
 import {runScript} from "@/lib/pipeline";
+import {isWebMode} from "@/lib/mode";
+import {queueIntent} from "@/lib/intents";
 
 /**
  * Generate voiceover via the real pipeline:
@@ -8,6 +10,9 @@ import {runScript} from "@/lib/pipeline";
  */
 export async function POST(req: Request) {
   const {slug, force} = (await req.json()) as {slug?: string; force?: boolean};
+  if (isWebMode()) {
+    return queueIntent("voice.generate", {slug: slug ?? null, force: Boolean(force)});
+  }
   if (!slug) return NextResponse.json({error: "slug is required"}, {status: 400});
   const args = [slug];
   if (force) args.push("--force");

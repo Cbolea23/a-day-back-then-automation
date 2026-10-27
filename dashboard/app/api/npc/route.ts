@@ -3,8 +3,13 @@ import fs from "node:fs";
 import path from "node:path";
 import {spawn} from "node:child_process";
 import {pipelineRoot} from "@/lib/pipeline";
+import {isWebMode} from "@/lib/mode";
+import {queueIntent} from "@/lib/intents";
 
 export async function GET() {
+  if (isWebMode()) {
+    return queueIntent("npc.info", {});
+  }
   const root = pipelineRoot();
   const sampleVideo = path.join(root, "sample-dialogue-npc.mp4");
   const sampleGladiator = path.join(root, "sample-gladiator-npc.mp4");
@@ -37,6 +42,9 @@ export async function GET() {
 
 /** Re-render dialogue sample scene */
 export async function POST(): Promise<Response> {
+  if (isWebMode()) {
+    return queueIntent("npc.render", {});
+  }
   const root = pipelineRoot();
   return new Promise<Response>((resolve) => {
     const child = spawn(

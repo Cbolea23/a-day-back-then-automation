@@ -2,6 +2,8 @@ import {NextResponse} from "next/server";
 import fs from "node:fs";
 import path from "node:path";
 import {pipelineRoot} from "@/lib/pipeline";
+import {isWebMode} from "@/lib/mode";
+import {queueIntent} from "@/lib/intents";
 
 function dataDir(): string {
   return process.env.DASH_DATA_DIR ?? path.join(process.cwd(), "data");
@@ -35,6 +37,19 @@ function maskKey(val?: string): string | null {
  * Raw secret values are masked so they are never exposed in plaintext to the browser.
  */
 export async function GET() {
+  if (isWebMode()) {
+    // Web deployments are configured via environment variables only; secret
+    // values are never read from (or written to) local pipeline files.
+    return NextResponse.json({
+      mode: "web",
+      note: "Settings are managed via environment variables on the web deployment. Secret values are never exposed.",
+      webEnv: {
+        youtubeConfigured: Boolean(process.env.YT_TOKENS_JSON),
+        metaConfigured: Boolean(process.env.META_PAGE_TOKEN),
+        geminiConfigured: Boolean(process.env.GEMINI_API_KEY),
+      },
+    });
+  }
   const stored = readStored();
   const root = pipelineRoot();
 
@@ -103,6 +118,10 @@ export async function GET() {
 
 export async function POST(req: Request) {
   const body = (await req.json().catch(() => ({}))) as Record<string, any>;
+  if (isWebMode()) {
+    // Record WHICH settings keys were submitted — never their values.
+    return queueIntent("settings.update", {keys: Object.keys(body)});
+  }
   const stored = readStored();
   const root = pipelineRoot();
 
@@ -227,6 +246,9 @@ export async function POST(req: Request) {
 export async function DELETE(req: Request) {
   const {searchParams} = new URL(req.url);
   const keyName = searchParams.get("key");
+  if (isWebMode()) {
+    return queueIntent("settings.delete", {key: keyName});
+  }
   const stored = readStored();
   if (keyName) {
     delete stored[keyName];

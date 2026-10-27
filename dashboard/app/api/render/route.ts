@@ -1,5 +1,7 @@
 import {NextResponse} from "next/server";
 import {listJobs, startRenderJob, startLongRenderJob, startProcessImagesJob} from "@/lib/pipeline";
+import {isWebMode} from "@/lib/mode";
+import {queueIntent} from "@/lib/intents";
 
 /** List all render/pipeline jobs (newest first). */
 export async function GET() {
@@ -15,6 +17,10 @@ export async function POST(req: Request) {
     slug?: string;
     kind?: "short" | "long" | "images" | "npc-test";
   };
+
+  if (isWebMode()) {
+    return queueIntent("render.start", {slug: slug ?? null, kind: kind ?? "short"});
+  }
 
   if (!slug && kind !== "images") {
     return NextResponse.json({error: "slug is required"}, {status: 400});

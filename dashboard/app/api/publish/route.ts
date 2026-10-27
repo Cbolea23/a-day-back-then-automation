@@ -1,5 +1,7 @@
 import {NextResponse} from "next/server";
 import {getJob, startPublishJob} from "@/lib/pipeline";
+import {isWebMode} from "@/lib/mode";
+import {queueIntent} from "@/lib/intents";
 
 const PLATFORMS = ["youtube", "facebook", "tiktok", "instagram"] as const;
 type Platform = (typeof PLATFORMS)[number];
@@ -14,6 +16,9 @@ export async function POST(req: Request) {
     slug?: string;
     platforms?: Platform[];
   };
+  if (isWebMode()) {
+    return queueIntent("publish.start", {slug: slug ?? null, platforms: platforms ?? []});
+  }
   if (!slug) return NextResponse.json({error: "slug is required"}, {status: 400});
   const wanted = (platforms ?? []).filter((p): p is Platform =>
     (PLATFORMS as readonly string[]).includes(p),

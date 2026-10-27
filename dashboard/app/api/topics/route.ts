@@ -2,6 +2,8 @@ import {NextResponse} from "next/server";
 import fs from "node:fs";
 import path from "node:path";
 import {pipelineRoot} from "@/lib/pipeline";
+import {isWebMode} from "@/lib/mode";
+import {queueIntent} from "@/lib/intents";
 
 export type TopicItem = {
   slug: string;
@@ -29,6 +31,9 @@ function countImages(dir: string): number {
 }
 
 export async function GET() {
+  if (isWebMode()) {
+    return queueIntent("topics.list", {});
+  }
   const root = pipelineRoot();
   const allTopics: TopicItem[] = [];
 
@@ -175,6 +180,9 @@ export async function POST(req: Request) {
   };
   if (!title?.trim()) {
     return NextResponse.json({error: "title is required"}, {status: 400});
+  }
+  if (isWebMode()) {
+    return queueIntent("topics.add", {title, format: format ?? null, angle: angle ?? null});
   }
   const root = pipelineRoot();
   const p = path.join(root, "newtopics.json");

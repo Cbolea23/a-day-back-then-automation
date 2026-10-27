@@ -91,7 +91,7 @@ const STYLE_PREVIEW_IMAGES: Record<string, string> = {
 
 export default function StudioDashboard() {
   // Navigation & Auth State
-  const [activeTab, setActiveTab] = useState<"create" | "vault" | "jobs" | "settings">("create");
+  const [activeTab, setActiveTab] = useState<"create" | "vault" | "jobs" | "settings" | "analytics">("create");
   const [user, setUser] = useState<User | null>(null);
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [authMode, setAuthMode] = useState<"login" | "register">("login");
@@ -274,6 +274,37 @@ export default function StudioDashboard() {
       }
     } catch {}
   }, []);
+
+  // Analytics Tab (real YouTube/Meta data + heartbeat + intents outbox)
+  const [analyticsData, setAnalyticsData] = useState<any>(null);
+  const [heartbeatData, setHeartbeatData] = useState<any>(null);
+  const [intentsData, setIntentsData] = useState<any[]>([]);
+  const [analyticsLoading, setAnalyticsLoading] = useState(false);
+
+  const loadAnalytics = useCallback(async (refresh = false) => {
+    setAnalyticsLoading(true);
+    try {
+      const [aRes, sRes, iRes] = await Promise.all([
+        fetch(`/api/analytics${refresh ? "?refresh=1" : ""}`),
+        fetch("/api/status"),
+        fetch("/api/intents"),
+      ]);
+      if (aRes.ok) setAnalyticsData(await aRes.json());
+      if (sRes.ok) {
+        const sData = await sRes.json();
+        setHeartbeatData(sData.heartbeat ?? null);
+      }
+      if (iRes.ok) {
+        const iData = await iRes.json();
+        setIntentsData(iData.intents || []);
+      }
+    } catch {}
+    setAnalyticsLoading(false);
+  }, []);
+
+  useEffect(() => {
+    if (activeTab === "analytics") loadAnalytics();
+  }, [activeTab, loadAnalytics]);
 
   useEffect(() => {
     fetch("/api/auth")
@@ -702,6 +733,7 @@ export default function StudioDashboard() {
             {id: "create", label: "✨ Create Story"},
             {id: "vault", label: `🎬 My Videos (${vaultVideos.length})`},
             {id: "jobs", label: `🚀 Render Queue ${runningJobsCount > 0 ? `(${runningJobsCount})` : ""}`},
+            {id: "analytics", label: "📊 Analytics"},
             {id: "settings", label: "⚙️ Settings & Keys"},
           ].map((t) => (
             <button
@@ -1882,6 +1914,172 @@ export default function StudioDashboard() {
       )}
 
       {/* ===================================================================== */}
+      {/* TAB: ANALYTICS (real YouTube/Meta data + heartbeat + intents)         */}
+      {/* ===================================================================== */}
+      {activeTab === "analytics" && (
+        <main className="max-w-5xl mx-auto px-4 lg:px-8 py-6 space-y-4">
+          <div className="flex items-center justify-between">
+            <div>
+              <h2 className="text-xl font-black text-white">📊 Channel Analytics</h2>
+              <p className="text-xs text-slate-400">
+                Real numbers from the YouTube Analytics/Data APIs and Meta Graph
+                {analyticsData?.fetchedAt
+                  ? ` • updated ${new Date(analyticsData.fetchedAt).toLocaleString()}`
+                  : ""}
+              </p>
+            </div>
+            <button
+              onClick={() => loadAnalytics(true)}
+              disabled={analyticsLoading}
+              className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-bold text-white disabled:opacity-50"
+            >
+              🔄 Refresh
+            </button>
+          </div>
+
+          {/* Live status from the heartbeat feed (bolealabs.site/status.json) */}
+          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs">
+            <span className="font-bold text-slate-300">🫀 Live status</span>
+            {heartbeatData ? (
+              <>
+                <span>
+                  Dashboard:{" "}
+                  <b className={heartbeatData.dashboard === "up" ? "text-emerald-400" : "text-red-400"}>
+                    {String(heartbeatData.dashboard ?? "unknown")}
+                  </b>
+                </span>
+                <span>
+                  24/7 Stream:{" "}
+                  <b className={heartbeatData.stream === "live" ? "text-emerald-400" : "text-red-400"}>
+                    {String(heartbeatData.stream ?? "unknown")}
+                  </b>
+                </span>
+                <span className="text-slate-500">
+                  updated {heartbeatData.updated_at ? new Date(heartbeatData.updated_at).toLocaleString() : "—"}
+                </span>
+              </>
+            ) : (
+              <span className="text-slate-500">Heartbeat feed unavailable — showing API data only.</span>
+            )}
+          </div>
+
+          {!analyticsData && analyticsLoading && <p className="text-sm text-slate-400">Loading analytics…</p>}
+
+          {analyticsData && !analyticsData.configured?.youtube && !analyticsData.configured?.meta && (
+            <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6 space-y-2">
+              <h3 className="font-black text-white">Analytics not configured</h3>
+              <p className="text-sm text-slate-400">
+                Set <code className="text-amber-300">YT_TOKENS_JSON</code> (YouTube OAuth token JSON) and/or{" "}
+                <code className="text-amber-300">META_PAGE_TOKEN</code> in the server environment to light this tab
+                up. See <code className="text-amber-300">dashboard/WEB_DEPLOY.md</code>.
+              </p>
+            </div>
+          )}
+
+          {analyticsData?.youtube && (
+            <>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+                {[
+                  {label: "Views (28 days)", value: analyticsData.youtube.last28Days.views.toLocaleString()},
+                  {label: "Watch hours (28 days)", value: analyticsData.youtube.last28Days.watchHours.toLocaleString()},
+                  {
+                    label: "Avg view duration",
+                    value: `${analyticsData.youtube.last28Days.avgViewDurationSec}s`,
+                  },
+                  {
+                    label: "Subscribers",
+                    value: `${analyticsData.youtube.subscribers.toLocaleString()} (${
+                      analyticsData.youtube.last28Days.subsDelta >= 0 ? "+" : ""
+                    }${analyticsData.youtube.last28Days.subsDelta} / 28d)`,
+                  },
+                ].map((card) => (
+                  <div key={card.label} className="rounded-2xl bg-slate-900 border border-slate-800 p-4">
+                    <p className="text-[11px] uppercase tracking-wide text-slate-500 font-bold">{card.label}</p>
+                    <p className="text-2xl font-black text-white mt-1">{card.value}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="rounded-2xl bg-slate-900 border border-slate-800 p-4">
+                <h3 className="font-black text-white mb-3">
+                  🏆 Top videos by watch time — {analyticsData.youtube.channelTitle}
+                </h3>
+                <div className="space-y-2">
+                  {analyticsData.youtube.topVideos.map((v: any) => (
+                    <div
+                      key={v.id}
+                      className="flex items-center justify-between gap-3 text-sm border-b border-slate-800/60 pb-2 last:border-0 last:pb-0"
+                    >
+                      <span className="text-slate-200 font-medium truncate">{v.title}</span>
+                      <span className="text-xs text-slate-400 whitespace-nowrap">
+                        {v.views.toLocaleString()} views • {v.watchHours}h watched • {v.avgViewDurationSec}s avg
+                      </span>
+                    </div>
+                  ))}
+                  {analyticsData.youtube.topVideos.length === 0 && (
+                    <p className="text-sm text-slate-500">No watch-time data in the last 28 days.</p>
+                  )}
+                </div>
+              </div>
+            </>
+          )}
+
+          {analyticsData?.meta && (
+            <div className="grid grid-cols-2 gap-3">
+              <div className="rounded-2xl bg-slate-900 border border-slate-800 p-4">
+                <p className="text-[11px] uppercase tracking-wide text-slate-500 font-bold">Facebook followers</p>
+                <p className="text-2xl font-black text-white mt-1">{analyticsData.meta.fbFollowers ?? "—"}</p>
+                <p className="text-xs text-slate-500">{analyticsData.meta.pageName ?? ""}</p>
+              </div>
+              <div className="rounded-2xl bg-slate-900 border border-slate-800 p-4">
+                <p className="text-[11px] uppercase tracking-wide text-slate-500 font-bold">Instagram followers</p>
+                <p className="text-2xl font-black text-white mt-1">{analyticsData.meta.igFollowers ?? "—"}</p>
+                <p className="text-xs text-slate-500">
+                  {analyticsData.meta.igUsername ? `@${analyticsData.meta.igUsername}` : ""}
+                </p>
+              </div>
+            </div>
+          )}
+
+          {analyticsData?.errors?.length > 0 && (
+            <div className="rounded-2xl bg-red-950/40 border border-red-900 p-4 text-sm text-red-200 space-y-1">
+              {analyticsData.errors.map((e: any, i: number) => (
+                <p key={i}>
+                  ⚠️ {e.source}: {e.message}
+                </p>
+              ))}
+            </div>
+          )}
+
+          {/* Intents outbox — in web mode these are executed via the bridge */}
+          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-4">
+            <h3 className="font-black text-white mb-2">
+              📥 Queued intents{" "}
+              {analyticsData?.mode === "web" ? (
+                <span className="text-xs text-slate-400 font-medium">(web mode — executed by the machine side via the bridge)</span>
+              ) : null}
+            </h3>
+            {intentsData.length === 0 ? (
+              <p className="text-sm text-slate-500">No intents queued.</p>
+            ) : (
+              <div className="space-y-1.5">
+                {intentsData.slice(0, 10).map((it: any) => (
+                  <div
+                    key={it.id}
+                    className="flex items-center justify-between gap-3 text-xs border-b border-slate-800/60 pb-1.5 last:border-0 last:pb-0"
+                  >
+                    <span className="font-mono text-amber-300">{it.type}</span>
+                    <span className="text-slate-500">
+                      {new Date(it.createdAt).toLocaleString()} • via {it.queued_via}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </main>
+      )}
+
+      {/* ===================================================================== */}
       {/* TAB 4: COMPREHENSIVE SETTINGS, FREELLMAPI & INTEGRATIONS              */}
       {/* ===================================================================== */}
       {activeTab === "settings" && (
@@ -2273,12 +2471,13 @@ export default function StudioDashboard() {
       )}
 
       {/* Mobile Sticky Bottom Navigation Bar */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0b0e17]/95 backdrop-blur-xl border-t border-slate-800 grid grid-cols-4 py-2 px-2">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-[#0b0e17]/95 backdrop-blur-xl border-t border-slate-800 grid grid-cols-5 py-2 px-2">
         {[
           {id: "create", icon: "✨", label: "Create"},
           {id: "vault", icon: "🎬", label: `Videos (${vaultVideos.length})`},
           {id: "jobs", icon: "🚀", label: "Queue"},
           {id: "settings", icon: "⚙️", label: "Settings"},
+          {id: "analytics", icon: "📊", label: "Analytics"},
         ].map((item) => (
           <button
             key={item.id}

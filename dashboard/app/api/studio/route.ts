@@ -2,6 +2,8 @@ import {NextResponse} from "next/server";
 import fs from "node:fs";
 import path from "node:path";
 import {getStoredKeys, pipelineRoot, runScript, startRenderJob} from "@/lib/pipeline";
+import {isWebMode} from "@/lib/mode";
+import {queueIntent} from "@/lib/intents";
 
 async function loadRouterModule() {
   const root = pipelineRoot();
@@ -92,6 +94,9 @@ const TOPIC_PRESETS = [
 export async function GET(req: Request) {
   const {searchParams} = new URL(req.url);
   const slug = searchParams.get("slug");
+  if (isWebMode()) {
+    return queueIntent("studio.list", {slug});
+  }
   const root = pipelineRoot();
   const scriptsDir = path.join(root, "scripts-out");
   const outDir = path.join(root, "out");
@@ -175,6 +180,9 @@ export async function GET(req: Request) {
 export async function POST(req: Request) {
   const body = (await req.json().catch(() => ({}))) as Record<string, any>;
   const action = body.action || "generate-story";
+  if (isWebMode()) {
+    return queueIntent(`studio.${action}`, body);
+  }
   const root = pipelineRoot();
   const scriptsDir = path.join(root, "scripts-out");
   fs.mkdirSync(scriptsDir, {recursive: true});

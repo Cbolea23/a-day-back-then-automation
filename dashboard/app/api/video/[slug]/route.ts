@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import {pipelineRoot} from "@/lib/pipeline";
+import {isWebMode} from "@/lib/mode";
+import {queueIntent} from "@/lib/intents";
 
 function findVideoFile(slug: string): string | null {
   const root = pipelineRoot();
@@ -44,6 +46,9 @@ export async function GET(
   {params}: {params: {slug: string}},
 ) {
   const decodedSlug = decodeURIComponent(params.slug);
+  if (isWebMode()) {
+    return queueIntent("video.stream", {slug: decodedSlug});
+  }
   const file = findVideoFile(decodedSlug);
 
   if (!file || !fs.existsSync(file)) {

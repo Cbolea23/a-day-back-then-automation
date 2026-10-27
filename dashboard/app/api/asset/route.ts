@@ -2,6 +2,8 @@ import {NextResponse} from "next/server";
 import fs from "node:fs";
 import path from "node:path";
 import {pipelineRoot} from "@/lib/pipeline";
+import {isWebMode} from "@/lib/mode";
+import {queueIntent} from "@/lib/intents";
 
 const MIME_MAP: Record<string, string> = {
   ".jpg": "image/jpeg",
@@ -19,6 +21,9 @@ const MIME_MAP: Record<string, string> = {
 export async function GET(req: Request) {
   const {searchParams} = new URL(req.url);
   const rel = searchParams.get("path") || "";
+  if (isWebMode()) {
+    return queueIntent("asset.read", {path: rel});
+  }
   if (!rel || rel.includes("..")) {
     return NextResponse.json({error: "Invalid asset path"}, {status: 400});
   }

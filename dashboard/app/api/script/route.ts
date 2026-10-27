@@ -1,5 +1,7 @@
 import {NextResponse} from "next/server";
 import {getGeminiKey, getStoredKeys, pipelineRoot, runScript} from "@/lib/pipeline";
+import {isWebMode} from "@/lib/mode";
+import {queueIntent} from "@/lib/intents";
 
 /**
  * Generate a script via the real pipeline:
@@ -8,6 +10,9 @@ import {getGeminiKey, getStoredKeys, pipelineRoot, runScript} from "@/lib/pipeli
  */
 export async function POST(req: Request) {
   const {slug, force} = (await req.json()) as {slug?: string; force?: boolean};
+  if (isWebMode()) {
+    return queueIntent("script.generate", {slug: slug ?? null, force: Boolean(force)});
+  }
   if (!slug) return NextResponse.json({error: "slug is required"}, {status: 400});
   const stored = getStoredKeys();
   const geminiKey = getGeminiKey();

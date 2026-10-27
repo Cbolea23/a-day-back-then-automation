@@ -3,6 +3,12 @@ import {execFile} from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import {pipelineRoot} from "@/lib/pipeline";
+import {isWebMode} from "@/lib/mode";
+import {queueIntent} from "@/lib/intents";
+
+// Vault probing runs ffprobe per request (local) or records an intent per
+// request (web) — never prerendered.
+export const dynamic = "force-dynamic";
 
 function probe(file: string): Promise<{duration: number; size: number}> {
   return new Promise((resolve) => {
@@ -56,6 +62,9 @@ function findMp4Files(dir: string): string[] {
 }
 
 export async function GET() {
+  if (isWebMode()) {
+    return queueIntent("vault.probe", {});
+  }
   const root = pipelineRoot();
   const outDir = path.join(root, "out");
 
