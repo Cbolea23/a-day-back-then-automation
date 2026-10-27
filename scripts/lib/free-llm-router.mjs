@@ -83,11 +83,24 @@ export function loadAllKeys() {
       stored = JSON.parse(fs.readFileSync(keysFile, "utf8"));
     }
   } catch {}
+  try {
+    const envPath = path.join(ROOT_DIR, ".env");
+    if (fs.existsSync(envPath)) {
+      const lines = fs.readFileSync(envPath, "utf8").split(/\r?\n/);
+      for (const line of lines) {
+        const m = line.trim().match(/^([A-Za-z0-9_]+)=(.*)$/);
+        if (m && !stored[m[1]]) {
+          stored[m[1]] = m[2].replace(/^["']|["']$/g, "").trim();
+        }
+      }
+    }
+  } catch {}
 
   return {
     FREELLMAPI_URL: process.env.FREELLMAPI_URL || stored.FREELLMAPI_URL || "",
     FREELLMAPI_KEY: process.env.FREELLMAPI_KEY || stored.FREELLMAPI_KEY || "",
     GEMINI_API_KEY: process.env.GEMINI_API_KEY || stored.GEMINI_API_KEY || "",
+    OPENAI_API_KEY: process.env.OPENAI_API_KEY || stored.OPENAI_API_KEY || "",
     GROQ_API_KEY: process.env.GROQ_API_KEY || stored.GROQ_API_KEY || "",
     CEREBRAS_API_KEY: process.env.CEREBRAS_API_KEY || stored.CEREBRAS_API_KEY || "",
     OPENROUTER_API_KEY: process.env.OPENROUTER_API_KEY || stored.OPENROUTER_API_KEY || "",
@@ -107,6 +120,17 @@ export function loadAllKeys() {
 export function getActiveProviders(customKeys = {}) {
   const k = {...loadAllKeys(), ...customKeys};
   const providers = [];
+
+  // 0. OpenAI Official (if key available)
+  if (k.OPENAI_API_KEY) {
+    providers.push({
+      name: "OpenAI Official",
+      type: "openai",
+      url: "https://api.openai.com/v1/chat/completions",
+      apiKey: k.OPENAI_API_KEY,
+      models: ["gpt-4o", "gpt-4o-mini"],
+    });
+  }
 
   // 1. FreeLLMAPI Unified Gateway (if URL or Key is configured)
   if (k.FREELLMAPI_URL || k.FREELLMAPI_KEY) {
@@ -287,7 +311,25 @@ export async function callSmartLLM({
             body.response_format = {type: "json_object"};
           }
 
-          const timeoutMs = provider.name.includes("Pollinations") ? 14000 : 25000;
+          if (provider.name.includes("Pollinations")) {
+            try {
+              const cleanP = String(prompt || "").slice(0, 3000);
+              const cleanS = String(systemPrompt || "").slice(0, 1000);
+              const getUrl = `https://text.pollinations.ai/${encodeURIComponent(cleanP)}?system=${encodeURIComponent(cleanS)}`;
+              const getRes = await fetch(getUrl, { signal: AbortSignal.timeout(25000) });
+              if (getRes.ok) {
+                const text = await getRes.text();
+                if (text && !text.includes("Free limit reached")) {
+                  const parsed = json ? extractJsonFromText(text) : text;
+                  return { data: parsed, provider: provider.name, model: "pollinations-direct" };
+                }
+              }
+            } catch (pErr) {
+              // fallback to POST
+            }
+          }
+
+          const timeoutMs = provider.name.includes("Pollinations") ? 20000 : 25000;
           const res = await fetch(provider.url, {
             method: "POST",
             headers,
