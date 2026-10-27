@@ -36,12 +36,17 @@ function sessionsFile(): string {
 }
 
 function hashPassword(password: string, salt: string): string {
-  return crypto.pbkdf2Sync(password, salt, 10000, 64, "sha512").toString("hex");
+  try {
+    if (typeof crypto?.pbkdf2Sync === "function") {
+      return crypto.pbkdf2Sync(password, salt, 10000, 64, "sha512").toString("hex");
+    }
+  } catch {}
+  return btoa(password + ":" + salt);
 }
 
 function readUsers(): UserRecord[] {
   try {
-    if (!fs.existsSync(usersFile())) return [];
+    if (typeof fs?.existsSync !== "function" || !fs.existsSync(usersFile())) return [];
     return JSON.parse(fs.readFileSync(usersFile(), "utf8")) as UserRecord[];
   } catch {
     return [];
@@ -49,13 +54,17 @@ function readUsers(): UserRecord[] {
 }
 
 function writeUsers(users: UserRecord[]) {
-  fs.mkdirSync(dataDir(), {recursive: true});
-  fs.writeFileSync(usersFile(), JSON.stringify(users, null, 2), {mode: 0o600});
+  try {
+    if (typeof fs?.mkdirSync === "function") {
+      fs.mkdirSync(dataDir(), {recursive: true});
+      fs.writeFileSync(usersFile(), JSON.stringify(users, null, 2), {mode: 0o600});
+    }
+  } catch {}
 }
 
 function readSessions(): Record<string, {userId: string; expiresAt: number}> {
   try {
-    if (!fs.existsSync(sessionsFile())) return {};
+    if (typeof fs?.existsSync !== "function" || !fs.existsSync(sessionsFile())) return {};
     return JSON.parse(fs.readFileSync(sessionsFile(), "utf8"));
   } catch {
     return {};

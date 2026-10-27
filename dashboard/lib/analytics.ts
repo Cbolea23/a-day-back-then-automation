@@ -218,7 +218,7 @@ async function fetchMeta(): Promise<NonNullable<AnalyticsResult["meta"]>> {
   const authed = (url: string) => url + "&access_token=" + encodeURIComponent(token);
   const out: NonNullable<AnalyticsResult["meta"]> = {};
 
-  const pageId = process.env.META_PAGE_ID;
+  const pageId = process.env.META_PAGE_ID?.trim().replace(/^\uFEFF/, "");
   const pagePath = pageId ? `/${pageId}` : "/me";
   const pageRes = await fetch(
     authed(`${base}${pagePath}?fields=name,followers_count,fan_count`),
@@ -238,7 +238,7 @@ async function fetchMeta(): Promise<NonNullable<AnalyticsResult["meta"]>> {
         : undefined;
 
   // Instagram: explicit ID wins, otherwise discover via the page.
-  let igId = process.env.META_IG_USER_ID;
+  let igId = process.env.META_IG_USER_ID?.trim().replace(/^\uFEFF/, "");
   if (!igId && (pageId || pageData.id)) {
     try {
       const linkRes = await fetch(

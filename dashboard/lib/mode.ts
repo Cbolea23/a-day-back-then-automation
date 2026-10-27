@@ -13,7 +13,7 @@
 export type DeployMode = "local" | "web";
 
 export function deployMode(): DeployMode {
-  return process.env.DEPLOY_MODE === "web" ? "web" : "local";
+  return process.env.DEPLOY_MODE?.trim() === "web" ? "web" : "local";
 }
 
 export function isWebMode(): boolean {
