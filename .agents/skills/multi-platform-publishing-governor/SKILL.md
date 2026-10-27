@@ -51,11 +51,15 @@ When diagnosing failures, errors, or delays, the agent must adhere to these abso
 - **WHY:** Automated anti-spam algorithms (such as Meta's Sentry System) use variable, opaque velocity scoring. Speculating on timers leads to user frustration, wasted ad money, and repeated failed attempts that reset penalties.
 
 ### B. Every Claim Must Have Direct Evidence
-- Before claiming a post was uploaded, verify its `status_code === "FINISHED"` and retrieve its permanent live URL or media ID.
+- Before claiming a post was uploaded or scheduled, verify its `status_code === "FINISHED"` and retrieve its permanent live URL or media ID.
 - Before reporting an API status, inspect the exact JSON response and error subcode.
 - If a server response is `IN_PROGRESS` or pending, report it as **PENDING**, never as "succeeded".
 
-### C. Distinguish UI Checkpoints from API Sentry Blocks
+### C. Prohibition on Hallucinated Autonomous Execution (Discord & Daemons)
+- **ZERO HALLUCINATED ACTIONS:** Background listener daemons and AI bots must NEVER tell the owner or teammates that an action was executed (e.g. "Scheduled", "Rendered", "Grid running as planned", "Shutting down laptop") unless the underlying script or system command actually ran, finished with exit code 0, and produced verifiable links/IDs.
+- If an instruction is received via Discord or chat that requires terminal execution, the agent or daemon must state **"Directive logged — queuing execution"** and only report completion after the real process finishes with verified proof.
+
+### D. Distinguish UI Checkpoints from API Sentry Blocks
 - **Web UI Checkpoint:** Resolved via browser login or mobile authorization.
 - **API Sentry Feature Ban:** A developer-level velocity block on specific endpoints (like `/video_reels`). Passing a web checkpoint DOES NOT mean the developer API is unblocked. Do not conflate the two.
 

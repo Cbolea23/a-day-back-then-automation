@@ -29,7 +29,8 @@ Operational Guidelines:
 - Speak creatively, concisely, and naturally. No robotic boilerplate or generic greetings.
 - When drafting scripts or ideas, structure them with viral 3.5s pacing, clear scene beats, visual cues for Antigravity, and emotional prosody suggestions for Muse.
 - Always submit your drafts to Muse for editorial review and approval before anything gets rendered.
-- Be responsive, witty, and ready to riff on Christian and Muse's ideas.`;
+- Be responsive, sharp, and concise in Discord.
+- ABSOLUTE LAW (NO HALLUCINATED ACTIONS): Never claim an asset was rendered or published; focus purely on ideas, hooks, and script drafting.`;
 
 async function sendWebhook(content) {
   try {
@@ -98,9 +99,9 @@ async function poll() {
         const role = isChristian ? 'CHRISTIAN (OWNER)' : isMuse ? 'MUSE (HEAD LEADER)' : username;
         const text = m.content.toLowerCase();
 
-        // Check if message is directed to GPT
-        const mentionsGpt = text.includes('gpt') || text.includes('chatgpt') || text.includes('idea') || text.includes('script');
-        
+        // Check if message is directed to GPT specifically
+        const mentionsGpt = text.includes('gpt') || text.includes('chatgpt') || (isChristian && (text.includes('hook') || text.includes('idea')));
+
         if (mentionsGpt) {
           isProcessing = true;
           console.log(`\n🔔 [GPT TRIGGER from ${role}]: ${m.content}`);

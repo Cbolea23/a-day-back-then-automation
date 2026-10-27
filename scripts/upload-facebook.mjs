@@ -138,7 +138,7 @@ export async function uploadReel(slug, options = {}) {
     script = JSON.parse(fs.readFileSync(scriptPath, "utf8"));
   }
 
-  const caption = buildReelCaption(script, cleanSlug);
+  const caption = options.caption || buildReelCaption(script, cleanSlug);
   const stats = fs.statSync(videoPath);
   const fileSize = stats.size;
 
@@ -473,6 +473,11 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const isDraft = args.includes("--draft");
   const slug = args.find((a) => !a.startsWith("--")) || "sample-roman-morning";
 
+  let caption = null;
+  const capIdx = args.indexOf("--caption");
+  if (capIdx !== -1 && args[capIdx + 1]) {
+    caption = args[capIdx + 1];
+  }
   let schedule = null;
   const schedIdx = args.indexOf("--schedule");
   if (schedIdx !== -1 && args[schedIdx + 1]) {
@@ -485,7 +490,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
       process.exit(1);
     });
   } else {
-    uploadReel(slug, {schedule}).catch((err) => {
+    uploadReel(slug, {schedule, caption}).catch((err) => {
       console.error("\n❌ Reel upload failed:", err.message);
       process.exit(1);
     });
