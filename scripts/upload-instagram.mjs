@@ -259,7 +259,6 @@ export async function uploadInstagramReel(slug, options = {}) {
   // Step 2: Upload video binary to uploadUri via curl.exe (Meta rupload standard)
   console.log(`2. Uploading ${fileSize} bytes to Instagram servers...`);
   try {
-    const curlOut = execSync(
       const curlCmd = process.platform === "win32" ? "curl.exe" : "curl";
     const curlOut = execSync(`"${curlCmd}" -s -X POST "${uploadUri}" -H "Authorization: OAuth ${pageAccessToken}" -H "offset: 0" -H "file_size: ${fileSize}" -H "Content-Type: application/octet-stream" --data-binary "@${activeVideoPath}"`,
       { encoding: "utf8" }
