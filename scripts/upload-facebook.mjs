@@ -16,6 +16,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import {fileURLToPath} from "node:url";
+import {validateContentGovernance} from "./lib/language-governance.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const tokenPath = path.join(root, "facebook-tokens.json");
@@ -159,6 +160,7 @@ export async function uploadReel(slug, options = {}) {
   }
 
   const caption = options.caption || buildReelCaption(script, cleanSlug);
+  validateContentGovernance(options.channel || "adaybackthen", caption, "Facebook Reel caption");
   const stats = fs.statSync(videoPath);
   const fileSize = stats.size;
 
