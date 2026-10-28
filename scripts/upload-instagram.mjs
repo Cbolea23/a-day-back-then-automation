@@ -260,7 +260,8 @@ export async function uploadInstagramReel(slug, options = {}) {
   console.log(`2. Uploading ${fileSize} bytes to Instagram servers...`);
   try {
     const curlOut = execSync(
-      `curl.exe -s -X POST "${uploadUri}" -H "Authorization: OAuth ${pageAccessToken}" -H "offset: 0" -H "file_size: ${fileSize}" -H "Content-Type: application/octet-stream" --data-binary "@${activeVideoPath}"`,
+      const curlCmd = process.platform === "win32" ? "curl.exe" : "curl";
+    const curlOut = execSync(`"${curlCmd}" -s -X POST "${uploadUri}" -H "Authorization: OAuth ${pageAccessToken}" -H "offset: 0" -H "file_size: ${fileSize}" -H "Content-Type: application/octet-stream" --data-binary "@${activeVideoPath}"`,
       { encoding: "utf8" }
     );
     console.log("✓ Video stream transfer submitted to Meta.");

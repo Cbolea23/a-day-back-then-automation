@@ -15,7 +15,7 @@ export async function dispatchEligibleInstagramPosts() {
   const queue = JSON.parse(fs.readFileSync(queueFile, "utf8"));
   const now = new Date();
 
-  console.log(`[IG Dispatcher] Checking queue at ${now.toISOString()}...`);
+  console.log(`[IG Cloud Dispatcher] Checking queue at ${now.toISOString()}...`);
 
   for (const [slug, item] of Object.entries(queue)) {
     if (item.instagramStatus === "PUBLISHED") {
@@ -24,22 +24,17 @@ export async function dispatchEligibleInstagramPosts() {
 
     const targetTime = new Date(item.isoUtc);
     if (now >= targetTime) {
-      console.log(`\n🚀 [IG Dispatcher] Triggering live Instagram Reel for: ${slug} (Target was ${item.isoUtc})`);
+      console.log(`\n🚀 [IG Cloud Dispatcher] Triggering live Instagram Reel for: ${slug} (Target was ${item.isoUtc})`);
 
-      const localVideo = path.join(root, "out", `${slug}.mp4`);
+      const outDir = path.join(root, "out");
+      fs.mkdirSync(outDir, { recursive: true });
+      const localVideo = path.join(outDir, `${slug}.mp4`);
+
       if (!fs.existsSync(localVideo)) {
-        // Find file ID on Drive or search for DONE - <slug>.mp4
-        console.log(`   Downloading ${slug} from Google Drive...`);
+        console.log(`   Downloading ${slug} from Google Drive (ID: ${item.driveFileId})...`);
+        const curlCmd = process.platform === "win32" ? "curl.exe" : "curl";
         try {
-          const searchOut = execSync(`gdrive readonly search --name-contains "${slug}.mp4"`, { encoding: "utf8" });
-          const line = searchOut.split("\n").find(l => l.includes(".mp4"));
-          if (line) {
-            const fileId = line.trim().split(/\s{2,}/)[0];
-            execSync(`gdrive readonly download ${fileId} -o ${localVideo}`, { stdio: "inherit" });
-          } else {
-            console.error(`   ❌ Could not locate Drive file for ${slug}`);
-            continue;
-          }
+          execSync(`${curlCmd} -s -L "https://drive.google.com/uc?export=download&id=${item.driveFileId}" -o "${localVideo}"`, { stdio: "inherit" });
         } catch (e) {
           console.error(`   ❌ Failed to download ${slug}:`, e.message);
           continue;

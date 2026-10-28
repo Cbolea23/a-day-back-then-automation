@@ -1,0 +1,53 @@
+name: Cloud YouTube Shorts Pacer ($0 Autonomous Engine)
+
+on:
+  schedule:
+    # 08:30 UTC = 16:30 PHT (00:30 Pacific, right after daily YouTube quota reset)
+    - cron: "30 8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pace-youtube:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Configure YouTube Credentials
+        env:
+          YT_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET_JSON }}
+          YT_TOKENS: ${{ secrets.YOUTUBE_TOKENS_JSON }}
+        run: |
+          mkdir -p tokens
+          echo "$YT_CLIENT_SECRET" > client_secret.json
+          echo "$YT_TOKENS" > tokens/youtube-adaybackthen.json
+          echo "$YT_TOKENS" > youtube-tokens.json
+
+      - name: Execute Autonomous YouTube Pacer (Cap 6 Videos / Day)
+        run: node scripts/arm-youtube-week1.mjs
+
+      - name: Commit & Push Updated YouTube Schedule Log
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/week1-scheduled-youtube.json published-urls.json || true
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(youtube): record cloud-paced scheduled shorts"
+            git push
+          fi
