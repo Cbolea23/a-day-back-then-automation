@@ -28,9 +28,13 @@ export function syncJsonToRealAudio(slug) {
   });
 
   fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2), 'utf8');
-  // Also sync to data/
+  // Also sync to data/ and data/kwentong-pinoy/
   const dataPath = path.resolve(`data/${slug}.json`);
   fs.writeFileSync(dataPath, JSON.stringify(data, null, 2), 'utf8');
+  const kpPath = path.resolve(`data/kwentong-pinoy/${slug}.json`);
+  if (fs.existsSync(path.dirname(kpPath))) {
+    fs.writeFileSync(kpPath, JSON.stringify(data, null, 2), 'utf8');
+  }
 
   console.log(`\n${slug}: Old Runtime = ${oldTotal.toFixed(1)}s -> New Tight Runtime = ${newTotal.toFixed(1)}s (Saved ${(oldTotal - newTotal).toFixed(1)}s of lag/dead air)`);
   return { oldTotal, newTotal };

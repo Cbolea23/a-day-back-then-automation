@@ -267,7 +267,7 @@ export function getNextOptimalSchedule() {
 /**
  * Generates SEO-optimized title, description, and tags for Shorts or Long-Form.
  */
-function buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong = false, customTitle = null) {
+function buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong = false, customTitle = null, customDescOverride = null) {
   const cleanSlug = slug.replace(/^long-/, "");
 
   if (isLong) {
@@ -333,7 +333,7 @@ function buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong = fal
 
     const snippet = {
       title,
-      description: descriptionLines.join("\n"),
+      description: customDescOverride || descriptionLines.join("\n"),
       tags,
       categoryId: "27", // Education
       defaultLanguage: "en",
@@ -355,7 +355,7 @@ function buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong = fal
   }
 
   // 1. Title: Under 60 chars + #shorts
-  let title = `${script.hook || script.title} #shorts`;
+  let title = customTitle ? (customTitle.includes("#shorts") ? customTitle : `${customTitle} #shorts`) : `${script.hook || script.title} #shorts`;
   if (title.length > 95) {
     title = `${(script.hook || script.title).slice(0, 85)}... #shorts`;
   }
@@ -403,7 +403,7 @@ function buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong = fal
 
   const snippet = {
     title,
-    description: descriptionLines.join("\n"),
+    description: customDescOverride || descriptionLines.join("\n"),
     tags,
     categoryId: "27", // Education
     defaultLanguage: "en",
@@ -429,7 +429,7 @@ function buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong = fal
 /**
  * Uploads video to YouTube via resumable upload protocol.
  */
-async function uploadVideo(slug, options) {
+export async function uploadVideo(slug, options = {}) {
   const cleanSlug = slug.replace(/^long-/, "");
   const candidatePaths = [
     path.join(root, "out", "Longform", "2 - Unpublished Vault", `long-${cleanSlug}.mp4`),
@@ -505,7 +505,7 @@ async function uploadVideo(slug, options) {
     console.log(`Video Runtime: ~${totalSeconds.toFixed(1)}s (${totalSeconds >= 60 ? "Qualified for TikTok Creator Rewards >= 60s & FB Watch Time" : "Compact Shorts Cut"})`);
   }
 
-  const {snippet, status} = buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong, options.title);
+  const {snippet, status} = buildMetadata(script, slug, scheduleTime, explicitPrivacy, isLong, options.title, options.description);
 
   console.log("\n========================================================");
   console.log(`   Uploading: ${cleanSlug} (${isLong ? "Long-Form Video" : "Short"})`);
@@ -662,6 +662,7 @@ async function uploadVideo(slug, options) {
   } catch (moveErr) {
     console.warn("Could not auto-move video file:", moveErr.message);
   }
+  return { videoId, url: isLong ? `https://youtube.com/watch?v=${videoId}` : `https://youtube.com/shorts/${videoId}`, title: snippet.title };
 }
 
 // CLI argument parsing
