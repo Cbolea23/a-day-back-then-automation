@@ -177,13 +177,32 @@ export async function authenticate() {
 /**
  * Gets a fresh access token from stored tokens, refreshing if necessary.
  */
-async function getAccessToken() {
-  if (!fs.existsSync(tokenPath)) {
+async function getAccessToken(channelSlug) {
+  let activeTokenPath = tokenPath;
+  if (channelSlug) {
+    let key = channelSlug.toLowerCase();
+    if (key === 'ph' || key === 'filipino' || key === 'kwentong-pinoy-lore-history') key = 'kwentong-pinoy';
+    if (key === 'bible' || key === 'scripture' || key === 'genesis-to-glory') key = 'bible-chronicles';
+    if (key === 'main' || key === 'global') key = 'adaybackthen';
+
+    const chFile = path.join(root, 'scripts', 'config', 'channels.json');
+    if (fs.existsSync(chFile)) {
+      try {
+        const ch = JSON.parse(fs.readFileSync(chFile, 'utf8'));
+        if (ch[key]?.ytTokenFile) {
+          activeTokenPath = path.join(root, ch[key].ytTokenFile);
+          console.log(`📡 Targeting YouTube Channel: ${ch[key].ytTitle || ch[key].name} (${ch[key].ytChannelId})`);
+        }
+      } catch (e) {}
+    }
+  }
+
+  if (!fs.existsSync(activeTokenPath)) {
     console.log("No YouTube credentials found. Launching authorization flow...");
     await authenticate();
   }
 
-  const tokens = JSON.parse(fs.readFileSync(tokenPath, "utf8"));
+  const tokens = JSON.parse(fs.readFileSync(activeTokenPath, "utf8"));
 
   // Check if token expires within 2 minutes
   if (!tokens.access_token || Date.now() >= (tokens.expiry_date || 0) - 120000) {
@@ -211,7 +230,7 @@ async function getAccessToken() {
     const refreshed = await refreshRes.json();
     tokens.access_token = refreshed.access_token;
     tokens.expiry_date = Date.now() + (refreshed.expires_in || 3600) * 1000;
-    fs.writeFileSync(tokenPath, JSON.stringify(tokens, null, 2));
+    fs.writeFileSync(activeTokenPath, JSON.stringify(tokens, null, 2));
   }
 
   return tokens.access_token;
@@ -500,7 +519,7 @@ async function uploadVideo(slug, options) {
   console.log(`File:        ${mp4Path} (${(fs.statSync(mp4Path).size / (1024 * 1024)).toFixed(1)} MB)`);
   console.log("--------------------------------------------------------");
 
-  const accessToken = await getAccessToken();
+  const accessToken = await getAccessToken(options.channel);
 
   // Step 1: Initiate resumable upload
   const initRes = await fetch(
@@ -660,11 +679,12 @@ const getArg = (name) => {
 const privacy = getArg("privacy");
 const schedule = getArg("schedule");
 const title = getArg("title");
+const channel = getArg("channel");
 
 if (isAuthOnly) {
   await authenticate();
 } else if (slug) {
-  await uploadVideo(slug, {privacy, schedule, now: isNow, long: isLong, title});
+  await uploadVideo(slug, {privacy, schedule, now: isNow, long: isLong, title, channel});
 } else {
   console.log(`
 Usage:

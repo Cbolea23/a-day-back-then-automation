@@ -21,7 +21,27 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const tokenPath = path.join(root, "facebook-tokens.json");
 const CHUNK_SIZE = 25 * 1024 * 1024; // 25 MB chunk for resumable upload
 
-function getCredentials() {
+const channelsPath = path.join(root, "scripts", "config", "channels.json");
+
+function getCredentials(targetChannel) {
+  if (targetChannel && fs.existsSync(channelsPath)) {
+    try {
+      const channels = JSON.parse(fs.readFileSync(channelsPath, "utf8"));
+      let chKey = targetChannel.toLowerCase();
+      if (chKey === "ph" || chKey === "filipino" || chKey === "kwentong-pinoy-lore-history") chKey = "kwentong-pinoy";
+      if (chKey === "bible" || chKey === "scripture") chKey = "bible-chronicles";
+      if (chKey === "main" || chKey === "global") chKey = "adaybackthen";
+      if (channels[chKey]) {
+        console.log(`📡 Targeting Channel: ${channels[chKey].name} (${channels[chKey].pageId})`);
+        return {
+          pageId: channels[chKey].pageId,
+          pageAccessToken: channels[chKey].pageAccessToken,
+          pageName: channels[chKey].name,
+          slug: chKey
+        };
+      }
+    } catch (e) { console.warn("channels.json parse err:", e.message); }
+  }
   if (!fs.existsSync(tokenPath)) {
     console.error("Missing facebook-tokens.json in project root.");
     process.exit(1);
@@ -117,7 +137,7 @@ export async function uploadReel(slug, options = {}) {
     return { skipped: true, reason: "Facebook cooldown active" };
   }
 
-  const {pageId, pageAccessToken, pageName} = getCredentials();
+  const {pageId, pageAccessToken, pageName} = getCredentials(options.channel);
   const cleanSlug = slug.replace(/^long-/, "");
   const candidatePaths = [
     path.join(root, "out", "2 - Unpublished Vault", `${cleanSlug}.mp4`),
@@ -244,7 +264,7 @@ export async function uploadLongformVideo(slug, options = {}) {
     return { skipped: true, reason: "Facebook cooldown active" };
   }
 
-  const {pageId, pageAccessToken, pageName} = getCredentials();
+  const {pageId, pageAccessToken, pageName} = getCredentials(options.channel);
   const cleanSlug = slug.replace(/^long-/, "");
 
   // Candidate video paths
@@ -478,6 +498,11 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   if (capIdx !== -1 && args[capIdx + 1]) {
     caption = args[capIdx + 1];
   }
+  let channel = null;
+  const chanIdx = args.indexOf("--channel");
+  if (chanIdx !== -1 && args[chanIdx + 1]) {
+    channel = args[chanIdx + 1];
+  }
   let schedule = null;
   const schedIdx = args.indexOf("--schedule");
   if (schedIdx !== -1 && args[schedIdx + 1]) {
@@ -485,12 +510,12 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   }
 
   if (isLong || slug.startsWith("long-")) {
-    uploadLongformVideo(slug, {schedule, draft: isDraft}).catch((err) => {
+    uploadLongformVideo(slug, {schedule, draft: isDraft, channel}).catch((err) => {
       console.error("\n❌ Long-form upload failed:", err.message);
       process.exit(1);
     });
   } else {
-    uploadReel(slug, {schedule, caption}).catch((err) => {
+    uploadReel(slug, {schedule, caption, channel}).catch((err) => {
       console.error("\n❌ Reel upload failed:", err.message);
       process.exit(1);
     });

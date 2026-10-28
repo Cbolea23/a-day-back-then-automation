@@ -1,6 +1,6 @@
 {
-  "name": "shorts-factory",
-  "version": "0.1.0",
+  "name": "content-automation-engine",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -18,8 +18,12 @@
     "upload:auth": "node scripts/upload-youtube.mjs --auth",
     "upload": "node scripts/upload-youtube.mjs",
     "upload:long": "node scripts/upload-youtube.mjs --long",
+    "upload:kwentong-pinoy": "node scripts/upload-youtube.mjs --channel kwentong-pinoy",
+    "upload:bible": "node scripts/upload-youtube.mjs --channel bible-chronicles",
     "upload:fb": "node scripts/upload-facebook.mjs",
     "upload:fb:long": "node scripts/upload-facebook.mjs --long",
+    "upload:fb:kwentong-pinoy": "node scripts/upload-facebook.mjs --channel kwentong-pinoy",
+    "upload:fb:bible": "node scripts/upload-facebook.mjs --channel bible-chronicles",
     "upload:ig": "node scripts/upload-instagram.mjs",
     "upload:tiktok": "node scripts/upload-tiktok.mjs",
     "upload:tiktok:safe": "node scripts/upload-tiktok-queue.mjs",
@@ -28,10 +32,10 @@
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",
+    "@remotion/media-utils": "^4.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "remotion": "^4.0.0",
-    "@remotion/media-utils": "^4.0.0"
+    "remotion": "^4.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.0",

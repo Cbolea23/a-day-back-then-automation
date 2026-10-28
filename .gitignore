@@ -33,3 +33,5 @@ sample-*.mp4
 *.tmp
 
 
+tokens/
+scripts/config/channels.json
