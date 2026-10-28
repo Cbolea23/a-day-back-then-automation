@@ -20,6 +20,7 @@ import fs from "node:fs";
 import path from "node:path";
 import {spawnSync, execSync} from "node:child_process";
 import {fileURLToPath} from "node:url";
+import {validateContentGovernance} from "./lib/language-governance.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const tokenPath = path.join(root, "facebook-tokens.json");
@@ -53,18 +54,18 @@ function getCredentials() {
 }
 
 const IG_QUESTIONS = [
-  "Would you have survived this? Tell us why 👇",
-  "Which fact shocked you the most? 👇",
-  "Could you live like this for one day? Be honest 👇",
-  "What era should we time-travel to next? 👇",
-  "Did you know this before watching? 👇",
-  "True or false: you could handle this life 👇",
+  "Would you have survived this? Tell us why in the comments.",
+  "Which fact shocked you the most? Tell us below.",
+  "Could you live like this for one day? Be honest.",
+  "What era should we time-travel to next?",
+  "Did you know this before watching?",
+  "True or false: you could handle this life.",
 ];
 
 const IG_CTAS = [
   "Follow @adaybackthenofficial for daily history deep-dives!",
-  "🔔 Follow @adaybackthenofficial — a new time trip every day!",
-  "👉 Follow @adaybackthenofficial for your daily trip back in time!",
+  "Follow @adaybackthenofficial for a new time trip every day!",
+  "Follow @adaybackthenofficial for your daily trip back in time!",
 ];
 
 function pickBySlug(arr, slug) {
@@ -111,7 +112,7 @@ export function buildInstagramCaption(script, slug) {
     "",
     body,
     "",
-    `💬 ${question}`,
+    question,
     "",
     cta,
     "",
@@ -215,7 +216,8 @@ export async function uploadInstagramReel(slug, options = {}) {
   if (fs.existsSync(scriptPath)) {
     script = JSON.parse(fs.readFileSync(scriptPath, "utf8"));
   }
-  const caption = buildInstagramCaption(script, slug);
+  const caption = options.caption || buildInstagramCaption(script, slug);
+  validateContentGovernance(options.channel || "adaybackthen", caption, "Instagram Reel caption");
 
   console.log("\n========================================================");
   console.log(`   Uploading to Instagram Reels: ${slug}`);

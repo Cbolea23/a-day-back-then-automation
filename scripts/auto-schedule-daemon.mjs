@@ -1,15 +1,9 @@
 #!/usr/bin/env node
 /**
- * Auto-Schedule Daemon
+ * Auto-Schedule & Live Dispatch Daemon
  *
- * Periodically runs the batch schedulers every 90 seconds to automatically
- * pick up and schedule newly rendered vault videos to Facebook Reels and
- * YouTube Shorts:
- *   - scripts/schedule-all.mjs        (35 foundational shorts, one-shot but
- *                                      idempotent: skips already-scheduled)
- *   - scripts/schedule-expansion.mjs  (92 expansion shorts)
- * Both scripts skip videos already scheduled/published and videos not yet
- * rendered, so re-running is safe.
+ * Periodically monitors and dispatches:
+ *   - scripts/instagram-live-dispatcher.mjs (Triggers scheduled Instagram Reels at exact go-time)
  */
 
 import { spawnSync } from "node:child_process";
@@ -18,21 +12,26 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
-const SCHEDULERS = ["scripts/schedule-all.mjs", "scripts/schedule-expansion.mjs"];
+const SCHEDULERS = [
+  "scripts/instagram-live-dispatcher.mjs"
+];
 
-console.log("Starting Auto-Schedule Daemon (monitoring every 90 seconds)...");
+console.log("Starting Auto-Schedule & Live Dispatch Daemon (monitoring every 60 seconds)...");
 
 async function loop() {
   while (true) {
-    console.log(`\n[${new Date().toLocaleTimeString()}] Checking vault for newly rendered videos to schedule...`);
     for (const script of SCHEDULERS) {
-      spawnSync(
-        process.execPath,
-        [path.join("scripts", path.basename(script))],
-        { cwd: root, stdio: "inherit" }
-      );
+      try {
+        spawnSync(
+          process.execPath,
+          [path.join("scripts", path.basename(script))],
+          { cwd: root, stdio: "inherit" }
+        );
+      } catch (e) {
+        console.error(`Error running ${script}:`, e.message);
+      }
     }
-    await new Promise((r) => setTimeout(r, 90000));
+    await new Promise((r) => setTimeout(r, 60000));
   }
 }
 
