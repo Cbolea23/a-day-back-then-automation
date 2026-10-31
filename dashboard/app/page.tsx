@@ -2,6 +2,8 @@
 
 import React, {useState, useEffect, useCallback, useRef} from "react";
 import {NarratorPreview} from "./NarratorPreview";
+import {driver} from "driver.js";
+import {TOURS} from "@/lib/tours";
 
 type User = {
   id: string;
@@ -95,6 +97,85 @@ export default function StudioDashboard() {
   const [selectedChannel, setSelectedChannel] = useState<"kwentong-pinoy" | "adaybackthen" | "genesis-to-glory">("kwentong-pinoy");
   const [scheduleData, setScheduleData] = useState<any>(null);
   const [scheduleLoading, setScheduleLoading] = useState(false);
+
+  // Interactive Tutorial & Guide State
+  const [showGuideModal, setShowGuideModal] = useState(false);
+  const [completedTours, setCompletedTours] = useState<string[]>([]);
+  const [isTourActive, setIsTourActive] = useState(false);
+  const [welcomeDismissed, setWelcomeDismissed] = useState(true);
+
+  // Load completed tours from localStorage
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      try {
+        const saved = JSON.parse(localStorage.getItem("completed_tours") || "[]");
+        setCompletedTours(saved);
+        const dismissed = localStorage.getItem("tour_welcome_dismissed") === "true";
+        setWelcomeDismissed(dismissed);
+      } catch {}
+    }
+  }, []);
+
+  const startTour = useCallback((tourId: string) => {
+    const tour = TOURS[tourId];
+    if (!tour || !tour.steps.length) return;
+
+    setShowGuideModal(false);
+    setIsTourActive(true);
+
+    // If tour begins on a specific tab/channel, switch immediately
+    const firstStep = tour.steps[0];
+    if (firstStep.tab) setActiveTab(firstStep.tab);
+    if (firstStep.channel) setSelectedChannel(firstStep.channel);
+
+    const driverObj = driver({
+      showProgress: true,
+      animate: true,
+      allowClose: true,
+      overlayColor: "rgba(2, 6, 23, 0.8)",
+      nextBtnText: "Next",
+      prevBtnText: "Back",
+      doneBtnText: "Done",
+      steps: tour.steps.map((s) => ({
+        element: s.element,
+        popover: {
+          title: s.popover.title,
+          description: s.popover.description,
+          side: s.popover.side || "bottom",
+          align: s.popover.align || "center",
+        },
+      })),
+      onHighlightStarted: (element, step, options) => {
+        const currentStepConfig = tour.steps[options?.index ?? 0];
+        if (currentStepConfig?.tab && activeTab !== currentStepConfig.tab) {
+          setActiveTab(currentStepConfig.tab);
+        }
+        if (currentStepConfig?.channel && selectedChannel !== currentStepConfig.channel) {
+          setSelectedChannel(currentStepConfig.channel);
+        }
+      },
+      onDestroyStarted: () => {
+        setIsTourActive(false);
+        driverObj.destroy();
+        // Record completion
+        setCompletedTours((prev) => {
+          if (!prev.includes(tourId)) {
+            const updated = [...prev, tourId];
+            if (typeof window !== "undefined") {
+              localStorage.setItem("completed_tours", JSON.stringify(updated));
+            }
+            return updated;
+          }
+          return prev;
+        });
+      },
+    });
+
+    // Small delay to ensure tab DOM elements are mounted
+    setTimeout(() => {
+      driverObj.drive();
+    }, 150);
+  }, [activeTab, selectedChannel]);
   const [user, setUser] = useState<User | null>(null);
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [authMode, setAuthMode] = useState<"login" | "register">("login");
@@ -726,7 +807,7 @@ export default function StudioDashboard() {
       {/* Top Header Bar */}
       <header className="sticky top-0 z-40 backdrop-blur-xl bg-[#0b0e17]/90 border-b border-slate-800/80 px-4 lg:px-8 py-3 flex items-center justify-between">
         {/* Channel Selector Dropdown & Brand */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3" data-tour="channel-selector">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-orange-600 flex items-center justify-center text-black font-black text-sm shadow-lg shadow-amber-500/20">
             {selectedChannel === "kwentong-pinoy" ? "KP" : selectedChannel === "genesis-to-glory" ? "GG" : "AD"}
           </div>
@@ -764,15 +845,16 @@ export default function StudioDashboard() {
         {/* Desktop Nav Pills */}
         <nav className="hidden md:flex items-center gap-1.5 bg-slate-900/90 p-1 rounded-xl border border-slate-800">
           {[
-            {id: "schedule", label: `Schedule (${scheduleData?.items?.length || 0} Armed)`},
-            {id: "analytics", label: "Analytics"},
-            {id: "create", label: "Create Story"},
-            {id: "vault", label: `Vault (${vaultVideos.length})`},
-            {id: "jobs", label: `Queue ${runningJobsCount > 0 ? `(${runningJobsCount})` : ""}`},
-            {id: "settings", label: "Settings & Keys"},
+            {id: "schedule", label: `Schedule (${scheduleData?.items?.length || 0} Armed)`, tourId: "schedule-tab"},
+            {id: "analytics", label: "Analytics", tourId: "analytics-tab"},
+            {id: "create", label: "Create Story", tourId: "create-tab"},
+            {id: "vault", label: `Vault (${vaultVideos.length})`, tourId: "vault-tab"},
+            {id: "jobs", label: `Queue ${runningJobsCount > 0 ? `(${runningJobsCount})` : ""}`, tourId: "queue-tab"},
+            {id: "settings", label: "Settings & Keys", tourId: "settings-tab"},
           ].map((t) => (
             <button
               key={t.id}
+              data-tour={t.tourId}
               onClick={() => setActiveTab(t.id as any)}
               className={`px-4 py-2 rounded-lg text-xs font-bold transition-all ${
                 activeTab === t.id
@@ -785,8 +867,17 @@ export default function StudioDashboard() {
           ))}
         </nav>
 
-        {/* User Account Pill */}
+        {/* User Account Pill & Guide Launcher */}
         <div className="flex items-center gap-2">
+          <button
+            onClick={() => setShowGuideModal(true)}
+            data-tour="guide-button"
+            className="px-3 py-1.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 border border-amber-500/30 text-xs font-black transition-all flex items-center gap-1.5 shadow-sm shadow-amber-500/10 cursor-pointer"
+            title="Interactive Tours and Workflow Guide"
+          >
+            <span>Guide</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
+          </button>
           {user ? (
             <div className="flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full pl-2 pr-3 py-1">
               <div
@@ -854,15 +945,42 @@ export default function StudioDashboard() {
       {/* ===================================================================== */}
       {activeTab === "schedule" && (
         <main className="max-w-7xl mx-auto px-4 lg:px-8 py-6 space-y-6">
+          {!welcomeDismissed && completedTours.length === 0 && (
+            <div className="bg-gradient-to-r from-amber-500/15 via-orange-500/10 to-purple-500/15 border border-amber-500/30 rounded-2xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-lg">
+              <div>
+                <div className="text-sm font-black text-amber-300">Welcome to Content Automation Engine</div>
+                <div className="text-xs text-slate-300 mt-0.5">
+                  Take the interactive 2-minute orientation to explore the multi-channel workflow and live cloud queues.
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => startTour("orientation")}
+                  className="px-3.5 py-1.5 bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-black rounded-lg transition-colors cursor-pointer"
+                >
+                  Start 2-Min Tour
+                </button>
+                <button
+                  onClick={() => {
+                    setWelcomeDismissed(true);
+                    localStorage.setItem("tour_welcome_dismissed", "true");
+                  }}
+                  className="px-2.5 py-1.5 text-xs text-slate-400 hover:text-white"
+                >
+                  Dismiss
+                </button>
+              </div>
+            </div>
+          )}
           {/* Summary Cards */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 shadow-lg">
+            <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 shadow-lg" data-tour="target-channel-card">
               <div className="text-xs font-bold uppercase tracking-wider text-slate-400">Target Channel</div>
               <div className="text-lg font-black text-white mt-1 truncate">{scheduleData?.channelName || "Loading..."}</div>
               <div className="text-xs text-amber-400 mt-0.5">{scheduleData?.channelHandle}</div>
             </div>
 
-            <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 shadow-lg">
+            <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 shadow-lg" data-tour="armed-posts-card">
               <div className="text-xs font-bold uppercase tracking-wider text-slate-400">Total Armed Posts</div>
               <div className="text-3xl font-black text-emerald-400 mt-1">{scheduleData?.summary?.totalArmedItems || 0}</div>
               <div className="text-xs text-slate-400 mt-0.5">
@@ -870,7 +988,7 @@ export default function StudioDashboard() {
               </div>
             </div>
 
-            <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 shadow-lg">
+            <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 shadow-lg" data-tour="buffer-health-card">
               <div className="text-xs font-bold uppercase tracking-wider text-slate-400">Buffer Health</div>
               <div className="flex items-center gap-2 mt-1">
                 <span className={`inline-block w-3 h-3 rounded-full ${
@@ -887,7 +1005,7 @@ export default function StudioDashboard() {
               </div>
             </div>
 
-            <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 shadow-lg">
+            <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 shadow-lg" data-tour="posting-lanes-card">
               <div className="text-xs font-bold uppercase tracking-wider text-slate-400">Posting Lanes (31 Oct)</div>
               <div className="text-xs text-slate-300 mt-2 space-y-1">
                 <div><strong className="text-white">YouTube / Facebook:</strong> Antigravity</div>
@@ -923,7 +1041,7 @@ export default function StudioDashboard() {
 
           {/* Armed Posts Grid */}
           {scheduleData?.items?.length > 0 && (
-            <div className="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
+            <div className="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden shadow-xl" data-tour="schedule-table">
               <div className="p-4 sm:p-6 border-b border-slate-800 flex items-center justify-between">
                 <div>
                   <h2 className="text-base font-black text-white">Scheduled Publishing Grid (Native Cloud Queue)</h2>
@@ -2682,6 +2800,72 @@ export default function StudioDashboard() {
           </button>
         ))}
       </nav>
+
+      {/* Interactive Guide & Tutorials Modal */}
+      {showGuideModal && (
+        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-slate-900 border border-slate-700 rounded-2xl max-w-lg w-full p-6 shadow-2xl space-y-5">
+            <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+              <div>
+                <h3 className="text-base font-black text-white">Interactive Studio Tutorials</h3>
+                <p className="text-xs text-slate-400 mt-0.5">Step-by-step walkthroughs with live UI spotlight.</p>
+              </div>
+              <button
+                onClick={() => setShowGuideModal(false)}
+                className="text-slate-400 hover:text-white text-sm cursor-pointer p-1"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className="space-y-3">
+              {Object.values(TOURS).map((t) => {
+                const isCompleted = completedTours.includes(t.id);
+                return (
+                  <div
+                    key={t.id}
+                    className="p-4 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-slate-700 transition-all flex items-center justify-between gap-4"
+                  >
+                    <div className="space-y-1">
+                      <div className="flex items-center gap-2">
+                        <span className="font-bold text-sm text-white">{t.title}</span>
+                        <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-slate-800 text-slate-300">
+                          ~{t.estimatedMinutes} min
+                        </span>
+                        {isCompleted && (
+                          <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                            Completed
+                          </span>
+                        )}
+                      </div>
+                      <p className="text-xs text-slate-400 leading-relaxed">{t.description}</p>
+                    </div>
+                    <button
+                      onClick={() => startTour(t.id)}
+                      className="px-3.5 py-1.5 bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-black rounded-lg transition-colors whitespace-nowrap cursor-pointer shadow-md shadow-amber-500/15"
+                    >
+                      {isCompleted ? "Replay" : "Start"}
+                    </button>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="pt-2 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+              <span>{completedTours.length} of {Object.keys(TOURS).length} modules completed</span>
+              <button
+                onClick={() => {
+                  setCompletedTours([]);
+                  localStorage.removeItem("completed_tours");
+                }}
+                className="text-[11px] text-slate-500 hover:text-slate-300 underline"
+              >
+                Reset Progress
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Login / Register Modal */}
       {showAuthModal && (
