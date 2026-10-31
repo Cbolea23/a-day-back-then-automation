@@ -1,0 +1,91 @@
+{
+  "artStyle": "dark-folklore",
+  "channelName": "Kwentong Pinoy: Lore & History",
+  "claimsToVerify": [
+    "The magindara are water spirits (sirena) of Visayan folklore said to dwell near coral reefs and lure fishermen with their singing",
+    "Visayan fisherfolk traditionally make offerings (halad) of tuba or food to the sea before casting their nets",
+    "In the lore, each reef is said to have its own magindara song, and specific reefs are avoided because of fishermen said to have drowned there"
+  ],
+  "emotionPreset": "spooky-suspense",
+  "generatedBy": "A Day Back Then Studio Engine",
+  "hook": "MAY KUMAKANTA SA ILALIM NG DAGAT — AT ANG MANGINGISDA, HINDI NA UMUUWI.",
+  "language": "taglish",
+  "narratorTheme": "babaylan",
+  "pinnedComment": "Kung ikaw ang mangingisda at makarinig ka ng kanta sa ilalim ng dagat, susundan mo ba ito o maglalayag ka pauwi? 👇",
+  "scenes": [
+    {
+      "audio": "audio/magindara/1.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/magindara/1.jpg",
+      "imagePrompt": "A lone fisherman silhouette in a small outrigger bangka on a glassy night sea in the Visayas, concentric glowing ripples spreading across the water beneath the boat, a jagged coral reef silhouette waiting ahead in the mist, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 16.4,
+      "text": "Madaling-araw sa Visayas. Isang mangingisda ang mag-isang naglalayag sa kanyang bangka nang makarinig siya ng kanta — mahina, matamis, nanggagaling sa ilalim ng tubig. At dahan-dahan, nang hindi niya namamalayan, lumiko ang kanyang bangka patungo sa bahura.",
+      "voicedText": "Madaling-araw sa Visayas. Isang mangingisda ang mag-isang naglalayag sa kanyang bangka nang makarinig siya ng kanta — mahina, matamis, nanggagaling sa ilalim ng tubig. At dahan-dahan, nang hindi niya namamalayan, lumiko ang kanyang bangka patungo sa bahura."
+    },
+    {
+      "audio": "audio/magindara/2.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/magindara/2.jpg",
+      "imagePrompt": "An underwater coral reef kingdom at night seen from far away, towering coral and seaweed formations, tiny distant long-haired silhouettes drifting among the rocks, pale shafts of moonlight falling through deep teal water, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 18.6,
+      "text": "Sila ang mga Magindara — mga diwata ng dagat sa paniniwala ng mga Bisaya. Nakatira sila sa malalalim na bahura, at ang kanilang kanta ay nadadala ng hangin sa mga gabing walang alon. Sabi ng matatandang mangingisda, bawat bahura ay may sariling kanta — at may sariling kwento ng mga hindi na umuwi.",
+      "voicedText": "Sila ang mga Magindara — mga diwata ng dagat sa paniniwala ng mga Bisaya. Nakatira sila sa malalalim na bahura, at ang kanilang kanta ay nadadala ng hangin sa mga gabing walang alon. Sabi ng matatandang mangingisda, bawat bahura ay may sariling kanta — at may sariling kwento ng mga hindi na umuwi."
+    },
+    {
+      "audio": "audio/magindara/3.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/magindara/3.jpg",
+      "imagePrompt": "An empty wooden bangka washed up on a sharp coral reef at grey dawn, a torn fishing lambat net draped over the wet rocks, an unlit kerosene gasera lamp standing on the shore of a small fishing village, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 18.4,
+      "text": "May mga bahurang iniiwasan ng mga taga-baryo hanggang ngayon — hindi dahil sa bato, kundi dahil sa mga pangalan ng mga nalunod doon. May mga asawang naghintay sa pampang dala ang gasera hanggang umaga, at ang tanging umuwi ay isang bangkang walang laman, nakalutang sa ibabaw ng bahura.",
+      "voicedText": "May mga bahurang iniiwasan ng mga taga-baryo hanggang ngayon — hindi dahil sa bato, kundi dahil sa mga pangalan ng mga nalunod doon. May mga asawang naghintay sa pampang dala ang gasera hanggang umaga, at ang tanging umuwi ay isang bangkang walang laman, nakalutang sa ibabaw ng bahura."
+    },
+    {
+      "audio": "audio/magindara/4.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/magindara/4.jpg",
+      "imagePrompt": "Weathered hands pouring tuba from a coconut shell cup over the side of a wooden bangka into calm sea water, a banana leaf holding rice and old coins resting on the boat bench, first light of dawn on the horizon, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 17.2,
+      "text": "Kaya bago ihagis ang lambat, may ritwal ang matatanda: isang tabo ng tuba ang ibinubuhos sa dagat, at kaunting kanin ang inaalay — paghingi ng pahintulot sa mga nakatira sa ilalim. At ang mahigpit na bilin: kapag narinig mo ang kanta, huwag kang sasagot. Huwag kang susunod. Maglayag ka pauwi.",
+      "voicedText": "Kaya bago ihagis ang lambat, may ritwal ang matatanda: isang tabo ng tuba ang ibinubuhos sa dagat, at kaunting kanin ang inaalay — paghingi ng pahintulot sa mga nakatira sa ilalim. At ang mahigpit na bilin: kapag narinig mo ang kanta, huwag kang sasagot. Huwag kang susunod. Maglayag ka pauwi."
+    },
+    {
+      "audio": "audio/magindara/5.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/magindara/5.jpg",
+      "imagePrompt": "A fishing village shoreline at dusk, nipa huts with warm gasera lamps glowing in the windows, an anchored bangka rocking on calm dark water, the open sea stretching silent and black to the horizon, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 18.3,
+      "text": "Hanggang ngayon, sa mga gabing payapa ang dagat ng Visayas, may mga mangingisdang nag-aalay ng tuba bago maglayag — at may mga tenga pa ring nakikinig sa ilalim ng tubig. Dahil ang dagat, sabi nila, marunong kumanta. At hindi lahat ng kanta ay para pakinggan.",
+      "voicedText": "Hanggang ngayon, sa mga gabing payapa ang dagat ng Visayas, may mga mangingisdang nag-aalay ng tuba bago maglayag — at may mga tenga pa ring nakikinig sa ilalim ng tubig. Dahil ang dagat, sabi nila, marunong kumanta. At hindi lahat ng kanta ay para pakinggan."
+    }
+  ],
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "slug": "magindara",
+  "title": "Magindara: The Song Beneath the Visayan Sea",
+  "voice": "fil-PH-BlessicaNeural"
+}

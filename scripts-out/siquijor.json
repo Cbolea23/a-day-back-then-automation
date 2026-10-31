@@ -1,0 +1,91 @@
+{
+  "artStyle": "dark-folklore",
+  "channelName": "Kwentong Pinoy: Lore & History",
+  "claimsToVerify": [
+    "Spanish colonizers called Siquijor 'Isla de Fuego' (Island of Fire), a name associated with the glow of fireflies over the island",
+    "Siquijor's bolo-bolo healers perform a ritual blowing through a bamboo straw into a glass of water held over the patient",
+    "Folk healers gather on Mt. Bandilaan during Holy Week to collect herbs and prepare potions and charms"
+  ],
+  "emotionPreset": "spooky-suspense",
+  "generatedBy": "A Day Back Then Studio Engine",
+  "hook": "ISANG ISLA. DALAWANG KLASE NG MAHIWAGA: ANG NANGKUKULAM, AT ANG GUMAGAMOT.",
+  "language": "taglish",
+  "narratorTheme": "babaylan",
+  "pinnedComment": "Naniniwala ka ba sa bolo-bolo ng mga manggagamot ng Siquijor? At sa barang ng mga mangkukulam — alin ang mas nakakatakot para sa iyo? 👇",
+  "scenes": [
+    {
+      "audio": "audio/siquijor/1.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/siquijor/1.jpg",
+      "imagePrompt": "A dark tropical island shore at night glowing with thousands of fireflies over black water, mangrove trees along the beach and the distant silhouette of a Spanish galleon on the horizon, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 16.7,
+      "text": "Mula sa dagat, nakita ng mga Kastila ang isang isla na nag-aapoy sa dilim — dahil sa libo-libong alitaptap. Tinawag nila itong Isla de Fuego, ang Isla ng Apoy. Ngayon, kilala natin ito bilang Siquijor — ang isla ng mga mangkukulam at manggagamot.",
+      "voicedText": "Mula sa dagat, nakita ng mga Kastila ang isang isla na nag-aapoy sa dilim — dahil sa libo-libong alitaptap. Tinawag nila itong Isla de Fuego, ang Isla ng Apoy. Ngayon, kilala natin ito bilang Siquijor — ang isla ng mga mangkukulam at manggagamot."
+    },
+    {
+      "audio": "audio/siquijor/2.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/siquijor/2.jpg",
+      "imagePrompt": "An old Spanish colonial stone church and massive convent on a tropical island hill at dusk, giant acacia trees and thick mist rolling in from the sea behind it, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 17.4,
+      "text": "Daan-daang taon nang may reputasyon ang isla. Sa mga tala ng mga Kastila, dito raw nagmumula ang pinakamabisang kulam — ang barang, kung saan ang mangkukulam ay nag-uutos sa mga insekto para saktan ang kanyang kaaway. Pero dito rin nagmumula ang lunas.",
+      "voicedText": "Daan-daang taon nang may reputasyon ang isla. Sa mga tala ng mga Kastila, dito raw nagmumula ang pinakamabisang kulam — ang barang, kung saan ang mangkukulam ay nag-uutos sa mga insekto para saktan ang kanyang kaaway. Pero dito rin nagmumula ang lunas."
+    },
+    {
+      "audio": "audio/siquijor/3.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/siquijor/3.jpg",
+      "imagePrompt": "Close view of a folk healer's weathered hands holding a bamboo straw over a glass of cloudy water on a rough wooden table, candles, herb bundles and small clay pots arranged beside it inside a dim jungle hut, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 14.1,
+      "text": "Ang bolo-bolo: iihipan ng manggagamot ang isang basong tubig sa pamamagitan ng kawayan, sa ibabaw ng katawan ng maysakit... at unti-unting lalabo ang tubig, may lalabas na mga bato at dumi — ang sakit na raw na hinugot mula sa katawan.",
+      "voicedText": "Ang bolo-bolo: iihipan ng manggagamot ang isang basong tubig sa pamamagitan ng kawayan, sa ibabaw ng katawan ng maysakit... at unti-unting lalabo ang tubig, may lalabas na mga bato at dumi — ang sakit na raw na hinugot mula sa katawan."
+    },
+    {
+      "audio": "audio/siquijor/4.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/siquijor/4.jpg",
+      "imagePrompt": "A misty mountaintop jungle clearing at dawn, woven baskets of freshly gathered herbs, clay pots and small glass bottles of oils laid out on a cloth, dense island forest fading into fog, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 16.9,
+      "text": "Hanggang ngayon, buhay ang tradisyon. Tuwing Semana Santa, umaakyat ang mga manggagamot sa Bundok Bandilaan para mangolekta ng mga halamang gamot at magtimpla ng kanilang mga gayuma at langis. At ang mga turista, pumupila — may nagpapagamot, may bumibili ng pampaswerte.",
+      "voicedText": "Hanggang ngayon, buhay ang tradisyon. Tuwing Semana Santa, umaakyat ang mga manggagamot sa Bundok Bandilaan para mangolekta ng mga halamang gamot at magtimpla ng kanilang mga gayuma at langis. At ang mga turista, pumupila — may nagpapagamot, may bumibili ng pampaswerte."
+    },
+    {
+      "audio": "audio/siquijor/5.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/siquijor/5.jpg",
+      "imagePrompt": "Thousands of fireflies rising over a dark island shoreline at night, a lone fisherman silhouette holding a lantern aboard a small outrigger bangka, a black jungle hill looming behind him, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 12.4,
+      "text": "Kaya sa Siquijor, iisa ang bilin ng mga matatanda sa isla: mag-ingat ka kung kanino ka hihingi ng tulong. Dahil dito, ang kamay na gumagamot sa iyo sa umaga... maaaring iba ang ginagawa pagsapit ng gabi.",
+      "voicedText": "Kaya sa Siquijor, iisa ang bilin ng mga matatanda sa isla: mag-ingat ka kung kanino ka hihingi ng tulong. Dahil dito, ang kamay na gumagamot sa iyo sa umaga... maaaring iba ang ginagawa pagsapit ng gabi."
+    }
+  ],
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "slug": "siquijor",
+  "title": "Siquijor: The Island of Fire, Healers and Sorcerers",
+  "voice": "fil-PH-BlessicaNeural"
+}

@@ -1,0 +1,91 @@
+{
+  "artStyle": "dark-folklore",
+  "channelName": "Kwentong Pinoy: Lore & History",
+  "claimsToVerify": [
+    "Jose Rizal was imprisoned in Fort Santiago in 1896 before his execution at Bagumbayan, and his final footsteps are marked in bronze on the grounds",
+    "During the Battle of Manila in 1945, hundreds of Filipino prisoners died in Fort Santiago's dungeons under Japanese occupation",
+    "Fort Santiago's dungeons lie close to the Pasig River and were known to flood with the tide"
+  ],
+  "emotionPreset": "spooky-suspense",
+  "generatedBy": "A Day Back Then Studio Engine",
+  "hook": "NOONG 1945, DAAN-DAANG BILANGGO ANG INILOCK SA ILALIM NG FORT SANTIAGO — AT PINASOK NG TUBIG ANG KANILANG SELDA.",
+  "language": "taglish",
+  "narratorTheme": "babaylan",
+  "pinnedComment": "Nakapunta ka na ba sa Fort Santiago? Anong naramdaman mo nang malaman mo ang kwento ng mga piitan sa ilalim nito? 👇",
+  "scenes": [
+    {
+      "audio": "audio/fort-santiago/1.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/fort-santiago/1.jpg",
+      "imagePrompt": "The ornate carved stone gate of a Spanish colonial fortress in Intramuros Manila at night, a relief coat of arms above the archway, still moat water and coconut palms under a moonlit sky, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 17.1,
+      "text": "Sa puso ng Intramuros nakatayo ang Fort Santiago — ang pinakamatandang kuta ng Maynila, at bantay ng Ilog Pasig mula pa noong 1593. Ngunit sa likod ng maganda nitong tarangkahan, dalawang kwento ang nagtatago: ng isang bayani, at ng daan-daang bilanggo.",
+      "voicedText": "Sa puso ng Intramuros nakatayo ang Fort Santiago — ang pinakamatandang kuta ng Maynila, at bantay ng Ilog Pasig mula pa noong 1593. Ngunit sa likod ng maganda nitong tarangkahan, dalawang kwento ang nagtatago: ng isang bayani, at ng daan-daang bilanggo."
+    },
+    {
+      "audio": "audio/fort-santiago/2.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/fort-santiago/2.jpg",
+      "imagePrompt": "A bare Spanish colonial prison cell interior, a wooden writing desk with a single candle and an open book, an iron-barred window looking out toward a dark river at night, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 14.1,
+      "text": "Dito ikinulong si Dr. Jose Rizal noong 1896, at mula sa kanyang selda, lumakad siya patungong Bagumbayan kung saan siya binaril. Hanggang ngayon, masusundan mo ang kanyang huling mga yapak — nakamarka sa tanso sa sahig ng kuta.",
+      "voicedText": "Dito ikinulong si Dr. Jose Rizal noong 1896, at mula sa kanyang selda, lumakad siya patungong Bagumbayan kung saan siya binaril. Hanggang ngayon, masusundan mo ang kanyang huling mga yapak — nakamarka sa tanso sa sahig ng kuta."
+    },
+    {
+      "audio": "audio/fort-santiago/3.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/fort-santiago/3.jpg",
+      "imagePrompt": "A dark flooded stone dungeon corridor beneath a fortress, black water reflecting a faint lantern glow, rows of rusted iron cell doors half-submerged along the walls, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 16.5,
+      "text": "Ngunit sa ilalim ng kuta, may mga piitang halos abot ng tubig ng Ilog Pasig. Noong 1945, daan-daang Pilipino ang ikinulong ng mga Hapon sa mga seldang iyon habang nasusunog ang Maynila. Nang mabawi ang kuta... ang mga selda na ang nagkwento.",
+      "voicedText": "Ngunit sa ilalim ng kuta, may mga piitang halos abot ng tubig ng Ilog Pasig. Noong 1945, daan-daang Pilipino ang ikinulong ng mga Hapon sa mga seldang iyon habang nasusunog ang Maynila. Nang mabawi ang kuta... ang mga selda na ang nagkwento."
+    },
+    {
+      "audio": "audio/fort-santiago/4.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/fort-santiago/4.jpg",
+      "imagePrompt": "A walled fortress courtyard garden at twilight, manicured lawns and an old stone well between acacia trees, ruined Spanish stone walls and a distant watchtower fading into mist, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 15.4,
+      "text": "Ngayon, parke at museo na ang Fort Santiago — may mga pamilyang namamasyal at mga estudyanteng naglilibot. Pero may mga bisita at guwardiyang nagsasabing may malamig na hangin at mga iyak na naririnig malapit sa mga lumang piitan, kahit tanghaling tapat.",
+      "voicedText": "Ngayon, parke at museo na ang Fort Santiago — may mga pamilyang namamasyal at mga estudyanteng naglilibot. Pero may mga bisita at guwardiyang nagsasabing may malamig na hangin at mga iyak na naririnig malapit sa mga lumang piitan, kahit tanghaling tapat."
+    },
+    {
+      "audio": "audio/fort-santiago/5.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/fort-santiago/5.jpg",
+      "imagePrompt": "Bronze footprints embedded in an old stone path leading toward a fortress gate at night, ground mist curling around them, a lone lantern burning beside the dark entrance, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 14.1,
+      "text": "Dalawang alaala ang binabantayan ng Fort Santiago: ang bayaning lumakad patungo sa kanyang kamatayan nang nakataas ang noo, at ang mga bilanggo sa ilalim na walang pangalang nakamarka. Sa gabi, pareho silang narito pa rin.",
+      "voicedText": "Dalawang alaala ang binabantayan ng Fort Santiago: ang bayaning lumakad patungo sa kanyang kamatayan nang nakataas ang noo, at ang mga bilanggo sa ilalim na walang pangalang nakamarka. Sa gabi, pareho silang narito pa rin."
+    }
+  ],
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "slug": "fort-santiago",
+  "title": "Fort Santiago: The Dungeons Beneath the Hero's Last Walk",
+  "voice": "fil-PH-BlessicaNeural"
+}

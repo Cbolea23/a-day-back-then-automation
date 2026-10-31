@@ -1,0 +1,91 @@
+{
+  "artStyle": "dark-folklore",
+  "channelName": "Kwentong Pinoy: Lore & History",
+  "claimsToVerify": [
+    "Corregidor fell to Japanese forces on May 6, 1942, after a months-long siege",
+    "The Malinta Tunnel housed a hospital with about a thousand beds during the Second World War",
+    "General MacArthur made Corregidor his headquarters before evacuating to Australia in 1942"
+  ],
+  "emotionPreset": "spooky-suspense",
+  "generatedBy": "A Day Back Then Studio Engine",
+  "hook": "SA ISLANG ITO, ANG MGA SUNDALO AY NAGBABANTAY PA RIN — 80 TAON PAGKATAPOS NG DIGMAAN.",
+  "language": "taglish",
+  "narratorTheme": "babaylan",
+  "pinnedComment": "Kung bibigyan ka ng pagkakataong mag-overnight sa Corregidor, papayag ka ba? 👇",
+  "scenes": [
+    {
+      "audio": "audio/corregidor/1.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/corregidor/1.jpg",
+      "imagePrompt": "A tadpole-shaped island fortress at the mouth of a wide bay at dusk, jungle-covered hills crowned with ruined concrete barracks and an old lighthouse, dark waters and rolling mist around its rocky shores, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 15.2,
+      "text": "Sa bukana ng Manila Bay, may islang hugis tadpole ang bantay ng Maynila sa loob ng maraming siglo... ang Corregidor. Ngunit sabi ng mga guwardiya at tour guide na nagbabantay dito, hindi lang sila ang nananatili sa isla pagsapit ng dilim.",
+      "voicedText": "Sa bukana ng Manila Bay, may islang hugis tadpole ang bantay ng Maynila sa loob ng maraming siglo... ang Corregidor. Ngunit sabi ng mga guwardiya at tour guide na nagbabantay dito, hindi lang sila ang nananatili sa isla pagsapit ng dilim."
+    },
+    {
+      "audio": "audio/corregidor/2.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": true
+      },
+      "image": "images/corregidor/2.jpg",
+      "imagePrompt": "Interior of a vast arched concrete tunnel hospital from the Second World War, endless rows of empty iron bed frames vanishing into darkness, a single warm lantern glowing beside medical crates, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 16.1,
+      "text": "Noong Ikalawang Digmaang Pandaigdig, dito huling tumindig ang mga sundalong Pilipino at Amerikano. Sa loob ng Malinta Tunnel, may ospital na may isang libong higaan, at dito nanirahan si Heneral MacArthur bago siya napilitang lumikas patungong Australia noong 1942.",
+      "voicedText": "Noong Ikalawang Digmaang Pandaigdig, dito huling tumindig ang mga sundalong Pilipino at Amerikano. Sa loob ng Malinta Tunnel, may ospital na may isang libong higaan, at dito nanirahan si Heneral MacArthur bago siya napilitang lumikas patungong Australia noong 1942."
+    },
+    {
+      "audio": "audio/corregidor/3.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/corregidor/3.jpg",
+      "imagePrompt": "A sealed tunnel entrance in a jungle hillside, collapsed rock and rusted steel blast doors choked with vines, abandoned wartime helmets and a broken rifle resting on the ground before it, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 18.1,
+      "text": "Nang bawiin ng mga Amerikano ang isla noong 1945, libo-libong sundalong Hapon ang nagtago sa mga tunel at kuweba. Marami ang hindi sumuko — pinasabog nila ang sariling taguan, at hanggang ngayon, marami sa kanila ang nananatiling nakalibing sa ilalim ng isla.",
+      "voicedText": "Nang bawiin ng mga Amerikano ang isla noong 1945, libo-libong sundalong Hapon ang nagtago sa mga tunel at kuweba. Marami ang hindi sumuko — pinasabog nila ang sariling taguan, at hanggang ngayon, marami sa kanila ang nananatiling nakalibing sa ilalim ng isla."
+    },
+    {
+      "audio": "audio/corregidor/4.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/corregidor/4.jpg",
+      "imagePrompt": "The ruined shell of a long three-storey concrete barracks under moonlight, jungle creeping through its empty window frames, a battery of rusted coastal cannons pointing silently out to sea nearby, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 15.1,
+      "text": "Ngayon, dinarayo ng mga turista ang mga guho: ang Mile-Long Barracks, ang mga kanyon ng Battery Way, ang madilim na Malinta Tunnel. Pero may mga gabing may naririnig daw na mga yabag, sigaw, at boses sa loob ng tunel — kahit wala nang tao.",
+      "voicedText": "Ngayon, dinarayo ng mga turista ang mga guho: ang Mile-Long Barracks, ang mga kanyon ng Battery Way, ang madilim na Malinta Tunnel. Pero may mga gabing may naririnig daw na mga yabag, sigaw, at boses sa loob ng tunel — kahit wala nang tao."
+    },
+    {
+      "audio": "audio/corregidor/5.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/corregidor/5.jpg",
+      "imagePrompt": "Sunset over a calm bay seen from a fortress island, the silhouettes of ruined fortifications and a lone flagpole against a blood-orange sky, sea mist rising slowly from the dark water, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 14.9,
+      "text": "Ginawang alaala ang Corregidor para sa mga nagbuwis ng buhay dito. Pero sa tuwing lumulubog ang araw sa Manila Bay, parang nagbabantay pa rin ang isla... at ang mga sundalo nito, hindi pa rin umaalis sa kanilang puwesto.",
+      "voicedText": "Ginawang alaala ang Corregidor para sa mga nagbuwis ng buhay dito. Pero sa tuwing lumulubog ang araw sa Manila Bay, parang nagbabantay pa rin ang isla... at ang mga sundalo nito, hindi pa rin umaalis sa kanilang puwesto."
+    }
+  ],
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "slug": "corregidor",
+  "title": "Corregidor: The Island Where the Soldiers Never Stood Down",
+  "voice": "fil-PH-BlessicaNeural"
+}

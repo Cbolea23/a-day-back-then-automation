@@ -1,0 +1,90 @@
+{
+  "artStyle": "dark-folklore",
+  "channelName": "Kwentong Pinoy: Lore & History",
+  "claimsToVerify": [
+    "Edward Lansdale, a US Air Force officer working with the CIA, served as an adviser in the Philippines during the Hukbalahap rebellion in the early 1950s",
+    "In his memoir 'In the Midst of Wars', Lansdale described a psywar operation in which a dead Huk fighter's body was drained of blood and punctured at the neck to simulate a vampire or aswang attack, after which the Huk unit abandoned the area"
+  ],
+  "emotionPreset": "spooky-suspense",
+  "generatedBy": "A Day Back Then Studio Engine",
+  "hook": "NOONG 1950s, GINAMIT NG AMERIKA ANG ASWANG — BILANG SANDATA LABAN SA MGA HUK.",
+  "language": "taglish",
+  "narratorTheme": "babaylan",
+  "pinnedComment": "Kung ikaw ang Huk na nakakita ng kasama mong walang dugo at may butas sa leeg — babalik ka pa ba sa baryong iyon? 👇",
+  "scenes": [
+    {
+      "audio": "audio/cia-aswang/1.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/cia-aswang/1.jpg",
+      "imagePrompt": "A 1950s Central Luzon jungle barrio at night, nipa huts scattered among coconut palms and dense banana groves at the edge of dark forest, a lone foreign officer silhouette studying a hand-drawn map by lantern light at a distance, mountains looming in thick mist, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 14.8,
+      "text": "Gitnang Luzon, unang taon ng 1950s. May rebelyon ng mga Huk, at dumating ang isang Amerikanong tagapayo na nagngangalang Edward Lansdale. Imbes na baril ang una niyang pinag-aralan, pinag-aralan niya ang kinatatakutan ng mga Pilipino: ang aswang.",
+      "voicedText": "Gitnang Luzon, unang taon ng 1950s. May rebelyon ng mga Huk, at dumating ang isang Amerikanong tagapayo na nagngangalang Edward Lansdale. Imbes na baril ang una niyang pinag-aralan, pinag-aralan niya ang kinatatakutan ng mga Pilipino: ang aswang."
+    },
+    {
+      "audio": "audio/cia-aswang/2.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/cia-aswang/2.jpg",
+      "imagePrompt": "A remote Philippine barrio trail winding through jungle at dusk, distant silhouettes of 1950s guerrilla soldiers with rifles walking far away along the path, carabao grazing near dark nipa huts, villagers' oil lamps glowing faintly in windows as fog rolls in from the treeline, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 13.3,
+      "text": "Dahil sa mga baryo noon, buhay na buhay ang paniniwala. Isang Huk patrol ang laging dumadaan sa isang liblib na lugar — at alam ng pangkat ni Lansdale: kung maniniwala ang mga gerilya na may aswang doon, hindi na sila babalik.",
+      "voicedText": "Dahil sa mga baryo noon, buhay na buhay ang paniniwala. Isang Huk patrol ang laging dumadaan sa isang liblib na lugar — at alam ng pangkat ni Lansdale: kung maniniwala ang mga gerilya na may aswang doon, hindi na sila babalik."
+    },
+    {
+      "audio": "audio/cia-aswang/3.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/cia-aswang/3.jpg",
+      "imagePrompt": "An empty jungle trail in Central Luzon at first light, an abandoned guerrilla campsite beside the path with a cold campfire, a dropped kerosene lantern and gear left behind in haste, morning fog swallowing the empty trail in both directions, no people anywhere, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 15.5,
+      "text": "Isang gabi, nahuli nila ang isang Huk na nagsosolo. Pagkaraan, natagpuan ng kanyang mga kasama ang katawan sa daan — walang dugo, at may dalawang butas sa leeg. Sapat na iyon. Ang buong iskwadron, inabandona ang lugar kinabukasan.",
+      "voicedText": "Isang gabi, nahuli nila ang isang Huk na nagsosolo. Pagkaraan, natagpuan ng kanyang mga kasama ang katawan sa daan — walang dugo, at may dalawang butas sa leeg. Sapat na iyon. Ang buong iskwadron, inabandona ang lugar kinabukasan."
+    },
+    {
+      "audio": "audio/cia-aswang/4.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/cia-aswang/4.jpg",
+      "imagePrompt": "A dim 1950s military office at night, an open notebook and fountain pen on a wooden desk beside a kerosene lamp and a folded map of Luzon, a typewriter in shadow, rain on the galvanized roof, documents pinned to the wall blurred beyond reading, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 14.4,
+      "text": "At hindi ito tsismis — isinulat mismo ni Lansdale ang operasyon sa kanyang memoir. Ginamit niya ang pinakamalalim na takot ng mga Pilipino bilang sandata, at ayon sa kanya, gumana ito: nagsialisan ang mga Huk sa mga lugar na 'may aswang'.",
+      "voicedText": "At hindi ito tsismis — isinulat mismo ni Lansdale ang operasyon sa kanyang memoir. Ginamit niya ang pinakamalalim na takot ng mga Pilipino bilang sandata, at ayon sa kanya, gumana ito: nagsialisan ang mga Huk sa mga lugar na 'may aswang'."
+    },
+    {
+      "audio": "audio/cia-aswang/5.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/cia-aswang/5.jpg",
+      "imagePrompt": "A wide view of a Central Luzon valley at nightfall, a small barrio's lamplit windows scattered below dark mountains, jungle canopy stretching to the horizon under a huge full moon, a single owl in flight as a small silhouette, the whole land holding its breath in mist, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 15.0,
+      "text": "Kaya isipin mo: ang aswang — kwento ng ating mga lola — ay minsang naging bahagi ng Cold War. Hindi multo ang nakakatakot dito. Kundi ang katotohanang may dayuhang nakaintindi ng ating takot... at ginamit ito laban sa atin.",
+      "voicedText": "Kaya isipin mo: ang aswang — kwento ng ating mga lola — ay minsang naging bahagi ng Cold War. Hindi multo ang nakakatakot dito. Kundi ang katotohanang may dayuhang nakaintindi ng ating takot... at ginamit ito laban sa atin."
+    }
+  ],
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "slug": "cia-aswang",
+  "title": "The Aswang the CIA Used Against the Huks",
+  "voice": "fil-PH-BlessicaNeural"
+}

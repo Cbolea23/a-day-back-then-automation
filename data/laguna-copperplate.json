@@ -1,0 +1,91 @@
+{
+  "artStyle": "dark-folklore",
+  "channelName": "Kwentong Pinoy: Lore & History",
+  "claimsToVerify": [
+    "The Laguna Copperplate Inscription is dated to 900 AD (822 in the Saka calendar) and is the earliest known written document found in the Philippines",
+    "The inscription records a debt pardon granted to Namwaran and his family, written mainly in Old Malay with Sanskrit, Old Javanese and Old Tagalog terms",
+    "The plate was found in 1989 near the Lumbang River in Laguna and is now held by the National Museum of the Philippines"
+  ],
+  "emotionPreset": "spooky-suspense",
+  "generatedBy": "A Day Back Then Studio Engine",
+  "hook": "NOONG TAONG 900, ISANG LALAKI SA LAGUNA ANG NAGKAROON NG UTANG — AT BINURA ITO SA ISANG PLAKANG TANSO.",
+  "language": "taglish",
+  "narratorTheme": "babaylan",
+  "pinnedComment": "Kung may isang bagay mula sa pamilya mo noong taong 900 na makikita ng mga tao sa hinaharap — ano kaya iyon? 👇",
+  "scenes": [
+    {
+      "audio": "audio/laguna-copperplate/1.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/laguna-copperplate/1.jpg",
+      "imagePrompt": "A worker dredging sand at the mouth of the Lumbang River in Laguna at dawn, seen from a distance on the riverbank, holding up a rolled dark metal plate dripping with river water, misty lake and rice fields behind him, a small crowd of villagers gathering far down the bank, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 15.5,
+      "text": "Noong 1989, may lalaking naghuhukay ng buhangin sa ilog Lumbang sa Laguna. Sa halip na bato, isang nakabilot na plakang tanso ang nahukay niya. Walang nakakaalam noon: hawak niya ang pinakamatandang sulat sa kasaysayan ng Pilipinas.",
+      "voicedText": "Noong 1989, may lalaking naghuhukay ng buhangin sa ilog Lumbang sa Laguna. Sa halip na bato, isang nakabilot na plakang tanso ang nahukay niya. Walang nakakaalam noon: hawak niya ang pinakamatandang sulat sa kasaysayan ng Pilipinas."
+    },
+    {
+      "audio": "audio/laguna-copperplate/2.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/laguna-copperplate/2.jpg",
+      "imagePrompt": "A glowing inscribed copper plate resting unrolled on dark woven cloth under warm lamplight, ancient flowing script covering its surface as pure texture with no readable words, a reed stylus and palm-leaf manuscripts beside it, deep shadows around the circle of light, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 15.0,
+      "text": "Nang basahin ito ng mga dalubhasa, lumitaw ang isang opisyal na dokumento noong taong 900. Isang kapatawaran ng utang: si Namwaran at ang kanyang pamilya, pinawalang-bisa ang kanilang utang sa harap ng mga pinuno ng Tondo at ng mga karatig-lugar.",
+      "voicedText": "Nang basahin ito ng mga dalubhasa, lumitaw ang isang opisyal na dokumento noong taong 900. Isang kapatawaran ng utang: si Namwaran at ang kanyang pamilya, pinawalang-bisa ang kanilang utang sa harap ng mga pinuno ng Tondo at ng mga karatig-lugar."
+    },
+    {
+      "audio": "audio/laguna-copperplate/3.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/laguna-copperplate/3.jpg",
+      "imagePrompt": "A thriving precolonial Philippine trading settlement on a riverbank in the year 900, balangay boats with woven sails unloading jars and cloth, merchants and scribes gathered under a large balete tree, a datu's raised wooden house on stilts overlooking the water, golden late light through jungle mist, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 13.6,
+      "text": "Nakasulat ito sa Lumang Malay, may halong Sanskrit at mga salitang Tagalog — patunay ng isang lipunang may batas, may hukuman, may ugnayang pangkalakalan sa buong Asya. Anim na siglo bago pa man dumaong si Magellan.",
+      "voicedText": "Nakasulat ito sa Lumang Malay, may halong Sanskrit at mga salitang Tagalog — patunay ng isang lipunang may batas, may hukuman, may ugnayang pangkalakalan sa buong Asya. Anim na siglo bago pa man dumaong si Magellan."
+    },
+    {
+      "audio": "audio/laguna-copperplate/4.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/laguna-copperplate/4.jpg",
+      "imagePrompt": "A weathered old Philippine history textbook lying open on a wooden school desk, its pages dissolving into mist at the edges as a younger hand turns a blank new page, shafts of dusty light falling across the desk from a jalousie window, the copper plate's silhouette faintly visible in the haze above the book, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 15.9,
+      "text": "Binago ng plakang ito ang itinuturo sa atin. Hindi nagsimula ang ating kasaysayan noong 1521 — may mga pangalan, lugar, at batas na tayo daang taon bago ang unang Kastila. Isang ordinaryong utang ng isang pamilya ang naging susi sa buong nakaraan.",
+      "voicedText": "Binago ng plakang ito ang itinuturo sa atin. Hindi nagsimula ang ating kasaysayan noong 1521 — may mga pangalan, lugar, at batas na tayo daang taon bago ang unang Kastila. Isang ordinaryong utang ng isang pamilya ang naging susi sa buong nakaraan."
+    },
+    {
+      "audio": "audio/laguna-copperplate/5.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/laguna-copperplate/5.jpg",
+      "imagePrompt": "A dim museum gallery at closing time, the small copper plate glowing softly inside a glass case on a dark pedestal, a lone visitor's silhouette standing before it in quiet awe, faint reflections of the gallery's stone columns in the glass, darkness and fog-like haze at the edges of the hall, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 16.7,
+      "text": "Ngayon, nakatanghal ang plaka sa Pambansang Museo. Maliit lang ito — kasya sa dalawang palad. Pero ang bigat ng dala nito: ang pamilya ni Namwaran, na nabura ang utang isang umaga noong 900... ay hindi na kailanman tuluyang nawala sa kasaysayan.",
+      "voicedText": "Ngayon, nakatanghal ang plaka sa Pambansang Museo. Maliit lang ito — kasya sa dalawang palad. Pero ang bigat ng dala nito: ang pamilya ni Namwaran, na nabura ang utang isang umaga noong 900... ay hindi na kailanman tuluyang nawala sa kasaysayan."
+    }
+  ],
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "slug": "laguna-copperplate",
+  "title": "The Laguna Copperplate: The Philippines' Oldest Receipt, From the Year 900",
+  "voice": "fil-PH-BlessicaNeural"
+}

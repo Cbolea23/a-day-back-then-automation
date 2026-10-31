@@ -1,0 +1,91 @@
+{
+  "artStyle": "dark-folklore",
+  "channelName": "Kwentong Pinoy: Lore & History",
+  "claimsToVerify": [
+    "Versions of the Teniente Gimo aswang tale circulate across Panay, including Aklan and Iloilo, where the intended victim is a young woman visiting for a fiesta",
+    "Teniente del barrio was the Spanish-colonial title for a village lieutenant, the local official of a barrio",
+    "In the classic telling, Gimo's intended victim escapes by switching sleeping places with Gimo's own daughter, whom the family strikes in the dark by mistake"
+  ],
+  "emotionPreset": "spooky-suspense",
+  "generatedBy": "A Day Back Then Studio Engine",
+  "hook": "MAY IMBITASYON SIYA SA PISTA — PERO HINDI SIYA ANG HANDA, IKAW.",
+  "language": "taglish",
+  "narratorTheme": "babaylan",
+  "pinnedComment": "Kung inimbitahan ka ng isang bagong kakilala na matulog sa bahay nila tuwing pista, tatanggapin mo ba — o maalala mo si Teniente Gimo? 👇",
+  "scenes": [
+    {
+      "audio": "audio/teniente-gimo/1.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/teniente-gimo/1.jpg",
+      "imagePrompt": "A fiesta night in a small Aklan town, colourful banderitas strung across a dirt street, a perya ferris wheel glowing far in the distance, and one grand old wooden house standing dark and quiet at the end of the road, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 17.7,
+      "text": "Pista sa isang bayan sa Aklan. May banderitas sa bawat kanto, may perya, at may isang lalaking iginagalang ng buong baryo — si Teniente Gimo. Nang gabing iyon, inimbitahan niya ang isang dalagang dayuhan na matulog sa kanyang malaking bahay. Hindi alam ng dalaga: siya ang handa.",
+      "voicedText": "Pista sa isang bayan sa Aklan. May banderitas sa bawat kanto, may perya, at may isang lalaking iginagalang ng buong baryo — si Teniente Gimo. Nang gabing iyon, inimbitahan niya ang isang dalagang dayuhan na matulog sa kanyang malaking bahay. Hindi alam ng dalaga: siya ang handa."
+    },
+    {
+      "audio": "audio/teniente-gimo/2.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/teniente-gimo/2.jpg",
+      "imagePrompt": "The grand wooden house of a wealthy barrio lieutenant at dusk in the Philippines, capiz shell windows glowing with lamplight, a wide staircase and fiesta lanterns outside, small nipa huts of villagers dwarfed around it, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 18.5,
+      "text": "Si Gimo ay teniente del baryo — mayaman, maimpluwensya, at bukas daw ang kanyang bahay sa sinumang bisita tuwing pista. Pero may bulong-bulungan ang matatanda: ang pamilya ni Gimo ay hindi kumakain ng karaniwang handa. At may mga bisitang hindi na raw muling nakita pagkatapos ng pista.",
+      "voicedText": "Si Gimo ay teniente del baryo — mayaman, maimpluwensya, at bukas daw ang kanyang bahay sa sinumang bisita tuwing pista. Pero may bulong-bulungan ang matatanda: ang pamilya ni Gimo ay hindi kumakain ng karaniwang handa. At may mga bisitang hindi na raw muling nakita pagkatapos ng pista."
+    },
+    {
+      "audio": "audio/teniente-gimo/3.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/teniente-gimo/3.jpg",
+      "imagePrompt": "A woven amakan bamboo wall inside a dark Philippine house at night, a thin blade of lamplight cutting through a crack in the weave, vague kitchen silhouettes and a whetstone barely visible beyond, deep shadow filling the foreground, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 18.5,
+      "text": "Hatinggabi. Nagising ang dalaga sa tunog ng hasaan — may humahasa ng itak sa kusina. Sumilip siya sa siwang ng dingding na amakan, at narinig niya ang boses ni Gimo: 'Handa na ba ang bisita?' Doon niya naintindihan. Hindi siya bisita. Siya ang ihahanda.",
+      "voicedText": "Hatinggabi. Nagising ang dalaga sa tunog ng hasaan — may humahasa ng itak sa kusina. Sumilip siya sa siwang ng dingding na amakan, at narinig niya ang boses ni Gimo: 'Handa na ba ang bisita?' Doon niya naintindihan. Hindi siya bisita. Siya ang ihahanda."
+    },
+    {
+      "audio": "audio/teniente-gimo/4.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/teniente-gimo/4.jpg",
+      "imagePrompt": "A dark bedroom in an old Philippine wooden house at midnight, two woven banig mats laid on the floorboards, a folded woman's dress resting on one mat, an open doorway spilling a thin blade of lamplight across the floor, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 20.7,
+      "text": "Hindi siya sumigaw. Tahimik niyang kinuha ang kanyang damit at ipinasuot sa natutulog na anak na babae ni Gimo, saka siya nahiga sa banig ng dalaga. Sa dilim, pumasok ang pamilya — at sinaksak nila ang nakasuot ng damit ng bisita. Ang sariling anak nila. Sumigaw ang bahay, at sa gulo, nakatakas ang dalaga.",
+      "voicedText": "Hindi siya sumigaw. Tahimik niyang kinuha ang kanyang damit at ipinasuot sa natutulog na anak na babae ni Gimo, saka siya nahiga sa banig ng dalaga. Sa dilim, pumasok ang pamilya — at sinaksak nila ang nakasuot ng damit ng bisita. Ang sariling anak nila. Sumigaw ang bahay, at sa gulo, nakatakas ang dalaga."
+    },
+    {
+      "audio": "audio/teniente-gimo/5.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/teniente-gimo/5.jpg",
+      "imagePrompt": "Early morning in a rural Panay barrio, a dirt road running between rice fields and nipa huts toward a distant church bell tower in the mist, faded fiesta banderitas hanging limp after the night's celebration, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 17.2,
+      "text": "Pagdating ng umaga, nakarating ang dalaga sa kabilang baryo — at ikinuwento niya ang lahat. Simula noon, naging babala ang kwento ni Teniente Gimo sa buong Panay: tuwing pista, hindi lahat ng nakabukas na pinto ay kabaitan. Ang iba, naghihintay lang ng handa.",
+      "voicedText": "Pagdating ng umaga, nakarating ang dalaga sa kabilang baryo — at ikinuwento niya ang lahat. Simula noon, naging babala ang kwento ni Teniente Gimo sa buong Panay: tuwing pista, hindi lahat ng nakabukas na pinto ay kabaitan. Ang iba, naghihintay lang ng handa."
+    }
+  ],
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "slug": "teniente-gimo",
+  "title": "Teniente Gimo: The Fiesta Host Whose Feast Was His Guest",
+  "voice": "fil-PH-BlessicaNeural"
+}

@@ -1,0 +1,90 @@
+{
+  "artStyle": "dark-folklore",
+  "channelName": "Kwentong Pinoy: Lore & History",
+  "claimsToVerify": [
+    "Maria Labo is a widely told aswang legend from Capiz, the province often called the aswang capital of the Philippines",
+    "Versions of the legend differ, but she is commonly told as a Capiz woman who worked abroad — often as a nurse or caregiver — and returned home changed"
+  ],
+  "emotionPreset": "spooky-suspense",
+  "generatedBy": "A Day Back Then Studio Engine",
+  "hook": "UMALIS SIYA BILANG NARS. UMUWI SIYA BILANG ASWANG.",
+  "language": "taglish",
+  "narratorTheme": "babaylan",
+  "pinnedComment": "Kung ang mahal mo sa buhay ang umuwi nang iba matapos ang maraming taon sa abroad — tatanggapin mo pa rin ba siya, o matatakot ka rin? 👇",
+  "scenes": [
+    {
+      "audio": "audio/maria-labo/1.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/maria-labo/1.jpg",
+      "imagePrompt": "A small provincial airport in Capiz at dusk, a lone arriving passenger seen from far behind as a dark silhouette carrying a single suitcase toward waiting relatives holding flowers, warm terminal lights against a heavy grey sky over a coastal town, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 14.6,
+      "text": "Sa Capiz — lalawigang tinatawag na pugad ng mga aswang — may isang nars na umuwi galing abroad matapos ang maraming taon. Buong baryo ang sumalubong kay Maria Labo. Pero may napansin ang mga kapitbahay: hindi na siya ang Maria na umalis.",
+      "voicedText": "Sa Capiz — lalawigang tinatawag na pugad ng mga aswang — may isang nars na umuwi galing abroad matapos ang maraming taon. Buong baryo ang sumalubong kay Maria Labo. Pero may napansin ang mga kapitbahay: hindi na siya ang Maria na umalis."
+    },
+    {
+      "audio": "audio/maria-labo/2.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": true
+      },
+      "image": "images/maria-labo/2.jpg",
+      "imagePrompt": "A modest wooden family home in a Capiz coastal barrio at night, a warm lamplit window with children's small silhouettes waiting inside, an old balikbayan box and envelopes on the porch, fishing boats resting on the shore in the distance under a rising moon, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 14.7,
+      "text": "Umalis siya noong bata pa ang kanyang mga anak — nagsakripisyo sa ibang bansa para may maipadala, para makapag-aral sila. Bawat padala, may kasamang pangako: uuwi rin ako. At nang dumating ang araw na iyon, akala ng pamilya niya, buo na ulit sila.",
+      "voicedText": "Umalis siya noong bata pa ang kanyang mga anak — nagsakripisyo sa ibang bansa para may maipadala, para makapag-aral sila. Bawat padala, may kasamang pangako: uuwi rin ako. At nang dumating ang araw na iyon, akala ng pamilya niya, buo na ulit sila."
+    },
+    {
+      "audio": "audio/maria-labo/3.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/maria-labo/3.jpg",
+      "imagePrompt": "A small stone parish church in a Philippine barrio at twilight, its doors open and candles glowing inside, a single distant figure standing still in the churchyard shadows beyond the gate not entering, nipa houses and banana trees shrouded in evening mist, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 15.3,
+      "text": "Pero unti-unti, may nagbago. Ayaw na niyang pumasok sa simbahan. Ginagabi siya nang labas, at sa umaga, pagod na pagod. Nang magkasunod-sunod ang hindi maipaliwanag na pagkakasakit sa baryo, nagsimula ang bulungan: iba na raw ang Maria na bumalik.",
+      "voicedText": "Pero unti-unti, may nagbago. Ayaw na niyang pumasok sa simbahan. Ginagabi siya nang labas, at sa umaga, pagod na pagod. Nang magkasunod-sunod ang hindi maipaliwanag na pagkakasakit sa baryo, nagsimula ang bulungan: iba na raw ang Maria na bumalik."
+    },
+    {
+      "audio": "audio/maria-labo/4.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/maria-labo/4.jpg",
+      "imagePrompt": "Interior of a dark Filipino home at night seen from the doorway, a kerosene lamp burning low on a wooden table between two small children silhouetted as they stare toward a closed bedroom door, rain streaking the capiz-shell windows, deep shadows filling the corners of the room, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 15.4,
+      "text": "Sa pinakamadilim na bersyon ng kwento, ang mismong mga anak niya ang nakatuklas ng totoo — at kinailangang mamili ng pamilya: ang inang nagsakripisyo para sa kanila, o ang nilalang na kinatatakutan ng buong baryo. Walang madaling sagot, kahit sa kwento.",
+      "voicedText": "Sa pinakamadilim na bersyon ng kwento, ang mismong mga anak niya ang nakatuklas ng totoo — at kinailangang mamili ng pamilya: ang inang nagsakripisyo para sa kanila, o ang nilalang na kinatatakutan ng buong baryo. Walang madaling sagot, kahit sa kwento."
+    },
+    {
+      "audio": "audio/maria-labo/5.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/maria-labo/5.jpg",
+      "imagePrompt": "A quiet Capiz coastline at dawn, fishing boats heading out on a silver sea while an old woman sits on a bamboo bench outside a nipa house telling a story to grandchildren gathered at her feet, the house behind them dark and still, morning fog lifting over the water, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 14.7,
+      "text": "Kaya hanggang ngayon, sinasabi ng matatanda sa Capiz: ang aswang ni Maria Labo ay hindi lang multo sa gabi. Kwento siya ng bawat pamilyang iniwan ng distansya — at ng tanong na hindi nawawala: kilala mo pa ba ang umuwi sa inyo?",
+      "voicedText": "Kaya hanggang ngayon, sinasabi ng matatanda sa Capiz: ang aswang ni Maria Labo ay hindi lang multo sa gabi. Kwento siya ng bawat pamilyang iniwan ng distansya — at ng tanong na hindi nawawala: kilala mo pa ba ang umuwi sa inyo?"
+    }
+  ],
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "slug": "maria-labo",
+  "title": "Maria Labo: The Nurse Who Came Home From Abroad Changed",
+  "voice": "fil-PH-BlessicaNeural"
+}

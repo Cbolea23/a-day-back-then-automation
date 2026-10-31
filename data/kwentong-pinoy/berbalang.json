@@ -1,0 +1,91 @@
+{
+  "artStyle": "dark-folklore",
+  "channelName": "Kwentong Pinoy: Lore & History",
+  "claimsToVerify": [
+    "The berbalang is a creature of Cagayan Sulu folklore whose spirit is said to leave its sleeping body at night to hunt",
+    "British officer Ethelbert Forbes Skelton published a 19th-century account of the berbalang based on testimony collected from islanders",
+    "In the lore, the berbalang's moaning is said to sound loud when it is far away and faint when it is near; coconut vinegar and a blade placed by its sleeping body are the traditional defence"
+  ],
+  "emotionPreset": "spooky-suspense",
+  "generatedBy": "A Day Back Then Studio Engine",
+  "hook": "SA CAGAYAN, MAY ASWANG NA NATUTULOG — PERO ANG KALULUWA NIYA, NANGANGASO.",
+  "language": "taglish",
+  "narratorTheme": "babaylan",
+  "pinnedComment": "Naniniwala ka ba sa berbalang ng Cagayan? Kung makita mo ang natutulog niyang katawan, ano ang gagawin mo? 👇",
+  "scenes": [
+    {
+      "audio": "audio/berbalang/1.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/berbalang/1.jpg",
+      "imagePrompt": "A bahay kubo on bamboo stilts at the edge of a moonlit swamp on a small Cagayan island at midnight, a pair of glowing red eyes hovering in the black sky above the misty water far away, rice fields and banana trees in deep shadow, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 17.2,
+      "text": "Sa isang isla sa Cagayan, may lalaking natutulog nang mahimbing sa kanyang banig — tahimik, malamig, halos hindi humihinga. Pero huwag kang magkamali: wala siya sa loob ng katawang iyon. Ang kanyang kaluluwa ay lumipad na sa dilim, nangangaso.",
+      "voicedText": "Sa isang isla sa Cagayan, may lalaking natutulog nang mahimbing sa kanyang banig — tahimik, malamig, halos hindi humihinga. Pero huwag kang magkamali: wala siya sa loob ng katawang iyon. Ang kanyang kaluluwa ay lumipad na sa dilim, nangangaso."
+    },
+    {
+      "audio": "audio/berbalang/2.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/berbalang/2.jpg",
+      "imagePrompt": "A still figure-shaped form lying under a thin blanket on a woven banig mat inside a dark nipa hut seen from the doorway, a translucent glowing spirit silhouette drifting out through the open window into the night, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 15.1,
+      "text": "Ayon sa mga matatanda, ang berbalang ay kapitbahay mo lang sa araw — nakikisalo, nakikitawa. Pero pagsapit ng hatinggabi, hihiga siya na parang patay, at ang kanyang espiritu ay lilipad dala ang dalawang pulang matang nagliliyab sa dilim.",
+      "voicedText": "Ayon sa mga matatanda, ang berbalang ay kapitbahay mo lang sa araw — nakikisalo, nakikitawa. Pero pagsapit ng hatinggabi, hihiga siya na parang patay, at ang kanyang espiritu ay lilipad dala ang dalawang pulang matang nagliliyab sa dilim."
+    },
+    {
+      "audio": "audio/berbalang/3.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/berbalang/3.jpg",
+      "imagePrompt": "An aged leather-bound colonial journal lying open on a rough wooden table beside a brass oil lamp and a quill, its page filled with handwritten script and a rough sketch of two glowing eyes, inside a dark 1880s island outpost room, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 16.5,
+      "text": "Hindi ito basta kwentong-baryo. Noong 1880s, isang opiser na Briton, si Ethelbert Forbes Skelton, ang nagsulat ng mga patotoo ng mga taga-isla: may nakakita raw ng nagliliyab na mga mata sa ibabaw ng latian — at may katawang natagpuang malamig na parang bangkay.",
+      "voicedText": "Hindi ito basta kwentong-baryo. Noong 1880s, isang opiser na Briton, si Ethelbert Forbes Skelton, ang nagsulat ng mga patotoo ng mga taga-isla: may nakakita raw ng nagliliyab na mga mata sa ibabaw ng latian — at may katawang natagpuang malamig na parang bangkay."
+    },
+    {
+      "audio": "audio/berbalang/4.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/berbalang/4.jpg",
+      "imagePrompt": "A clay jar of coconut vinegar and a curved itak blade laid side by side on the wooden doorstep of a nipa hut at night, a rolled woven banig mat nearby, banana leaves looming in shadow behind, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 18.9,
+      "text": "May babala ang mga taga-isla: kapag narinig mo ang ungol ng berbalang na malakas, malayo pa siya. Kapag humina ang tunog... nasa tabi mo na siya. Kaya ang depensa nila: suka ng niyog at isang itak sa tabi ng natutulog na katawan — dahil kapag nasira ang katawan, hindi na makababalik ang kaluluwa.",
+      "voicedText": "May babala ang mga taga-isla: kapag narinig mo ang ungol ng berbalang na malakas, malayo pa siya. Kapag humina ang tunog... nasa tabi mo na siya. Kaya ang depensa nila: suka ng niyog at isang itak sa tabi ng natutulog na katawan — dahil kapag nasira ang katawan, hindi na makababalik ang kaluluwa."
+    },
+    {
+      "audio": "audio/berbalang/5.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/berbalang/5.jpg",
+      "imagePrompt": "Dawn breaking over a small island village in Cagayan, nipa huts along a muddy shore, wooden fishing bancas resting on wet sand, thick mist rolling off the water, one hut window still dark while the others glow with lamplight, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 15.3,
+      "text": "Kaya sa isla ng Cagayan, hanggang ngayon, may mga bahay na nag-iiwan ng suka at itak sa may pintuan pagsapit ng gabi. Dahil baka ang kapitbahay mong mahimbing ang tulog... ay hindi talaga natutulog. Naghihintay lang siyang lumabas ka.",
+      "voicedText": "Kaya sa isla ng Cagayan, hanggang ngayon, may mga bahay na nag-iiwan ng suka at itak sa may pintuan pagsapit ng gabi. Dahil baka ang kapitbahay mong mahimbing ang tulog... ay hindi talaga natutulog. Naghihintay lang siyang lumabas ka."
+    }
+  ],
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "slug": "berbalang",
+  "title": "Berbalang: The Aswang That Leaves Its Body Behind to Hunt",
+  "voice": "fil-PH-BlessicaNeural"
+}
