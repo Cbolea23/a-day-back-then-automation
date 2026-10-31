@@ -1,4 +1,7 @@
 # Directive for Muse AI & Antigravity — Autonomous Discord Operations Bridge
+
+> **⚠️ SUPERSEDED — 31 October 2026.** The Discord bridge is DISABLED and Christian has restored the middleman workflow (he relays briefs himself). Do not implement or follow this document. Current rules live in [`docs/CURRENT_OPERATING_RULES.md`](CURRENT_OPERATING_RULES.md), which wins over this file wherever they conflict. This document is kept for history only.
+
 **Date:** October 26, 2026  
 **Author:** Christian Bolea (Owner)  
 **Status:** Approved for Implementation

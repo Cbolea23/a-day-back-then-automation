@@ -1,5 +1,7 @@
 # Shorts Factory
 
+> **Working on this repo as Muse or Antigravity? Read [`docs/CURRENT_OPERATING_RULES.md`](docs/CURRENT_OPERATING_RULES.md) first** — it is the current source of truth for roles, rendering/posting splits, and standing holds, and it supersedes older workflow documents.
+
 Turns a topic into a 1080x1920 history Short: a fixed cartoon narrator over illustrated backgrounds, word-by-word captions, a hook banner in the first 3 seconds, and optional voiceover.
 
 > Status: written and syntax-checked, but **not yet installed or rendered** (the build sandbox could not reach the npm registry). Step 1 below is where you find out if anything needs a tweak.
