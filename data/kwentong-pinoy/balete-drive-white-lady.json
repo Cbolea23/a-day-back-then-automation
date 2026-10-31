@@ -1,0 +1,90 @@
+{
+  "artStyle": "dark-folklore",
+  "channelName": "A Day Back Then",
+  "claimsToVerify": [
+    "Balete Drive in New Manila, Quezon City is named for the balete trees that lined the road",
+    "The White Lady of Balete Drive is one of the Philippines' most famous urban legends — a woman in white said to appear to motorists at night"
+  ],
+  "emotionPreset": "spooky-suspense",
+  "generatedBy": "A Day Back Then Studio Engine",
+  "hook": "HUWAG KANG LILINGON SA SALAMIN KAPAG DUMAAN KA SA BALETE DRIVE",
+  "language": "taglish",
+  "narratorTheme": "babaylan",
+  "pinnedComment": "Nakapag-drive ka na ba sa Balete Drive nang dis-oras ng gabi? Ikaw, titingin ka ba sa salamin? 👇",
+  "scenes": [
+    {
+      "audio": "audio/balete-drive-white-lady/1.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/balete-drive-white-lady/1.jpg",
+      "imagePrompt": "A deserted tree-lined avenue in New Manila Quezon City at midnight, giant ancient balete trees forming a dark canopy over the empty road, a lone woman in a flowing white dress standing motionless in the middle of the street far ahead, a single car's headlights cutting through thick fog, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 11.9,
+      "text": "Sa Quezon City, may kalsadang iniiwasan ng mga driver pagsapit ng hatinggabi... ang Balete Drive. Dahil doon, may babaeng nakaputi na bigla na lang tatayo sa gitna ng daan.",
+      "voicedText": "Sa Quezon City, may kalsadang iniiwasan ng mga driver pagsapit ng hatinggabi... ang Balete Drive. Dahil doon, may babaeng nakaputi na bigla na lang tatayo sa gitna ng daan."
+    },
+    {
+      "audio": "audio/balete-drive-white-lady/2.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/balete-drive-white-lady/2.jpg",
+      "imagePrompt": "A 1960s Philippine street at night, a wrecked vintage car crumpled against a huge balete tree, a translucent grieving woman in a white dress standing beside the wreckage staring blankly into the darkness, broken glass glittering on wet asphalt, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 10.7,
+      "text": "Sabi ng kwento, isang babae raw ang namatay sa kalsadang ito noong araw — biktima ng isang aksidente, o ng krimeng hindi na nalutas. At simula noon, hindi na siya umalis sa Balete Drive.",
+      "voicedText": "Sabi ng kwento, isang babae raw ang namatay sa kalsadang ito noong araw — biktima ng isang aksidente, o ng krimeng hindi na nalutas. At simula noon, hindi na siya umalis sa Balete Drive."
+    },
+    {
+      "audio": "audio/balete-drive-white-lady/3.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/balete-drive-white-lady/3.jpg",
+      "imagePrompt": "Interior of a Manila taxi at night seen over the driver's shoulder, a silent pale woman in a white dress sitting in the back seat staring forward with dark hollow eyes, city lights smearing past rain-streaked windows, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 11.4,
+      "text": "May mga taxi driver na nagsasabing may pumara sa kanila roon — magandang babaeng nakaputi, tahimik na umupo sa likod. Pero pagdating sa destinasyon... wala nang tao, at malamig ang buong sasakyan.",
+      "voicedText": "May mga taxi driver na nagsasabing may pumara sa kanila roon — magandang babaeng nakaputi, tahimik na umupo sa likod. Pero pagdating sa destinasyon... wala nang tao, at malamig ang buong sasakyan."
+    },
+    {
+      "audio": "audio/balete-drive-white-lady/4.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/balete-drive-white-lady/4.jpg",
+      "imagePrompt": "Extreme close view of a car's rear-view mirror at night reflecting a bloodied woman in white sitting in the back seat with a slow terrifying grin, the driver's wide terrified eyes visible at the edge of the mirror, total darkness outside the windows, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 9.1,
+      "text": "Ang iba naman, wala raw talagang pumara. Pero pagtingin nila sa rear-view mirror... may babaeng nakatingin pabalik mula sa back seat. Duguan ang mukha — at nakangiti.",
+      "voicedText": "Ang iba naman, wala raw talagang pumara. Pero pagtingin nila sa rear-view mirror... may babaeng nakatingin pabalik mula sa back seat. Duguan ang mukha — at nakangiti."
+    },
+    {
+      "audio": "audio/balete-drive-white-lady/5.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/balete-drive-white-lady/5.jpg",
+      "imagePrompt": "A lone car driving away down a dark balete-tree avenue at night, red taillights fading into fog, the woman in white standing at the roadside among enormous twisted balete roots watching it leave, her dress glowing faintly in the mist, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 10.5,
+      "text": "Kaya ang bilin ng mga beteranong driver: kung dadaan ka sa Balete Drive nang mag-isa sa gabi, magmaneho ka lang nang diretso... at huwag na huwag kang titingin sa salamin.",
+      "voicedText": "Kaya ang bilin ng mga beteranong driver: kung dadaan ka sa Balete Drive nang mag-isa sa gabi, magmaneho ka lang nang diretso... at huwag na huwag kang titingin sa salamin."
+    }
+  ],
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "slug": "balete-drive-white-lady",
+  "title": "The White Lady of Balete Drive: She Flags You Down at Night",
+  "voice": "fil-PH-BlessicaNeural"
+}

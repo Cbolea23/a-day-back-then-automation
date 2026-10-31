@@ -1,0 +1,90 @@
+{
+  "artStyle": "dark-folklore",
+  "channelName": "A Day Back Then",
+  "claimsToVerify": [
+    "The Diplomat Hotel on Dominican Hill, Baguio City was built in 1913 as a Dominican retreat house and seminary",
+    "Japanese forces occupied the property during World War II; it later operated as a hotel and was abandoned after its owner died in 1987"
+  ],
+  "emotionPreset": "spooky-suspense",
+  "generatedBy": "A Day Back Then Studio Engine",
+  "hook": "MAY NAGHAHANAP NG KANYANG ULO SA LOOB NG DIPLOMAT HOTEL",
+  "language": "taglish",
+  "narratorTheme": "babaylan",
+  "pinnedComment": "Nakapunta ka na ba sa Diplomat Hotel sa Baguio? Ano ang naramdaman mo pagpasok mo pa lang sa gate? 👇",
+  "scenes": [
+    {
+      "audio": "audio/diplomat-hotel/1.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/diplomat-hotel/1.jpg",
+      "imagePrompt": "A massive ruined stone hotel on a foggy Baguio hilltop at dusk, broken windows like empty black eyes, a weathered stone cross on the roof, pine trees swallowed by thick mountain fog, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 8.4,
+      "text": "Sa tuktok ng Dominican Hill sa Baguio, nakatayo ang isang gumuhong hotel na kahit sa tanghaling tapat ay nakakakilabot... ang Diplomat Hotel.",
+      "voicedText": "Sa tuktok ng Dominican Hill sa Baguio, nakatayo ang isang gumuhong hotel na kahit sa tanghaling tapat ay nakakakilabot... ang Diplomat Hotel."
+    },
+    {
+      "audio": "audio/diplomat-hotel/2.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/diplomat-hotel/2.jpg",
+      "imagePrompt": "Dominican friars in white robes walking the stone cloister of a 1913 hilltop retreat house in Baguio, pine forest and mountain mist behind them, sepia-toned solemn historical mood, an old stone fountain in the courtyard, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 11.7,
+      "text": "Itinayo ito noong 1913 bilang bakasyunan ng mga prayleng Dominikano. Pero noong Ikalawang Digmaang Pandaigdig, ginawa itong kampo ng mga Hapones — at doon nagsimula ang pagdurusa.",
+      "voicedText": "Itinayo ito noong 1913 bilang bakasyunan ng mga prayleng Dominikano. Pero noong Ikalawang Digmaang Pandaigdig, ginawa itong kampo ng mga Hapones — at doon nagsimula ang pagdurusa."
+    },
+    {
+      "audio": "audio/diplomat-hotel/3.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/diplomat-hotel/3.jpg",
+      "imagePrompt": "A dark water-stained corridor inside a ruined wartime hotel, headless silhouettes in old 1940s clothing standing motionless in drifting mist, a single shaft of pale light falling across cracked tiles, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 12.8,
+      "text": "Sinasabing doon pinugutan ng ulo ang maraming bihag — mga pari, madre, at sibilyan. At hanggang ngayon, may nakakakita raw ng mga taong naglalakad sa mga pasilyo... na walang ulo.",
+      "voicedText": "Sinasabing doon pinugutan ng ulo ang maraming bihag — mga pari, madre, at sibilyan. At hanggang ngayon, may nakakakita raw ng mga taong naglalakad sa mga pasilyo... na walang ulo."
+    },
+    {
+      "audio": "audio/diplomat-hotel/4.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/diplomat-hotel/4.jpg",
+      "imagePrompt": "The roofless inner courtyard of an abandoned grand hotel at night, a dried cracked fountain in the center, moonlight pouring through broken roof beams, faint ghostly figures watching from the shattered upper windows, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 14,
+      "text": "Naging hotel ito at sentro ng faith healing, pero nang mamatay ang may-ari noong 1987, iniwan na ito sa pagkabulok. Ang mga guwardiya sa gabi, nakakarinig pa rin ng iyak at yabag mula sa mga kwartong wala nang bubong.",
+      "voicedText": "Naging hotel ito at sentro ng faith healing, pero nang mamatay ang may-ari noong 1987, iniwan na ito sa pagkabulok. Ang mga guwardiya sa gabi, nakakarinig pa rin ng iyak at yabag mula sa mga kwartong wala nang bubong."
+    },
+    {
+      "audio": "audio/diplomat-hotel/5.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/diplomat-hotel/5.jpg",
+      "imagePrompt": "View from a dark road below of the ruined Diplomat Hotel on Dominican Hill at night, a single second-floor window glowing faintly with a standing human silhouette, Baguio fog rolling over pine trees beneath a huge moon, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 12,
+      "text": "Kaya kung aakyat ka ng Baguio at mapadaan sa Dominican Hill sa gabi... huwag mong pansinin kung may makita kang nakatayo sa bintana ng ikalawang palapag. Ang gusaling iyon, matagal nang walang tao.",
+      "voicedText": "Kaya kung aakyat ka ng Baguio at mapadaan sa Dominican Hill sa gabi... huwag mong pansinin kung may makita kang nakatayo sa bintana ng ikalawang palapag. Ang gusaling iyon, matagal nang walang tao."
+    }
+  ],
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "slug": "diplomat-hotel",
+  "title": "Diplomat Hotel: The Headless Ghosts of Baguio's Ruined Hotel",
+  "voice": "fil-PH-BlessicaNeural"
+}

@@ -1,0 +1,90 @@
+{
+  "artStyle": "dark-folklore",
+  "channelName": "A Day Back Then",
+  "claimsToVerify": [
+    "Amalanhig folklore from Hiligaynon regions (Negros, Panay): an aswang that died without passing on its power",
+    "Escape lore: run zigzag, climb a tree, cross running water"
+  ],
+  "emotionPreset": "spooky-suspense",
+  "generatedBy": "A Day Back Then Studio Engine",
+  "hook": "ANG ASWANG NA BUMANGON SA LIBINGAN... PERO HINDI MAKAYUKO",
+  "language": "taglish",
+  "narratorTheme": "babaylan",
+  "pinnedComment": "Kung habulin ka ng amalanhig, tatakbo ka ba nang tuwid o paliko-liko? Ano ang turo sa inyo? 👇",
+  "scenes": [
+    {
+      "audio": "audio/amalanhig/1.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/amalanhig/1.jpg",
+      "imagePrompt": "A quiet rural Philippine village street at dusk after a funeral, every nipa hut door shut and barred, one candlelit window glowing, long shadows stretching across the empty dirt road, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 15.9,
+      "text": "Sa Negros at Panay, kapag may bagong libing sa baryo, pagpatak ng dilim ay sinasarhan ng lahat ang kanilang mga pinto... sapagkat may aswang na bumabangon — matigas ang buong katawan, hindi makayuko, hindi makalingon.",
+      "voicedText": "Sa Negros at Panay, kapag may bagong libing sa baryo, pagpatak ng dilim ay sinasarhan ng lahat ang kanilang mga pinto... sapagkat may aswang na bumabangon — matigas ang buong katawan, hindi makayuko, hindi makalingon."
+    },
+    {
+      "audio": "audio/amalanhig/2.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": true
+      },
+      "image": "images/amalanhig/2.jpg",
+      "imagePrompt": "An old Hiligaynon village elder telling a story by firelight to wide-eyed grandchildren, shadows on the wall behind him forming the shape of a stiff walking corpse, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 12.5,
+      "text": "Sabi ng mga matatanda, ang amalanhig ay isang aswang na namatay nang hindi naipapasa ang kanyang kapangyarihan... kaya sa halip na mabulok, bumabangon siya — galit, gutom, at matigas na parang kahoy.",
+      "voicedText": "Sabi ng mga matatanda, ang amalanhig ay isang aswang na namatay nang hindi naipapasa ang kanyang kapangyarihan... kaya sa halip na mabulok, bumabangon siya — galit, gutom, at matigas na parang kahoy."
+    },
+    {
+      "audio": "audio/amalanhig/3.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/amalanhig/3.jpg",
+      "imagePrompt": "A winding river and zigzag footpath crossing a moonlit rice field in Negros, bamboo groves along the banks, the water glinting silver under a huge moon, mist drifting over the paddies, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 17.7,
+      "text": "Hinahabol niya ang sinumang buhay na makita niya sa gabi — tuwid, mabilis, at hindi napapagod... at kung hindi ka niya maabutan, sa puno niya ibinubuhos ang galit, kinakagat ito hanggang mamatay pagsikat ng araw. Pero ang matigas niyang katawan ang siya ring kahinaan: hindi siya makaliko nang biglaan.",
+      "voicedText": "Hinahabol niya ang sinumang buhay na makita niya sa gabi — tuwid, mabilis, at hindi napapagod... at kung hindi ka niya maabutan, sa puno niya ibinubuhos ang galit, kinakagat ito hanggang mamatay pagsikat ng araw. Pero ang matigas niyang katawan ang siya ring kahinaan: hindi siya makaliko nang biglaan."
+    },
+    {
+      "audio": "audio/amalanhig/4.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/amalanhig/4.jpg",
+      "imagePrompt": "A young Filipino man running in a frantic zigzag across a moonlit rice field while a stiff corpse-creature plows straight past him unable to turn, a river glinting ahead, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 15.7,
+      "text": "Pero may itinuro ang mga lola kung paano makatakas... tumakbo ka nang paliko-liko, sapagkat hindi siya makakurbada. Umakyat ka sa puno, sapagkat hindi siya makayuko. O tumawid ka sa ilog, sapagkat hindi siya sumusunod sa umaagos na tubig.",
+      "voicedText": "Pero may itinuro ang mga lola kung paano makatakas... tumakbo ka nang paliko-liko, sapagkat hindi siya makakurbada. Umakyat ka sa puno, sapagkat hindi siya makayuko. O tumawid ka sa ilog, sapagkat hindi siya sumusunod sa umaagos na tubig."
+    },
+    {
+      "audio": "audio/amalanhig/5.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": true
+      },
+      "image": "images/amalanhig/5.jpg",
+      "imagePrompt": "Dawn breaking over a rural Philippine village, first golden light spilling over nipa rooftops and a wide rice field, the doors of the huts opening one by one, roosters perched on bamboo fences, the last of the night mist lifting, dark folklore graphic novel illustration, night teal giving way to warm dawn gold, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 11.7,
+      "text": "Kaya iisa ang kwento ng lahat ng nakaligtas: hindi sila tumakbo nang tuwid. At hanggang ngayon, sa mga baryong iyon, kapag may bagong libing... maaga pa lang, sarado na ang mga pinto.",
+      "voicedText": "Kaya iisa ang kwento ng lahat ng nakaligtas: hindi sila tumakbo nang tuwid. At hanggang ngayon, sa mga baryong iyon, kapag may bagong libing... maaga pa lang, sarado na ang mga pinto."
+    }
+  ],
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "slug": "amalanhig",
+  "title": "Amalanhig: The Aswang That Rose From the Grave — But Cannot Bend",
+  "voice": "fil-PH-BlessicaNeural"
+}

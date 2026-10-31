@@ -1,0 +1,90 @@
+{
+  "artStyle": "dark-folklore",
+  "channelName": "A Day Back Then",
+  "claimsToVerify": [
+    "On November 17, 1981, scaffolding at the Manila Film Center construction site collapsed into wet cement, killing many workers (commonly cited figure around 169)",
+    "The building was rushed to completion for the January 1982 Manila International Film Festival under Imelda Marcos"
+  ],
+  "emotionPreset": "spooky-suspense",
+  "generatedBy": "A Day Back Then Studio Engine",
+  "hook": "HANGGANG NGAYON, MAY KUMAKATOK MULA SA LOOB NG MGA PADER",
+  "language": "taglish",
+  "narratorTheme": "babaylan",
+  "pinnedComment": "Alam mo ba ang totoong nangyari sa Manila Film Center noong 1981? Anong bersyon ang narinig mo? 👇",
+  "scenes": [
+    {
+      "audio": "audio/manila-film-center/1.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/manila-film-center/1.jpg",
+      "imagePrompt": "A monumental brutalist concrete theater building by Manila Bay at dusk under a blood-red sky, an ominous grand facade with dark empty doorways and rows of shadowed windows, gulls scattering into the red sky, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 11.4,
+      "text": "Sa tabi ng Manila Bay, may gusaling itinayo sa ibabaw ng isang trahedya... ang Manila Film Center. At sabi ng mga nakakaalam, hindi lahat ng trabahador nito ay nakauwi.",
+      "voicedText": "Sa tabi ng Manila Bay, may gusaling itinayo sa ibabaw ng isang trahedya... ang Manila Film Center. At sabi ng mga nakakaalam, hindi lahat ng trabahador nito ay nakauwi."
+    },
+    {
+      "audio": "audio/manila-film-center/2.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": true
+      },
+      "image": "images/manila-film-center/2.jpg",
+      "imagePrompt": "A massive 1981 Manila construction site at night, exhausted Filipino workers pouring cement under harsh floodlights, towering scaffolding and cranes around an unfinished monumental concrete building racing against a deadline, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 12.4,
+      "text": "Taong 1981, minadali ang pagtatayo nito para sa isang malaking international film festival. Araw at gabi ang trabaho — walang tigil ang pagbubuhos ng semento, walang pahinga ang mga trabahador.",
+      "voicedText": "Taong 1981, minadali ang pagtatayo nito para sa isang malaking international film festival. Araw at gabi ang trabaho — walang tigil ang pagbubuhos ng semento, walang pahinga ang mga trabahador."
+    },
+    {
+      "audio": "audio/manila-film-center/3.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/manila-film-center/3.jpg",
+      "imagePrompt": "Towering wooden scaffolding collapsing into a vast pit of wet grey cement before dawn, hard hats and tools sinking into the hardening surface, a frozen moment of dust and horror lit by a single work lamp, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 11.7,
+      "text": "Madaling-araw ng Nobyembre 17, 1981, bumigay ang scaffolding. Maraming trabahador ang nahulog — diretso sa basang semento na mabilis nang tumigas sa ilalim nila.",
+      "voicedText": "Madaling-araw ng Nobyembre 17, 1981, bumigay ang scaffolding. Maraming trabahador ang nahulog — diretso sa basang semento na mabilis nang tumigas sa ilalim nila."
+    },
+    {
+      "audio": "audio/manila-film-center/4.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/manila-film-center/4.jpg",
+      "imagePrompt": "Filipino workers silently pouring fresh cement over a construction pit at night while a stern official in a barong tagalog turns away, an overseer's raised hand ordering the work to continue, floodlights casting long grim shadows, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 12.2,
+      "text": "At ito ang pinakamasakit sa kwento: sa halip daw na hukayin at iligtas ang mga katawan, iniutos na buhusan na lang ulit ng semento ang lugar — dahil hindi puwedeng maantala ang pagbubukas ng gusali.",
+      "voicedText": "At ito ang pinakamasakit sa kwento: sa halip daw na hukayin at iligtas ang mga katawan, iniutos na buhusan na lang ulit ng semento ang lugar — dahil hindi puwedeng maantala ang pagbubukas ng gusali."
+    },
+    {
+      "audio": "audio/manila-film-center/5.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": false
+      },
+      "image": "images/manila-film-center/5.jpg",
+      "imagePrompt": "An empty grand theater lobby with marble floors at night, faint human handprints pressed against the inside of a towering concrete wall, a single spotlight cutting through floating dust in total darkness, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 12.4,
+      "text": "Mula noon, may mga nakakarinig daw ng katok mula sa loob ng mga pader, at mga yabag sa mga pasilyong walang tao. Nakatayo pa rin ang Manila Film Center — kasama ng mga kwentong hindi nailibing nang maayos.",
+      "voicedText": "Mula noon, may mga nakakarinig daw ng katok mula sa loob ng mga pader, at mga yabag sa mga pasilyong walang tao. Nakatayo pa rin ang Manila Film Center — kasama ng mga kwentong hindi nailibing nang maayos."
+    }
+  ],
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "slug": "manila-film-center",
+  "title": "Manila Film Center: The Workers Buried in the Cement",
+  "voice": "fil-PH-BlessicaNeural"
+}

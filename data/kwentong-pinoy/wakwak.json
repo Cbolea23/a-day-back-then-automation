@@ -1,0 +1,90 @@
+{
+  "artStyle": "dark-folklore",
+  "channelName": "A Day Back Then",
+  "claimsToVerify": [
+    "Wakwak folklore from Visayas and Mindanao, wing-flap sound believed to work in reverse",
+    "Traditional defenses: garlic, salt, stingray tail (buntot pagi)"
+  ],
+  "emotionPreset": "spooky-suspense",
+  "generatedBy": "A Day Back Then Studio Engine",
+  "hook": "KAPAG MAHINA NA ANG TUNOG NG WAK-WAK, NASA BUBUNGAN MO NA SIYA",
+  "language": "taglish",
+  "narratorTheme": "babaylan",
+  "pinnedComment": "Narinig mo na ba ang tunog ng wak-wak sa probinsya ninyo? Ano ang sabi ng lola mo tungkol doon? 👇",
+  "scenes": [
+    {
+      "audio": "audio/wakwak/1.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/wakwak/1.jpg",
+      "imagePrompt": "A massive bird-like creature with enormous ragged wings circling above a rural Philippine village at night, its silhouette crossing a huge full moon, rooftops and coconut palms below, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 13.1,
+      "text": "May tunog na kinatatakutan ng mga buntis sa probinsya... isang pagaspas ng pakpak sa dilim — wak... wak... wak — na kapag narinig mo, ibig sabihin may nangangaso sa ibabaw ng inyong bubong.",
+      "voicedText": "May tunog na kinatatakutan ng mga buntis sa probinsya... isang pagaspas ng pakpak sa dilim — wak... wak... wak — na kapag narinig mo, ibig sabihin may nangangaso sa ibabaw ng inyong bubong."
+    },
+    {
+      "audio": "audio/wakwak/2.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": true
+      },
+      "image": "images/wakwak/2.jpg",
+      "imagePrompt": "A terrifying wakwak creature perched on a rooftop ridge, giant bat-like wings half spread, sharp claws gripping the tiles, long tongue tasting the night air, glowing eyes, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 10.9,
+      "text": "Ang wakwak ay isang dambuhalang nilalang na parang ibon at paniki... may matatalas na kuko, mahabang dila, at mga pakpak na kayang takpan ang liwanag ng buwan.",
+      "voicedText": "Ang wakwak ay isang dambuhalang nilalang na parang ibon at paniki... may matatalas na kuko, mahabang dila, at mga pakpak na kayang takpan ang liwanag ng buwan."
+    },
+    {
+      "audio": "audio/wakwak/3.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/wakwak/3.jpg",
+      "imagePrompt": "A Filipino family inside a dim nipa hut freezing in fear as they listen, the enormous shadow of wings passing silently over the woven walls, a single oil lamp flickering, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 9.9,
+      "text": "Pero ito ang pinakanakakatakot sa lahat... ang tunog ng wakwak ay baliktad. Kapag malakas ang pagaspas, malayo pa siya. Kapag mahina na... nasa tabi mo na siya.",
+      "voicedText": "Pero ito ang pinakanakakatakot sa lahat... ang tunog ng wakwak ay baliktad. Kapag malakas ang pagaspas, malayo pa siya. Kapag mahina na... nasa tabi mo na siya."
+    },
+    {
+      "audio": "audio/wakwak/4.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/wakwak/4.jpg",
+      "imagePrompt": "A pregnant Filipino woman sleeping inside a mosquito net in a wooden house while an elder hangs garlic braids, salt bowls and a stingray tail by the window, moonlight streaming in, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 10.7,
+      "text": "Kaya ang mga lola, naglalagay ng bawang at asin sa bintana... at ang buntot ng pagi ay nakasabit sa pintuan — sapagkat ang wakwak ay nangangaso ng sanggol sa sinapupunan.",
+      "voicedText": "Kaya ang mga lola, naglalagay ng bawang at asin sa bintana... at ang buntot ng pagi ay nakasabit sa pintuan — sapagkat ang wakwak ay nangangaso ng sanggol sa sinapupunan."
+    },
+    {
+      "audio": "audio/wakwak/5.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": true
+      },
+      "image": "images/wakwak/5.jpg",
+      "imagePrompt": "A silent rooftop at night seen from below, a colossal winged silhouette crouched motionless directly above the house against a starless sky, not a single feather moving, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 8.9,
+      "text": "Kaya ngayong gabi, kapag nakarinig ka ng pagaspas sa bubong na pabulong nang pabulong... huwag kang masiyahan sa katahimikan. Iyon ang sandaling pinakamalapit na siya.",
+      "voicedText": "Kaya ngayong gabi, kapag nakarinig ka ng pagaspas sa bubong na pabulong nang pabulong... huwag kang masiyahan sa katahimikan. Iyon ang sandaling pinakamalapit na siya."
+    }
+  ],
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "slug": "wakwak",
+  "title": "Wakwak: When the Wingbeats Go Quiet, It Is Already Above You",
+  "voice": "fil-PH-BlessicaNeural"
+}

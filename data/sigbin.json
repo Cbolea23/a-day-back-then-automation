@@ -1,0 +1,90 @@
+{
+  "artStyle": "dark-folklore",
+  "channelName": "A Day Back Then",
+  "claimsToVerify": [
+    "Sigbin folklore from the Visayas, associated with Holy Week",
+    "Sigbinan families said to keep a sigbin in a clay jar for wealth"
+  ],
+  "emotionPreset": "spooky-suspense",
+  "generatedBy": "A Day Back Then Studio Engine",
+  "hook": "HUWAG KANG LILINGON KAPAG MAY ANINONG NAGLALAKAD NANG PATALIKOD",
+  "language": "taglish",
+  "narratorTheme": "babaylan",
+  "pinnedComment": "Narinig mo na ba ang kwento ng sigbin mula sa lola mo? Saang probinsya ang bersyon ninyo? 👇",
+  "scenes": [
+    {
+      "audio": "audio/sigbin/1.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/sigbin/1.jpg",
+      "imagePrompt": "A grotesque kangaroo-like creature walking backward along a moonlit dirt path in a rural Visayan village, its head lowered between its hind legs, enormous ears and long tail silhouetted against a huge full moon, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 11.2,
+      "text": "Sa Visayas, may nilalang na lumalabas lamang tuwing Semana Santa... naglalakad siya nang patalikod, at ang kanyang ulo ay nakatungo sa pagitan ng kanyang mga binti.",
+      "voicedText": "Sa Visayas, may nilalang na lumalabas lamang tuwing Semana Santa... naglalakad siya nang patalikod, at ang kanyang ulo ay nakatungo sa pagitan ng kanyang mga binti."
+    },
+    {
+      "audio": "audio/sigbin/2.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "pull-back",
+        "warmFlicker": true
+      },
+      "image": "images/sigbin/2.jpg",
+      "imagePrompt": "Close view of a monstrous sigbin mid-leap over a nipa hut roof at night, gigantic clapping ears spread wide, glowing amber eyes, long whip-like tail, terrified villagers peeking from windows below, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 10.4,
+      "text": "May mga tainga siyang kasinglaki ng mga kamay na pumapalakpak habang siya ay gumagalaw... at sa isang talon, kaya niyang lampasan ang bubong ng isang buong bahay.",
+      "voicedText": "May mga tainga siyang kasinglaki ng mga kamay na pumapalakpak habang siya ay gumagalaw... at sa isang talon, kaya niyang lampasan ang bubong ng isang buong bahay."
+    },
+    {
+      "audio": "audio/sigbin/3.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "push-in",
+        "warmFlicker": false
+      },
+      "image": "images/sigbin/3.jpg",
+      "imagePrompt": "An elderly Filipino woman in a dim candlelit hut lifting the lid of a large clay jar while a small shadowy creature with glowing eyes peers out from inside, offerings of food beside the jar, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "cool",
+      "seconds": 11.2,
+      "text": "Sabi ng mga matatanda, may mga pamilyang nag-aalaga ng sigbin sa loob ng isang banga... pinapakain nila ito, at kapalit nito, nagdadala ito ng yaman sa kanilang tahanan.",
+      "voicedText": "Sabi ng mga matatanda, may mga pamilyang nag-aalaga ng sigbin sa loob ng isang banga... pinapakain nila ito, at kapalit nito, nagdadala ito ng yaman sa kanilang tahanan."
+    },
+    {
+      "audio": "audio/sigbin/4.mp3",
+      "direction": {
+        "atmosphere": "dust",
+        "drift": "push-in",
+        "warmFlicker": true
+      },
+      "image": "images/sigbin/4.jpg",
+      "imagePrompt": "A mother pulling her child indoors at dusk in a rural Philippine barrio during Holy Week, church candles glowing in the distance, a pair of glowing eyes and a backward-walking shadow watching from the banana trees, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 12.2,
+      "text": "Pero ang yaman ay may kapalit... sapagkat sa gabi, ang sigbin ay nangangaso ng puso — lalo na ng mga bata — kaya pag Semana Santa, walang batang pinapayagang maglaro sa labas.",
+      "voicedText": "Pero ang yaman ay may kapalit... sapagkat sa gabi, ang sigbin ay nangangaso ng puso — lalo na ng mga bata — kaya pag Semana Santa, walang batang pinapayagang maglaro sa labas."
+    },
+    {
+      "audio": "audio/sigbin/5.mp3",
+      "direction": {
+        "atmosphere": "ember",
+        "drift": "pull-back",
+        "warmFlicker": true
+      },
+      "image": "images/sigbin/5.jpg",
+      "imagePrompt": "Extreme close view of a sigbin face emerging from black jungle darkness, head upside down between its legs, huge ears raised like hands about to clap, glowing eyes staring directly at the viewer, dark folklore graphic novel illustration, eerie moonlight, misty shadows, deep crimson and midnight teal palette, dramatic horror ink outlines, atmospheric fog, vertical 9:16 portrait, no text, no logos",
+      "mood": "dark",
+      "seconds": 9.3,
+      "text": "Kaya kapag nakarinig ka ng palakpak sa dilim at may naamoy kang nakakasulasok... huwag mo nang hanapin ang pinagmulan. Ang sigbin, nakatingin na sa iyo.",
+      "voicedText": "Kaya kapag nakarinig ka ng palakpak sa dilim at may naamoy kang nakakasulasok... huwag mo nang hanapin ang pinagmulan. Ang sigbin, nakatingin na sa iyo."
+    }
+  ],
+  "seriesTag": "🕯️ PHILIPPINE DARK LORE",
+  "slug": "sigbin",
+  "title": "Sigbin: The Backward-Walking Monster of Holy Week",
+  "voice": "fil-PH-BlessicaNeural"
+}
