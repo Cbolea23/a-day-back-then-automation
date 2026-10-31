@@ -1,18 +1,9 @@
 /**
  * Real channel analytics for the dashboard.
- *
- * Sources (both optional, configured purely via ENV — nothing is read from
- * the pipeline filesystem, so this works identically in local and web mode):
- *
- * - YouTube: YT_TOKENS_JSON — the OAuth token JSON as a string
- *   ({client_id, client_secret, refresh_token, access_token?, expiry_date?},
- *   the same shape the pipeline's youtube-tokens.json uses). The access token
- *   is refreshed in memory when expired; the env value is never written back.
- * - Meta: META_PAGE_TOKEN, with optional META_PAGE_ID / META_IG_USER_ID /
- *   META_GRAPH_VERSION (default v21.0).
- *
- * Results are cached in memory for 10 minutes. Failures are reported per
- * source in `errors` — the route never throws and never leaks stack traces.
+ * Supports multi-channel architecture:
+ * - A Day Back Then (Global)
+ * - Kwentong Pinoy: Lore & History (Philippine Lore)
+ * - Genesis to Glory (Faith & History - Standby)
  */
 
 type YtTokens = {
@@ -26,7 +17,15 @@ type YtTokens = {
 export type AnalyticsError = {source: "youtube" | "meta"; message: string};
 
 export type AnalyticsResult = {
+  channel: string;
   configured: {youtube: boolean; meta: boolean};
+  day0Baseline?: {
+    recordedAt: string;
+    subscribers: number;
+    totalViews: number;
+    videoCount: number;
+    notes: string;
+  };
   youtube?: {
     channelTitle: string;
     subscribers: number;
@@ -65,11 +64,21 @@ export type AnalyticsResult = {
 };
 
 const CACHE_TTL_MS = 10 * 60 * 1000;
-let cache: {at: number; result: AnalyticsResult} | null = null;
-let refreshedAccessToken: {value: string; expiry: number} | null = null;
+const caches = new Map<string, {at: number; result: AnalyticsResult}>();
+const refreshedTokens = new Map<string, {value: string; expiry: number}>();
 
-function parseYtTokens(): YtTokens | null {
-  const raw = process.env.YT_TOKENS_JSON;
+function parseYtTokens(channel: string): YtTokens | null {
+  const norm = channel.toLowerCase();
+  let raw: string | undefined;
+
+  if (norm === "kwentong-pinoy" || norm === "ph" || norm === "filipino") {
+    raw = process.env.YT_TOKENS_JSON_KWENTONG_PINOY || process.env.YT_TOKENS_JSON;
+  } else if (norm === "genesis-to-glory" || norm === "bible") {
+    raw = process.env.YT_TOKENS_JSON_GENESIS;
+  } else {
+    raw = process.env.YT_TOKENS_JSON;
+  }
+
   if (!raw) return null;
   try {
     const parsed = JSON.parse(raw) as YtTokens;
@@ -80,19 +89,19 @@ function parseYtTokens(): YtTokens | null {
   }
 }
 
-async function youtubeAccessToken(tokens: YtTokens): Promise<string> {
+async function youtubeAccessToken(channel: string, tokens: YtTokens): Promise<string> {
   const now = Date.now();
-  if (refreshedAccessToken && refreshedAccessToken.expiry > now + 60_000) {
-    return refreshedAccessToken.value;
+  const cached = refreshedTokens.get(channel);
+  if (cached && cached.expiry > now + 60_000) {
+    return cached.value;
   }
   if (tokens.access_token && (tokens.expiry_date ?? 0) > now + 120_000) {
     return tokens.access_token;
   }
-  const cred = tokens;
   const form = new URLSearchParams();
-  form.set("client_id", cred.client_id);
-  form.set("client_secret", cred.client_secret);
-  form.set("refresh_token", cred.refresh_token);
+  form.set("client_id", tokens.client_id);
+  form.set("client_secret", tokens.client_secret);
+  form.set("refresh_token", tokens.refresh_token);
   form.set("grant_type", "refresh_token");
   const res = await fetch("https://oauth2.googleapis.com/token", {
     method: "POST",
@@ -108,10 +117,10 @@ async function youtubeAccessToken(tokens: YtTokens): Promise<string> {
     throw new Error(`token refresh failed (${res.status}${data.error ? `: ${data.error}` : ""})`);
   }
   const freshToken = data.access_token;
-  refreshedAccessToken = {
+  refreshedTokens.set(channel, {
     value: freshToken,
     expiry: now + (data.expires_in ?? 3600) * 1000,
-  };
+  });
   return freshToken;
 }
 
@@ -119,8 +128,8 @@ function isoDate(d: Date): string {
   return d.toISOString().slice(0, 10);
 }
 
-async function fetchYouTube(tokens: YtTokens): Promise<NonNullable<AnalyticsResult["youtube"]>> {
-  const accessToken = await youtubeAccessToken(tokens);
+async function fetchYouTube(channel: string, tokens: YtTokens): Promise<NonNullable<AnalyticsResult["youtube"]>> {
+  const accessToken = await youtubeAccessToken(channel, tokens);
   const auth = {Authorization: `Bearer ${accessToken}`};
   const end = new Date();
   const start = new Date(end.getTime() - 28 * 24 * 3600 * 1000);
@@ -211,14 +220,31 @@ async function fetchYouTube(tokens: YtTokens): Promise<NonNullable<AnalyticsResu
   };
 }
 
-async function fetchMeta(): Promise<NonNullable<AnalyticsResult["meta"]>> {
-  const token = process.env.META_PAGE_TOKEN as string;
+async function fetchMeta(channel: string): Promise<NonNullable<AnalyticsResult["meta"]>> {
+  const norm = channel.toLowerCase();
+  let token: string | undefined;
+  let pageId: string | undefined;
+  let igId: string | undefined;
+
+  if (norm === "kwentong-pinoy" || norm === "ph" || norm === "filipino") {
+    token = process.env.META_PAGE_TOKEN_KWENTONG_PINOY || process.env.META_PAGE_TOKEN;
+    pageId = process.env.META_PAGE_ID_KWENTONG_PINOY || "1426725153855187";
+  } else if (norm === "genesis-to-glory" || norm === "bible") {
+    token = process.env.META_PAGE_TOKEN_GENESIS;
+    pageId = "1377325175473160";
+  } else {
+    token = process.env.META_PAGE_TOKEN;
+    pageId = process.env.META_PAGE_ID?.trim().replace(/^\uFEFF/, "");
+    igId = process.env.META_IG_USER_ID?.trim().replace(/^\uFEFF/, "");
+  }
+
+  if (!token) return {};
+
   const version = process.env.META_GRAPH_VERSION || "v21.0";
   const base = `https://graph.facebook.com/${version}`;
-  const authed = (url: string) => url + "&access_token=" + encodeURIComponent(token);
+  const authed = (url: string) => url + (url.includes("?") ? "&" : "?") + "access_token=" + encodeURIComponent(token!);
   const out: NonNullable<AnalyticsResult["meta"]> = {};
 
-  const pageId = process.env.META_PAGE_ID?.trim().replace(/^\uFEFF/, "");
   const pagePath = pageId ? `/${pageId}` : "/me";
   const pageRes = await fetch(
     authed(`${base}${pagePath}?fields=name,followers_count,fan_count`),
@@ -237,8 +263,7 @@ async function fetchMeta(): Promise<NonNullable<AnalyticsResult["meta"]>> {
         ? pageData.fan_count
         : undefined;
 
-  // Instagram: explicit ID wins, otherwise discover via the page.
-  let igId = process.env.META_IG_USER_ID?.trim().replace(/^\uFEFF/, "");
+  // Instagram: discover via page if not set
   if (!igId && (pageId || pageData.id)) {
     try {
       const linkRes = await fetch(
@@ -263,24 +288,42 @@ async function fetchMeta(): Promise<NonNullable<AnalyticsResult["meta"]>> {
   return out;
 }
 
-export async function getAnalytics(force = false): Promise<AnalyticsResult> {
+export async function getAnalytics(channel = "kwentong-pinoy", force = false): Promise<AnalyticsResult> {
+  const norm = channel.toLowerCase();
   const now = Date.now();
-  if (!force && cache && now - cache.at < CACHE_TTL_MS) {
-    return {...cache.result, cached: true};
+  const cached = caches.get(norm);
+  if (!force && cached && now - cached.at < CACHE_TTL_MS) {
+    return {...cached.result, cached: true};
   }
 
-  const ytTokens = parseYtTokens();
-  const metaConfigured = Boolean(process.env.META_PAGE_TOKEN);
+  const ytTokens = parseYtTokens(norm);
+  const metaConfigured = Boolean(
+    norm === "kwentong-pinoy"
+      ? process.env.META_PAGE_TOKEN_KWENTONG_PINOY || process.env.META_PAGE_TOKEN
+      : process.env.META_PAGE_TOKEN
+  );
+
   const result: AnalyticsResult = {
+    channel: norm,
     configured: {youtube: Boolean(ytTokens), meta: metaConfigured},
     errors: [],
     fetchedAt: new Date().toISOString(),
     cached: false,
   };
 
+  if (norm === "kwentong-pinoy") {
+    result.day0Baseline = {
+      recordedAt: "2026-10-31",
+      subscribers: 5,
+      totalViews: 2560,
+      videoCount: 3,
+      notes: "Wave A Launch Trio Baseline (Manila Film Center, Diplomat Hotel, Balete Drive)"
+    };
+  }
+
   if (ytTokens) {
     try {
-      result.youtube = await fetchYouTube(ytTokens);
+      result.youtube = await fetchYouTube(norm, ytTokens);
     } catch (e) {
       result.errors.push({
         source: "youtube",
@@ -290,7 +333,7 @@ export async function getAnalytics(force = false): Promise<AnalyticsResult> {
   }
   if (metaConfigured) {
     try {
-      result.meta = await fetchMeta();
+      result.meta = await fetchMeta(norm);
     } catch (e) {
       result.errors.push({
         source: "meta",
@@ -299,6 +342,6 @@ export async function getAnalytics(force = false): Promise<AnalyticsResult> {
     }
   }
 
-  cache = {at: now, result};
+  caches.set(norm, {at: now, result});
   return result;
 }
